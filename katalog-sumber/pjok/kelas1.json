@@ -1,0 +1,416 @@
+{
+ "mapel": "PJOK",
+ "kelas": 1,
+ "buku": "Panduan Guru Pendidikan Jasmani, Olahraga, dan Kesehatan untuk SD/MI Kelas I",
+ "materi": [
+  {
+   "bab": 1,
+   "nama": "Asyiknya Gerak di Tempat",
+   "jenisTeks": "informasi",
+   "tema": "jingga",
+   "sub": [
+    {
+     "nama": "Mengenal gerak di tempat",
+     "tujuan": "Murid mampu memilih dan menyebutkan gerak di tempat beserta alasannya.",
+     "konsep": [
+      "Gerak di tempat dilakukan tanpa berpindah posisi",
+      "Ada beberapa macam gerak di tempat",
+      "Alasan memilih gerak perlu disebutkan dengan jelas"
+     ],
+     "miskonsepsi": [
+      "Semua gerakan tubuh membuat badan berpindah tempat"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "sortir",
+      "bacaan"
+     ],
+     "konteks": [
+      "Murid memilih gerakan yang bisa dilakukan di bangku atau tempat sempit",
+      "Murid menebak gerak teman saat bermain tebak gerak"
+     ],
+     "tagAset": [
+      "anak-sekolah",
+      "lapangan"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Gerak menekuk dan gerak memilin",
+     "tujuan": "Murid mampu mempraktikkan gerak menekuk dan gerak memilin.",
+     "konsep": [
+      "Gerak menekuk adalah gerak melipat bagian tubuh pada sendi",
+      "Gerak memilin adalah gerak memutar bagian tubuh",
+      "Gerak menekuk dan memilin termasuk gerak di tempat"
+     ],
+     "miskonsepsi": [
+      "Gerak menekuk dan gerak memilin adalah gerak yang sama"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "cocokkan",
+      "sortir",
+      "runner"
+     ],
+     "konteks": [
+      "Murid memasangkan nama gerak dengan gambar gerakannya",
+      "Murid mengikuti aba-aba guru saat senam pagi"
+     ],
+     "tagAset": [
+      "anak-olahraga",
+      "senam"
+     ]
+    }
+   ]
+  },
+  {
+   "bab": 2,
+   "nama": "Serunya Gerak Berpindah Tempat",
+   "jenisTeks": "informasi",
+   "tema": "jingga",
+   "sub": [
+    {
+     "nama": "Mengenal gerak berpindah tempat",
+     "tujuan": "Murid mampu membedakan gerak berpindah tempat dari gerak di tempat.",
+     "konsep": [
+      "Gerak berpindah tempat membuat posisi tubuh berubah",
+      "Contoh gerak berpindah tempat: berjalan, berlari, melompat",
+      "Gerak berpindah tempat berbeda dengan gerak di tempat"
+     ],
+     "miskonsepsi": [
+      "Gerak berpindah tempat hanya berlari"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "sortir",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Murid memilah kartu gerak di tempat dan gerak berpindah tempat",
+      "Murid bermain jalan dan lari dari pintu kelas ke lapangan"
+     ],
+     "tagAset": [
+      "lapangan",
+      "anak-bermain"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Berpindah tempat dengan aman dan tertib",
+     "tujuan": "Murid mampu memilih sikap yang aman dan tertib saat bergerak berpindah tempat.",
+     "konsep": [
+      "Bergerak dengan memperhatikan teman di sekitar",
+      "Mengikuti aturan dan aba-aba guru",
+      "Memilih tempat yang aman untuk bergerak"
+     ],
+     "miskonsepsi": [
+      "Berlari di mana saja dan tanpa melihat sekitar tidak berbahaya"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir",
+      "runner"
+     ],
+     "konteks": [
+      "Dua teman berlari dan hampir bertabrakan di lapangan",
+      "Murid berbaris tertib menuju lapangan"
+     ],
+     "tagAset": [
+      "lapangan",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 3,
+   "nama": "Bergerak Menggunakan Benda",
+   "jenisTeks": "informasi",
+   "tema": "jingga",
+   "sub": [
+    {
+     "nama": "Macam benda dan cara menggunakannya untuk bergerak",
+     "tujuan": "Murid mampu menyebutkan benda yang dapat digunakan untuk bergerak dan cara memakainya.",
+     "konsep": [
+      "Benda seperti bola dan gelang dapat dipakai untuk bergerak",
+      "Setiap benda punya cara menggunakan yang berbeda",
+      "Benda digunakan sesuai arahan guru"
+     ],
+     "miskonsepsi": [
+      "Semua benda boleh dipakai bermain dengan cara apa saja"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "cocokkan",
+      "sortir"
+     ],
+     "konteks": [
+      "Murid memasangkan benda dengan cara memainkannya",
+      "Murid memilih benda yang aman untuk bermain di lapangan"
+     ],
+     "tagAset": [
+      "bola",
+      "lapangan"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Merawat dan menggunakan benda dengan aman",
+     "tujuan": "Murid mampu memilih sikap yang tepat saat menggunakan dan merapikan benda untuk bergerak.",
+     "konsep": [
+      "Menggunakan benda dengan hati-hati",
+      "Mengembalikan benda ke tempatnya setelah bermain",
+      "Bergantian memakai benda dengan teman"
+     ],
+     "miskonsepsi": [
+      "Merapikan alat setelah bermain bukan tugas murid"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "urutkan",
+      "sortir"
+     ],
+     "konteks": [
+      "Teman tidak mau bergantian memakai bola",
+      "Murid membantu merapikan alat setelah pelajaran PJOK"
+     ],
+     "tagAset": [
+      "bola",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 4,
+   "nama": "Bermain Bersama",
+   "jenisTeks": "campuran",
+   "tema": "antariksa",
+   "sub": [
+    {
+     "nama": "Aturan dan sikap saat bermain bersama",
+     "tujuan": "Murid mampu memilih sikap yang baik dan menaati aturan saat bermain bersama teman.",
+     "konsep": [
+      "Permainan memiliki aturan yang harus dipatuhi",
+      "Bermain jujur, sopan, dan tidak menyakiti teman",
+      "Bergantian dan menunggu giliran"
+     ],
+     "miskonsepsi": [
+      "Bermain bersama berarti boleh menang dengan cara apa pun"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Teman tidak sabar menunggu giliran saat bermain",
+      "Murid mengajak teman yang sendirian untuk ikut bermain"
+     ],
+     "tagAset": [
+      "anak-bermain",
+      "teman"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Bekerja sama dalam permainan",
+     "tujuan": "Murid mampu menjelaskan pentingnya kerja sama dan urutan bermain dalam kelompok.",
+     "konsep": [
+      "Kerja sama membuat permainan berjalan lancar",
+      "Setiap anggota kelompok punya peran",
+      "Permainan dimainkan sesuai urutan dan aturan"
+     ],
+     "miskonsepsi": [
+      "Permainan kelompok hanya bergantung pada pemain yang paling cepat"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "urutkan",
+      "bacaan",
+      "cerita"
+     ],
+     "konteks": [
+      "Satu kelompok menyusun langkah permainan bersama",
+      "Murid saling menyemangati teman yang belum bisa"
+     ],
+     "tagAset": [
+      "tim-olahraga",
+      "lapangan"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 5,
+   "nama": "Sehat dan Bugar",
+   "jenisTeks": "informasi",
+   "tema": "hutan",
+   "sub": [
+    {
+     "nama": "Manfaat bergerak bagi tubuh yang sehat dan bugar",
+     "tujuan": "Murid mampu menjelaskan manfaat bergerak dan berolahraga bagi tubuh.",
+     "konsep": [
+      "Bergerak dan berolahraga membuat tubuh sehat dan bugar",
+      "Tubuh memberi tanda setelah bergerak",
+      "Olahraga dilakukan secara teratur"
+     ],
+     "miskonsepsi": [
+      "Cukup duduk dan bermain gawai agar badan sehat"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "bacaan",
+      "cocokkan",
+      "runner"
+     ],
+     "konteks": [
+      "Murid membandingkan tubuh yang aktif dengan yang kurang bergerak",
+      "Murid bermain di luar rumah bersama keluarga di akhir pekan"
+     ],
+     "tagAset": [
+      "anak-olahraga",
+      "keluarga"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Kebiasaan hidup sehat sehari-hari",
+     "tujuan": "Murid mampu memilih kebiasaan sehat yang menunjang tubuh bugar.",
+     "konsep": [
+      "Makan makanan bergizi",
+      "Istirahat dan tidur cukup",
+      "Menjaga kebersihan diri"
+     ],
+     "miskonsepsi": [
+      "Makanan manis dan jajanan saja sudah cukup untuk tubuh bugar"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "sortir",
+      "cocokkan",
+      "cerita"
+     ],
+     "konteks": [
+      "Murid memilih bekal sehat untuk ke sekolah",
+      "Murid menyusun kebiasaan pagi sebelum berangkat sekolah"
+     ],
+     "tagAset": [
+      "makanan-sehat",
+      "bekal",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 6,
+   "nama": "Sehat dan Aman",
+   "jenisTeks": "campuran",
+   "tema": "hutan",
+   "sub": [
+    {
+     "nama": "Menjaga keamanan diri saat bergerak dan bermain",
+     "tujuan": "Murid mampu memilih tindakan yang aman saat bergerak dan bermain.",
+     "konsep": [
+      "Memilih tempat dan alat bermain yang aman",
+      "Mematuhi aturan keselamatan saat bergerak",
+      "Mengenali hal yang berbahaya saat bermain"
+     ],
+     "miskonsepsi": [
+      "Bermain di tempat yang licin atau berbahaya tidak masalah asal hati-hati sedikit"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "sortir",
+      "cerita"
+     ],
+     "konteks": [
+      "Murid menemukan lantai licin saat akan bermain",
+      "Murid memilih tempat bermain yang aman di sekolah"
+     ],
+     "tagAset": [
+      "lapangan",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Menjaga kebersihan dan meminta bantuan saat terluka",
+     "tujuan": "Murid mampu menjaga kebersihan diri dan melapor kepada guru atau orang dewasa saat terluka.",
+     "konsep": [
+      "Mencuci tangan dan menjaga kebersihan badan",
+      "Melapor kepada guru atau orang dewasa jika terluka",
+      "Menolong teman dengan memanggil orang dewasa"
+     ],
+     "miskonsepsi": [
+      "Luka kecil tidak perlu dilaporkan kepada guru"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "urutkan",
+      "runner"
+     ],
+     "konteks": [
+      "Teman terjatuh dan lututnya lecet saat bermain",
+      "Murid mencuci tangan sebelum makan bekal"
+     ],
+     "tagAset": [
+      "kotak-p3k",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    }
+   ]
+  }
+ ]
+}

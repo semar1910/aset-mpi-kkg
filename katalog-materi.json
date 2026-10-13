@@ -1,5 +1,5 @@
 {
- "versi": "2.0",
+ "versi": "2.1",
  "status": "DRAF — mohon dicek guru KKG sebelum dipakai luas. Bab bertanda perluDicek belum terverifikasi dari daftar isi buku.",
  "rujukan": "Daftar isi buku teks Kemendikdasmen edisi revisi terbaru (Bahasa Indonesia, IPAS) dan buku Matematika Kurikulum Merdeka; CP Kurikulum Merdeka; kisi-kisi TKA SD",
  "prinsip": [
@@ -4870,6 +4870,4722 @@
          ]
         }
        ]
+      }
+     ]
+    }
+   }
+  }
+ },
+ "mapelLiterasi": {
+  "bahasa-indonesia": {
+   "nama": "Bahasa Indonesia",
+   "katalog": "fokus.literasi"
+  },
+  "pancasila": {
+   "nama": "Pendidikan Pancasila",
+   "aturan": [
+    "Tokoh sejarah nyata (misalnya perumus Pancasila) boleh disebut, tetapi fakta tentangnya HANYA yang umum diajarkan di buku kelas ini; jangan mengarang ucapan atau peristiwa. Maskot pemandu tetap tokoh rekaan."
+   ],
+   "kelas": {
+    "1": {
+     "fase": "A",
+     "buku": "Buku Panduan Guru Pendidikan Pancasila untuk SD/MI Kelas I",
+     "materi": [
+      {
+       "id": "pan-1-bab1",
+       "bab": 1,
+       "nama": "Aku dan Teman-Temanku",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "campuran",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Mengenal identitas diriku",
+         "tujuan": "Murid mampu menyebutkan identitas dirinya dan menerima perbedaannya dengan teman.",
+         "konsep": [
+          "nama dan identitas diri",
+          "laki-laki dan perempuan berbeda tetapi sama-sama berharga",
+          "cara berkenalan dengan sopan"
+         ],
+         "miskonsepsi": [
+          "Teman yang berbeda denganku tidak bisa diajak bermain"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cerita",
+          "cocokkan",
+          "bacaan"
+         ],
+         "konteks": [
+          "Hari pertama berkenalan di kelas",
+          "Anak baru yang pemalu",
+          "Kartu nama diri"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "kelas",
+          "teman"
+         ],
+         "perluDicek": true,
+         "id": "pan-1-bab1--mengenal-identitas-diriku",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Aturan main bersama teman",
+         "tujuan": "Murid mampu mengenal dan menerapkan aturan saat bermain bersama teman.",
+         "konsep": [
+          "aturan permainan",
+          "bergiliran",
+          "sikap sportif dan sopan"
+         ],
+         "miskonsepsi": [
+          "Aturan main hanya untuk yang kalah"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita",
+          "urutkan"
+         ],
+         "konteks": [
+          "Bermain petak umpet di halaman",
+          "Rebutan mainan di kelas",
+          "Antre perosotan"
+         ],
+         "tagAset": [
+          "lapangan",
+          "anak-bermain"
+         ],
+         "perluDicek": true,
+         "id": "pan-1-bab1--aturan-main-bersama-teman",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pan-1-bab2",
+       "bab": 2,
+       "nama": "Aku Patuh pada Aturan",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "campuran",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Aturan dalam keluarga",
+         "tujuan": "Murid mampu mengenali aturan di lingkungan keluarga.",
+         "konsep": [
+          "aturan di rumah",
+          "anggota keluarga",
+          "patuh berarti melaksanakan aturan"
+         ],
+         "miskonsepsi": [
+          "Aturan di rumah membuat anak tidak boleh senang"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "bacaan"
+         ],
+         "konteks": [
+          "Waktu makan bersama",
+          "Merapikan mainan",
+          "Izin sebelum bermain di luar"
+         ],
+         "tagAset": [
+          "keluarga",
+          "rumah"
+         ],
+         "perluDicek": true,
+         "id": "pan-1-bab2--aturan-dalam-keluarga",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Mematuhi aturan di rumah",
+         "tujuan": "Murid mampu menceritakan pengalaman mematuhi aturan di rumah.",
+         "konsep": [
+          "contoh perilaku patuh",
+          "akibat tidak patuh",
+          "meminta maaf dan memperbaiki"
+         ],
+         "miskonsepsi": [
+          "Patuh hanya kalau ada yang melihat"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "urutkan",
+          "runner"
+         ],
+         "konteks": [
+          "Bangun pagi dan merapikan tempat tidur",
+          "Adik lupa menyimpan sepatu",
+          "Belajar sebelum menonton"
+         ],
+         "tagAset": [
+          "keluarga",
+          "rumah",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pan-1-bab2--mematuhi-aturan-di-rumah",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pan-1-bab3",
+       "bab": 3,
+       "nama": "Aku Mengenal Indonesia",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "informasi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Bendera dan lagu kebangsaan",
+         "tujuan": "Murid mampu mengenali bendera Merah Putih dan lagu kebangsaan Indonesia Raya.",
+         "konsep": [
+          "bendera Merah Putih",
+          "warna merah di atas, putih di bawah",
+          "sikap hormat saat lagu kebangsaan"
+         ],
+         "miskonsepsi": [
+          "Bendera boleh dipasang terbalik"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir",
+          "bacaan"
+         ],
+         "konteks": [
+          "Upacara hari Senin",
+          "Menggambar bendera",
+          "Bendera di depan rumah saat 17 Agustus"
+         ],
+         "tagAset": [
+          "bendera",
+          "upacara",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pan-1-bab3--bendera-dan-lagu-kebangsaan",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Lambang Garuda Pancasila",
+         "tujuan": "Murid mampu menyebutkan simbol-simbol pada lambang Garuda Pancasila.",
+         "konsep": [
+          "Garuda Pancasila lambang negara",
+          "lima simbol sila",
+          "nama sila dan simbolnya"
+         ],
+         "miskonsepsi": [
+          "Garuda dan Pancasila adalah dua hal yang terpisah"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cocokkan",
+          "urutkan",
+          "runner"
+         ],
+         "konteks": [
+          "Lambang di dinding kelas",
+          "Kartu simbol sila",
+          "Menyusun gambar Garuda"
+         ],
+         "tagAset": [
+          "garuda-pancasila",
+          "kelas"
+         ],
+         "perluDicek": true,
+         "id": "pan-1-bab3--lambang-garuda-pancasila",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pan-1-bab4",
+       "bab": 4,
+       "nama": "Aku dan Lingkunganku",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "informasi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Lingkungan rumah dan sekolah",
+         "tujuan": "Murid mampu mengenali lingkungan tempat tinggal dan sekolah serta sikap peduli di dalamnya.",
+         "konsep": [
+          "lingkungan rumah dan sekolah",
+          "menjaga kebersihan",
+          "membuang sampah pada tempatnya"
+         ],
+         "miskonsepsi": [
+          "Menjaga kebersihan hanya tugas petugas kebersihan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "bacaan",
+          "runner"
+         ],
+         "konteks": [
+          "Piket kelas",
+          "Halaman sekolah yang kotor",
+          "Sampah plastik di selokan"
+         ],
+         "tagAset": [
+          "sekolah",
+          "tempat-sampah",
+          "taman"
+         ],
+         "perluDicek": true,
+         "id": "pan-1-bab4--lingkungan-rumah-dan-sekolah",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Aku suka bergotong royong",
+         "tujuan": "Murid mampu menerapkan nilai gotong royong di lingkungan keluarga dan sekolah.",
+         "konsep": [
+          "gotong royong",
+          "kerja bersama lebih ringan",
+          "membantu tanpa diminta"
+         ],
+         "miskonsepsi": [
+          "Gotong royong hanya untuk orang dewasa"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir",
+          "urutkan"
+         ],
+         "konteks": [
+          "Kerja bakti membersihkan kelas",
+          "Membantu ibu menata meja",
+          "Menanam bunga bersama"
+         ],
+         "tagAset": [
+          "gotong-royong",
+          "kelas",
+          "taman"
+         ],
+         "perluDicek": true,
+         "id": "pan-1-bab4--aku-suka-bergotong-royong",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      }
+     ]
+    },
+    "2": {
+     "fase": "A",
+     "buku": "Buku Panduan Guru Pendidikan Pancasila untuk SD/MI Kelas II",
+     "materi": [
+      {
+       "id": "pan-2-bab1",
+       "bab": 1,
+       "nama": "Aku Patuh Aturan",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "campuran",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Macam aturan dalam keluarga",
+         "tujuan": "Murid mampu mengidentifikasi berbagai aturan di lingkungan keluarga.",
+         "konsep": [
+          "aturan dalam keluarga",
+          "aturan dibuat untuk kebaikan bersama",
+          "contoh aturan di rumah"
+         ],
+         "miskonsepsi": [
+          "Aturan keluarga hanya berlaku untuk anak"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "bacaan"
+         ],
+         "konteks": [
+          "Jadwal belajar dan bermain",
+          "Aturan makan bersama",
+          "Menyimpan barang pada tempatnya"
+         ],
+         "tagAset": [
+          "keluarga",
+          "rumah"
+         ],
+         "id": "pan-2-bab1--macam-aturan-dalam-keluarga",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Sikap mematuhi aturan keluarga",
+         "tujuan": "Murid mampu menunjukkan dan menceritakan sikap mematuhi aturan di lingkungan keluarga.",
+         "konsep": [
+          "sikap patuh",
+          "tanggung jawab di rumah",
+          "akibat melanggar aturan"
+         ],
+         "miskonsepsi": [
+          "Patuh berarti takut"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "urutkan",
+          "sortir"
+         ],
+         "konteks": [
+          "Pulang sebelum magrib",
+          "Adik dan kakak berbagi tugas",
+          "Kakak mengingatkan dengan sopan"
+         ],
+         "tagAset": [
+          "keluarga",
+          "anak-sekolah",
+          "rumah"
+         ],
+         "id": "pan-2-bab1--sikap-mematuhi-aturan-keluarga",
+         "jenisTeks": "campuran"
+        }
+       ]
+      },
+      {
+       "id": "pan-2-bab2",
+       "bab": 2,
+       "nama": "Aku Berperilaku Pancasila",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "informasi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Lambang Pancasila",
+         "tujuan": "Murid mampu mengidentifikasi simbol dan sila-sila Pancasila dalam lambang Garuda Pancasila serta mengurutkannya.",
+         "konsep": [
+          "lima simbol dan lima sila",
+          "urutan sila 1 sampai 5",
+          "Garuda Pancasila lambang negara"
+         ],
+         "miskonsepsi": [
+          "Urutan sila boleh ditukar"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "cocokkan",
+          "urutkan",
+          "runner"
+         ],
+         "konteks": [
+          "Lambang di ruang kelas",
+          "Permainan kartu sila",
+          "Menempel simbol di perisai"
+         ],
+         "tagAset": [
+          "garuda-pancasila",
+          "kelas"
+         ],
+         "id": "pan-2-bab2--lambang-pancasila",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Perumus Pancasila",
+         "tujuan": "Murid mampu mengenal para perumus Pancasila.",
+         "konsep": [
+          "perumus Pancasila adalah tokoh bangsa",
+          "mereka bermusyawarah",
+          "meneladani sikap baik tokoh"
+         ],
+         "miskonsepsi": [
+          "Pancasila dibuat oleh satu orang saja"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Kisah para tokoh berdiskusi",
+          "Kartu tokoh bangsa",
+          "Meneladani sikap jujur"
+         ],
+         "tagAset": [
+          "tokoh-bangsa",
+          "garuda-pancasila"
+         ],
+         "perluDicek": true,
+         "id": "pan-2-bab2--perumus-pancasila",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pan-2-bab3",
+       "bab": 3,
+       "nama": "Aku dan Teman-Temanku",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "campuran",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Hobi dan perbedaan teman",
+         "tujuan": "Murid mampu menyebutkan identitas diri sesuai hobi dan menerima perbedaan diri dengan orang lain.",
+         "konsep": [
+          "hobi",
+          "perbedaan ciri fisik dan hobi",
+          "menerima perbedaan"
+         ],
+         "miskonsepsi": [
+          "Teman harus sama denganku agar bisa akrab"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Teman suka menggambar, aku suka menari",
+          "Lomba kelas",
+          "Berbeda tapi bermain bersama"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "teman",
+          "kelas"
+         ],
+         "id": "pan-2-bab3--hobi-dan-perbedaan-teman",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Simbol keberagaman agama",
+         "tujuan": "Murid mampu mengenal dan menghargai perbedaan simbol keberagaman antarumat beragama dan kepercayaan.",
+         "konsep": [
+          "agama dan kepercayaan berbeda-beda",
+          "simbol keberagaman agama",
+          "saling menghargai"
+         ],
+         "miskonsepsi": [
+          "Menghargai berarti ikut beribadah"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cocokkan",
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Teman merayakan hari raya berbeda",
+          "Saling mengucapkan selamat",
+          "Tempat ibadah di sekitar sekolah"
+         ],
+         "tagAset": [
+          "teman",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pan-2-bab3--simbol-keberagaman-agama",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pan-2-bab4",
+       "bab": 4,
+       "nama": "Aku Peduli Lingkungan",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "informasi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Sikap menjaga lingkungan",
+         "tujuan": "Murid mampu menunjukkan sikap peduli dan mempraktikkan perilaku menjaga lingkungan sekitar.",
+         "konsep": [
+          "menjaga kebersihan sekolah",
+          "memilah sampah",
+          "hemat air"
+         ],
+         "miskonsepsi": [
+          "Sampah kecil tidak apa-apa dibuang sembarangan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "bacaan",
+          "runner"
+         ],
+         "konteks": [
+          "Piket kebun sekolah",
+          "Sampah bekas bekal",
+          "Keran air yang menetes"
+         ],
+         "tagAset": [
+          "sekolah",
+          "tempat-sampah",
+          "taman"
+         ],
+         "id": "pan-2-bab4--sikap-menjaga-lingkungan",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Bekerja sama menjaga lingkungan",
+         "tujuan": "Murid mampu mengidentifikasi bentuk kerja sama di lingkungan tempat tinggal dan sekolah.",
+         "konsep": [
+          "kerja sama",
+          "pembagian tugas",
+          "hasil kerja bersama"
+         ],
+         "miskonsepsi": [
+          "Kalau ada yang mengerjakan, aku boleh diam"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "urutkan",
+          "sortir"
+         ],
+         "konteks": [
+          "Kerja bakti di kampung",
+          "Membersihkan selokan bersama",
+          "Menanam pohon di sekolah"
+         ],
+         "tagAset": [
+          "gotong-royong",
+          "taman",
+          "sekolah"
+         ],
+         "id": "pan-2-bab4--bekerja-sama-menjaga-lingkungan",
+         "jenisTeks": "informasi"
+        }
+       ]
+      }
+     ]
+    },
+    "3": {
+     "fase": "B",
+     "buku": "Buku Panduan Guru Pendidikan Pancasila untuk SD/MI Kelas III",
+     "materi": [
+      {
+       "id": "pan-3-bab1",
+       "bab": 1,
+       "nama": "Aku Anak Indonesia",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "campuran",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Identitas diri, teman, dan keluarga",
+         "tujuan": "Murid mampu menghargai identitas diri, teman, dan keluarga sesuai budaya, suku bangsa, bahasa, agama, dan kepercayaan.",
+         "konsep": [
+          "identitas diri",
+          "identitas keluarga",
+          "setiap orang punya identitas berbeda yang patut dihargai"
+         ],
+         "miskonsepsi": [
+          "Identitas yang berbeda dariku kurang baik"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Wawancara teman tentang keluarganya",
+          "Berkenalan dengan murid pindahan",
+          "Bahasa di rumah berbeda-beda"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "keluarga",
+          "kelas"
+         ],
+         "id": "pan-3-bab1--identitas-diri-teman-dan",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Tempat tinggalku bagian dari NKRI",
+         "tujuan": "Murid mampu mengidentifikasi lingkungan tempat tinggal (alamat RT/RW) sebagai bagian tidak terpisahkan dari wilayah NKRI.",
+         "konsep": [
+          "alamat: RT, RW",
+          "wilayah tempat tinggal",
+          "tempat tinggal bagian dari NKRI"
+         ],
+         "miskonsepsi": [
+          "Kampungku terpisah dari Indonesia"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "bacaan",
+          "runner"
+         ],
+         "konteks": [
+          "Menulis alamat lengkap",
+          "Mengamati lingkungan sekitar rumah",
+          "Peta wilayah sederhana"
+         ],
+         "tagAset": [
+          "peta-indonesia",
+          "bendera",
+          "rumah"
+         ],
+         "id": "pan-3-bab1--tempat-tinggalku-bagian-dari",
+         "jenisTeks": "campuran"
+        }
+       ]
+      },
+      {
+       "id": "pan-3-bab2",
+       "bab": 2,
+       "nama": "Aku Patuh Aturan",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "campuran",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Aturan di sekolah dan lingkungan tempat tinggal",
+         "tujuan": "Murid mampu mengidentifikasi dan melaksanakan aturan di sekolah dan lingkungan tempat tinggal.",
+         "konsep": [
+          "aturan berdasarkan tempat berlakunya",
+          "pelanggaran dan sanksi",
+          "membuat aturan kelas bersama"
+         ],
+         "miskonsepsi": [
+          "Aturan hanya dibuat oleh guru"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Menyusun aturan kelas",
+          "Aturan di perpustakaan",
+          "Aturan ronda atau lingkungan RT"
+         ],
+         "tagAset": [
+          "sekolah",
+          "kelas",
+          "anak-sekolah"
+         ],
+         "id": "pan-3-bab2--aturan-di-sekolah-dan",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Hak dan kewajiban di rumah dan sekolah",
+         "tujuan": "Murid mampu mengidentifikasi dan melaksanakan hak dan kewajiban sebagai anggota keluarga dan warga sekolah.",
+         "konsep": [
+          "hak",
+          "kewajiban",
+          "hak dan kewajiban harus seimbang"
+         ],
+         "miskonsepsi": [
+          "Hak boleh diminta tanpa melaksanakan kewajiban"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita",
+          "runner"
+         ],
+         "konteks": [
+          "Hak belajar dan kewajiban piket",
+          "Poster ajakan menjalankan kewajiban",
+          "Membantu orang tua di rumah"
+         ],
+         "tagAset": [
+          "keluarga",
+          "sekolah",
+          "kelas"
+         ],
+         "id": "pan-3-bab2--hak-dan-kewajiban-di",
+         "jenisTeks": "campuran"
+        }
+       ]
+      },
+      {
+       "id": "pan-3-bab3",
+       "bab": 3,
+       "nama": "Berbeda Itu Indah",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "informasi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Keberagaman budaya Indonesia",
+         "tujuan": "Murid mampu mengidentifikasi, membedakan, dan menghargai identitas diri, keluarga, dan teman sesuai budaya, suku bangsa, dan bahasa.",
+         "konsep": [
+          "suku bangsa",
+          "pakaian adat, rumah adat, tarian, dan bahasa daerah",
+          "bersatu dalam keberagaman"
+         ],
+         "miskonsepsi": [
+          "Budaya daerah lain lebih rendah daripada budayaku"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir",
+          "bacaan"
+         ],
+         "konteks": [
+          "Pameran budaya di sekolah",
+          "Lagu daerah dari teman",
+          "Permainan tradisional"
+         ],
+         "tagAset": [
+          "pakaian-adat",
+          "rumah-adat",
+          "peta-indonesia"
+         ],
+         "id": "pan-3-bab3--keberagaman-budaya-indonesia",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Bahasa Indonesia sebagai bahasa persatuan",
+         "tujuan": "Murid mampu menggunakan bahasa Indonesia sebagai bahasa persatuan dalam percakapan dengan teman dari berbagai daerah.",
+         "konsep": [
+          "bahasa daerah dan bahasa Indonesia",
+          "bahasa persatuan",
+          "melestarikan budaya"
+         ],
+         "miskonsepsi": [
+          "Memakai bahasa daerah berarti tidak cinta Indonesia"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "Dua teman beda daerah berbincang",
+          "Menyanyikan lagu daerah",
+          "Menyusun percakapan sederhana"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "teman",
+          "peta-indonesia"
+         ],
+         "perluDicek": true,
+         "id": "pan-3-bab3--bahasa-indonesia-sebagai-bahasa",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pan-3-bab4",
+       "bab": 4,
+       "nama": "Ayo Mengenal Pancasila",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "campuran",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Makna sila-sila Pancasila di rumah dan sekolah",
+         "tujuan": "Murid mampu mempraktikkan makna sila-sila Pancasila dalam kehidupan sehari-hari di lingkungan keluarga dan sekolah.",
+         "konsep": [
+          "makna tiap sila",
+          "contoh pengamalan sila di keluarga",
+          "contoh pengamalan sila di sekolah"
+         ],
+         "miskonsepsi": [
+          "Sila hanya untuk dihafal, bukan dilakukan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Bermain tebak kata sila",
+          "Naskah drama sederhana",
+          "Berdoa bersama sebelum belajar"
+         ],
+         "tagAset": [
+          "garuda-pancasila",
+          "sekolah",
+          "keluarga"
+         ],
+         "id": "pan-3-bab4--makna-sila-sila-pancasila",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Karakter perumus Pancasila",
+         "tujuan": "Murid mampu meneladani karakter para perumus Pancasila.",
+         "konsep": [
+          "perumus Pancasila",
+          "karakter tokoh yang patut diteladani",
+          "meneladani dalam perbuatan"
+         ],
+         "miskonsepsi": [
+          "Meneladani tokoh cukup dengan mengetahui namanya"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Kisah para tokoh bermusyawarah",
+          "Bermain peran meneladani tokoh",
+          "Kartu karakter"
+         ],
+         "tagAset": [
+          "tokoh-bangsa",
+          "garuda-pancasila"
+         ],
+         "perluDicek": true,
+         "id": "pan-3-bab4--karakter-perumus-pancasila",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      }
+     ]
+    },
+    "4": {
+     "fase": "B",
+     "buku": "Buku Panduan Guru Pendidikan Pancasila untuk SD/MI Kelas IV",
+     "materi": [
+      {
+       "id": "pan-4-bab1",
+       "bab": 1,
+       "nama": "Mengenal Lingkungan Sekitar",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "informasi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Identitas diri, keluarga, dan teman",
+         "tujuan": "Murid mampu mengidentifikasi, membedakan, dan menghargai identitas diri, keluarga, dan teman sesuai budaya, suku bangsa, bahasa, agama, dan kepercayaan.",
+         "konsep": [
+          "identitas diri, keluarga, dan teman",
+          "perbedaan suku, bahasa, dan agama",
+          "menghargai perbedaan"
+         ],
+         "miskonsepsi": [
+          "Perbedaan identitas menjadi alasan memilih teman"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "Kenalan dengan teman beda daerah",
+          "Silsilah keluarga sederhana",
+          "Kegiatan kelas lintas teman"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "keluarga",
+          "teman"
+         ],
+         "id": "pan-4-bab1--identitas-diri-keluarga-dan",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Desa, kelurahan, dan kecamatan",
+         "tujuan": "Murid mampu mengenal lingkungan tempat tinggal (desa/kelurahan dan kecamatan) sebagai bagian dari wilayah NKRI.",
+         "konsep": [
+          "desa dan kelurahan",
+          "kecamatan",
+          "tingkatan wilayah dalam NKRI"
+         ],
+         "miskonsepsi": [
+          "Desa dan kelurahan itu sama persis"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "Kantor desa atau kelurahan",
+          "Peta wilayah kecamatan",
+          "Perangkat desa atau lurah"
+         ],
+         "tagAset": [
+          "peta-indonesia",
+          "kantor-desa",
+          "bendera"
+         ],
+         "id": "pan-4-bab1--desa-kelurahan-dan-kecamatan",
+         "jenisTeks": "informasi"
+        }
+       ]
+      },
+      {
+       "id": "pan-4-bab2",
+       "bab": 2,
+       "nama": "Aku Anak yang Disiplin",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "campuran",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Aturan di lingkungan tempat tinggal",
+         "tujuan": "Murid mampu memahami dan membuat aturan di lingkungan tempat tinggal.",
+         "konsep": [
+          "fungsi aturan",
+          "aturan dibuat bersama dan untuk kebaikan bersama",
+          "pelanggaran dan sanksi"
+         ],
+         "miskonsepsi": [
+          "Aturan membatasi kebebasan saja"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Aturan di kampung",
+          "Membuat aturan bermain bersama",
+          "Jam malam anak"
+         ],
+         "tagAset": [
+          "kampung",
+          "anak-bermain",
+          "rumah"
+         ],
+         "id": "pan-4-bab2--aturan-di-lingkungan-tempat",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Hak dan kewajiban warga sekolah",
+         "tujuan": "Murid mampu mengidentifikasi dan melaksanakan hak dan kewajiban sebagai warga sekolah.",
+         "konsep": [
+          "hak warga sekolah",
+          "kewajiban warga sekolah",
+          "hak dan kewajiban saling berkaitan"
+         ],
+         "miskonsepsi": [
+          "Hak lebih penting daripada kewajiban"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita",
+          "runner"
+         ],
+         "konteks": [
+          "Piket dan hak mendapat pelajaran",
+          "Kasus meminjam buku perpustakaan",
+          "Menjaga fasilitas sekolah"
+         ],
+         "tagAset": [
+          "sekolah",
+          "kelas",
+          "perpustakaan"
+         ],
+         "id": "pan-4-bab2--hak-dan-kewajiban-warga",
+         "jenisTeks": "campuran"
+        }
+       ]
+      },
+      {
+       "id": "pan-4-bab3",
+       "bab": 3,
+       "nama": "Kerja Sama di Lingkunganku",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "campuran",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Keberagaman, gotong royong, dan kompak bersatu",
+         "tujuan": "Murid mampu melakukan kerja sama dan menunjukkan sikap kompak dan bersatu dalam keberagaman sosial dan budaya.",
+         "konsep": [
+          "keberagaman sosial dan budaya",
+          "gotong royong",
+          "kompak dan bersatu menjaga persatuan"
+         ],
+         "miskonsepsi": [
+          "Beda budaya membuat sulit bekerja sama"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir",
+          "bacaan"
+         ],
+         "konteks": [
+          "Kerja bakti dengan tetangga beda suku",
+          "Panitia acara 17 Agustus",
+          "Lomba antarkelompok"
+         ],
+         "tagAset": [
+          "gotong-royong",
+          "kampung",
+          "bendera"
+         ],
+         "id": "pan-4-bab3--keberagaman-gotong-royong-dan",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Bahasa Indonesia bahasa persatuan",
+         "tujuan": "Murid mampu menunjukkan sikap bangga menjadi anak Indonesia dengan bahasa Indonesia sebagai bahasa persatuan.",
+         "konsep": [
+          "bahasa Indonesia sebagai bahasa persatuan",
+          "Sumpah Pemuda",
+          "bangga berbahasa Indonesia"
+         ],
+         "miskonsepsi": [
+          "Bahasa daerah harus ditinggalkan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "Teman dari berbagai daerah bercakap",
+          "Lomba pidato",
+          "Menulis surat untuk teman pena"
+         ],
+         "tagAset": [
+          "peta-indonesia",
+          "anak-sekolah",
+          "buku"
+         ],
+         "perluDicek": true,
+         "id": "pan-4-bab3--bahasa-indonesia-bahasa-persatuan",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pan-4-bab4",
+       "bab": 4,
+       "nama": "Pancasila dalam Diriku",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "campuran",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Makna sila dan perilaku sesuai nilai Pancasila",
+         "tujuan": "Murid mampu menunjukkan, mengidentifikasi, dan mempraktikkan makna sila-sila Pancasila dalam kehidupan sehari-hari.",
+         "konsep": [
+          "makna sila 1 sampai 5",
+          "contoh sikap sesuai sila",
+          "kegiatan masyarakat yang mencerminkan sila"
+         ],
+         "miskonsepsi": [
+          "Mengamalkan sila hanya saat upacara"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Tetangga sakit dijenguk bersama",
+          "Musyawarah memilih ketua kelas",
+          "Menghormati teman beda agama"
+         ],
+         "tagAset": [
+          "garuda-pancasila",
+          "kampung",
+          "sekolah"
+         ],
+         "id": "pan-4-bab4--makna-sila-dan-perilaku",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Sejarah dan karakter perumus Pancasila",
+         "tujuan": "Murid mampu mengenal sejarah perumusan Pancasila dan meneladani karakter para perumusnya.",
+         "konsep": [
+          "sejarah singkat perumusan Pancasila",
+          "tokoh perumus",
+          "karakter yang diteladani"
+         ],
+         "miskonsepsi": [
+          "Pancasila dirumuskan dalam satu hari oleh satu orang"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "bacaan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Garis waktu sederhana",
+          "Kisah tokoh bermusyawarah",
+          "Kartu karakter tokoh"
+         ],
+         "tagAset": [
+          "tokoh-bangsa",
+          "garuda-pancasila"
+         ],
+         "perluDicek": true,
+         "id": "pan-4-bab4--sejarah-dan-karakter-perumus",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      }
+     ]
+    },
+    "5": {
+     "fase": "C",
+     "buku": "Buku Panduan Guru Pendidikan Pancasila untuk SD/MI Kelas V",
+     "materi": [
+      {
+       "id": "pan-5-bab1",
+       "bab": 1,
+       "nama": "Pancasila dalam Kehidupanku",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "informasi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Kronologi lahirnya Pancasila dan sikap teladan pendiri bangsa",
+         "tujuan": "Murid mampu memahami kronologi sejarah kelahiran Pancasila dan meneladani sikap para perumusnya.",
+         "konsep": [
+          "kronologi lahirnya Pancasila",
+          "para perumus dan peran mereka",
+          "sikap teladan pendiri bangsa"
+         ],
+         "miskonsepsi": [
+          "Pancasila langsung jadi dalam satu sidang"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "bacaan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Lini masa kelahiran Pancasila",
+          "Kisah sidang BPUPKI",
+          "Kajian karakter tokoh"
+         ],
+         "tagAset": [
+          "tokoh-bangsa",
+          "garuda-pancasila",
+          "sejarah"
+         ],
+         "id": "pan-5-bab1--kronologi-lahirnya-pancasila-dan",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Makna sila dan refleksi perilaku",
+         "tujuan": "Murid mampu mengidentifikasi makna sila-sila Pancasila, keterhubungannya, dan maknanya sebagai dasar negara, pandangan hidup, serta ideologi bangsa.",
+         "konsep": [
+          "makna tiap sila",
+          "sila saling berhubungan",
+          "Pancasila dasar negara, pandangan hidup, dan ideologi"
+         ],
+         "miskonsepsi": [
+          "Sila bisa dipraktikkan satu-satu saja"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Kartu Pancasila untuk pembiasaan",
+          "Refleksi perilaku seminggu",
+          "Kasus perselisihan di kelas"
+         ],
+         "tagAset": [
+          "garuda-pancasila",
+          "anak-sekolah",
+          "kelas"
+         ],
+         "id": "pan-5-bab1--makna-sila-dan-refleksi",
+         "jenisTeks": "informasi"
+        }
+       ]
+      },
+      {
+       "id": "pan-5-bab2",
+       "bab": 2,
+       "nama": "Norma dalam Kehidupanku",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "campuran",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Norma, hak, dan kewajiban",
+         "tujuan": "Murid mampu mengidentifikasi bentuk-bentuk norma, hak, dan kewajiban sebagai anggota keluarga, warga sekolah, dan warga negara.",
+         "konsep": [
+          "hakikat norma",
+          "hak dan kewajiban",
+          "norma berlaku di keluarga, sekolah, dan negara"
+         ],
+         "miskonsepsi": [
+          "Norma hanya aturan tertulis"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "Pohon norma kelas",
+          "Wawancara guru tentang aturan",
+          "Drama penerapan norma"
+         ],
+         "tagAset": [
+          "sekolah",
+          "keluarga",
+          "kelas"
+         ],
+         "id": "pan-5-bab2--norma-hak-dan-kewajiban",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Musyawarah dalam kehidupan sehari-hari",
+         "tujuan": "Murid mampu mempraktikkan musyawarah untuk membuat kesepakatan dan aturan bersama di lingkungan keluarga dan sekolah.",
+         "konsep": [
+          "musyawarah mufakat",
+          "menghargai pendapat",
+          "kesepakatan bersama"
+         ],
+         "miskonsepsi": [
+          "Keputusan musyawarah diambil oleh yang paling keras bicara"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "urutkan",
+          "sortir"
+         ],
+         "konteks": [
+          "Memilih kegiatan class meeting",
+          "Menentukan jadwal piket",
+          "Rapat keluarga memilih tempat liburan"
+         ],
+         "tagAset": [
+          "musyawarah",
+          "kelas",
+          "keluarga"
+         ],
+         "id": "pan-5-bab2--musyawarah-dalam-kehidupan-sehari",
+         "jenisTeks": "campuran"
+        }
+       ]
+      },
+      {
+       "id": "pan-5-bab3",
+       "bab": 3,
+       "nama": "Keragaman Budaya Indonesiaku",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "informasi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Jenis keragaman budaya daerah",
+         "tujuan": "Murid mampu menunjukkan keragaman budaya daerah Indonesia dan contohnya.",
+         "konsep": [
+          "suku bangsa dan bahasa daerah",
+          "pakaian, rumah, senjata, dan tarian tradisional",
+          "makanan, alat musik, dan lagu daerah"
+         ],
+         "miskonsepsi": [
+          "Satu daerah hanya punya satu budaya"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir",
+          "bacaan"
+         ],
+         "konteks": [
+          "Pameran budaya daerah",
+          "Poster budaya provinsi",
+          "Pertunjukan seni daerah"
+         ],
+         "tagAset": [
+          "pakaian-adat",
+          "rumah-adat",
+          "peta-indonesia"
+         ],
+         "id": "pan-5-bab3--jenis-keragaman-budaya-daerah",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Pelestarian budaya daerah",
+         "tujuan": "Murid mampu menyajikan kegiatan pelestarian budaya daerah dalam bingkai Bhinneka Tunggal Ika.",
+         "konsep": [
+          "Bhinneka Tunggal Ika",
+          "bentuk pelestarian budaya",
+          "menghormati keberagaman"
+         ],
+         "miskonsepsi": [
+          "Melestarikan budaya hanya tugas pemerintah"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir",
+          "runner"
+         ],
+         "konteks": [
+          "Sanggar tari di kampung",
+          "Belajar alat musik tradisional",
+          "Membuat komik budaya"
+         ],
+         "tagAset": [
+          "tari-tradisional",
+          "alat-musik",
+          "anak-sekolah"
+         ],
+         "id": "pan-5-bab3--pelestarian-budaya-daerah",
+         "jenisTeks": "informasi"
+        }
+       ]
+      },
+      {
+       "id": "pan-5-bab4",
+       "bab": 4,
+       "nama": "Aku dan Lingkungan Sekitarku",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "informasi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Wilayahku bagian dari NKRI",
+         "tujuan": "Murid mampu mengidentifikasi kabupaten/kota dan provinsi sebagai bagian dari wilayah NKRI serta karakteristik wilayah tempat tinggal.",
+         "konsep": [
+          "kabupaten/kota dan provinsi",
+          "karakteristik wilayah tempat tinggal",
+          "wilayah bagian dari NKRI"
+         ],
+         "miskonsepsi": [
+          "Provinsi dan kabupaten adalah negara kecil yang berdiri sendiri"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "cocokkan",
+          "bacaan"
+         ],
+         "konteks": [
+          "Menjelajah sekolahku",
+          "Peta provinsi tempat tinggal",
+          "Ciri khas daerah sendiri"
+         ],
+         "tagAset": [
+          "peta-indonesia",
+          "bendera",
+          "sekolah"
+         ],
+         "id": "pan-5-bab4--wilayahku-bagian-dari-nkri",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Gotong royong sebagai wujud bela negara",
+         "tujuan": "Murid mampu memahami makna dan mempraktikkan gotong royong untuk menjaga persatuan dan kesatuan di lingkungan sekolah dan sekitar.",
+         "konsep": [
+          "makna gotong royong",
+          "gotong royong menjaga persatuan",
+          "gotong royong wujud bela negara"
+         ],
+         "miskonsepsi": [
+          "Bela negara hanya dilakukan tentara"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir",
+          "runner"
+         ],
+         "konteks": [
+          "Kerja bakti sekolah",
+          "Andai aku menjadi pemimpin daerah",
+          "Membantu warga saat banjir"
+         ],
+         "tagAset": [
+          "gotong-royong",
+          "sekolah",
+          "kampung"
+         ],
+         "id": "pan-5-bab4--gotong-royong-sebagai-wujud",
+         "jenisTeks": "informasi"
+        }
+       ]
+      }
+     ]
+    },
+    "6": {
+     "fase": "C",
+     "buku": "Buku Panduan Guru Pendidikan Pancasila untuk SD/MI Kelas VI",
+     "materi": [
+      {
+       "id": "pan-6-bab1",
+       "bab": 1,
+       "nama": "Belajar Pancasila dengan Menyenangkan",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "campuran",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Hubungan nilai Pancasila dalam praktik hidup",
+         "tujuan": "Murid mampu menjelaskan makna sila-sila Pancasila serta keterhubungan sila satu dengan yang lain.",
+         "konsep": [
+          "makna tiap sila",
+          "kelima sila satu kesatuan utuh",
+          "nilai Pancasila dalam praktik hidup"
+         ],
+         "miskonsepsi": [
+          "Setiap sila berdiri sendiri"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "Permainan tradisional dan nilai sila",
+          "Wawancara orang tua tentang nilai hidup",
+          "Rencana aktivitas pribadi"
+         ],
+         "tagAset": [
+          "garuda-pancasila",
+          "anak-bermain",
+          "keluarga"
+         ],
+         "id": "pan-6-bab1--hubungan-nilai-pancasila-dalam",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Belajar mengamalkan Pancasila",
+         "tujuan": "Murid mampu menunjukkan contoh pengamalan Pancasila dalam kehidupan sehari-hari.",
+         "konsep": [
+          "pengamalan sila di rumah dan sekolah",
+          "teks cerita bernilai Pancasila",
+          "menyimpulkan pesan cerita"
+         ],
+         "miskonsepsi": [
+          "Mengamalkan Pancasila hanya urusan pemerintah"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir",
+          "bacaan"
+         ],
+         "konteks": [
+          "Cerita anak menolong teman",
+          "Pembagian tugas kelompok",
+          "Menolak mencontek"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "sekolah",
+          "garuda-pancasila"
+         ],
+         "id": "pan-6-bab1--belajar-mengamalkan-pancasila",
+         "jenisTeks": "campuran"
+        }
+       ]
+      },
+      {
+       "id": "pan-6-bab2",
+       "bab": 2,
+       "nama": "Mengamalkan Pancasila untuk Kebahagiaan Bersama",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "campuran",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Pancasila sebagai pandangan hidup bangsa",
+         "tujuan": "Murid mampu menguraikan makna Pancasila sebagai dasar negara, pandangan hidup, dan ideologi bangsa dan negara.",
+         "konsep": [
+          "dasar negara",
+          "pandangan hidup",
+          "ideologi bangsa dan negara"
+         ],
+         "miskonsepsi": [
+          "Dasar negara, pandangan hidup, dan ideologi itu sama persis"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir",
+          "bacaan"
+         ],
+         "konteks": [
+          "Berita warga saling membantu",
+          "Video kegiatan masyarakat",
+          "Menulis cerita pengamalan sila"
+         ],
+         "tagAset": [
+          "garuda-pancasila",
+          "bendera",
+          "kampung"
+         ],
+         "id": "pan-6-bab2--pancasila-sebagai-pandangan-hidup",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Mengajak teman mengamalkan Pancasila",
+         "tujuan": "Murid mampu mengajak teman mengamalkan Pancasila dalam kehidupan sehari-hari.",
+         "konsep": [
+          "memberi contoh baik",
+          "mengajak dengan santun",
+          "kebahagiaan bersama"
+         ],
+         "miskonsepsi": [
+          "Mengajak berarti memaksa"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir",
+          "runner"
+         ],
+         "konteks": [
+          "Teman membuang sampah sembarangan",
+          "Poster ajakan di mading",
+          "Pantun ajakan berbuat baik"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "teman",
+          "sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pan-6-bab2--mengajak-teman-mengamalkan-pancasila",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pan-6-bab3",
+       "bab": 3,
+       "nama": "Mengenal Norma, Hak, dan Kewajiban dalam Kehidupan Berbangsa dan Bernegara",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "informasi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Norma, hak, dan kewajiban",
+         "tujuan": "Murid mampu mengidentifikasi bentuk-bentuk norma, hak, dan kewajiban dalam kedudukannya sebagai warga negara dan menunjukkan contohnya.",
+         "konsep": [
+          "norma",
+          "hak",
+          "kewajiban",
+          "keseimbangan hak dan kewajiban"
+         ],
+         "miskonsepsi": [
+          "Hak boleh dituntut tanpa menjalankan kewajiban"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "Klasifikasi aturan di rumah dan sekolah",
+          "Wawancara tokoh masyarakat",
+          "Hak dan kewajiban warga sekolah"
+         ],
+         "tagAset": [
+          "sekolah",
+          "keluarga",
+          "kampung"
+         ],
+         "id": "pan-6-bab3--norma-hak-dan-kewajiban",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Kewajiban anak",
+         "tujuan": "Murid mampu menyajikan hasil identifikasi kewajiban anak sebagai anggota keluarga, warga sekolah, dan warga negara.",
+         "konsep": [
+          "kewajiban anak di rumah",
+          "kewajiban anak di sekolah",
+          "kewajiban warga negara"
+         ],
+         "miskonsepsi": [
+          "Kewajiban hanya milik orang dewasa"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita",
+          "bacaan"
+         ],
+         "konteks": [
+          "Jadwal tugas anak di rumah",
+          "Anak taat aturan di jalan",
+          "Teks bacaan tentang tanggung jawab"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "keluarga",
+          "sekolah"
+         ],
+         "id": "pan-6-bab3--kewajiban-anak",
+         "jenisTeks": "informasi"
+        }
+       ]
+      },
+      {
+       "id": "pan-6-bab4",
+       "bab": 4,
+       "nama": "Belajar Bermusyawarah",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "campuran",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Manfaat musyawarah",
+         "tujuan": "Murid mampu menjelaskan manfaat musyawarah dalam kehidupan masyarakat.",
+         "konsep": [
+          "pengertian musyawarah",
+          "manfaat musyawarah",
+          "mufakat"
+         ],
+         "miskonsepsi": [
+          "Musyawarah sama dengan voting"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "Video rapat warga",
+          "Lembar kerja musyawarah",
+          "Memilih kegiatan kelas"
+         ],
+         "tagAset": [
+          "musyawarah",
+          "kampung",
+          "kelas"
+         ],
+         "id": "pan-6-bab4--manfaat-musyawarah",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Simulasi musyawarah",
+         "tujuan": "Murid mampu mensimulasikan kegiatan musyawarah untuk mencapai mufakat di lingkungan masyarakat.",
+         "konsep": [
+          "langkah musyawarah",
+          "menyampaikan dan menghargai pendapat",
+          "menyepakati hasil"
+         ],
+         "miskonsepsi": [
+          "Pendapat yang kalah tidak perlu dijalankan"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "urutkan",
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Warga memutuskan penggunaan lahan kosong",
+          "Pemilihan ketua RT",
+          "Mengatasi sampah kampung"
+         ],
+         "tagAset": [
+          "musyawarah",
+          "kampung",
+          "anak-sekolah"
+         ],
+         "id": "pan-6-bab4--simulasi-musyawarah",
+         "jenisTeks": "campuran"
+        }
+       ]
+      },
+      {
+       "id": "pan-6-bab5",
+       "bab": 5,
+       "nama": "Menghormati Perbedaan Budaya dan Agama dalam Kehidupan Sehari-hari",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "campuran",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Menjaga keberagaman budaya dan agama",
+         "tujuan": "Murid mampu mengidentifikasi sikap menghormati dan menjaga perbedaan budaya dan agama di lingkungan keluarga, sekolah, dan masyarakat.",
+         "konsep": [
+          "keberagaman budaya dan agama",
+          "Bhinneka Tunggal Ika",
+          "sikap menghormati dan menjaga"
+         ],
+         "miskonsepsi": [
+          "Toleransi berarti menyamakan semua agama"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "bacaan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Lagu daerah dari berbagai provinsi",
+          "Hari besar teman berbeda agama",
+          "Kegiatan amal bersama"
+         ],
+         "tagAset": [
+          "pakaian-adat",
+          "peta-indonesia",
+          "teman"
+         ],
+         "id": "pan-6-bab5--menjaga-keberagaman-budaya-dan",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Mengajak teman bersikap toleran",
+         "tujuan": "Murid mampu mempraktikkan perilaku toleransi budaya dan agama dalam kehidupan sehari-hari.",
+         "konsep": [
+          "toleransi",
+          "tidak mengejek perbedaan",
+          "kerja sama lintas perbedaan"
+         ],
+         "miskonsepsi": [
+          "Mengejek hanya bercanda dan tidak berdampak"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir",
+          "runner"
+         ],
+         "konteks": [
+          "Teman dijauhi karena logat berbeda",
+          "Menyiapkan acara kelas bersama",
+          "Membuat jurnal wawancara"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "teman",
+          "kelas"
+         ],
+         "id": "pan-6-bab5--mengajak-teman-bersikap-toleran",
+         "jenisTeks": "campuran"
+        }
+       ]
+      },
+      {
+       "id": "pan-6-bab6",
+       "bab": 6,
+       "nama": "Provinsiku Bagian dari Wilayah Negara Kesatuan Republik Indonesia",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "informasi",
+       "tema": "samudra",
+       "sub": [
+        {
+         "nama": "Mengenal provinsi di Indonesia",
+         "tujuan": "Murid mampu mengidentifikasi karakteristik wilayah provinsi tempat tinggal sebagai bagian dari NKRI.",
+         "konsep": [
+          "provinsi sebagai bagian NKRI",
+          "ciri khas provinsi",
+          "letak provinsi pada peta"
+         ],
+         "miskonsepsi": [
+          "Provinsi tetangga bukan bagian dari Indonesia yang sama"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cocokkan",
+          "urutkan",
+          "bacaan"
+         ],
+         "konteks": [
+          "Puzzle peta Indonesia",
+          "Pameran keistimewaan provinsi",
+          "Mencari ciri khas daerah"
+         ],
+         "tagAset": [
+          "peta-indonesia",
+          "bendera"
+         ],
+         "id": "pan-6-bab6--mengenal-provinsi-di-indonesia",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Bangga dengan provinsiku",
+         "tujuan": "Murid mampu menunjukkan kebanggaan terhadap provinsinya melalui hal-hal positif yang ada di provinsi.",
+         "konsep": [
+          "hal positif provinsi",
+          "bangga tanpa merendahkan daerah lain",
+          "provinsi bagian dari persatuan"
+         ],
+         "miskonsepsi": [
+          "Bangga pada daerah sendiri berarti menganggap daerah lain buruk"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "bacaan",
+          "runner"
+         ],
+         "konteks": [
+          "Surat untuk gubernur",
+          "Wawancara narasumber daerah",
+          "Komik keistimewaan provinsi"
+         ],
+         "tagAset": [
+          "peta-indonesia",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pan-6-bab6--bangga-dengan-provinsiku",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pan-6-bab7",
+       "bab": 7,
+       "nama": "Menjaga Persatuan dan Kesatuan dengan Gotong Royong",
+       "domain": "Literasi Pendidikan Pancasila",
+       "jenisTeksBab": "campuran",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Pentingnya gotong royong",
+         "tujuan": "Murid mampu memahami makna gotong royong untuk menjaga persatuan dan kesatuan di lingkungan sekolah dan sekitar.",
+         "konsep": [
+          "makna gotong royong",
+          "gotong royong menjaga persatuan",
+          "gotong royong wujud bela negara"
+         ],
+         "miskonsepsi": [
+          "Gotong royong hanya kerja fisik"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "sortir",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Artikel gotong royong warga",
+          "Wawancara pengurus RT",
+          "Video kerja bakti"
+         ],
+         "tagAset": [
+          "gotong-royong",
+          "kampung",
+          "sekolah"
+         ],
+         "id": "pan-6-bab7--pentingnya-gotong-royong",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Mempraktikkan dan membiasakan gotong royong",
+         "tujuan": "Murid mampu menyajikan contoh dan mempraktikkan gotong royong di lingkungan sekitar.",
+         "konsep": [
+          "contoh gotong royong",
+          "membiasakan gotong royong",
+          "menulis ajakan di mading atau media sosial"
+         ],
+         "miskonsepsi": [
+          "Gotong royong hanya saat ada acara besar"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "urutkan",
+          "runner"
+         ],
+         "konteks": [
+          "Kerja bakti sebelum 17 Agustus",
+          "Membantu tetangga yang sakit",
+          "Menulis mading ajakan gotong royong"
+         ],
+         "tagAset": [
+          "gotong-royong",
+          "kampung",
+          "anak-sekolah"
+         ],
+         "id": "pan-6-bab7--mempraktikkan-dan-membiasakan-gotong",
+         "jenisTeks": "campuran"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "pjok": {
+   "nama": "Pendidikan Jasmani, Olahraga, dan Kesehatan",
+   "aturan": [
+    "Ini MPI literasi tentang gerak dan kesehatan: murid membaca, memilah, mengurutkan, dan memilih sikap, bukan memperagakan gerakan di layar.",
+    "Informasi kesehatan dan pertolongan pertama harus aman dan sesuai buku; bila ragu, anjurkan meminta bantuan orang dewasa atau guru."
+   ],
+   "kelas": {
+    "1": {
+     "fase": "A",
+     "buku": "Panduan Guru Pendidikan Jasmani, Olahraga, dan Kesehatan untuk SD/MI Kelas I",
+     "materi": [
+      {
+       "id": "pjk-1-bab1",
+       "bab": 1,
+       "nama": "Asyiknya Gerak di Tempat",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Mengenal gerak di tempat",
+         "tujuan": "Murid mampu memilih dan menyebutkan gerak di tempat beserta alasannya.",
+         "konsep": [
+          "Gerak di tempat dilakukan tanpa berpindah posisi",
+          "Ada beberapa macam gerak di tempat",
+          "Alasan memilih gerak perlu disebutkan dengan jelas"
+         ],
+         "miskonsepsi": [
+          "Semua gerakan tubuh membuat badan berpindah tempat"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "bacaan"
+         ],
+         "konteks": [
+          "Murid memilih gerakan yang bisa dilakukan di bangku atau tempat sempit",
+          "Murid menebak gerak teman saat bermain tebak gerak"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "lapangan"
+         ],
+         "perluDicek": true,
+         "id": "pjk-1-bab1--mengenal-gerak-di-tempat",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Gerak menekuk dan gerak memilin",
+         "tujuan": "Murid mampu mempraktikkan gerak menekuk dan gerak memilin.",
+         "konsep": [
+          "Gerak menekuk adalah gerak melipat bagian tubuh pada sendi",
+          "Gerak memilin adalah gerak memutar bagian tubuh",
+          "Gerak menekuk dan memilin termasuk gerak di tempat"
+         ],
+         "miskonsepsi": [
+          "Gerak menekuk dan gerak memilin adalah gerak yang sama"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir",
+          "runner"
+         ],
+         "konteks": [
+          "Murid memasangkan nama gerak dengan gambar gerakannya",
+          "Murid mengikuti aba-aba guru saat senam pagi"
+         ],
+         "tagAset": [
+          "anak-olahraga",
+          "senam"
+         ],
+         "id": "pjk-1-bab1--gerak-menekuk-dan-gerak",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-1-bab2",
+       "bab": 2,
+       "nama": "Serunya Gerak Berpindah Tempat",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Mengenal gerak berpindah tempat",
+         "tujuan": "Murid mampu membedakan gerak berpindah tempat dari gerak di tempat.",
+         "konsep": [
+          "Gerak berpindah tempat membuat posisi tubuh berubah",
+          "Contoh gerak berpindah tempat: berjalan, berlari, melompat",
+          "Gerak berpindah tempat berbeda dengan gerak di tempat"
+         ],
+         "miskonsepsi": [
+          "Gerak berpindah tempat hanya berlari"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Murid memilah kartu gerak di tempat dan gerak berpindah tempat",
+          "Murid bermain jalan dan lari dari pintu kelas ke lapangan"
+         ],
+         "tagAset": [
+          "lapangan",
+          "anak-bermain"
+         ],
+         "perluDicek": true,
+         "id": "pjk-1-bab2--mengenal-gerak-berpindah-tempat",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Berpindah tempat dengan aman dan tertib",
+         "tujuan": "Murid mampu memilih sikap yang aman dan tertib saat bergerak berpindah tempat.",
+         "konsep": [
+          "Bergerak dengan memperhatikan teman di sekitar",
+          "Mengikuti aturan dan aba-aba guru",
+          "Memilih tempat yang aman untuk bergerak"
+         ],
+         "miskonsepsi": [
+          "Berlari di mana saja dan tanpa melihat sekitar tidak berbahaya"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir",
+          "runner"
+         ],
+         "konteks": [
+          "Dua teman berlari dan hampir bertabrakan di lapangan",
+          "Murid berbaris tertib menuju lapangan"
+         ],
+         "tagAset": [
+          "lapangan",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pjk-1-bab2--berpindah-tempat-dengan-aman",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-1-bab3",
+       "bab": 3,
+       "nama": "Bergerak Menggunakan Benda",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Macam benda dan cara menggunakannya untuk bergerak",
+         "tujuan": "Murid mampu menyebutkan benda yang dapat digunakan untuk bergerak dan cara memakainya.",
+         "konsep": [
+          "Benda seperti bola dan gelang dapat dipakai untuk bergerak",
+          "Setiap benda punya cara menggunakan yang berbeda",
+          "Benda digunakan sesuai arahan guru"
+         ],
+         "miskonsepsi": [
+          "Semua benda boleh dipakai bermain dengan cara apa saja"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir"
+         ],
+         "konteks": [
+          "Murid memasangkan benda dengan cara memainkannya",
+          "Murid memilih benda yang aman untuk bermain di lapangan"
+         ],
+         "tagAset": [
+          "bola",
+          "lapangan"
+         ],
+         "perluDicek": true,
+         "id": "pjk-1-bab3--macam-benda-dan-cara",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Merawat dan menggunakan benda dengan aman",
+         "tujuan": "Murid mampu memilih sikap yang tepat saat menggunakan dan merapikan benda untuk bergerak.",
+         "konsep": [
+          "Menggunakan benda dengan hati-hati",
+          "Mengembalikan benda ke tempatnya setelah bermain",
+          "Bergantian memakai benda dengan teman"
+         ],
+         "miskonsepsi": [
+          "Merapikan alat setelah bermain bukan tugas murid"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "urutkan",
+          "sortir"
+         ],
+         "konteks": [
+          "Teman tidak mau bergantian memakai bola",
+          "Murid membantu merapikan alat setelah pelajaran PJOK"
+         ],
+         "tagAset": [
+          "bola",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pjk-1-bab3--merawat-dan-menggunakan-benda",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-1-bab4",
+       "bab": 4,
+       "nama": "Bermain Bersama",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "campuran",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Aturan dan sikap saat bermain bersama",
+         "tujuan": "Murid mampu memilih sikap yang baik dan menaati aturan saat bermain bersama teman.",
+         "konsep": [
+          "Permainan memiliki aturan yang harus dipatuhi",
+          "Bermain jujur, sopan, dan tidak menyakiti teman",
+          "Bergantian dan menunggu giliran"
+         ],
+         "miskonsepsi": [
+          "Bermain bersama berarti boleh menang dengan cara apa pun"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Teman tidak sabar menunggu giliran saat bermain",
+          "Murid mengajak teman yang sendirian untuk ikut bermain"
+         ],
+         "tagAset": [
+          "anak-bermain",
+          "teman"
+         ],
+         "perluDicek": true,
+         "id": "pjk-1-bab4--aturan-dan-sikap-saat",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Bekerja sama dalam permainan",
+         "tujuan": "Murid mampu menjelaskan pentingnya kerja sama dan urutan bermain dalam kelompok.",
+         "konsep": [
+          "Kerja sama membuat permainan berjalan lancar",
+          "Setiap anggota kelompok punya peran",
+          "Permainan dimainkan sesuai urutan dan aturan"
+         ],
+         "miskonsepsi": [
+          "Permainan kelompok hanya bergantung pada pemain yang paling cepat"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "bacaan",
+          "cerita"
+         ],
+         "konteks": [
+          "Satu kelompok menyusun langkah permainan bersama",
+          "Murid saling menyemangati teman yang belum bisa"
+         ],
+         "tagAset": [
+          "tim-olahraga",
+          "lapangan"
+         ],
+         "perluDicek": true,
+         "id": "pjk-1-bab4--bekerja-sama-dalam-permainan",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-1-bab5",
+       "bab": 5,
+       "nama": "Sehat dan Bugar",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Manfaat bergerak bagi tubuh yang sehat dan bugar",
+         "tujuan": "Murid mampu menjelaskan manfaat bergerak dan berolahraga bagi tubuh.",
+         "konsep": [
+          "Bergerak dan berolahraga membuat tubuh sehat dan bugar",
+          "Tubuh memberi tanda setelah bergerak",
+          "Olahraga dilakukan secara teratur"
+         ],
+         "miskonsepsi": [
+          "Cukup duduk dan bermain gawai agar badan sehat"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "Murid membandingkan tubuh yang aktif dengan yang kurang bergerak",
+          "Murid bermain di luar rumah bersama keluarga di akhir pekan"
+         ],
+         "tagAset": [
+          "anak-olahraga",
+          "keluarga"
+         ],
+         "perluDicek": true,
+         "id": "pjk-1-bab5--manfaat-bergerak-bagi-tubuh",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Kebiasaan hidup sehat sehari-hari",
+         "tujuan": "Murid mampu memilih kebiasaan sehat yang menunjang tubuh bugar.",
+         "konsep": [
+          "Makan makanan bergizi",
+          "Istirahat dan tidur cukup",
+          "Menjaga kebersihan diri"
+         ],
+         "miskonsepsi": [
+          "Makanan manis dan jajanan saja sudah cukup untuk tubuh bugar"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Murid memilih bekal sehat untuk ke sekolah",
+          "Murid menyusun kebiasaan pagi sebelum berangkat sekolah"
+         ],
+         "tagAset": [
+          "makanan-sehat",
+          "bekal",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pjk-1-bab5--kebiasaan-hidup-sehat-sehari",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-1-bab6",
+       "bab": 6,
+       "nama": "Sehat dan Aman",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "campuran",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Menjaga keamanan diri saat bergerak dan bermain",
+         "tujuan": "Murid mampu memilih tindakan yang aman saat bergerak dan bermain.",
+         "konsep": [
+          "Memilih tempat dan alat bermain yang aman",
+          "Mematuhi aturan keselamatan saat bergerak",
+          "Mengenali hal yang berbahaya saat bermain"
+         ],
+         "miskonsepsi": [
+          "Bermain di tempat yang licin atau berbahaya tidak masalah asal hati-hati sedikit"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "Murid menemukan lantai licin saat akan bermain",
+          "Murid memilih tempat bermain yang aman di sekolah"
+         ],
+         "tagAset": [
+          "lapangan",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pjk-1-bab6--menjaga-keamanan-diri-saat",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Menjaga kebersihan dan meminta bantuan saat terluka",
+         "tujuan": "Murid mampu menjaga kebersihan diri dan melapor kepada guru atau orang dewasa saat terluka.",
+         "konsep": [
+          "Mencuci tangan dan menjaga kebersihan badan",
+          "Melapor kepada guru atau orang dewasa jika terluka",
+          "Menolong teman dengan memanggil orang dewasa"
+         ],
+         "miskonsepsi": [
+          "Luka kecil tidak perlu dilaporkan kepada guru"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "urutkan",
+          "runner"
+         ],
+         "konteks": [
+          "Teman terjatuh dan lututnya lecet saat bermain",
+          "Murid mencuci tangan sebelum makan bekal"
+         ],
+         "tagAset": [
+          "kotak-p3k",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pjk-1-bab6--menjaga-kebersihan-dan-meminta",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      }
+     ]
+    },
+    "2": {
+     "fase": "A",
+     "buku": "Panduan Guru Pendidikan Jasmani, Olahraga, dan Kesehatan untuk SD/MI Kelas II",
+     "materi": [
+      {
+       "id": "pjk-2-bab1",
+       "bab": 1,
+       "nama": "Ayo, Gerakkan Badanmu!",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Gerak dasar nonlokomotor dan lokomotor",
+         "tujuan": "Murid mampu menjelaskan dan mempraktikkan gerak dasar nonlokomotor dan lokomotor dalam berbagai situasi.",
+         "konsep": [
+          "Gerak nonlokomotor dilakukan di tempat",
+          "Gerak lokomotor membuat tubuh berpindah tempat",
+          "Kedua gerak dapat dipakai dalam berbagai situasi"
+         ],
+         "miskonsepsi": [
+          "Gerak nonlokomotor dan lokomotor adalah gerak yang sama"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Murid memilah kartu gerak di tempat dan gerak berpindah",
+          "Murid bermain meniru gerak hewan di lapangan"
+         ],
+         "tagAset": [
+          "lapangan",
+          "anak-bermain"
+         ],
+         "perluDicek": true,
+         "id": "pjk-2-bab1--gerak-dasar-nonlokomotor-dan",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Gerak dasar manipulatif dan eksplorasi gerak",
+         "tujuan": "Murid mampu menjelaskan gerak dasar manipulatif dan mengeksplorasi berbagai gerak dengan benda atau bagian tubuh.",
+         "konsep": [
+          "Gerak manipulatif menggunakan benda, misalnya bola",
+          "Benda dapat digerakkan dengan bagian tubuh yang berbeda",
+          "Efektivitas gerak dapat dibandingkan dan disimpulkan"
+         ],
+         "miskonsepsi": [
+          "Satu cara memainkan bola pasti paling baik di semua keadaan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cocokkan",
+          "cerita",
+          "runner"
+         ],
+         "konteks": [
+          "Murid mencoba memindahkan bola dengan tangan lalu dengan kaki",
+          "Murid membandingkan hasil bermain di ruang sempit dan luas"
+         ],
+         "tagAset": [
+          "bola",
+          "lapangan"
+         ],
+         "perluDicek": true,
+         "id": "pjk-2-bab1--gerak-dasar-manipulatif-dan",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-2-bab2",
+       "bab": 2,
+       "nama": "Serunya Bermain!",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "campuran",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Perilaku fair play dalam permainan sederhana",
+         "tujuan": "Murid mampu mengidentifikasi dan menerapkan perilaku fair play dalam aktivitas jasmani dan permainan sederhana.",
+         "konsep": [
+          "Fair play berarti bermain jujur dan menaati aturan",
+          "Menghargai teman dan lawan bermain",
+          "Menerima kemenangan dan kekalahan dengan baik"
+         ],
+         "miskonsepsi": [
+          "Boleh berbuat curang asal tidak ketahuan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Teman melanggar aturan saat bermain lalu murid memilih sikap",
+          "Tim yang kalah tetap bersalaman dengan tim lawan"
+         ],
+         "tagAset": [
+          "anak-bermain",
+          "tim-olahraga"
+         ],
+         "perluDicek": true,
+         "id": "pjk-2-bab2--perilaku-fair-play-dalam",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Kerja sama dan kolaborasi dalam kelompok",
+         "tujuan": "Murid mampu menerapkan strategi kolaborasi dalam aktivitas jasmani dan permainan sederhana.",
+         "konsep": [
+          "Kerja sama membantu kelompok mencapai tujuan",
+          "Setiap anggota punya tugas",
+          "Kolaborasi dilakukan dengan saling mendengarkan"
+         ],
+         "miskonsepsi": [
+          "Permainan kelompok bisa menang kalau satu pemain saja yang bermain"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "cerita",
+          "bacaan"
+         ],
+         "konteks": [
+          "Kelompok menyusun cara memindahkan bola bersama-sama",
+          "Murid saling membantu teman yang kesulitan"
+         ],
+         "tagAset": [
+          "tim-olahraga",
+          "lapangan"
+         ],
+         "perluDicek": true,
+         "id": "pjk-2-bab2--kerja-sama-dan-kolaborasi",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-2-bab3",
+       "bab": 3,
+       "nama": "Sehatkan Badanmu!",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Aktivitas kebugaran jasmani",
+         "tujuan": "Murid mampu menjelaskan dan mempraktikkan aktivitas kebugaran jasmani.",
+         "konsep": [
+          "Kebugaran jasmani membuat tubuh kuat dan tidak mudah lelah",
+          "Ada beberapa aktivitas yang melatih kebugaran",
+          "Latihan dilakukan secara teratur"
+         ],
+         "miskonsepsi": [
+          "Kebugaran hanya dibutuhkan atlet"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "Murid membandingkan tubuh sebelum dan sesudah berlari",
+          "Murid mengikuti senam kebugaran bersama teman"
+         ],
+         "tagAset": [
+          "anak-olahraga",
+          "senam"
+         ],
+         "perluDicek": true,
+         "id": "pjk-2-bab3--aktivitas-kebugaran-jasmani",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Gaya hidup aktif dan sehat",
+         "tujuan": "Murid mampu mengidentifikasi gaya hidup aktif dan sehat serta aktivitas jasmani untuk kesehatan.",
+         "konsep": [
+          "Gaya hidup aktif berarti sering bergerak",
+          "Aktivitas jasmani membangun kesehatan",
+          "Kebiasaan sehat dilakukan setiap hari"
+         ],
+         "miskonsepsi": [
+          "Bermain gawai sepanjang hari tidak memengaruhi kesehatan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "Dua teman punya kebiasaan harian berbeda: aktif dan kurang bergerak",
+          "Keluarga berjalan pagi bersama di akhir pekan"
+         ],
+         "tagAset": [
+          "keluarga",
+          "anak-olahraga"
+         ],
+         "perluDicek": true,
+         "id": "pjk-2-bab3--gaya-hidup-aktif-dan",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-2-bab4",
+       "bab": 4,
+       "nama": "Pilih Makanan Sehatmu",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Komponen makanan bergizi seimbang",
+         "tujuan": "Murid mampu mengidentifikasi dan memilih komponen makanan bergizi seimbang.",
+         "konsep": [
+          "Makanan bergizi seimbang terdiri dari beberapa kelompok makanan",
+          "Setiap makanan punya manfaat bagi tubuh",
+          "Memilih makanan sehat untuk bekal dan sarapan"
+         ],
+         "miskonsepsi": [
+          "Makan satu jenis makanan yang disukai sudah cukup bergizi"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Murid menyusun isi piring makan yang seimbang",
+          "Murid memilih bekal sehat untuk ke sekolah"
+         ],
+         "tagAset": [
+          "makanan-sehat",
+          "piring-gizi"
+         ],
+         "perluDicek": true,
+         "id": "pjk-2-bab4--komponen-makanan-bergizi-seimbang",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Informasi gizi pada produk makanan",
+         "tujuan": "Murid mampu mengidentifikasi informasi gizi pada kemasan makanan yang berdampak pada kesehatan.",
+         "konsep": [
+          "Kemasan makanan memuat informasi gizi",
+          "Makanan terlalu manis atau terlalu asin kurang baik jika berlebihan",
+          "Informasi gizi membantu memilih jajanan"
+         ],
+         "miskonsepsi": [
+          "Semua jajanan kemasan sama sehatnya"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "Murid membaca label dua jajanan lalu memilih yang lebih baik",
+          "Murid memilih camilan sehat di kantin sekolah"
+         ],
+         "tagAset": [
+          "makanan-sehat",
+          "bekal"
+         ],
+         "perluDicek": true,
+         "id": "pjk-2-bab4--informasi-gizi-pada-produk",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-2-bab5",
+       "bab": 5,
+       "nama": "Bergerak dengan Aman",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "campuran",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Situasi yang berisiko saat beraktivitas jasmani",
+         "tujuan": "Murid mampu menjelaskan situasi dan potensi yang berisiko terhadap keselamatan dalam aktivitas jasmani sehari-hari.",
+         "konsep": [
+          "Ada tempat dan keadaan yang berisiko saat bergerak",
+          "Mengenali bahaya sebelum bermain",
+          "Memilih tindakan yang aman"
+         ],
+         "miskonsepsi": [
+          "Bahaya hanya terjadi di tempat yang jauh dari sekolah"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "Murid menemukan lantai licin dan tali yang terlepas di lapangan",
+          "Murid memilih tempat bermain yang aman"
+         ],
+         "tagAset": [
+          "lapangan",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pjk-2-bab5--situasi-yang-berisiko-saat",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Mencari bantuan kepada orang dewasa",
+         "tujuan": "Murid mampu menjelaskan dan memilih cara mencari bantuan kepada orang dewasa terpercaya atau profesional.",
+         "konsep": [
+          "Orang dewasa terpercaya: guru, orang tua, petugas kesehatan",
+          "Menyampaikan kejadian dengan jelas dan tenang",
+          "Segera mencari bantuan saat ada yang terluka"
+         ],
+         "miskonsepsi": [
+          "Murid harus menangani luka berat sendiri tanpa memanggil orang dewasa"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "urutkan",
+          "runner"
+         ],
+         "konteks": [
+          "Teman terjatuh dan menangis saat bermain",
+          "Murid memanggil guru dan menjelaskan kejadiannya"
+         ],
+         "tagAset": [
+          "kotak-p3k",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pjk-2-bab5--mencari-bantuan-kepada-orang",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      }
+     ]
+    },
+    "3": {
+     "fase": "B",
+     "buku": "Buku Panduan Guru Pendidikan Jasmani, Olahraga, dan Kesehatan untuk SD/MI Kelas III",
+     "materi": [
+      {
+       "id": "pjk-3-bab1",
+       "bab": 1,
+       "nama": "Aktivitas Pola Gerak Dasar Lokomotor",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Mengenal gerak lokomotor",
+         "tujuan": "Murid mampu mengidentifikasi keterampilan gerak dasar lokomotor.",
+         "konsep": [
+          "Gerak lokomotor membuat tubuh berpindah tempat",
+          "Contoh: berjalan, berlari, melompat, meloncat",
+          "Setiap gerak punya ciri yang berbeda"
+         ],
+         "miskonsepsi": [
+          "Gerak lokomotor hanya berlari"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Murid memilah kartu gerak lokomotor dan bukan lokomotor",
+          "Murid mengamati teman bermain lompat dan lari"
+         ],
+         "tagAset": [
+          "lapangan",
+          "anak-bermain"
+         ],
+         "perluDicek": true,
+         "id": "pjk-3-bab1--mengenal-gerak-lokomotor",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Strategi gerak lokomotor dalam permainan sederhana",
+         "tujuan": "Murid mampu menerapkan strategi gerak sederhana saat melakukan gerak lokomotor.",
+         "konsep": [
+          "Mengatur kecepatan dan arah saat bergerak",
+          "Strategi sederhana membantu mencapai tujuan permainan",
+          "Bergerak dengan aman di antara teman"
+         ],
+         "miskonsepsi": [
+          "Berlari secepat mungkin selalu menjadi cara terbaik"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "urutkan"
+         ],
+         "konteks": [
+          "Dua tim bermain kejar-kejaran di lapangan",
+          "Murid memilih cara berpindah tercepat tanpa menabrak teman"
+         ],
+         "tagAset": [
+          "lapangan",
+          "tim-olahraga"
+         ],
+         "perluDicek": true,
+         "id": "pjk-3-bab1--strategi-gerak-lokomotor-dalam",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-3-bab2",
+       "bab": 2,
+       "nama": "Aktivitas Pola Gerak Dasar Nonlokomotor",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Mengenal gerak nonlokomotor",
+         "tujuan": "Murid mampu mengidentifikasi keterampilan gerak dasar nonlokomotor.",
+         "konsep": [
+          "Gerak nonlokomotor dilakukan di tempat",
+          "Contoh: menekuk, memutar, mengayun, meregang",
+          "Gerak nonlokomotor melatih kelenturan dan keseimbangan"
+         ],
+         "miskonsepsi": [
+          "Gerak di tempat tidak membuat tubuh berolahraga"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir"
+         ],
+         "konteks": [
+          "Murid memasangkan nama gerak dengan gambar",
+          "Murid mengikuti senam pagi di halaman sekolah"
+         ],
+         "tagAset": [
+          "senam",
+          "anak-olahraga"
+         ],
+         "perluDicek": true,
+         "id": "pjk-3-bab2--mengenal-gerak-nonlokomotor",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Konsep gerak nonlokomotor",
+         "tujuan": "Murid mampu memperagakan konsep gerak pada gerak nonlokomotor.",
+         "konsep": [
+          "Gerak dapat dilakukan dengan tenaga dan kecepatan berbeda",
+          "Gerak dapat dilakukan pada ruang yang berbeda",
+          "Konsep gerak memengaruhi hasil gerakan"
+         ],
+         "miskonsepsi": [
+          "Satu gerak hanya dapat dilakukan dengan satu cara"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "runner"
+         ],
+         "konteks": [
+          "Murid menirukan gerak pohon tertiup angin dengan kuat lalu pelan",
+          "Murid menyusun urutan gerak peregangan"
+         ],
+         "tagAset": [
+          "senam",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pjk-3-bab2--konsep-gerak-nonlokomotor",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-3-bab3",
+       "bab": 3,
+       "nama": "Aktivitas Pola Gerak Dasar Manipulatif",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Mengenal gerak manipulatif",
+         "tujuan": "Murid mampu mengidentifikasi keterampilan gerak dasar manipulatif.",
+         "konsep": [
+          "Gerak manipulatif menggunakan atau mengendalikan benda",
+          "Contoh: melempar, menangkap, menendang, memantulkan",
+          "Benda dikendalikan dengan bagian tubuh tertentu"
+         ],
+         "miskonsepsi": [
+          "Gerak manipulatif hanya melempar bola"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir"
+         ],
+         "konteks": [
+          "Murid memasangkan benda dengan cara memainkannya",
+          "Murid bermain lempar tangkap berpasangan"
+         ],
+         "tagAset": [
+          "bola",
+          "lapangan"
+         ],
+         "perluDicek": true,
+         "id": "pjk-3-bab3--mengenal-gerak-manipulatif",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Strategi gerak manipulatif dalam permainan",
+         "tujuan": "Murid mampu menerapkan strategi gerak sederhana untuk mendapatkan capaian keterampilan manipulatif.",
+         "konsep": [
+          "Menyesuaikan kekuatan dan arah saat mengendalikan benda",
+          "Berlatih berulang meningkatkan ketepatan",
+          "Bermain dengan aturan dan giliran"
+         ],
+         "miskonsepsi": [
+          "Melempar sekuat tenaga selalu membuat lemparan tepat"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "urutkan",
+          "runner"
+         ],
+         "konteks": [
+          "Murid mencoba lemparan ke sasaran dengan jarak berbeda",
+          "Tim kecil mengoper bola secara bergiliran"
+         ],
+         "tagAset": [
+          "bola",
+          "tim-olahraga"
+         ],
+         "perluDicek": true,
+         "id": "pjk-3-bab3--strategi-gerak-manipulatif-dalam",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-3-bab4",
+       "bab": 4,
+       "nama": "Aktivitas Gerak Dominan Senam",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Gerak senam dasar dan keselamatan",
+         "tujuan": "Murid mampu mengidentifikasi gerak dominan senam sederhana dan cara melakukannya dengan aman.",
+         "konsep": [
+          "Gerak senam melatih keseimbangan, kelenturan, dan kekuatan",
+          "Pemanasan sebelum senam",
+          "Aturan keselamatan saat senam"
+         ],
+         "miskonsepsi": [
+          "Senam boleh dilakukan tanpa pemanasan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "urutkan",
+          "sortir"
+         ],
+         "konteks": [
+          "Murid menyusun urutan pemanasan sebelum senam",
+          "Murid memilih sikap aman di matras"
+         ],
+         "tagAset": [
+          "senam",
+          "anak-olahraga"
+         ],
+         "perluDicek": true,
+         "id": "pjk-3-bab4--gerak-senam-dasar-dan",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Peran dan sikap hormat saat berlatih bersama",
+         "tujuan": "Murid mampu mempraktikkan berbagai peran dengan cara terhormat dalam kegiatan senam berkelompok.",
+         "konsep": [
+          "Bergantian menggunakan matras dan alat",
+          "Peran pengamat dan pelaku saling menolong",
+          "Menghargai teman yang belum bisa"
+         ],
+         "miskonsepsi": [
+          "Teman yang belum bisa boleh ditertawakan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Teman takut mencoba gerak guling",
+          "Kelompok bergantian menjadi pelaku dan pengamat"
+         ],
+         "tagAset": [
+          "senam",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pjk-3-bab4--peran-dan-sikap-hormat",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-3-bab5",
+       "bab": 5,
+       "nama": "Aktivitas Gerak Berirama",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "campuran",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Gerak mengikuti irama",
+         "tujuan": "Murid mampu memperagakan gerak yang mengikuti irama atau hitungan.",
+         "konsep": [
+          "Gerak berirama mengikuti ketukan atau musik",
+          "Tempo cepat dan lambat memengaruhi gerak",
+          "Gerak berirama dapat dirangkai"
+         ],
+         "miskonsepsi": [
+          "Gerak berirama hanya bisa dilakukan dengan musik"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Murid menyusun urutan gerak senam irama",
+          "Murid memasangkan tempo musik dengan gerakan"
+         ],
+         "tagAset": [
+          "musik",
+          "anak-olahraga"
+         ],
+         "perluDicek": true,
+         "id": "pjk-3-bab5--gerak-mengikuti-irama",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Bergerak berirama bersama kelompok",
+         "tujuan": "Murid mampu berperan dalam kelompok dengan hormat saat menampilkan gerak berirama.",
+         "konsep": [
+          "Kekompakan gerak dalam kelompok",
+          "Pembagian peran dan posisi",
+          "Saling menghargai penampilan teman"
+         ],
+         "miskonsepsi": [
+          "Kelompok kompak berarti semua gerak harus sama persis tanpa saling membantu"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Kelompok berlatih tampil di depan kelas",
+          "Teman lupa gerakan lalu kelompok membantu dengan tenang"
+         ],
+         "tagAset": [
+          "musik",
+          "tim-olahraga"
+         ],
+         "perluDicek": true,
+         "id": "pjk-3-bab5--bergerak-berirama-bersama-kelompok",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-3-bab6",
+       "bab": 6,
+       "nama": "Aktivitas Permainan dan Olahraga di Air",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "samudra",
+       "sub": [
+        {
+         "nama": "Mengenal aktivitas di air dan keselamatannya",
+         "tujuan": "Murid mampu mengidentifikasi aktivitas di air dan aturan keselamatan di air.",
+         "konsep": [
+          "Aktivitas di air perlu pengawasan orang dewasa",
+          "Aturan keselamatan di kolam atau air",
+          "Mengenal air dengan aman dan tenang"
+         ],
+         "miskonsepsi": [
+          "Anak yang sudah bisa berenang tidak perlu diawasi"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "Murid memilih sikap aman di tepi kolam",
+          "Murid menolak bermain air tanpa pengawasan"
+         ],
+         "tagAset": [
+          "kolam-renang",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pjk-3-bab6--mengenal-aktivitas-di-air",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Gerak dasar permainan di air",
+         "tujuan": "Murid mampu menjelaskan urutan gerak dasar permainan dan olahraga di air yang sederhana.",
+         "konsep": [
+          "Mengapung dan bernapas di air",
+          "Gerak kaki dan tangan di air",
+          "Persiapan sebelum masuk air"
+         ],
+         "miskonsepsi": [
+          "Boleh langsung melompat ke air tanpa persiapan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "bacaan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Murid menyusun urutan persiapan sebelum berenang",
+          "Murid memasangkan gerakan dengan namanya"
+         ],
+         "tagAset": [
+          "kolam-renang",
+          "anak-olahraga"
+         ],
+         "perluDicek": true,
+         "id": "pjk-3-bab6--gerak-dasar-permainan-di",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-3-bab7",
+       "bab": 7,
+       "nama": "Aktivitas Kebugaran untuk Kesehatan",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Aktivitas jasmani dan kebugaran",
+         "tujuan": "Murid mampu memahami berbagai aktivitas jasmani untuk kebugaran.",
+         "konsep": [
+          "Aktivitas jasmani menjaga kebugaran tubuh",
+          "Ada berbagai bentuk aktivitas jasmani",
+          "Tubuh bugar membuat belajar lebih semangat"
+         ],
+         "miskonsepsi": [
+          "Kebugaran hanya didapat dari olahraga berat"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "Murid membandingkan perasaan setelah bergerak dan setelah duduk lama",
+          "Murid mengikuti senam kebugaran di sekolah"
+         ],
+         "tagAset": [
+          "anak-olahraga",
+          "jantung"
+         ],
+         "perluDicek": true,
+         "id": "pjk-3-bab7--aktivitas-jasmani-dan-kebugaran",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Aktivitas jasmani di sekolah dan di lingkungan tempat tinggal",
+         "tujuan": "Murid mampu membedakan aktivitas jasmani di sekolah dan di lingkungan tempat tinggal.",
+         "konsep": [
+          "Aktivitas jasmani di sekolah: pelajaran PJOK, istirahat bermain",
+          "Aktivitas jasmani di rumah dan sekitar: bersepeda, bermain bersama tetangga",
+          "Aktivitas disesuaikan dengan tempat dan keamanan"
+         ],
+         "miskonsepsi": [
+          "Bergerak aktif hanya dilakukan saat pelajaran PJOK"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Murid memilah kegiatan di sekolah dan di rumah",
+          "Keluarga bersepeda di sore hari"
+         ],
+         "tagAset": [
+          "keluarga",
+          "anak-bermain"
+         ],
+         "perluDicek": true,
+         "id": "pjk-3-bab7--aktivitas-jasmani-di-sekolah",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-3-bab8",
+       "bab": 8,
+       "nama": "Aktivitas Fisik dan Memilih Makanan Bergizi",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Gaya hidup dan aktivitas fisik",
+         "tujuan": "Murid mampu memahami gaya hidup yang sehat dan aktif.",
+         "konsep": [
+          "Gaya hidup sehat meliputi bergerak, makan sehat, dan istirahat",
+          "Kebiasaan kecil memengaruhi kesehatan",
+          "Gaya hidup dapat dipilih"
+         ],
+         "miskonsepsi": [
+          "Gaya hidup tidak berpengaruh pada kesehatan anak"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "Dua teman punya kebiasaan harian berbeda",
+          "Murid memilih kegiatan sehat di akhir pekan"
+         ],
+         "tagAset": [
+          "anak-olahraga",
+          "keluarga"
+         ],
+         "perluDicek": true,
+         "id": "pjk-3-bab8--gaya-hidup-dan-aktivitas",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Memilih makanan sehat dan bergizi seimbang",
+         "tujuan": "Murid mampu mengidentifikasi makanan sehat dan bergizi seimbang untuk menunjang aktivitas sehari-hari.",
+         "konsep": [
+          "Makanan bergizi seimbang",
+          "Makanan memberi energi untuk bergerak",
+          "Memilih makanan sesuai rekomendasi kesehatan"
+         ],
+         "miskonsepsi": [
+          "Makanan manis dan gorengan cukup sebagai sumber energi sehari-hari"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Murid menyusun bekal sehat untuk hari olahraga",
+          "Murid memilih jajanan sehat di kantin"
+         ],
+         "tagAset": [
+          "makanan-sehat",
+          "piring-gizi",
+          "bekal"
+         ],
+         "perluDicek": true,
+         "id": "pjk-3-bab8--memilih-makanan-sehat-dan",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      }
+     ]
+    },
+    "4": {
+     "fase": "B",
+     "buku": "Panduan Guru Pendidikan Jasmani, Olahraga, dan Kesehatan untuk SD/MI Kelas IV",
+     "materi": [
+      {
+       "id": "pjk-4-bab1",
+       "bab": 1,
+       "nama": "Ayo, Bergerak!",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Gerak fundamental dalam situasi gerak yang baru",
+         "tujuan": "Murid mampu menerapkan keterampilan gerak fundamental dalam situasi gerak yang baru.",
+         "konsep": [
+          "Keterampilan gerak fundamental dapat dipakai di situasi baru",
+          "Gerak perlu disesuaikan dengan keadaan",
+          "Berlatih membuat gerak semakin halus"
+         ],
+         "miskonsepsi": [
+          "Gerak yang sudah dikuasai tidak perlu disesuaikan di situasi baru"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cocokkan",
+          "bacaan"
+         ],
+         "konteks": [
+          "Murid memainkan permainan dengan lapangan yang berbeda",
+          "Murid mengamati teman menyesuaikan gerak saat aturan berubah"
+         ],
+         "tagAset": [
+          "lapangan",
+          "anak-bermain"
+         ],
+         "perluDicek": true,
+         "id": "pjk-4-bab1--gerak-fundamental-dalam-situasi",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Konsep gerak dan memecahkan masalah gerak",
+         "tujuan": "Murid mampu memperagakan konsep gerak dalam rangkaian gerak dan memecahkan masalah gerak.",
+         "konsep": [
+          "Konsep gerak: ruang, waktu, tenaga",
+          "Rangkaian gerak disusun berurutan",
+          "Masalah gerak dipecahkan dengan mencoba dan mengevaluasi"
+         ],
+         "miskonsepsi": [
+          "Masalah gerak hanya bisa dipecahkan dengan satu cara"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "urutkan",
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Tim kecil mencari cara melewati rintangan",
+          "Murid menyusun rangkaian gerak lalu memperbaikinya"
+         ],
+         "tagAset": [
+          "lapangan",
+          "tim-olahraga"
+         ],
+         "perluDicek": true,
+         "id": "pjk-4-bab1--konsep-gerak-dan-memecahkan",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-4-bab2",
+       "bab": 2,
+       "nama": "Ayo, Bermain!",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "campuran",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Menyesuaikan strategi gerak dalam permainan",
+         "tujuan": "Murid mampu menyesuaikan strategi gerak untuk mendapatkan capaian keterampilan gerak.",
+         "konsep": [
+          "Strategi gerak disesuaikan dengan keadaan permainan",
+          "Mencoba, menilai, lalu memperbaiki strategi",
+          "Konsep gerak dalam rangkaian gerak"
+         ],
+         "miskonsepsi": [
+          "Strategi yang sama selalu berhasil di setiap permainan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Tim mengubah cara bermain karena lawan lebih tinggi",
+          "Murid membandingkan dua strategi dalam permainan kecil"
+         ],
+         "tagAset": [
+          "lapangan",
+          "tim-olahraga"
+         ],
+         "perluDicek": true,
+         "id": "pjk-4-bab2--menyesuaikan-strategi-gerak-dalam",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Fair play dan faktor yang membuat aktivitas jasmani menyenangkan",
+         "tujuan": "Murid mampu menerapkan peraturan untuk fair play dan mengidentifikasi faktor yang membuat aktivitas jasmani menyenangkan.",
+         "konsep": [
+          "Peraturan menjaga permainan tetap adil",
+          "Fair play: jujur, sportif, menghargai",
+          "Faktor menyenangkan: teman, aturan jelas, rasa aman"
+         ],
+         "miskonsepsi": [
+          "Permainan menyenangkan hanya kalau tim sendiri menang"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Teman melanggar aturan saat pertandingan persahabatan",
+          "Murid membahas apa yang membuat permainan seru"
+         ],
+         "tagAset": [
+          "anak-bermain",
+          "tim-olahraga"
+         ],
+         "perluDicek": true,
+         "id": "pjk-4-bab2--fair-play-dan-faktor",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-4-bab3",
+       "bab": 3,
+       "nama": "Ayo, Merangkai Gerak!",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "campuran",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Menerapkan konsep gerak dalam rangkaian gerak",
+         "tujuan": "Murid mampu menerapkan konsep gerak dalam rangkaian gerak.",
+         "konsep": [
+          "Rangkaian gerak terdiri dari beberapa gerak yang berurutan",
+          "Konsep gerak: ruang, waktu, tenaga",
+          "Gerak awal, inti, dan akhir"
+         ],
+         "miskonsepsi": [
+          "Rangkaian gerak boleh disusun acak tanpa urutan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Murid menyusun urutan rangkaian gerak senam",
+          "Murid memasangkan konsep gerak dengan contoh gerakannya"
+         ],
+         "tagAset": [
+          "senam",
+          "anak-olahraga"
+         ],
+         "perluDicek": true,
+         "id": "pjk-4-bab3--menerapkan-konsep-gerak-dalam",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Berbagai peran dengan cara terhormat",
+         "tujuan": "Murid mampu mempertunjukkan berbagai peran dengan cara terhormat untuk mendapatkan keberhasilan capaian.",
+         "konsep": [
+          "Setiap peran dalam kelompok penting",
+          "Menghormati teman dalam setiap peran",
+          "Keberhasilan kelompok dicapai bersama"
+         ],
+         "miskonsepsi": [
+          "Peran yang tidak tampil di depan tidak penting"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Kelompok membagi peran penampil, pencatat, dan pengatur musik",
+          "Teman tidak puas dengan perannya lalu kelompok berdiskusi"
+         ],
+         "tagAset": [
+          "tim-olahraga",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pjk-4-bab3--berbagai-peran-dengan-cara",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-4-bab4",
+       "bab": 4,
+       "nama": "Ayo, Bugarkan Tubuhmu!",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Berpartisipasi dalam berbagai aktivitas jasmani",
+         "tujuan": "Murid mampu berpartisipasi dalam berbagai aktivitas jasmani dan memperagakan konsep gerak dalam rangkaian gerak.",
+         "konsep": [
+          "Ada berbagai macam aktivitas jasmani",
+          "Aktivitas jasmani membuat tubuh bugar",
+          "Rangkaian gerak dapat dilakukan untuk kebugaran"
+         ],
+         "miskonsepsi": [
+          "Aktivitas jasmani hanya berupa olahraga berlomba"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "Murid mencoba beberapa aktivitas jasmani lalu membandingkan rasanya",
+          "Murid menyusun rangkaian gerak kebugaran"
+         ],
+         "tagAset": [
+          "anak-olahraga",
+          "jantung"
+         ],
+         "perluDicek": true,
+         "id": "pjk-4-bab4--berpartisipasi-dalam-berbagai-aktivitas",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Faktor yang membuat aktivitas jasmani menyenangkan",
+         "tujuan": "Murid mampu mengidentifikasi faktor-faktor yang membuat aktivitas jasmani menyenangkan.",
+         "konsep": [
+          "Faktor pribadi: minat dan kemampuan",
+          "Faktor lingkungan: teman, tempat, dan alat",
+          "Aktivitas dapat disesuaikan agar menyenangkan"
+         ],
+         "miskonsepsi": [
+          "Aktivitas jasmani menyenangkan bagi semua orang dengan cara yang sama"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "Murid memilih aktivitas yang disukai dan menjelaskan alasannya",
+          "Kelompok mengubah permainan agar semua teman senang"
+         ],
+         "tagAset": [
+          "anak-bermain",
+          "lapangan"
+         ],
+         "perluDicek": true,
+         "id": "pjk-4-bab4--faktor-yang-membuat-aktivitas",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-4-bab5",
+       "bab": 5,
+       "nama": "Hidup yang Menyehatkan",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "campuran",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Risiko gaya hidup tidak sehat dan makanan bergizi seimbang",
+         "tujuan": "Murid mampu mengenali risiko akibat gaya hidup tidak sehat dan mengeksplorasi pola makan sehat serta bergizi seimbang untuk menunjang aktivitas.",
+         "konsep": [
+          "Gaya hidup tidak sehat memiliki risiko bagi kesehatan",
+          "Aktivitas jasmani membantu pencegahan",
+          "Pola makan sehat dan bergizi seimbang menunjang aktivitas"
+         ],
+         "miskonsepsi": [
+          "Anak-anak tidak punya risiko kesehatan karena gaya hidup"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Murid membandingkan kebiasaan harian dua teman",
+          "Murid menyusun menu sarapan sebelum pelajaran olahraga"
+         ],
+         "tagAset": [
+          "makanan-sehat",
+          "piring-gizi"
+         ],
+         "perluDicek": true,
+         "id": "pjk-4-bab5--risiko-gaya-hidup-tidak",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Penanganan cedera ringan saat aktivitas jasmani",
+         "tujuan": "Murid mampu mempraktikkan penanganan cedera ringan sesuai prinsip pertolongan pertama dalam aktivitas jasmani atau olahraga.",
+         "konsep": [
+          "Cedera ringan, misalnya luka lecet dan memar",
+          "Prinsip pertolongan pertama",
+          "Melapor kepada guru atau orang dewasa"
+         ],
+         "miskonsepsi": [
+          "Luka lecet cukup ditutup tanpa dibersihkan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "cerita",
+          "runner"
+         ],
+         "konteks": [
+          "Teman terjatuh dan lututnya lecet saat bermain",
+          "Murid memperagakan pertolongan pertama dalam simulasi"
+         ],
+         "tagAset": [
+          "kotak-p3k",
+          "lapangan"
+         ],
+         "perluDicek": true,
+         "id": "pjk-4-bab5--penanganan-cedera-ringan-saat",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      }
+     ]
+    },
+    "5": {
+     "fase": "C",
+     "buku": "Panduan Guru Pendidikan Jasmani, Olahraga, dan Kesehatan untuk SD/MI Kelas V",
+     "materi": [
+      {
+       "id": "pjk-5-bab1",
+       "bab": 1,
+       "nama": "Eksplorasi Gerak",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Mengadaptasi dan memodifikasi keterampilan gerak",
+         "tujuan": "Murid mampu mengadaptasi dan memodifikasi keterampilan gerak dalam berbagai situasi.",
+         "konsep": [
+          "Keterampilan gerak dapat diadaptasi sesuai situasi",
+          "Modifikasi gerak mengubah hasil gerakan",
+          "Situasi gerak: ruang, alat, dan teman bermain"
+         ],
+         "miskonsepsi": [
+          "Keterampilan gerak hanya dapat dilakukan dengan satu cara baku"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cocokkan",
+          "bacaan"
+         ],
+         "konteks": [
+          "Murid memainkan permainan yang ukuran lapangannya diubah",
+          "Murid mencoba gerak yang sama dengan alat berbeda"
+         ],
+         "tagAset": [
+          "lapangan",
+          "anak-bermain"
+         ],
+         "perluDicek": true,
+         "id": "pjk-5-bab1--mengadaptasi-dan-memodifikasi-keterampilan",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Mentransfer strategi gerak ke situasi yang berbeda",
+         "tujuan": "Murid mampu mentransfer strategi gerak yang dikuasai ke situasi yang berbeda.",
+         "konsep": [
+          "Strategi gerak dapat dipindahkan ke permainan lain",
+          "Mengenali kesamaan antar permainan",
+          "Menyesuaikan strategi dengan situasi baru"
+         ],
+         "miskonsepsi": [
+          "Strategi hanya berguna di permainan tempat belajarnya"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir",
+          "urutkan"
+         ],
+         "konteks": [
+          "Tim memakai strategi membuka ruang dari satu permainan ke permainan lain",
+          "Murid membandingkan dua permainan yang punya strategi serupa"
+         ],
+         "tagAset": [
+          "lapangan",
+          "tim-olahraga"
+         ],
+         "perluDicek": true,
+         "id": "pjk-5-bab1--mentransfer-strategi-gerak-ke",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-5-bab2",
+       "bab": 2,
+       "nama": "Berpikir Cerdas, Bergerak Taktis",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "campuran",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Menginvestigasi konsep gerak",
+         "tujuan": "Murid mampu menginvestigasi konsep gerak untuk menemukan konsep yang paling meningkatkan keterampilan.",
+         "konsep": [
+          "Investigasi dilakukan dengan mencoba dan membandingkan",
+          "Konsep gerak memengaruhi hasil keterampilan",
+          "Menyimpulkan konsep gerak yang paling efektif"
+         ],
+         "miskonsepsi": [
+          "Hasil percobaan satu kali sudah cukup untuk menyimpulkan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Murid mencoba dua cara menendang lalu membandingkan hasilnya",
+          "Kelompok mencatat hasil percobaan variasi gerak"
+         ],
+         "tagAset": [
+          "lapangan",
+          "diskusi-kelompok"
+         ],
+         "perluDicek": true,
+         "id": "pjk-5-bab2--menginvestigasi-konsep-gerak",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Memprediksi dan menguji efektivitas strategi gerak",
+         "tujuan": "Murid mampu memprediksi dan menguji efektivitas strategi gerak.",
+         "konsep": [
+          "Prediksi dibuat sebelum strategi diuji",
+          "Strategi diuji lalu dibandingkan dengan prediksi",
+          "Hasil pengujian dipakai untuk memperbaiki strategi"
+         ],
+         "miskonsepsi": [
+          "Prediksi yang meleset berarti strategi pasti buruk"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir",
+          "urutkan"
+         ],
+         "konteks": [
+          "Tim menebak strategi mana yang berhasil lalu mengujinya",
+          "Murid mengevaluasi strategi setelah permainan kecil"
+         ],
+         "tagAset": [
+          "tim-olahraga",
+          "lapangan"
+         ],
+         "perluDicek": true,
+         "id": "pjk-5-bab2--memprediksi-dan-menguji-efektivitas",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-5-bab3",
+       "bab": 3,
+       "nama": "Aturan Baru Permainan Seru",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "campuran",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Merancang aturan alternatif dan modifikasi permainan",
+         "tujuan": "Murid mampu merancang aturan alternatif dan modifikasi permainan untuk permainan yang adil dan inklusif.",
+         "konsep": [
+          "Aturan alternatif dapat dirancang sesuai kebutuhan pemain",
+          "Permainan inklusif melibatkan semua pemain",
+          "Permainan adil memberi kesempatan yang layak"
+         ],
+         "miskonsepsi": [
+          "Aturan tidak boleh diubah sama sekali"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Ada teman yang sulit ikut bermain lalu kelas mengubah aturan",
+          "Kelompok merancang aturan agar semua dapat giliran"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "lapangan"
+         ],
+         "perluDicek": true,
+         "id": "pjk-5-bab3--merancang-aturan-alternatif-dan",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Menguji aturan baru dan dampaknya",
+         "tujuan": "Murid mampu menguji aturan alternatif dan menilai dampaknya terhadap keadilan dan keterlibatan pemain.",
+         "konsep": [
+          "Aturan baru perlu diuji dalam permainan",
+          "Dampak aturan dinilai dari keadilan dan keterlibatan",
+          "Aturan diperbaiki berdasarkan hasil uji"
+         ],
+         "miskonsepsi": [
+          "Aturan yang dibuat satu kelompok pasti cocok untuk semua kelompok"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "urutkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Murid memainkan permainan dengan aturan baru lalu memberi masukan",
+          "Kelompok memperbaiki aturan setelah ada pemain yang jarang mendapat giliran"
+         ],
+         "tagAset": [
+          "tim-olahraga",
+          "diskusi-kelompok"
+         ],
+         "perluDicek": true,
+         "id": "pjk-5-bab3--menguji-aturan-baru-dan",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-5-bab4",
+       "bab": 4,
+       "nama": "Komunitas Kesehatan",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "campuran",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Berpartisipasi positif dalam aktivitas kelompok",
+         "tujuan": "Murid mampu berpartisipasi secara positif dalam aktivitas kelompok, mendorong dan merundingkan peran serta tanggung jawab.",
+         "konsep": [
+          "Berpartisipasi positif dalam kelompok",
+          "Merundingkan peran dan tanggung jawab",
+          "Saling mendorong anggota kelompok"
+         ],
+         "miskonsepsi": [
+          "Pembagian peran cukup ditentukan oleh satu orang"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Kelompok merundingkan peran dalam kegiatan olahraga bersama",
+          "Teman enggan ikut lalu murid mengajaknya dengan sopan"
+         ],
+         "tagAset": [
+          "tim-olahraga",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pjk-5-bab4--berpartisipasi-positif-dalam-aktivitas",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Aktivitas di luar ruangan dan faktor yang memengaruhi partisipasi",
+         "tujuan": "Murid mampu berpartisipasi dalam aktivitas di luar ruangan dan lingkungan alami serta mendeskripsikan faktor-faktor yang memengaruhi partisipasi.",
+         "konsep": [
+          "Aktivitas di luar ruangan dan lingkungan alami",
+          "Faktor pribadi dan kelompok memengaruhi partisipasi",
+          "Menjaga keselamatan dan kebersihan lingkungan"
+         ],
+         "miskonsepsi": [
+          "Aktivitas di luar ruangan tidak perlu persiapan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "sortir",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Murid berjalan santai bersama kelompok di lingkungan sekitar",
+          "Murid membahas apa yang membuat teman enggan ikut kegiatan"
+         ],
+         "tagAset": [
+          "alam-terbuka",
+          "keluarga"
+         ],
+         "perluDicek": true,
+         "id": "pjk-5-bab4--aktivitas-di-luar-ruangan",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pjk-5-bab5",
+       "bab": 5,
+       "nama": "Menjadi Sehat dan Aktif",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Risiko gaya hidup dan pencegahan melalui aktivitas jasmani",
+         "tujuan": "Murid mampu mengidentifikasi risiko kesehatan akibat gaya hidup dan pencegahannya melalui aktivitas jasmani berdasarkan rekomendasi otoritas kesehatan.",
+         "konsep": [
+          "Gaya hidup memengaruhi risiko kesehatan",
+          "Aktivitas jasmani membantu pencegahan",
+          "Rekomendasi otoritas kesehatan sebagai acuan"
+         ],
+         "miskonsepsi": [
+          "Risiko akibat gaya hidup hanya dialami orang dewasa"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir",
+          "bacaan"
+         ],
+         "konteks": [
+          "Murid membaca anjuran aktivitas jasmani untuk anak",
+          "Murid membandingkan kebiasaan harian dua teman"
+         ],
+         "tagAset": [
+          "jantung",
+          "anak-olahraga"
+         ],
+         "perluDicek": true,
+         "id": "pjk-5-bab5--risiko-gaya-hidup-dan",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Pola makan sehat dan informasi gizi",
+         "tujuan": "Murid mampu menerapkan pola makan sehat serta memilih makanan sehat berdasarkan informasi kandungan gizi untuk menunjang aktivitas jasmani.",
+         "konsep": [
+          "Pola makan sehat mendukung gaya hidup aktif",
+          "Informasi kandungan gizi pada makanan",
+          "Memilih makanan sesuai kebutuhan aktivitas"
+         ],
+         "miskonsepsi": [
+          "Makanan yang mengenyangkan pasti bergizi seimbang"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Murid membaca label gizi dua makanan lalu memilih",
+          "Murid menyusun bekal sehat untuk kegiatan olahraga"
+         ],
+         "tagAset": [
+          "makanan-sehat",
+          "piring-gizi",
+          "bekal"
+         ],
+         "perluDicek": true,
+         "id": "pjk-5-bab5--pola-makan-sehat-dan",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      }
+     ]
+    },
+    "6": {
+     "fase": "C",
+     "buku": "Panduan Guru Pendidikan Jasmani, Olahraga, dan Kesehatan untuk SD/MI Kelas VI",
+     "materi": [
+      {
+       "id": "pjk-6-bab1",
+       "bab": 1,
+       "nama": "Jago Bergerak: Taktik Juara",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Menyesuaikan gerak dasar di kondisi permainan baru",
+         "tujuan": "Murid mampu menyesuaikan keterampilan gerak dasar dalam berbagai kondisi permainan atau aktivitas fisik yang lebih kompleks.",
+         "konsep": [
+          "Gerak dasar dapat disesuaikan dengan kondisi permainan",
+          "Kondisi permainan yang lebih kompleks menuntut penyesuaian gerak"
+         ],
+         "miskonsepsi": [
+          "Gerak dasar yang sudah bisa selalu cocok dipakai di semua permainan tanpa diubah"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Murid memainkan permainan yang aturan atau ukuran lapangannya diubah",
+          "Murid mengamati teman yang mengubah cara bergerak saat kondisi berubah"
+         ],
+         "tagAset": [
+          "lapangan",
+          "anak-bermain"
+         ],
+         "id": "pjk-6-bab1--menyesuaikan-gerak-dasar-di",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Taktik membuka ruang, keseimbangan, dan mengatur tempo",
+         "tujuan": "Murid mampu mentransfer strategi gerak (membuka ruang, mempertahankan keseimbangan, mengatur tempo) ke permainan baru dan menyelidiki pengaruh variasi gerak terhadap efektivitas keterampilan.",
+         "konsep": [
+          "Strategi gerak: membuka ruang, mempertahankan keseimbangan, mengatur tempo",
+          "Strategi yang sudah dikuasai dapat dipindahkan ke permainan yang belum dikenal",
+          "Variasi gerak memengaruhi efektivitas keterampilan"
+         ],
+         "miskonsepsi": [
+          "Strategi hanya berguna di satu permainan saja",
+          "Bergerak secepat mungkin selalu lebih baik daripada mengatur tempo"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir",
+          "urutkan"
+         ],
+         "konteks": [
+          "Tim kecil mencari cara membuka ruang saat lawan menjaga ketat",
+          "Murid mencoba dua variasi gerak lalu membandingkan hasilnya"
+         ],
+         "tagAset": [
+          "lapangan",
+          "tim-olahraga"
+         ],
+         "id": "pjk-6-bab1--taktik-membuka-ruang-keseimbangan",
+         "jenisTeks": "informasi"
+        }
+       ]
+      },
+      {
+       "id": "pjk-6-bab2",
+       "bab": 2,
+       "nama": "Sahabat Lapangan: Serunya Main Adil dan Kompak!",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "campuran",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Kelebihan dan kekurangan strategi gerak",
+         "tujuan": "Murid mampu menganalisis kelebihan dan kekurangan strategi gerak dalam berbagai situasi permainan serta mengomunikasikan evaluasinya.",
+         "konsep": [
+          "Setiap strategi punya kelebihan dan kekurangan",
+          "Evaluasi strategi disampaikan dengan alasan yang jelas"
+         ],
+         "miskonsepsi": [
+          "Strategi yang membuat menang sekali pasti strategi terbaik di semua situasi"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "Dua tim membahas strategi setelah pertandingan persahabatan",
+          "Murid menyampaikan penilaian strategi kepada teman dengan sopan"
+         ],
+         "tagAset": [
+          "lapangan",
+          "diskusi-kelompok"
+         ],
+         "id": "pjk-6-bab2--kelebihan-dan-kekurangan-strategi",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Aturan permainan yang adil, inklusif, dan peran dalam tim",
+         "tujuan": "Murid mampu mengevaluasi dampak peraturan/modifikasi permainan terhadap partisipasi dan inklusivitas semua pemain serta pelaksanaan peran dalam tim.",
+         "konsep": [
+          "Fair play dan inklusivitas dalam permainan",
+          "Modifikasi aturan dapat membuat semua pemain ikut terlibat",
+          "Setiap peran dalam tim berkontribusi pada keberhasilan kelompok"
+         ],
+         "miskonsepsi": [
+          "Permainan adil berarti semua pemain harus punya kemampuan yang sama",
+          "Peran yang tidak mencetak skor tidak penting"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir",
+          "urutkan"
+         ],
+         "konteks": [
+          "Ada teman yang sulit ikut bermain, lalu kelas mengubah aturan agar semua terlibat",
+          "Tim berbagi peran lalu murid menilai kontribusi dirinya dan temannya"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "tim-olahraga",
+          "lapangan"
+         ],
+         "id": "pjk-6-bab2--aturan-permainan-yang-adil",
+         "jenisTeks": "campuran"
+        }
+       ]
+      },
+      {
+       "id": "pjk-6-bab3",
+       "bab": 3,
+       "nama": "Energi Super Rahasia Tubuh Sehat dan Kuat",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Dampak aktivitas jasmani bagi jantung, paru-paru, dan suasana hati",
+         "tujuan": "Murid mampu berpartisipasi aktif dalam aktivitas jasmani yang bervariasi dan menjelaskan dampaknya terhadap kesehatan jantung, paru-paru, dan suasana hati.",
+         "konsep": [
+          "Aktivitas jasmani yang bervariasi menyehatkan jantung dan paru-paru",
+          "Aktivitas jasmani memengaruhi suasana hati",
+          "Tubuh memberi tanda setelah beraktivitas (napas, detak jantung)"
+         ],
+         "miskonsepsi": [
+          "Olahraga hanya berguna untuk otot, bukan untuk jantung dan suasana hati"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "Murid membandingkan perasaan sebelum dan sesudah berolahraga",
+          "Murid mengamati napas dan detak jantung setelah berlari"
+         ],
+         "tagAset": [
+          "jantung",
+          "anak-olahraga",
+          "paru-paru"
+         ],
+         "id": "pjk-6-bab3--dampak-aktivitas-jasmani-bagi",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Strategi mencegah perilaku sedenter",
+         "tujuan": "Murid mampu merancang strategi pencegahan perilaku sedenter berdasarkan rekomendasi aktivitas jasmani.",
+         "konsep": [
+          "Perilaku sedenter adalah terlalu lama duduk atau diam",
+          "Rekomendasi aktivitas jasmani menjadi dasar menyusun strategi",
+          "Strategi pencegahan dirancang sesuai kegiatan harian"
+         ],
+         "miskonsepsi": [
+          "Selama sudah olahraga sekali, boleh duduk berjam-jam sepanjang hari"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "urutkan"
+         ],
+         "konteks": [
+          "Murid menyusun rencana gerak di sela waktu menonton atau bermain gawai",
+          "Keluarga membuat kesepakatan kegiatan aktif di akhir pekan"
+         ],
+         "tagAset": [
+          "keluarga",
+          "anak-olahraga"
+         ],
+         "id": "pjk-6-bab3--strategi-mencegah-perilaku-sedenter",
+         "jenisTeks": "informasi"
+        }
+       ]
+      },
+      {
+       "id": "pjk-6-bab4",
+       "bab": 4,
+       "nama": "Makanan Sehat Bahan Bakar untuk Bergerak",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "informasi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Gaya hidup, risiko kesehatan, dan pencegahannya",
+         "tujuan": "Murid mampu menganalisis hubungan antara gaya hidup, risiko kesehatan, dan aktivitas pencegahannya berdasarkan rekomendasi otoritas kesehatan.",
+         "konsep": [
+          "Gaya hidup memengaruhi risiko kesehatan",
+          "Aktivitas pencegahan mengikuti rekomendasi otoritas kesehatan"
+         ],
+         "miskonsepsi": [
+          "Risiko penyakit hanya dialami orang dewasa, bukan anak-anak"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir"
+         ],
+         "konteks": [
+          "Dua teman punya kebiasaan harian berbeda, lalu murid membandingkan dampaknya",
+          "Murid membaca anjuran kesehatan dan memilih kebiasaan yang tepat"
+         ],
+         "tagAset": [
+          "makanan-sehat",
+          "anak-sekolah"
+         ],
+         "id": "pjk-6-bab4--gaya-hidup-risiko-kesehatan",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Menu sehat harian untuk menunjang aktivitas jasmani",
+         "tujuan": "Murid mampu merancang menu sehat harian yang mendukung aktivitas jasmani spesifik berdasarkan analisis kebutuhan gizi seimbang.",
+         "konsep": [
+          "Gizi seimbang",
+          "Kandungan gizi pada makanan",
+          "Kebutuhan gizi disesuaikan dengan jenis aktivitas jasmani"
+         ],
+         "miskonsepsi": [
+          "Makanan yang mengenyangkan pasti bergizi seimbang",
+          "Satu jenis makanan sudah cukup memenuhi semua kebutuhan gizi"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Murid menyusun menu sarapan sebelum lomba lari",
+          "Murid memilih bekal sehat untuk kegiatan olahraga sekolah"
+         ],
+         "tagAset": [
+          "makanan-sehat",
+          "piring-gizi",
+          "bekal"
+         ],
+         "id": "pjk-6-bab4--menu-sehat-harian-untuk",
+         "jenisTeks": "informasi"
+        }
+       ]
+      },
+      {
+       "id": "pjk-6-bab5",
+       "bab": 5,
+       "nama": "Pahlawan Cilik: Siap Menolong dan Jaga Diri",
+       "domain": "Literasi Pendidikan Jasmani, Olahraga, dan Kesehatan",
+       "jenisTeksBab": "campuran",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Penanganan cedera sedang: keseleo dan prinsip RICE",
+         "tujuan": "Murid mampu mempraktikkan penanganan cedera sedang (misalnya keseleo) sesuai prosedur operasional standar (POS) pertolongan pertama dalam simulasi.",
+         "konsep": [
+          "Keseleo termasuk cedera sedang",
+          "Prinsip RICE dalam pertolongan pertama",
+          "Penanganan mengikuti urutan POS pertolongan pertama"
+         ],
+         "miskonsepsi": [
+          "Kaki yang keseleo harus langsung dipaksa berjalan agar cepat sembuh"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Teman terjatuh dan kakinya keseleo saat bermain di lapangan",
+          "Murid memperagakan pertolongan pertama dalam simulasi di kelas"
+         ],
+         "tagAset": [
+          "lapangan",
+          "kotak-p3k"
+         ],
+         "perluDicek": true,
+         "id": "pjk-6-bab5--penanganan-cedera-sedang-keseleo",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Penanganan cedera sedang: pingsan dan sikap menolong",
+         "tujuan": "Murid mampu mempraktikkan penanganan cedera sedang (misalnya pingsan) sesuai POS pertolongan pertama dalam simulasi.",
+         "konsep": [
+          "Pingsan termasuk kondisi yang perlu pertolongan pertama",
+          "Menolong dengan tenang dan sesuai POS",
+          "Mengetahui kapan harus memanggil guru atau orang dewasa"
+         ],
+         "miskonsepsi": [
+          "Murid boleh menolong dengan cara apa saja asal cepat"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "urutkan",
+          "runner"
+         ],
+         "konteks": [
+          "Teman pingsan saat upacara atau kegiatan olahraga",
+          "Murid memilih tindakan menolong yang tepat dan segera melapor kepada guru"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "kotak-p3k"
+         ],
+         "perluDicek": true,
+         "id": "pjk-6-bab5--penanganan-cedera-sedang-pingsan",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
       }
      ]
     }

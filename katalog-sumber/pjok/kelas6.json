@@ -1,0 +1,344 @@
+{
+ "mapel": "PJOK",
+ "kelas": 6,
+ "buku": "Panduan Guru Pendidikan Jasmani, Olahraga, dan Kesehatan untuk SD/MI Kelas VI",
+ "materi": [
+  {
+   "bab": 1,
+   "nama": "Jago Bergerak: Taktik Juara",
+   "jenisTeks": "informasi",
+   "tema": "jingga",
+   "sub": [
+    {
+     "nama": "Menyesuaikan gerak dasar di kondisi permainan baru",
+     "tujuan": "Murid mampu menyesuaikan keterampilan gerak dasar dalam berbagai kondisi permainan atau aktivitas fisik yang lebih kompleks.",
+     "konsep": [
+      "Gerak dasar dapat disesuaikan dengan kondisi permainan",
+      "Kondisi permainan yang lebih kompleks menuntut penyesuaian gerak"
+     ],
+     "miskonsepsi": [
+      "Gerak dasar yang sudah bisa selalu cocok dipakai di semua permainan tanpa diubah"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "bacaan",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Murid memainkan permainan yang aturan atau ukuran lapangannya diubah",
+      "Murid mengamati teman yang mengubah cara bergerak saat kondisi berubah"
+     ],
+     "tagAset": [
+      "lapangan",
+      "anak-bermain"
+     ]
+    },
+    {
+     "nama": "Taktik membuka ruang, keseimbangan, dan mengatur tempo",
+     "tujuan": "Murid mampu mentransfer strategi gerak (membuka ruang, mempertahankan keseimbangan, mengatur tempo) ke permainan baru dan menyelidiki pengaruh variasi gerak terhadap efektivitas keterampilan.",
+     "konsep": [
+      "Strategi gerak: membuka ruang, mempertahankan keseimbangan, mengatur tempo",
+      "Strategi yang sudah dikuasai dapat dipindahkan ke permainan yang belum dikenal",
+      "Variasi gerak memengaruhi efektivitas keterampilan"
+     ],
+     "miskonsepsi": [
+      "Strategi hanya berguna di satu permainan saja",
+      "Bergerak secepat mungkin selalu lebih baik daripada mengatur tempo"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir",
+      "urutkan"
+     ],
+     "konteks": [
+      "Tim kecil mencari cara membuka ruang saat lawan menjaga ketat",
+      "Murid mencoba dua variasi gerak lalu membandingkan hasilnya"
+     ],
+     "tagAset": [
+      "lapangan",
+      "tim-olahraga"
+     ]
+    }
+   ]
+  },
+  {
+   "bab": 2,
+   "nama": "Sahabat Lapangan: Serunya Main Adil dan Kompak!",
+   "jenisTeks": "campuran",
+   "tema": "antariksa",
+   "sub": [
+    {
+     "nama": "Kelebihan dan kekurangan strategi gerak",
+     "tujuan": "Murid mampu menganalisis kelebihan dan kekurangan strategi gerak dalam berbagai situasi permainan serta mengomunikasikan evaluasinya.",
+     "konsep": [
+      "Setiap strategi punya kelebihan dan kekurangan",
+      "Evaluasi strategi disampaikan dengan alasan yang jelas"
+     ],
+     "miskonsepsi": [
+      "Strategi yang membuat menang sekali pasti strategi terbaik di semua situasi"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "sortir",
+      "cerita"
+     ],
+     "konteks": [
+      "Dua tim membahas strategi setelah pertandingan persahabatan",
+      "Murid menyampaikan penilaian strategi kepada teman dengan sopan"
+     ],
+     "tagAset": [
+      "lapangan",
+      "diskusi-kelompok"
+     ]
+    },
+    {
+     "nama": "Aturan permainan yang adil, inklusif, dan peran dalam tim",
+     "tujuan": "Murid mampu mengevaluasi dampak peraturan/modifikasi permainan terhadap partisipasi dan inklusivitas semua pemain serta pelaksanaan peran dalam tim.",
+     "konsep": [
+      "Fair play dan inklusivitas dalam permainan",
+      "Modifikasi aturan dapat membuat semua pemain ikut terlibat",
+      "Setiap peran dalam tim berkontribusi pada keberhasilan kelompok"
+     ],
+     "miskonsepsi": [
+      "Permainan adil berarti semua pemain harus punya kemampuan yang sama",
+      "Peran yang tidak mencetak skor tidak penting"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir",
+      "urutkan"
+     ],
+     "konteks": [
+      "Ada teman yang sulit ikut bermain, lalu kelas mengubah aturan agar semua terlibat",
+      "Tim berbagi peran lalu murid menilai kontribusi dirinya dan temannya"
+     ],
+     "tagAset": [
+      "anak-sekolah",
+      "tim-olahraga",
+      "lapangan"
+     ]
+    }
+   ]
+  },
+  {
+   "bab": 3,
+   "nama": "Energi Super Rahasia Tubuh Sehat dan Kuat",
+   "jenisTeks": "informasi",
+   "tema": "hutan",
+   "sub": [
+    {
+     "nama": "Dampak aktivitas jasmani bagi jantung, paru-paru, dan suasana hati",
+     "tujuan": "Murid mampu berpartisipasi aktif dalam aktivitas jasmani yang bervariasi dan menjelaskan dampaknya terhadap kesehatan jantung, paru-paru, dan suasana hati.",
+     "konsep": [
+      "Aktivitas jasmani yang bervariasi menyehatkan jantung dan paru-paru",
+      "Aktivitas jasmani memengaruhi suasana hati",
+      "Tubuh memberi tanda setelah beraktivitas (napas, detak jantung)"
+     ],
+     "miskonsepsi": [
+      "Olahraga hanya berguna untuk otot, bukan untuk jantung dan suasana hati"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "bacaan",
+      "cocokkan",
+      "runner"
+     ],
+     "konteks": [
+      "Murid membandingkan perasaan sebelum dan sesudah berolahraga",
+      "Murid mengamati napas dan detak jantung setelah berlari"
+     ],
+     "tagAset": [
+      "jantung",
+      "anak-olahraga",
+      "paru-paru"
+     ]
+    },
+    {
+     "nama": "Strategi mencegah perilaku sedenter",
+     "tujuan": "Murid mampu merancang strategi pencegahan perilaku sedenter berdasarkan rekomendasi aktivitas jasmani.",
+     "konsep": [
+      "Perilaku sedenter adalah terlalu lama duduk atau diam",
+      "Rekomendasi aktivitas jasmani menjadi dasar menyusun strategi",
+      "Strategi pencegahan dirancang sesuai kegiatan harian"
+     ],
+     "miskonsepsi": [
+      "Selama sudah olahraga sekali, boleh duduk berjam-jam sepanjang hari"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "sortir",
+      "urutkan"
+     ],
+     "konteks": [
+      "Murid menyusun rencana gerak di sela waktu menonton atau bermain gawai",
+      "Keluarga membuat kesepakatan kegiatan aktif di akhir pekan"
+     ],
+     "tagAset": [
+      "keluarga",
+      "anak-olahraga"
+     ]
+    }
+   ]
+  },
+  {
+   "bab": 4,
+   "nama": "Makanan Sehat Bahan Bakar untuk Bergerak",
+   "jenisTeks": "informasi",
+   "tema": "hutan",
+   "sub": [
+    {
+     "nama": "Gaya hidup, risiko kesehatan, dan pencegahannya",
+     "tujuan": "Murid mampu menganalisis hubungan antara gaya hidup, risiko kesehatan, dan aktivitas pencegahannya berdasarkan rekomendasi otoritas kesehatan.",
+     "konsep": [
+      "Gaya hidup memengaruhi risiko kesehatan",
+      "Aktivitas pencegahan mengikuti rekomendasi otoritas kesehatan"
+     ],
+     "miskonsepsi": [
+      "Risiko penyakit hanya dialami orang dewasa, bukan anak-anak"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cocokkan",
+      "sortir"
+     ],
+     "konteks": [
+      "Dua teman punya kebiasaan harian berbeda, lalu murid membandingkan dampaknya",
+      "Murid membaca anjuran kesehatan dan memilih kebiasaan yang tepat"
+     ],
+     "tagAset": [
+      "makanan-sehat",
+      "anak-sekolah"
+     ]
+    },
+    {
+     "nama": "Menu sehat harian untuk menunjang aktivitas jasmani",
+     "tujuan": "Murid mampu merancang menu sehat harian yang mendukung aktivitas jasmani spesifik berdasarkan analisis kebutuhan gizi seimbang.",
+     "konsep": [
+      "Gizi seimbang",
+      "Kandungan gizi pada makanan",
+      "Kebutuhan gizi disesuaikan dengan jenis aktivitas jasmani"
+     ],
+     "miskonsepsi": [
+      "Makanan yang mengenyangkan pasti bergizi seimbang",
+      "Satu jenis makanan sudah cukup memenuhi semua kebutuhan gizi"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "sortir",
+      "cocokkan",
+      "cerita"
+     ],
+     "konteks": [
+      "Murid menyusun menu sarapan sebelum lomba lari",
+      "Murid memilih bekal sehat untuk kegiatan olahraga sekolah"
+     ],
+     "tagAset": [
+      "makanan-sehat",
+      "piring-gizi",
+      "bekal"
+     ]
+    }
+   ]
+  },
+  {
+   "bab": 5,
+   "nama": "Pahlawan Cilik: Siap Menolong dan Jaga Diri",
+   "jenisTeks": "campuran",
+   "tema": "jingga",
+   "sub": [
+    {
+     "nama": "Penanganan cedera sedang: keseleo dan prinsip RICE",
+     "tujuan": "Murid mampu mempraktikkan penanganan cedera sedang (misalnya keseleo) sesuai prosedur operasional standar (POS) pertolongan pertama dalam simulasi.",
+     "konsep": [
+      "Keseleo termasuk cedera sedang",
+      "Prinsip RICE dalam pertolongan pertama",
+      "Penanganan mengikuti urutan POS pertolongan pertama"
+     ],
+     "miskonsepsi": [
+      "Kaki yang keseleo harus langsung dipaksa berjalan agar cepat sembuh"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "urutkan",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Teman terjatuh dan kakinya keseleo saat bermain di lapangan",
+      "Murid memperagakan pertolongan pertama dalam simulasi di kelas"
+     ],
+     "tagAset": [
+      "lapangan",
+      "kotak-p3k"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Penanganan cedera sedang: pingsan dan sikap menolong",
+     "tujuan": "Murid mampu mempraktikkan penanganan cedera sedang (misalnya pingsan) sesuai POS pertolongan pertama dalam simulasi.",
+     "konsep": [
+      "Pingsan termasuk kondisi yang perlu pertolongan pertama",
+      "Menolong dengan tenang dan sesuai POS",
+      "Mengetahui kapan harus memanggil guru atau orang dewasa"
+     ],
+     "miskonsepsi": [
+      "Murid boleh menolong dengan cara apa saja asal cepat"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "urutkan",
+      "runner"
+     ],
+     "konteks": [
+      "Teman pingsan saat upacara atau kegiatan olahraga",
+      "Murid memilih tindakan menolong yang tepat dan segera melapor kepada guru"
+     ],
+     "tagAset": [
+      "anak-sekolah",
+      "kotak-p3k"
+     ],
+     "perluDicek": true
+    }
+   ]
+  }
+ ]
+}

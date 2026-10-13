@@ -1,0 +1,348 @@
+{
+ "mapel": "PJOK",
+ "kelas": 2,
+ "buku": "Panduan Guru Pendidikan Jasmani, Olahraga, dan Kesehatan untuk SD/MI Kelas II",
+ "materi": [
+  {
+   "bab": 1,
+   "nama": "Ayo, Gerakkan Badanmu!",
+   "jenisTeks": "informasi",
+   "tema": "jingga",
+   "sub": [
+    {
+     "nama": "Gerak dasar nonlokomotor dan lokomotor",
+     "tujuan": "Murid mampu menjelaskan dan mempraktikkan gerak dasar nonlokomotor dan lokomotor dalam berbagai situasi.",
+     "konsep": [
+      "Gerak nonlokomotor dilakukan di tempat",
+      "Gerak lokomotor membuat tubuh berpindah tempat",
+      "Kedua gerak dapat dipakai dalam berbagai situasi"
+     ],
+     "miskonsepsi": [
+      "Gerak nonlokomotor dan lokomotor adalah gerak yang sama"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "sortir",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Murid memilah kartu gerak di tempat dan gerak berpindah",
+      "Murid bermain meniru gerak hewan di lapangan"
+     ],
+     "tagAset": [
+      "lapangan",
+      "anak-bermain"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Gerak dasar manipulatif dan eksplorasi gerak",
+     "tujuan": "Murid mampu menjelaskan gerak dasar manipulatif dan mengeksplorasi berbagai gerak dengan benda atau bagian tubuh.",
+     "konsep": [
+      "Gerak manipulatif menggunakan benda, misalnya bola",
+      "Benda dapat digerakkan dengan bagian tubuh yang berbeda",
+      "Efektivitas gerak dapat dibandingkan dan disimpulkan"
+     ],
+     "miskonsepsi": [
+      "Satu cara memainkan bola pasti paling baik di semua keadaan"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cocokkan",
+      "cerita",
+      "runner"
+     ],
+     "konteks": [
+      "Murid mencoba memindahkan bola dengan tangan lalu dengan kaki",
+      "Murid membandingkan hasil bermain di ruang sempit dan luas"
+     ],
+     "tagAset": [
+      "bola",
+      "lapangan"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 2,
+   "nama": "Serunya Bermain!",
+   "jenisTeks": "campuran",
+   "tema": "antariksa",
+   "sub": [
+    {
+     "nama": "Perilaku fair play dalam permainan sederhana",
+     "tujuan": "Murid mampu mengidentifikasi dan menerapkan perilaku fair play dalam aktivitas jasmani dan permainan sederhana.",
+     "konsep": [
+      "Fair play berarti bermain jujur dan menaati aturan",
+      "Menghargai teman dan lawan bermain",
+      "Menerima kemenangan dan kekalahan dengan baik"
+     ],
+     "miskonsepsi": [
+      "Boleh berbuat curang asal tidak ketahuan"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Teman melanggar aturan saat bermain lalu murid memilih sikap",
+      "Tim yang kalah tetap bersalaman dengan tim lawan"
+     ],
+     "tagAset": [
+      "anak-bermain",
+      "tim-olahraga"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Kerja sama dan kolaborasi dalam kelompok",
+     "tujuan": "Murid mampu menerapkan strategi kolaborasi dalam aktivitas jasmani dan permainan sederhana.",
+     "konsep": [
+      "Kerja sama membantu kelompok mencapai tujuan",
+      "Setiap anggota punya tugas",
+      "Kolaborasi dilakukan dengan saling mendengarkan"
+     ],
+     "miskonsepsi": [
+      "Permainan kelompok bisa menang kalau satu pemain saja yang bermain"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "urutkan",
+      "cerita",
+      "bacaan"
+     ],
+     "konteks": [
+      "Kelompok menyusun cara memindahkan bola bersama-sama",
+      "Murid saling membantu teman yang kesulitan"
+     ],
+     "tagAset": [
+      "tim-olahraga",
+      "lapangan"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 3,
+   "nama": "Sehatkan Badanmu!",
+   "jenisTeks": "informasi",
+   "tema": "hutan",
+   "sub": [
+    {
+     "nama": "Aktivitas kebugaran jasmani",
+     "tujuan": "Murid mampu menjelaskan dan mempraktikkan aktivitas kebugaran jasmani.",
+     "konsep": [
+      "Kebugaran jasmani membuat tubuh kuat dan tidak mudah lelah",
+      "Ada beberapa aktivitas yang melatih kebugaran",
+      "Latihan dilakukan secara teratur"
+     ],
+     "miskonsepsi": [
+      "Kebugaran hanya dibutuhkan atlet"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "bacaan",
+      "cocokkan",
+      "runner"
+     ],
+     "konteks": [
+      "Murid membandingkan tubuh sebelum dan sesudah berlari",
+      "Murid mengikuti senam kebugaran bersama teman"
+     ],
+     "tagAset": [
+      "anak-olahraga",
+      "senam"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Gaya hidup aktif dan sehat",
+     "tujuan": "Murid mampu mengidentifikasi gaya hidup aktif dan sehat serta aktivitas jasmani untuk kesehatan.",
+     "konsep": [
+      "Gaya hidup aktif berarti sering bergerak",
+      "Aktivitas jasmani membangun kesehatan",
+      "Kebiasaan sehat dilakukan setiap hari"
+     ],
+     "miskonsepsi": [
+      "Bermain gawai sepanjang hari tidak memengaruhi kesehatan"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "sortir",
+      "cerita"
+     ],
+     "konteks": [
+      "Dua teman punya kebiasaan harian berbeda: aktif dan kurang bergerak",
+      "Keluarga berjalan pagi bersama di akhir pekan"
+     ],
+     "tagAset": [
+      "keluarga",
+      "anak-olahraga"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 4,
+   "nama": "Pilih Makanan Sehatmu",
+   "jenisTeks": "informasi",
+   "tema": "hutan",
+   "sub": [
+    {
+     "nama": "Komponen makanan bergizi seimbang",
+     "tujuan": "Murid mampu mengidentifikasi dan memilih komponen makanan bergizi seimbang.",
+     "konsep": [
+      "Makanan bergizi seimbang terdiri dari beberapa kelompok makanan",
+      "Setiap makanan punya manfaat bagi tubuh",
+      "Memilih makanan sehat untuk bekal dan sarapan"
+     ],
+     "miskonsepsi": [
+      "Makan satu jenis makanan yang disukai sudah cukup bergizi"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "sortir",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Murid menyusun isi piring makan yang seimbang",
+      "Murid memilih bekal sehat untuk ke sekolah"
+     ],
+     "tagAset": [
+      "makanan-sehat",
+      "piring-gizi"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Informasi gizi pada produk makanan",
+     "tujuan": "Murid mampu mengidentifikasi informasi gizi pada kemasan makanan yang berdampak pada kesehatan.",
+     "konsep": [
+      "Kemasan makanan memuat informasi gizi",
+      "Makanan terlalu manis atau terlalu asin kurang baik jika berlebihan",
+      "Informasi gizi membantu memilih jajanan"
+     ],
+     "miskonsepsi": [
+      "Semua jajanan kemasan sama sehatnya"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "cocokkan",
+      "runner"
+     ],
+     "konteks": [
+      "Murid membaca label dua jajanan lalu memilih yang lebih baik",
+      "Murid memilih camilan sehat di kantin sekolah"
+     ],
+     "tagAset": [
+      "makanan-sehat",
+      "bekal"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 5,
+   "nama": "Bergerak dengan Aman",
+   "jenisTeks": "campuran",
+   "tema": "jingga",
+   "sub": [
+    {
+     "nama": "Situasi yang berisiko saat beraktivitas jasmani",
+     "tujuan": "Murid mampu menjelaskan situasi dan potensi yang berisiko terhadap keselamatan dalam aktivitas jasmani sehari-hari.",
+     "konsep": [
+      "Ada tempat dan keadaan yang berisiko saat bergerak",
+      "Mengenali bahaya sebelum bermain",
+      "Memilih tindakan yang aman"
+     ],
+     "miskonsepsi": [
+      "Bahaya hanya terjadi di tempat yang jauh dari sekolah"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "sortir",
+      "cerita"
+     ],
+     "konteks": [
+      "Murid menemukan lantai licin dan tali yang terlepas di lapangan",
+      "Murid memilih tempat bermain yang aman"
+     ],
+     "tagAset": [
+      "lapangan",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Mencari bantuan kepada orang dewasa",
+     "tujuan": "Murid mampu menjelaskan dan memilih cara mencari bantuan kepada orang dewasa terpercaya atau profesional.",
+     "konsep": [
+      "Orang dewasa terpercaya: guru, orang tua, petugas kesehatan",
+      "Menyampaikan kejadian dengan jelas dan tenang",
+      "Segera mencari bantuan saat ada yang terluka"
+     ],
+     "miskonsepsi": [
+      "Murid harus menangani luka berat sendiri tanpa memanggil orang dewasa"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "urutkan",
+      "runner"
+     ],
+     "konteks": [
+      "Teman terjatuh dan menangis saat bermain",
+      "Murid memanggil guru dan menjelaskan kejadiannya"
+     ],
+     "tagAset": [
+      "kotak-p3k",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    }
+   ]
+  }
+ ]
+}

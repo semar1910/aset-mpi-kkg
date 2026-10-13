@@ -1,0 +1,348 @@
+{
+ "mapel": "PJOK",
+ "kelas": 4,
+ "buku": "Panduan Guru Pendidikan Jasmani, Olahraga, dan Kesehatan untuk SD/MI Kelas IV",
+ "materi": [
+  {
+   "bab": 1,
+   "nama": "Ayo, Bergerak!",
+   "jenisTeks": "informasi",
+   "tema": "jingga",
+   "sub": [
+    {
+     "nama": "Gerak fundamental dalam situasi gerak yang baru",
+     "tujuan": "Murid mampu menerapkan keterampilan gerak fundamental dalam situasi gerak yang baru.",
+     "konsep": [
+      "Keterampilan gerak fundamental dapat dipakai di situasi baru",
+      "Gerak perlu disesuaikan dengan keadaan",
+      "Berlatih membuat gerak semakin halus"
+     ],
+     "miskonsepsi": [
+      "Gerak yang sudah dikuasai tidak perlu disesuaikan di situasi baru"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "cocokkan",
+      "bacaan"
+     ],
+     "konteks": [
+      "Murid memainkan permainan dengan lapangan yang berbeda",
+      "Murid mengamati teman menyesuaikan gerak saat aturan berubah"
+     ],
+     "tagAset": [
+      "lapangan",
+      "anak-bermain"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Konsep gerak dan memecahkan masalah gerak",
+     "tujuan": "Murid mampu memperagakan konsep gerak dalam rangkaian gerak dan memecahkan masalah gerak.",
+     "konsep": [
+      "Konsep gerak: ruang, waktu, tenaga",
+      "Rangkaian gerak disusun berurutan",
+      "Masalah gerak dipecahkan dengan mencoba dan mengevaluasi"
+     ],
+     "miskonsepsi": [
+      "Masalah gerak hanya bisa dipecahkan dengan satu cara"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "urutkan",
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Tim kecil mencari cara melewati rintangan",
+      "Murid menyusun rangkaian gerak lalu memperbaikinya"
+     ],
+     "tagAset": [
+      "lapangan",
+      "tim-olahraga"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 2,
+   "nama": "Ayo, Bermain!",
+   "jenisTeks": "campuran",
+   "tema": "antariksa",
+   "sub": [
+    {
+     "nama": "Menyesuaikan strategi gerak dalam permainan",
+     "tujuan": "Murid mampu menyesuaikan strategi gerak untuk mendapatkan capaian keterampilan gerak.",
+     "konsep": [
+      "Strategi gerak disesuaikan dengan keadaan permainan",
+      "Mencoba, menilai, lalu memperbaiki strategi",
+      "Konsep gerak dalam rangkaian gerak"
+     ],
+     "miskonsepsi": [
+      "Strategi yang sama selalu berhasil di setiap permainan"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Tim mengubah cara bermain karena lawan lebih tinggi",
+      "Murid membandingkan dua strategi dalam permainan kecil"
+     ],
+     "tagAset": [
+      "lapangan",
+      "tim-olahraga"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Fair play dan faktor yang membuat aktivitas jasmani menyenangkan",
+     "tujuan": "Murid mampu menerapkan peraturan untuk fair play dan mengidentifikasi faktor yang membuat aktivitas jasmani menyenangkan.",
+     "konsep": [
+      "Peraturan menjaga permainan tetap adil",
+      "Fair play: jujur, sportif, menghargai",
+      "Faktor menyenangkan: teman, aturan jelas, rasa aman"
+     ],
+     "miskonsepsi": [
+      "Permainan menyenangkan hanya kalau tim sendiri menang"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "sortir",
+      "cerita",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Teman melanggar aturan saat pertandingan persahabatan",
+      "Murid membahas apa yang membuat permainan seru"
+     ],
+     "tagAset": [
+      "anak-bermain",
+      "tim-olahraga"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 3,
+   "nama": "Ayo, Merangkai Gerak!",
+   "jenisTeks": "campuran",
+   "tema": "emas",
+   "sub": [
+    {
+     "nama": "Menerapkan konsep gerak dalam rangkaian gerak",
+     "tujuan": "Murid mampu menerapkan konsep gerak dalam rangkaian gerak.",
+     "konsep": [
+      "Rangkaian gerak terdiri dari beberapa gerak yang berurutan",
+      "Konsep gerak: ruang, waktu, tenaga",
+      "Gerak awal, inti, dan akhir"
+     ],
+     "miskonsepsi": [
+      "Rangkaian gerak boleh disusun acak tanpa urutan"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "urutkan",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Murid menyusun urutan rangkaian gerak senam",
+      "Murid memasangkan konsep gerak dengan contoh gerakannya"
+     ],
+     "tagAset": [
+      "senam",
+      "anak-olahraga"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Berbagai peran dengan cara terhormat",
+     "tujuan": "Murid mampu mempertunjukkan berbagai peran dengan cara terhormat untuk mendapatkan keberhasilan capaian.",
+     "konsep": [
+      "Setiap peran dalam kelompok penting",
+      "Menghormati teman dalam setiap peran",
+      "Keberhasilan kelompok dicapai bersama"
+     ],
+     "miskonsepsi": [
+      "Peran yang tidak tampil di depan tidak penting"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Kelompok membagi peran penampil, pencatat, dan pengatur musik",
+      "Teman tidak puas dengan perannya lalu kelompok berdiskusi"
+     ],
+     "tagAset": [
+      "tim-olahraga",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 4,
+   "nama": "Ayo, Bugarkan Tubuhmu!",
+   "jenisTeks": "informasi",
+   "tema": "hutan",
+   "sub": [
+    {
+     "nama": "Berpartisipasi dalam berbagai aktivitas jasmani",
+     "tujuan": "Murid mampu berpartisipasi dalam berbagai aktivitas jasmani dan memperagakan konsep gerak dalam rangkaian gerak.",
+     "konsep": [
+      "Ada berbagai macam aktivitas jasmani",
+      "Aktivitas jasmani membuat tubuh bugar",
+      "Rangkaian gerak dapat dilakukan untuk kebugaran"
+     ],
+     "miskonsepsi": [
+      "Aktivitas jasmani hanya berupa olahraga berlomba"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "bacaan",
+      "cocokkan",
+      "runner"
+     ],
+     "konteks": [
+      "Murid mencoba beberapa aktivitas jasmani lalu membandingkan rasanya",
+      "Murid menyusun rangkaian gerak kebugaran"
+     ],
+     "tagAset": [
+      "anak-olahraga",
+      "jantung"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Faktor yang membuat aktivitas jasmani menyenangkan",
+     "tujuan": "Murid mampu mengidentifikasi faktor-faktor yang membuat aktivitas jasmani menyenangkan.",
+     "konsep": [
+      "Faktor pribadi: minat dan kemampuan",
+      "Faktor lingkungan: teman, tempat, dan alat",
+      "Aktivitas dapat disesuaikan agar menyenangkan"
+     ],
+     "miskonsepsi": [
+      "Aktivitas jasmani menyenangkan bagi semua orang dengan cara yang sama"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "sortir",
+      "cerita"
+     ],
+     "konteks": [
+      "Murid memilih aktivitas yang disukai dan menjelaskan alasannya",
+      "Kelompok mengubah permainan agar semua teman senang"
+     ],
+     "tagAset": [
+      "anak-bermain",
+      "lapangan"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 5,
+   "nama": "Hidup yang Menyehatkan",
+   "jenisTeks": "campuran",
+   "tema": "hutan",
+   "sub": [
+    {
+     "nama": "Risiko gaya hidup tidak sehat dan makanan bergizi seimbang",
+     "tujuan": "Murid mampu mengenali risiko akibat gaya hidup tidak sehat dan mengeksplorasi pola makan sehat serta bergizi seimbang untuk menunjang aktivitas.",
+     "konsep": [
+      "Gaya hidup tidak sehat memiliki risiko bagi kesehatan",
+      "Aktivitas jasmani membantu pencegahan",
+      "Pola makan sehat dan bergizi seimbang menunjang aktivitas"
+     ],
+     "miskonsepsi": [
+      "Anak-anak tidak punya risiko kesehatan karena gaya hidup"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "sortir",
+      "cocokkan",
+      "cerita"
+     ],
+     "konteks": [
+      "Murid membandingkan kebiasaan harian dua teman",
+      "Murid menyusun menu sarapan sebelum pelajaran olahraga"
+     ],
+     "tagAset": [
+      "makanan-sehat",
+      "piring-gizi"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Penanganan cedera ringan saat aktivitas jasmani",
+     "tujuan": "Murid mampu mempraktikkan penanganan cedera ringan sesuai prinsip pertolongan pertama dalam aktivitas jasmani atau olahraga.",
+     "konsep": [
+      "Cedera ringan, misalnya luka lecet dan memar",
+      "Prinsip pertolongan pertama",
+      "Melapor kepada guru atau orang dewasa"
+     ],
+     "miskonsepsi": [
+      "Luka lecet cukup ditutup tanpa dibersihkan"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "urutkan",
+      "cerita",
+      "runner"
+     ],
+     "konteks": [
+      "Teman terjatuh dan lututnya lecet saat bermain",
+      "Murid memperagakan pertolongan pertama dalam simulasi"
+     ],
+     "tagAset": [
+      "kotak-p3k",
+      "lapangan"
+     ],
+     "perluDicek": true
+    }
+   ]
+  }
+ ]
+}

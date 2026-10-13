@@ -1,0 +1,548 @@
+{
+ "mapel": "PJOK",
+ "kelas": 3,
+ "buku": "Buku Panduan Guru Pendidikan Jasmani, Olahraga, dan Kesehatan untuk SD/MI Kelas III",
+ "materi": [
+  {
+   "bab": 1,
+   "nama": "Aktivitas Pola Gerak Dasar Lokomotor",
+   "jenisTeks": "informasi",
+   "tema": "jingga",
+   "sub": [
+    {
+     "nama": "Mengenal gerak lokomotor",
+     "tujuan": "Murid mampu mengidentifikasi keterampilan gerak dasar lokomotor.",
+     "konsep": [
+      "Gerak lokomotor membuat tubuh berpindah tempat",
+      "Contoh: berjalan, berlari, melompat, meloncat",
+      "Setiap gerak punya ciri yang berbeda"
+     ],
+     "miskonsepsi": [
+      "Gerak lokomotor hanya berlari"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "sortir",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Murid memilah kartu gerak lokomotor dan bukan lokomotor",
+      "Murid mengamati teman bermain lompat dan lari"
+     ],
+     "tagAset": [
+      "lapangan",
+      "anak-bermain"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Strategi gerak lokomotor dalam permainan sederhana",
+     "tujuan": "Murid mampu menerapkan strategi gerak sederhana saat melakukan gerak lokomotor.",
+     "konsep": [
+      "Mengatur kecepatan dan arah saat bergerak",
+      "Strategi sederhana membantu mencapai tujuan permainan",
+      "Bergerak dengan aman di antara teman"
+     ],
+     "miskonsepsi": [
+      "Berlari secepat mungkin selalu menjadi cara terbaik"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "urutkan"
+     ],
+     "konteks": [
+      "Dua tim bermain kejar-kejaran di lapangan",
+      "Murid memilih cara berpindah tercepat tanpa menabrak teman"
+     ],
+     "tagAset": [
+      "lapangan",
+      "tim-olahraga"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 2,
+   "nama": "Aktivitas Pola Gerak Dasar Nonlokomotor",
+   "jenisTeks": "informasi",
+   "tema": "jingga",
+   "sub": [
+    {
+     "nama": "Mengenal gerak nonlokomotor",
+     "tujuan": "Murid mampu mengidentifikasi keterampilan gerak dasar nonlokomotor.",
+     "konsep": [
+      "Gerak nonlokomotor dilakukan di tempat",
+      "Contoh: menekuk, memutar, mengayun, meregang",
+      "Gerak nonlokomotor melatih kelenturan dan keseimbangan"
+     ],
+     "miskonsepsi": [
+      "Gerak di tempat tidak membuat tubuh berolahraga"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "cocokkan",
+      "sortir"
+     ],
+     "konteks": [
+      "Murid memasangkan nama gerak dengan gambar",
+      "Murid mengikuti senam pagi di halaman sekolah"
+     ],
+     "tagAset": [
+      "senam",
+      "anak-olahraga"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Konsep gerak nonlokomotor",
+     "tujuan": "Murid mampu memperagakan konsep gerak pada gerak nonlokomotor.",
+     "konsep": [
+      "Gerak dapat dilakukan dengan tenaga dan kecepatan berbeda",
+      "Gerak dapat dilakukan pada ruang yang berbeda",
+      "Konsep gerak memengaruhi hasil gerakan"
+     ],
+     "miskonsepsi": [
+      "Satu gerak hanya dapat dilakukan dengan satu cara"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "bacaan",
+      "runner"
+     ],
+     "konteks": [
+      "Murid menirukan gerak pohon tertiup angin dengan kuat lalu pelan",
+      "Murid menyusun urutan gerak peregangan"
+     ],
+     "tagAset": [
+      "senam",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 3,
+   "nama": "Aktivitas Pola Gerak Dasar Manipulatif",
+   "jenisTeks": "informasi",
+   "tema": "jingga",
+   "sub": [
+    {
+     "nama": "Mengenal gerak manipulatif",
+     "tujuan": "Murid mampu mengidentifikasi keterampilan gerak dasar manipulatif.",
+     "konsep": [
+      "Gerak manipulatif menggunakan atau mengendalikan benda",
+      "Contoh: melempar, menangkap, menendang, memantulkan",
+      "Benda dikendalikan dengan bagian tubuh tertentu"
+     ],
+     "miskonsepsi": [
+      "Gerak manipulatif hanya melempar bola"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "cocokkan",
+      "sortir"
+     ],
+     "konteks": [
+      "Murid memasangkan benda dengan cara memainkannya",
+      "Murid bermain lempar tangkap berpasangan"
+     ],
+     "tagAset": [
+      "bola",
+      "lapangan"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Strategi gerak manipulatif dalam permainan",
+     "tujuan": "Murid mampu menerapkan strategi gerak sederhana untuk mendapatkan capaian keterampilan manipulatif.",
+     "konsep": [
+      "Menyesuaikan kekuatan dan arah saat mengendalikan benda",
+      "Berlatih berulang meningkatkan ketepatan",
+      "Bermain dengan aturan dan giliran"
+     ],
+     "miskonsepsi": [
+      "Melempar sekuat tenaga selalu membuat lemparan tepat"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "urutkan",
+      "runner"
+     ],
+     "konteks": [
+      "Murid mencoba lemparan ke sasaran dengan jarak berbeda",
+      "Tim kecil mengoper bola secara bergiliran"
+     ],
+     "tagAset": [
+      "bola",
+      "tim-olahraga"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 4,
+   "nama": "Aktivitas Gerak Dominan Senam",
+   "jenisTeks": "informasi",
+   "tema": "jingga",
+   "sub": [
+    {
+     "nama": "Gerak senam dasar dan keselamatan",
+     "tujuan": "Murid mampu mengidentifikasi gerak dominan senam sederhana dan cara melakukannya dengan aman.",
+     "konsep": [
+      "Gerak senam melatih keseimbangan, kelenturan, dan kekuatan",
+      "Pemanasan sebelum senam",
+      "Aturan keselamatan saat senam"
+     ],
+     "miskonsepsi": [
+      "Senam boleh dilakukan tanpa pemanasan"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "urutkan",
+      "sortir"
+     ],
+     "konteks": [
+      "Murid menyusun urutan pemanasan sebelum senam",
+      "Murid memilih sikap aman di matras"
+     ],
+     "tagAset": [
+      "senam",
+      "anak-olahraga"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Peran dan sikap hormat saat berlatih bersama",
+     "tujuan": "Murid mampu mempraktikkan berbagai peran dengan cara terhormat dalam kegiatan senam berkelompok.",
+     "konsep": [
+      "Bergantian menggunakan matras dan alat",
+      "Peran pengamat dan pelaku saling menolong",
+      "Menghargai teman yang belum bisa"
+     ],
+     "miskonsepsi": [
+      "Teman yang belum bisa boleh ditertawakan"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Teman takut mencoba gerak guling",
+      "Kelompok bergantian menjadi pelaku dan pengamat"
+     ],
+     "tagAset": [
+      "senam",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 5,
+   "nama": "Aktivitas Gerak Berirama",
+   "jenisTeks": "campuran",
+   "tema": "emas",
+   "sub": [
+    {
+     "nama": "Gerak mengikuti irama",
+     "tujuan": "Murid mampu memperagakan gerak yang mengikuti irama atau hitungan.",
+     "konsep": [
+      "Gerak berirama mengikuti ketukan atau musik",
+      "Tempo cepat dan lambat memengaruhi gerak",
+      "Gerak berirama dapat dirangkai"
+     ],
+     "miskonsepsi": [
+      "Gerak berirama hanya bisa dilakukan dengan musik"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "urutkan",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Murid menyusun urutan gerak senam irama",
+      "Murid memasangkan tempo musik dengan gerakan"
+     ],
+     "tagAset": [
+      "musik",
+      "anak-olahraga"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Bergerak berirama bersama kelompok",
+     "tujuan": "Murid mampu berperan dalam kelompok dengan hormat saat menampilkan gerak berirama.",
+     "konsep": [
+      "Kekompakan gerak dalam kelompok",
+      "Pembagian peran dan posisi",
+      "Saling menghargai penampilan teman"
+     ],
+     "miskonsepsi": [
+      "Kelompok kompak berarti semua gerak harus sama persis tanpa saling membantu"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Kelompok berlatih tampil di depan kelas",
+      "Teman lupa gerakan lalu kelompok membantu dengan tenang"
+     ],
+     "tagAset": [
+      "musik",
+      "tim-olahraga"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 6,
+   "nama": "Aktivitas Permainan dan Olahraga di Air",
+   "jenisTeks": "informasi",
+   "tema": "samudra",
+   "sub": [
+    {
+     "nama": "Mengenal aktivitas di air dan keselamatannya",
+     "tujuan": "Murid mampu mengidentifikasi aktivitas di air dan aturan keselamatan di air.",
+     "konsep": [
+      "Aktivitas di air perlu pengawasan orang dewasa",
+      "Aturan keselamatan di kolam atau air",
+      "Mengenal air dengan aman dan tenang"
+     ],
+     "miskonsepsi": [
+      "Anak yang sudah bisa berenang tidak perlu diawasi"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "sortir",
+      "cerita"
+     ],
+     "konteks": [
+      "Murid memilih sikap aman di tepi kolam",
+      "Murid menolak bermain air tanpa pengawasan"
+     ],
+     "tagAset": [
+      "kolam-renang",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Gerak dasar permainan di air",
+     "tujuan": "Murid mampu menjelaskan urutan gerak dasar permainan dan olahraga di air yang sederhana.",
+     "konsep": [
+      "Mengapung dan bernapas di air",
+      "Gerak kaki dan tangan di air",
+      "Persiapan sebelum masuk air"
+     ],
+     "miskonsepsi": [
+      "Boleh langsung melompat ke air tanpa persiapan"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "urutkan",
+      "bacaan",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Murid menyusun urutan persiapan sebelum berenang",
+      "Murid memasangkan gerakan dengan namanya"
+     ],
+     "tagAset": [
+      "kolam-renang",
+      "anak-olahraga"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 7,
+   "nama": "Aktivitas Kebugaran untuk Kesehatan",
+   "jenisTeks": "informasi",
+   "tema": "hutan",
+   "sub": [
+    {
+     "nama": "Aktivitas jasmani dan kebugaran",
+     "tujuan": "Murid mampu memahami berbagai aktivitas jasmani untuk kebugaran.",
+     "konsep": [
+      "Aktivitas jasmani menjaga kebugaran tubuh",
+      "Ada berbagai bentuk aktivitas jasmani",
+      "Tubuh bugar membuat belajar lebih semangat"
+     ],
+     "miskonsepsi": [
+      "Kebugaran hanya didapat dari olahraga berat"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "bacaan",
+      "cocokkan",
+      "runner"
+     ],
+     "konteks": [
+      "Murid membandingkan perasaan setelah bergerak dan setelah duduk lama",
+      "Murid mengikuti senam kebugaran di sekolah"
+     ],
+     "tagAset": [
+      "anak-olahraga",
+      "jantung"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Aktivitas jasmani di sekolah dan di lingkungan tempat tinggal",
+     "tujuan": "Murid mampu membedakan aktivitas jasmani di sekolah dan di lingkungan tempat tinggal.",
+     "konsep": [
+      "Aktivitas jasmani di sekolah: pelajaran PJOK, istirahat bermain",
+      "Aktivitas jasmani di rumah dan sekitar: bersepeda, bermain bersama tetangga",
+      "Aktivitas disesuaikan dengan tempat dan keamanan"
+     ],
+     "miskonsepsi": [
+      "Bergerak aktif hanya dilakukan saat pelajaran PJOK"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "sortir",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Murid memilah kegiatan di sekolah dan di rumah",
+      "Keluarga bersepeda di sore hari"
+     ],
+     "tagAset": [
+      "keluarga",
+      "anak-bermain"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 8,
+   "nama": "Aktivitas Fisik dan Memilih Makanan Bergizi",
+   "jenisTeks": "informasi",
+   "tema": "hutan",
+   "sub": [
+    {
+     "nama": "Gaya hidup dan aktivitas fisik",
+     "tujuan": "Murid mampu memahami gaya hidup yang sehat dan aktif.",
+     "konsep": [
+      "Gaya hidup sehat meliputi bergerak, makan sehat, dan istirahat",
+      "Kebiasaan kecil memengaruhi kesehatan",
+      "Gaya hidup dapat dipilih"
+     ],
+     "miskonsepsi": [
+      "Gaya hidup tidak berpengaruh pada kesehatan anak"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "sortir",
+      "cerita"
+     ],
+     "konteks": [
+      "Dua teman punya kebiasaan harian berbeda",
+      "Murid memilih kegiatan sehat di akhir pekan"
+     ],
+     "tagAset": [
+      "anak-olahraga",
+      "keluarga"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Memilih makanan sehat dan bergizi seimbang",
+     "tujuan": "Murid mampu mengidentifikasi makanan sehat dan bergizi seimbang untuk menunjang aktivitas sehari-hari.",
+     "konsep": [
+      "Makanan bergizi seimbang",
+      "Makanan memberi energi untuk bergerak",
+      "Memilih makanan sesuai rekomendasi kesehatan"
+     ],
+     "miskonsepsi": [
+      "Makanan manis dan gorengan cukup sebagai sumber energi sehari-hari"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "sortir",
+      "cocokkan",
+      "cerita"
+     ],
+     "konteks": [
+      "Murid menyusun bekal sehat untuk hari olahraga",
+      "Murid memilih jajanan sehat di kantin"
+     ],
+     "tagAset": [
+      "makanan-sehat",
+      "piring-gizi",
+      "bekal"
+     ],
+     "perluDicek": true
+    }
+   ]
+  }
+ ]
+}

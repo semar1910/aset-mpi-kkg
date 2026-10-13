@@ -1,0 +1,353 @@
+{
+ "mapel": "PJOK",
+ "kelas": 5,
+ "buku": "Panduan Guru Pendidikan Jasmani, Olahraga, dan Kesehatan untuk SD/MI Kelas V",
+ "materi": [
+  {
+   "bab": 1,
+   "nama": "Eksplorasi Gerak",
+   "jenisTeks": "informasi",
+   "tema": "jingga",
+   "sub": [
+    {
+     "nama": "Mengadaptasi dan memodifikasi keterampilan gerak",
+     "tujuan": "Murid mampu mengadaptasi dan memodifikasi keterampilan gerak dalam berbagai situasi.",
+     "konsep": [
+      "Keterampilan gerak dapat diadaptasi sesuai situasi",
+      "Modifikasi gerak mengubah hasil gerakan",
+      "Situasi gerak: ruang, alat, dan teman bermain"
+     ],
+     "miskonsepsi": [
+      "Keterampilan gerak hanya dapat dilakukan dengan satu cara baku"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "cocokkan",
+      "bacaan"
+     ],
+     "konteks": [
+      "Murid memainkan permainan yang ukuran lapangannya diubah",
+      "Murid mencoba gerak yang sama dengan alat berbeda"
+     ],
+     "tagAset": [
+      "lapangan",
+      "anak-bermain"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Mentransfer strategi gerak ke situasi yang berbeda",
+     "tujuan": "Murid mampu mentransfer strategi gerak yang dikuasai ke situasi yang berbeda.",
+     "konsep": [
+      "Strategi gerak dapat dipindahkan ke permainan lain",
+      "Mengenali kesamaan antar permainan",
+      "Menyesuaikan strategi dengan situasi baru"
+     ],
+     "miskonsepsi": [
+      "Strategi hanya berguna di permainan tempat belajarnya"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir",
+      "urutkan"
+     ],
+     "konteks": [
+      "Tim memakai strategi membuka ruang dari satu permainan ke permainan lain",
+      "Murid membandingkan dua permainan yang punya strategi serupa"
+     ],
+     "tagAset": [
+      "lapangan",
+      "tim-olahraga"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 2,
+   "nama": "Berpikir Cerdas, Bergerak Taktis",
+   "jenisTeks": "campuran",
+   "tema": "antariksa",
+   "sub": [
+    {
+     "nama": "Menginvestigasi konsep gerak",
+     "tujuan": "Murid mampu menginvestigasi konsep gerak untuk menemukan konsep yang paling meningkatkan keterampilan.",
+     "konsep": [
+      "Investigasi dilakukan dengan mencoba dan membandingkan",
+      "Konsep gerak memengaruhi hasil keterampilan",
+      "Menyimpulkan konsep gerak yang paling efektif"
+     ],
+     "miskonsepsi": [
+      "Hasil percobaan satu kali sudah cukup untuk menyimpulkan"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "bacaan",
+      "cocokkan",
+      "cerita"
+     ],
+     "konteks": [
+      "Murid mencoba dua cara menendang lalu membandingkan hasilnya",
+      "Kelompok mencatat hasil percobaan variasi gerak"
+     ],
+     "tagAset": [
+      "lapangan",
+      "diskusi-kelompok"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Memprediksi dan menguji efektivitas strategi gerak",
+     "tujuan": "Murid mampu memprediksi dan menguji efektivitas strategi gerak.",
+     "konsep": [
+      "Prediksi dibuat sebelum strategi diuji",
+      "Strategi diuji lalu dibandingkan dengan prediksi",
+      "Hasil pengujian dipakai untuk memperbaiki strategi"
+     ],
+     "miskonsepsi": [
+      "Prediksi yang meleset berarti strategi pasti buruk"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir",
+      "urutkan"
+     ],
+     "konteks": [
+      "Tim menebak strategi mana yang berhasil lalu mengujinya",
+      "Murid mengevaluasi strategi setelah permainan kecil"
+     ],
+     "tagAset": [
+      "tim-olahraga",
+      "lapangan"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 3,
+   "nama": "Aturan Baru Permainan Seru",
+   "jenisTeks": "campuran",
+   "tema": "antariksa",
+   "sub": [
+    {
+     "nama": "Merancang aturan alternatif dan modifikasi permainan",
+     "tujuan": "Murid mampu merancang aturan alternatif dan modifikasi permainan untuk permainan yang adil dan inklusif.",
+     "konsep": [
+      "Aturan alternatif dapat dirancang sesuai kebutuhan pemain",
+      "Permainan inklusif melibatkan semua pemain",
+      "Permainan adil memberi kesempatan yang layak"
+     ],
+     "miskonsepsi": [
+      "Aturan tidak boleh diubah sama sekali"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Ada teman yang sulit ikut bermain lalu kelas mengubah aturan",
+      "Kelompok merancang aturan agar semua dapat giliran"
+     ],
+     "tagAset": [
+      "anak-sekolah",
+      "lapangan"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Menguji aturan baru dan dampaknya",
+     "tujuan": "Murid mampu menguji aturan alternatif dan menilai dampaknya terhadap keadilan dan keterlibatan pemain.",
+     "konsep": [
+      "Aturan baru perlu diuji dalam permainan",
+      "Dampak aturan dinilai dari keadilan dan keterlibatan",
+      "Aturan diperbaiki berdasarkan hasil uji"
+     ],
+     "miskonsepsi": [
+      "Aturan yang dibuat satu kelompok pasti cocok untuk semua kelompok"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "sortir",
+      "urutkan",
+      "cerita"
+     ],
+     "konteks": [
+      "Murid memainkan permainan dengan aturan baru lalu memberi masukan",
+      "Kelompok memperbaiki aturan setelah ada pemain yang jarang mendapat giliran"
+     ],
+     "tagAset": [
+      "tim-olahraga",
+      "diskusi-kelompok"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 4,
+   "nama": "Komunitas Kesehatan",
+   "jenisTeks": "campuran",
+   "tema": "hutan",
+   "sub": [
+    {
+     "nama": "Berpartisipasi positif dalam aktivitas kelompok",
+     "tujuan": "Murid mampu berpartisipasi secara positif dalam aktivitas kelompok, mendorong dan merundingkan peran serta tanggung jawab.",
+     "konsep": [
+      "Berpartisipasi positif dalam kelompok",
+      "Merundingkan peran dan tanggung jawab",
+      "Saling mendorong anggota kelompok"
+     ],
+     "miskonsepsi": [
+      "Pembagian peran cukup ditentukan oleh satu orang"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Kelompok merundingkan peran dalam kegiatan olahraga bersama",
+      "Teman enggan ikut lalu murid mengajaknya dengan sopan"
+     ],
+     "tagAset": [
+      "tim-olahraga",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Aktivitas di luar ruangan dan faktor yang memengaruhi partisipasi",
+     "tujuan": "Murid mampu berpartisipasi dalam aktivitas di luar ruangan dan lingkungan alami serta mendeskripsikan faktor-faktor yang memengaruhi partisipasi.",
+     "konsep": [
+      "Aktivitas di luar ruangan dan lingkungan alami",
+      "Faktor pribadi dan kelompok memengaruhi partisipasi",
+      "Menjaga keselamatan dan kebersihan lingkungan"
+     ],
+     "miskonsepsi": [
+      "Aktivitas di luar ruangan tidak perlu persiapan"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "bacaan",
+      "sortir",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Murid berjalan santai bersama kelompok di lingkungan sekitar",
+      "Murid membahas apa yang membuat teman enggan ikut kegiatan"
+     ],
+     "tagAset": [
+      "alam-terbuka",
+      "keluarga"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 5,
+   "nama": "Menjadi Sehat dan Aktif",
+   "jenisTeks": "informasi",
+   "tema": "hutan",
+   "sub": [
+    {
+     "nama": "Risiko gaya hidup dan pencegahan melalui aktivitas jasmani",
+     "tujuan": "Murid mampu mengidentifikasi risiko kesehatan akibat gaya hidup dan pencegahannya melalui aktivitas jasmani berdasarkan rekomendasi otoritas kesehatan.",
+     "konsep": [
+      "Gaya hidup memengaruhi risiko kesehatan",
+      "Aktivitas jasmani membantu pencegahan",
+      "Rekomendasi otoritas kesehatan sebagai acuan"
+     ],
+     "miskonsepsi": [
+      "Risiko akibat gaya hidup hanya dialami orang dewasa"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cocokkan",
+      "sortir",
+      "bacaan"
+     ],
+     "konteks": [
+      "Murid membaca anjuran aktivitas jasmani untuk anak",
+      "Murid membandingkan kebiasaan harian dua teman"
+     ],
+     "tagAset": [
+      "jantung",
+      "anak-olahraga"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Pola makan sehat dan informasi gizi",
+     "tujuan": "Murid mampu menerapkan pola makan sehat serta memilih makanan sehat berdasarkan informasi kandungan gizi untuk menunjang aktivitas jasmani.",
+     "konsep": [
+      "Pola makan sehat mendukung gaya hidup aktif",
+      "Informasi kandungan gizi pada makanan",
+      "Memilih makanan sesuai kebutuhan aktivitas"
+     ],
+     "miskonsepsi": [
+      "Makanan yang mengenyangkan pasti bergizi seimbang"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "sortir",
+      "cocokkan",
+      "cerita"
+     ],
+     "konteks": [
+      "Murid membaca label gizi dua makanan lalu memilih",
+      "Murid menyusun bekal sehat untuk kegiatan olahraga"
+     ],
+     "tagAset": [
+      "makanan-sehat",
+      "piring-gizi",
+      "bekal"
+     ],
+     "perluDicek": true
+    }
+   ]
+  }
+ ]
+}
