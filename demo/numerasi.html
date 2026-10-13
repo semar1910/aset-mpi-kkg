@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saudagar Cilik: Untung dan Rugi</title>
+<script src="../kit/v1/kit-mpi.js"></script>
+</head>
+<body>
+<script>
+function rp(n){ return 'Rp' + n.toLocaleString('id-ID'); }
+
+KIT.mulai({
+  judul: 'Saudagar Cilik',
+  subjudul: 'Petualangan Untung dan Rugi di Pasar',
+  tema: 'emas',
+  identitas: { mapel: 'Matematika', kelas: 4, materi: 'Uang: kembalian, untung, dan rugi', penyusun: 'Contoh KKG Gugus 2 Cibatok', sekolah: 'SD Contoh' },
+  gambar: { latar: '../img/demo/peta-dagang.webp' },
+  maskot: { nama: 'Pak Hasan', gambar: '../img/demo/pak-hasan.webp' },
+
+  cerita: [
+    'Selamat datang di Pasar Rakyat! Aku Pak Hasan, saudagar yang sudah berdagang sejak muda.',
+    'Hari ini kamu jadi muridku. Seorang saudagar harus cepat menghitung **kembalian** dan tahu kapan ia **untung** atau **rugi**.',
+    'Kalau lulus tiga ujian, kamu berhak memakai gelar **Saudagar Cilik**. Siap?'
+  ],
+
+  level: [
+    {
+      mesin: 'cerita', judul: 'Lapak Pertama',
+      adegan: [
+        { nama: 'Pak Hasan', teks: 'Aku membeli 10 kantong gula seharga **Rp50.000**. Semuanya kujual lagi dan uangku menjadi **Rp65.000**.' },
+        { nama: 'Pak Hasan', teks: 'Uang hasil menjual (Rp65.000) lebih besar daripada uang modal (Rp50.000).',
+          tanya: 'Jadi, apa yang terjadi pada dagangan Pak Hasan?',
+          pilihan: [
+            { teks: 'Untung Rp15.000', benar: true, tanggapan: 'Tepat! Rp65.000 − Rp50.000 = Rp15.000. Hasil jual lebih besar, berarti untung.' },
+            { teks: 'Rugi Rp15.000', tanggapan: 'Rugi terjadi kalau hasil jual lebih kecil dari modal. Di sini hasil jualnya lebih besar.' },
+            { teks: 'Untung Rp115.000', tanggapan: 'Untung dihitung dengan mengurangkan, bukan menjumlahkan. Coba Rp65.000 − Rp50.000.' }
+          ] },
+        { nama: 'Pak Hasan', teks: 'Besoknya aku membeli 5 sisir pisang seharga **Rp40.000**. Sebagian busuk, jadi hanya laku **Rp32.000**.',
+          tanya: 'Berapa rugi Pak Hasan?',
+          pilihan: [
+            { teks: 'Rugi Rp8.000', benar: true, tanggapan: 'Betul! Modal Rp40.000 − hasil jual Rp32.000 = rugi Rp8.000.' },
+            { teks: 'Untung Rp8.000', tanggapan: 'Hasil jual Rp32.000 lebih kecil dari modal Rp40.000, jadi bukan untung.' },
+            { teks: 'Rugi Rp72.000', tanggapan: 'Selisih dicari dengan pengurangan. Coba Rp40.000 − Rp32.000.' }
+          ] }
+      ]
+    },
+    {
+      mesin: 'runner', judul: 'Lari Kembalian',
+      petunjuk: 'Geser ke gerbang dengan kembalian yang benar!',
+      jumlah: 8, nyawa: 3, kecepatan: 1,
+      buatSoal: function (ke) {
+        var harga = [3500, 4500, 6000, 7500, 8500, 12000, 13500, 17500, 22500, 26000];
+        var bayar = [10000, 20000, 50000];
+        var h = harga[Math.floor(Math.random() * (ke < 4 ? 5 : harga.length))];
+        var b = bayar.filter(function (x) { return x > h; })[0];
+        if (ke >= 4 && Math.random() < 0.5) b = 50000;
+        var k = b - h;
+        var p1 = k + 1000, p2 = k > 1000 ? k - 1000 : k + 2000;
+        if (Math.random() < 0.5) p1 = k + 500;
+        return { tanya: 'Harga ' + rp(h) + ', dibayar ' + rp(b) + '. Kembaliannya?',
+                 pilihan: [rp(k), rp(p1), rp(p2)], benar: 0,
+                 penjelasan: rp(b) + ' − ' + rp(h) + ' = ' + rp(k) };
+      }
+    },
+    {
+      mesin: 'sortir', judul: 'Buku Catatan Saudagar',
+      petunjuk: 'Bandingkan modal dan hasil jual, lalu kelompokkan.',
+      kategori: [ { nama: '📈 Untung' }, { nama: '📉 Rugi' } ],
+      kartu: [
+        { teks: 'Modal Rp20.000\nLaku Rp25.000', ke: 0 },
+        { teks: 'Modal Rp30.000\nLaku Rp27.000', ke: 1 },
+        { teks: 'Modal Rp15.000\nLaku Rp18.500', ke: 0 },
+        { teks: 'Modal Rp45.000\nLaku Rp40.000', ke: 1 },
+        { teks: 'Modal Rp12.000\nLaku Rp11.500', ke: 1, petunjuk: 'Selisihnya kecil, tapi hasil jual tetap lebih kecil dari modal.' },
+        { teks: 'Modal Rp60.000\nLaku Rp61.000', ke: 0 }
+      ]
+    }
+  ],
+
+  penutup: {
+    lencana: 'Saudagar Cilik',
+    ringkasan: [
+      '**Kembalian** = uang yang dibayar − harga barang.',
+      '**Untung** terjadi bila hasil jual lebih besar dari modal. Besarnya = hasil jual − modal.',
+      '**Rugi** terjadi bila hasil jual lebih kecil dari modal. Besarnya = modal − hasil jual.'
+    ],
+    refleksi: 'Kalau kamu berjualan es di sekolah, bagaimana caranya supaya tidak rugi?'
+  },
+
+  guru: {
+    tujuan: 'Peserta didik dapat menghitung kembalian serta menentukan untung atau rugi dari transaksi jual beli sederhana.',
+    durasi: '2 × 35 menit',
+    langkah: [
+      'Tayangkan di layar. Ajak murid menebak arti kata untung dan rugi.',
+      'Level 1 dikerjakan bersama; murid menjawab lewat angkat tangan.',
+      'Level 2 dimainkan bergiliran per kelompok; kelompok lain menghitung di buku.',
+      'Level 3 dikerjakan berpasangan, lalu bahas kartu yang paling banyak keliru.'
+    ],
+    catatan: 'Soal Lari Kembalian dibuat acak setiap kali dimainkan.'
+  }
+});
+</script>
+</body>
+</html>

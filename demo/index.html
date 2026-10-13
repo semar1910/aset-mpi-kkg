@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kit MPI KKG: Contoh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --kayu:#3B2412; --kayu2:#5A3518; --kertas:#FFF6DC; --tinta:#3B2410; --emas:#FFD54A; --lip:#7A4512;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;font-family:Nunito,sans-serif;color:var(--tinta);
+    background:var(--kayu) radial-gradient(circle at 20% 0%,#9A5B1E 0,var(--kayu) 700px) no-repeat;}
+  main{max-width:1060px;margin:0 auto;padding:40px 16px 60px}
+  h1{font-family:Fredoka,sans-serif;font-weight:700;font-size:clamp(34px,6vw,54px);margin:0;color:var(--emas);
+    text-shadow:0 4px 0 var(--lip),0 8px 18px rgba(0,0,0,.4);line-height:1.05}
+  .lead{color:#F6E7C6;font-size:18px;max-width:62ch;margin:14px 0 30px;line-height:1.55}
+  .kartu{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+  .k{background:var(--kertas);border:4px solid var(--lip);border-radius:24px;box-shadow:0 8px 0 var(--lip);
+    overflow:hidden;display:flex;flex-direction:column}
+  .k .pita{height:120px;display:flex;align-items:center;justify-content:center;font-size:64px}
+  .k .isi{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .k h2{font-family:Fredoka,sans-serif;font-weight:600;font-size:26px;margin:0}
+  .k p{margin:0;line-height:1.5}
+  .k .mesin{font-size:15px;font-weight:800;opacity:.75}
+  .tema{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:10px}
+  .tema a{font-size:14px;font-weight:800;text-decoration:none;color:var(--tinta);border:2px solid var(--lip);
+    border-radius:99px;padding:4px 10px;background:#fff}
+  .buka{display:block;text-align:center;font-family:Fredoka,sans-serif;font-weight:600;font-size:22px;text-decoration:none;
+    color:var(--tinta);background:linear-gradient(#FFD54A,#F5A623);border:3px solid var(--lip);border-radius:16px;
+    padding:10px;box-shadow:0 5px 0 var(--lip);margin-top:12px}
+  .buka:active{transform:translateY(4px);box-shadow:0 1px 0 var(--lip)}
+  a:focus-visible{outline:4px solid #fff;outline-offset:3px}
+  footer{color:#D9C29A;margin-top:36px;font-size:15px;line-height:1.6}
+  footer code{background:rgba(255,255,255,.12);padding:2px 6px;border-radius:6px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Kit MPI KKG Gugus 2 Cibatok</h1>
+  <p class="lead">Tiga contoh MPI yang dibuat hanya dengan mengisi DATA. Bingkai, tema warna, dan permainannya
+    disediakan kit. Buka di HP dalam posisi mendatar, atau di laptop dan proyektor kelas.</p>
+
+  <div class="kartu">
+    <article class="k">
+      <div class="pita" style="background:linear-gradient(135deg,#FFD54A,#9A5B1E)">🪙</div>
+      <div class="isi">
+        <h2>Saudagar Cilik</h2>
+        <p>Numerasi kelas 4: kembalian, untung, dan rugi bersama Pak Hasan.</p>
+        <div class="mesin">Cerita • Lari Jalur • Sortir</div>
+        <a class="buka" href="numerasi.html">Mainkan</a>
+        <div class="tema" data-f="numerasi.html"></div>
+      </div>
+    </article>
+    <article class="k">
+      <div class="pita" style="background:linear-gradient(135deg,#B4EC6A,#123F24)">🫁</div>
+      <div class="isi">
+        <h2>Perjalanan Udara</h2>
+        <p>IPAS kelas 5: alat pernapasan manusia dan jalannya udara.</p>
+        <div class="mesin">Jelajah • Urutkan • Cocokkan</div>
+        <a class="buka" href="ipa.html">Mainkan</a>
+        <div class="tema" data-f="ipa.html"></div>
+      </div>
+    </article>
+    <article class="k">
+      <div class="pita" style="background:linear-gradient(135deg,#7FE6F5,#0E3D5C)">📖</div>
+      <div class="isi">
+        <h2>Kancil Menyeberang</h2>
+        <p>Literasi kelas 3: membaca fabel, mencari bukti, dan watak tokoh.</p>
+        <div class="mesin">Bacaan • Urutkan • Sortir</div>
+        <a class="buka" href="literasi.html">Mainkan</a>
+        <div class="tema" data-f="literasi.html"></div>
+      </div>
+    </article>
+  </div>
+
+  <footer>
+    Coba tema lain lewat tombol warna di tiap kartu, atau tambahkan <code>?tema=antariksa</code> di alamat halaman.<br>
+    Cara membuat MPI sendiri ada di <a href="../PANDUAN.md" style="color:#FFD54A">PANDUAN.md</a>.
+  </footer>
+</main>
+<script>
+  var TEMA = { emas: 'Emas', hutan: 'Hutan', samudra: 'Samudra', antariksa: 'Antariksa', jingga: 'Jingga' };
+  document.querySelectorAll('.tema').forEach(function (d) {
+    Object.keys(TEMA).forEach(function (k) {
+      var a = document.createElement('a');
+      a.href = d.dataset.f + '?tema=' + k; a.textContent = TEMA[k];
+      d.appendChild(a);
+    });
+  });
+</script>
+</body>
+</html>

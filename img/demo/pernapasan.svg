@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#FFF8E7"/><stop offset="1" stop-color="#E6F4DA"/></radialGradient>
+    <linearGradient id="paru" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF9AA8"/><stop offset="1" stop-color="#E25C72"/></linearGradient>
+    <linearGradient id="kulit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD9B8"/><stop offset="1" stop-color="#F4B98D"/></linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- tubuh -->
+  <path d="M400 18c-58 0-96 44-96 104 0 40 16 70 40 88v30c-80 12-156 50-176 120l-30 240h524l-30-240c-20-70-96-108-176-120v-30c24-18 40-48 40-88 0-60-38-104-96-104z" fill="url(#kulit)" stroke="#C98A5E" stroke-width="5"/>
+  <!-- hidung & rongga hidung -->
+  <path d="M400 92c-6 18-16 34-16 44 0 8 8 12 16 12s16-4 16-12c0-10-10-26-16-44z" fill="#F2A97C" stroke="#C98A5E" stroke-width="4"/>
+  <path d="M392 140c0 30 2 52 8 74" stroke="#7FC8F0" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <!-- tenggorokan / trakea -->
+  <rect x="386" y="210" width="28" height="140" rx="12" fill="#BFE6FA" stroke="#3E9BC9" stroke-width="5"/>
+  <g stroke="#3E9BC9" stroke-width="4">
+    <line x1="388" y1="236" x2="412" y2="236"/><line x1="388" y1="262" x2="412" y2="262"/>
+    <line x1="388" y1="288" x2="412" y2="288"/><line x1="388" y1="314" x2="412" y2="314"/>
+  </g>
+  <!-- paru-paru -->
+  <path d="M372 330c-40-14-112 10-130 90-14 64-6 108 22 118 30 10 80-6 104-30 14-14 18-40 18-80z" fill="url(#paru)" stroke="#B83A52" stroke-width="5"/>
+  <path d="M428 330c40-14 112 10 130 90 14 64 6 108-22 118-30 10-80-6-104-30-14-14-18-40-18-80z" fill="url(#paru)" stroke="#B83A52" stroke-width="5"/>
+  <!-- bronkus & bronkiolus -->
+  <g stroke="#3E9BC9" stroke-width="10" fill="none" stroke-linecap="round">
+    <path d="M400 345c-12 18-30 30-58 40"/><path d="M400 345c12 18 30 30 58 40"/>
+  </g>
+  <g stroke="#5AB3DE" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M342 385c-18 10-34 26-42 48"/><path d="M342 385c-6 22-6 46 2 70"/><path d="M342 385c-26 4-46 14-60 30"/>
+    <path d="M458 385c18 10 34 26 42 48"/><path d="M458 385c6 22 6 46-2 70"/><path d="M458 385c26 4 46 14 60 30"/>
+  </g>
+  <g fill="#FFD1DA" stroke="#B83A52" stroke-width="2">
+    <circle cx="300" cy="436" r="7"/><circle cx="344" cy="458" r="7"/><circle cx="282" cy="418" r="7"/>
+    <circle cx="500" cy="436" r="7"/><circle cx="456" cy="458" r="7"/><circle cx="518" cy="418" r="7"/>
+  </g>
+  <!-- diafragma -->
+  <path d="M232 548c50-40 286-40 336 0" stroke="#A0522D" stroke-width="12" fill="none" stroke-linecap="round"/>
+</svg>

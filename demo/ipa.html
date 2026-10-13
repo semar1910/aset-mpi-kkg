@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perjalanan Udara: Alat Pernapasan Manusia</title>
+<script src="../kit/v1/kit-mpi.js"></script>
+</head>
+<body>
+<script>
+KIT.mulai({
+  judul: 'Perjalanan Udara',
+  subjudul: 'Menjelajah Alat Pernapasan Manusia',
+  tema: 'hutan',
+  identitas: { mapel: 'IPAS', kelas: 5, materi: 'Sistem pernapasan manusia', penyusun: 'Contoh KKG Gugus 2 Cibatok', sekolah: 'SD Contoh' },
+  gambar: { tubuh: '../img/demo/pernapasan.svg' },
+  maskot: { nama: 'Oksi' },
+
+  cerita: [
+    { nama: 'Oksi', teks: 'Halo! Aku Oksi, butiran oksigen yang suka berpetualang.' },
+    { nama: 'Oksi', teks: 'Setiap kali kamu menarik napas, aku masuk ke tubuhmu dan menempuh perjalanan panjang sampai ke darah.' },
+    { nama: 'Oksi', teks: 'Ikuti aku! Kita kenali dulu jalannya, lalu susun rutenya, dan cocokkan tugas setiap organ.' }
+  ],
+
+  level: [
+    {
+      mesin: 'jelajah', judul: 'Peta Tubuh',
+      gambar: 'tubuh', rasio: 4 / 3,
+      titik: [
+        { x: 50, y: 21, nama: 'Hidung', info: 'Pintu masuk udara. Rambut halus dan lendir di dalamnya **menyaring debu**, sekaligus menghangatkan udara.' },
+        { x: 50, y: 46, nama: 'Tenggorokan', info: 'Disebut juga **trakea**. Pipa bercincin tulang rawan yang menyalurkan udara ke dada.' },
+        { x: 43, y: 64, nama: 'Bronkus', info: 'Cabang tenggorokan menuju **paru-paru kanan dan kiri**.' },
+        { x: 35, y: 70, nama: 'Alveolus', info: 'Gelembung kecil di ujung cabang. Di sinilah **oksigen masuk ke darah** dan karbon dioksida keluar.' },
+        { x: 67, y: 78, nama: 'Paru-paru', info: 'Organ utama pernapasan, tempat jutaan alveolus berada.' },
+        { x: 50, y: 90, nama: 'Diafragma', info: 'Sekat otot di bawah paru-paru. Saat turun, dada membesar dan **udara terisap masuk**.' }
+      ]
+    },
+    {
+      mesin: 'urutkan', judul: 'Rute Oksi',
+      petunjuk: 'Susun jalan yang dilalui udara dari luar sampai ke darah.',
+      urutan: ['Hidung', 'Tenggorokan', 'Bronkus', 'Bronkiolus', 'Alveolus'],
+      ulasan: 'Hebat! Udara masuk lewat hidung, turun ke tenggorokan, bercabang di bronkus dan bronkiolus, lalu sampai di alveolus.'
+    },
+    {
+      mesin: 'cocokkan', judul: 'Tugas Organ',
+      pasangan: [
+        ['Hidung', 'Menyaring dan menghangatkan udara', 'Betul, rambut hidung menahan debu.'],
+        ['Tenggorokan', 'Menyalurkan udara ke paru-paru'],
+        ['Alveolus', 'Tempat pertukaran oksigen dan karbon dioksida'],
+        ['Diafragma', 'Mengubah ukuran rongga dada saat bernapas']
+      ]
+    }
+  ],
+
+  penutup: {
+    lencana: 'Penjelajah Napas',
+    ringkasan: [
+      'Udara masuk melalui **hidung → tenggorokan → bronkus → bronkiolus → alveolus**.',
+      'Di **alveolus**, oksigen masuk ke darah dan karbon dioksida dikeluarkan.',
+      '**Diafragma** membantu menarik udara masuk dan mendorongnya keluar.'
+    ],
+    refleksi: 'Mengapa kita lebih baik bernapas lewat hidung daripada lewat mulut?'
+  },
+
+  guru: {
+    tujuan: 'Peserta didik dapat menyebutkan alat pernapasan manusia, fungsinya, dan urutan jalannya udara.',
+    durasi: '1 × 35 menit',
+    langkah: [
+      'Minta murid menarik napas dalam sambil meraba dada dan perut.',
+      'Jelajahi Peta Tubuh bersama di layar; murid menebak fungsi sebelum titik dibuka.',
+      'Level 2 dan 3 dikerjakan berpasangan.',
+      'Tutup dengan pertanyaan refleksi.'
+    ]
+  }
+});
+</script>
+</body>
+</html>

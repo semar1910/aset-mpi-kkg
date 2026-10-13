@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Si Kancil dan Buaya: Membaca Cerita Fabel</title>
+<script src="../kit/v1/kit-mpi.js"></script>
+</head>
+<body>
+<script>
+KIT.mulai({
+  judul: 'Kancil Menyeberang',
+  subjudul: 'Membaca dan Memahami Cerita Fabel',
+  tema: 'samudra',
+  identitas: { mapel: 'Bahasa Indonesia', kelas: 3, materi: 'Teks fiksi: fabel', penyusun: 'Contoh KKG Gugus 2 Cibatok', sekolah: 'SD Contoh' },
+  maskot: { nama: 'Bu Pustaka' },
+
+  glosarium: {
+    'cerdik': 'pandai mencari akal',
+    'menyeberang': 'pergi ke tepi yang lain (sungai, jalan)',
+    'berjajar': 'berbaris memanjang dengan rapi',
+    'licik': 'pandai menipu untuk keuntungan sendiri'
+  },
+
+  cerita: [
+    { nama: 'Bu Pustaka', teks: 'Selamat datang di Pojok Baca! Hari ini kita membaca **fabel**, cerita yang tokohnya hewan.' },
+    { nama: 'Bu Pustaka', teks: 'Bacalah pelan-pelan. Kata yang bergaris bisa kamu sentuh untuk melihat artinya.' }
+  ],
+
+  level: [
+    {
+      mesin: 'bacaan', judul: 'Kancil dan Buaya',
+      halaman: [
+        { judul: 'Sungai yang Lebar',
+          teks: 'Di tepi hutan, Kancil yang cerdik ingin makan ketimun di seberang sungai.\nSayangnya, sungai itu lebar dan penuh buaya yang lapar.',
+          aktivitas: { jenis: 'tebak', tanya: 'Menurutmu, bagaimana cara Kancil menyeberang?',
+            pilihan: ['Berenang cepat', 'Menipu para buaya', 'Menunggu sungai kering'],
+            ulasan: 'Ayo baca halaman berikutnya untuk mengecek tebakanmu!' } },
+        { judul: 'Akal Kancil',
+          teks: 'Kancil berteriak, "Raja hutan menyuruhku menghitung semua buaya!"\nPara buaya percaya dan berjajar dari tepi ke tepi. Kancil melompat di punggung mereka sambil berhitung, "Satu, dua, tiga…"\nSampai di seberang, Kancil tertawa dan berlari ke kebun ketimun.',
+          aktivitas: { jenis: 'bukti', tanya: 'Mengapa para buaya mau berjajar?', kunci: 'Para buaya percaya',
+            ulasan: 'Tepat! Buaya percaya pada perintah palsu raja hutan.',
+            petunjuk: 'Cari kalimat yang menjelaskan sikap para buaya.' } },
+        { judul: 'Pesan Cerita',
+          teks: 'Para buaya marah karena tertipu. Sejak hari itu, mereka tidak mudah percaya lagi pada kata-kata siapa pun.',
+          aktivitas: { jenis: 'rumpang', kalimat: 'Kancil itu [cerdik], tetapi ia juga [licik] karena menipu buaya.',
+            pengecoh: ['jujur', 'malas'],
+            ulasan: 'Betul. Kancil pandai, tapi kepandaiannya dipakai untuk menipu.' } },
+        { judul: 'Pendapatku',
+          teks: 'Setiap fabel menyimpan pesan. Pikirkan sikap Kancil dan sikap para buaya.',
+          aktivitas: { jenis: 'pilih', tanya: 'Pesan apa yang paling tepat dari cerita ini?',
+            pilihan: ['Jangan mudah percaya pada orang yang belum dikenal', 'Buaya adalah hewan yang lemah', 'Ketimun lebih enak dari pisang'],
+            benar: 0, ulasan: 'Ya! Buaya tertipu karena mudah percaya.', petunjuk: 'Pesan cerita berkaitan dengan apa yang dialami tokohnya.' } }
+      ]
+    },
+    {
+      mesin: 'urutkan', judul: 'Urutan Peristiwa',
+      urutan: ['Kancil ingin makan ketimun', 'Kancil berbohong soal perintah raja', 'Buaya berjajar', 'Kancil melompat sambil berhitung', 'Buaya sadar tertipu'],
+      ulasan: 'Urutan cerita benar. Kamu bisa menceritakan ulang fabel ini!'
+    },
+    {
+      mesin: 'sortir', judul: 'Watak Tokoh',
+      petunjuk: 'Sifat ini milik siapa? Kelompokkan menurut cerita.',
+      kategori: [ { nama: '🦌 Kancil' }, { nama: '🐊 Buaya' } ],
+      kartu: [
+        { teks: 'Cerdik mencari akal', ke: 0 },
+        { teks: 'Suka berbohong', ke: 0 },
+        { teks: 'Mudah percaya', ke: 1 },
+        { teks: 'Marah karena tertipu', ke: 1 },
+        { teks: 'Pandai berhitung', ke: 0 }
+      ]
+    }
+  ],
+
+  penutup: {
+    lencana: 'Pembaca Jeli',
+    ringkasan: [
+      '**Fabel** adalah cerita dengan tokoh hewan yang berperilaku seperti manusia.',
+      'Tebakan sebelum membaca membantu kita lebih fokus pada isi cerita.',
+      'Jawaban yang kuat selalu punya **bukti** dari bacaan.'
+    ],
+    refleksi: 'Apakah kamu setuju dengan cara Kancil? Apa yang akan kamu lakukan jika jadi Kancil?'
+  },
+
+  guru: {
+    tujuan: 'Peserta didik dapat menemukan informasi tersurat, mengurutkan peristiwa, dan menentukan watak tokoh dalam fabel.',
+    durasi: '2 × 35 menit',
+    langkah: [
+      'Bacakan halaman pertama bersama, lalu kumpulkan tebakan murid.',
+      'Murid membaca halaman 2–4 berpasangan dan mencari bukti di teks.',
+      'Lanjutkan ke level 2 dan 3, lalu diskusikan refleksi.'
+    ]
+  }
+});
+</script>
+</body>
+</html>
