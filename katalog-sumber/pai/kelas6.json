@@ -1,0 +1,476 @@
+{
+ "mapel": "Pendidikan Agama Islam dan Budi Pekerti",
+ "kelas": 6,
+ "buku": "Buku Panduan Guru Pendidikan Agama Islam dan Budi Pekerti untuk SD/MI Kelas VI",
+ "materi": [
+  {
+   "bab": 1,
+   "nama": "Belajar al-Qur’an dan Ḥadiṡ",
+   "jenisTeks": "campuran",
+   "tema": "antariksa",
+   "sub": [
+    {
+     "nama": "Membaca dan menghafal Q.S. Aḍ-Ḍuḥā",
+     "tujuan": "Murid mampu membaca Q.S. Aḍ-Ḍuḥā dengan tartil dan menerapkan hukum bacaan tafkhim dan tarqiq.",
+     "konsep": [
+      "Q.S. Aḍ-Ḍuḥā dibaca dengan tartil",
+      "Tafkhim berarti membaca tebal",
+      "Tarqiq berarti membaca tipis"
+     ],
+     "miskonsepsi": [
+      "Tafkhim dan tarqiq dikira sama"
+     ],
+     "kompetensi": [
+      "tersurat"
+     ],
+     "mesin": [
+      "bacaan",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Kelas tadarus bersama sebelum pelajaran",
+      "Anak berlatih membaca dengan tajwid bersama teman"
+     ],
+     "tagAset": [
+      "al-quran",
+      "anak-mengaji",
+      "kelas"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Hadis tentang keutamaan memberi",
+     "tujuan": "Murid mampu menjelaskan pesan pokok Aḍ-Ḍuḥā dan hadis tentang keutamaan memberi serta menumbuhkan solidaritas.",
+     "konsep": [
+      "Memberi memiliki keutamaan",
+      "Solidaritas berarti saling membantu",
+      "Pesan pokok dapat diterapkan dalam keseharian"
+     ],
+     "miskonsepsi": [
+      "Memberi harus selalu berupa uang"
+     ],
+     "kompetensi": [
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Kelas mengumpulkan bantuan untuk teman yang sakit",
+      "Anak berbagi buku dengan teman yang kurang mampu"
+     ],
+     "tagAset": [
+      "anak-berbagi",
+      "buku",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 2,
+   "nama": "Allah Swt Maha Segalanya",
+   "jenisTeks": "informasi",
+   "tema": "antariksa",
+   "sub": [
+    {
+     "nama": "Keniscayaan hari akhir, qada, dan kadar",
+     "tujuan": "Murid mampu menjelaskan secara sederhana keniscayaan hari akhir, qada, dan kadar sesuai buku.",
+     "konsep": [
+      "Hari akhir pasti terjadi",
+      "Qada dan kadar adalah ketentuan Allah",
+      "Manusia tetap wajib berikhtiar"
+     ],
+     "miskonsepsi": [
+      "Qada dan kadar dikira alasan untuk tidak berusaha"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "bacaan",
+      "sortir"
+     ],
+     "konteks": [
+      "Anak berusaha belajar lalu menerima hasil ujian dengan lapang",
+      "Petani berusaha lalu bertawakal"
+     ],
+     "tagAset": [
+      "anak-belajar",
+      "sawah",
+      "kelas"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 3,
+   "nama": "Hidup Damai dengan Saling Memaafkan",
+   "jenisTeks": "fiksi",
+   "tema": "jingga",
+   "sub": [
+    {
+     "nama": "Memaafkan dan hidup damai",
+     "tujuan": "Murid mampu menjelaskan pentingnya saling memaafkan dan memilih sikap yang menjaga kerukunan.",
+     "konsep": [
+      "Memaafkan membuat hati lapang",
+      "Meminta maaf dilakukan dengan tulus",
+      "Perbedaan pendapat adalah hal wajar"
+     ],
+     "miskonsepsi": [
+      "Memaafkan berarti membenarkan kesalahan"
+     ],
+     "kompetensi": [
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Dua teman berselisih soal giliran piket lalu berdamai",
+      "Anak meminta maaf kepada adik setelah berebut mainan"
+     ],
+     "tagAset": [
+      "anak-minta-maaf",
+      "anak-sekolah",
+      "kelas"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 4,
+   "nama": "Hukum Halal dan Haram",
+   "jenisTeks": "informasi",
+   "tema": "hutan",
+   "sub": [
+    {
+     "nama": "Halal dan haram dalam makanan dan perilaku",
+     "tujuan": "Murid mampu membedakan halal dan haram secara sederhana sesuai buku.",
+     "konsep": [
+      "Halal berarti diperbolehkan dalam Islam",
+      "Haram berarti dilarang dalam Islam",
+      "Halal juga harus baik dan bersih"
+     ],
+     "miskonsepsi": [
+      "Semua makanan yang enak dikira halal"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "evaluasi"
+     ],
+     "mesin": [
+      "sortir",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Anak membaca label kemasan di warung",
+      "Keluarga memilih makanan saat belanja"
+     ],
+     "tagAset": [
+      "makanan",
+      "warung",
+      "keluarga"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 5,
+   "nama": "Jasa Khulafaurrasyidin untuk Dunia",
+   "jenisTeks": "fiksi",
+   "tema": "emas",
+   "sub": [
+    {
+     "nama": "Kisah dan jasa Khulafaurrasyidin",
+     "tujuan": "Murid mampu menceritakan jasa Khulafaurrasyidin dan menghayati pelajaran (ibrah) dari kisahnya.",
+     "konsep": [
+      "Khulafaurrasyidin adalah para khalifah pengganti Nabi",
+      "Jasa mereka dapat diteladani",
+      "Ibrah adalah pelajaran yang bisa diambil"
+     ],
+     "miskonsepsi": [
+      "Khulafaurrasyidin dikira para nabi"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "urutkan",
+      "cerita"
+     ],
+     "konteks": [
+      "Guru bercerita tentang kepemimpinan yang adil",
+      "Kelas membuat garis waktu para khalifah"
+     ],
+     "tagAset": [
+      "buku-cerita",
+      "masjid",
+      "peta"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 6,
+   "nama": "Mengaji Al-Qur’an Surah Al-A’la",
+   "jenisTeks": "informasi",
+   "tema": "antariksa",
+   "sub": [
+    {
+     "nama": "Membaca dan menghafal Surah Al-A’la",
+     "tujuan": "Murid mampu membaca dan menghafal Surah Al-A’la dengan tartil.",
+     "konsep": [
+      "Al-A’la adalah surah pendek",
+      "Membaca perlu tartil",
+      "Menghafal dilakukan bertahap"
+     ],
+     "miskonsepsi": [
+      "Cukup menghafal tanpa tajwid"
+     ],
+     "kompetensi": [
+      "tersurat"
+     ],
+     "mesin": [
+      "bacaan",
+      "urutkan"
+     ],
+     "konteks": [
+      "Tadarus bersama di kelas",
+      "Anak berlatih hafalan bersama teman"
+     ],
+     "tagAset": [
+      "al-quran",
+      "anak-mengaji",
+      "kelas"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Pesan pokok Surah Al-A’la",
+     "tujuan": "Murid mampu menjelaskan pesan pokok Surah Al-A’la dan menerapkannya.",
+     "konsep": [
+      "Allah Maha Tinggi",
+      "Pesan pokok mengajak bertasbih dan berbuat baik",
+      "Pesan diterapkan dalam kehidupan"
+     ],
+     "miskonsepsi": [
+      "Pesan surah hanya untuk dibaca, bukan untuk diamalkan"
+     ],
+     "kompetensi": [
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Anak membiasakan bertasbih setelah salat",
+      "Anak mengagumi langit malam bersama keluarga"
+     ],
+     "tagAset": [
+      "langit-malam",
+      "keluarga",
+      "anak-berdoa"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 7,
+   "nama": "Indahnya Ketetapan Allah",
+   "jenisTeks": "campuran",
+   "tema": "samudra",
+   "sub": [
+    {
+     "nama": "Ketetapan Allah dan sikap menerimanya",
+     "tujuan": "Murid mampu menjelaskan bahwa setiap ketetapan Allah mengandung hikmah dan menunjukkan sikap menerimanya.",
+     "konsep": [
+      "Ketetapan Allah mengandung hikmah",
+      "Manusia tetap berikhtiar dan berdoa",
+      "Menerima hasil dengan sabar dan syukur"
+     ],
+     "miskonsepsi": [
+      "Menerima ketetapan berarti berhenti berusaha"
+     ],
+     "kompetensi": [
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Anak tidak lolos seleksi lomba tetapi tetap berlatih",
+      "Panen yang gagal lalu petani menanam kembali"
+     ],
+     "tagAset": [
+      "anak-sekolah",
+      "sawah",
+      "lomba-sekolah"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 8,
+   "nama": "Peduli Lingkungan",
+   "jenisTeks": "informasi",
+   "tema": "hutan",
+   "sub": [
+    {
+     "nama": "Manusia sebagai khalifah dan menjaga lingkungan",
+     "tujuan": "Murid mampu menjelaskan peran manusia sebagai khalifah Allah di bumi dan menunjukkan sikap peduli lingkungan.",
+     "konsep": [
+      "Manusia adalah khalifah di bumi",
+      "Menjaga lingkungan adalah tanggung jawab",
+      "Tidak membuat kerusakan di muka bumi"
+     ],
+     "miskonsepsi": [
+      "Menjaga lingkungan hanya tugas petugas kebersihan"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "sortir",
+      "cerita"
+     ],
+     "konteks": [
+      "Kelas memilah sampah dan menanam pohon",
+      "Warga kampung bergotong royong membersihkan selokan"
+     ],
+     "tagAset": [
+      "tempat-sampah",
+      "pohon",
+      "kampung"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 9,
+   "nama": "Mengamalkan Puasa Sunah",
+   "jenisTeks": "informasi",
+   "tema": "hutan",
+   "sub": [
+    {
+     "nama": "Macam-macam puasa sunah",
+     "tujuan": "Murid mampu menyebutkan berbagai macam puasa sunah sesuai buku.",
+     "konsep": [
+      "Puasa sunah adalah puasa tambahan di luar puasa wajib",
+      "Ada beberapa macam puasa sunah",
+      "Puasa sunah dikerjakan sesuai waktunya"
+     ],
+     "miskonsepsi": [
+      "Puasa sunah dikira wajib seperti puasa Ramadan"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "cocokkan",
+      "sortir"
+     ],
+     "konteks": [
+      "Keluarga berpuasa pada hari tertentu",
+      "Anak bertanya kepada guru tentang puasa sunah"
+     ],
+     "tagAset": [
+      "keluarga",
+      "sahur",
+      "kalender"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 10,
+   "nama": "Meneladani Jasa Khalifah Uṣmān bin Affān dan Ali Bin Abī Ṭālib",
+   "jenisTeks": "fiksi",
+   "tema": "emas",
+   "sub": [
+    {
+     "nama": "Jasa Uṣmān bin Affān",
+     "tujuan": "Murid mampu menceritakan jasa Khalifah Uṣmān bin Affān dan meneladani sikapnya sesuai buku.",
+     "konsep": [
+      "Uṣmān bin Affān adalah salah satu Khulafaurrasyidin",
+      "Beliau dikenal dermawan",
+      "Jasanya dapat diteladani"
+     ],
+     "miskonsepsi": [
+      "Dermawan dikira hanya dengan banyak harta"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "cerita",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Anak meneladani sikap dermawan dengan berbagi",
+      "Kelas membuat kartu teladan khalifah"
+     ],
+     "tagAset": [
+      "buku-cerita",
+      "anak-berbagi",
+      "masjid"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Jasa Ali bin Abī Ṭālib",
+     "tujuan": "Murid mampu menceritakan jasa Khalifah Ali bin Abī Ṭālib dan meneladani sikapnya sesuai buku.",
+     "konsep": [
+      "Ali bin Abī Ṭālib adalah salah satu Khulafaurrasyidin",
+      "Beliau dikenal berani dan berilmu",
+      "Jasanya dapat diteladani"
+     ],
+     "miskonsepsi": [
+      "Berani dikira harus selalu berkelahi"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "cerita",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Anak berani jujur mengakui kesalahan",
+      "Kelas membuat peta urutan para khalifah"
+     ],
+     "tagAset": [
+      "buku-cerita",
+      "anak-jujur",
+      "kelas"
+     ],
+     "perluDicek": true
+    }
+   ]
+  }
+ ]
+}

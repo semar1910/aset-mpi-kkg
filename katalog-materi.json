@@ -6997,6 +6997,3965 @@
     }
    }
   },
+  "pai": {
+   "nama": "Pendidikan Agama Islam dan Budi Pekerti",
+   "aturan": [
+    "JANGAN menulis teks Arab ayat Al-Qur'an, hadis, atau doa. Cukup sebut nama surat/ayat atau terjemahan singkat yang umum; bacaan Arabnya diperagakan guru di kelas.",
+    "Tata cara ibadah (wudu, salat, puasa, jumlah rakaat) dan kisah nabi harus sesuai buku kelas ini. Jangan menambah perincian fikih yang diperselisihkan.",
+    "Nabi, rasul, sahabat, dan malaikat tidak digambarkan wajahnya dan tidak dijadikan tokoh yang berbicara; kisah mereka disampaikan lewat narator. Maskot pemandu tetap anak rekaan.",
+    "Topik yang peka (usia balig, kematian) disampaikan singkat, sopan, dan menenangkan."
+   ],
+   "kelas": {
+    "1": {
+     "fase": "A",
+     "buku": "Buku Panduan Guru Pendidikan Agama Islam dan Budi Pekerti untuk SD Kelas I",
+     "materi": [
+      {
+       "id": "pai-1-bab1",
+       "bab": 1,
+       "nama": "Aku Cinta Al-Qur’an",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Mengenal huruf hijaiah dan harakat",
+         "tujuan": "Murid mampu menyebutkan huruf hijaiah dan harakat sederhana (fatah, kasrah, dammah) serta melafalkannya.",
+         "konsep": [
+          "Huruf hijaiah adalah huruf-huruf Al-Qur’an",
+          "Harakat sederhana: fatah, kasrah, dammah",
+          "Harakat menentukan cara membaca huruf"
+         ],
+         "miskonsepsi": [
+          "Harakat dianggap huruf tersendiri, padahal harakat adalah tanda baca pada huruf"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "Anak belajar mengaji bersama kakak di rumah",
+          "Kelas mengaji pagi bersama bu guru"
+         ],
+         "tagAset": [
+          "huruf-hijaiah",
+          "anak-mengaji",
+          "al-quran"
+         ],
+         "id": "pai-1-bab1--mengenal-huruf-hijaiah-dan",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Surah al-Fatihah dan kebiasaan melafalkan Al-Qur’an",
+         "tujuan": "Murid mampu menunjukkan hafalan surah al-Fatihah dengan lancar dan terbiasa melafalkan ayat Al-Qur’an.",
+         "konsep": [
+          "Al-Fatihah adalah surah pendek yang dihafal",
+          "Membaca Al-Qur’an dibiasakan setiap hari",
+          "Berani menunjukkan hafalan di depan guru"
+         ],
+         "miskonsepsi": [
+          "Hafalan hanya untuk anak yang sudah besar"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cerita",
+          "urutkan"
+         ],
+         "konteks": [
+          "Anak gugup lalu berani setor hafalan kepada guru",
+          "Keluarga mengaji bersama sehabis magrib"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "keluarga",
+          "al-quran"
+         ],
+         "id": "pai-1-bab1--surah-al-fatihah-dan",
+         "jenisTeks": "informasi"
+        }
+       ]
+      },
+      {
+       "id": "pai-1-bab2",
+       "bab": 2,
+       "nama": "Mengenal Rukun Iman",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Iman kepada Allah Yang Maha Esa",
+         "tujuan": "Murid mampu menyebutkan rukun iman terutama iman kepada Allah (keesaan Allah/Al-Ahad).",
+         "konsep": [
+          "Rukun iman adalah pokok-pokok keyakinan dalam Islam",
+          "Allah itu Esa (Al-Ahad)",
+          "Beriman berarti percaya dan yakin"
+         ],
+         "miskonsepsi": [
+          "Allah dikira bisa dilihat seperti benda atau punya teman"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "bacaan",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak kagum melihat langit dan tanaman ciptaan Allah",
+          "Anak belajar bersyukur saat makan"
+         ],
+         "tagAset": [
+          "langit",
+          "tanaman",
+          "anak-berdoa"
+         ],
+         "id": "pai-1-bab2--iman-kepada-allah-yang",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Iman kepada rasul dan pohon rukun iman",
+         "tujuan": "Murid mampu menyebutkan iman kepada rasul dan bekerja sama membuat gambar pohon rukun iman.",
+         "konsep": [
+          "Iman kepada rasul termasuk rukun iman",
+          "Rukun iman dapat digambarkan sebagai pohon",
+          "Bekerja sama dalam kelompok"
+         ],
+         "miskonsepsi": [
+          "Rasul dianggap sama dengan Tuhan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Kelompok menempel daun rukun iman di pohon",
+          "Teman saling membantu mewarnai gambar"
+         ],
+         "tagAset": [
+          "pohon",
+          "anak-sekolah",
+          "gambar-kelompok"
+         ],
+         "id": "pai-1-bab2--iman-kepada-rasul-dan",
+         "jenisTeks": "informasi"
+        }
+       ]
+      },
+      {
+       "id": "pai-1-bab3",
+       "bab": 3,
+       "nama": "Aku Suka Membaca Basmalah dan Hamdalah",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "campuran",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Arti basmalah dan hamdalah",
+         "tujuan": "Murid mampu menyebutkan arti kalimah tayibah basmalah dan hamdalah.",
+         "konsep": [
+          "Basmalah dibaca saat memulai kegiatan",
+          "Hamdalah dibaca saat bersyukur atau selesai kegiatan",
+          "Keduanya termasuk kalimah tayibah"
+         ],
+         "miskonsepsi": [
+          "Basmalah dan hamdalah dianggap tertukar waktu pemakaiannya"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Anak membaca basmalah sebelum makan",
+          "Anak mengucap hamdalah setelah selesai belajar"
+         ],
+         "tagAset": [
+          "anak-makan",
+          "anak-belajar",
+          "kaligrafi"
+         ],
+         "id": "pai-1-bab3--arti-basmalah-dan-hamdalah",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Berterima kasih dan santun lewat kalimah tayibah",
+         "tujuan": "Murid mampu menggambar kaligrafi basmalah dan hamdalah serta menerapkannya sebagai sikap berterima kasih dan santun.",
+         "konsep": [
+          "Kalimah tayibah melatih sikap santun",
+          "Hamdalah wujud rasa syukur",
+          "Terima kasih diucapkan kepada orang yang membantu"
+         ],
+         "miskonsepsi": [
+          "Bersyukur hanya saat mendapat hadiah besar"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak diberi bekal oleh ibu lalu berterima kasih",
+          "Anak menolong teman lalu mendapat ucapan terima kasih"
+         ],
+         "tagAset": [
+          "keluarga",
+          "anak-sekolah",
+          "bekal"
+         ],
+         "id": "pai-1-bab3--berterima-kasih-dan-santun",
+         "jenisTeks": "campuran"
+        }
+       ]
+      },
+      {
+       "id": "pai-1-bab4",
+       "bab": 4,
+       "nama": "Mengenal Rukun Islam",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "samudra",
+       "sub": [
+        {
+         "nama": "Rukun Islam dan syahadatain",
+         "tujuan": "Murid mampu menyebutkan rukun Islam terutama kalimah syahadatain beserta artinya.",
+         "konsep": [
+          "Rukun Islam ada lima",
+          "Syahadatain adalah kalimat dua kesaksian",
+          "Rukun Islam berurutan"
+         ],
+         "miskonsepsi": [
+          "Urutan rukun Islam dikira bebas atau bisa tertukar"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "urutkan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Anak menyusun stasiun rukun Islam di kelas",
+          "Keluarga belajar bersama dengan lagu"
+         ],
+         "tagAset": [
+          "kereta-stasiun",
+          "anak-sekolah",
+          "masjid"
+         ],
+         "id": "pai-1-bab4--rukun-islam-dan-syahadatain",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Lagu syahadatain dan ilustrasi jalan kereta rukun Islam",
+         "tujuan": "Murid mampu menyanyikan lagu syahadatain beserta artinya dan menggambar ilustrasi rukun Islam secara berkelompok.",
+         "konsep": [
+          "Lagu membantu mengingat arti syahadatain",
+          "Rukun Islam digambarkan seperti stasiun kereta",
+          "Kerja kelompok menumbuhkan hati yang teguh"
+         ],
+         "miskonsepsi": [
+          "Menghafal lagu saja sudah cukup tanpa mengerti arti"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "urutkan"
+         ],
+         "konteks": [
+          "Kelompok membuat peta kereta rukun Islam",
+          "Kelas bernyanyi bersama sebelum pulang"
+         ],
+         "tagAset": [
+          "kereta-stasiun",
+          "anak-bernyanyi",
+          "gambar-kelompok"
+         ],
+         "id": "pai-1-bab4--lagu-syahadatain-dan-ilustrasi",
+         "jenisTeks": "informasi"
+        }
+       ]
+      },
+      {
+       "id": "pai-1-bab5",
+       "bab": 5,
+       "nama": "Nabi dan Rasul Panutanku",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "fiksi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Arti nabi, rasul, dan mukjizat",
+         "tujuan": "Murid mampu menyebutkan arti nabi, rasul, dan mukjizat dengan bahasa sendiri.",
+         "konsep": [
+          "Nabi dan rasul adalah utusan Allah",
+          "Mukjizat adalah kejadian luar biasa dari Allah untuk nabi dan rasul",
+          "Nabi dan rasul menjadi teladan"
+         ],
+         "miskonsepsi": [
+          "Mukjizat dikira kekuatan yang dimiliki sendiri oleh nabi"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cerita",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Nenek mendongengkan kisah nabi sebelum tidur",
+          "Guru bercerita kisah nabi di kelas"
+         ],
+         "tagAset": [
+          "buku-cerita",
+          "keluarga",
+          "anak-mendengar"
+         ],
+         "id": "pai-1-bab5--arti-nabi-rasul-dan",
+         "jenisTeks": "fiksi"
+        },
+        {
+         "nama": "Selawat dan sikap sederhana",
+         "tujuan": "Murid mampu menyanyikan lagu atau selawat tentang nabi dan rasul serta meneladani hidup sederhana.",
+         "konsep": [
+          "Selawat adalah doa dan pujian untuk Nabi",
+          "Nabi dan rasul hidup sederhana",
+          "Hidup sederhana berarti tidak berlebihan"
+         ],
+         "miskonsepsi": [
+          "Sederhana dikira sama dengan miskin atau tidak punya apa-apa"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "Anak memilih mainan yang cukup dan tidak minta berlebihan",
+          "Kelas bershalawat bersama pada hari Jumat"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "mainan",
+          "masjid"
+         ],
+         "id": "pai-1-bab5--selawat-dan-sikap-sederhana",
+         "jenisTeks": "fiksi"
+        }
+       ]
+      },
+      {
+       "id": "pai-1-bab6",
+       "bab": 6,
+       "nama": "Al Qur’an Pedoman Hidupku",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Harakat lanjutan: fatatain, kasratain, dammatain, sukun, tasydid",
+         "tujuan": "Murid mampu mengenal dan melafalkan harakat fatatain, kasratain, dammatain, sukun, dan tasydid.",
+         "konsep": [
+          "Ada harakat tambahan selain fatah, kasrah, dammah",
+          "Setiap harakat punya bunyi tertentu",
+          "Sukun dan tasydid mengubah cara membaca"
+         ],
+         "miskonsepsi": [
+          "Semua harakat dibaca dengan cara yang sama"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "Anak berlatih membaca kartu harakat bersama teman",
+          "Kakak membantu adik mengenal harakat"
+         ],
+         "tagAset": [
+          "huruf-hijaiah",
+          "anak-sekolah",
+          "kartu-belajar"
+         ],
+         "id": "pai-1-bab6--harakat-lanjutan-fatatain-kasratain",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Surah al-Ikhlas",
+         "tujuan": "Murid mampu menunjukkan hafalan surah al-Ikhlas dengan lancar di depan guru dan orang tua.",
+         "konsep": [
+          "Al-Ikhlas adalah surah pendek",
+          "Hafalan ditunjukkan dengan tanggung jawab dan disiplin",
+          "Al-Qur’an menjadi pedoman hidup"
+         ],
+         "miskonsepsi": [
+          "Hafalan cukup dilakukan sekali lalu tidak perlu diulang"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cerita",
+          "urutkan"
+         ],
+         "konteks": [
+          "Anak mengulang hafalan setiap sore",
+          "Anak setor hafalan di depan ayah dan ibu"
+         ],
+         "tagAset": [
+          "keluarga",
+          "al-quran",
+          "anak-mengaji"
+         ],
+         "id": "pai-1-bab6--surah-al-ikhlas",
+         "jenisTeks": "informasi"
+        }
+       ]
+      },
+      {
+       "id": "pai-1-bab7",
+       "bab": 7,
+       "nama": "Kasih Sayang terhadap Sesama",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "campuran",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Asmaulhusna Ar-Rahman dan Ar-Rahim",
+         "tujuan": "Murid mampu menyebutkan asmaulhusna Ar-Rahman dan Ar-Rahim beserta artinya.",
+         "konsep": [
+          "Ar-Rahman berarti Maha Pengasih",
+          "Ar-Rahim berarti Maha Penyayang",
+          "Kasih sayang Allah dapat ditiru lewat sikap sayang kepada sesama"
+         ],
+         "miskonsepsi": [
+          "Kasih sayang hanya untuk keluarga sendiri"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "cocokkan",
+          "bacaan"
+         ],
+         "konteks": [
+          "Anak berbagi bekal dengan teman yang lupa membawa",
+          "Anak merawat kucing di rumah"
+         ],
+         "tagAset": [
+          "anak-berbagi",
+          "kucing",
+          "kaligrafi"
+         ],
+         "id": "pai-1-bab7--asmaulhusna-ar-rahman-dan",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Muhammad Rasulullah dan kasih sayang kepada sesama",
+         "tujuan": "Murid mampu menyebutkan peran Muhammad saw. sebagai rasul serta menunjukkan kasih sayang kepada sesama.",
+         "konsep": [
+          "Muhammad saw. adalah rasul utusan Allah",
+          "Rasulullah menyayangi sesama manusia",
+          "Kasih sayang ditunjukkan lewat perbuatan"
+         ],
+         "miskonsepsi": [
+          "Menyayangi cukup dengan ucapan tanpa perbuatan"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "Anak menolong teman yang terjatuh di halaman",
+          "Anak menjenguk tetangga yang sakit bersama ibu"
+         ],
+         "tagAset": [
+          "anak-menolong",
+          "halaman-sekolah",
+          "keluarga"
+         ],
+         "id": "pai-1-bab7--muhammad-rasulullah-dan-kasih",
+         "jenisTeks": "campuran"
+        }
+       ]
+      },
+      {
+       "id": "pai-1-bab8",
+       "bab": 8,
+       "nama": "Aku Suka Berterima Kasih dan Disiplin",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "fiksi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Berterima kasih kepada manusia",
+         "tujuan": "Murid mampu menyebutkan arti terima kasih kepada manusia dan menunjukkan sikapnya.",
+         "konsep": [
+          "Terima kasih diucapkan kepada orang yang berbuat baik",
+          "Terima kasih ditunjukkan dengan kata dan sikap",
+          "Berterima kasih membuat hubungan menjadi hangat"
+         ],
+         "miskonsepsi": [
+          "Terima kasih hanya perlu untuk orang dewasa"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak berterima kasih kepada penjaga sekolah yang membersihkan kelas",
+          "Anak berterima kasih kepada ayah yang mengantar ke sekolah"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "keluarga",
+          "kelas"
+         ],
+         "id": "pai-1-bab8--berterima-kasih-kepada-manusia",
+         "jenisTeks": "fiksi"
+        },
+        {
+         "nama": "Disiplin dan tepuk kasih sayang",
+         "tujuan": "Murid mampu menyebutkan arti disiplin dan menunjukkan kebiasaan disiplin melalui tepuk kasih sayang dan disiplin.",
+         "konsep": [
+          "Disiplin berarti taat aturan dan tepat waktu",
+          "Disiplin dilatih dari kebiasaan kecil",
+          "Kasih sayang dan disiplin dapat berjalan bersama"
+         ],
+         "miskonsepsi": [
+          "Disiplin dikira hanya takut dimarahi"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "urutkan",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak menyusun jadwal pagi sebelum berangkat sekolah",
+          "Anak merapikan sepatu dan tas sendiri"
+         ],
+         "tagAset": [
+          "jam-dinding",
+          "anak-sekolah",
+          "tas-sekolah"
+         ],
+         "id": "pai-1-bab8--disiplin-dan-tepuk-kasih",
+         "jenisTeks": "fiksi"
+        }
+       ]
+      },
+      {
+       "id": "pai-1-bab9",
+       "bab": 9,
+       "nama": "Membiasakan Hidup Bersih",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Bersuci (taharah) dan hikmah hidup bersih",
+         "tujuan": "Murid mampu menyebutkan pengertian bersuci (taharah) dan hikmah hidup bersih.",
+         "konsep": [
+          "Taharah berarti bersuci",
+          "Hidup bersih menjaga kesehatan",
+          "Bersuci adalah syarat sebelum beribadah tertentu"
+         ],
+         "miskonsepsi": [
+          "Bersih hanya soal penampilan, tidak terkait ibadah"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak mencuci tangan sebelum makan",
+          "Kelas piket membersihkan ruangan setiap pagi"
+         ],
+         "tagAset": [
+          "cuci-tangan",
+          "kelas",
+          "anak-sekolah"
+         ],
+         "id": "pai-1-bab9--bersuci-taharah-dan-hikmah",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Tata cara wudu dan tayamum",
+         "tujuan": "Murid mampu mengurutkan tata cara berwudu dan mengenal tayamum sesuai buku.",
+         "konsep": [
+          "Wudu dilakukan dengan urutan tertentu",
+          "Tayamum dilakukan bila tidak ada air atau tidak boleh terkena air",
+          "Tata cara mengikuti panduan guru dan buku"
+         ],
+         "miskonsepsi": [
+          "Urutan wudu dapat dibolak-balik"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "urutkan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Anak berlatih wudu di tempat wudu sekolah",
+          "Anak diingatkan teman agar tidak boros air"
+         ],
+         "tagAset": [
+          "tempat-wudu",
+          "air",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pai-1-bab9--tata-cara-wudu-dan",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-1-bab10",
+       "bab": 10,
+       "nama": "Nabi Adam a.s. Manusia Pertama",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "fiksi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Kisah Nabi Adam a.s.",
+         "tujuan": "Murid mampu menceritakan kisah Nabi Adam a.s. dengan bahasa sendiri dan menyusun urutan kartu kisahnya.",
+         "konsep": [
+          "Nabi Adam a.s. adalah manusia pertama dan nabi pertama",
+          "Kisah punya urutan kejadian",
+          "Cerita diceritakan kembali dengan bahasa sendiri"
+         ],
+         "miskonsepsi": [
+          "Urutan kejadian kisah boleh dibolak-balik tanpa mengubah makna"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Kelompok menyusun kartu kisah di meja",
+          "Anak menceritakan ulang kisah kepada adik"
+         ],
+         "tagAset": [
+          "buku-cerita",
+          "kartu-cerita",
+          "taman"
+         ],
+         "perluDicek": true,
+         "id": "pai-1-bab10--kisah-nabi-adam-a",
+         "jenisTeks": "fiksi"
+        },
+        {
+         "nama": "Teladan bertaubat dan bersabar",
+         "tujuan": "Murid mampu menunjukkan sikap senang bertaubat dan bersabar dalam ketaatan seperti teladan Nabi Adam a.s.",
+         "konsep": [
+          "Bertaubat berarti menyesal dan tidak mengulangi kesalahan",
+          "Sabar dalam ketaatan kepada Allah",
+          "Meneladani sikap Nabi Adam a.s."
+         ],
+         "miskonsepsi": [
+          "Orang yang berbuat salah tidak boleh diberi kesempatan memperbaiki diri"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak mengaku salah lalu meminta maaf kepada teman",
+          "Anak sabar menunggu giliran dan tidak menyerobot"
+         ],
+         "tagAset": [
+          "anak-minta-maaf",
+          "anak-sekolah",
+          "antre"
+         ],
+         "id": "pai-1-bab10--teladan-bertaubat-dan-bersabar",
+         "jenisTeks": "fiksi"
+        }
+       ],
+       "perluDicek": true
+      }
+     ]
+    },
+    "2": {
+     "fase": "A",
+     "buku": "Buku Panduan Guru Pendidikan Agama Islam dan Budi Pekerti untuk SD Kelas II",
+     "materi": [
+      {
+       "id": "pai-2-bab1",
+       "bab": 1,
+       "nama": "Ayo Belajar Al-Qur’an",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Mengenal Al-Qur’an dan adab membacanya",
+         "tujuan": "Murid mampu menyebutkan adab sebelum dan sesudah membaca Al-Qur’an.",
+         "konsep": [
+          "Al-Qur’an adalah kitab suci umat Islam",
+          "Membaca Al-Qur’an diawali dengan bersuci dan basmalah",
+          "Al-Qur’an dipegang dan disimpan dengan hormat"
+         ],
+         "miskonsepsi": [
+          "Al-Qur’an dianggap boleh diletakkan sembarangan",
+          "Adab membaca dianggap tidak penting bagi anak kecil"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "Anak membuka Al-Qur’an bersama kakak di rumah",
+          "Kegiatan tadarus pagi di kelas"
+         ],
+         "tagAset": [
+          "al-quran",
+          "anak-mengaji"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab1--mengenal-al-qur-an",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Membaca huruf hijaiah dengan harakat",
+         "tujuan": "Murid mampu mengenali huruf hijaiah beserta harakatnya.",
+         "konsep": [
+          "Huruf hijaiah dan harakat menentukan bunyi bacaan",
+          "Membaca dilakukan pelan dan tartil",
+          "Berlatih rutin memperlancar bacaan"
+         ],
+         "miskonsepsi": [
+          "Membaca cepat dianggap lebih baik daripada benar"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "Kartu huruf di meja belajar",
+          "Latihan membaca bersama teman sebangku"
+         ],
+         "tagAset": [
+          "huruf-hijaiah",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab1--membaca-huruf-hijaiah-dengan",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-2-bab2",
+       "bab": 2,
+       "nama": "Mari Mengenal Allah Swt.",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Allah Pencipta dan Maha Pemberi",
+         "tujuan": "Murid mampu menyebutkan bahwa Allah menciptakan alam semesta dan memberi nikmat.",
+         "konsep": [
+          "Allah menciptakan manusia, hewan, tumbuhan, dan alam",
+          "Nikmat dari Allah patut disyukuri",
+          "Allah Maha Melihat dan Maha Mendengar"
+         ],
+         "miskonsepsi": [
+          "Alam dianggap ada dengan sendirinya",
+          "Allah dianggap hanya melihat saat beribadah"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Anak mengamati pohon dan hujan",
+          "Anak bersyukur setelah makan"
+         ],
+         "tagAset": [
+          "alam",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab2--allah-pencipta-dan-maha",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Asmaulhusna dan artinya",
+         "tujuan": "Murid mampu memasangkan beberapa asmaulhusna dengan artinya.",
+         "konsep": [
+          "Asmaulhusna adalah nama-nama Allah yang indah",
+          "Setiap nama memiliki arti",
+          "Nama Allah diteladani dalam sikap baik"
+         ],
+         "miskonsepsi": [
+          "Asmaulhusna dianggap hanya untuk dihafal tanpa arti"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir"
+         ],
+         "konteks": [
+          "Permainan kartu nama dan arti",
+          "Kaligrafi asmaulhusna di dinding kelas"
+         ],
+         "tagAset": [
+          "kaligrafi",
+          "kelompok-anak"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab2--asmaulhusna-dan-artinya",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-2-bab3",
+       "bab": 3,
+       "nama": "Ayo Berperilaku Terpuji",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "fiksi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Jujur dan santun dalam sehari-hari",
+         "tujuan": "Murid mampu memilih sikap jujur dan santun dalam cerita sehari-hari.",
+         "konsep": [
+          "Jujur berarti berkata dan bertindak sesuai kenyataan",
+          "Santun ditunjukkan lewat tutur kata dan sikap",
+          "Perilaku terpuji disukai Allah dan sesama"
+         ],
+         "miskonsepsi": [
+          "Berbohong kecil dianggap tidak apa-apa",
+          "Santun dianggap hanya kepada orang tua"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak menemukan uang jajan temannya",
+          "Anak meminta izin sebelum meminjam barang"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "teman"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab3--jujur-dan-santun-dalam",
+         "jenisTeks": "fiksi"
+        },
+        {
+         "nama": "Tolong-menolong dan berbagi",
+         "tujuan": "Murid mampu mengidentifikasi tindakan tolong-menolong di sekitarnya.",
+         "konsep": [
+          "Menolong tidak membeda-bedakan teman",
+          "Berbagi membuat hati senang",
+          "Tolong-menolong dilakukan dengan ikhlas"
+         ],
+         "miskonsepsi": [
+          "Menolong dianggap harus dibayar"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "Membantu teman membawa buku",
+          "Berbagi bekal saat istirahat"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "bekal"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab3--tolong-menolong-dan-berbagi",
+         "jenisTeks": "fiksi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-2-bab4",
+       "bab": 4,
+       "nama": "Alhamdulillah, Aku Bisa Salat",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Salat lima waktu",
+         "tujuan": "Murid mampu menyebutkan nama salat lima waktu secara berurutan.",
+         "konsep": [
+          "Salat lima waktu: Subuh, Zuhur, Asar, Magrib, Isya",
+          "Salat adalah kewajiban dan rukun Islam",
+          "Setiap salat memiliki waktunya"
+         ],
+         "miskonsepsi": [
+          "Urutan waktu salat dianggap bebas",
+          "Salat dianggap boleh ditunda tanpa alasan"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "urutkan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Anak mendengar azan dari masjid",
+          "Keluarga salat berjemaah di rumah"
+         ],
+         "tagAset": [
+          "masjid",
+          "keluarga"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab4--salat-lima-waktu",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Persiapan dan tata cara salat",
+         "tujuan": "Murid mampu mengurutkan persiapan dan gerakan salat sesuai tuntunan guru.",
+         "konsep": [
+          "Salat didahului wudu dan pakaian bersih",
+          "Gerakan salat dilakukan berurutan",
+          "Salat dilakukan dengan tenang dan khusyuk"
+         ],
+         "miskonsepsi": [
+          "Gerakan salat dianggap boleh diubah-ubah",
+          "Salat dilakukan sambil bermain"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "sortir"
+         ],
+         "konteks": [
+          "Latihan salat di mushala sekolah",
+          "Anak diajari ayah menyiapkan sajadah"
+         ],
+         "tagAset": [
+          "sajadah",
+          "mushala"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab4--persiapan-dan-tata-cara",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-2-bab5",
+       "bab": 5,
+       "nama": "Asyiknya Belajar Kisah Nabi Nuh a.s.",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "campuran",
+       "tema": "samudra",
+       "sub": [
+        {
+         "nama": "Kisah Nabi Nuh a.s. dan kapalnya",
+         "tujuan": "Murid mampu menceritakan dan mengurutkan peristiwa pokok kisah Nabi Nuh a.s.",
+         "konsep": [
+          "Nabi Nuh a.s. mengajak kaumnya menyembah Allah",
+          "Nabi Nuh a.s. membuat kapal atas perintah Allah",
+          "Orang beriman diselamatkan"
+         ],
+         "miskonsepsi": [
+          "Kisah dianggap tidak punya pelajaran",
+          "Urutan peristiwa tertukar"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "bacaan"
+         ],
+         "konteks": [
+          "Kartu gambar kisah Nabi Nuh a.s.",
+          "Mendongeng kisah di depan kelas"
+         ],
+         "tagAset": [
+          "kapal",
+          "banjir"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab5--kisah-nabi-nuh-a",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Meneladani kesabaran Nabi Nuh a.s.",
+         "tujuan": "Murid mampu memilih sikap sabar yang meneladani Nabi Nuh a.s.",
+         "konsep": [
+          "Sabar dalam berbuat baik walau ditentang",
+          "Taat kepada perintah Allah",
+          "Tidak mudah menyerah"
+         ],
+         "miskonsepsi": [
+          "Sabar dianggap diam saja tanpa usaha"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak sabar belajar walau sulit",
+          "Anak tetap berbuat baik saat diejek"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "kapal"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab5--meneladani-kesabaran-nabi-nuh",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-2-bab6",
+       "bab": 6,
+       "nama": "Senang Bisa Membaca Al-Qur’an",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Membaca surah pendek dengan tartil",
+         "tujuan": "Murid mampu membaca surah pendek dengan lancar dan tartil.",
+         "konsep": [
+          "Surah pendek dibaca ayat demi ayat",
+          "Bacaan dijaga agar jelas dan tidak terburu-buru",
+          "Arti ayat membantu memahami pesannya"
+         ],
+         "miskonsepsi": [
+          "Hafal dianggap cukup tanpa memperhatikan bacaan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "runner"
+         ],
+         "konteks": [
+          "Tadarus bersama di kelas",
+          "Anak mengaji dengan orang tua"
+         ],
+         "tagAset": [
+          "al-quran",
+          "anak-mengaji"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab6--membaca-surah-pendek-dengan",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Pesan pokok dan sikap saat membaca Al-Qur’an",
+         "tujuan": "Murid mampu menyebutkan pesan pokok surah yang dibaca dan sikap yang baik.",
+         "konsep": [
+          "Setiap surah memiliki pesan kebaikan",
+          "Membaca Al-Qur’an dilakukan dengan tenang",
+          "Pesan Al-Qur’an dipraktikkan dalam perilaku"
+         ],
+         "miskonsepsi": [
+          "Membaca dianggap hanya ritual tanpa pesan"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cocokkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Diskusi pesan surah setelah tadarus",
+          "Anak menerapkan pesan surah di rumah"
+         ],
+         "tagAset": [
+          "al-quran",
+          "kelompok-anak"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab6--pesan-pokok-dan-sikap",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-2-bab7",
+       "bab": 7,
+       "nama": "Mari Mengenal Malaikat-Malaikat Allah",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Nama dan tugas malaikat",
+         "tujuan": "Murid mampu memasangkan nama malaikat dengan tugasnya.",
+         "konsep": [
+          "Malaikat adalah makhluk Allah yang selalu taat",
+          "Jibril menyampaikan wahyu, Mikail membagi rezeki, Israfil meniup sangkakala",
+          "Beriman kepada malaikat termasuk rukun iman"
+         ],
+         "miskonsepsi": [
+          "Malaikat dianggap berjenis kelamin laki-laki atau perempuan",
+          "Malaikat dianggap boleh disembah"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir"
+         ],
+         "konteks": [
+          "Kartu pasangan nama dan tugas malaikat",
+          "Cerita anak yang merasa selalu diawasi Allah"
+         ],
+         "tagAset": [
+          "langit",
+          "kartu-cerita"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab7--nama-dan-tugas-malaikat",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Sikap beriman kepada malaikat",
+         "tujuan": "Murid mampu memilih sikap yang mencerminkan iman kepada malaikat.",
+         "konsep": [
+          "Malaikat Raqib dan Atid mencatat amal",
+          "Berbuat baik walau tidak terlihat orang",
+          "Ikut meniru ketaatan malaikat"
+         ],
+         "miskonsepsi": [
+          "Berbuat salah dianggap tidak apa-apa bila tidak ketahuan"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak jujur saat ujian walau tak diawasi",
+          "Anak membuang sampah pada tempatnya"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "langit"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab7--sikap-beriman-kepada-malaikat",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-2-bab8",
+       "bab": 8,
+       "nama": "Aku Senang Bisa Berakhlak Terpuji",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "fiksi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Akhlak terpuji kepada orang tua dan guru",
+         "tujuan": "Murid mampu memilih sikap hormat kepada orang tua dan guru dalam cerita.",
+         "konsep": [
+          "Menghormati orang tua dan guru",
+          "Mendengarkan nasihat dengan baik",
+          "Mengucapkan salam dan terima kasih"
+         ],
+         "miskonsepsi": [
+          "Hormat dianggap berarti tidak boleh bertanya"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak mencium tangan guru saat tiba di sekolah",
+          "Anak membantu ibu di rumah"
+         ],
+         "tagAset": [
+          "keluarga",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab8--akhlak-terpuji-kepada-orang",
+         "jenisTeks": "fiksi"
+        },
+        {
+         "nama": "Akhlak terpuji kepada teman dan lingkungan",
+         "tujuan": "Murid mampu mengidentifikasi perilaku baik kepada teman dan lingkungan.",
+         "konsep": [
+          "Menjaga kerukunan dengan teman",
+          "Merawat barang dan kebersihan bersama",
+          "Meminta maaf bila bersalah"
+         ],
+         "miskonsepsi": [
+          "Meminta maaf dianggap kalah"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "runner"
+         ],
+         "konteks": [
+          "Bermain bergantian di halaman",
+          "Piket kebersihan kelas"
+         ],
+         "tagAset": [
+          "teman",
+          "kelas-bersih"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab8--akhlak-terpuji-kepada-teman",
+         "jenisTeks": "fiksi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-2-bab9",
+       "bab": 9,
+       "nama": "Ayo Zikir dan Doa Setelah Salat",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Zikir setelah salat",
+         "tujuan": "Murid mampu menyebutkan zikir setelah salat dan artinya.",
+         "konsep": [
+          "Zikir adalah mengingat dan menyebut Allah",
+          "Zikir dibaca setelah salat dengan tenang",
+          "Zikir diucapkan sesuai urutan yang diajarkan guru"
+         ],
+         "miskonsepsi": [
+          "Zikir dianggap boleh sambil bercanda"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "urutkan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Duduk tenang setelah salat di mushala",
+          "Berzikir bersama keluarga setelah Magrib"
+         ],
+         "tagAset": [
+          "masjid",
+          "keluarga"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab9--zikir-setelah-salat",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Berdoa setelah salat",
+         "tujuan": "Murid mampu menyebutkan adab dan isi doa setelah salat.",
+         "konsep": [
+          "Berdoa dengan tangan terbuka dan hati tenang",
+          "Doa memohon kebaikan untuk diri dan orang tua",
+          "Berdoa dengan sopan dan penuh harap"
+         ],
+         "miskonsepsi": [
+          "Doa dianggap pasti langsung dikabulkan sesuai permintaan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "Anak mendoakan orang tua setelah salat",
+          "Berdoa bersama sebelum pulang sekolah"
+         ],
+         "tagAset": [
+          "anak-berdoa",
+          "mushala"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab9--berdoa-setelah-salat",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-2-bab10",
+       "bab": 10,
+       "nama": "Asyiknya Belajar Kisah Ayah Para Nabi",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "campuran",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Kisah Nabi Ibrahim a.s.",
+         "tujuan": "Murid mampu menceritakan dan mengurutkan peristiwa pokok kisah Nabi Ibrahim a.s.",
+         "konsep": [
+          "Nabi Ibrahim a.s. mengajak kaumnya hanya menyembah Allah",
+          "Nabi Ibrahim a.s. dijuluki ayah para nabi",
+          "Allah menolong hamba yang taat"
+         ],
+         "miskonsepsi": [
+          "Berhala dianggap bisa menolong manusia",
+          "Urutan peristiwa tertukar"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "bacaan"
+         ],
+         "konteks": [
+          "Kartu bergambar kisah Nabi Ibrahim a.s.",
+          "Menceritakan ulang kisah bersama kelompok"
+         ],
+         "tagAset": [
+          "kartu-cerita",
+          "kelompok-anak"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab10--kisah-nabi-ibrahim-a",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Meneladani keteguhan dan ketaatan Nabi Ibrahim a.s.",
+         "tujuan": "Murid mampu memilih sikap teguh dan taat yang meneladani Nabi Ibrahim a.s.",
+         "konsep": [
+          "Teguh berpegang pada kebenaran",
+          "Taat kepada perintah Allah",
+          "Berani berkata benar dengan sopan"
+         ],
+         "miskonsepsi": [
+          "Teguh pendirian dianggap harus keras kepala"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak menolak ajakan berbuat curang dengan sopan",
+          "Anak tetap salat walau teman bermain"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "teman"
+         ],
+         "perluDicek": true,
+         "id": "pai-2-bab10--meneladani-keteguhan-dan-ketaatan",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      }
+     ]
+    },
+    "3": {
+     "fase": "B",
+     "buku": "Buku Panduan Guru Pendidikan Agama Islam dan Budi Pekerti untuk SD/MI Kelas III",
+     "materi": [
+      {
+       "id": "pai-3-bab1",
+       "bab": 1,
+       "nama": "Asyiknya Belajar Surah Al-'Alaq",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Membaca dan hukum bacaan qalqalah pada QS. Al-'Alaq ayat 1-5",
+         "tujuan": "Murid mampu membaca QS. Al-'Alaq ayat 1-5 dan mengenal hukum bacaan qalqalah.",
+         "konsep": [
+          "Al-'Alaq ayat 1-5 adalah wahyu yang mula-mula turun",
+          "Qalqalah adalah hukum bacaan memantulkan bunyi",
+          "Membaca perlu tartil dan benar"
+         ],
+         "miskonsepsi": [
+          "Qalqalah dikira berlaku untuk semua huruf"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Kelas membaca ayat bersama sebelum pelajaran",
+          "Anak mengulang bacaan bersama teman sebangku"
+         ],
+         "tagAset": [
+          "al-quran",
+          "anak-mengaji",
+          "kelas"
+         ],
+         "id": "pai-3-bab1--membaca-dan-hukum-bacaan",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Pesan pokok QS. Al-'Alaq ayat 1-5",
+         "tujuan": "Murid mampu menjelaskan pesan pokok QS. Al-'Alaq ayat 1-5 tentang membaca dan belajar.",
+         "konsep": [
+          "Perintah membaca adalah pesan awal wahyu",
+          "Ilmu datang dari Allah",
+          "Belajar dilakukan dengan semangat"
+         ],
+         "miskonsepsi": [
+          "Membaca hanya berarti membaca buku pelajaran"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak rajin ke perpustakaan sekolah",
+          "Anak membaca buku bersama adik"
+         ],
+         "tagAset": [
+          "perpustakaan",
+          "buku",
+          "anak-membaca"
+         ],
+         "id": "pai-3-bab1--pesan-pokok-qs-al",
+         "jenisTeks": "informasi"
+        }
+       ]
+      },
+      {
+       "id": "pai-3-bab2",
+       "bab": 2,
+       "nama": "Ayo Mengenal Tuhan Kita",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Sifat wajib, mustahil, dan jaiz Allah Swt.",
+         "tujuan": "Murid mampu menyebutkan sifat-sifat Allah Swt. dan menghafal sifat wajib, mustahil, serta jaiz sesuai buku.",
+         "konsep": [
+          "Allah memiliki sifat wajib yang pasti",
+          "Sifat mustahil adalah lawan sifat wajib",
+          "Sifat jaiz adalah sifat yang boleh bagi Allah"
+         ],
+         "miskonsepsi": [
+          "Sifat mustahil dikira sifat yang dimiliki Allah"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir"
+         ],
+         "konteks": [
+          "Guru bercerita tentang kekuasaan Allah menciptakan alam",
+          "Anak bertanya pada ayah tentang siapa yang menciptakan bulan"
+         ],
+         "tagAset": [
+          "langit",
+          "bulan",
+          "keluarga"
+         ],
+         "perluDicek": true,
+         "id": "pai-3-bab2--sifat-wajib-mustahil-dan",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Mengenal Allah melalui asmaulhusna",
+         "tujuan": "Murid mampu menyebutkan beberapa asmaulhusna beserta artinya sesuai buku.",
+         "konsep": [
+          "Asmaulhusna adalah nama-nama Allah yang baik",
+          "Setiap nama memiliki arti",
+          "Nama Allah dapat dijadikan teladan sikap"
+         ],
+         "miskonsepsi": [
+          "Asmaulhusna dikira nama makhluk"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "Kelas bernyanyi asmaulhusna bersama",
+          "Anak membuat kartu asmaulhusna di kelas"
+         ],
+         "tagAset": [
+          "kaligrafi",
+          "kartu-belajar",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pai-3-bab2--mengenal-allah-melalui-asmaulhusna",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-3-bab3",
+       "bab": 3,
+       "nama": "Perilaku Terpuji Adalah Kepribadianku",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "fiksi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Berbakti kepada orang tua dan guru",
+         "tujuan": "Murid mampu menunjukkan sikap berbakti kepada orang tua dan guru.",
+         "konsep": [
+          "Berbakti berarti taat dan menghormati dalam hal kebaikan",
+          "Orang tua dan guru perlu dihormati",
+          "Bakti ditunjukkan dengan perbuatan"
+         ],
+         "miskonsepsi": [
+          "Berbakti hanya berarti diam tanpa pernah bertanya"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak membantu ibu menyapu sebelum bermain",
+          "Anak mencium tangan guru saat berpamitan"
+         ],
+         "tagAset": [
+          "keluarga",
+          "anak-sekolah",
+          "guru"
+         ],
+         "id": "pai-3-bab3--berbakti-kepada-orang-tua",
+         "jenisTeks": "fiksi"
+        },
+        {
+         "nama": "Sikap menghormati orang lain",
+         "tujuan": "Murid mampu memilih sikap menghormati orang lain dalam keseharian.",
+         "konsep": [
+          "Menghormati orang lain termasuk perilaku terpuji",
+          "Menghormati yang lebih tua dan menyayangi yang lebih muda",
+          "Sopan dalam bicara dan sikap"
+         ],
+         "miskonsepsi": [
+          "Hormat hanya untuk orang yang kita kenal"
+         ],
+         "kompetensi": [
+          "evaluasi",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "Anak memberi tempat duduk kepada orang tua di angkot",
+          "Anak menyapa tetangga dengan sopan"
+         ],
+         "tagAset": [
+          "angkot",
+          "tetangga",
+          "anak-sekolah"
+         ],
+         "id": "pai-3-bab3--sikap-menghormati-orang-lain",
+         "jenisTeks": "fiksi"
+        }
+       ]
+      },
+      {
+       "id": "pai-3-bab4",
+       "bab": 4,
+       "nama": "Aku Bangga Mampu Berpuasa",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Ketentuan puasa",
+         "tujuan": "Murid mampu menjelaskan ketentuan puasa sesuai buku, seperti pengertian dan hal-hal yang membatalkannya.",
+         "konsep": [
+          "Puasa adalah menahan diri dari hal yang membatalkan sejak terbit fajar hingga terbenam matahari",
+          "Ada hal yang membatalkan puasa",
+          "Puasa dilakukan dengan niat"
+         ],
+         "miskonsepsi": [
+          "Puasa hanya menahan lapar dan haus, tidak termasuk menjaga sikap"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Anak belajar sahur bersama keluarga",
+          "Anak memilih kegiatan ringan saat berpuasa"
+         ],
+         "tagAset": [
+          "keluarga",
+          "sahur",
+          "bedug"
+         ],
+         "perluDicek": true,
+         "id": "pai-3-bab4--ketentuan-puasa",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Hikmah puasa",
+         "tujuan": "Murid mampu menyebutkan hikmah puasa dan menerapkannya dalam sikap sehari-hari.",
+         "konsep": [
+          "Puasa melatih kesabaran",
+          "Puasa menumbuhkan peduli pada orang yang kekurangan",
+          "Puasa melatih menahan diri"
+         ],
+         "miskonsepsi": [
+          "Puasa hanya bermanfaat untuk orang dewasa"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak berbagi takjil dengan tetangga",
+          "Anak menahan marah saat diganggu teman"
+         ],
+         "tagAset": [
+          "takjil",
+          "anak-berbagi",
+          "masjid"
+         ],
+         "id": "pai-3-bab4--hikmah-puasa",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-3-bab5",
+       "bab": 5,
+       "nama": "Aku Suka Belajar Sejarah Islam",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Arab pra-Islam",
+         "tujuan": "Murid mampu menceritakan kondisi masyarakat Arab sebelum Islam sesuai buku.",
+         "konsep": [
+          "Arab pra-Islam adalah masa sebelum Islam datang",
+          "Masyarakat Arab hidup di wilayah gurun",
+          "Islam membawa perubahan akhlak"
+         ],
+         "miskonsepsi": [
+          "Masa Arab pra-Islam dikira masa yang sama dengan masa Nabi"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "urutkan"
+         ],
+         "konteks": [
+          "Guru bercerita tentang kafilah dagang di gurun",
+          "Anak melihat peta wilayah Arab di kelas"
+         ],
+         "tagAset": [
+          "gurun",
+          "unta",
+          "peta"
+         ],
+         "perluDicek": true,
+         "id": "pai-3-bab5--arab-pra-islam",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Kisah Nabi Muhammad saw. dan selawat",
+         "tujuan": "Murid mampu menceritakan kisah masa kecil Nabi Muhammad saw. dan melantunkan selawat atau syair.",
+         "konsep": [
+          "Nabi Muhammad saw. lahir di Makkah",
+          "Kisah hidup Nabi dapat diurutkan",
+          "Selawat adalah pujian dan doa untuk Nabi"
+         ],
+         "miskonsepsi": [
+          "Selawat hanya boleh dibaca oleh orang dewasa"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Kelas melantunkan selawat bersama bu guru",
+          "Anak menyimak kisah Nabi dari kakek"
+         ],
+         "tagAset": [
+          "masjid",
+          "anak-bernyanyi",
+          "buku-cerita"
+         ],
+         "perluDicek": true,
+         "id": "pai-3-bab5--kisah-nabi-muhammad-saw",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-3-bab6",
+       "bab": 6,
+       "nama": "Senangnya Belajar Hadis",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "campuran",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Hadis tentang salat berjemaah",
+         "tujuan": "Murid mampu membaca, menulis, dan menghafal hadis tentang salat berjemaah serta menjelaskan pesan pokoknya.",
+         "konsep": [
+          "Hadis adalah ucapan dan teladan Nabi Muhammad saw.",
+          "Salat berjemaah dilakukan bersama-sama",
+          "Pesan pokok: salat berjemaah dianjurkan"
+         ],
+         "miskonsepsi": [
+          "Salat berjemaah hanya boleh dilakukan di masjid"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Keluarga salat magrib berjemaah di rumah",
+          "Anak diajak ayah ke masjid"
+         ],
+         "tagAset": [
+          "masjid",
+          "keluarga",
+          "salat-berjemaah"
+         ],
+         "perluDicek": true,
+         "id": "pai-3-bab6--hadis-tentang-salat-berjemaah",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Praktik salat berjemaah",
+         "tujuan": "Murid mampu mengurutkan dan mempraktikkan salat berjemaah sesuai tata cara dalam buku.",
+         "konsep": [
+          "Ada imam dan makmum",
+          "Makmum mengikuti gerakan imam",
+          "Saf diatur lurus dan rapat"
+         ],
+         "miskonsepsi": [
+          "Makmum boleh mendahului gerakan imam"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "evaluasi"
+         ],
+         "mesin": [
+          "urutkan",
+          "sortir"
+         ],
+         "konteks": [
+          "Kelas berlatih salat berjemaah di mushala sekolah",
+          "Anak menjadi imam saat latihan di kelas"
+         ],
+         "tagAset": [
+          "mushala",
+          "saf-salat",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pai-3-bab6--praktik-salat-berjemaah",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-3-bab7",
+       "bab": 7,
+       "nama": "Ayo Beriman Kepada Kitab-Kitab Allah Swt.",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Pengertian dan kitab-kitab Allah yang wajib diimani",
+         "tujuan": "Murid mampu menjelaskan pengertian iman kepada kitab Allah dan menyebutkan kitab-kitab yang wajib diimani sesuai buku.",
+         "konsep": [
+          "Iman kepada kitab berarti percaya bahwa Allah menurunkan kitab",
+          "Kitab diturunkan kepada rasul",
+          "Al-Qur’an adalah kitab terakhir"
+         ],
+         "miskonsepsi": [
+          "Semua buku agama dikira kitab Allah"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "Guru memperlihatkan daftar kitab dan rasul penerimanya",
+          "Anak membuat kartu pasangan kitab dan rasul"
+         ],
+         "tagAset": [
+          "al-quran",
+          "kartu-belajar",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pai-3-bab7--pengertian-dan-kitab-kitab",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Ciri dan manfaat beriman kepada kitab Allah",
+         "tujuan": "Murid mampu menyebutkan ciri, manfaat, dan sikap yang menunjukkan iman kepada kitab Allah.",
+         "konsep": [
+          "Orang beriman membaca dan mempelajari kitab",
+          "Beriman kepada kitab memberi pedoman hidup",
+          "Ada akibat bila iman tidak dihayati"
+         ],
+         "miskonsepsi": [
+          "Beriman cukup dengan percaya tanpa membaca atau mengamalkan"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "Anak rutin membaca Al-Qur’an sebelum tidur",
+          "Anak mengamalkan nasihat dari ayat yang dipelajari"
+         ],
+         "tagAset": [
+          "anak-mengaji",
+          "al-quran",
+          "keluarga"
+         ],
+         "perluDicek": true,
+         "id": "pai-3-bab7--ciri-dan-manfaat-beriman",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-3-bab8",
+       "bab": 8,
+       "nama": "Aku Senang Berkalimah Ṭayyibah",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "campuran",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Subhanallah, Masyaallah, Insyaallah, dan Allahu Akbar",
+         "tujuan": "Murid mampu menyebutkan arti dan situasi penggunaan kalimah tayibah Subhanallah, Masyaallah, Insyaallah, dan Allahu Akbar.",
+         "konsep": [
+          "Subhanallah diucapkan saat kagum atau takjub",
+          "Masyaallah diucapkan saat melihat hal baik",
+          "Insyaallah diucapkan saat berencana, Allahu Akbar menyatakan Allah Maha Besar"
+         ],
+         "miskonsepsi": [
+          "Insyaallah dikira cara menolak ajakan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak kagum melihat pelangi",
+          "Anak berencana pergi bersama teman dan berucap insyaallah"
+         ],
+         "tagAset": [
+          "pelangi",
+          "anak-sekolah",
+          "kaligrafi"
+         ],
+         "perluDicek": true,
+         "id": "pai-3-bab8--subhanallah-masyaallah-insyaallah-dan",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Memilih kalimah tayibah yang tepat",
+         "tujuan": "Murid mampu memilih kalimah tayibah yang tepat untuk situasi dalam cerita.",
+         "konsep": [
+          "Setiap kalimat dipakai pada situasi tertentu",
+          "Ucapan baik membuat suasana menyenangkan",
+          "Kalimah tayibah dibiasakan dalam keseharian"
+         ],
+         "miskonsepsi": [
+          "Semua kalimah tayibah boleh dipakai pada situasi apa saja"
+         ],
+         "kompetensi": [
+          "evaluasi",
+          "inferensial"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak melihat teman juara lomba dan mengucapkan pujian",
+          "Anak diajak berlibur dan menjawab dengan rencana"
+         ],
+         "tagAset": [
+          "lomba-sekolah",
+          "anak-sekolah",
+          "piala"
+         ],
+         "perluDicek": true,
+         "id": "pai-3-bab8--memilih-kalimah-tayibah-yang",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-3-bab9",
+       "bab": 9,
+       "nama": "Senangnya Salat Rawātib",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Macam-macam salat rawatib dan hikmahnya",
+         "tujuan": "Murid mampu menyebutkan macam-macam salat rawatib dan hikmahnya sesuai buku.",
+         "konsep": [
+          "Salat rawatib adalah salat sunah yang mengiringi salat fardu",
+          "Ada rawatib sebelum dan sesudah salat fardu",
+          "Salat sunah dikerjakan sebagai tambahan"
+         ],
+         "miskonsepsi": [
+          "Salat rawatib dikira wajib seperti salat fardu"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Ayah salat sunah sesudah magrib di rumah",
+          "Anak bertanya kepada guru tentang salat sunah"
+         ],
+         "tagAset": [
+          "masjid",
+          "keluarga",
+          "sajadah"
+         ],
+         "perluDicek": true,
+         "id": "pai-3-bab9--macam-macam-salat-rawatib",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Praktik salat rawatib",
+         "tujuan": "Murid mampu mempraktikkan salat rawatib sesuai tata cara dalam buku.",
+         "konsep": [
+          "Salat rawatib dikerjakan sesuai jumlah rakaat dalam buku",
+          "Niat disesuaikan dengan jenis salat",
+          "Gerakan dilakukan dengan tertib"
+         ],
+         "miskonsepsi": [
+          "Jumlah rakaat semua salat rawatib sama"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "evaluasi"
+         ],
+         "mesin": [
+          "urutkan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Kelas berlatih salat sunah di mushala sekolah",
+          "Anak mengerjakan salat sunah setelah zuhur"
+         ],
+         "tagAset": [
+          "mushala",
+          "sajadah",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pai-3-bab9--praktik-salat-rawatib",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-3-bab10",
+       "bab": 10,
+       "nama": "Nabi Muhammad saw. Rasulku",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "fiksi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Nabi Muhammad menjadi rasul dan mulai berdakwah",
+         "tujuan": "Murid mampu menceritakan urutan peristiwa Nabi Muhammad saw. diangkat menjadi rasul dan mulai berdakwah.",
+         "konsep": [
+          "Nabi Muhammad saw. diangkat menjadi rasul melalui wahyu",
+          "Dakwah dimulai dari orang terdekat",
+          "Peristiwa dalam kisah punya urutan"
+         ],
+         "miskonsepsi": [
+          "Dakwah langsung dilakukan terbuka kepada semua orang sejak hari pertama"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Guru bercerita tentang gua Hira",
+          "Anak menyusun kartu urutan kisah di kelompok"
+         ],
+         "tagAset": [
+          "gua",
+          "buku-cerita",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pai-3-bab10--nabi-muhammad-menjadi-rasul",
+         "jenisTeks": "fiksi"
+        },
+        {
+         "nama": "Mukjizat Nabi Muhammad saw.",
+         "tujuan": "Murid mampu menyebutkan mukjizat Nabi Muhammad saw. dan meyakini bahwa mukjizat datang dari Allah.",
+         "konsep": [
+          "Mukjizat adalah kejadian luar biasa dari Allah",
+          "Al-Qur’an adalah mukjizat terbesar Nabi Muhammad saw.",
+          "Mukjizat menguatkan kebenaran kerasulan"
+         ],
+         "miskonsepsi": [
+          "Mukjizat dikira sulap atau kekuatan Nabi sendiri"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cocokkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Kakek menceritakan mukjizat Nabi sebelum tidur",
+          "Kelas membuat kartu mukjizat dan penjelasannya"
+         ],
+         "tagAset": [
+          "buku-cerita",
+          "al-quran",
+          "keluarga"
+         ],
+         "perluDicek": true,
+         "id": "pai-3-bab10--mukjizat-nabi-muhammad-saw",
+         "jenisTeks": "fiksi"
+        }
+       ],
+       "perluDicek": true
+      }
+     ]
+    },
+    "4": {
+     "fase": "B",
+     "buku": "Buku Panduan Guru Pendidikan Agama Islam dan Budi Pekerti Untuk SD Kelas IV",
+     "materi": [
+      {
+       "id": "pai-4-bab1",
+       "bab": 1,
+       "nama": "Mari Kita Mengaji dan Mengkaji Q.S. Al-Ḥujurāt/49:13 dan Hadis tentang Keragaman",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Membaca, menulis, dan menghafal Q.S. Al-Ḥujurāt/49:13",
+         "tujuan": "Murid mampu membaca, menulis, dan menghafal Q.S. Al-Ḥujurāt/49:13 dengan baik.",
+         "konsep": [
+          "Ayat ini bagian dari surah Al-Ḥujurāt",
+          "Membaca perlu tartil",
+          "Menulis dan menghafal dilakukan bertahap"
+         ],
+         "miskonsepsi": [
+          "Menghafal tanpa memahami arti dianggap sudah cukup"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "bacaan",
+          "urutkan"
+         ],
+         "konteks": [
+          "Kelas tadarus bersama sebelum pelajaran",
+          "Anak berlatih hafalan bersama teman sebangku"
+         ],
+         "tagAset": [
+          "al-quran",
+          "anak-mengaji",
+          "kelas"
+         ],
+         "id": "pai-4-bab1--membaca-menulis-dan-menghafal",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Pesan pokok ayat dan hadis tentang keragaman",
+         "tujuan": "Murid mampu menjelaskan pesan pokok ayat dan hadis bahwa manusia berbeda-beda agar saling mengenal.",
+         "konsep": [
+          "Manusia diciptakan berbeda suku dan bangsa",
+          "Tujuannya agar saling mengenal",
+          "Yang mulia di sisi Allah adalah yang paling bertakwa"
+         ],
+         "miskonsepsi": [
+          "Perbedaan suku dikira membuat satu kelompok lebih mulia"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Murid pindahan berbeda daerah diterima teman sekelas",
+          "Lomba kebersamaan antarkelompok yang berbeda budaya"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "bendera",
+          "teman-sekelas"
+         ],
+         "id": "pai-4-bab1--pesan-pokok-ayat-dan",
+         "jenisTeks": "informasi"
+        }
+       ]
+      },
+      {
+       "id": "pai-4-bab2",
+       "bab": 2,
+       "nama": "Teladan Mulia Asmaulhusna",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Asmaulhusna dan artinya",
+         "tujuan": "Murid mampu menyebutkan beberapa asmaulhusna beserta artinya sesuai buku.",
+         "konsep": [
+          "Asmaulhusna adalah nama-nama Allah yang baik",
+          "Setiap nama memiliki arti",
+          "Nama-nama itu memberi teladan sikap"
+         ],
+         "miskonsepsi": [
+          "Asmaulhusna dikira nama orang"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "Kelas membuat kartu asmaulhusna",
+          "Guru bercerita dengan contoh dari kehidupan"
+         ],
+         "tagAset": [
+          "kaligrafi",
+          "kartu-belajar",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pai-4-bab2--asmaulhusna-dan-artinya",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Berakhlak dengan asmaulhusna",
+         "tujuan": "Murid mampu memilih sikap yang sesuai dengan makna asmaulhusna dalam kehidupan sehari-hari.",
+         "konsep": [
+          "Makna asmaulhusna dapat ditiru dalam sikap",
+          "Meneladani bukan berarti menyamai Allah",
+          "Sikap baik dilatih dari perbuatan kecil"
+         ],
+         "miskonsepsi": [
+          "Meneladani asmaulhusna dikira menyamai sifat Allah"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak memaafkan teman yang tidak sengaja menumpahkan minum",
+          "Anak berbagi bekal dengan teman"
+         ],
+         "tagAset": [
+          "anak-berbagi",
+          "anak-sekolah",
+          "bekal"
+         ],
+         "perluDicek": true,
+         "id": "pai-4-bab2--berakhlak-dengan-asmaulhusna",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-4-bab3",
+       "bab": 3,
+       "nama": "Indahnya Saling Menghargai dalam Keragaman",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "campuran",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Keragaman sebagai sunnatullah",
+         "tujuan": "Murid mampu menjelaskan bahwa keragaman adalah ketentuan Allah (sunnatullah).",
+         "konsep": [
+          "Keragaman suku, bahasa, dan budaya adalah sunnatullah",
+          "Keragaman perlu disyukuri",
+          "Perbedaan tidak untuk dipertentangkan"
+         ],
+         "miskonsepsi": [
+          "Perbedaan dikira penyebab pertengkaran"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "sortir"
+         ],
+         "konteks": [
+          "Hari kebudayaan di sekolah dengan pakaian daerah",
+          "Teman berbeda bahasa daerah saling belajar kosakata"
+         ],
+         "tagAset": [
+          "pakaian-daerah",
+          "anak-sekolah",
+          "peta-indonesia"
+         ],
+         "id": "pai-4-bab3--keragaman-sebagai-sunnatullah",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Saling menghormati orang yang berbeda agama",
+         "tujuan": "Murid mampu memilih sikap menghormati dan menghargai orang yang berbeda agama.",
+         "konsep": [
+          "Ajaran kebaikan ada dalam banyak agama",
+          "Menghormati orang berbeda agama adalah akhlak yang baik",
+          "Tidak memaksakan keyakinan kepada orang lain"
+         ],
+         "miskonsepsi": [
+          "Menghormati dianggap sama dengan mengikuti ibadah agama lain"
+         ],
+         "kompetensi": [
+          "evaluasi",
+          "inferensial"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Tetangga berbeda agama saling mengucapkan selamat dan membantu",
+          "Teman sekelas berbeda agama bekerja sama dalam tugas"
+         ],
+         "tagAset": [
+          "tetangga",
+          "anak-sekolah",
+          "kerja-bakti"
+         ],
+         "id": "pai-4-bab3--saling-menghormati-orang-yang",
+         "jenisTeks": "campuran"
+        }
+       ]
+      },
+      {
+       "id": "pai-4-bab4",
+       "bab": 4,
+       "nama": "Menyambut Usia Balig",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Tanda-tanda balig menurut fikih dan biologi",
+         "tujuan": "Murid mampu menyebutkan tanda-tanda usia balig menurut ilmu fikih dan pandangan biologi sesuai buku.",
+         "konsep": [
+          "Balig berarti sampai pada usia dewasa menurut Islam",
+          "Tanda balig dibahas dalam fikih dan biologi",
+          "Perubahan tubuh adalah proses alami"
+         ],
+         "miskonsepsi": [
+          "Usia balig dianggap sama untuk semua anak"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Guru menjelaskan perubahan tubuh dengan bahasa yang sopan",
+          "Anak bertanya kepada orang tua dengan bahasa santun"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "keluarga",
+          "buku-pelajaran"
+         ],
+         "perluDicek": true,
+         "id": "pai-4-bab4--tanda-tanda-balig-menurut",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Kewajiban setelah usia balig",
+         "tujuan": "Murid mampu menyebutkan kewajiban yang mulai dibebankan setelah usia balig sesuai buku.",
+         "konsep": [
+          "Setelah balig, ibadah menjadi tanggung jawab sendiri",
+          "Tanggung jawab ini disebut taklif",
+          "Persiapan dilakukan sejak sekarang"
+         ],
+         "miskonsepsi": [
+          "Sebelum balig ibadah dianggap tidak perlu dibiasakan"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "Anak belajar salat tepat waktu sendiri",
+          "Anak membuat jadwal ibadah pekanan"
+         ],
+         "tagAset": [
+          "sajadah",
+          "jam-dinding",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pai-4-bab4--kewajiban-setelah-usia-balig",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-4-bab5",
+       "bab": 5,
+       "nama": "Kisah Hijrah Nabi Muhammad saw. ke Madinah",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "fiksi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Sebab-sebab hijrah Nabi Muhammad saw.",
+         "tujuan": "Murid mampu menjelaskan sebab-sebab Nabi Muhammad saw. berhijrah ke Madinah sesuai buku.",
+         "konsep": [
+          "Hijrah berarti berpindah demi mempertahankan keyakinan",
+          "Ada sebab yang mendorong hijrah",
+          "Hijrah tujuannya Madinah"
+         ],
+         "miskonsepsi": [
+          "Hijrah dikira pindah karena takut"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "urutkan"
+         ],
+         "konteks": [
+          "Guru bercerita tentang kondisi Makkah saat itu",
+          "Anak menyusun kartu sebab dan akibat hijrah"
+         ],
+         "tagAset": [
+          "unta",
+          "gurun",
+          "buku-cerita"
+         ],
+         "perluDicek": true,
+         "id": "pai-4-bab5--sebab-sebab-hijrah-nabi",
+         "jenisTeks": "fiksi"
+        },
+        {
+         "nama": "Perjalanan dan hikmah hijrah",
+         "tujuan": "Murid mampu mengurutkan kisah perjalanan hijrah dan menyebutkan hikmahnya.",
+         "konsep": [
+          "Kisah hijrah punya urutan kejadian",
+          "Hijrah menunjukkan keteguhan dan kesabaran",
+          "Hikmah dapat diteladani"
+         ],
+         "miskonsepsi": [
+          "Hijrah dilakukan sendirian tanpa bantuan siapa pun"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "urutkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Kelompok membuat garis waktu perjalanan hijrah",
+          "Anak menceritakan hikmah hijrah kepada adik"
+         ],
+         "tagAset": [
+          "peta",
+          "unta",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pai-4-bab5--perjalanan-dan-hikmah-hijrah",
+         "jenisTeks": "fiksi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-4-bab6",
+       "bab": 6,
+       "nama": "Mari Mengaji dan Mengkaji Q.S. At-Tin dan Hadis tentang Silaturahmi",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "campuran",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Membaca, menulis, dan menghafal Q.S. At-Tin",
+         "tujuan": "Murid mampu membaca, menulis, dan menghafal Q.S. At-Tin dengan baik.",
+         "konsep": [
+          "At-Tin adalah surah pendek",
+          "Membaca dilakukan dengan tartil",
+          "Menghafal dilakukan bertahap"
+         ],
+         "miskonsepsi": [
+          "Cukup menghafal tanpa memahami pesannya"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "bacaan",
+          "urutkan"
+         ],
+         "konteks": [
+          "Kelas tadarus bersama",
+          "Anak berlatih hafalan sebelum pulang sekolah"
+         ],
+         "tagAset": [
+          "al-quran",
+          "anak-mengaji",
+          "kelas"
+         ],
+         "perluDicek": true,
+         "id": "pai-4-bab6--membaca-menulis-dan-menghafal",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Pesan pokok At-Tin dan hadis tentang silaturahmi",
+         "tujuan": "Murid mampu menjelaskan pesan pokok At-Tin dan memahami hadis tentang silaturahmi.",
+         "konsep": [
+          "Manusia diciptakan dalam bentuk yang sebaik-baiknya",
+          "Silaturahmi menyambung hubungan baik",
+          "Silaturahmi dapat dilakukan dengan banyak cara"
+         ],
+         "miskonsepsi": [
+          "Silaturahmi hanya berarti berkunjung secara langsung"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Keluarga mengunjungi nenek saat libur",
+          "Anak menelepon kakek yang tinggal jauh"
+         ],
+         "tagAset": [
+          "keluarga",
+          "nenek-kakek",
+          "telepon"
+         ],
+         "perluDicek": true,
+         "id": "pai-4-bab6--pesan-pokok-at-tin",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-4-bab7",
+       "bab": 7,
+       "nama": "Beriman Kepada Rasul-Rasul Allah",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Makna iman kepada rasul dan sifat-sifat rasul",
+         "tujuan": "Murid mampu menjelaskan makna iman kepada rasul dan menyebutkan sifat-sifat rasul sesuai buku.",
+         "konsep": [
+          "Iman kepada rasul adalah rukun iman",
+          "Rasul memiliki sifat wajib",
+          "Rasul adalah manusia pilihan Allah"
+         ],
+         "miskonsepsi": [
+          "Rasul dianggap bukan manusia"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir"
+         ],
+         "konteks": [
+          "Guru bercerita tentang kejujuran rasul",
+          "Anak memasangkan sifat dan contoh perilakunya"
+         ],
+         "tagAset": [
+          "buku-cerita",
+          "anak-sekolah",
+          "kartu-belajar"
+         ],
+         "perluDicek": true,
+         "id": "pai-4-bab7--makna-iman-kepada-rasul",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Tujuan diutusnya rasul",
+         "tujuan": "Murid mampu menjelaskan tujuan Allah mengutus rasul kepada manusia.",
+         "konsep": [
+          "Rasul menyampaikan petunjuk Allah",
+          "Rasul menjadi teladan akhlak",
+          "Manusia perlu mengikuti ajaran rasul"
+         ],
+         "miskonsepsi": [
+          "Rasul diutus hanya untuk kaumnya sendiri tanpa teladan bagi yang lain"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Anak meneladani kejujuran saat menemukan uang",
+          "Kelas berdiskusi tentang contoh teladan"
+         ],
+         "tagAset": [
+          "anak-jujur",
+          "anak-sekolah",
+          "kelas"
+         ],
+         "perluDicek": true,
+         "id": "pai-4-bab7--tujuan-diutusnya-rasul",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-4-bab8",
+       "bab": 8,
+       "nama": "Aku Anak Saleh",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "fiksi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Salam dan senang menolong orang lain",
+         "tujuan": "Murid mampu memilih sikap memberi salam dan menolong orang lain dalam cerita.",
+         "konsep": [
+          "Salam adalah doa keselamatan",
+          "Menolong orang lain adalah akhlak terpuji",
+          "Salam diucapkan dengan sopan"
+         ],
+         "miskonsepsi": [
+          "Salam hanya untuk orang yang dikenal baik"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak menyapa penjaga sekolah dengan salam",
+          "Anak membantu teman membawa buku"
+         ],
+         "tagAset": [
+          "anak-menolong",
+          "sekolah",
+          "anak-sekolah"
+         ],
+         "id": "pai-4-bab8--salam-dan-senang-menolong",
+         "jenisTeks": "fiksi"
+        },
+        {
+         "nama": "Ciri-ciri munafik",
+         "tujuan": "Murid mampu mengenali ciri-ciri munafik dan memilih sikap jujur.",
+         "konsep": [
+          "Munafik berarti berbeda antara ucapan dan hati",
+          "Salah satu ciri: berbohong dan ingkar janji",
+          "Anak saleh berusaha jujur"
+         ],
+         "miskonsepsi": [
+          "Salah ucap satu kali dikira sudah munafik"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "Anak berjanji menjaga rahasia lalu menepatinya",
+          "Anak mengaku salah saat memecahkan pot"
+         ],
+         "tagAset": [
+          "anak-jujur",
+          "anak-sekolah",
+          "kelas"
+         ],
+         "id": "pai-4-bab8--ciri-ciri-munafik",
+         "jenisTeks": "fiksi"
+        }
+       ]
+      },
+      {
+       "id": "pai-4-bab9",
+       "bab": 9,
+       "nama": "Mengenal Salat Jumat, Duha dan Tahajud",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Salat Jumat",
+         "tujuan": "Murid mampu menjelaskan ketentuan dan tata cara salat Jumat sesuai buku.",
+         "konsep": [
+          "Salat Jumat dikerjakan secara berjemaah",
+          "Salat Jumat diawali khotbah",
+          "Ketentuan wajib bagi laki-laki balig menurut buku"
+         ],
+         "miskonsepsi": [
+          "Salat Jumat dikira pengganti salat zuhur bagi semua orang tanpa syarat"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Anak mengamati ayah bersiap ke masjid hari Jumat",
+          "Kelas berlatih urutan salat Jumat"
+         ],
+         "tagAset": [
+          "masjid",
+          "keluarga",
+          "salat-berjemaah"
+         ],
+         "perluDicek": true,
+         "id": "pai-4-bab9--salat-jumat",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Salat duha dan salat tahajud",
+         "tujuan": "Murid mampu menjelaskan ketentuan dan tata cara salat duha dan tahajud sesuai buku.",
+         "konsep": [
+          "Salat duha dikerjakan pada waktu duha",
+          "Salat tahajud dikerjakan pada malam hari setelah tidur",
+          "Keduanya adalah salat sunah"
+         ],
+         "miskonsepsi": [
+          "Salat duha dan tahajud dikira kewajiban"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "sortir",
+          "urutkan"
+         ],
+         "konteks": [
+          "Anak bertanya waktu salat duha kepada guru",
+          "Keluarga bangun malam untuk salat tahajud"
+         ],
+         "tagAset": [
+          "sajadah",
+          "jam-dinding",
+          "keluarga"
+         ],
+         "perluDicek": true,
+         "id": "pai-4-bab9--salat-duha-dan-salat",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-4-bab10",
+       "bab": 10,
+       "nama": "Kisah Nabi Muhammad saw. Membangun Kota Madinah",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "fiksi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Membangun masjid dan menjalin ukhuwah",
+         "tujuan": "Murid mampu menceritakan Nabi Muhammad saw. membangun masjid dan mempersaudarakan umat di Madinah.",
+         "konsep": [
+          "Masjid menjadi pusat kegiatan umat",
+          "Ukhuwah berarti persaudaraan",
+          "Kaum pendatang dan penduduk Madinah dipersaudarakan"
+         ],
+         "miskonsepsi": [
+          "Masjid dikira hanya tempat salat"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "urutkan"
+         ],
+         "konteks": [
+          "Kerja bakti membangun masjid bersama",
+          "Dua teman berbeda asal saling membantu"
+         ],
+         "tagAset": [
+          "masjid",
+          "kerja-bakti",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pai-4-bab10--membangun-masjid-dan-menjalin",
+         "jenisTeks": "fiksi"
+        },
+        {
+         "nama": "Menggalang kerukunan",
+         "tujuan": "Murid mampu menjelaskan teladan Nabi Muhammad saw. dalam menjaga kerukunan di Madinah.",
+         "konsep": [
+          "Kerukunan dijaga bersama",
+          "Perbedaan dihargai",
+          "Nabi dan sahabat memberi teladan toleransi"
+         ],
+         "miskonsepsi": [
+          "Kerukunan hanya tugas pemimpin"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Warga kampung menyelesaikan perselisihan lewat musyawarah",
+          "Kelas membuat kesepakatan kelas"
+         ],
+         "tagAset": [
+          "musyawarah",
+          "kampung",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pai-4-bab10--menggalang-kerukunan",
+         "jenisTeks": "fiksi"
+        }
+       ],
+       "perluDicek": true
+      }
+     ]
+    },
+    "5": {
+     "fase": "C",
+     "buku": "Buku Panduan Guru Pendidikan Agama Islam dan Budi Pekerti untuk SD Kelas V",
+     "materi": [
+      {
+       "id": "pai-5-bab1",
+       "bab": 1,
+       "nama": "Menyayangi Anak Yatim",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "campuran",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Membaca, menulis, dan menghafal Surah al-Mā’ūn",
+         "tujuan": "Murid mampu membaca Surah al-Mā’ūn dengan fasih dan menyalinnya dengan benar.",
+         "konsep": [
+          "Al-Mā’ūn adalah surah pendek",
+          "Membaca perlu fasih",
+          "Menyalin dan menghafal dilakukan bertahap"
+         ],
+         "miskonsepsi": [
+          "Menghafal tanpa mengerti arti dianggap sudah cukup"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "bacaan",
+          "urutkan"
+         ],
+         "konteks": [
+          "Tadarus bersama di awal pelajaran",
+          "Anak berlatih menyalin ayat di buku tulis"
+         ],
+         "tagAset": [
+          "al-quran",
+          "anak-mengaji",
+          "kelas"
+         ],
+         "id": "pai-5-bab1--membaca-menulis-dan-menghafal",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Pesan pokok dan hadis tentang menyayangi anak yatim",
+         "tujuan": "Murid mampu menjelaskan pesan pokok Surah al-Mā’ūn dan hadis tentang menyayangi anak yatim serta menunjukkan simpati.",
+         "konsep": [
+          "Anak yatim perlu disayangi dan dibantu",
+          "Simpati ditunjukkan dengan perbuatan",
+          "Akhlak mulia terlihat dari kepedulian"
+         ],
+         "miskonsepsi": [
+          "Menyayangi anak yatim hanya dengan memberi uang"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Kelas mengumpulkan buku bekas untuk panti asuhan",
+          "Teman yang ayahnya telah tiada diajak bermain bersama"
+         ],
+         "tagAset": [
+          "anak-berbagi",
+          "buku",
+          "anak-sekolah"
+         ],
+         "id": "pai-5-bab1--pesan-pokok-dan-hadis",
+         "jenisTeks": "campuran"
+        }
+       ]
+      },
+      {
+       "id": "pai-5-bab2",
+       "bab": 2,
+       "nama": "Lebih Dekat Dengan Nama-Nama Allah",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Asmaulhusna dan maknanya",
+         "tujuan": "Murid mampu menyebutkan beberapa asmaulhusna beserta artinya sesuai buku.",
+         "konsep": [
+          "Asmaulhusna adalah nama-nama Allah yang baik",
+          "Setiap nama memiliki arti",
+          "Nama-nama itu dapat diteladani dalam sikap"
+         ],
+         "miskonsepsi": [
+          "Meneladani asmaulhusna dikira menyamai sifat Allah"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "Kelas membuat kartu asmaulhusna dan contoh sikap",
+          "Guru bercerita tentang sifat pemaaf"
+         ],
+         "tagAset": [
+          "kaligrafi",
+          "kartu-belajar",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pai-5-bab2--asmaulhusna-dan-maknanya",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-5-bab3",
+       "bab": 3,
+       "nama": "Aku Anak Saleh",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "fiksi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Sikap anak saleh dalam keseharian",
+         "tujuan": "Murid mampu memilih sikap anak saleh dalam situasi sehari-hari pada cerita.",
+         "konsep": [
+          "Anak saleh taat kepada Allah dan berbakti kepada orang tua",
+          "Akhlak baik terlihat dari perbuatan",
+          "Kebiasaan baik dilatih sejak kecil"
+         ],
+         "miskonsepsi": [
+          "Anak saleh dikira tidak pernah berbuat salah"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak membantu ibu tanpa disuruh",
+          "Anak meminta maaf setelah berbuat salah"
+         ],
+         "tagAset": [
+          "keluarga",
+          "anak-sekolah",
+          "rumah"
+         ],
+         "perluDicek": true,
+         "id": "pai-5-bab3--sikap-anak-saleh-dalam",
+         "jenisTeks": "fiksi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-5-bab4",
+       "bab": 4,
+       "nama": "Hidup Lapang Dengan Berbagi",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Berbagi kepada sesama",
+         "tujuan": "Murid mampu menjelaskan manfaat berbagi dan menunjukkan sikap berbagi sesuai buku.",
+         "konsep": [
+          "Berbagi membuat hidup terasa lapang",
+          "Berbagi dapat berupa harta, tenaga, dan perhatian",
+          "Berbagi dilakukan dengan ikhlas"
+         ],
+         "miskonsepsi": [
+          "Berbagi hanya bisa dilakukan oleh orang yang kaya"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "bacaan",
+          "sortir"
+         ],
+         "konteks": [
+          "Kelas mengadakan jumat berbagi",
+          "Anak berbagi alat tulis dengan teman"
+         ],
+         "tagAset": [
+          "anak-berbagi",
+          "anak-sekolah",
+          "alat-tulis"
+         ],
+         "perluDicek": true,
+         "id": "pai-5-bab4--berbagi-kepada-sesama",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-5-bab5",
+       "bab": 5,
+       "nama": "Meneladani Perjuangan Rasulullah",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "fiksi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Perjuangan Rasulullah dan sikap sabar",
+         "tujuan": "Murid mampu menceritakan perjuangan Rasulullah sesuai buku dan menyebutkan sikap yang dapat diteladani.",
+         "konsep": [
+          "Rasulullah berjuang menyampaikan ajaran Islam",
+          "Perjuangan dilakukan dengan sabar dan santun",
+          "Sikap Rasulullah menjadi teladan"
+         ],
+         "miskonsepsi": [
+          "Perjuangan dikira selalu dengan kekerasan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cerita",
+          "urutkan"
+         ],
+         "konteks": [
+          "Guru menceritakan kisah dakwah Rasulullah",
+          "Anak meneladani sabar saat diejek teman"
+         ],
+         "tagAset": [
+          "buku-cerita",
+          "gurun",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pai-5-bab5--perjuangan-rasulullah-dan-sikap",
+         "jenisTeks": "fiksi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-5-bab6",
+       "bab": 6,
+       "nama": "Hidup Damai dalam Kebersamaan",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "campuran",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Hidup rukun dan damai",
+         "tujuan": "Murid mampu menjelaskan pentingnya hidup damai dan memilih sikap yang menjaga kerukunan.",
+         "konsep": [
+          "Hidup damai dimulai dari sikap saling menghargai",
+          "Perbedaan pendapat diselesaikan dengan baik",
+          "Kerukunan dijaga bersama"
+         ],
+         "miskonsepsi": [
+          "Damai berarti tidak boleh berbeda pendapat"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Kerja bakti kampung yang melibatkan semua warga",
+          "Dua kelompok berselisih lalu bermusyawarah"
+         ],
+         "tagAset": [
+          "kerja-bakti",
+          "kampung",
+          "musyawarah"
+         ],
+         "perluDicek": true,
+         "id": "pai-5-bab6--hidup-rukun-dan-damai",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-5-bab7",
+       "bab": 7,
+       "nama": "Ketika Berhentinya Kehidupan",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Kematian dan kehidupan setelahnya menurut Islam",
+         "tujuan": "Murid mampu menjelaskan secara sederhana bahwa setiap makhluk hidup akan mengalami kematian dan memahami pelajaran darinya sesuai buku.",
+         "konsep": [
+          "Setiap yang hidup akan mengalami kematian",
+          "Waktu kematian adalah ketentuan Allah",
+          "Persiapan terbaik adalah berbuat baik"
+         ],
+         "miskonsepsi": [
+          "Waktu kematian dikira bisa diperkirakan manusia"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "sortir"
+         ],
+         "konteks": [
+          "Tanaman yang layu dan mati dijadikan perumpamaan",
+          "Guru menjelaskan dengan bahasa tenang dan lembut"
+         ],
+         "tagAset": [
+          "tanaman",
+          "anak-sekolah",
+          "taman"
+         ],
+         "perluDicek": true,
+         "id": "pai-5-bab7--kematian-dan-kehidupan-setelahnya",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-5-bab8",
+       "bab": 8,
+       "nama": "Senangnya Berteman",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "fiksi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Berteman dan hikmah berteman tanpa membedakan agama",
+         "tujuan": "Murid mampu menunjukkan sikap berteman dengan baik dan menjelaskan hikmah berteman tanpa membedakan agama.",
+         "konsep": [
+          "Teman baik saling menolong dalam kebaikan",
+          "Berteman tidak membedakan agama, suku, atau asal",
+          "Saling menghormati keyakinan masing-masing"
+         ],
+         "miskonsepsi": [
+          "Berteman dengan yang berbeda agama dianggap melanggar ajaran"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Murid baru berbeda agama diajak bermain saat istirahat",
+          "Tugas kelompok yang dikerjakan bersama teman beragam"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "teman-sekelas",
+          "lapangan"
+         ],
+         "id": "pai-5-bab8--berteman-dan-hikmah-berteman",
+         "jenisTeks": "fiksi"
+        }
+       ]
+      },
+      {
+       "id": "pai-5-bab9",
+       "bab": 9,
+       "nama": "Ibadah Haji dan Kurban",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Ibadah haji dan ibadah kurban",
+         "tujuan": "Murid mampu menjelaskan pengertian ibadah haji dan kurban secara sederhana sesuai buku.",
+         "konsep": [
+          "Haji adalah rukun Islam yang kelima",
+          "Haji dilakukan di Tanah Suci bagi yang mampu",
+          "Kurban adalah ibadah menyembelih hewan pada waktu yang ditentukan"
+         ],
+         "miskonsepsi": [
+          "Haji wajib dilakukan setiap tahun oleh semua muslim"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Tetangga berangkat haji dan diantar warga",
+          "Warga kampung berkurban dan membagikan daging"
+         ],
+         "tagAset": [
+          "kakbah",
+          "kampung",
+          "keluarga"
+         ],
+         "perluDicek": true,
+         "id": "pai-5-bab9--ibadah-haji-dan-ibadah",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-5-bab10",
+       "bab": 10,
+       "nama": "Perjuangan Khulafaurrasyidin",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "fiksi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Perjuangan Khulafaurrasyidin",
+         "tujuan": "Murid mampu menyebutkan nama Khulafaurrasyidin dan menceritakan perjuangan serta sikap teladannya sesuai buku.",
+         "konsep": [
+          "Khulafaurrasyidin adalah para khalifah pengganti Rasulullah",
+          "Mereka memimpin dengan adil dan amanah",
+          "Sikap mereka menjadi teladan"
+         ],
+         "miskonsepsi": [
+          "Khulafaurrasyidin dikira para nabi"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Guru bercerita tentang kejujuran seorang khalifah",
+          "Anak memilih pemimpin kelas dengan adil"
+         ],
+         "tagAset": [
+          "buku-cerita",
+          "masjid",
+          "kelas"
+         ],
+         "perluDicek": true,
+         "id": "pai-5-bab10--perjuangan-khulafaurrasyidin",
+         "jenisTeks": "fiksi"
+        }
+       ],
+       "perluDicek": true
+      }
+     ]
+    },
+    "6": {
+     "fase": "C",
+     "buku": "Buku Panduan Guru Pendidikan Agama Islam dan Budi Pekerti untuk SD/MI Kelas VI",
+     "materi": [
+      {
+       "id": "pai-6-bab1",
+       "bab": 1,
+       "nama": "Belajar al-Qur’an dan Ḥadiṡ",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "campuran",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Membaca dan menghafal Q.S. Aḍ-Ḍuḥā",
+         "tujuan": "Murid mampu membaca Q.S. Aḍ-Ḍuḥā dengan tartil dan menerapkan hukum bacaan tafkhim dan tarqiq.",
+         "konsep": [
+          "Q.S. Aḍ-Ḍuḥā dibaca dengan tartil",
+          "Tafkhim berarti membaca tebal",
+          "Tarqiq berarti membaca tipis"
+         ],
+         "miskonsepsi": [
+          "Tafkhim dan tarqiq dikira sama"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Kelas tadarus bersama sebelum pelajaran",
+          "Anak berlatih membaca dengan tajwid bersama teman"
+         ],
+         "tagAset": [
+          "al-quran",
+          "anak-mengaji",
+          "kelas"
+         ],
+         "perluDicek": true,
+         "id": "pai-6-bab1--membaca-dan-menghafal-q",
+         "jenisTeks": "campuran"
+        },
+        {
+         "nama": "Hadis tentang keutamaan memberi",
+         "tujuan": "Murid mampu menjelaskan pesan pokok Aḍ-Ḍuḥā dan hadis tentang keutamaan memberi serta menumbuhkan solidaritas.",
+         "konsep": [
+          "Memberi memiliki keutamaan",
+          "Solidaritas berarti saling membantu",
+          "Pesan pokok dapat diterapkan dalam keseharian"
+         ],
+         "miskonsepsi": [
+          "Memberi harus selalu berupa uang"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Kelas mengumpulkan bantuan untuk teman yang sakit",
+          "Anak berbagi buku dengan teman yang kurang mampu"
+         ],
+         "tagAset": [
+          "anak-berbagi",
+          "buku",
+          "anak-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pai-6-bab1--hadis-tentang-keutamaan-memberi",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-6-bab2",
+       "bab": 2,
+       "nama": "Allah Swt Maha Segalanya",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Keniscayaan hari akhir, qada, dan kadar",
+         "tujuan": "Murid mampu menjelaskan secara sederhana keniscayaan hari akhir, qada, dan kadar sesuai buku.",
+         "konsep": [
+          "Hari akhir pasti terjadi",
+          "Qada dan kadar adalah ketentuan Allah",
+          "Manusia tetap wajib berikhtiar"
+         ],
+         "miskonsepsi": [
+          "Qada dan kadar dikira alasan untuk tidak berusaha"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "bacaan",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak berusaha belajar lalu menerima hasil ujian dengan lapang",
+          "Petani berusaha lalu bertawakal"
+         ],
+         "tagAset": [
+          "anak-belajar",
+          "sawah",
+          "kelas"
+         ],
+         "perluDicek": true,
+         "id": "pai-6-bab2--keniscayaan-hari-akhir-qada",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-6-bab3",
+       "bab": 3,
+       "nama": "Hidup Damai dengan Saling Memaafkan",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "fiksi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "nama": "Memaafkan dan hidup damai",
+         "tujuan": "Murid mampu menjelaskan pentingnya saling memaafkan dan memilih sikap yang menjaga kerukunan.",
+         "konsep": [
+          "Memaafkan membuat hati lapang",
+          "Meminta maaf dilakukan dengan tulus",
+          "Perbedaan pendapat adalah hal wajar"
+         ],
+         "miskonsepsi": [
+          "Memaafkan berarti membenarkan kesalahan"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Dua teman berselisih soal giliran piket lalu berdamai",
+          "Anak meminta maaf kepada adik setelah berebut mainan"
+         ],
+         "tagAset": [
+          "anak-minta-maaf",
+          "anak-sekolah",
+          "kelas"
+         ],
+         "perluDicek": true,
+         "id": "pai-6-bab3--memaafkan-dan-hidup-damai",
+         "jenisTeks": "fiksi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-6-bab4",
+       "bab": 4,
+       "nama": "Hukum Halal dan Haram",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Halal dan haram dalam makanan dan perilaku",
+         "tujuan": "Murid mampu membedakan halal dan haram secara sederhana sesuai buku.",
+         "konsep": [
+          "Halal berarti diperbolehkan dalam Islam",
+          "Haram berarti dilarang dalam Islam",
+          "Halal juga harus baik dan bersih"
+         ],
+         "miskonsepsi": [
+          "Semua makanan yang enak dikira halal"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Anak membaca label kemasan di warung",
+          "Keluarga memilih makanan saat belanja"
+         ],
+         "tagAset": [
+          "makanan",
+          "warung",
+          "keluarga"
+         ],
+         "perluDicek": true,
+         "id": "pai-6-bab4--halal-dan-haram-dalam",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-6-bab5",
+       "bab": 5,
+       "nama": "Jasa Khulafaurrasyidin untuk Dunia",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "fiksi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Kisah dan jasa Khulafaurrasyidin",
+         "tujuan": "Murid mampu menceritakan jasa Khulafaurrasyidin dan menghayati pelajaran (ibrah) dari kisahnya.",
+         "konsep": [
+          "Khulafaurrasyidin adalah para khalifah pengganti Nabi",
+          "Jasa mereka dapat diteladani",
+          "Ibrah adalah pelajaran yang bisa diambil"
+         ],
+         "miskonsepsi": [
+          "Khulafaurrasyidin dikira para nabi"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "urutkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Guru bercerita tentang kepemimpinan yang adil",
+          "Kelas membuat garis waktu para khalifah"
+         ],
+         "tagAset": [
+          "buku-cerita",
+          "masjid",
+          "peta"
+         ],
+         "perluDicek": true,
+         "id": "pai-6-bab5--kisah-dan-jasa-khulafaurrasyidin",
+         "jenisTeks": "fiksi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-6-bab6",
+       "bab": 6,
+       "nama": "Mengaji Al-Qur’an Surah Al-A’la",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "nama": "Membaca dan menghafal Surah Al-A’la",
+         "tujuan": "Murid mampu membaca dan menghafal Surah Al-A’la dengan tartil.",
+         "konsep": [
+          "Al-A’la adalah surah pendek",
+          "Membaca perlu tartil",
+          "Menghafal dilakukan bertahap"
+         ],
+         "miskonsepsi": [
+          "Cukup menghafal tanpa tajwid"
+         ],
+         "kompetensi": [
+          "tersurat"
+         ],
+         "mesin": [
+          "bacaan",
+          "urutkan"
+         ],
+         "konteks": [
+          "Tadarus bersama di kelas",
+          "Anak berlatih hafalan bersama teman"
+         ],
+         "tagAset": [
+          "al-quran",
+          "anak-mengaji",
+          "kelas"
+         ],
+         "perluDicek": true,
+         "id": "pai-6-bab6--membaca-dan-menghafal-surah",
+         "jenisTeks": "informasi"
+        },
+        {
+         "nama": "Pesan pokok Surah Al-A’la",
+         "tujuan": "Murid mampu menjelaskan pesan pokok Surah Al-A’la dan menerapkannya.",
+         "konsep": [
+          "Allah Maha Tinggi",
+          "Pesan pokok mengajak bertasbih dan berbuat baik",
+          "Pesan diterapkan dalam kehidupan"
+         ],
+         "miskonsepsi": [
+          "Pesan surah hanya untuk dibaca, bukan untuk diamalkan"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak membiasakan bertasbih setelah salat",
+          "Anak mengagumi langit malam bersama keluarga"
+         ],
+         "tagAset": [
+          "langit-malam",
+          "keluarga",
+          "anak-berdoa"
+         ],
+         "perluDicek": true,
+         "id": "pai-6-bab6--pesan-pokok-surah-al",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-6-bab7",
+       "bab": 7,
+       "nama": "Indahnya Ketetapan Allah",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "campuran",
+       "tema": "samudra",
+       "sub": [
+        {
+         "nama": "Ketetapan Allah dan sikap menerimanya",
+         "tujuan": "Murid mampu menjelaskan bahwa setiap ketetapan Allah mengandung hikmah dan menunjukkan sikap menerimanya.",
+         "konsep": [
+          "Ketetapan Allah mengandung hikmah",
+          "Manusia tetap berikhtiar dan berdoa",
+          "Menerima hasil dengan sabar dan syukur"
+         ],
+         "miskonsepsi": [
+          "Menerima ketetapan berarti berhenti berusaha"
+         ],
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "Anak tidak lolos seleksi lomba tetapi tetap berlatih",
+          "Panen yang gagal lalu petani menanam kembali"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "sawah",
+          "lomba-sekolah"
+         ],
+         "perluDicek": true,
+         "id": "pai-6-bab7--ketetapan-allah-dan-sikap",
+         "jenisTeks": "campuran"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-6-bab8",
+       "bab": 8,
+       "nama": "Peduli Lingkungan",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Manusia sebagai khalifah dan menjaga lingkungan",
+         "tujuan": "Murid mampu menjelaskan peran manusia sebagai khalifah Allah di bumi dan menunjukkan sikap peduli lingkungan.",
+         "konsep": [
+          "Manusia adalah khalifah di bumi",
+          "Menjaga lingkungan adalah tanggung jawab",
+          "Tidak membuat kerusakan di muka bumi"
+         ],
+         "miskonsepsi": [
+          "Menjaga lingkungan hanya tugas petugas kebersihan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial",
+          "evaluasi"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "Kelas memilah sampah dan menanam pohon",
+          "Warga kampung bergotong royong membersihkan selokan"
+         ],
+         "tagAset": [
+          "tempat-sampah",
+          "pohon",
+          "kampung"
+         ],
+         "perluDicek": true,
+         "id": "pai-6-bab8--manusia-sebagai-khalifah-dan",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-6-bab9",
+       "bab": 9,
+       "nama": "Mengamalkan Puasa Sunah",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "informasi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "nama": "Macam-macam puasa sunah",
+         "tujuan": "Murid mampu menyebutkan berbagai macam puasa sunah sesuai buku.",
+         "konsep": [
+          "Puasa sunah adalah puasa tambahan di luar puasa wajib",
+          "Ada beberapa macam puasa sunah",
+          "Puasa sunah dikerjakan sesuai waktunya"
+         ],
+         "miskonsepsi": [
+          "Puasa sunah dikira wajib seperti puasa Ramadan"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir"
+         ],
+         "konteks": [
+          "Keluarga berpuasa pada hari tertentu",
+          "Anak bertanya kepada guru tentang puasa sunah"
+         ],
+         "tagAset": [
+          "keluarga",
+          "sahur",
+          "kalender"
+         ],
+         "perluDicek": true,
+         "id": "pai-6-bab9--macam-macam-puasa-sunah",
+         "jenisTeks": "informasi"
+        }
+       ],
+       "perluDicek": true
+      },
+      {
+       "id": "pai-6-bab10",
+       "bab": 10,
+       "nama": "Meneladani Jasa Khalifah Uṣmān bin Affān dan Ali Bin Abī Ṭālib",
+       "domain": "Literasi Pendidikan Agama Islam dan Budi Pekerti",
+       "jenisTeksBab": "fiksi",
+       "tema": "emas",
+       "sub": [
+        {
+         "nama": "Jasa Uṣmān bin Affān",
+         "tujuan": "Murid mampu menceritakan jasa Khalifah Uṣmān bin Affān dan meneladani sikapnya sesuai buku.",
+         "konsep": [
+          "Uṣmān bin Affān adalah salah satu Khulafaurrasyidin",
+          "Beliau dikenal dermawan",
+          "Jasanya dapat diteladani"
+         ],
+         "miskonsepsi": [
+          "Dermawan dikira hanya dengan banyak harta"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cerita",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Anak meneladani sikap dermawan dengan berbagi",
+          "Kelas membuat kartu teladan khalifah"
+         ],
+         "tagAset": [
+          "buku-cerita",
+          "anak-berbagi",
+          "masjid"
+         ],
+         "perluDicek": true,
+         "id": "pai-6-bab10--jasa-u-m-n",
+         "jenisTeks": "fiksi"
+        },
+        {
+         "nama": "Jasa Ali bin Abī Ṭālib",
+         "tujuan": "Murid mampu menceritakan jasa Khalifah Ali bin Abī Ṭālib dan meneladani sikapnya sesuai buku.",
+         "konsep": [
+          "Ali bin Abī Ṭālib adalah salah satu Khulafaurrasyidin",
+          "Beliau dikenal berani dan berilmu",
+          "Jasanya dapat diteladani"
+         ],
+         "miskonsepsi": [
+          "Berani dikira harus selalu berkelahi"
+         ],
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ],
+         "mesin": [
+          "cerita",
+          "cocokkan"
+         ],
+         "konteks": [
+          "Anak berani jujur mengakui kesalahan",
+          "Kelas membuat peta urutan para khalifah"
+         ],
+         "tagAset": [
+          "buku-cerita",
+          "anak-jujur",
+          "kelas"
+         ],
+         "perluDicek": true,
+         "id": "pai-6-bab10--jasa-ali-bin-ab",
+         "jenisTeks": "fiksi"
+        }
+       ],
+       "perluDicek": true
+      }
+     ]
+    }
+   }
+  },
   "pjok": {
    "nama": "Pendidikan Jasmani, Olahraga, dan Kesehatan",
    "aturan": [

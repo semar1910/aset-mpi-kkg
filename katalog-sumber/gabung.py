@@ -8,6 +8,11 @@ FASE = {'1':'A','2':'A','3':'B','4':'B','5':'C','6':'C'}
 MAPEL = {
  'pancasila': {'nama': 'Pendidikan Pancasila', 'kode': 'pan',
    'aturan': ['Tokoh sejarah nyata (misalnya perumus Pancasila) boleh disebut, tetapi fakta tentangnya HANYA yang umum diajarkan di buku kelas ini; jangan mengarang ucapan atau peristiwa. Maskot pemandu tetap tokoh rekaan.']},
+ 'pai': {'nama': 'Pendidikan Agama Islam dan Budi Pekerti', 'kode': 'pai',
+   'aturan': ['JANGAN menulis teks Arab ayat Al-Qur\'an, hadis, atau doa. Cukup sebut nama surat/ayat atau terjemahan singkat yang umum; bacaan Arabnya diperagakan guru di kelas.',
+              'Tata cara ibadah (wudu, salat, puasa, jumlah rakaat) dan kisah nabi harus sesuai buku kelas ini. Jangan menambah perincian fikih yang diperselisihkan.',
+              'Nabi, rasul, sahabat, dan malaikat tidak digambarkan wajahnya dan tidak dijadikan tokoh yang berbicara; kisah mereka disampaikan lewat narator. Maskot pemandu tetap anak rekaan.',
+              'Topik yang peka (usia balig, kematian) disampaikan singkat, sopan, dan menenangkan.']},
  'pjok': {'nama': 'Pendidikan Jasmani, Olahraga, dan Kesehatan', 'kode': 'pjk',
    'aturan': ['Ini MPI literasi tentang gerak dan kesehatan: murid membaca, memilah, mengurutkan, dan memilih sikap, bukan memperagakan gerakan di layar.',
               'Informasi kesehatan dan pertolongan pertama harus aman dan sesuai buku; bila ragu, anjurkan meminta bantuan orang dewasa atau guru.']},

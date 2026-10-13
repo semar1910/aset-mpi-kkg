@@ -1,0 +1,679 @@
+{
+ "mapel": "Pendidikan Agama Islam dan Budi Pekerti",
+ "kelas": 4,
+ "buku": "Buku Panduan Guru Pendidikan Agama Islam dan Budi Pekerti Untuk SD Kelas IV",
+ "materi": [
+  {
+   "bab": 1,
+   "nama": "Mari Kita Mengaji dan Mengkaji Q.S. Al-Ḥujurāt/49:13 dan Hadis tentang Keragaman",
+   "jenisTeks": "informasi",
+   "tema": "antariksa",
+   "sub": [
+    {
+     "nama": "Membaca, menulis, dan menghafal Q.S. Al-Ḥujurāt/49:13",
+     "tujuan": "Murid mampu membaca, menulis, dan menghafal Q.S. Al-Ḥujurāt/49:13 dengan baik.",
+     "konsep": [
+      "Ayat ini bagian dari surah Al-Ḥujurāt",
+      "Membaca perlu tartil",
+      "Menulis dan menghafal dilakukan bertahap"
+     ],
+     "miskonsepsi": [
+      "Menghafal tanpa memahami arti dianggap sudah cukup"
+     ],
+     "kompetensi": [
+      "tersurat"
+     ],
+     "mesin": [
+      "bacaan",
+      "urutkan"
+     ],
+     "konteks": [
+      "Kelas tadarus bersama sebelum pelajaran",
+      "Anak berlatih hafalan bersama teman sebangku"
+     ],
+     "tagAset": [
+      "al-quran",
+      "anak-mengaji",
+      "kelas"
+     ]
+    },
+    {
+     "nama": "Pesan pokok ayat dan hadis tentang keragaman",
+     "tujuan": "Murid mampu menjelaskan pesan pokok ayat dan hadis bahwa manusia berbeda-beda agar saling mengenal.",
+     "konsep": [
+      "Manusia diciptakan berbeda suku dan bangsa",
+      "Tujuannya agar saling mengenal",
+      "Yang mulia di sisi Allah adalah yang paling bertakwa"
+     ],
+     "miskonsepsi": [
+      "Perbedaan suku dikira membuat satu kelompok lebih mulia"
+     ],
+     "kompetensi": [
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Murid pindahan berbeda daerah diterima teman sekelas",
+      "Lomba kebersamaan antarkelompok yang berbeda budaya"
+     ],
+     "tagAset": [
+      "anak-sekolah",
+      "bendera",
+      "teman-sekelas"
+     ]
+    }
+   ]
+  },
+  {
+   "bab": 2,
+   "nama": "Teladan Mulia Asmaulhusna",
+   "jenisTeks": "informasi",
+   "tema": "antariksa",
+   "sub": [
+    {
+     "nama": "Asmaulhusna dan artinya",
+     "tujuan": "Murid mampu menyebutkan beberapa asmaulhusna beserta artinya sesuai buku.",
+     "konsep": [
+      "Asmaulhusna adalah nama-nama Allah yang baik",
+      "Setiap nama memiliki arti",
+      "Nama-nama itu memberi teladan sikap"
+     ],
+     "miskonsepsi": [
+      "Asmaulhusna dikira nama orang"
+     ],
+     "kompetensi": [
+      "tersurat"
+     ],
+     "mesin": [
+      "cocokkan",
+      "runner"
+     ],
+     "konteks": [
+      "Kelas membuat kartu asmaulhusna",
+      "Guru bercerita dengan contoh dari kehidupan"
+     ],
+     "tagAset": [
+      "kaligrafi",
+      "kartu-belajar",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Berakhlak dengan asmaulhusna",
+     "tujuan": "Murid mampu memilih sikap yang sesuai dengan makna asmaulhusna dalam kehidupan sehari-hari.",
+     "konsep": [
+      "Makna asmaulhusna dapat ditiru dalam sikap",
+      "Meneladani bukan berarti menyamai Allah",
+      "Sikap baik dilatih dari perbuatan kecil"
+     ],
+     "miskonsepsi": [
+      "Meneladani asmaulhusna dikira menyamai sifat Allah"
+     ],
+     "kompetensi": [
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Anak memaafkan teman yang tidak sengaja menumpahkan minum",
+      "Anak berbagi bekal dengan teman"
+     ],
+     "tagAset": [
+      "anak-berbagi",
+      "anak-sekolah",
+      "bekal"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 3,
+   "nama": "Indahnya Saling Menghargai dalam Keragaman",
+   "jenisTeks": "campuran",
+   "tema": "emas",
+   "sub": [
+    {
+     "nama": "Keragaman sebagai sunnatullah",
+     "tujuan": "Murid mampu menjelaskan bahwa keragaman adalah ketentuan Allah (sunnatullah).",
+     "konsep": [
+      "Keragaman suku, bahasa, dan budaya adalah sunnatullah",
+      "Keragaman perlu disyukuri",
+      "Perbedaan tidak untuk dipertentangkan"
+     ],
+     "miskonsepsi": [
+      "Perbedaan dikira penyebab pertengkaran"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "bacaan",
+      "sortir"
+     ],
+     "konteks": [
+      "Hari kebudayaan di sekolah dengan pakaian daerah",
+      "Teman berbeda bahasa daerah saling belajar kosakata"
+     ],
+     "tagAset": [
+      "pakaian-daerah",
+      "anak-sekolah",
+      "peta-indonesia"
+     ]
+    },
+    {
+     "nama": "Saling menghormati orang yang berbeda agama",
+     "tujuan": "Murid mampu memilih sikap menghormati dan menghargai orang yang berbeda agama.",
+     "konsep": [
+      "Ajaran kebaikan ada dalam banyak agama",
+      "Menghormati orang berbeda agama adalah akhlak yang baik",
+      "Tidak memaksakan keyakinan kepada orang lain"
+     ],
+     "miskonsepsi": [
+      "Menghormati dianggap sama dengan mengikuti ibadah agama lain"
+     ],
+     "kompetensi": [
+      "evaluasi",
+      "inferensial"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Tetangga berbeda agama saling mengucapkan selamat dan membantu",
+      "Teman sekelas berbeda agama bekerja sama dalam tugas"
+     ],
+     "tagAset": [
+      "tetangga",
+      "anak-sekolah",
+      "kerja-bakti"
+     ]
+    }
+   ]
+  },
+  {
+   "bab": 4,
+   "nama": "Menyambut Usia Balig",
+   "jenisTeks": "informasi",
+   "tema": "hutan",
+   "sub": [
+    {
+     "nama": "Tanda-tanda balig menurut fikih dan biologi",
+     "tujuan": "Murid mampu menyebutkan tanda-tanda usia balig menurut ilmu fikih dan pandangan biologi sesuai buku.",
+     "konsep": [
+      "Balig berarti sampai pada usia dewasa menurut Islam",
+      "Tanda balig dibahas dalam fikih dan biologi",
+      "Perubahan tubuh adalah proses alami"
+     ],
+     "miskonsepsi": [
+      "Usia balig dianggap sama untuk semua anak"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "bacaan",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Guru menjelaskan perubahan tubuh dengan bahasa yang sopan",
+      "Anak bertanya kepada orang tua dengan bahasa santun"
+     ],
+     "tagAset": [
+      "anak-sekolah",
+      "keluarga",
+      "buku-pelajaran"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Kewajiban setelah usia balig",
+     "tujuan": "Murid mampu menyebutkan kewajiban yang mulai dibebankan setelah usia balig sesuai buku.",
+     "konsep": [
+      "Setelah balig, ibadah menjadi tanggung jawab sendiri",
+      "Tanggung jawab ini disebut taklif",
+      "Persiapan dilakukan sejak sekarang"
+     ],
+     "miskonsepsi": [
+      "Sebelum balig ibadah dianggap tidak perlu dibiasakan"
+     ],
+     "kompetensi": [
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "sortir",
+      "cerita"
+     ],
+     "konteks": [
+      "Anak belajar salat tepat waktu sendiri",
+      "Anak membuat jadwal ibadah pekanan"
+     ],
+     "tagAset": [
+      "sajadah",
+      "jam-dinding",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 5,
+   "nama": "Kisah Hijrah Nabi Muhammad saw. ke Madinah",
+   "jenisTeks": "fiksi",
+   "tema": "emas",
+   "sub": [
+    {
+     "nama": "Sebab-sebab hijrah Nabi Muhammad saw.",
+     "tujuan": "Murid mampu menjelaskan sebab-sebab Nabi Muhammad saw. berhijrah ke Madinah sesuai buku.",
+     "konsep": [
+      "Hijrah berarti berpindah demi mempertahankan keyakinan",
+      "Ada sebab yang mendorong hijrah",
+      "Hijrah tujuannya Madinah"
+     ],
+     "miskonsepsi": [
+      "Hijrah dikira pindah karena takut"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "bacaan",
+      "urutkan"
+     ],
+     "konteks": [
+      "Guru bercerita tentang kondisi Makkah saat itu",
+      "Anak menyusun kartu sebab dan akibat hijrah"
+     ],
+     "tagAset": [
+      "unta",
+      "gurun",
+      "buku-cerita"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Perjalanan dan hikmah hijrah",
+     "tujuan": "Murid mampu mengurutkan kisah perjalanan hijrah dan menyebutkan hikmahnya.",
+     "konsep": [
+      "Kisah hijrah punya urutan kejadian",
+      "Hijrah menunjukkan keteguhan dan kesabaran",
+      "Hikmah dapat diteladani"
+     ],
+     "miskonsepsi": [
+      "Hijrah dilakukan sendirian tanpa bantuan siapa pun"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "urutkan",
+      "cerita"
+     ],
+     "konteks": [
+      "Kelompok membuat garis waktu perjalanan hijrah",
+      "Anak menceritakan hikmah hijrah kepada adik"
+     ],
+     "tagAset": [
+      "peta",
+      "unta",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 6,
+   "nama": "Mari Mengaji dan Mengkaji Q.S. At-Tin dan Hadis tentang Silaturahmi",
+   "jenisTeks": "campuran",
+   "tema": "antariksa",
+   "sub": [
+    {
+     "nama": "Membaca, menulis, dan menghafal Q.S. At-Tin",
+     "tujuan": "Murid mampu membaca, menulis, dan menghafal Q.S. At-Tin dengan baik.",
+     "konsep": [
+      "At-Tin adalah surah pendek",
+      "Membaca dilakukan dengan tartil",
+      "Menghafal dilakukan bertahap"
+     ],
+     "miskonsepsi": [
+      "Cukup menghafal tanpa memahami pesannya"
+     ],
+     "kompetensi": [
+      "tersurat"
+     ],
+     "mesin": [
+      "bacaan",
+      "urutkan"
+     ],
+     "konteks": [
+      "Kelas tadarus bersama",
+      "Anak berlatih hafalan sebelum pulang sekolah"
+     ],
+     "tagAset": [
+      "al-quran",
+      "anak-mengaji",
+      "kelas"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Pesan pokok At-Tin dan hadis tentang silaturahmi",
+     "tujuan": "Murid mampu menjelaskan pesan pokok At-Tin dan memahami hadis tentang silaturahmi.",
+     "konsep": [
+      "Manusia diciptakan dalam bentuk yang sebaik-baiknya",
+      "Silaturahmi menyambung hubungan baik",
+      "Silaturahmi dapat dilakukan dengan banyak cara"
+     ],
+     "miskonsepsi": [
+      "Silaturahmi hanya berarti berkunjung secara langsung"
+     ],
+     "kompetensi": [
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Keluarga mengunjungi nenek saat libur",
+      "Anak menelepon kakek yang tinggal jauh"
+     ],
+     "tagAset": [
+      "keluarga",
+      "nenek-kakek",
+      "telepon"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 7,
+   "nama": "Beriman Kepada Rasul-Rasul Allah",
+   "jenisTeks": "informasi",
+   "tema": "antariksa",
+   "sub": [
+    {
+     "nama": "Makna iman kepada rasul dan sifat-sifat rasul",
+     "tujuan": "Murid mampu menjelaskan makna iman kepada rasul dan menyebutkan sifat-sifat rasul sesuai buku.",
+     "konsep": [
+      "Iman kepada rasul adalah rukun iman",
+      "Rasul memiliki sifat wajib",
+      "Rasul adalah manusia pilihan Allah"
+     ],
+     "miskonsepsi": [
+      "Rasul dianggap bukan manusia"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "cocokkan",
+      "sortir"
+     ],
+     "konteks": [
+      "Guru bercerita tentang kejujuran rasul",
+      "Anak memasangkan sifat dan contoh perilakunya"
+     ],
+     "tagAset": [
+      "buku-cerita",
+      "anak-sekolah",
+      "kartu-belajar"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Tujuan diutusnya rasul",
+     "tujuan": "Murid mampu menjelaskan tujuan Allah mengutus rasul kepada manusia.",
+     "konsep": [
+      "Rasul menyampaikan petunjuk Allah",
+      "Rasul menjadi teladan akhlak",
+      "Manusia perlu mengikuti ajaran rasul"
+     ],
+     "miskonsepsi": [
+      "Rasul diutus hanya untuk kaumnya sendiri tanpa teladan bagi yang lain"
+     ],
+     "kompetensi": [
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Anak meneladani kejujuran saat menemukan uang",
+      "Kelas berdiskusi tentang contoh teladan"
+     ],
+     "tagAset": [
+      "anak-jujur",
+      "anak-sekolah",
+      "kelas"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 8,
+   "nama": "Aku Anak Saleh",
+   "jenisTeks": "fiksi",
+   "tema": "jingga",
+   "sub": [
+    {
+     "nama": "Salam dan senang menolong orang lain",
+     "tujuan": "Murid mampu memilih sikap memberi salam dan menolong orang lain dalam cerita.",
+     "konsep": [
+      "Salam adalah doa keselamatan",
+      "Menolong orang lain adalah akhlak terpuji",
+      "Salam diucapkan dengan sopan"
+     ],
+     "miskonsepsi": [
+      "Salam hanya untuk orang yang dikenal baik"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Anak menyapa penjaga sekolah dengan salam",
+      "Anak membantu teman membawa buku"
+     ],
+     "tagAset": [
+      "anak-menolong",
+      "sekolah",
+      "anak-sekolah"
+     ]
+    },
+    {
+     "nama": "Ciri-ciri munafik",
+     "tujuan": "Murid mampu mengenali ciri-ciri munafik dan memilih sikap jujur.",
+     "konsep": [
+      "Munafik berarti berbeda antara ucapan dan hati",
+      "Salah satu ciri: berbohong dan ingkar janji",
+      "Anak saleh berusaha jujur"
+     ],
+     "miskonsepsi": [
+      "Salah ucap satu kali dikira sudah munafik"
+     ],
+     "kompetensi": [
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "sortir",
+      "cerita"
+     ],
+     "konteks": [
+      "Anak berjanji menjaga rahasia lalu menepatinya",
+      "Anak mengaku salah saat memecahkan pot"
+     ],
+     "tagAset": [
+      "anak-jujur",
+      "anak-sekolah",
+      "kelas"
+     ]
+    }
+   ]
+  },
+  {
+   "bab": 9,
+   "nama": "Mengenal Salat Jumat, Duha dan Tahajud",
+   "jenisTeks": "informasi",
+   "tema": "emas",
+   "sub": [
+    {
+     "nama": "Salat Jumat",
+     "tujuan": "Murid mampu menjelaskan ketentuan dan tata cara salat Jumat sesuai buku.",
+     "konsep": [
+      "Salat Jumat dikerjakan secara berjemaah",
+      "Salat Jumat diawali khotbah",
+      "Ketentuan wajib bagi laki-laki balig menurut buku"
+     ],
+     "miskonsepsi": [
+      "Salat Jumat dikira pengganti salat zuhur bagi semua orang tanpa syarat"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "urutkan",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Anak mengamati ayah bersiap ke masjid hari Jumat",
+      "Kelas berlatih urutan salat Jumat"
+     ],
+     "tagAset": [
+      "masjid",
+      "keluarga",
+      "salat-berjemaah"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Salat duha dan salat tahajud",
+     "tujuan": "Murid mampu menjelaskan ketentuan dan tata cara salat duha dan tahajud sesuai buku.",
+     "konsep": [
+      "Salat duha dikerjakan pada waktu duha",
+      "Salat tahajud dikerjakan pada malam hari setelah tidur",
+      "Keduanya adalah salat sunah"
+     ],
+     "miskonsepsi": [
+      "Salat duha dan tahajud dikira kewajiban"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "sortir",
+      "urutkan"
+     ],
+     "konteks": [
+      "Anak bertanya waktu salat duha kepada guru",
+      "Keluarga bangun malam untuk salat tahajud"
+     ],
+     "tagAset": [
+      "sajadah",
+      "jam-dinding",
+      "keluarga"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 10,
+   "nama": "Kisah Nabi Muhammad saw. Membangun Kota Madinah",
+   "jenisTeks": "fiksi",
+   "tema": "emas",
+   "sub": [
+    {
+     "nama": "Membangun masjid dan menjalin ukhuwah",
+     "tujuan": "Murid mampu menceritakan Nabi Muhammad saw. membangun masjid dan mempersaudarakan umat di Madinah.",
+     "konsep": [
+      "Masjid menjadi pusat kegiatan umat",
+      "Ukhuwah berarti persaudaraan",
+      "Kaum pendatang dan penduduk Madinah dipersaudarakan"
+     ],
+     "miskonsepsi": [
+      "Masjid dikira hanya tempat salat"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "bacaan",
+      "urutkan"
+     ],
+     "konteks": [
+      "Kerja bakti membangun masjid bersama",
+      "Dua teman berbeda asal saling membantu"
+     ],
+     "tagAset": [
+      "masjid",
+      "kerja-bakti",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    },
+    {
+     "nama": "Menggalang kerukunan",
+     "tujuan": "Murid mampu menjelaskan teladan Nabi Muhammad saw. dalam menjaga kerukunan di Madinah.",
+     "konsep": [
+      "Kerukunan dijaga bersama",
+      "Perbedaan dihargai",
+      "Nabi dan sahabat memberi teladan toleransi"
+     ],
+     "miskonsepsi": [
+      "Kerukunan hanya tugas pemimpin"
+     ],
+     "kompetensi": [
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Warga kampung menyelesaikan perselisihan lewat musyawarah",
+      "Kelas membuat kesepakatan kelas"
+     ],
+     "tagAset": [
+      "musyawarah",
+      "kampung",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    }
+   ]
+  }
+ ]
+}

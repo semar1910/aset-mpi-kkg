@@ -1,0 +1,414 @@
+{
+ "mapel": "Pendidikan Agama Islam dan Budi Pekerti",
+ "kelas": 5,
+ "buku": "Buku Panduan Guru Pendidikan Agama Islam dan Budi Pekerti untuk SD Kelas V",
+ "materi": [
+  {
+   "bab": 1,
+   "nama": "Menyayangi Anak Yatim",
+   "jenisTeks": "campuran",
+   "tema": "jingga",
+   "sub": [
+    {
+     "nama": "Membaca, menulis, dan menghafal Surah al-Mā’ūn",
+     "tujuan": "Murid mampu membaca Surah al-Mā’ūn dengan fasih dan menyalinnya dengan benar.",
+     "konsep": [
+      "Al-Mā’ūn adalah surah pendek",
+      "Membaca perlu fasih",
+      "Menyalin dan menghafal dilakukan bertahap"
+     ],
+     "miskonsepsi": [
+      "Menghafal tanpa mengerti arti dianggap sudah cukup"
+     ],
+     "kompetensi": [
+      "tersurat"
+     ],
+     "mesin": [
+      "bacaan",
+      "urutkan"
+     ],
+     "konteks": [
+      "Tadarus bersama di awal pelajaran",
+      "Anak berlatih menyalin ayat di buku tulis"
+     ],
+     "tagAset": [
+      "al-quran",
+      "anak-mengaji",
+      "kelas"
+     ]
+    },
+    {
+     "nama": "Pesan pokok dan hadis tentang menyayangi anak yatim",
+     "tujuan": "Murid mampu menjelaskan pesan pokok Surah al-Mā’ūn dan hadis tentang menyayangi anak yatim serta menunjukkan simpati.",
+     "konsep": [
+      "Anak yatim perlu disayangi dan dibantu",
+      "Simpati ditunjukkan dengan perbuatan",
+      "Akhlak mulia terlihat dari kepedulian"
+     ],
+     "miskonsepsi": [
+      "Menyayangi anak yatim hanya dengan memberi uang"
+     ],
+     "kompetensi": [
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Kelas mengumpulkan buku bekas untuk panti asuhan",
+      "Teman yang ayahnya telah tiada diajak bermain bersama"
+     ],
+     "tagAset": [
+      "anak-berbagi",
+      "buku",
+      "anak-sekolah"
+     ]
+    }
+   ]
+  },
+  {
+   "bab": 2,
+   "nama": "Lebih Dekat Dengan Nama-Nama Allah",
+   "jenisTeks": "informasi",
+   "tema": "antariksa",
+   "sub": [
+    {
+     "nama": "Asmaulhusna dan maknanya",
+     "tujuan": "Murid mampu menyebutkan beberapa asmaulhusna beserta artinya sesuai buku.",
+     "konsep": [
+      "Asmaulhusna adalah nama-nama Allah yang baik",
+      "Setiap nama memiliki arti",
+      "Nama-nama itu dapat diteladani dalam sikap"
+     ],
+     "miskonsepsi": [
+      "Meneladani asmaulhusna dikira menyamai sifat Allah"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "cocokkan",
+      "runner"
+     ],
+     "konteks": [
+      "Kelas membuat kartu asmaulhusna dan contoh sikap",
+      "Guru bercerita tentang sifat pemaaf"
+     ],
+     "tagAset": [
+      "kaligrafi",
+      "kartu-belajar",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 3,
+   "nama": "Aku Anak Saleh",
+   "jenisTeks": "fiksi",
+   "tema": "jingga",
+   "sub": [
+    {
+     "nama": "Sikap anak saleh dalam keseharian",
+     "tujuan": "Murid mampu memilih sikap anak saleh dalam situasi sehari-hari pada cerita.",
+     "konsep": [
+      "Anak saleh taat kepada Allah dan berbakti kepada orang tua",
+      "Akhlak baik terlihat dari perbuatan",
+      "Kebiasaan baik dilatih sejak kecil"
+     ],
+     "miskonsepsi": [
+      "Anak saleh dikira tidak pernah berbuat salah"
+     ],
+     "kompetensi": [
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Anak membantu ibu tanpa disuruh",
+      "Anak meminta maaf setelah berbuat salah"
+     ],
+     "tagAset": [
+      "keluarga",
+      "anak-sekolah",
+      "rumah"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 4,
+   "nama": "Hidup Lapang Dengan Berbagi",
+   "jenisTeks": "informasi",
+   "tema": "hutan",
+   "sub": [
+    {
+     "nama": "Berbagi kepada sesama",
+     "tujuan": "Murid mampu menjelaskan manfaat berbagi dan menunjukkan sikap berbagi sesuai buku.",
+     "konsep": [
+      "Berbagi membuat hidup terasa lapang",
+      "Berbagi dapat berupa harta, tenaga, dan perhatian",
+      "Berbagi dilakukan dengan ikhlas"
+     ],
+     "miskonsepsi": [
+      "Berbagi hanya bisa dilakukan oleh orang yang kaya"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "bacaan",
+      "sortir"
+     ],
+     "konteks": [
+      "Kelas mengadakan jumat berbagi",
+      "Anak berbagi alat tulis dengan teman"
+     ],
+     "tagAset": [
+      "anak-berbagi",
+      "anak-sekolah",
+      "alat-tulis"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 5,
+   "nama": "Meneladani Perjuangan Rasulullah",
+   "jenisTeks": "fiksi",
+   "tema": "emas",
+   "sub": [
+    {
+     "nama": "Perjuangan Rasulullah dan sikap sabar",
+     "tujuan": "Murid mampu menceritakan perjuangan Rasulullah sesuai buku dan menyebutkan sikap yang dapat diteladani.",
+     "konsep": [
+      "Rasulullah berjuang menyampaikan ajaran Islam",
+      "Perjuangan dilakukan dengan sabar dan santun",
+      "Sikap Rasulullah menjadi teladan"
+     ],
+     "miskonsepsi": [
+      "Perjuangan dikira selalu dengan kekerasan"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "cerita",
+      "urutkan"
+     ],
+     "konteks": [
+      "Guru menceritakan kisah dakwah Rasulullah",
+      "Anak meneladani sabar saat diejek teman"
+     ],
+     "tagAset": [
+      "buku-cerita",
+      "gurun",
+      "anak-sekolah"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 6,
+   "nama": "Hidup Damai dalam Kebersamaan",
+   "jenisTeks": "campuran",
+   "tema": "emas",
+   "sub": [
+    {
+     "nama": "Hidup rukun dan damai",
+     "tujuan": "Murid mampu menjelaskan pentingnya hidup damai dan memilih sikap yang menjaga kerukunan.",
+     "konsep": [
+      "Hidup damai dimulai dari sikap saling menghargai",
+      "Perbedaan pendapat diselesaikan dengan baik",
+      "Kerukunan dijaga bersama"
+     ],
+     "miskonsepsi": [
+      "Damai berarti tidak boleh berbeda pendapat"
+     ],
+     "kompetensi": [
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Kerja bakti kampung yang melibatkan semua warga",
+      "Dua kelompok berselisih lalu bermusyawarah"
+     ],
+     "tagAset": [
+      "kerja-bakti",
+      "kampung",
+      "musyawarah"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 7,
+   "nama": "Ketika Berhentinya Kehidupan",
+   "jenisTeks": "informasi",
+   "tema": "antariksa",
+   "sub": [
+    {
+     "nama": "Kematian dan kehidupan setelahnya menurut Islam",
+     "tujuan": "Murid mampu menjelaskan secara sederhana bahwa setiap makhluk hidup akan mengalami kematian dan memahami pelajaran darinya sesuai buku.",
+     "konsep": [
+      "Setiap yang hidup akan mengalami kematian",
+      "Waktu kematian adalah ketentuan Allah",
+      "Persiapan terbaik adalah berbuat baik"
+     ],
+     "miskonsepsi": [
+      "Waktu kematian dikira bisa diperkirakan manusia"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "bacaan",
+      "sortir"
+     ],
+     "konteks": [
+      "Tanaman yang layu dan mati dijadikan perumpamaan",
+      "Guru menjelaskan dengan bahasa tenang dan lembut"
+     ],
+     "tagAset": [
+      "tanaman",
+      "anak-sekolah",
+      "taman"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 8,
+   "nama": "Senangnya Berteman",
+   "jenisTeks": "fiksi",
+   "tema": "jingga",
+   "sub": [
+    {
+     "nama": "Berteman dan hikmah berteman tanpa membedakan agama",
+     "tujuan": "Murid mampu menunjukkan sikap berteman dengan baik dan menjelaskan hikmah berteman tanpa membedakan agama.",
+     "konsep": [
+      "Teman baik saling menolong dalam kebaikan",
+      "Berteman tidak membedakan agama, suku, atau asal",
+      "Saling menghormati keyakinan masing-masing"
+     ],
+     "miskonsepsi": [
+      "Berteman dengan yang berbeda agama dianggap melanggar ajaran"
+     ],
+     "kompetensi": [
+      "inferensial",
+      "evaluasi"
+     ],
+     "mesin": [
+      "cerita",
+      "sortir"
+     ],
+     "konteks": [
+      "Murid baru berbeda agama diajak bermain saat istirahat",
+      "Tugas kelompok yang dikerjakan bersama teman beragam"
+     ],
+     "tagAset": [
+      "anak-sekolah",
+      "teman-sekelas",
+      "lapangan"
+     ]
+    }
+   ]
+  },
+  {
+   "bab": 9,
+   "nama": "Ibadah Haji dan Kurban",
+   "jenisTeks": "informasi",
+   "tema": "emas",
+   "sub": [
+    {
+     "nama": "Ibadah haji dan ibadah kurban",
+     "tujuan": "Murid mampu menjelaskan pengertian ibadah haji dan kurban secara sederhana sesuai buku.",
+     "konsep": [
+      "Haji adalah rukun Islam yang kelima",
+      "Haji dilakukan di Tanah Suci bagi yang mampu",
+      "Kurban adalah ibadah menyembelih hewan pada waktu yang ditentukan"
+     ],
+     "miskonsepsi": [
+      "Haji wajib dilakukan setiap tahun oleh semua muslim"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "bacaan",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Tetangga berangkat haji dan diantar warga",
+      "Warga kampung berkurban dan membagikan daging"
+     ],
+     "tagAset": [
+      "kakbah",
+      "kampung",
+      "keluarga"
+     ],
+     "perluDicek": true
+    }
+   ]
+  },
+  {
+   "bab": 10,
+   "nama": "Perjuangan Khulafaurrasyidin",
+   "jenisTeks": "fiksi",
+   "tema": "emas",
+   "sub": [
+    {
+     "nama": "Perjuangan Khulafaurrasyidin",
+     "tujuan": "Murid mampu menyebutkan nama Khulafaurrasyidin dan menceritakan perjuangan serta sikap teladannya sesuai buku.",
+     "konsep": [
+      "Khulafaurrasyidin adalah para khalifah pengganti Rasulullah",
+      "Mereka memimpin dengan adil dan amanah",
+      "Sikap mereka menjadi teladan"
+     ],
+     "miskonsepsi": [
+      "Khulafaurrasyidin dikira para nabi"
+     ],
+     "kompetensi": [
+      "tersurat",
+      "inferensial"
+     ],
+     "mesin": [
+      "urutkan",
+      "cocokkan"
+     ],
+     "konteks": [
+      "Guru bercerita tentang kejujuran seorang khalifah",
+      "Anak memilih pemimpin kelas dengan adil"
+     ],
+     "tagAset": [
+      "buku-cerita",
+      "masjid",
+      "kelas"
+     ],
+     "perluDicek": true
+    }
+   ]
+  }
+ ]
+}
