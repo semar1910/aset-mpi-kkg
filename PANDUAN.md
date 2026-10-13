@@ -1,4 +1,4 @@
-# Panduan Kit MPI v1
+# Panduan Kit MPI v1.1
 
 Kit ini menyediakan **bingkai, tema warna, dan 7 mesin permainan** untuk MPI kelas SD.
 Pembuat MPI (guru atau Claude) cukup menulis **DATA**. Satu MPI = satu berkas HTML pendek:
@@ -26,6 +26,25 @@ layar penuh, dan pemaksa posisi mendatar di HP.
 
 Contoh lengkap: `demo/numerasi.html`, `demo/ipa.html`, `demo/literasi.html`.
 
+**MPI dirancang untuk HP posisi mendatar**, lalu ikut membesar di laptop, proyektor, dan TV.
+Di HP, MPI otomatis masuk layar penuh saat tombol Mulai disentuh. Posisi tegak tidak didukung.
+
+### Batas isi (dicek otomatis oleh kit)
+
+| Bagian | Batas |
+|---|---|
+| Jumlah level | maks 5 (disarankan 3) |
+| Cerita pembuka | maks 5 adegan, tiap adegan maks 40 kata |
+| `cerita` (level) | maks 3 pilihan; teks + tanya maks 45 kata (60 kata bila tanpa pilihan) |
+| `bacaan` | maks 70 kata per halaman (55 kata bila ada gambar), maks 3 pilihan |
+| `sortir` | 2–3 kategori, maks 10 kartu |
+| `cocokkan` | maks 5 pasang |
+| `urutkan` | 3–5 langkah |
+| `runner` | tepat 3 pilihan, tiap pilihan maks 14 huruf |
+| `jelajah` | maks 8 titik |
+
+Kalimat pendek, kata sederhana. Teks yang lebih panjang dipecah jadi beberapa halaman atau adegan.
+
 ---
 
 ## 1. Kerangka DATA
@@ -40,7 +59,7 @@ Contoh lengkap: `demo/numerasi.html`, `demo/ipa.html`, `demo/literasi.html`.
 | `maskot` | – | `{ nama:'Pak Hasan', gambar:'url' }`. Tanpa gambar, kit memakai wajah 🙂 |
 | `cerita` | – | Daftar adegan pembuka. Teks biasa, atau `{ nama, teks, gambar, tokoh:false }` |
 | `glosarium` | – | `{ 'kata': 'arti' }`. Kata ini bisa disentuh di mesin bacaan |
-| `level` | ya | Daftar level, 3–5 level disarankan (lihat bagian 2) |
+| `level` | ya | Daftar level, 3 level disarankan, maks 5 (lihat bagian 2) |
 | `penutup` | – | `{ lencana, ringkasan:[...], refleksi }` |
 | `guru` | – | `{ tujuan, durasi, langkah:[...], catatan }` |
 
@@ -90,19 +109,19 @@ Setiap adegan yang punya `pilihan` wajib punya satu `benar:true`. `tanggapan` sa
   kartu:[ { teks:'Modal Rp20.000\nLaku Rp25.000', ke:0 },
           { gambar:'botol', teks:'Botol', ke:1, petunjuk:'opsional, muncul saat salah' } ] }
 ```
-`ke` = nomor kategori mulai 0. 6–10 kartu disarankan.
+`ke` = nomor kategori mulai 0. 6–8 kartu disarankan.
 
 ### `cocokkan`: tarik garis pasangan
 ```js
 { mesin:'cocokkan', pasangan:[ ['Hidung','Menyaring udara','ulasan opsional'], ['Alveolus','Pertukaran gas'] ] }
 ```
-Isi kiri/kanan boleh teks atau `{ gambar, teks }`. 4–6 pasangan.
+Isi kiri/kanan boleh teks atau `{ gambar, teks }`. 3–5 pasangan.
 
 ### `urutkan`: susun urutan yang benar
 ```js
 { mesin:'urutkan', urutan:['Hidung','Tenggorokan','Bronkus','Alveolus'], ulasan:'...' }
 ```
-Tulis dalam urutan **benar**; kit yang mengacak. 3–6 langkah.
+Tulis dalam urutan **benar**; kit yang mengacak. 3–5 langkah.
 
 ### `runner`: lari ke gerbang jawaban
 ```js
