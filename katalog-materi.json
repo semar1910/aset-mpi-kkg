@@ -1,0 +1,4115 @@
+{
+ "versi": "1.0",
+ "status": "DRAF — mohon dicek guru KKG sebelum dipakai luas",
+ "rujukan": "Capaian Pembelajaran Kurikulum Merdeka, buku teks Kemendikdasmen (Matematika, Bahasa Indonesia, IPAS), kisi-kisi TKA SD",
+ "keterangan": {
+  "fokus": "literasi | numerasi | ipa (ipa hanya kelas 3–6)",
+  "domain": "Numerasi: Bilangan/Geometri/Pengukuran/Data (TKA). Literasi: Teks fiksi/Teks informasi/Kosakata. IPA: bidang materi",
+  "tujuan": "tujuan pembelajaran sub-materi",
+  "konsep": "isi inti yang wajib benar di MPI",
+  "miskonsepsi": "kesalahan umum murid: dipakai untuk pilihan pengecoh dan tanggapan saat salah",
+  "mesin": "mesin kit yang disarankan, urut dari yang paling cocok",
+  "tema": "saran tema warna kit",
+  "konteks": "ide cerita yang dekat dengan kehidupan anak Cibungbulang/Bogor",
+  "tagAset": "kata kunci untuk memilih gambar dari katalog-aset.json",
+  "rentang": "(numerasi) batas bilangan",
+  "jenisTeks / kompetensi": "(literasi) fiksi/informasi; tersurat/inferensial/evaluasi (TKA)",
+  "aturanKelas": "batas bahasa per kelas, berlaku untuk semua fokus"
+ },
+ "aturanKelas": {
+  "1": {
+   "fase": "A",
+   "kataPerHalaman": 25,
+   "kataPerKalimat": 6,
+   "bahasa": "kata sehari-hari yang sangat dikenal, kalimat tunggal",
+   "angka": "0–20",
+   "catatan": "utamakan gambar dan suara; teks sesedikit mungkin"
+  },
+  "2": {
+   "fase": "A",
+   "kataPerHalaman": 40,
+   "kataPerKalimat": 8,
+   "bahasa": "kalimat tunggal, kosakata dekat anak",
+   "angka": "0–100"
+  },
+  "3": {
+   "fase": "B",
+   "kataPerHalaman": 55,
+   "kataPerKalimat": 10,
+   "bahasa": "kalimat sederhana, istilah baru dijelaskan lewat glosarium",
+   "angka": "0–1.000"
+  },
+  "4": {
+   "fase": "B",
+   "kataPerHalaman": 65,
+   "kataPerKalimat": 12,
+   "bahasa": "boleh kalimat majemuk sederhana",
+   "angka": "0–10.000, pecahan sederhana, desimal satu angka"
+  },
+  "5": {
+   "fase": "C",
+   "kataPerHalaman": 70,
+   "kataPerKalimat": 14,
+   "bahasa": "istilah ilmiah boleh dengan penjelasan",
+   "angka": "sampai 1.000.000, pecahan, desimal, persen"
+  },
+  "6": {
+   "fase": "C",
+   "kataPerHalaman": 70,
+   "kataPerKalimat": 15,
+   "bahasa": "istilah ilmiah, teks eksposisi dan argumentasi",
+   "angka": "bilangan bulat termasuk negatif, pecahan, desimal, rasio"
+  }
+ },
+ "fokus": {
+  "numerasi": {
+   "nama": "Numerasi",
+   "mapel": "Matematika",
+   "kelas": {
+    "1": {
+     "fase": "A",
+     "materi": [
+      {
+       "id": "num-1-bilangan-sampai-20",
+       "nama": "Bilangan sampai 20",
+       "domain": "Bilangan",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "num-1-bilangan-sampai-20--membilang-dan-menulis-lambang",
+         "nama": "Membilang dan menulis lambang bilangan",
+         "tujuan": "Membilang benda dan menghubungkannya dengan lambang bilangan sampai 20",
+         "konsep": [
+          "satu benda dihitung satu kali",
+          "banyak benda sama dengan bilangan terakhir yang disebut",
+          "lambang 0–20"
+         ],
+         "miskonsepsi": [
+          "menghitung benda yang sama dua kali",
+          "tertukar 12 dan 21",
+          "menulis angka terbalik (6 dan 9)"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "kelereng",
+          "buah di keranjang",
+          "ayam di kandang"
+         ],
+         "tagAset": [
+          "buah",
+          "hewan-ternak",
+          "angka"
+         ],
+         "rentang": "0–20"
+        },
+        {
+         "id": "num-1-bilangan-sampai-20--membandingkan-dan-mengurutkan-bilangan",
+         "nama": "Membandingkan dan mengurutkan bilangan",
+         "tujuan": "Membandingkan dua kumpulan benda dan mengurutkan bilangan sampai 20",
+         "konsep": [
+          "lebih banyak, lebih sedikit, sama banyak",
+          "urutan maju dan mundur",
+          "sebelum dan sesudah"
+         ],
+         "miskonsepsi": [
+          "menganggap benda yang lebih besar ukurannya berarti lebih banyak",
+          "urutan mundur dilompati"
+         ],
+         "mesin": [
+          "urutkan",
+          "sortir",
+          "runner"
+         ],
+         "konteks": [
+          "antre di kantin",
+          "barisan upacara",
+          "tumpukan buku"
+         ],
+         "tagAset": [
+          "angka",
+          "anak-sekolah"
+         ],
+         "rentang": "0–20"
+        }
+       ]
+      },
+      {
+       "id": "num-1-penjumlahan-dan-pengurangan-sampai",
+       "nama": "Penjumlahan dan pengurangan sampai 20",
+       "domain": "Bilangan",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "num-1-penjumlahan-dan-pengurangan-sampai--penjumlahan-sebagai-menggabungkan",
+         "nama": "Penjumlahan sebagai menggabungkan",
+         "tujuan": "Menjumlahkan dua kumpulan benda dengan hasil sampai 20",
+         "konsep": [
+          "menggabungkan dua kumpulan",
+          "urutan penjumlahan boleh ditukar (3 + 5 = 5 + 3)",
+          "membilang lanjut dari bilangan yang lebih besar"
+         ],
+         "miskonsepsi": [
+          "menghitung ulang dari 1 setiap kali",
+          "menganggap tanda + berarti mengurangi"
+         ],
+         "mesin": [
+          "cerita",
+          "runner",
+          "cocokkan"
+         ],
+         "konteks": [
+          "memetik jambu",
+          "mengumpulkan telur ayam",
+          "membeli permen di warung"
+         ],
+         "tagAset": [
+          "buah",
+          "hewan-ternak",
+          "angka"
+         ],
+         "rentang": "hasil sampai 20"
+        },
+        {
+         "id": "num-1-penjumlahan-dan-pengurangan-sampai--pengurangan-sebagai-mengambil",
+         "nama": "Pengurangan sebagai mengambil",
+         "tujuan": "Mengurangkan bilangan sampai 20 dengan konteks mengambil atau membandingkan",
+         "konsep": [
+          "mengambil sebagian dari kumpulan",
+          "sisa",
+          "pengurangan tidak bisa ditukar urutannya"
+         ],
+         "miskonsepsi": [
+          "mengurangkan bilangan kecil dikurangi besar dengan menukar urutan",
+          "bingung kata 'sisa' dan 'semua'"
+         ],
+         "mesin": [
+          "cerita",
+          "runner",
+          "sortir"
+         ],
+         "konteks": [
+          "kue dimakan teman",
+          "burung terbang dari pohon",
+          "kelereng kalah main"
+         ],
+         "tagAset": [
+          "buah",
+          "hewan",
+          "angka"
+         ],
+         "rentang": "0–20"
+        }
+       ]
+      },
+      {
+       "id": "num-1-bentuk-bangun",
+       "nama": "Bentuk bangun",
+       "domain": "Geometri",
+       "tema": "samudra",
+       "sub": [
+        {
+         "id": "num-1-bentuk-bangun--mengenal-bangun-datar",
+         "nama": "Mengenal bangun datar",
+         "tujuan": "Mengenal dan mengelompokkan segitiga, segi empat, dan lingkaran di sekitar",
+         "konsep": [
+          "segitiga punya 3 sisi",
+          "segi empat punya 4 sisi",
+          "lingkaran tidak bersudut"
+         ],
+         "miskonsepsi": [
+          "segitiga terbalik dianggap bukan segitiga",
+          "persegi yang diputar dianggap bangun lain"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "jelajah"
+         ],
+         "konteks": [
+          "benda di kelas",
+          "rambu jalan",
+          "kue di pasar"
+         ],
+         "tagAset": [
+          "bangun-datar",
+          "benda-sekolah"
+         ]
+        },
+        {
+         "id": "num-1-bentuk-bangun--mengenal-bangun-ruang",
+         "nama": "Mengenal bangun ruang",
+         "tujuan": "Mengenal kubus, balok, tabung, dan bola dari benda sehari-hari",
+         "konsep": [
+          "kubus seperti dadu",
+          "balok seperti kotak kardus",
+          "tabung seperti kaleng",
+          "bola bisa menggelinding ke segala arah"
+         ],
+         "miskonsepsi": [
+          "menyebut bola sebagai lingkaran",
+          "kubus dan balok dianggap sama"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan"
+         ],
+         "konteks": [
+          "warung kelontong",
+          "mainan",
+          "dapur rumah"
+         ],
+         "tagAset": [
+          "bangun-ruang",
+          "benda-rumah"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-1-panjang-benda",
+       "nama": "Panjang benda",
+       "domain": "Pengukuran",
+       "tema": "hutan",
+       "sub": [
+        {
+         "id": "num-1-panjang-benda--membandingkan-panjang",
+         "nama": "Membandingkan panjang",
+         "tujuan": "Membandingkan dan mengurutkan panjang benda",
+         "konsep": [
+          "lebih panjang, lebih pendek, sama panjang",
+          "ujung benda harus sejajar saat dibandingkan"
+         ],
+         "miskonsepsi": [
+          "membandingkan tanpa menyejajarkan ujung",
+          "menganggap benda yang lebih tebal pasti lebih panjang"
+         ],
+         "mesin": [
+          "urutkan",
+          "sortir"
+         ],
+         "konteks": [
+          "pensil di kotak pensil",
+          "ular di kebun binatang",
+          "tongkat pramuka"
+         ],
+         "tagAset": [
+          "benda-sekolah",
+          "hewan"
+         ]
+        },
+        {
+         "id": "num-1-panjang-benda--mengukur-dengan-satuan-tak",
+         "nama": "Mengukur dengan satuan tak baku",
+         "tujuan": "Mengukur panjang menggunakan jengkal, langkah, atau klip",
+         "konsep": [
+          "satuan tak baku harus sama besar",
+          "tidak boleh ada celah atau tumpang tindih"
+         ],
+         "miskonsepsi": [
+          "jengkal berbeda orang dianggap sama",
+          "satuan diletakkan bercelah"
+         ],
+         "mesin": [
+          "cerita",
+          "cocokkan"
+         ],
+         "konteks": [
+          "mengukur meja kelas",
+          "lapangan sekolah"
+         ],
+         "tagAset": [
+          "benda-sekolah",
+          "anak-sekolah"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-1-pola",
+       "nama": "Pola",
+       "domain": "Bilangan",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "id": "num-1-pola--pola-gambar-dan-warna",
+         "nama": "Pola gambar dan warna",
+         "tujuan": "Melanjutkan pola berulang dari gambar, warna, atau bentuk",
+         "konsep": [
+          "pola adalah susunan yang berulang",
+          "satuan pola (misalnya merah–biru)"
+         ],
+         "miskonsepsi": [
+          "hanya melihat gambar terakhir",
+          "mengulang satuan pola yang salah"
+         ],
+         "mesin": [
+          "urutkan",
+          "runner"
+         ],
+         "konteks": [
+          "manik-manik gelang",
+          "motif batik",
+          "barisan bendera"
+         ],
+         "tagAset": [
+          "bangun-datar",
+          "buah"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "2": {
+     "fase": "A",
+     "materi": [
+      {
+       "id": "num-2-bilangan-sampai-100",
+       "nama": "Bilangan sampai 100",
+       "domain": "Bilangan",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "num-2-bilangan-sampai-100--nilai-tempat-puluhan-dan",
+         "nama": "Nilai tempat puluhan dan satuan",
+         "tujuan": "Menentukan nilai tempat dan menguraikan bilangan dua angka",
+         "konsep": [
+          "45 = 4 puluhan + 5 satuan",
+          "angka yang sama bisa bernilai berbeda tergantung tempatnya"
+         ],
+         "miskonsepsi": [
+          "membaca 45 sebagai 4 dan 5 saja",
+          "tertukar puluhan dan satuan"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "ikat lidi isi sepuluh",
+          "telur dalam rak",
+          "kelereng dalam kantong"
+         ],
+         "tagAset": [
+          "angka",
+          "benda-rumah"
+         ],
+         "rentang": "0–100"
+        },
+        {
+         "id": "num-2-bilangan-sampai-100--membandingkan-dan-mengurutkan-sampai",
+         "nama": "Membandingkan dan mengurutkan sampai 100",
+         "tujuan": "Membandingkan dan mengurutkan bilangan sampai 100",
+         "konsep": [
+          "bandingkan puluhan dulu, lalu satuan",
+          "tanda lebih dari dan kurang dari"
+         ],
+         "miskonsepsi": [
+          "membandingkan dari angka satuan",
+          "menganggap 39 lebih dari 41 karena 9 besar"
+         ],
+         "mesin": [
+          "urutkan",
+          "runner"
+         ],
+         "konteks": [
+          "nomor rumah",
+          "nomor absen",
+          "skor lomba"
+         ],
+         "tagAset": [
+          "angka",
+          "anak-sekolah"
+         ],
+         "rentang": "0–100"
+        }
+       ]
+      },
+      {
+       "id": "num-2-penjumlahan-dan-pengurangan-sampai",
+       "nama": "Penjumlahan dan pengurangan sampai 100",
+       "domain": "Bilangan",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "num-2-penjumlahan-dan-pengurangan-sampai--penjumlahan-bersusun",
+         "nama": "Penjumlahan bersusun",
+         "tujuan": "Menjumlahkan bilangan sampai 100 dengan dan tanpa menyimpan",
+         "konsep": [
+          "jumlahkan satuan dulu",
+          "10 satuan menjadi 1 puluhan (menyimpan)"
+         ],
+         "miskonsepsi": [
+          "lupa menambahkan simpanan",
+          "menjumlahkan puluhan dengan satuan"
+         ],
+         "mesin": [
+          "runner",
+          "cerita"
+         ],
+         "konteks": [
+          "menabung di celengan",
+          "panen rambutan",
+          "kumpulan stiker"
+         ],
+         "tagAset": [
+          "buah",
+          "uang",
+          "angka"
+         ],
+         "rentang": "hasil sampai 100"
+        },
+        {
+         "id": "num-2-penjumlahan-dan-pengurangan-sampai--pengurangan-bersusun",
+         "nama": "Pengurangan bersusun",
+         "tujuan": "Mengurangkan bilangan sampai 100 dengan dan tanpa meminjam",
+         "konsep": [
+          "1 puluhan dipinjam menjadi 10 satuan",
+          "kurangkan satuan dulu"
+         ],
+         "miskonsepsi": [
+          "mengurangkan angka kecil dari angka besar tanpa melihat posisi (52 − 18 = 46)",
+          "lupa mengurangi puluhan yang dipinjam"
+         ],
+         "mesin": [
+          "runner",
+          "cerita"
+         ],
+         "konteks": [
+          "sisa kue jualan",
+          "halaman buku yang belum dibaca"
+         ],
+         "tagAset": [
+          "angka",
+          "benda-sekolah"
+         ],
+         "rentang": "0–100"
+        }
+       ]
+      },
+      {
+       "id": "num-2-pecahan-sederhana",
+       "nama": "Pecahan sederhana",
+       "domain": "Bilangan",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "num-2-pecahan-sederhana--setengah-dan-seperempat",
+         "nama": "Setengah dan seperempat",
+         "tujuan": "Mengenal ½ dan ¼ sebagai bagian yang sama besar dari satu benda",
+         "konsep": [
+          "bagian harus sama besar",
+          "½ berarti 1 dari 2 bagian sama",
+          "¼ berarti 1 dari 4 bagian sama"
+         ],
+         "miskonsepsi": [
+          "potongan tidak sama besar tetap disebut setengah",
+          "menganggap ¼ lebih besar dari ½ karena 4 lebih besar"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "cerita"
+         ],
+         "konteks": [
+          "membagi martabak",
+          "membagi kue bolu",
+          "melipat kertas"
+         ],
+         "tagAset": [
+          "makanan",
+          "bangun-datar"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-2-pengukuran",
+       "nama": "Pengukuran",
+       "domain": "Pengukuran",
+       "tema": "hutan",
+       "sub": [
+        {
+         "id": "num-2-pengukuran--panjang-dalam-sentimeter",
+         "nama": "Panjang dalam sentimeter",
+         "tujuan": "Mengukur panjang benda dengan penggaris dalam satuan cm",
+         "konsep": [
+          "mulai mengukur dari angka 0",
+          "1 cm adalah jarak antar garis angka"
+         ],
+         "miskonsepsi": [
+          "mulai mengukur dari angka 1 atau ujung penggaris",
+          "membaca garis yang salah"
+         ],
+         "mesin": [
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "mengukur pensil",
+          "mengukur daun"
+         ],
+         "tagAset": [
+          "benda-sekolah",
+          "tumbuhan"
+         ]
+        },
+        {
+         "id": "num-2-pengukuran--membaca-jam",
+         "nama": "Membaca jam",
+         "tujuan": "Membaca waktu pada jam analog (jam tepat dan setengah)",
+         "konsep": [
+          "jarum pendek menunjuk jam",
+          "jarum panjang menunjuk menit",
+          "setengah jam = jarum panjang di 6"
+         ],
+         "miskonsepsi": [
+          "tertukar jarum pendek dan panjang",
+          "setengah tujuh dianggap jam 7.30"
+         ],
+         "mesin": [
+          "cocokkan",
+          "urutkan"
+         ],
+         "konteks": [
+          "jadwal sekolah",
+          "waktu salat",
+          "kegiatan pagi"
+         ],
+         "tagAset": [
+          "jam",
+          "anak-sekolah"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-2-data-sederhana",
+       "nama": "Data sederhana",
+       "domain": "Data",
+       "tema": "samudra",
+       "sub": [
+        {
+         "id": "num-2-data-sederhana--turus-dan-piktogram",
+         "nama": "Turus dan piktogram",
+         "tujuan": "Mengelompokkan dan membaca data dengan turus dan piktogram",
+         "konsep": [
+          "satu turus untuk satu data",
+          "lima turus diberi garis miring",
+          "satu gambar mewakili satu data"
+         ],
+         "miskonsepsi": [
+          "salah menghitung kelompok turus lima",
+          "membaca piktogram tanpa melihat keterangan"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "buah kesukaan teman sekelas",
+          "jenis hewan peliharaan"
+         ],
+         "tagAset": [
+          "buah",
+          "hewan"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "3": {
+     "fase": "B",
+     "materi": [
+      {
+       "id": "num-3-bilangan-sampai-1-000",
+       "nama": "Bilangan sampai 1.000",
+       "domain": "Bilangan",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "num-3-bilangan-sampai-1-000--nilai-tempat-ratusan",
+         "nama": "Nilai tempat ratusan",
+         "tujuan": "Menentukan nilai tempat dan bentuk panjang bilangan tiga angka",
+         "konsep": [
+          "347 = 300 + 40 + 7",
+          "nol sebagai penanda tempat (305)"
+         ],
+         "miskonsepsi": [
+          "menulis tiga ratus lima sebagai 3005",
+          "mengabaikan angka nol"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "uang ratusan",
+          "jumlah siswa sekolah",
+          "kardus isi seratus"
+         ],
+         "tagAset": [
+          "angka",
+          "uang"
+         ],
+         "rentang": "0–1.000"
+        },
+        {
+         "id": "num-3-bilangan-sampai-1-000--membandingkan-dan-membulatkan",
+         "nama": "Membandingkan dan membulatkan",
+         "tujuan": "Membandingkan, mengurutkan, dan membulatkan ke puluhan atau ratusan terdekat",
+         "konsep": [
+          "bandingkan dari nilai tempat terbesar",
+          "angka 5 ke atas dibulatkan naik"
+         ],
+         "miskonsepsi": [
+          "membulatkan dengan melihat angka yang salah",
+          "45 dibulatkan ke 40"
+         ],
+         "mesin": [
+          "urutkan",
+          "runner"
+         ],
+         "konteks": [
+          "harga di warung",
+          "jarak rumah ke sekolah"
+         ],
+         "tagAset": [
+          "angka",
+          "uang"
+         ],
+         "rentang": "0–1.000"
+        }
+       ]
+      },
+      {
+       "id": "num-3-penjumlahan-dan-pengurangan-sampai",
+       "nama": "Penjumlahan dan pengurangan sampai 1.000",
+       "domain": "Bilangan",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "num-3-penjumlahan-dan-pengurangan-sampai--menyelesaikan-soal-cerita",
+         "nama": "Menyelesaikan soal cerita",
+         "tujuan": "Memilih operasi yang tepat dan menyelesaikan soal cerita sampai 1.000",
+         "konsep": [
+          "kata 'semua', 'jumlah' biasanya penjumlahan",
+          "kata 'sisa', 'selisih' biasanya pengurangan",
+          "memeriksa jawaban dengan operasi kebalikan"
+         ],
+         "miskonsepsi": [
+          "hanya mencari kata kunci tanpa memahami cerita",
+          "salah menyimpan atau meminjam"
+         ],
+         "mesin": [
+          "cerita",
+          "runner"
+         ],
+         "konteks": [
+          "panen padi di sawah",
+          "penjualan bazar sekolah",
+          "tabungan kelas"
+         ],
+         "tagAset": [
+          "sawah",
+          "pasar",
+          "uang"
+         ],
+         "rentang": "hasil sampai 1.000"
+        }
+       ]
+      },
+      {
+       "id": "num-3-perkalian-dan-pembagian",
+       "nama": "Perkalian dan pembagian",
+       "domain": "Bilangan",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "num-3-perkalian-dan-pembagian--perkalian-sebagai-penjumlahan-berulang",
+         "nama": "Perkalian sebagai penjumlahan berulang",
+         "tujuan": "Memahami perkalian sebagai penjumlahan berulang dan kelompok sama besar",
+         "konsep": [
+          "4 × 3 = 3 + 3 + 3 + 3",
+          "susunan baris dan kolom",
+          "perkalian bisa ditukar urutannya"
+         ],
+         "miskonsepsi": [
+          "4 × 3 dibaca 4 + 4 + 4 + 4 dalam konteks yang salah",
+          "menjumlahkan bukan mengalikan"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "kursi di aula",
+          "telur dalam rak",
+          "roda sepeda motor"
+         ],
+         "tagAset": [
+          "benda-rumah",
+          "kendaraan"
+         ],
+         "rentang": "perkalian 1–10"
+        },
+        {
+         "id": "num-3-perkalian-dan-pembagian--pembagian-sebagai-berbagi-sama",
+         "nama": "Pembagian sebagai berbagi sama banyak",
+         "tujuan": "Memahami pembagian sebagai berbagi sama banyak dan pengurangan berulang",
+         "konsep": [
+          "12 : 3 = 4 artinya 12 dibagi ke 3 kelompok sama banyak",
+          "pembagian kebalikan perkalian"
+         ],
+         "miskonsepsi": [
+          "membagi tidak sama banyak",
+          "menukar urutan pembagian (3 : 12)"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir",
+          "runner"
+         ],
+         "konteks": [
+          "membagi jeruk ke teman",
+          "membagi kelompok piket"
+         ],
+         "tagAset": [
+          "buah",
+          "anak-sekolah"
+         ],
+         "rentang": "hasil bagi 1–10"
+        }
+       ]
+      },
+      {
+       "id": "num-3-pecahan",
+       "nama": "Pecahan",
+       "domain": "Bilangan",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "num-3-pecahan--membandingkan-pecahan",
+         "nama": "Membandingkan pecahan",
+         "tujuan": "Membandingkan pecahan berpembilang satu dan pecahan berpenyebut sama",
+         "konsep": [
+          "pembilang sama: penyebut lebih besar berarti bagian lebih kecil",
+          "penyebut sama: bandingkan pembilang"
+         ],
+         "miskonsepsi": [
+          "⅛ dianggap lebih besar dari ¼ karena 8 > 4",
+          "membandingkan pecahan dari benda yang ukurannya berbeda"
+         ],
+         "mesin": [
+          "sortir",
+          "urutkan",
+          "runner"
+         ],
+         "konteks": [
+          "membagi pizza",
+          "potongan semangka",
+          "pita hias"
+         ],
+         "tagAset": [
+          "makanan",
+          "bangun-datar"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-3-pengukuran",
+       "nama": "Pengukuran",
+       "domain": "Pengukuran",
+       "tema": "hutan",
+       "sub": [
+        {
+         "id": "num-3-pengukuran--panjang-dan-berat-baku",
+         "nama": "Panjang dan berat baku",
+         "tujuan": "Mengukur panjang (cm, m) dan berat (g, kg) dengan satuan baku",
+         "konsep": [
+          "1 m = 100 cm",
+          "1 kg = 1.000 g",
+          "memilih satuan yang sesuai benda"
+         ],
+         "miskonsepsi": [
+          "mengukur berat buku dalam kg",
+          "menganggap benda besar pasti berat"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan"
+         ],
+         "konteks": [
+          "menimbang beras di warung",
+          "mengukur kain"
+         ],
+         "tagAset": [
+          "timbangan",
+          "pasar"
+         ]
+        },
+        {
+         "id": "num-3-pengukuran--waktu-dan-durasi",
+         "nama": "Waktu dan durasi",
+         "tujuan": "Membaca jam dan menghitung lama kegiatan dalam jam dan menit",
+         "konsep": [
+          "1 jam = 60 menit",
+          "durasi = waktu selesai − waktu mulai"
+         ],
+         "miskonsepsi": [
+          "1 jam dianggap 100 menit",
+          "salah menghitung melewati jam"
+         ],
+         "mesin": [
+          "cocokkan",
+          "urutkan",
+          "cerita"
+         ],
+         "konteks": [
+          "jadwal pelajaran",
+          "perjalanan ke Bogor",
+          "lama memasak nasi"
+         ],
+         "tagAset": [
+          "jam",
+          "anak-sekolah"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-3-diagram-batang",
+       "nama": "Diagram batang",
+       "domain": "Data",
+       "tema": "samudra",
+       "sub": [
+        {
+         "id": "num-3-diagram-batang--membaca-diagram-batang",
+         "nama": "Membaca diagram batang",
+         "tujuan": "Membaca dan membandingkan data pada diagram batang sederhana",
+         "konsep": [
+          "tinggi batang menunjukkan banyak data",
+          "membaca skala di sumbu tegak"
+         ],
+         "miskonsepsi": [
+          "membaca lebar batang",
+          "mengabaikan skala yang loncat dua-dua"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "hasil panen per bulan",
+          "jumlah siswa per kelas"
+         ],
+         "tagAset": [
+          "grafik",
+          "sawah"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "4": {
+     "fase": "B",
+     "materi": [
+      {
+       "id": "num-4-bilangan-sampai-10-000",
+       "nama": "Bilangan sampai 10.000",
+       "domain": "Bilangan",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "num-4-bilangan-sampai-10-000--nilai-tempat-ribuan",
+         "nama": "Nilai tempat ribuan",
+         "tujuan": "Membaca, menulis, dan menguraikan bilangan sampai 10.000",
+         "konsep": [
+          "4.075 = 4.000 + 70 + 5",
+          "titik sebagai pemisah ribuan"
+         ],
+         "miskonsepsi": [
+          "menulis empat ribu tujuh puluh lima sebagai 4.0075",
+          "menghilangkan nol penanda tempat"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir",
+          "runner"
+         ],
+         "konteks": [
+          "jumlah penduduk desa",
+          "harga barang"
+         ],
+         "tagAset": [
+          "angka",
+          "uang"
+         ],
+         "rentang": "0–10.000"
+        }
+       ]
+      },
+      {
+       "id": "num-4-uang",
+       "nama": "Uang",
+       "domain": "Bilangan",
+       "tema": "emas",
+       "sub": [
+        {
+         "id": "num-4-uang--nilai-uang-dan-kesetaraan",
+         "nama": "Nilai uang dan kesetaraan",
+         "tujuan": "Menentukan nilai sekumpulan uang dan menukar uang dengan nilai yang sama",
+         "konsep": [
+          "Rp5.000 senilai lima lembar Rp1.000",
+          "menjumlahkan nilai uang campuran"
+         ],
+         "miskonsepsi": [
+          "menghitung banyak lembar, bukan nilainya",
+          "koin dianggap selalu lebih kecil dari kertas"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "belanja di warung",
+          "kantin sekolah",
+          "celengan"
+         ],
+         "tagAset": [
+          "uang",
+          "pasar"
+         ],
+         "rentang": "sampai Rp100.000"
+        },
+        {
+         "id": "num-4-uang--kembalian-untung-dan-rugi",
+         "nama": "Kembalian, untung, dan rugi",
+         "tujuan": "Menghitung kembalian serta menentukan untung atau rugi transaksi sederhana",
+         "konsep": [
+          "kembalian = uang dibayar − harga",
+          "untung = hasil jual − modal",
+          "rugi = modal − hasil jual"
+         ],
+         "miskonsepsi": [
+          "menjumlahkan, bukan mengurangkan",
+          "tertukar mana modal dan mana hasil jual"
+         ],
+         "mesin": [
+          "cerita",
+          "runner",
+          "sortir"
+         ],
+         "konteks": [
+          "pasar tradisional",
+          "warung",
+          "bazar sekolah"
+         ],
+         "tagAset": [
+          "uang",
+          "pasar",
+          "pedagang"
+         ],
+         "rentang": "sampai Rp100.000, kelipatan Rp500"
+        }
+       ]
+      },
+      {
+       "id": "num-4-perkalian-dan-pembagian",
+       "nama": "Perkalian dan pembagian",
+       "domain": "Bilangan",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "num-4-perkalian-dan-pembagian--perkalian-dan-pembagian-sampai",
+         "nama": "Perkalian dan pembagian sampai 100",
+         "tujuan": "Menghafal fakta perkalian dan menyelesaikan pembagian sampai 100",
+         "konsep": [
+          "fakta perkalian 1–10",
+          "pembagian sebagai kebalikan perkalian"
+         ],
+         "miskonsepsi": [
+          "7 × 8 = 54",
+          "pembagian dengan nol dianggap nol"
+         ],
+         "mesin": [
+          "runner",
+          "cocokkan"
+         ],
+         "konteks": [
+          "menata kursi",
+          "mengemas kue dalam kotak"
+         ],
+         "tagAset": [
+          "angka",
+          "makanan"
+         ],
+         "rentang": "perkalian 1–10"
+        },
+        {
+         "id": "num-4-perkalian-dan-pembagian--faktor-dan-kelipatan",
+         "nama": "Faktor dan kelipatan",
+         "tujuan": "Menentukan faktor dan kelipatan suatu bilangan",
+         "konsep": [
+          "faktor membagi habis",
+          "kelipatan diperoleh dengan mengalikan",
+          "bilangan prima hanya punya dua faktor"
+         ],
+         "miskonsepsi": [
+          "tertukar faktor dan kelipatan",
+          "1 dianggap bilangan prima"
+         ],
+         "mesin": [
+          "sortir",
+          "runner"
+         ],
+         "konteks": [
+          "jadwal piket berulang",
+          "lampu kelap-kelip"
+         ],
+         "tagAset": [
+          "angka"
+         ],
+         "rentang": "sampai 100"
+        }
+       ]
+      },
+      {
+       "id": "num-4-pecahan-dan-desimal",
+       "nama": "Pecahan dan desimal",
+       "domain": "Bilangan",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "num-4-pecahan-dan-desimal--pecahan-senilai",
+         "nama": "Pecahan senilai",
+         "tujuan": "Menentukan pecahan senilai dengan gambar dan perkalian",
+         "konsep": [
+          "½ = 2/4 = 3/6",
+          "pembilang dan penyebut dikali bilangan yang sama"
+         ],
+         "miskonsepsi": [
+          "hanya mengalikan pembilang",
+          "menganggap 2/4 lebih besar dari ½"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir"
+         ],
+         "konteks": [
+          "membagi kue lapis",
+          "potongan pepaya"
+         ],
+         "tagAset": [
+          "makanan",
+          "bangun-datar"
+         ]
+        },
+        {
+         "id": "num-4-pecahan-dan-desimal--pecahan-desimal",
+         "nama": "Pecahan desimal",
+         "tujuan": "Mengubah pecahan persepuluhan dan perseratusan menjadi desimal",
+         "konsep": [
+          "0,5 = 5/10",
+          "angka setelah koma adalah persepuluhan"
+         ],
+         "miskonsepsi": [
+          "0,25 dianggap lebih besar dari 0,3 karena 25 > 3",
+          "0,5 dibaca sebagai lima, bukan lima persepuluh"
+         ],
+         "mesin": [
+          "cocokkan",
+          "urutkan",
+          "runner"
+         ],
+         "konteks": [
+          "tinggi badan",
+          "harga bensin per liter"
+         ],
+         "tagAset": [
+          "angka"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-4-keliling-dan-luas",
+       "nama": "Keliling dan luas",
+       "domain": "Pengukuran",
+       "tema": "hutan",
+       "sub": [
+        {
+         "id": "num-4-keliling-dan-luas--keliling-persegi-dan-persegi",
+         "nama": "Keliling persegi dan persegi panjang",
+         "tujuan": "Menghitung keliling persegi dan persegi panjang",
+         "konsep": [
+          "keliling = jumlah semua sisi",
+          "persegi panjang: 2 × (p + l)"
+         ],
+         "miskonsepsi": [
+          "tertukar keliling dan luas",
+          "hanya menjumlahkan dua sisi"
+         ],
+         "mesin": [
+          "cerita",
+          "runner"
+         ],
+         "konteks": [
+          "pagar kebun",
+          "bingkai foto",
+          "lapangan bola"
+         ],
+         "tagAset": [
+          "kebun",
+          "bangun-datar"
+         ]
+        },
+        {
+         "id": "num-4-keliling-dan-luas--luas-dengan-persegi-satuan",
+         "nama": "Luas dengan persegi satuan",
+         "tujuan": "Menentukan luas dengan menghitung persegi satuan dan rumus p × l",
+         "konsep": [
+          "luas = banyak persegi satuan yang menutupi",
+          "persegi panjang: p × l"
+         ],
+         "miskonsepsi": [
+          "menghitung garis tepi, bukan petak",
+          "satuan luas ditulis cm, bukan cm²"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "ubin lantai kelas",
+          "petak sawah"
+         ],
+         "tagAset": [
+          "sawah",
+          "bangun-datar"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-4-penyajian-data",
+       "nama": "Penyajian data",
+       "domain": "Data",
+       "tema": "samudra",
+       "sub": [
+        {
+         "id": "num-4-penyajian-data--diagram-batang-dan-tabel",
+         "nama": "Diagram batang dan tabel",
+         "tujuan": "Menyajikan data ke tabel dan diagram batang, lalu menafsirkannya",
+         "konsep": [
+          "data terbanyak dan tersedikit",
+          "selisih antar batang"
+         ],
+         "miskonsepsi": [
+          "salah membaca skala",
+          "menjumlahkan saat ditanya selisih"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "hasil panen sayur",
+          "olahraga kesukaan"
+         ],
+         "tagAset": [
+          "grafik",
+          "sayur"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "5": {
+     "fase": "C",
+     "materi": [
+      {
+       "id": "num-5-bilangan-cacah-besar",
+       "nama": "Bilangan cacah besar",
+       "domain": "Bilangan",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "num-5-bilangan-cacah-besar--bilangan-sampai-1-000",
+         "nama": "Bilangan sampai 1.000.000",
+         "tujuan": "Membaca, menulis, membandingkan, dan membulatkan bilangan sampai satu juta",
+         "konsep": [
+          "nilai tempat sampai ratusan ribu",
+          "pembulatan ke ribuan terdekat"
+         ],
+         "miskonsepsi": [
+          "salah menempatkan titik ribuan",
+          "membulatkan ke tempat yang salah"
+         ],
+         "mesin": [
+          "urutkan",
+          "cocokkan",
+          "runner"
+         ],
+         "konteks": [
+          "jumlah penduduk kecamatan",
+          "harga motor"
+         ],
+         "tagAset": [
+          "angka",
+          "uang"
+         ],
+         "rentang": "0–1.000.000"
+        },
+        {
+         "id": "num-5-bilangan-cacah-besar--operasi-hitung-campuran",
+         "nama": "Operasi hitung campuran",
+         "tujuan": "Menyelesaikan operasi hitung campuran sesuai urutan pengerjaan",
+         "konsep": [
+          "kerjakan dalam kurung dulu",
+          "kali dan bagi sebelum tambah dan kurang"
+         ],
+         "miskonsepsi": [
+          "selalu mengerjakan dari kiri ke kanan",
+          "mengabaikan tanda kurung"
+         ],
+         "mesin": [
+          "runner",
+          "urutkan"
+         ],
+         "konteks": [
+          "belanja beberapa barang",
+          "menghitung uang kas kelas"
+         ],
+         "tagAset": [
+          "uang",
+          "angka"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-5-kpk-dan-fpb",
+       "nama": "KPK dan FPB",
+       "domain": "Bilangan",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "id": "num-5-kpk-dan-fpb--kelipatan-persekutuan-terkecil",
+         "nama": "Kelipatan persekutuan terkecil",
+         "tujuan": "Menentukan KPK dan memakainya dalam masalah kejadian berulang",
+         "konsep": [
+          "KPK = kelipatan bersama yang terkecil",
+          "masalah 'bersamaan lagi' memakai KPK"
+         ],
+         "miskonsepsi": [
+          "tertukar KPK dan FPB",
+          "mengalikan kedua bilangan begitu saja"
+         ],
+         "mesin": [
+          "cerita",
+          "runner"
+         ],
+         "konteks": [
+          "jadwal ronda",
+          "lampu lalu lintas",
+          "jadwal les"
+         ],
+         "tagAset": [
+          "jam",
+          "angka"
+         ]
+        },
+        {
+         "id": "num-5-kpk-dan-fpb--faktor-persekutuan-terbesar",
+         "nama": "Faktor persekutuan terbesar",
+         "tujuan": "Menentukan FPB dan memakainya dalam masalah membagi sama rata",
+         "konsep": [
+          "FPB = faktor bersama yang terbesar",
+          "masalah 'dibagi sama banyak sebanyak-banyaknya' memakai FPB"
+         ],
+         "miskonsepsi": [
+          "memilih faktor bersama yang kecil",
+          "memakai KPK untuk membagi"
+         ],
+         "mesin": [
+          "cerita",
+          "runner"
+         ],
+         "konteks": [
+          "membagi buah ke parsel",
+          "membagi kelompok pramuka"
+         ],
+         "tagAset": [
+          "buah",
+          "anak-sekolah"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-5-pecahan",
+       "nama": "Pecahan",
+       "domain": "Bilangan",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "num-5-pecahan--penjumlahan-dan-pengurangan-pecahan",
+         "nama": "Penjumlahan dan pengurangan pecahan",
+         "tujuan": "Menjumlahkan dan mengurangkan pecahan berpenyebut berbeda",
+         "konsep": [
+          "samakan penyebut lebih dulu",
+          "pecahan campuran bisa diubah ke pecahan biasa"
+         ],
+         "miskonsepsi": [
+          "menjumlahkan pembilang dengan pembilang dan penyebut dengan penyebut (½ + ⅓ = 2/5)"
+         ],
+         "mesin": [
+          "runner",
+          "cerita"
+         ],
+         "konteks": [
+          "resep kue",
+          "air dalam botol",
+          "pita"
+         ],
+         "tagAset": [
+          "makanan",
+          "angka"
+         ]
+        },
+        {
+         "id": "num-5-pecahan--desimal-dan-persen",
+         "nama": "Desimal dan persen",
+         "tujuan": "Mengubah pecahan, desimal, dan persen satu sama lain",
+         "konsep": [
+          "persen berarti per seratus",
+          "½ = 0,5 = 50%"
+         ],
+         "miskonsepsi": [
+          "0,5 dianggap 5%",
+          "persen tidak dikaitkan dengan seratus"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir",
+          "runner"
+         ],
+         "konteks": [
+          "diskon di toko",
+          "nilai ulangan",
+          "baterai HP"
+         ],
+         "tagAset": [
+          "uang",
+          "angka"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-5-kecepatan-dan-skala",
+       "nama": "Kecepatan dan skala",
+       "domain": "Pengukuran",
+       "tema": "samudra",
+       "sub": [
+        {
+         "id": "num-5-kecepatan-dan-skala--jarak-waktu-dan-kecepatan",
+         "nama": "Jarak, waktu, dan kecepatan",
+         "tujuan": "Menghitung kecepatan, jarak, atau waktu tempuh",
+         "konsep": [
+          "kecepatan = jarak : waktu",
+          "satuan km/jam"
+         ],
+         "miskonsepsi": [
+          "mengalikan jarak dan waktu untuk kecepatan",
+          "satuan menit dan jam tidak disamakan"
+         ],
+         "mesin": [
+          "cerita",
+          "runner"
+         ],
+         "konteks": [
+          "naik angkot ke Bogor",
+          "bersepeda ke sekolah",
+          "kereta Bogor–Jakarta"
+         ],
+         "tagAset": [
+          "kendaraan",
+          "jalan"
+         ]
+        },
+        {
+         "id": "num-5-kecepatan-dan-skala--skala-pada-peta",
+         "nama": "Skala pada peta",
+         "tujuan": "Menghitung jarak sebenarnya dari peta dengan skala",
+         "konsep": [
+          "skala 1 : 100.000 berarti 1 cm mewakili 100.000 cm",
+          "jarak sebenarnya = jarak peta × penyebut skala"
+         ],
+         "miskonsepsi": [
+          "lupa mengubah cm ke km",
+          "membagi bukan mengalikan"
+         ],
+         "mesin": [
+          "cerita",
+          "runner"
+         ],
+         "konteks": [
+          "peta kecamatan",
+          "denah sekolah"
+         ],
+         "tagAset": [
+          "peta"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-5-bangun-datar",
+       "nama": "Bangun datar",
+       "domain": "Geometri",
+       "tema": "hutan",
+       "sub": [
+        {
+         "id": "num-5-bangun-datar--luas-segitiga-jajargenjang-trapesium",
+         "nama": "Luas segitiga, jajargenjang, trapesium",
+         "tujuan": "Menghitung luas segitiga, jajargenjang, dan trapesium",
+         "konsep": [
+          "segitiga: ½ × alas × tinggi",
+          "jajargenjang: alas × tinggi",
+          "tinggi tegak lurus alas"
+         ],
+         "miskonsepsi": [
+          "memakai sisi miring sebagai tinggi",
+          "lupa mengalikan ½ pada segitiga"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita",
+          "runner"
+         ],
+         "konteks": [
+          "layang-layang",
+          "atap rumah",
+          "petak kebun"
+         ],
+         "tagAset": [
+          "bangun-datar",
+          "kebun"
+         ]
+        },
+        {
+         "id": "num-5-bangun-datar--sudut",
+         "nama": "Sudut",
+         "tujuan": "Mengenal jenis sudut dan mengukurnya dengan busur",
+         "konsep": [
+          "sudut siku-siku 90°",
+          "lancip kurang dari 90°",
+          "tumpul lebih dari 90°"
+         ],
+         "miskonsepsi": [
+          "sudut dianggap besar karena kakinya panjang",
+          "membaca skala busur yang terbalik"
+         ],
+         "mesin": [
+          "sortir",
+          "jelajah",
+          "cocokkan"
+         ],
+         "konteks": [
+          "jarum jam",
+          "sudut ruangan",
+          "gunting"
+         ],
+         "tagAset": [
+          "jam",
+          "bangun-datar"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-5-volume",
+       "nama": "Volume",
+       "domain": "Pengukuran",
+       "tema": "samudra",
+       "sub": [
+        {
+         "id": "num-5-volume--volume-kubus-dan-balok",
+         "nama": "Volume kubus dan balok",
+         "tujuan": "Menghitung volume kubus dan balok dengan kubus satuan dan rumus",
+         "konsep": [
+          "volume = banyak kubus satuan yang mengisi",
+          "balok: p × l × t",
+          "satuan cm³ dan liter"
+         ],
+         "miskonsepsi": [
+          "menjumlahkan sisi, bukan mengalikan",
+          "tertukar volume dan luas permukaan"
+         ],
+         "mesin": [
+          "cerita",
+          "runner"
+         ],
+         "konteks": [
+          "akuarium",
+          "bak mandi",
+          "kardus mi"
+         ],
+         "tagAset": [
+          "bangun-ruang",
+          "air"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-5-pengolahan-data",
+       "nama": "Pengolahan data",
+       "domain": "Data",
+       "tema": "samudra",
+       "sub": [
+        {
+         "id": "num-5-pengolahan-data--diagram-garis-dan-modus",
+         "nama": "Diagram garis dan modus",
+         "tujuan": "Membaca diagram garis serta menentukan data terbanyak (modus)",
+         "konsep": [
+          "diagram garis menunjukkan perubahan dari waktu ke waktu",
+          "modus = data yang paling sering muncul"
+         ],
+         "miskonsepsi": [
+          "modus dianggap nilai terbesar",
+          "salah membaca titik pada garis"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "suhu harian Bogor",
+          "curah hujan",
+          "tinggi tanaman"
+         ],
+         "tagAset": [
+          "grafik",
+          "cuaca"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "6": {
+     "fase": "C",
+     "materi": [
+      {
+       "id": "num-6-bilangan-bulat",
+       "nama": "Bilangan bulat",
+       "domain": "Bilangan",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "id": "num-6-bilangan-bulat--bilangan-negatif-pada-garis",
+         "nama": "Bilangan negatif pada garis bilangan",
+         "tujuan": "Mengenal, membandingkan, dan mengurutkan bilangan bulat",
+         "konsep": [
+          "bilangan negatif ada di kiri nol",
+          "makin ke kiri makin kecil (−5 < −2)"
+         ],
+         "miskonsepsi": [
+          "−5 dianggap lebih besar dari −2",
+          "nol dianggap bukan bilangan bulat"
+         ],
+         "mesin": [
+          "urutkan",
+          "sortir",
+          "runner"
+         ],
+         "konteks": [
+          "suhu di puncak gunung",
+          "lantai basemen",
+          "kedalaman laut"
+         ],
+         "tagAset": [
+          "termometer",
+          "gunung"
+         ]
+        },
+        {
+         "id": "num-6-bilangan-bulat--penjumlahan-dan-pengurangan-bilangan",
+         "nama": "Penjumlahan dan pengurangan bilangan bulat",
+         "tujuan": "Menjumlahkan dan mengurangkan bilangan bulat",
+         "konsep": [
+          "mengurangi bilangan negatif sama dengan menambah",
+          "gerak maju–mundur pada garis bilangan"
+         ],
+         "miskonsepsi": [
+          "−3 − 4 = 1",
+          "mengabaikan tanda negatif"
+         ],
+         "mesin": [
+          "runner",
+          "cerita"
+         ],
+         "konteks": [
+          "naik turun lift",
+          "utang dan tabungan",
+          "suhu naik turun"
+         ],
+         "tagAset": [
+          "termometer",
+          "angka"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-6-operasi-pecahan-dan-desimal",
+       "nama": "Operasi pecahan dan desimal",
+       "domain": "Bilangan",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "num-6-operasi-pecahan-dan-desimal--perkalian-dan-pembagian-pecahan",
+         "nama": "Perkalian dan pembagian pecahan",
+         "tujuan": "Mengalikan dan membagi pecahan serta desimal",
+         "konsep": [
+          "a/b × c/d = (a×c)/(b×d)",
+          "membagi pecahan = mengalikan dengan kebalikannya"
+         ],
+         "miskonsepsi": [
+          "hasil kali pecahan dianggap selalu lebih besar",
+          "membalik pecahan yang pertama"
+         ],
+         "mesin": [
+          "runner",
+          "cerita"
+         ],
+         "konteks": [
+          "resep kue untuk setengah porsi",
+          "membagi tali"
+         ],
+         "tagAset": [
+          "makanan",
+          "angka"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-6-rasio-dan-perbandingan",
+       "nama": "Rasio dan perbandingan",
+       "domain": "Bilangan",
+       "tema": "emas",
+       "sub": [
+        {
+         "id": "num-6-rasio-dan-perbandingan--rasio",
+         "nama": "Rasio",
+         "tujuan": "Menentukan dan menyederhanakan rasio dua besaran",
+         "konsep": [
+          "rasio membandingkan dua besaran sejenis",
+          "rasio bisa disederhanakan seperti pecahan"
+         ],
+         "miskonsepsi": [
+          "urutan rasio dibalik",
+          "membandingkan besaran yang satuannya berbeda"
+         ],
+         "mesin": [
+          "cocokkan",
+          "cerita",
+          "runner"
+         ],
+         "konteks": [
+          "siswa laki-laki dan perempuan",
+          "campuran sirup dan air"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "minuman"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-6-lingkaran",
+       "nama": "Lingkaran",
+       "domain": "Geometri",
+       "tema": "hutan",
+       "sub": [
+        {
+         "id": "num-6-lingkaran--unsur-lingkaran",
+         "nama": "Unsur lingkaran",
+         "tujuan": "Mengenal titik pusat, jari-jari, diameter, dan busur lingkaran",
+         "konsep": [
+          "diameter = 2 × jari-jari",
+          "semua jari-jari sama panjang"
+         ],
+         "miskonsepsi": [
+          "tertukar jari-jari dan diameter",
+          "tali busur dianggap diameter"
+         ],
+         "mesin": [
+          "jelajah",
+          "cocokkan"
+         ],
+         "konteks": [
+          "roda sepeda",
+          "jam dinding",
+          "tampah"
+         ],
+         "tagAset": [
+          "bangun-datar",
+          "kendaraan"
+         ]
+        },
+        {
+         "id": "num-6-lingkaran--keliling-dan-luas-lingkaran",
+         "nama": "Keliling dan luas lingkaran",
+         "tujuan": "Menghitung keliling dan luas lingkaran",
+         "konsep": [
+          "keliling = π × d",
+          "luas = π × r × r",
+          "π ≈ 22/7 atau 3,14"
+         ],
+         "miskonsepsi": [
+          "memakai diameter pada rumus luas",
+          "tertukar rumus keliling dan luas"
+         ],
+         "mesin": [
+          "runner",
+          "cerita"
+         ],
+         "konteks": [
+          "kolam ikan bundar",
+          "taman bundar",
+          "tutup panci"
+         ],
+         "tagAset": [
+          "bangun-datar",
+          "kolam"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-6-bangun-ruang",
+       "nama": "Bangun ruang",
+       "domain": "Geometri",
+       "tema": "samudra",
+       "sub": [
+        {
+         "id": "num-6-bangun-ruang--jaring-jaring-bangun-ruang",
+         "nama": "Jaring-jaring bangun ruang",
+         "tujuan": "Mengenali jaring-jaring kubus, balok, tabung, dan limas",
+         "konsep": [
+          "jaring-jaring dapat dilipat menjadi bangun ruang",
+          "kubus punya 6 sisi persegi"
+         ],
+         "miskonsepsi": [
+          "semua susunan 6 persegi dianggap jaring kubus"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir"
+         ],
+         "konteks": [
+          "membuat kotak kado",
+          "kemasan makanan"
+         ],
+         "tagAset": [
+          "bangun-ruang"
+         ]
+        },
+        {
+         "id": "num-6-bangun-ruang--volume-bangun-ruang",
+         "nama": "Volume bangun ruang",
+         "tujuan": "Menghitung volume prisma dan tabung",
+         "konsep": [
+          "volume = luas alas × tinggi",
+          "1 liter = 1.000 cm³"
+         ],
+         "miskonsepsi": [
+          "memakai keliling alas, bukan luas",
+          "lupa mengubah satuan"
+         ],
+         "mesin": [
+          "cerita",
+          "runner"
+         ],
+         "konteks": [
+          "tangki air",
+          "kaleng susu",
+          "tandon"
+         ],
+         "tagAset": [
+          "bangun-ruang",
+          "air"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-6-koordinat",
+       "nama": "Koordinat",
+       "domain": "Geometri",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "id": "num-6-koordinat--letak-titik-pada-bidang",
+         "nama": "Letak titik pada bidang koordinat",
+         "tujuan": "Menentukan dan menuliskan letak titik pada bidang koordinat",
+         "konsep": [
+          "ditulis (x, y)",
+          "x mendatar dulu, lalu y tegak"
+         ],
+         "miskonsepsi": [
+          "tertukar urutan x dan y",
+          "mulai menghitung dari 1, bukan dari 0"
+         ],
+         "mesin": [
+          "jelajah",
+          "cocokkan"
+         ],
+         "konteks": [
+          "denah kampung",
+          "permainan harta karun",
+          "tempat duduk kelas"
+         ],
+         "tagAset": [
+          "peta"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "num-6-statistika-dan-peluang",
+       "nama": "Statistika dan peluang",
+       "domain": "Data",
+       "tema": "samudra",
+       "sub": [
+        {
+         "id": "num-6-statistika-dan-peluang--rata-rata-median-modus",
+         "nama": "Rata-rata, median, modus",
+         "tujuan": "Menentukan rata-rata, median, dan modus dari sekumpulan data",
+         "konsep": [
+          "rata-rata = jumlah data : banyak data",
+          "median = nilai tengah setelah diurutkan",
+          "modus = paling sering"
+         ],
+         "miskonsepsi": [
+          "mencari median tanpa mengurutkan",
+          "membagi dengan nilai terbesar"
+         ],
+         "mesin": [
+          "cerita",
+          "runner",
+          "sortir"
+         ],
+         "konteks": [
+          "nilai ulangan",
+          "tinggi badan teman",
+          "hasil panen"
+         ],
+         "tagAset": [
+          "grafik",
+          "anak-sekolah"
+         ]
+        },
+        {
+         "id": "num-6-statistika-dan-peluang--peluang-sederhana",
+         "nama": "Peluang sederhana",
+         "tujuan": "Menentukan kemungkinan suatu kejadian: pasti, mungkin, mustahil",
+         "konsep": [
+          "peluang dari 0 (mustahil) sampai 1 (pasti)",
+          "makin banyak bagian, makin besar peluangnya"
+         ],
+         "miskonsepsi": [
+          "kejadian langka dianggap mustahil",
+          "hasil sebelumnya memengaruhi lemparan berikutnya"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "lempar dadu",
+          "ambil kelereng dari kantong",
+          "putar roda undian"
+         ],
+         "tagAset": [
+          "dadu",
+          "kelereng"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "literasi": {
+   "nama": "Literasi",
+   "mapel": "Bahasa Indonesia",
+   "kelas": {
+    "1": {
+     "fase": "A",
+     "materi": [
+      {
+       "id": "lit-1-kosakata-bergambar",
+       "nama": "Kosakata bergambar",
+       "domain": "Kosakata",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "lit-1-kosakata-bergambar--nama-benda-di-sekitar",
+         "nama": "Nama benda di sekitar",
+         "tujuan": "Mengenali dan membaca nama benda di rumah dan sekolah",
+         "konsep": [
+          "satu gambar satu kata",
+          "huruf awal kata"
+         ],
+         "miskonsepsi": [
+          "tertukar huruf b dan d",
+          "membaca per huruf tanpa menggabungkan"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir"
+         ],
+         "konteks": [
+          "ruang kelas",
+          "dapur rumah"
+         ],
+         "tagAset": [
+          "benda-rumah",
+          "benda-sekolah"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "tersurat"
+         ]
+        },
+        {
+         "id": "lit-1-kosakata-bergambar--nama-hewan-dan-buah",
+         "nama": "Nama hewan dan buah",
+         "tujuan": "Membaca kata nama hewan dan buah yang dikenal anak",
+         "konsep": [
+          "suku kata (ka-pal, ku-da)",
+          "kata benda"
+         ],
+         "miskonsepsi": [
+          "menghilangkan suku kata tengah"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir"
+         ],
+         "konteks": [
+          "kebun buah",
+          "kebun binatang",
+          "pasar buah"
+         ],
+         "tagAset": [
+          "hewan",
+          "buah"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "tersurat"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "lit-1-membaca-kalimat-sederhana",
+       "nama": "Membaca kalimat sederhana",
+       "domain": "Teks informasi",
+       "tema": "samudra",
+       "sub": [
+        {
+         "id": "lit-1-membaca-kalimat-sederhana--kalimat-tentang-diriku",
+         "nama": "Kalimat tentang diriku",
+         "tujuan": "Membaca kalimat pendek tentang diri dan keluarga",
+         "konsep": [
+          "kalimat diawali huruf kapital dan diakhiri titik",
+          "kalimat terdiri atas beberapa kata"
+         ],
+         "miskonsepsi": [
+          "membaca kata per kata tanpa jeda yang tepat"
+         ],
+         "mesin": [
+          "bacaan",
+          "urutkan"
+         ],
+         "konteks": [
+          "keluarga",
+          "rumah"
+         ],
+         "tagAset": [
+          "keluarga",
+          "rumah"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "tersurat"
+         ]
+        },
+        {
+         "id": "lit-1-membaca-kalimat-sederhana--kegiatan-sehari-hari",
+         "nama": "Kegiatan sehari-hari",
+         "tujuan": "Membaca dan mengurutkan kalimat tentang kegiatan pagi hingga malam",
+         "konsep": [
+          "kata urutan: pertama, lalu, kemudian, akhirnya",
+          "pagi, siang, sore, malam"
+         ],
+         "miskonsepsi": [
+          "urutan kegiatan tertukar"
+         ],
+         "mesin": [
+          "urutkan",
+          "bacaan"
+         ],
+         "konteks": [
+          "bangun pagi",
+          "berangkat sekolah",
+          "mengaji sore"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "jam"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "tersurat"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "lit-1-cerita-bergambar",
+       "nama": "Cerita bergambar",
+       "domain": "Teks fiksi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "id": "lit-1-cerita-bergambar--tokoh-dalam-cerita",
+         "nama": "Tokoh dalam cerita",
+         "tujuan": "Menyebutkan tokoh dan kejadian dalam cerita bergambar pendek",
+         "konsep": [
+          "tokoh adalah pelaku cerita",
+          "gambar membantu memahami cerita"
+         ],
+         "miskonsepsi": [
+          "menganggap semua benda di gambar adalah tokoh"
+         ],
+         "mesin": [
+          "cerita",
+          "bacaan"
+         ],
+         "konteks": [
+          "kucing dan anak ayam",
+          "bermain di halaman"
+         ],
+         "tagAset": [
+          "hewan",
+          "anak-sekolah"
+         ],
+         "jenisTeks": "fiksi",
+         "kompetensi": [
+          "tersurat"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "lit-1-bahasa-santun",
+       "nama": "Bahasa santun",
+       "domain": "Kosakata",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "lit-1-bahasa-santun--kata-sapaan-dan-terima",
+         "nama": "Kata sapaan dan terima kasih",
+         "tujuan": "Memilih kata santun: tolong, maaf, terima kasih, permisi",
+         "konsep": [
+          "kata santun dipakai sesuai keadaan",
+          "sapaan untuk orang yang lebih tua"
+         ],
+         "miskonsepsi": [
+          "memakai 'maaf' saat seharusnya 'terima kasih'"
+         ],
+         "mesin": [
+          "cerita",
+          "cocokkan"
+         ],
+         "konteks": [
+          "di sekolah",
+          "di warung",
+          "bertamu"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "keluarga"
+         ],
+         "jenisTeks": "fiksi",
+         "kompetensi": [
+          "inferensial"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "2": {
+     "fase": "A",
+     "materi": [
+      {
+       "id": "lit-2-dongeng",
+       "nama": "Dongeng",
+       "domain": "Teks fiksi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "id": "lit-2-dongeng--isi-dongeng",
+         "nama": "Isi dongeng",
+         "tujuan": "Menjawab pertanyaan siapa, di mana, dan apa yang terjadi dalam dongeng",
+         "konsep": [
+          "tokoh, tempat, kejadian",
+          "awal, tengah, akhir cerita"
+         ],
+         "miskonsepsi": [
+          "menjawab dari pengalaman sendiri, bukan dari bacaan"
+         ],
+         "mesin": [
+          "bacaan",
+          "urutkan",
+          "cerita"
+         ],
+         "konteks": [
+          "dongeng hewan di hutan",
+          "dongeng anak petani"
+         ],
+         "tagAset": [
+          "hewan",
+          "hutan"
+         ],
+         "jenisTeks": "fiksi",
+         "kompetensi": [
+          "tersurat"
+         ]
+        },
+        {
+         "id": "lit-2-dongeng--sifat-tokoh",
+         "nama": "Sifat tokoh",
+         "tujuan": "Menentukan sifat baik dan buruk tokoh dari perbuatannya",
+         "konsep": [
+          "sifat dilihat dari perbuatan dan ucapan tokoh"
+         ],
+         "miskonsepsi": [
+          "menilai tokoh dari rupanya saja"
+         ],
+         "mesin": [
+          "sortir",
+          "bacaan"
+         ],
+         "konteks": [
+          "kancil",
+          "semut dan belalang"
+         ],
+         "tagAset": [
+          "hewan"
+         ],
+         "jenisTeks": "fiksi",
+         "kompetensi": [
+          "inferensial"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "lit-2-puisi-anak",
+       "nama": "Puisi anak",
+       "domain": "Teks fiksi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "id": "lit-2-puisi-anak--isi-puisi",
+         "nama": "Isi puisi",
+         "tujuan": "Memahami isi puisi pendek tentang alam dan keluarga",
+         "konsep": [
+          "puisi tersusun dari baris dan bait",
+          "kata berirama"
+         ],
+         "miskonsepsi": [
+          "membaca puisi seperti membaca daftar kata"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "hujan",
+          "ibu",
+          "pelangi"
+         ],
+         "tagAset": [
+          "cuaca",
+          "keluarga"
+         ],
+         "jenisTeks": "fiksi",
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "lit-2-teks-petunjuk",
+       "nama": "Teks petunjuk",
+       "domain": "Teks informasi",
+       "tema": "samudra",
+       "sub": [
+        {
+         "id": "lit-2-teks-petunjuk--langkah-melakukan-sesuatu",
+         "nama": "Langkah melakukan sesuatu",
+         "tujuan": "Membaca dan mengurutkan langkah dalam teks petunjuk",
+         "konsep": [
+          "langkah harus berurutan",
+          "kata kerja perintah: ambil, tuang, aduk"
+         ],
+         "miskonsepsi": [
+          "langkah dilompati",
+          "urutan dianggap tidak penting"
+         ],
+         "mesin": [
+          "urutkan",
+          "bacaan"
+         ],
+         "konteks": [
+          "mencuci tangan",
+          "menanam biji kacang",
+          "membuat teh manis"
+         ],
+         "tagAset": [
+          "benda-rumah",
+          "tumbuhan"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "tersurat"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "lit-2-kosakata",
+       "nama": "Kosakata",
+       "domain": "Kosakata",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "lit-2-kosakata--lawan-kata-dan-persamaan",
+         "nama": "Lawan kata dan persamaan kata",
+         "tujuan": "Menentukan lawan kata (antonim) dan persamaan kata (sinonim)",
+         "konsep": [
+          "antonim: besar–kecil",
+          "sinonim: pandai–pintar"
+         ],
+         "miskonsepsi": [
+          "tertukar antonim dan sinonim"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir",
+          "runner"
+         ],
+         "konteks": [
+          "benda di sekitar",
+          "sifat hewan"
+         ],
+         "tagAset": [
+          "hewan",
+          "benda-rumah"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "tersurat"
+         ]
+        },
+        {
+         "id": "lit-2-kosakata--kata-sifat-untuk-mendeskripsikan",
+         "nama": "Kata sifat untuk mendeskripsikan",
+         "tujuan": "Memakai kata sifat untuk menggambarkan benda, hewan, dan orang",
+         "konsep": [
+          "kata sifat menjelaskan keadaan: manis, halus, tinggi",
+          "deskripsi memakai pancaindra"
+         ],
+         "miskonsepsi": [
+          "memakai kata kerja sebagai kata sifat"
+         ],
+         "mesin": [
+          "sortir",
+          "bacaan"
+         ],
+         "konteks": [
+          "buah di pasar",
+          "hewan peliharaan"
+         ],
+         "tagAset": [
+          "buah",
+          "hewan"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "tersurat"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "3": {
+     "fase": "B",
+     "materi": [
+      {
+       "id": "lit-3-fabel",
+       "nama": "Fabel",
+       "domain": "Teks fiksi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "id": "lit-3-fabel--watak-tokoh-fabel",
+         "nama": "Watak tokoh fabel",
+         "tujuan": "Menentukan watak tokoh fabel beserta buktinya dalam teks",
+         "konsep": [
+          "watak: cerdik, sombong, rajin, licik",
+          "bukti watak ada pada perbuatan tokoh"
+         ],
+         "miskonsepsi": [
+          "menyebut watak tanpa bukti dari bacaan"
+         ],
+         "mesin": [
+          "bacaan",
+          "sortir"
+         ],
+         "konteks": [
+          "kancil dan buaya",
+          "kura-kura dan kelinci"
+         ],
+         "tagAset": [
+          "hewan",
+          "hutan"
+         ],
+         "jenisTeks": "fiksi",
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ]
+        },
+        {
+         "id": "lit-3-fabel--pesan-moral",
+         "nama": "Pesan moral",
+         "tujuan": "Menyimpulkan pesan moral dari fabel",
+         "konsep": [
+          "pesan moral adalah pelajaran dari cerita",
+          "pesan dikaitkan dengan akibat perbuatan tokoh"
+         ],
+         "miskonsepsi": [
+          "pesan disamakan dengan judul cerita"
+         ],
+         "mesin": [
+          "bacaan",
+          "cerita"
+         ],
+         "konteks": [
+          "semut dan merpati",
+          "gagak dan kendi"
+         ],
+         "tagAset": [
+          "hewan"
+         ],
+         "jenisTeks": "fiksi",
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "lit-3-teks-deskripsi",
+       "nama": "Teks deskripsi",
+       "domain": "Teks informasi",
+       "tema": "samudra",
+       "sub": [
+        {
+         "id": "lit-3-teks-deskripsi--ciri-benda-dan-hewan",
+         "nama": "Ciri benda dan hewan",
+         "tujuan": "Menemukan ciri-ciri benda atau hewan dari teks deskripsi",
+         "konsep": [
+          "deskripsi menggambarkan bentuk, warna, ukuran, kebiasaan",
+          "kata sifat"
+         ],
+         "miskonsepsi": [
+          "menganggap pendapat sebagai ciri"
+         ],
+         "mesin": [
+          "bacaan",
+          "sortir",
+          "cocokkan"
+         ],
+         "konteks": [
+          "kucing peliharaan",
+          "talas Bogor",
+          "kebun di belakang sekolah"
+         ],
+         "tagAset": [
+          "hewan",
+          "tumbuhan"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "tersurat"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "lit-3-teks-prosedur",
+       "nama": "Teks prosedur",
+       "domain": "Teks informasi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "lit-3-teks-prosedur--bahan-alat-dan-langkah",
+         "nama": "Bahan, alat, dan langkah",
+         "tujuan": "Membedakan bahan, alat, dan langkah dalam teks prosedur",
+         "konsep": [
+          "bahan habis dipakai, alat tidak",
+          "langkah memakai kata kerja perintah"
+         ],
+         "miskonsepsi": [
+          "tertukar bahan dan alat"
+         ],
+         "mesin": [
+          "sortir",
+          "urutkan",
+          "bacaan"
+         ],
+         "konteks": [
+          "membuat es buah",
+          "membuat layang-layang",
+          "menanam cabai"
+         ],
+         "tagAset": [
+          "makanan",
+          "tumbuhan"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "tersurat"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "lit-3-kalimat-dan-kata",
+       "nama": "Kalimat dan kata",
+       "domain": "Kosakata",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "id": "lit-3-kalimat-dan-kata--kata-kerja-dan-kata",
+         "nama": "Kata kerja dan kata benda",
+         "tujuan": "Membedakan kata benda, kata kerja, dan kata sifat dalam kalimat",
+         "konsep": [
+          "kata benda: nama benda",
+          "kata kerja: perbuatan",
+          "kata sifat: keadaan"
+         ],
+         "miskonsepsi": [
+          "kata 'lari' dalam 'pelari' tetap dianggap kata kerja"
+         ],
+         "mesin": [
+          "sortir",
+          "runner"
+         ],
+         "konteks": [
+          "kegiatan di sekolah",
+          "kegiatan di sawah"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "sawah"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "tersurat"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "4": {
+     "fase": "B",
+     "materi": [
+      {
+       "id": "lit-4-gagasan-pokok",
+       "nama": "Gagasan pokok",
+       "domain": "Teks informasi",
+       "tema": "samudra",
+       "sub": [
+        {
+         "id": "lit-4-gagasan-pokok--kalimat-utama-dan-gagasan",
+         "nama": "Kalimat utama dan gagasan pokok",
+         "tujuan": "Menemukan kalimat utama dan gagasan pokok paragraf",
+         "konsep": [
+          "setiap paragraf punya satu gagasan pokok",
+          "kalimat utama bisa di awal atau akhir paragraf",
+          "kalimat penjelas mendukung gagasan pokok"
+         ],
+         "miskonsepsi": [
+          "selalu menganggap kalimat pertama adalah kalimat utama",
+          "memilih rincian sebagai gagasan pokok"
+         ],
+         "mesin": [
+          "bacaan",
+          "sortir"
+         ],
+         "konteks": [
+          "manfaat pohon bambu",
+          "pasar tradisional",
+          "sungai Cianten"
+         ],
+         "tagAset": [
+          "tumbuhan",
+          "pasar",
+          "sungai"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "lit-4-cerita-fiksi",
+       "nama": "Cerita fiksi",
+       "domain": "Teks fiksi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "id": "lit-4-cerita-fiksi--tokoh-latar-dan-alur",
+         "nama": "Tokoh, latar, dan alur",
+         "tujuan": "Menentukan tokoh, latar tempat dan waktu, serta alur cerita",
+         "konsep": [
+          "latar tempat, waktu, suasana",
+          "alur: awal, konflik, penyelesaian"
+         ],
+         "miskonsepsi": [
+          "latar dianggap hanya tempat",
+          "konflik tidak dikenali"
+         ],
+         "mesin": [
+          "bacaan",
+          "urutkan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "liburan ke kebun teh",
+          "lomba tujuh belasan",
+          "kehilangan sepeda"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "kampung"
+         ],
+         "jenisTeks": "fiksi",
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ]
+        },
+        {
+         "id": "lit-4-cerita-fiksi--membandingkan-pengalaman-tokoh",
+         "nama": "Membandingkan pengalaman tokoh",
+         "tujuan": "Mengaitkan pengalaman tokoh dengan pengalaman diri",
+         "konsep": [
+          "perasaan tokoh dapat disimpulkan dari ucapan dan tindakan"
+         ],
+         "miskonsepsi": [
+          "menebak perasaan tanpa petunjuk teks"
+         ],
+         "mesin": [
+          "bacaan",
+          "cerita"
+         ],
+         "konteks": [
+          "teman baru di kelas",
+          "membantu ibu di pasar"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "keluarga"
+         ],
+         "jenisTeks": "fiksi",
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "lit-4-teks-informasi-bergambar",
+       "nama": "Teks informasi bergambar",
+       "domain": "Teks informasi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "lit-4-teks-informasi-bergambar--membaca-tabel-dan-gambar",
+         "nama": "Membaca tabel dan gambar",
+         "tujuan": "Menemukan informasi dari teks yang disertai tabel, gambar, atau denah",
+         "konsep": [
+          "judul tabel dan keterangan",
+          "gambar melengkapi teks"
+         ],
+         "miskonsepsi": [
+          "hanya membaca teks dan mengabaikan tabel"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "jadwal kegiatan pramuka",
+          "denah sekolah",
+          "menu kantin"
+         ],
+         "tagAset": [
+          "peta",
+          "anak-sekolah"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "tersurat"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "lit-4-kata-baku",
+       "nama": "Kata baku",
+       "domain": "Kosakata",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "id": "lit-4-kata-baku--kata-baku-dan-tidak",
+         "nama": "Kata baku dan tidak baku",
+         "tujuan": "Membedakan kata baku dan tidak baku",
+         "konsep": [
+          "kata baku sesuai KBBI: nasihat, apotek, sekolah",
+          "kata tidak baku: nasehat, apotik"
+         ],
+         "miskonsepsi": [
+          "menganggap kata yang sering didengar pasti baku"
+         ],
+         "mesin": [
+          "sortir",
+          "runner"
+         ],
+         "konteks": [
+          "papan pengumuman sekolah",
+          "surat undangan"
+         ],
+         "tagAset": [
+          "benda-sekolah"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "evaluasi"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "5": {
+     "fase": "C",
+     "materi": [
+      {
+       "id": "lit-5-teks-eksplanasi",
+       "nama": "Teks eksplanasi",
+       "domain": "Teks informasi",
+       "tema": "samudra",
+       "sub": [
+        {
+         "id": "lit-5-teks-eksplanasi--sebab-dan-akibat",
+         "nama": "Sebab dan akibat",
+         "tujuan": "Menemukan hubungan sebab–akibat dalam teks eksplanasi peristiwa alam",
+         "konsep": [
+          "kata penghubung: karena, sehingga, akibatnya",
+          "urutan proses kejadian"
+         ],
+         "miskonsepsi": [
+          "tertukar sebab dan akibat"
+         ],
+         "mesin": [
+          "bacaan",
+          "urutkan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "banjir di kota",
+          "longsor di lereng bukit",
+          "terjadinya hujan"
+         ],
+         "tagAset": [
+          "cuaca",
+          "sungai",
+          "gunung"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "lit-5-cerita-dan-unsur-intrinsik",
+       "nama": "Cerita dan unsur intrinsik",
+       "domain": "Teks fiksi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "id": "lit-5-cerita-dan-unsur-intrinsik--unsur-intrinsik-cerita",
+         "nama": "Unsur intrinsik cerita",
+         "tujuan": "Menentukan tema, tokoh, watak, latar, alur, dan amanat",
+         "konsep": [
+          "tema adalah gagasan dasar cerita",
+          "amanat adalah pesan pengarang"
+         ],
+         "miskonsepsi": [
+          "tertukar tema dan amanat"
+         ],
+         "mesin": [
+          "bacaan",
+          "sortir",
+          "cocokkan"
+         ],
+         "konteks": [
+          "persahabatan di kampung",
+          "anak penjual kue"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "kampung"
+         ],
+         "jenisTeks": "fiksi",
+         "kompetensi": [
+          "inferensial"
+         ]
+        },
+        {
+         "id": "lit-5-cerita-dan-unsur-intrinsik--sudut-pandang-dan-perasaan",
+         "nama": "Sudut pandang dan perasaan tokoh",
+         "tujuan": "Menyimpulkan perasaan dan alasan tindakan tokoh",
+         "konsep": [
+          "tindakan tokoh punya alasan",
+          "sudut pandang orang pertama memakai 'aku'"
+         ],
+         "miskonsepsi": [
+          "menyimpulkan tanpa bukti dari teks"
+         ],
+         "mesin": [
+          "bacaan",
+          "cerita"
+         ],
+         "konteks": [
+          "lomba cerdas cermat",
+          "pindah sekolah"
+         ],
+         "tagAset": [
+          "anak-sekolah"
+         ],
+         "jenisTeks": "fiksi",
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "lit-5-fakta-dan-opini",
+       "nama": "Fakta dan opini",
+       "domain": "Teks informasi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "lit-5-fakta-dan-opini--membedakan-fakta-dan-opini",
+         "nama": "Membedakan fakta dan opini",
+         "tujuan": "Membedakan kalimat fakta dan opini dalam teks",
+         "konsep": [
+          "fakta dapat dibuktikan",
+          "opini adalah pendapat: menurut saya, sebaiknya, paling enak"
+         ],
+         "miskonsepsi": [
+          "kalimat berisi angka dianggap selalu fakta",
+          "pendapat banyak orang dianggap fakta"
+         ],
+         "mesin": [
+          "sortir",
+          "bacaan",
+          "runner"
+         ],
+         "konteks": [
+          "berita panen raya",
+          "ulasan jajanan pasar"
+         ],
+         "tagAset": [
+          "pasar",
+          "sawah"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "evaluasi"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "lit-5-iklan-dan-poster",
+       "nama": "Iklan dan poster",
+       "domain": "Teks informasi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "id": "lit-5-iklan-dan-poster--tujuan-iklan-dan-poster",
+         "nama": "Tujuan iklan dan poster",
+         "tujuan": "Menentukan tujuan, sasaran, dan pesan iklan atau poster",
+         "konsep": [
+          "iklan membujuk",
+          "poster mengajak",
+          "kalimat persuasif"
+         ],
+         "miskonsepsi": [
+          "menganggap semua isi iklan pasti benar"
+         ],
+         "mesin": [
+          "bacaan",
+          "sortir"
+         ],
+         "konteks": [
+          "poster hemat air",
+          "iklan jajanan sehat",
+          "ajakan membuang sampah"
+         ],
+         "tagAset": [
+          "air",
+          "makanan"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "6": {
+     "fase": "C",
+     "materi": [
+      {
+       "id": "lit-6-informasi-tersurat-dan-tersirat",
+       "nama": "Informasi tersurat dan tersirat",
+       "domain": "Teks informasi",
+       "tema": "samudra",
+       "sub": [
+        {
+         "id": "lit-6-informasi-tersurat-dan-tersirat--menemukan-informasi-tersurat",
+         "nama": "Menemukan informasi tersurat",
+         "tujuan": "Menemukan informasi yang tertulis langsung dalam teks informasi",
+         "konsep": [
+          "informasi tersurat tertulis jelas",
+          "mencari kata kunci dari pertanyaan"
+         ],
+         "miskonsepsi": [
+          "menjawab dari pengetahuan sendiri"
+         ],
+         "mesin": [
+          "bacaan"
+         ],
+         "konteks": [
+          "sejarah Kebun Raya Bogor",
+          "manfaat sungai",
+          "sampah plastik"
+         ],
+         "tagAset": [
+          "tumbuhan",
+          "sungai"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "tersurat"
+         ]
+        },
+        {
+         "id": "lit-6-informasi-tersurat-dan-tersirat--menyimpulkan-informasi-tersirat",
+         "nama": "Menyimpulkan informasi tersirat",
+         "tujuan": "Menyimpulkan maksud yang tidak ditulis langsung",
+         "konsep": [
+          "kesimpulan didukung beberapa petunjuk teks"
+         ],
+         "miskonsepsi": [
+          "kesimpulan terlalu jauh dari teks"
+         ],
+         "mesin": [
+          "bacaan",
+          "cerita"
+         ],
+         "konteks": [
+          "kebiasaan petani menanam padi",
+          "perubahan kampung"
+         ],
+         "tagAset": [
+          "sawah",
+          "kampung"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "inferensial"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "lit-6-teks-eksposisi",
+       "nama": "Teks eksposisi",
+       "domain": "Teks informasi",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "lit-6-teks-eksposisi--pendapat-dan-argumen",
+         "nama": "Pendapat dan argumen",
+         "tujuan": "Menemukan pendapat penulis dan alasan yang mendukungnya",
+         "konsep": [
+          "eksposisi: tesis, argumen, penegasan",
+          "argumen kuat didukung data"
+         ],
+         "miskonsepsi": [
+          "alasan tanpa bukti dianggap argumen kuat"
+         ],
+         "mesin": [
+          "bacaan",
+          "sortir"
+         ],
+         "konteks": [
+          "pentingnya sarapan",
+          "bahaya bermain gawai terlalu lama",
+          "menanam pohon"
+         ],
+         "tagAset": [
+          "makanan",
+          "tumbuhan"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "inferensial",
+          "evaluasi"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "lit-6-membandingkan-teks",
+       "nama": "Membandingkan teks",
+       "domain": "Teks informasi",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "id": "lit-6-membandingkan-teks--persamaan-dan-perbedaan-dua",
+         "nama": "Persamaan dan perbedaan dua teks",
+         "tujuan": "Membandingkan isi dua teks dengan topik yang sama",
+         "konsep": [
+          "mencari informasi yang sama dan berbeda",
+          "menilai teks mana yang lebih lengkap"
+         ],
+         "miskonsepsi": [
+          "hanya membandingkan judul"
+         ],
+         "mesin": [
+          "bacaan",
+          "sortir"
+         ],
+         "konteks": [
+          "dua berita tentang banjir",
+          "dua resep makanan"
+         ],
+         "tagAset": [
+          "cuaca",
+          "makanan"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "evaluasi"
+         ]
+        },
+        {
+         "id": "lit-6-membandingkan-teks--membaca-grafik-dan-infografik",
+         "nama": "Membaca grafik dan infografik",
+         "tujuan": "Menafsirkan informasi dari grafik atau infografik",
+         "konsep": [
+          "judul, keterangan, satuan",
+          "kecenderungan naik atau turun"
+         ],
+         "miskonsepsi": [
+          "mengabaikan satuan atau keterangan"
+         ],
+         "mesin": [
+          "bacaan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "infografik cuci tangan",
+          "grafik curah hujan Bogor"
+         ],
+         "tagAset": [
+          "grafik",
+          "cuaca"
+         ],
+         "jenisTeks": "informasi",
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "lit-6-cerita-fiksi",
+       "nama": "Cerita fiksi",
+       "domain": "Teks fiksi",
+       "tema": "hutan",
+       "sub": [
+        {
+         "id": "lit-6-cerita-fiksi--menilai-tindakan-tokoh",
+         "nama": "Menilai tindakan tokoh",
+         "tujuan": "Menilai tindakan tokoh dan memberi alasan berdasarkan teks",
+         "konsep": [
+          "penilaian disertai alasan dari teks",
+          "nilai kehidupan: jujur, tanggung jawab, peduli"
+         ],
+         "miskonsepsi": [
+          "menilai tanpa alasan dari cerita"
+         ],
+         "mesin": [
+          "bacaan",
+          "cerita"
+         ],
+         "konteks": [
+          "menemukan dompet di jalan",
+          "ketua kelas yang adil"
+         ],
+         "tagAset": [
+          "anak-sekolah"
+         ],
+         "jenisTeks": "fiksi",
+         "kompetensi": [
+          "evaluasi"
+         ]
+        },
+        {
+         "id": "lit-6-cerita-fiksi--cerita-rakyat-nusantara",
+         "nama": "Cerita rakyat Nusantara",
+         "tujuan": "Memahami isi dan pesan cerita rakyat",
+         "konsep": [
+          "cerita rakyat diwariskan turun-temurun",
+          "asal-usul suatu tempat"
+         ],
+         "miskonsepsi": [
+          "menganggap cerita rakyat sebagai fakta sejarah"
+         ],
+         "mesin": [
+          "bacaan",
+          "urutkan"
+         ],
+         "konteks": [
+          "Sangkuriang",
+          "Malin Kundang",
+          "Lutung Kasarung"
+         ],
+         "tagAset": [
+          "kampung",
+          "gunung"
+         ],
+         "jenisTeks": "fiksi",
+         "kompetensi": [
+          "tersurat",
+          "inferensial"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  "ipa": {
+   "nama": "IPA",
+   "mapel": "IPAS",
+   "kelas": {
+    "3": {
+     "fase": "B",
+     "materi": [
+      {
+       "id": "ipa-3-ciri-makhluk-hidup",
+       "nama": "Ciri makhluk hidup",
+       "domain": "Makhluk hidup",
+       "tema": "hutan",
+       "sub": [
+        {
+         "id": "ipa-3-ciri-makhluk-hidup--makhluk-hidup-dan-benda",
+         "nama": "Makhluk hidup dan benda tak hidup",
+         "tujuan": "Membedakan makhluk hidup dan benda tak hidup berdasarkan cirinya",
+         "konsep": [
+          "makhluk hidup bernapas, makan, tumbuh, bergerak, berkembang biak, peka rangsang",
+          "benda tak hidup tidak menunjukkan ciri itu"
+         ],
+         "miskonsepsi": [
+          "benda yang bergerak (mobil, angin) dianggap hidup",
+          "tumbuhan dianggap tidak hidup karena tidak berpindah"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "halaman sekolah",
+          "kebun",
+          "sawah"
+         ],
+         "tagAset": [
+          "hewan",
+          "tumbuhan",
+          "benda-sekolah"
+         ]
+        },
+        {
+         "id": "ipa-3-ciri-makhluk-hidup--kebutuhan-makhluk-hidup",
+         "nama": "Kebutuhan makhluk hidup",
+         "tujuan": "Menjelaskan kebutuhan makhluk hidup: udara, air, makanan, tempat tinggal",
+         "konsep": [
+          "semua makhluk hidup butuh air dan udara",
+          "tumbuhan butuh cahaya matahari"
+         ],
+         "miskonsepsi": [
+          "tumbuhan dianggap mendapat makanan dari tanah"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir"
+         ],
+         "konteks": [
+          "memelihara ikan",
+          "menanam kangkung"
+         ],
+         "tagAset": [
+          "hewan",
+          "tumbuhan",
+          "air"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ipa-3-bagian-tubuh-tumbuhan",
+       "nama": "Bagian tubuh tumbuhan",
+       "domain": "Makhluk hidup",
+       "tema": "hutan",
+       "sub": [
+        {
+         "id": "ipa-3-bagian-tubuh-tumbuhan--akar-batang-daun-bunga",
+         "nama": "Akar, batang, daun, bunga",
+         "tujuan": "Mengenali bagian tubuh tumbuhan dan fungsinya",
+         "konsep": [
+          "akar menyerap air dan menguatkan",
+          "batang mengangkut air",
+          "daun tempat membuat makanan",
+          "bunga untuk berkembang biak"
+         ],
+         "miskonsepsi": [
+          "semua bagian di bawah tanah dianggap akar (umbi singkong itu akar, kentang itu batang)"
+         ],
+         "mesin": [
+          "jelajah",
+          "cocokkan",
+          "sortir"
+         ],
+         "konteks": [
+          "kebun sekolah",
+          "sawah padi",
+          "pohon mangga"
+         ],
+         "tagAset": [
+          "tumbuhan",
+          "kebun"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ipa-3-wujud-benda",
+       "nama": "Wujud benda",
+       "domain": "Materi dan perubahannya",
+       "tema": "samudra",
+       "sub": [
+        {
+         "id": "ipa-3-wujud-benda--padat-cair-gas",
+         "nama": "Padat, cair, gas",
+         "tujuan": "Mengelompokkan benda menurut wujudnya dan menyebutkan sifatnya",
+         "konsep": [
+          "padat: bentuk tetap",
+          "cair: bentuk mengikuti wadah",
+          "gas: mengisi seluruh ruang"
+         ],
+         "miskonsepsi": [
+          "udara dianggap bukan benda",
+          "pasir dianggap cair karena bisa dituang"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan"
+         ],
+         "konteks": [
+          "dapur rumah",
+          "warung es",
+          "balon ulang tahun"
+         ],
+         "tagAset": [
+          "benda-rumah",
+          "air"
+         ]
+        },
+        {
+         "id": "ipa-3-wujud-benda--mencair-dan-membeku",
+         "nama": "Mencair dan membeku",
+         "tujuan": "Menjelaskan perubahan wujud mencair dan membeku karena suhu",
+         "konsep": [
+          "dipanaskan: mencair",
+          "didinginkan: membeku",
+          "benda tetap sama, hanya wujudnya berubah"
+         ],
+         "miskonsepsi": [
+          "es mencair dianggap hilang",
+          "lilin meleleh dianggap berubah jadi benda lain"
+         ],
+         "mesin": [
+          "urutkan",
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "es lilin",
+          "lilin menyala",
+          "mentega di wajan"
+         ],
+         "tagAset": [
+          "makanan",
+          "benda-rumah"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ipa-3-cuaca",
+       "nama": "Cuaca",
+       "domain": "Bumi dan antariksa",
+       "tema": "samudra",
+       "sub": [
+        {
+         "id": "ipa-3-cuaca--jenis-cuaca-dan-dampaknya",
+         "nama": "Jenis cuaca dan dampaknya",
+         "tujuan": "Mengenali jenis cuaca dan menyesuaikan kegiatan dengannya",
+         "konsep": [
+          "cerah, berawan, hujan, berangin",
+          "pakaian dan kegiatan menyesuaikan cuaca"
+         ],
+         "miskonsepsi": [
+          "awan gelap dianggap pasti hujan saat itu juga"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "cerita"
+         ],
+         "konteks": [
+          "Bogor kota hujan",
+          "menjemur padi",
+          "berangkat sekolah"
+         ],
+         "tagAset": [
+          "cuaca",
+          "sawah"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "4": {
+     "fase": "B",
+     "materi": [
+      {
+       "id": "ipa-4-tumbuhan-sumber-kehidupan",
+       "nama": "Tumbuhan sumber kehidupan",
+       "domain": "Makhluk hidup",
+       "tema": "hutan",
+       "sub": [
+        {
+         "id": "ipa-4-tumbuhan-sumber-kehidupan--fotosintesis",
+         "nama": "Fotosintesis",
+         "tujuan": "Menjelaskan bahan dan hasil fotosintesis",
+         "konsep": [
+          "bahan: air, karbon dioksida, cahaya matahari",
+          "hasil: gula (makanan) dan oksigen",
+          "terjadi di daun yang berklorofil"
+         ],
+         "miskonsepsi": [
+          "tumbuhan dianggap makan dari tanah",
+          "oksigen dianggap bahan fotosintesis"
+         ],
+         "mesin": [
+          "cocokkan",
+          "urutkan",
+          "sortir"
+         ],
+         "konteks": [
+          "kebun sekolah",
+          "pohon di halaman"
+         ],
+         "tagAset": [
+          "tumbuhan",
+          "matahari"
+         ]
+        },
+        {
+         "id": "ipa-4-tumbuhan-sumber-kehidupan--penyerbukan-dan-perkembangbiakan",
+         "nama": "Penyerbukan dan perkembangbiakan",
+         "tujuan": "Menjelaskan bagian bunga, penyerbukan, dan cara tumbuhan berkembang biak",
+         "konsep": [
+          "benang sari dan putik",
+          "penyerbukan oleh serangga, angin, manusia",
+          "biji, stek, tunas, umbi"
+         ],
+         "miskonsepsi": [
+          "semua tumbuhan berkembang biak dengan biji"
+         ],
+         "mesin": [
+          "jelajah",
+          "urutkan",
+          "sortir"
+         ],
+         "konteks": [
+          "kebun bunga",
+          "kebun singkong",
+          "pohon pisang"
+         ],
+         "tagAset": [
+          "tumbuhan",
+          "serangga"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ipa-4-wujud-zat-dan-perubahannya",
+       "nama": "Wujud zat dan perubahannya",
+       "domain": "Materi dan perubahannya",
+       "tema": "samudra",
+       "sub": [
+        {
+         "id": "ipa-4-wujud-zat-dan-perubahannya--perubahan-wujud-zat",
+         "nama": "Perubahan wujud zat",
+         "tujuan": "Menjelaskan menguap, mengembun, menyublim, dan mengkristal",
+         "konsep": [
+          "menguap: cair → gas",
+          "mengembun: gas → cair",
+          "menyublim: padat → gas",
+          "mengkristal: gas → padat"
+         ],
+         "miskonsepsi": [
+          "mengembun dianggap air yang merembes dari gelas",
+          "tertukar menyublim dan mengkristal"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir",
+          "urutkan"
+         ],
+         "konteks": [
+          "gelas es berembun",
+          "jemuran kering",
+          "kapur barus di lemari"
+         ],
+         "tagAset": [
+          "air",
+          "benda-rumah"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ipa-4-gaya-di-sekitar-kita",
+       "nama": "Gaya di sekitar kita",
+       "domain": "Energi dan gaya",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "ipa-4-gaya-di-sekitar-kita--macam-macam-gaya",
+         "nama": "Macam-macam gaya",
+         "tujuan": "Mengenali gaya otot, gesek, gravitasi, dan magnet",
+         "konsep": [
+          "gaya adalah tarikan atau dorongan",
+          "gaya gesek memperlambat gerak",
+          "gravitasi menarik ke bawah"
+         ],
+         "miskonsepsi": [
+          "benda diam dianggap tidak ada gaya",
+          "gaya hanya dari makhluk hidup"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "cerita"
+         ],
+         "konteks": [
+          "main kelereng",
+          "naik sepeda",
+          "menimba air sumur"
+         ],
+         "tagAset": [
+          "kendaraan",
+          "anak-sekolah"
+         ]
+        },
+        {
+         "id": "ipa-4-gaya-di-sekitar-kita--pengaruh-gaya",
+         "nama": "Pengaruh gaya",
+         "tujuan": "Menjelaskan pengaruh gaya terhadap gerak dan bentuk benda",
+         "konsep": [
+          "gaya bisa menggerakkan, menghentikan, mengubah arah, dan mengubah bentuk"
+         ],
+         "miskonsepsi": [
+          "benda berat selalu jatuh lebih cepat"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "main bola",
+          "membentuk tanah liat",
+          "menendang kaleng"
+         ],
+         "tagAset": [
+          "anak-sekolah",
+          "benda-rumah"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ipa-4-energi-dan-perubahannya",
+       "nama": "Energi dan perubahannya",
+       "domain": "Energi dan gaya",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "ipa-4-energi-dan-perubahannya--sumber-dan-bentuk-energi",
+         "nama": "Sumber dan bentuk energi",
+         "tujuan": "Mengenali sumber energi dan perubahan bentuk energi",
+         "konsep": [
+          "energi listrik, panas, cahaya, gerak, bunyi",
+          "energi berubah bentuk, tidak hilang"
+         ],
+         "miskonsepsi": [
+          "energi dianggap habis setelah dipakai"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir"
+         ],
+         "konteks": [
+          "setrika",
+          "kipas angin",
+          "kincir air di sawah"
+         ],
+         "tagAset": [
+          "benda-rumah",
+          "listrik"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ipa-4-siklus-hidup-hewan",
+       "nama": "Siklus hidup hewan",
+       "domain": "Makhluk hidup",
+       "tema": "hutan",
+       "sub": [
+        {
+         "id": "ipa-4-siklus-hidup-hewan--metamorfosis",
+         "nama": "Metamorfosis",
+         "tujuan": "Membedakan metamorfosis sempurna dan tidak sempurna",
+         "konsep": [
+          "sempurna: telur–larva–pupa–dewasa (kupu-kupu)",
+          "tidak sempurna: telur–nimfa–dewasa (belalang)"
+         ],
+         "miskonsepsi": [
+          "ulat dan kupu-kupu dianggap hewan berbeda",
+          "katak dianggap tidak bermetamorfosis"
+         ],
+         "mesin": [
+          "urutkan",
+          "sortir"
+         ],
+         "konteks": [
+          "kebun sayur",
+          "sawah",
+          "kolam ikan"
+         ],
+         "tagAset": [
+          "serangga",
+          "hewan"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "5": {
+     "fase": "C",
+     "materi": [
+      {
+       "id": "ipa-5-cahaya-dan-penglihatan",
+       "nama": "Cahaya dan penglihatan",
+       "domain": "Energi dan gaya",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "id": "ipa-5-cahaya-dan-penglihatan--sifat-cahaya",
+         "nama": "Sifat cahaya",
+         "tujuan": "Menjelaskan sifat cahaya: merambat lurus, dipantulkan, dibiaskan, menembus benda bening",
+         "konsep": [
+          "merambat lurus",
+          "dipantulkan cermin",
+          "dibiaskan saat masuk air",
+          "bayangan terbentuk dari benda tak tembus cahaya"
+         ],
+         "miskonsepsi": [
+          "mata dianggap memancarkan cahaya untuk melihat"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan",
+          "cerita"
+         ],
+         "konteks": [
+          "sedotan dalam gelas air",
+          "bayangan di lapangan",
+          "cermin di kamar"
+         ],
+         "tagAset": [
+          "cahaya",
+          "benda-rumah"
+         ]
+        },
+        {
+         "id": "ipa-5-cahaya-dan-penglihatan--mata-dan-cara-melihat",
+         "nama": "Mata dan cara melihat",
+         "tujuan": "Mengenali bagian mata dan proses melihat",
+         "konsep": [
+          "cahaya dipantulkan benda masuk ke mata",
+          "kornea, pupil, lensa, retina, saraf"
+         ],
+         "miskonsepsi": [
+          "kita bisa melihat dalam gelap total"
+         ],
+         "mesin": [
+          "jelajah",
+          "urutkan"
+         ],
+         "konteks": [
+          "membaca di bawah lampu",
+          "menonton TV"
+         ],
+         "tagAset": [
+          "organ-indra"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ipa-5-bunyi-dan-pendengaran",
+       "nama": "Bunyi dan pendengaran",
+       "domain": "Energi dan gaya",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "id": "ipa-5-bunyi-dan-pendengaran--bunyi-merambat",
+         "nama": "Bunyi merambat",
+         "tujuan": "Menjelaskan bunyi berasal dari getaran dan merambat melalui zat",
+         "konsep": [
+          "bunyi = getaran",
+          "merambat lewat padat, cair, gas",
+          "tidak merambat di ruang hampa"
+         ],
+         "miskonsepsi": [
+          "bunyi dianggap bisa merambat di luar angkasa"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "telepon kaleng",
+          "suara kentongan ronda",
+          "suara angklung"
+         ],
+         "tagAset": [
+          "alat-musik",
+          "benda-rumah"
+         ]
+        },
+        {
+         "id": "ipa-5-bunyi-dan-pendengaran--telinga-dan-cara-mendengar",
+         "nama": "Telinga dan cara mendengar",
+         "tujuan": "Mengenali bagian telinga dan proses mendengar",
+         "konsep": [
+          "daun telinga, gendang telinga, tulang pendengaran, rumah siput, saraf"
+         ],
+         "miskonsepsi": [
+          "bunyi dianggap langsung ke otak tanpa getaran"
+         ],
+         "mesin": [
+          "jelajah",
+          "urutkan"
+         ],
+         "konteks": [
+          "mendengar azan",
+          "musik di radio"
+         ],
+         "tagAset": [
+          "organ-indra"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ipa-5-ekosistem",
+       "nama": "Ekosistem",
+       "domain": "Makhluk hidup",
+       "tema": "hutan",
+       "sub": [
+        {
+         "id": "ipa-5-ekosistem--rantai-dan-jaring-makanan",
+         "nama": "Rantai dan jaring makanan",
+         "tujuan": "Menyusun rantai makanan dan menentukan peran makhluk hidup",
+         "konsep": [
+          "produsen, konsumen, pengurai",
+          "panah menunjukkan arah aliran energi (dimakan oleh)"
+         ],
+         "miskonsepsi": [
+          "panah dianggap menunjuk 'memakan'",
+          "pengurai dilupakan"
+         ],
+         "mesin": [
+          "urutkan",
+          "sortir",
+          "cocokkan"
+         ],
+         "konteks": [
+          "sawah",
+          "kolam",
+          "hutan di Gunung Salak"
+         ],
+         "tagAset": [
+          "hewan",
+          "tumbuhan",
+          "sawah"
+         ]
+        },
+        {
+         "id": "ipa-5-ekosistem--menjaga-keseimbangan-ekosistem",
+         "nama": "Menjaga keseimbangan ekosistem",
+         "tujuan": "Menjelaskan akibat gangguan ekosistem dan cara menjaganya",
+         "konsep": [
+          "satu makhluk hilang memengaruhi yang lain",
+          "contoh: ular diburu, tikus sawah bertambah"
+         ],
+         "miskonsepsi": [
+          "hewan pemangsa dianggap selalu merugikan"
+         ],
+         "mesin": [
+          "cerita",
+          "sortir"
+         ],
+         "konteks": [
+          "hama tikus di sawah",
+          "sungai tercemar"
+         ],
+         "tagAset": [
+          "sawah",
+          "sungai",
+          "hewan"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ipa-5-magnet-dan-listrik",
+       "nama": "Magnet dan listrik",
+       "domain": "Energi dan gaya",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "ipa-5-magnet-dan-listrik--sifat-magnet",
+         "nama": "Sifat magnet",
+         "tujuan": "Menjelaskan sifat magnet dan benda magnetis",
+         "konsep": [
+          "kutub sejenis tolak-menolak, berbeda tarik-menarik",
+          "besi dan baja ditarik magnet"
+         ],
+         "miskonsepsi": [
+          "semua logam dianggap ditarik magnet (aluminium dan tembaga tidak)"
+         ],
+         "mesin": [
+          "sortir",
+          "cocokkan"
+         ],
+         "konteks": [
+          "tempelan kulkas",
+          "kompas pramuka"
+         ],
+         "tagAset": [
+          "magnet",
+          "benda-rumah"
+         ]
+        },
+        {
+         "id": "ipa-5-magnet-dan-listrik--rangkaian-listrik",
+         "nama": "Rangkaian listrik",
+         "tujuan": "Membedakan rangkaian seri dan paralel serta konduktor dan isolator",
+         "konsep": [
+          "listrik mengalir di rangkaian tertutup",
+          "seri: satu jalur",
+          "paralel: bercabang",
+          "konduktor menghantarkan listrik"
+         ],
+         "miskonsepsi": [
+          "lampu bisa menyala dengan satu kabel",
+          "air murni dianggap penghantar yang baik"
+         ],
+         "mesin": [
+          "sortir",
+          "jelajah",
+          "cerita"
+         ],
+         "konteks": [
+          "lampu rumah",
+          "senter",
+          "lampu hias tujuh belasan"
+         ],
+         "tagAset": [
+          "listrik",
+          "benda-rumah"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ipa-5-siklus-air",
+       "nama": "Siklus air",
+       "domain": "Bumi dan antariksa",
+       "tema": "samudra",
+       "sub": [
+        {
+         "id": "ipa-5-siklus-air--tahapan-siklus-air",
+         "nama": "Tahapan siklus air",
+         "tujuan": "Mengurutkan tahapan siklus air dan menjelaskan manfaatnya",
+         "konsep": [
+          "penguapan, pengembunan, presipitasi (hujan), aliran",
+          "matahari menggerakkan siklus air"
+         ],
+         "miskonsepsi": [
+          "awan dianggap terbuat dari asap",
+          "air hujan dianggap air baru"
+         ],
+         "mesin": [
+          "urutkan",
+          "jelajah",
+          "cocokkan"
+         ],
+         "konteks": [
+          "hujan di Bogor",
+          "sungai Cianten",
+          "sawah terasering"
+         ],
+         "tagAset": [
+          "cuaca",
+          "sungai",
+          "air"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "6": {
+     "fase": "C",
+     "materi": [
+      {
+       "id": "ipa-6-sistem-pencernaan-dan-gizi",
+       "nama": "Sistem pencernaan dan gizi",
+       "domain": "Tubuh manusia",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "ipa-6-sistem-pencernaan-dan-gizi--organ-pencernaan",
+         "nama": "Organ pencernaan",
+         "tujuan": "Mengenali organ pencernaan, urutannya, dan fungsinya",
+         "konsep": [
+          "mulut, kerongkongan, lambung, usus halus, usus besar, anus",
+          "hati dan pankreas membantu pencernaan"
+         ],
+         "miskonsepsi": [
+          "makanan dianggap langsung masuk ke perut tanpa dicerna di mulut",
+          "tertukar usus halus dan usus besar"
+         ],
+         "mesin": [
+          "jelajah",
+          "urutkan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "makan siang di sekolah",
+          "sarapan nasi uduk"
+         ],
+         "tagAset": [
+          "organ-pencernaan",
+          "makanan"
+         ]
+        },
+        {
+         "id": "ipa-6-sistem-pencernaan-dan-gizi--gizi-seimbang",
+         "nama": "Gizi seimbang",
+         "tujuan": "Mengelompokkan makanan menurut zat gizinya dan menyusun menu seimbang",
+         "konsep": [
+          "karbohidrat, protein, lemak, vitamin, mineral",
+          "Isi Piringku"
+         ],
+         "miskonsepsi": [
+          "semua makanan enak dianggap bergizi",
+          "tidak sarapan dianggap tidak berpengaruh"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "kantin sekolah",
+          "jajanan pasar",
+          "bekal makan"
+         ],
+         "tagAset": [
+          "makanan",
+          "sayur",
+          "buah"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ipa-6-sistem-pernapasan",
+       "nama": "Sistem pernapasan",
+       "domain": "Tubuh manusia",
+       "tema": "hutan",
+       "sub": [
+        {
+         "id": "ipa-6-sistem-pernapasan--organ-pernapasan",
+         "nama": "Organ pernapasan",
+         "tujuan": "Mengenali organ pernapasan, urutan jalannya udara, dan fungsinya",
+         "konsep": [
+          "hidung, laring, trakea, bronkus, bronkiolus, alveolus",
+          "pertukaran oksigen dan karbon dioksida di alveolus"
+         ],
+         "miskonsepsi": [
+          "kita dianggap menghirup oksigen murni",
+          "paru-paru dianggap mengembang sendiri tanpa otot"
+         ],
+         "mesin": [
+          "jelajah",
+          "urutkan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "bernapas saat olahraga",
+          "udara pagi di desa"
+         ],
+         "tagAset": [
+          "organ-pernapasan"
+         ]
+        },
+        {
+         "id": "ipa-6-sistem-pernapasan--mekanisme-pernapasan-dan-kesehatan",
+         "nama": "Mekanisme pernapasan dan kesehatan",
+         "tujuan": "Menjelaskan peran diafragma dan menjaga kesehatan pernapasan",
+         "konsep": [
+          "diafragma turun: udara masuk; naik: udara keluar",
+          "asap rokok, debu, dan polusi merusak paru-paru"
+         ],
+         "miskonsepsi": [
+          "napas dada dan napas perut dianggap sama persis"
+         ],
+         "mesin": [
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "asap kendaraan di jalan raya",
+          "bakar sampah",
+          "masker saat berdebu"
+         ],
+         "tagAset": [
+          "organ-pernapasan",
+          "kendaraan"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ipa-6-sistem-peredaran-darah",
+       "nama": "Sistem peredaran darah",
+       "domain": "Tubuh manusia",
+       "tema": "jingga",
+       "sub": [
+        {
+         "id": "ipa-6-sistem-peredaran-darah--jantung-dan-pembuluh-darah",
+         "nama": "Jantung dan pembuluh darah",
+         "tujuan": "Mengenali jantung, pembuluh darah, dan fungsi darah",
+         "konsep": [
+          "jantung memompa darah",
+          "arteri membawa darah dari jantung, vena menuju jantung",
+          "darah mengangkut oksigen dan sari makanan"
+         ],
+         "miskonsepsi": [
+          "darah dalam vena dianggap berwarna biru",
+          "jantung dianggap ada di sebelah kiri sepenuhnya"
+         ],
+         "mesin": [
+          "jelajah",
+          "urutkan",
+          "cocokkan"
+         ],
+         "konteks": [
+          "denyut nadi setelah lari",
+          "donor darah"
+         ],
+         "tagAset": [
+          "organ-peredaran"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "ipa-6-tata-surya",
+       "nama": "Tata surya",
+       "domain": "Bumi dan antariksa",
+       "tema": "antariksa",
+       "sub": [
+        {
+         "id": "ipa-6-tata-surya--anggota-tata-surya",
+         "nama": "Anggota tata surya",
+         "tujuan": "Mengenali matahari, planet, dan urutannya",
+         "konsep": [
+          "8 planet mengelilingi matahari",
+          "urutan Merkurius sampai Neptunus",
+          "planet dalam dan planet luar"
+         ],
+         "miskonsepsi": [
+          "Pluto masih dianggap planet",
+          "matahari dianggap planet"
+         ],
+         "mesin": [
+          "urutkan",
+          "sortir",
+          "jelajah"
+         ],
+         "konteks": [
+          "langit malam di kampung",
+          "observatorium"
+         ],
+         "tagAset": [
+          "planet",
+          "matahari"
+         ]
+        },
+        {
+         "id": "ipa-6-tata-surya--rotasi-revolusi-dan-gerhana",
+         "nama": "Rotasi, revolusi, dan gerhana",
+         "tujuan": "Menjelaskan akibat rotasi dan revolusi bumi serta terjadinya gerhana",
+         "konsep": [
+          "rotasi: siang dan malam",
+          "revolusi: pergantian tahun dan musim",
+          "gerhana bulan: bumi di antara matahari dan bulan"
+         ],
+         "miskonsepsi": [
+          "siang–malam dianggap karena matahari mengelilingi bumi",
+          "tertukar gerhana bulan dan matahari"
+         ],
+         "mesin": [
+          "cocokkan",
+          "sortir",
+          "cerita"
+         ],
+         "konteks": [
+          "melihat gerhana",
+          "kalender",
+          "musim tanam padi"
+         ],
+         "tagAset": [
+          "planet",
+          "matahari",
+          "bulan"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   }
+  }
+ }
+}

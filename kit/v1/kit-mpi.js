@@ -1428,6 +1428,8 @@
           var a = h.aktivitas;
           if (!h.teks) e.push(n + 'halaman ' + (j + 1) + ' belum ada teksnya.');
           var bk = h.gambar ? 55 : 70;
+          var bkKelas = { 1: 25, 2: 40, 3: 55, 4: 65 }[+((d.identitas || {}).kelas)];
+          if (bkKelas && bkKelas < bk) bk = bkKelas;
           if (kata(h.teks) > bk) e.push(n + 'halaman ' + (j + 1) + ' terlalu panjang (' + kata(h.teks) + ' kata). Maksimal ' + bk + ' kata per halaman, pecah jadi dua halaman.');
           if (a && a.pilihan && a.pilihan.length > 3) e.push(n + 'halaman ' + (j + 1) + ': pilihan maksimal 3.');
           if (a && a.jenis === 'bukti' && h.teks && h.teks.toLowerCase().indexOf(String(a.kunci).toLowerCase()) < 0)
