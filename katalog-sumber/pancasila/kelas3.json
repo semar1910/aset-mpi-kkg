@@ -1,0 +1,121 @@
+{
+  "mapel": "Pendidikan Pancasila",
+  "kelas": 3,
+  "buku": "Buku Panduan Guru Pendidikan Pancasila untuk SD/MI Kelas III",
+  "materi": [
+    {
+      "bab": 1,
+      "nama": "Aku Anak Indonesia",
+      "jenisTeks": "campuran",
+      "tema": "jingga",
+      "sub": [
+        {
+          "nama": "Identitas diri, teman, dan keluarga",
+          "tujuan": "Murid mampu menghargai identitas diri, teman, dan keluarga sesuai budaya, suku bangsa, bahasa, agama, dan kepercayaan.",
+          "konsep": ["identitas diri", "identitas keluarga", "setiap orang punya identitas berbeda yang patut dihargai"],
+          "miskonsepsi": ["Identitas yang berbeda dariku kurang baik"],
+          "kompetensi": ["tersurat", "inferensial"],
+          "mesin": ["bacaan", "cocokkan", "cerita"],
+          "konteks": ["Wawancara teman tentang keluarganya", "Berkenalan dengan murid pindahan", "Bahasa di rumah berbeda-beda"],
+          "tagAset": ["anak-sekolah", "keluarga", "kelas"]
+        },
+        {
+          "nama": "Tempat tinggalku bagian dari NKRI",
+          "tujuan": "Murid mampu mengidentifikasi lingkungan tempat tinggal (alamat RT/RW) sebagai bagian tidak terpisahkan dari wilayah NKRI.",
+          "konsep": ["alamat: RT, RW", "wilayah tempat tinggal", "tempat tinggal bagian dari NKRI"],
+          "miskonsepsi": ["Kampungku terpisah dari Indonesia"],
+          "kompetensi": ["tersurat", "inferensial"],
+          "mesin": ["urutkan", "bacaan", "runner"],
+          "konteks": ["Menulis alamat lengkap", "Mengamati lingkungan sekitar rumah", "Peta wilayah sederhana"],
+          "tagAset": ["peta-indonesia", "bendera", "rumah"]
+        }
+      ]
+    },
+    {
+      "bab": 2,
+      "nama": "Aku Patuh Aturan",
+      "jenisTeks": "campuran",
+      "tema": "antariksa",
+      "sub": [
+        {
+          "nama": "Aturan di sekolah dan lingkungan tempat tinggal",
+          "tujuan": "Murid mampu mengidentifikasi dan melaksanakan aturan di sekolah dan lingkungan tempat tinggal.",
+          "konsep": ["aturan berdasarkan tempat berlakunya", "pelanggaran dan sanksi", "membuat aturan kelas bersama"],
+          "miskonsepsi": ["Aturan hanya dibuat oleh guru"],
+          "kompetensi": ["tersurat", "inferensial"],
+          "mesin": ["sortir", "cocokkan", "cerita"],
+          "konteks": ["Menyusun aturan kelas", "Aturan di perpustakaan", "Aturan ronda atau lingkungan RT"],
+          "tagAset": ["sekolah", "kelas", "anak-sekolah"]
+        },
+        {
+          "nama": "Hak dan kewajiban di rumah dan sekolah",
+          "tujuan": "Murid mampu mengidentifikasi dan melaksanakan hak dan kewajiban sebagai anggota keluarga dan warga sekolah.",
+          "konsep": ["hak", "kewajiban", "hak dan kewajiban harus seimbang"],
+          "miskonsepsi": ["Hak boleh diminta tanpa melaksanakan kewajiban"],
+          "kompetensi": ["inferensial", "evaluasi"],
+          "mesin": ["sortir", "cerita", "runner"],
+          "konteks": ["Hak belajar dan kewajiban piket", "Poster ajakan menjalankan kewajiban", "Membantu orang tua di rumah"],
+          "tagAset": ["keluarga", "sekolah", "kelas"]
+        }
+      ]
+    },
+    {
+      "bab": 3,
+      "nama": "Berbeda Itu Indah",
+      "jenisTeks": "informasi",
+      "tema": "emas",
+      "sub": [
+        {
+          "nama": "Keberagaman budaya Indonesia",
+          "tujuan": "Murid mampu mengidentifikasi, membedakan, dan menghargai identitas diri, keluarga, dan teman sesuai budaya, suku bangsa, dan bahasa.",
+          "konsep": ["suku bangsa", "pakaian adat, rumah adat, tarian, dan bahasa daerah", "bersatu dalam keberagaman"],
+          "miskonsepsi": ["Budaya daerah lain lebih rendah daripada budayaku"],
+          "kompetensi": ["tersurat", "inferensial"],
+          "mesin": ["cocokkan", "sortir", "bacaan"],
+          "konteks": ["Pameran budaya di sekolah", "Lagu daerah dari teman", "Permainan tradisional"],
+          "tagAset": ["pakaian-adat", "rumah-adat", "peta-indonesia"]
+        },
+        {
+          "nama": "Bahasa Indonesia sebagai bahasa persatuan",
+          "tujuan": "Murid mampu menggunakan bahasa Indonesia sebagai bahasa persatuan dalam percakapan dengan teman dari berbagai daerah.",
+          "konsep": ["bahasa daerah dan bahasa Indonesia", "bahasa persatuan", "melestarikan budaya"],
+          "miskonsepsi": ["Memakai bahasa daerah berarti tidak cinta Indonesia"],
+          "kompetensi": ["inferensial", "evaluasi"],
+          "mesin": ["cerita", "cocokkan", "runner"],
+          "konteks": ["Dua teman beda daerah berbincang", "Menyanyikan lagu daerah", "Menyusun percakapan sederhana"],
+          "tagAset": ["anak-sekolah", "teman", "peta-indonesia"],
+          "perluDicek": true
+        }
+      ]
+    },
+    {
+      "bab": 4,
+      "nama": "Ayo Mengenal Pancasila",
+      "jenisTeks": "campuran",
+      "tema": "antariksa",
+      "sub": [
+        {
+          "nama": "Makna sila-sila Pancasila di rumah dan sekolah",
+          "tujuan": "Murid mampu mempraktikkan makna sila-sila Pancasila dalam kehidupan sehari-hari di lingkungan keluarga dan sekolah.",
+          "konsep": ["makna tiap sila", "contoh pengamalan sila di keluarga", "contoh pengamalan sila di sekolah"],
+          "miskonsepsi": ["Sila hanya untuk dihafal, bukan dilakukan"],
+          "kompetensi": ["tersurat", "inferensial", "evaluasi"],
+          "mesin": ["sortir", "cocokkan", "cerita"],
+          "konteks": ["Bermain tebak kata sila", "Naskah drama sederhana", "Berdoa bersama sebelum belajar"],
+          "tagAset": ["garuda-pancasila", "sekolah", "keluarga"]
+        },
+        {
+          "nama": "Karakter perumus Pancasila",
+          "tujuan": "Murid mampu meneladani karakter para perumus Pancasila.",
+          "konsep": ["perumus Pancasila", "karakter tokoh yang patut diteladani", "meneladani dalam perbuatan"],
+          "miskonsepsi": ["Meneladani tokoh cukup dengan mengetahui namanya"],
+          "kompetensi": ["tersurat", "inferensial"],
+          "mesin": ["bacaan", "cocokkan", "cerita"],
+          "konteks": ["Kisah para tokoh bermusyawarah", "Bermain peran meneladani tokoh", "Kartu karakter"],
+          "tagAset": ["tokoh-bangsa", "garuda-pancasila"],
+          "perluDicek": true
+        }
+      ]
+    }
+  ]
+}

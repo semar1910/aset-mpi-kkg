@@ -1,0 +1,119 @@
+{
+  "mapel": "Pendidikan Pancasila",
+  "kelas": 5,
+  "buku": "Buku Panduan Guru Pendidikan Pancasila untuk SD/MI Kelas V",
+  "materi": [
+    {
+      "bab": 1,
+      "nama": "Pancasila dalam Kehidupanku",
+      "jenisTeks": "informasi",
+      "tema": "emas",
+      "sub": [
+        {
+          "nama": "Kronologi lahirnya Pancasila dan sikap teladan pendiri bangsa",
+          "tujuan": "Murid mampu memahami kronologi sejarah kelahiran Pancasila dan meneladani sikap para perumusnya.",
+          "konsep": ["kronologi lahirnya Pancasila", "para perumus dan peran mereka", "sikap teladan pendiri bangsa"],
+          "miskonsepsi": ["Pancasila langsung jadi dalam satu sidang"],
+          "kompetensi": ["tersurat", "inferensial"],
+          "mesin": ["urutkan", "bacaan", "cocokkan"],
+          "konteks": ["Lini masa kelahiran Pancasila", "Kisah sidang BPUPKI", "Kajian karakter tokoh"],
+          "tagAset": ["tokoh-bangsa", "garuda-pancasila", "sejarah"]
+        },
+        {
+          "nama": "Makna sila dan refleksi perilaku",
+          "tujuan": "Murid mampu mengidentifikasi makna sila-sila Pancasila, keterhubungannya, dan maknanya sebagai dasar negara, pandangan hidup, serta ideologi bangsa.",
+          "konsep": ["makna tiap sila", "sila saling berhubungan", "Pancasila dasar negara, pandangan hidup, dan ideologi"],
+          "miskonsepsi": ["Sila bisa dipraktikkan satu-satu saja"],
+          "kompetensi": ["inferensial", "evaluasi"],
+          "mesin": ["sortir", "cerita", "cocokkan"],
+          "konteks": ["Kartu Pancasila untuk pembiasaan", "Refleksi perilaku seminggu", "Kasus perselisihan di kelas"],
+          "tagAset": ["garuda-pancasila", "anak-sekolah", "kelas"]
+        }
+      ]
+    },
+    {
+      "bab": 2,
+      "nama": "Norma dalam Kehidupanku",
+      "jenisTeks": "campuran",
+      "tema": "antariksa",
+      "sub": [
+        {
+          "nama": "Norma, hak, dan kewajiban",
+          "tujuan": "Murid mampu mengidentifikasi bentuk-bentuk norma, hak, dan kewajiban sebagai anggota keluarga, warga sekolah, dan warga negara.",
+          "konsep": ["hakikat norma", "hak dan kewajiban", "norma berlaku di keluarga, sekolah, dan negara"],
+          "miskonsepsi": ["Norma hanya aturan tertulis"],
+          "kompetensi": ["tersurat", "inferensial"],
+          "mesin": ["sortir", "cocokkan", "runner"],
+          "konteks": ["Pohon norma kelas", "Wawancara guru tentang aturan", "Drama penerapan norma"],
+          "tagAset": ["sekolah", "keluarga", "kelas"]
+        },
+        {
+          "nama": "Musyawarah dalam kehidupan sehari-hari",
+          "tujuan": "Murid mampu mempraktikkan musyawarah untuk membuat kesepakatan dan aturan bersama di lingkungan keluarga dan sekolah.",
+          "konsep": ["musyawarah mufakat", "menghargai pendapat", "kesepakatan bersama"],
+          "miskonsepsi": ["Keputusan musyawarah diambil oleh yang paling keras bicara"],
+          "kompetensi": ["inferensial", "evaluasi"],
+          "mesin": ["cerita", "urutkan", "sortir"],
+          "konteks": ["Memilih kegiatan class meeting", "Menentukan jadwal piket", "Rapat keluarga memilih tempat liburan"],
+          "tagAset": ["musyawarah", "kelas", "keluarga"]
+        }
+      ]
+    },
+    {
+      "bab": 3,
+      "nama": "Keragaman Budaya Indonesiaku",
+      "jenisTeks": "informasi",
+      "tema": "emas",
+      "sub": [
+        {
+          "nama": "Jenis keragaman budaya daerah",
+          "tujuan": "Murid mampu menunjukkan keragaman budaya daerah Indonesia dan contohnya.",
+          "konsep": ["suku bangsa dan bahasa daerah", "pakaian, rumah, senjata, dan tarian tradisional", "makanan, alat musik, dan lagu daerah"],
+          "miskonsepsi": ["Satu daerah hanya punya satu budaya"],
+          "kompetensi": ["tersurat", "inferensial"],
+          "mesin": ["cocokkan", "sortir", "bacaan"],
+          "konteks": ["Pameran budaya daerah", "Poster budaya provinsi", "Pertunjukan seni daerah"],
+          "tagAset": ["pakaian-adat", "rumah-adat", "peta-indonesia"]
+        },
+        {
+          "nama": "Pelestarian budaya daerah",
+          "tujuan": "Murid mampu menyajikan kegiatan pelestarian budaya daerah dalam bingkai Bhinneka Tunggal Ika.",
+          "konsep": ["Bhinneka Tunggal Ika", "bentuk pelestarian budaya", "menghormati keberagaman"],
+          "miskonsepsi": ["Melestarikan budaya hanya tugas pemerintah"],
+          "kompetensi": ["inferensial", "evaluasi"],
+          "mesin": ["cerita", "sortir", "runner"],
+          "konteks": ["Sanggar tari di kampung", "Belajar alat musik tradisional", "Membuat komik budaya"],
+          "tagAset": ["tari-tradisional", "alat-musik", "anak-sekolah"]
+        }
+      ]
+    },
+    {
+      "bab": 4,
+      "nama": "Aku dan Lingkungan Sekitarku",
+      "jenisTeks": "informasi",
+      "tema": "hutan",
+      "sub": [
+        {
+          "nama": "Wilayahku bagian dari NKRI",
+          "tujuan": "Murid mampu mengidentifikasi kabupaten/kota dan provinsi sebagai bagian dari wilayah NKRI serta karakteristik wilayah tempat tinggal.",
+          "konsep": ["kabupaten/kota dan provinsi", "karakteristik wilayah tempat tinggal", "wilayah bagian dari NKRI"],
+          "miskonsepsi": ["Provinsi dan kabupaten adalah negara kecil yang berdiri sendiri"],
+          "kompetensi": ["tersurat", "inferensial"],
+          "mesin": ["urutkan", "cocokkan", "bacaan"],
+          "konteks": ["Menjelajah sekolahku", "Peta provinsi tempat tinggal", "Ciri khas daerah sendiri"],
+          "tagAset": ["peta-indonesia", "bendera", "sekolah"]
+        },
+        {
+          "nama": "Gotong royong sebagai wujud bela negara",
+          "tujuan": "Murid mampu memahami makna dan mempraktikkan gotong royong untuk menjaga persatuan dan kesatuan di lingkungan sekolah dan sekitar.",
+          "konsep": ["makna gotong royong", "gotong royong menjaga persatuan", "gotong royong wujud bela negara"],
+          "miskonsepsi": ["Bela negara hanya dilakukan tentara"],
+          "kompetensi": ["inferensial", "evaluasi"],
+          "mesin": ["cerita", "sortir", "runner"],
+          "konteks": ["Kerja bakti sekolah", "Andai aku menjadi pemimpin daerah", "Membantu warga saat banjir"],
+          "tagAset": ["gotong-royong", "sekolah", "kampung"]
+        }
+      ]
+    }
+  ]
+}

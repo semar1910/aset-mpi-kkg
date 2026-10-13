@@ -1,0 +1,121 @@
+{
+  "mapel": "Pendidikan Pancasila",
+  "kelas": 2,
+  "buku": "Buku Panduan Guru Pendidikan Pancasila untuk SD/MI Kelas II",
+  "materi": [
+    {
+      "bab": 1,
+      "nama": "Aku Patuh Aturan",
+      "jenisTeks": "campuran",
+      "tema": "antariksa",
+      "sub": [
+        {
+          "nama": "Macam aturan dalam keluarga",
+          "tujuan": "Murid mampu mengidentifikasi berbagai aturan di lingkungan keluarga.",
+          "konsep": ["aturan dalam keluarga", "aturan dibuat untuk kebaikan bersama", "contoh aturan di rumah"],
+          "miskonsepsi": ["Aturan keluarga hanya berlaku untuk anak"],
+          "kompetensi": ["tersurat", "inferensial"],
+          "mesin": ["sortir", "cocokkan", "bacaan"],
+          "konteks": ["Jadwal belajar dan bermain", "Aturan makan bersama", "Menyimpan barang pada tempatnya"],
+          "tagAset": ["keluarga", "rumah"]
+        },
+        {
+          "nama": "Sikap mematuhi aturan keluarga",
+          "tujuan": "Murid mampu menunjukkan dan menceritakan sikap mematuhi aturan di lingkungan keluarga.",
+          "konsep": ["sikap patuh", "tanggung jawab di rumah", "akibat melanggar aturan"],
+          "miskonsepsi": ["Patuh berarti takut"],
+          "kompetensi": ["inferensial", "evaluasi"],
+          "mesin": ["cerita", "urutkan", "sortir"],
+          "konteks": ["Pulang sebelum magrib", "Adik dan kakak berbagi tugas", "Kakak mengingatkan dengan sopan"],
+          "tagAset": ["keluarga", "anak-sekolah", "rumah"]
+        }
+      ]
+    },
+    {
+      "bab": 2,
+      "nama": "Aku Berperilaku Pancasila",
+      "jenisTeks": "informasi",
+      "tema": "emas",
+      "sub": [
+        {
+          "nama": "Lambang Pancasila",
+          "tujuan": "Murid mampu mengidentifikasi simbol dan sila-sila Pancasila dalam lambang Garuda Pancasila serta mengurutkannya.",
+          "konsep": ["lima simbol dan lima sila", "urutan sila 1 sampai 5", "Garuda Pancasila lambang negara"],
+          "miskonsepsi": ["Urutan sila boleh ditukar"],
+          "kompetensi": ["tersurat"],
+          "mesin": ["cocokkan", "urutkan", "runner"],
+          "konteks": ["Lambang di ruang kelas", "Permainan kartu sila", "Menempel simbol di perisai"],
+          "tagAset": ["garuda-pancasila", "kelas"]
+        },
+        {
+          "nama": "Perumus Pancasila",
+          "tujuan": "Murid mampu mengenal para perumus Pancasila.",
+          "konsep": ["perumus Pancasila adalah tokoh bangsa", "mereka bermusyawarah", "meneladani sikap baik tokoh"],
+          "miskonsepsi": ["Pancasila dibuat oleh satu orang saja"],
+          "kompetensi": ["tersurat", "inferensial"],
+          "mesin": ["bacaan", "cocokkan", "cerita"],
+          "konteks": ["Kisah para tokoh berdiskusi", "Kartu tokoh bangsa", "Meneladani sikap jujur"],
+          "tagAset": ["tokoh-bangsa", "garuda-pancasila"],
+          "perluDicek": true
+        }
+      ]
+    },
+    {
+      "bab": 3,
+      "nama": "Aku dan Teman-Temanku",
+      "jenisTeks": "campuran",
+      "tema": "jingga",
+      "sub": [
+        {
+          "nama": "Hobi dan perbedaan teman",
+          "tujuan": "Murid mampu menyebutkan identitas diri sesuai hobi dan menerima perbedaan diri dengan orang lain.",
+          "konsep": ["hobi", "perbedaan ciri fisik dan hobi", "menerima perbedaan"],
+          "miskonsepsi": ["Teman harus sama denganku agar bisa akrab"],
+          "kompetensi": ["tersurat", "inferensial"],
+          "mesin": ["cerita", "sortir", "cocokkan"],
+          "konteks": ["Teman suka menggambar, aku suka menari", "Lomba kelas", "Berbeda tapi bermain bersama"],
+          "tagAset": ["anak-sekolah", "teman", "kelas"]
+        },
+        {
+          "nama": "Simbol keberagaman agama",
+          "tujuan": "Murid mampu mengenal dan menghargai perbedaan simbol keberagaman antarumat beragama dan kepercayaan.",
+          "konsep": ["agama dan kepercayaan berbeda-beda", "simbol keberagaman agama", "saling menghargai"],
+          "miskonsepsi": ["Menghargai berarti ikut beribadah"],
+          "kompetensi": ["tersurat", "evaluasi"],
+          "mesin": ["cocokkan", "cerita", "sortir"],
+          "konteks": ["Teman merayakan hari raya berbeda", "Saling mengucapkan selamat", "Tempat ibadah di sekitar sekolah"],
+          "tagAset": ["teman", "anak-sekolah"],
+          "perluDicek": true
+        }
+      ]
+    },
+    {
+      "bab": 4,
+      "nama": "Aku Peduli Lingkungan",
+      "jenisTeks": "informasi",
+      "tema": "hutan",
+      "sub": [
+        {
+          "nama": "Sikap menjaga lingkungan",
+          "tujuan": "Murid mampu menunjukkan sikap peduli dan mempraktikkan perilaku menjaga lingkungan sekitar.",
+          "konsep": ["menjaga kebersihan sekolah", "memilah sampah", "hemat air"],
+          "miskonsepsi": ["Sampah kecil tidak apa-apa dibuang sembarangan"],
+          "kompetensi": ["tersurat", "inferensial"],
+          "mesin": ["sortir", "bacaan", "runner"],
+          "konteks": ["Piket kebun sekolah", "Sampah bekas bekal", "Keran air yang menetes"],
+          "tagAset": ["sekolah", "tempat-sampah", "taman"]
+        },
+        {
+          "nama": "Bekerja sama menjaga lingkungan",
+          "tujuan": "Murid mampu mengidentifikasi bentuk kerja sama di lingkungan tempat tinggal dan sekolah.",
+          "konsep": ["kerja sama", "pembagian tugas", "hasil kerja bersama"],
+          "miskonsepsi": ["Kalau ada yang mengerjakan, aku boleh diam"],
+          "kompetensi": ["inferensial", "evaluasi"],
+          "mesin": ["cerita", "urutkan", "sortir"],
+          "konteks": ["Kerja bakti di kampung", "Membersihkan selokan bersama", "Menanam pohon di sekolah"],
+          "tagAset": ["gotong-royong", "taman", "sekolah"]
+        }
+      ]
+    }
+  ]
+}

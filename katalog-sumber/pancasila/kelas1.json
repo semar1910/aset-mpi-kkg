@@ -1,0 +1,127 @@
+{
+  "mapel": "Pendidikan Pancasila",
+  "kelas": 1,
+  "buku": "Buku Panduan Guru Pendidikan Pancasila untuk SD/MI Kelas I",
+  "materi": [
+    {
+      "bab": 1,
+      "nama": "Aku dan Teman-Temanku",
+      "jenisTeks": "campuran",
+      "tema": "jingga",
+      "sub": [
+        {
+          "nama": "Mengenal identitas diriku",
+          "tujuan": "Murid mampu menyebutkan identitas dirinya dan menerima perbedaannya dengan teman.",
+          "konsep": ["nama dan identitas diri", "laki-laki dan perempuan berbeda tetapi sama-sama berharga", "cara berkenalan dengan sopan"],
+          "miskonsepsi": ["Teman yang berbeda denganku tidak bisa diajak bermain"],
+          "kompetensi": ["tersurat", "inferensial"],
+          "mesin": ["cerita", "cocokkan", "bacaan"],
+          "konteks": ["Hari pertama berkenalan di kelas", "Anak baru yang pemalu", "Kartu nama diri"],
+          "tagAset": ["anak-sekolah", "kelas", "teman"],
+          "perluDicek": true
+        },
+        {
+          "nama": "Aturan main bersama teman",
+          "tujuan": "Murid mampu mengenal dan menerapkan aturan saat bermain bersama teman.",
+          "konsep": ["aturan permainan", "bergiliran", "sikap sportif dan sopan"],
+          "miskonsepsi": ["Aturan main hanya untuk yang kalah"],
+          "kompetensi": ["tersurat", "evaluasi"],
+          "mesin": ["sortir", "cerita", "urutkan"],
+          "konteks": ["Bermain petak umpet di halaman", "Rebutan mainan di kelas", "Antre perosotan"],
+          "tagAset": ["lapangan", "anak-bermain"],
+          "perluDicek": true
+        }
+      ]
+    },
+    {
+      "bab": 2,
+      "nama": "Aku Patuh pada Aturan",
+      "jenisTeks": "campuran",
+      "tema": "antariksa",
+      "sub": [
+        {
+          "nama": "Aturan dalam keluarga",
+          "tujuan": "Murid mampu mengenali aturan di lingkungan keluarga.",
+          "konsep": ["aturan di rumah", "anggota keluarga", "patuh berarti melaksanakan aturan"],
+          "miskonsepsi": ["Aturan di rumah membuat anak tidak boleh senang"],
+          "kompetensi": ["tersurat", "inferensial"],
+          "mesin": ["sortir", "bacaan"],
+          "konteks": ["Waktu makan bersama", "Merapikan mainan", "Izin sebelum bermain di luar"],
+          "tagAset": ["keluarga", "rumah"],
+          "perluDicek": true
+        },
+        {
+          "nama": "Mematuhi aturan di rumah",
+          "tujuan": "Murid mampu menceritakan pengalaman mematuhi aturan di rumah.",
+          "konsep": ["contoh perilaku patuh", "akibat tidak patuh", "meminta maaf dan memperbaiki"],
+          "miskonsepsi": ["Patuh hanya kalau ada yang melihat"],
+          "kompetensi": ["inferensial", "evaluasi"],
+          "mesin": ["cerita", "urutkan", "runner"],
+          "konteks": ["Bangun pagi dan merapikan tempat tidur", "Adik lupa menyimpan sepatu", "Belajar sebelum menonton"],
+          "tagAset": ["keluarga", "rumah", "anak-sekolah"],
+          "perluDicek": true
+        }
+      ]
+    },
+    {
+      "bab": 3,
+      "nama": "Aku Mengenal Indonesia",
+      "jenisTeks": "informasi",
+      "tema": "emas",
+      "sub": [
+        {
+          "nama": "Bendera dan lagu kebangsaan",
+          "tujuan": "Murid mampu mengenali bendera Merah Putih dan lagu kebangsaan Indonesia Raya.",
+          "konsep": ["bendera Merah Putih", "warna merah di atas, putih di bawah", "sikap hormat saat lagu kebangsaan"],
+          "miskonsepsi": ["Bendera boleh dipasang terbalik"],
+          "kompetensi": ["tersurat"],
+          "mesin": ["cocokkan", "sortir", "bacaan"],
+          "konteks": ["Upacara hari Senin", "Menggambar bendera", "Bendera di depan rumah saat 17 Agustus"],
+          "tagAset": ["bendera", "upacara", "anak-sekolah"],
+          "perluDicek": true
+        },
+        {
+          "nama": "Lambang Garuda Pancasila",
+          "tujuan": "Murid mampu menyebutkan simbol-simbol pada lambang Garuda Pancasila.",
+          "konsep": ["Garuda Pancasila lambang negara", "lima simbol sila", "nama sila dan simbolnya"],
+          "miskonsepsi": ["Garuda dan Pancasila adalah dua hal yang terpisah"],
+          "kompetensi": ["tersurat", "inferensial"],
+          "mesin": ["cocokkan", "urutkan", "runner"],
+          "konteks": ["Lambang di dinding kelas", "Kartu simbol sila", "Menyusun gambar Garuda"],
+          "tagAset": ["garuda-pancasila", "kelas"],
+          "perluDicek": true
+        }
+      ]
+    },
+    {
+      "bab": 4,
+      "nama": "Aku dan Lingkunganku",
+      "jenisTeks": "informasi",
+      "tema": "hutan",
+      "sub": [
+        {
+          "nama": "Lingkungan rumah dan sekolah",
+          "tujuan": "Murid mampu mengenali lingkungan tempat tinggal dan sekolah serta sikap peduli di dalamnya.",
+          "konsep": ["lingkungan rumah dan sekolah", "menjaga kebersihan", "membuang sampah pada tempatnya"],
+          "miskonsepsi": ["Menjaga kebersihan hanya tugas petugas kebersihan"],
+          "kompetensi": ["tersurat", "inferensial"],
+          "mesin": ["sortir", "bacaan", "runner"],
+          "konteks": ["Piket kelas", "Halaman sekolah yang kotor", "Sampah plastik di selokan"],
+          "tagAset": ["sekolah", "tempat-sampah", "taman"],
+          "perluDicek": true
+        },
+        {
+          "nama": "Aku suka bergotong royong",
+          "tujuan": "Murid mampu menerapkan nilai gotong royong di lingkungan keluarga dan sekolah.",
+          "konsep": ["gotong royong", "kerja bersama lebih ringan", "membantu tanpa diminta"],
+          "miskonsepsi": ["Gotong royong hanya untuk orang dewasa"],
+          "kompetensi": ["inferensial", "evaluasi"],
+          "mesin": ["cerita", "sortir", "urutkan"],
+          "konteks": ["Kerja bakti membersihkan kelas", "Membantu ibu menata meja", "Menanam bunga bersama"],
+          "tagAset": ["gotong-royong", "kelas", "taman"],
+          "perluDicek": true
+        }
+      ]
+    }
+  ]
+}
