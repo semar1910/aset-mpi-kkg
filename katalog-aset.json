@@ -1,202 +1,2201 @@
 {
-  "versi": 1,
-  "catatan": "Draf. Hapus baris gambar yang belum/tidak dibuat. Titik jelajah ditambahkan setelah gambarnya jadi.",
-  "dasar": "https://cdn.jsdelivr.net/gh/semar1910/aset-mpi-kkg@main/aset/",
-  "aset": [
-    {"id": "gizi/nasi-putih", "file": "objek/gizi/nasi-putih.webp", "jenis": "objek", "nama": "Nasi putih", "sub": ["ipa-6-bab1--makanan-sehat-untuk-tubuhku"], "kata": ["karbohidrat"]},
-    {"id": "gizi/jagung-rebus", "file": "objek/gizi/jagung-rebus.webp", "jenis": "objek", "nama": "Jagung rebus", "sub": ["ipa-6-bab1--makanan-sehat-untuk-tubuhku"], "kata": ["karbohidrat"]},
-    {"id": "gizi/singkong-rebus", "file": "objek/gizi/singkong-rebus.webp", "jenis": "objek", "nama": "Singkong rebus", "sub": ["ipa-6-bab1--makanan-sehat-untuk-tubuhku"], "kata": ["karbohidrat"]},
-    {"id": "gizi/roti", "file": "objek/gizi/roti.webp", "jenis": "objek", "nama": "Roti", "sub": ["ipa-6-bab1--makanan-sehat-untuk-tubuhku", "num-4-bab1--penjumlahan-dan-pengurangan-dalam", "num-5-bab1--nilai-tempat-dan-operasi"], "kata": ["karbohidrat"]},
-    {"id": "gizi/ikan-goreng", "file": "objek/gizi/ikan-goreng.webp", "jenis": "objek", "nama": "Ikan goreng", "sub": ["ipa-6-bab1--makanan-sehat-untuk-tubuhku"], "kata": ["protein"]},
-    {"id": "gizi/telur-rebus", "file": "objek/gizi/telur-rebus.webp", "jenis": "objek", "nama": "Telur rebus", "sub": ["ipa-6-bab1--makanan-sehat-untuk-tubuhku"], "kata": ["protein"]},
-    {"id": "gizi/tempe", "file": "objek/gizi/tempe.webp", "jenis": "objek", "nama": "Tempe", "sub": ["ipa-6-bab1--makanan-sehat-untuk-tubuhku"], "kata": ["protein"]},
-    {"id": "gizi/tahu", "file": "objek/gizi/tahu.webp", "jenis": "objek", "nama": "Tahu", "sub": ["ipa-6-bab1--makanan-sehat-untuk-tubuhku"], "kata": ["protein"]},
-    {"id": "gizi/ayam-goreng", "file": "objek/gizi/ayam-goreng.webp", "jenis": "objek", "nama": "Ayam goreng", "sub": ["ipa-6-bab1--makanan-sehat-untuk-tubuhku"], "kata": ["protein"]},
-    {"id": "gizi/susu", "file": "objek/gizi/susu.webp", "jenis": "objek", "nama": "Susu", "sub": ["ipa-6-bab1--makanan-sehat-untuk-tubuhku"], "kata": ["protein"]},
-    {"id": "gizi/bayam", "file": "objek/gizi/bayam.webp", "jenis": "objek", "nama": "Bayam", "sub": ["ipa-6-bab1--makanan-sehat-untuk-tubuhku"], "kata": ["vitamin dan mineral"]},
-    {"id": "gizi/wortel", "file": "objek/gizi/wortel.webp", "jenis": "objek", "nama": "Wortel", "sub": ["ipa-6-bab1--makanan-sehat-untuk-tubuhku"], "kata": ["vitamin dan mineral"]},
-    {"id": "gizi/pisang", "file": "objek/gizi/pisang.webp", "jenis": "objek", "nama": "Pisang", "sub": ["ipa-6-bab1--makanan-sehat-untuk-tubuhku"], "kata": ["vitamin dan mineral"]},
-    {"id": "gizi/jeruk", "file": "objek/gizi/jeruk.webp", "jenis": "objek", "nama": "Jeruk", "sub": ["ipa-6-bab1--makanan-sehat-untuk-tubuhku", "num-4-bab6--membaca-piktogram-dan-diagram", "num-5-bab8--mengumpulkan-dan-menyajikan-data"], "kata": ["vitamin dan mineral"]},
-    {"id": "gizi/minyak-goreng", "file": "objek/gizi/minyak-goreng.webp", "jenis": "objek", "nama": "Minyak goreng", "sub": ["ipa-6-bab1--makanan-sehat-untuk-tubuhku"], "kata": ["lemak"]},
-    {"id": "ekosistem/rumput", "file": "objek/ekosistem/rumput.webp", "jenis": "objek", "nama": "Rumput", "sub": ["ipa-5-bab3--komponen-ekosistem", "ipa-5-bab3--rantai-dan-jaring-makanan"], "kata": ["biotik", "produsen"]},
-    {"id": "ekosistem/padi", "file": "objek/ekosistem/padi.webp", "jenis": "objek", "nama": "Padi", "sub": ["ipa-5-bab3--komponen-ekosistem", "ipa-5-bab3--rantai-dan-jaring-makanan"], "kata": ["biotik", "produsen"]},
-    {"id": "ekosistem/ulat", "file": "objek/ekosistem/ulat.webp", "jenis": "objek", "nama": "Ulat", "sub": ["ipa-5-bab3--komponen-ekosistem", "ipa-5-bab3--rantai-dan-jaring-makanan"], "kata": ["biotik", "konsumen tingkat 1"]},
-    {"id": "ekosistem/belalang", "file": "objek/ekosistem/belalang.webp", "jenis": "objek", "nama": "Belalang", "sub": ["ipa-5-bab3--komponen-ekosistem", "ipa-5-bab3--rantai-dan-jaring-makanan"], "kata": ["biotik", "konsumen tingkat 1"]},
-    {"id": "ekosistem/katak", "file": "objek/ekosistem/katak.webp", "jenis": "objek", "nama": "Katak", "sub": ["ipa-5-bab3--komponen-ekosistem", "ipa-5-bab3--rantai-dan-jaring-makanan"], "kata": ["biotik", "konsumen tingkat 2"]},
-    {"id": "ekosistem/ular", "file": "objek/ekosistem/ular.webp", "jenis": "objek", "nama": "Ular", "sub": ["ipa-5-bab3--komponen-ekosistem", "ipa-5-bab3--rantai-dan-jaring-makanan"], "kata": ["biotik", "konsumen tingkat 2"]},
-    {"id": "ekosistem/elang", "file": "objek/ekosistem/elang.webp", "jenis": "objek", "nama": "Elang", "sub": ["ipa-5-bab3--komponen-ekosistem", "ipa-5-bab3--rantai-dan-jaring-makanan"], "kata": ["biotik", "konsumen puncak"]},
-    {"id": "ekosistem/tikus", "file": "objek/ekosistem/tikus.webp", "jenis": "objek", "nama": "Tikus", "sub": ["ipa-5-bab3--komponen-ekosistem", "ipa-5-bab3--rantai-dan-jaring-makanan"], "kata": ["biotik", "konsumen tingkat 1"]},
-    {"id": "ekosistem/ayam", "file": "objek/ekosistem/ayam.webp", "jenis": "objek", "nama": "Ayam", "sub": ["ipa-5-bab3--komponen-ekosistem", "ipa-5-bab3--rantai-dan-jaring-makanan", "num-4-bab6--membaca-piktogram-dan-diagram", "num-5-bab8--mengumpulkan-dan-menyajikan-data"], "kata": ["biotik", "omnivora"]},
-    {"id": "ekosistem/kambing", "file": "objek/ekosistem/kambing.webp", "jenis": "objek", "nama": "Kambing", "sub": ["ipa-5-bab3--komponen-ekosistem", "ipa-5-bab3--rantai-dan-jaring-makanan"], "kata": ["biotik", "konsumen tingkat 1"]},
-    {"id": "ekosistem/jamur", "file": "objek/ekosistem/jamur.webp", "jenis": "objek", "nama": "Jamur", "sub": ["ipa-5-bab3--komponen-ekosistem", "ipa-5-bab3--rantai-dan-jaring-makanan"], "kata": ["biotik", "pengurai"]},
-    {"id": "ekosistem/cacing-tanah", "file": "objek/ekosistem/cacing-tanah.webp", "jenis": "objek", "nama": "Cacing tanah", "sub": ["ipa-5-bab3--komponen-ekosistem", "ipa-5-bab3--rantai-dan-jaring-makanan"], "kata": ["biotik", "pengurai"]},
-    {"id": "ekosistem/batu", "file": "objek/ekosistem/batu.webp", "jenis": "objek", "nama": "Batu", "sub": ["ipa-5-bab3--komponen-ekosistem", "ipa-5-bab3--rantai-dan-jaring-makanan"], "kata": ["abiotik"]},
-    {"id": "ekosistem/air-kolam", "file": "objek/ekosistem/air-kolam.webp", "jenis": "objek", "nama": "Air kolam", "sub": ["ipa-5-bab3--komponen-ekosistem", "ipa-5-bab3--rantai-dan-jaring-makanan"], "kata": ["abiotik"]},
-    {"id": "ekosistem/matahari", "file": "objek/ekosistem/matahari.webp", "jenis": "objek", "nama": "Matahari", "sub": ["ipa-5-bab3--komponen-ekosistem", "ipa-5-bab3--rantai-dan-jaring-makanan", "ipa-5-bab7--melihat-karena-cahaya", "ipa-5-bab7--bayangan-dan-warna", "ipa-6-bab6--sistem-tata-surya", "ipa-6-bab6--matahari-bumi-dan-bulan"], "kata": ["abiotik", "sumber cahaya"]},
-    {"id": "energi-bentuk/lampu-menyala", "file": "objek/energi-bentuk/lampu-menyala.webp", "jenis": "objek", "nama": "Lampu menyala", "sub": ["ipa-4-bab1--perubahan-bentuk-energi"], "kata": ["listrik ke cahaya"]},
-    {"id": "energi-bentuk/kipas-angin", "file": "objek/energi-bentuk/kipas-angin.webp", "jenis": "objek", "nama": "Kipas angin", "sub": ["ipa-4-bab1--perubahan-bentuk-energi", "ipa-6-bab2--udara-bersih-tubuh-sehat"], "kata": ["listrik ke gerak"]},
-    {"id": "energi-bentuk/setrika", "file": "objek/energi-bentuk/setrika.webp", "jenis": "objek", "nama": "Setrika", "sub": ["ipa-4-bab1--perubahan-bentuk-energi"], "kata": ["listrik ke panas"]},
-    {"id": "energi-bentuk/radio", "file": "objek/energi-bentuk/radio.webp", "jenis": "objek", "nama": "Radio", "sub": ["ipa-4-bab1--perubahan-bentuk-energi"], "kata": ["listrik ke bunyi"]},
-    {"id": "energi-bentuk/kompor-gas", "file": "objek/energi-bentuk/kompor-gas.webp", "jenis": "objek", "nama": "Kompor gas", "sub": ["ipa-4-bab1--perubahan-bentuk-energi"], "kata": ["kimia ke panas"]},
-    {"id": "energi-bentuk/senter", "file": "objek/energi-bentuk/senter.webp", "jenis": "objek", "nama": "Senter", "sub": ["ipa-4-bab1--perubahan-bentuk-energi", "ipa-5-bab7--melihat-karena-cahaya", "ipa-5-bab7--bayangan-dan-warna"], "kata": ["kimia ke cahaya", "sumber cahaya"]},
-    {"id": "energi-bentuk/panel-surya", "file": "objek/energi-bentuk/panel-surya.webp", "jenis": "objek", "nama": "Panel surya", "sub": ["ipa-4-bab1--perubahan-bentuk-energi", "ipa-6-bab5--energi-tak-terbarukan-dan"], "kata": ["cahaya ke listrik", "terbarukan"]},
-    {"id": "energi-bentuk/kincir-angin", "file": "objek/energi-bentuk/kincir-angin.webp", "jenis": "objek", "nama": "Kincir angin", "sub": ["ipa-4-bab1--perubahan-bentuk-energi", "ipa-6-bab5--energi-tak-terbarukan-dan"], "kata": ["gerak ke listrik", "terbarukan"]},
-    {"id": "energi-bentuk/baterai", "file": "objek/energi-bentuk/baterai.webp", "jenis": "objek", "nama": "Baterai", "sub": ["ipa-4-bab1--perubahan-bentuk-energi"], "kata": ["energi kimia"]},
-    {"id": "energi-bentuk/lilin-menyala", "file": "objek/energi-bentuk/lilin-menyala.webp", "jenis": "objek", "nama": "Lilin menyala", "sub": ["ipa-4-bab1--perubahan-bentuk-energi"], "kata": ["kimia ke cahaya"]},
-    {"id": "energi-bentuk/mobil-mainan", "file": "objek/energi-bentuk/mobil-mainan.webp", "jenis": "objek", "nama": "Mobil mainan", "sub": ["ipa-4-bab1--perubahan-bentuk-energi"], "kata": ["listrik ke gerak"]},
-    {"id": "energi-bentuk/teko-listrik", "file": "objek/energi-bentuk/teko-listrik.webp", "jenis": "objek", "nama": "Teko listrik", "sub": ["ipa-4-bab1--perubahan-bentuk-energi"], "kata": ["listrik ke panas"]},
-    {"id": "energi-sumber/bendungan-air", "file": "objek/energi-sumber/bendungan-air.webp", "jenis": "objek", "nama": "Bendungan air", "sub": ["ipa-6-bab5--energi-tak-terbarukan-dan"], "kata": ["terbarukan"]},
-    {"id": "energi-sumber/biogas", "file": "objek/energi-sumber/biogas.webp", "jenis": "objek", "nama": "Biogas", "sub": ["ipa-6-bab5--energi-tak-terbarukan-dan"], "kata": ["terbarukan"]},
-    {"id": "energi-sumber/batu-bara", "file": "objek/energi-sumber/batu-bara.webp", "jenis": "objek", "nama": "Batu bara", "sub": ["ipa-6-bab5--energi-tak-terbarukan-dan"], "kata": ["tak terbarukan"]},
-    {"id": "energi-sumber/drum-minyak-bumi", "file": "objek/energi-sumber/drum-minyak-bumi.webp", "jenis": "objek", "nama": "Drum minyak bumi", "sub": ["ipa-6-bab5--energi-tak-terbarukan-dan"], "kata": ["tak terbarukan"]},
-    {"id": "energi-sumber/tabung-gas", "file": "objek/energi-sumber/tabung-gas.webp", "jenis": "objek", "nama": "Tabung gas", "sub": ["ipa-6-bab5--energi-tak-terbarukan-dan"], "kata": ["tak terbarukan"]},
-    {"id": "energi-sumber/kayu-bakar", "file": "objek/energi-sumber/kayu-bakar.webp", "jenis": "objek", "nama": "Kayu bakar", "sub": ["ipa-6-bab5--energi-tak-terbarukan-dan"], "kata": ["terbarukan"]},
-    {"id": "energi-sumber/pompa-bensin", "file": "objek/energi-sumber/pompa-bensin.webp", "jenis": "objek", "nama": "Pompa bensin", "sub": ["ipa-6-bab5--energi-tak-terbarukan-dan"], "kata": ["tak terbarukan"]},
-    {"id": "energi-sumber/aki", "file": "objek/energi-sumber/aki.webp", "jenis": "objek", "nama": "Aki", "sub": ["ipa-6-bab5--energi-tak-terbarukan-dan"], "kata": ["penyimpan energi"]},
-    {"id": "cahaya/lilin", "file": "objek/cahaya/lilin.webp", "jenis": "objek", "nama": "Lilin", "sub": ["ipa-5-bab7--melihat-karena-cahaya", "ipa-5-bab7--bayangan-dan-warna"], "kata": ["sumber cahaya"]},
-    {"id": "cahaya/cermin", "file": "objek/cahaya/cermin.webp", "jenis": "objek", "nama": "Cermin", "sub": ["ipa-5-bab7--melihat-karena-cahaya", "ipa-5-bab7--bayangan-dan-warna"], "kata": ["memantulkan cahaya"]},
-    {"id": "cahaya/kaca-bening", "file": "objek/cahaya/kaca-bening.webp", "jenis": "objek", "nama": "Kaca bening", "sub": ["ipa-5-bab7--melihat-karena-cahaya", "ipa-5-bab7--bayangan-dan-warna"], "kata": ["benda bening"]},
-    {"id": "cahaya/kertas-minyak", "file": "objek/cahaya/kertas-minyak.webp", "jenis": "objek", "nama": "Kertas minyak", "sub": ["ipa-5-bab7--melihat-karena-cahaya", "ipa-5-bab7--bayangan-dan-warna"], "kata": ["benda buram"]},
-    {"id": "cahaya/papan-kayu", "file": "objek/cahaya/papan-kayu.webp", "jenis": "objek", "nama": "Papan kayu", "sub": ["ipa-5-bab7--melihat-karena-cahaya", "ipa-5-bab7--bayangan-dan-warna"], "kata": ["benda gelap"]},
-    {"id": "cahaya/kacamata", "file": "objek/cahaya/kacamata.webp", "jenis": "objek", "nama": "Kacamata", "sub": ["ipa-5-bab7--melihat-karena-cahaya", "ipa-5-bab7--bayangan-dan-warna"], "kata": ["membiaskan cahaya"]},
-    {"id": "cahaya/prisma", "file": "objek/cahaya/prisma.webp", "jenis": "objek", "nama": "Prisma", "sub": ["ipa-5-bab7--melihat-karena-cahaya", "ipa-5-bab7--bayangan-dan-warna"], "kata": ["membiaskan cahaya"]},
-    {"id": "cahaya/pelangi", "file": "objek/cahaya/pelangi.webp", "jenis": "objek", "nama": "Pelangi", "sub": ["ipa-5-bab7--melihat-karena-cahaya", "ipa-5-bab7--bayangan-dan-warna"], "kata": ["penguraian cahaya"]},
-    {"id": "cahaya/bayangan-pohon", "file": "objek/cahaya/bayangan-pohon.webp", "jenis": "objek", "nama": "Bayangan pohon", "sub": ["ipa-5-bab7--melihat-karena-cahaya", "ipa-5-bab7--bayangan-dan-warna"], "kata": ["bayangan"]},
-    {"id": "cahaya/plastik-bening", "file": "objek/cahaya/plastik-bening.webp", "jenis": "objek", "nama": "Plastik bening", "sub": ["ipa-5-bab7--melihat-karena-cahaya", "ipa-5-bab7--bayangan-dan-warna"], "kata": ["benda bening"]},
-    {"id": "bunyi/gitar", "file": "objek/bunyi/gitar.webp", "jenis": "objek", "nama": "Gitar", "sub": ["ipa-5-bab8--mendengar-karena-bunyi", "ipa-5-bab8--merambat-memantul-dan-meredam"], "kata": ["alat musik petik"]},
-    {"id": "bunyi/gendang", "file": "objek/bunyi/gendang.webp", "jenis": "objek", "nama": "Gendang", "sub": ["ipa-5-bab8--mendengar-karena-bunyi", "ipa-5-bab8--merambat-memantul-dan-meredam"], "kata": ["alat musik pukul"]},
-    {"id": "bunyi/angklung", "file": "objek/bunyi/angklung.webp", "jenis": "objek", "nama": "Angklung", "sub": ["ipa-5-bab8--mendengar-karena-bunyi", "ipa-5-bab8--merambat-memantul-dan-meredam"], "kata": ["alat musik goyang"]},
-    {"id": "bunyi/seruling", "file": "objek/bunyi/seruling.webp", "jenis": "objek", "nama": "Seruling", "sub": ["ipa-5-bab8--mendengar-karena-bunyi", "ipa-5-bab8--merambat-memantul-dan-meredam"], "kata": ["alat musik tiup"]},
-    {"id": "bunyi/kentongan", "file": "objek/bunyi/kentongan.webp", "jenis": "objek", "nama": "Kentongan", "sub": ["ipa-5-bab8--mendengar-karena-bunyi", "ipa-5-bab8--merambat-memantul-dan-meredam"], "kata": ["alat musik pukul"]},
-    {"id": "bunyi/peluit", "file": "objek/bunyi/peluit.webp", "jenis": "objek", "nama": "Peluit", "sub": ["ipa-5-bab8--mendengar-karena-bunyi", "ipa-5-bab8--merambat-memantul-dan-meredam"], "kata": ["alat musik tiup"]},
-    {"id": "bunyi/telepon-kaleng", "file": "objek/bunyi/telepon-kaleng.webp", "jenis": "objek", "nama": "Telepon kaleng", "sub": ["ipa-5-bab8--mendengar-karena-bunyi", "ipa-5-bab8--merambat-memantul-dan-meredam"], "kata": ["merambat lewat benda padat"]},
-    {"id": "bunyi/busa-peredam", "file": "objek/bunyi/busa-peredam.webp", "jenis": "objek", "nama": "Busa peredam", "sub": ["ipa-5-bab8--mendengar-karena-bunyi", "ipa-5-bab8--merambat-memantul-dan-meredam"], "kata": ["peredam bunyi"]},
-    {"id": "bunyi/karpet", "file": "objek/bunyi/karpet.webp", "jenis": "objek", "nama": "Karpet", "sub": ["ipa-5-bab8--mendengar-karena-bunyi", "ipa-5-bab8--merambat-memantul-dan-meredam"], "kata": ["peredam bunyi"]},
-    {"id": "bunyi/tembok-gua", "file": "objek/bunyi/tembok-gua.webp", "jenis": "objek", "nama": "Tembok gua", "sub": ["ipa-5-bab8--mendengar-karena-bunyi", "ipa-5-bab8--merambat-memantul-dan-meredam"], "kata": ["pemantul bunyi"]},
-    {"id": "bunyi/lonceng", "file": "objek/bunyi/lonceng.webp", "jenis": "objek", "nama": "Lonceng", "sub": ["ipa-5-bab8--mendengar-karena-bunyi", "ipa-5-bab8--merambat-memantul-dan-meredam"], "kata": ["alat musik pukul"]},
-    {"id": "bazar/susu-kotak", "file": "objek/bazar/susu-kotak.webp", "jenis": "objek", "nama": "Susu kotak", "sub": ["num-4-bab1--penjumlahan-dan-pengurangan-dalam", "num-5-bab1--nilai-tempat-dan-operasi"], "kata": []},
-    {"id": "bazar/es-teh", "file": "objek/bazar/es-teh.webp", "jenis": "objek", "nama": "Es teh", "sub": ["num-4-bab1--penjumlahan-dan-pengurangan-dalam", "num-5-bab1--nilai-tempat-dan-operasi"], "kata": []},
-    {"id": "bazar/pensil", "file": "objek/bazar/pensil.webp", "jenis": "objek", "nama": "Pensil", "sub": ["num-4-bab1--penjumlahan-dan-pengurangan-dalam", "num-5-bab1--nilai-tempat-dan-operasi"], "kata": []},
-    {"id": "bazar/buku-tulis", "file": "objek/bazar/buku-tulis.webp", "jenis": "objek", "nama": "Buku tulis", "sub": ["num-4-bab1--penjumlahan-dan-pengurangan-dalam", "num-5-bab1--nilai-tempat-dan-operasi"], "kata": []},
-    {"id": "bazar/penghapus", "file": "objek/bazar/penghapus.webp", "jenis": "objek", "nama": "Penghapus", "sub": ["num-4-bab1--penjumlahan-dan-pengurangan-dalam", "num-5-bab1--nilai-tempat-dan-operasi"], "kata": []},
-    {"id": "bazar/kue-lapis", "file": "objek/bazar/kue-lapis.webp", "jenis": "objek", "nama": "Kue lapis", "sub": ["num-4-bab1--penjumlahan-dan-pengurangan-dalam", "num-5-bab1--nilai-tempat-dan-operasi"], "kata": []},
-    {"id": "bazar/onde-onde", "file": "objek/bazar/onde-onde.webp", "jenis": "objek", "nama": "Onde onde", "sub": ["num-4-bab1--penjumlahan-dan-pengurangan-dalam", "num-5-bab1--nilai-tempat-dan-operasi"], "kata": []},
-    {"id": "bazar/bakwan", "file": "objek/bazar/bakwan.webp", "jenis": "objek", "nama": "Bakwan", "sub": ["num-4-bab1--penjumlahan-dan-pengurangan-dalam", "num-5-bab1--nilai-tempat-dan-operasi"], "kata": []},
-    {"id": "bazar/keripik", "file": "objek/bazar/keripik.webp", "jenis": "objek", "nama": "Keripik", "sub": ["num-4-bab1--penjumlahan-dan-pengurangan-dalam", "num-5-bab1--nilai-tempat-dan-operasi"], "kata": []},
-    {"id": "bazar/permen", "file": "objek/bazar/permen.webp", "jenis": "objek", "nama": "Permen", "sub": ["num-4-bab1--penjumlahan-dan-pengurangan-dalam", "num-5-bab1--nilai-tempat-dan-operasi"], "kata": []},
-    {"id": "bazar/celengan", "file": "objek/bazar/celengan.webp", "jenis": "objek", "nama": "Celengan", "sub": ["num-4-bab1--penjumlahan-dan-pengurangan-dalam", "num-5-bab1--nilai-tempat-dan-operasi"], "kata": []},
-    {"id": "tata-surya/merkurius", "file": "objek/tata-surya/merkurius.webp", "jenis": "objek", "nama": "Merkurius", "sub": ["ipa-6-bab6--sistem-tata-surya", "ipa-6-bab6--matahari-bumi-dan-bulan"], "kata": []},
-    {"id": "tata-surya/venus", "file": "objek/tata-surya/venus.webp", "jenis": "objek", "nama": "Venus", "sub": ["ipa-6-bab6--sistem-tata-surya", "ipa-6-bab6--matahari-bumi-dan-bulan"], "kata": []},
-    {"id": "tata-surya/bumi", "file": "objek/tata-surya/bumi.webp", "jenis": "objek", "nama": "Bumi", "sub": ["ipa-6-bab6--sistem-tata-surya", "ipa-6-bab6--matahari-bumi-dan-bulan"], "kata": []},
-    {"id": "tata-surya/mars", "file": "objek/tata-surya/mars.webp", "jenis": "objek", "nama": "Mars", "sub": ["ipa-6-bab6--sistem-tata-surya", "ipa-6-bab6--matahari-bumi-dan-bulan"], "kata": []},
-    {"id": "tata-surya/yupiter", "file": "objek/tata-surya/yupiter.webp", "jenis": "objek", "nama": "Yupiter", "sub": ["ipa-6-bab6--sistem-tata-surya", "ipa-6-bab6--matahari-bumi-dan-bulan"], "kata": []},
-    {"id": "tata-surya/saturnus", "file": "objek/tata-surya/saturnus.webp", "jenis": "objek", "nama": "Saturnus", "sub": ["ipa-6-bab6--sistem-tata-surya", "ipa-6-bab6--matahari-bumi-dan-bulan"], "kata": []},
-    {"id": "tata-surya/uranus", "file": "objek/tata-surya/uranus.webp", "jenis": "objek", "nama": "Uranus", "sub": ["ipa-6-bab6--sistem-tata-surya", "ipa-6-bab6--matahari-bumi-dan-bulan"], "kata": []},
-    {"id": "tata-surya/neptunus", "file": "objek/tata-surya/neptunus.webp", "jenis": "objek", "nama": "Neptunus", "sub": ["ipa-6-bab6--sistem-tata-surya", "ipa-6-bab6--matahari-bumi-dan-bulan"], "kata": []},
-    {"id": "tata-surya/bulan", "file": "objek/tata-surya/bulan.webp", "jenis": "objek", "nama": "Bulan", "sub": ["ipa-6-bab6--sistem-tata-surya", "ipa-6-bab6--matahari-bumi-dan-bulan"], "kata": []},
-    {"id": "gaya/bola-ditendang", "file": "objek/gaya/bola-ditendang.webp", "jenis": "objek", "nama": "Bola ditendang", "sub": ["ipa-4-bab2--macam-macam-gaya", "ipa-4-bab2--gaya-gesek-dan-gaya"], "kata": []},
-    {"id": "gaya/gerobak-didorong", "file": "objek/gaya/gerobak-didorong.webp", "jenis": "objek", "nama": "Gerobak didorong", "sub": ["ipa-4-bab2--macam-macam-gaya", "ipa-4-bab2--gaya-gesek-dan-gaya"], "kata": []},
-    {"id": "gaya/tali-ditarik", "file": "objek/gaya/tali-ditarik.webp", "jenis": "objek", "nama": "Tali ditarik", "sub": ["ipa-4-bab2--macam-macam-gaya", "ipa-4-bab2--gaya-gesek-dan-gaya"], "kata": []},
-    {"id": "gaya/apel-jatuh", "file": "objek/gaya/apel-jatuh.webp", "jenis": "objek", "nama": "Apel jatuh", "sub": ["ipa-4-bab2--macam-macam-gaya", "ipa-4-bab2--gaya-gesek-dan-gaya"], "kata": []},
-    {"id": "gaya/magnet-batang", "file": "objek/gaya/magnet-batang.webp", "jenis": "objek", "nama": "Magnet batang", "sub": ["ipa-4-bab2--macam-macam-gaya", "ipa-4-bab2--gaya-gesek-dan-gaya"], "kata": []},
-    {"id": "gaya/paku-besi", "file": "objek/gaya/paku-besi.webp", "jenis": "objek", "nama": "Paku besi", "sub": ["ipa-4-bab2--macam-macam-gaya", "ipa-4-bab2--gaya-gesek-dan-gaya"], "kata": []},
-    {"id": "gaya/klip-kertas", "file": "objek/gaya/klip-kertas.webp", "jenis": "objek", "nama": "Klip kertas", "sub": ["ipa-4-bab2--macam-macam-gaya", "ipa-4-bab2--gaya-gesek-dan-gaya"], "kata": []},
-    {"id": "gaya/penghapus-karet", "file": "objek/gaya/penghapus-karet.webp", "jenis": "objek", "nama": "Penghapus karet", "sub": ["ipa-4-bab2--macam-macam-gaya", "ipa-4-bab2--gaya-gesek-dan-gaya"], "kata": []},
-    {"id": "gaya/sendok-kayu", "file": "objek/gaya/sendok-kayu.webp", "jenis": "objek", "nama": "Sendok kayu", "sub": ["ipa-4-bab2--macam-macam-gaya", "ipa-4-bab2--gaya-gesek-dan-gaya"], "kata": []},
-    {"id": "gaya/sepeda-direm", "file": "objek/gaya/sepeda-direm.webp", "jenis": "objek", "nama": "Sepeda direm", "sub": ["ipa-4-bab2--macam-macam-gaya", "ipa-4-bab2--gaya-gesek-dan-gaya"], "kata": []},
-    {"id": "gaya/layang-layang", "file": "objek/gaya/layang-layang.webp", "jenis": "objek", "nama": "Layang layang", "sub": ["ipa-4-bab2--macam-macam-gaya", "ipa-4-bab2--gaya-gesek-dan-gaya"], "kata": []},
-    {"id": "gaya/ayunan", "file": "objek/gaya/ayunan.webp", "jenis": "objek", "nama": "Ayunan", "sub": ["ipa-4-bab2--macam-macam-gaya", "ipa-4-bab2--gaya-gesek-dan-gaya"], "kata": []},
-    {"id": "jejak-karbon/sepeda", "file": "objek/jejak-karbon/sepeda.webp", "jenis": "objek", "nama": "Sepeda", "sub": ["ipa-4-bab8--mengurangi-jejak-karbon", "ipa-6-bab2--udara-bersih-tubuh-sehat", "num-4-bab6--membaca-piktogram-dan-diagram", "num-5-bab8--mengumpulkan-dan-menyajikan-data"], "kata": []},
-    {"id": "jejak-karbon/motor", "file": "objek/jejak-karbon/motor.webp", "jenis": "objek", "nama": "Motor", "sub": ["ipa-4-bab8--mengurangi-jejak-karbon"], "kata": []},
-    {"id": "jejak-karbon/mobil", "file": "objek/jejak-karbon/mobil.webp", "jenis": "objek", "nama": "Mobil", "sub": ["ipa-4-bab8--mengurangi-jejak-karbon"], "kata": []},
-    {"id": "jejak-karbon/angkot", "file": "objek/jejak-karbon/angkot.webp", "jenis": "objek", "nama": "Angkot", "sub": ["ipa-4-bab8--mengurangi-jejak-karbon"], "kata": []},
-    {"id": "jejak-karbon/botol-isi-ulang", "file": "objek/jejak-karbon/botol-isi-ulang.webp", "jenis": "objek", "nama": "Botol isi ulang", "sub": ["ipa-4-bab8--mengurangi-jejak-karbon"], "kata": []},
-    {"id": "jejak-karbon/botol-plastik", "file": "objek/jejak-karbon/botol-plastik.webp", "jenis": "objek", "nama": "Botol plastik", "sub": ["ipa-4-bab8--mengurangi-jejak-karbon"], "kata": []},
-    {"id": "jejak-karbon/tas-kain", "file": "objek/jejak-karbon/tas-kain.webp", "jenis": "objek", "nama": "Tas kain", "sub": ["ipa-4-bab8--mengurangi-jejak-karbon"], "kata": []},
-    {"id": "jejak-karbon/kantong-plastik", "file": "objek/jejak-karbon/kantong-plastik.webp", "jenis": "objek", "nama": "Kantong plastik", "sub": ["ipa-4-bab8--mengurangi-jejak-karbon"], "kata": []},
-    {"id": "jejak-karbon/lampu-hemat-energi", "file": "objek/jejak-karbon/lampu-hemat-energi.webp", "jenis": "objek", "nama": "Lampu hemat energi", "sub": ["ipa-4-bab8--mengurangi-jejak-karbon"], "kata": []},
-    {"id": "jejak-karbon/bibit-pohon", "file": "objek/jejak-karbon/bibit-pohon.webp", "jenis": "objek", "nama": "Bibit pohon", "sub": ["ipa-4-bab8--mengurangi-jejak-karbon"], "kata": []},
-    {"id": "jejak-karbon/tempat-sampah-terpilah", "file": "objek/jejak-karbon/tempat-sampah-terpilah.webp", "jenis": "objek", "nama": "Tempat sampah terpilah", "sub": ["ipa-4-bab8--mengurangi-jejak-karbon"], "kata": []},
-    {"id": "iklim/payung", "file": "objek/iklim/payung.webp", "jenis": "objek", "nama": "Payung", "sub": ["ipa-4-bab4--musim-dan-iklim"], "kata": []},
-    {"id": "iklim/jas-hujan", "file": "objek/iklim/jas-hujan.webp", "jenis": "objek", "nama": "Jas hujan", "sub": ["ipa-4-bab4--musim-dan-iklim"], "kata": []},
-    {"id": "iklim/caping", "file": "objek/iklim/caping.webp", "jenis": "objek", "nama": "Caping", "sub": ["ipa-4-bab4--musim-dan-iklim"], "kata": []},
-    {"id": "iklim/kipas-tangan", "file": "objek/iklim/kipas-tangan.webp", "jenis": "objek", "nama": "Kipas tangan", "sub": ["ipa-4-bab4--musim-dan-iklim"], "kata": []},
-    {"id": "iklim/awan-hujan", "file": "objek/iklim/awan-hujan.webp", "jenis": "objek", "nama": "Awan hujan", "sub": ["ipa-4-bab4--musim-dan-iklim"], "kata": []},
-    {"id": "iklim/matahari-terik", "file": "objek/iklim/matahari-terik.webp", "jenis": "objek", "nama": "Matahari terik", "sub": ["ipa-4-bab4--musim-dan-iklim"], "kata": []},
-    {"id": "iklim/tanah-kering-retak", "file": "objek/iklim/tanah-kering-retak.webp", "jenis": "objek", "nama": "Tanah kering retak", "sub": ["ipa-4-bab4--musim-dan-iklim"], "kata": []},
-    {"id": "iklim/sawah-hijau", "file": "objek/iklim/sawah-hijau.webp", "jenis": "objek", "nama": "Sawah hijau", "sub": ["ipa-4-bab4--musim-dan-iklim"], "kata": []},
-    {"id": "iklim/banjir", "file": "objek/iklim/banjir.webp", "jenis": "objek", "nama": "Banjir", "sub": ["ipa-4-bab4--musim-dan-iklim"], "kata": []},
-    {"id": "iklim/sumur-kering", "file": "objek/iklim/sumur-kering.webp", "jenis": "objek", "nama": "Sumur kering", "sub": ["ipa-4-bab4--musim-dan-iklim"], "kata": []},
-    {"id": "air-bersih/gelas-air-jernih", "file": "objek/air-bersih/gelas-air-jernih.webp", "jenis": "objek", "nama": "Gelas air jernih", "sub": ["ipa-5-bab4--air-bersih-di-lingkunganku"], "kata": []},
-    {"id": "air-bersih/gelas-air-keruh", "file": "objek/air-bersih/gelas-air-keruh.webp", "jenis": "objek", "nama": "Gelas air keruh", "sub": ["ipa-5-bab4--air-bersih-di-lingkunganku"], "kata": []},
-    {"id": "air-bersih/sumur", "file": "objek/air-bersih/sumur.webp", "jenis": "objek", "nama": "Sumur", "sub": ["ipa-5-bab4--air-bersih-di-lingkunganku"], "kata": []},
-    {"id": "air-bersih/keran-air", "file": "objek/air-bersih/keran-air.webp", "jenis": "objek", "nama": "Keran air", "sub": ["ipa-5-bab4--air-bersih-di-lingkunganku"], "kata": []},
-    {"id": "air-bersih/ember", "file": "objek/air-bersih/ember.webp", "jenis": "objek", "nama": "Ember", "sub": ["ipa-5-bab4--air-bersih-di-lingkunganku"], "kata": []},
-    {"id": "air-bersih/saringan-air", "file": "objek/air-bersih/saringan-air.webp", "jenis": "objek", "nama": "Saringan air", "sub": ["ipa-5-bab4--air-bersih-di-lingkunganku"], "kata": []},
-    {"id": "air-bersih/sungai-bersih", "file": "objek/air-bersih/sungai-bersih.webp", "jenis": "objek", "nama": "Sungai bersih", "sub": ["ipa-5-bab4--air-bersih-di-lingkunganku"], "kata": []},
-    {"id": "air-bersih/sungai-tercemar", "file": "objek/air-bersih/sungai-tercemar.webp", "jenis": "objek", "nama": "Sungai tercemar", "sub": ["ipa-5-bab4--air-bersih-di-lingkunganku"], "kata": []},
-    {"id": "air-bersih/sampah-plastik", "file": "objek/air-bersih/sampah-plastik.webp", "jenis": "objek", "nama": "Sampah plastik", "sub": ["ipa-5-bab4--air-bersih-di-lingkunganku"], "kata": []},
-    {"id": "air-bersih/gayung", "file": "objek/air-bersih/gayung.webp", "jenis": "objek", "nama": "Gayung", "sub": ["ipa-5-bab4--air-bersih-di-lingkunganku"], "kata": []},
-    {"id": "udara-bersih/masker", "file": "objek/udara-bersih/masker.webp", "jenis": "objek", "nama": "Masker", "sub": ["ipa-6-bab2--udara-bersih-tubuh-sehat"], "kata": []},
-    {"id": "udara-bersih/asap-kendaraan", "file": "objek/udara-bersih/asap-kendaraan.webp", "jenis": "objek", "nama": "Asap kendaraan", "sub": ["ipa-6-bab2--udara-bersih-tubuh-sehat"], "kata": []},
-    {"id": "udara-bersih/pembakaran-sampah", "file": "objek/udara-bersih/pembakaran-sampah.webp", "jenis": "objek", "nama": "Pembakaran sampah", "sub": ["ipa-6-bab2--udara-bersih-tubuh-sehat"], "kata": []},
-    {"id": "udara-bersih/cerobong-pabrik", "file": "objek/udara-bersih/cerobong-pabrik.webp", "jenis": "objek", "nama": "Cerobong pabrik", "sub": ["ipa-6-bab2--udara-bersih-tubuh-sehat"], "kata": []},
-    {"id": "udara-bersih/pohon-rindang", "file": "objek/udara-bersih/pohon-rindang.webp", "jenis": "objek", "nama": "Pohon rindang", "sub": ["ipa-6-bab2--udara-bersih-tubuh-sehat"], "kata": []},
-    {"id": "udara-bersih/tanaman-pot", "file": "objek/udara-bersih/tanaman-pot.webp", "jenis": "objek", "nama": "Tanaman pot", "sub": ["ipa-6-bab2--udara-bersih-tubuh-sehat"], "kata": []},
-    {"id": "hidup-sehat/sikat-gigi", "file": "objek/hidup-sehat/sikat-gigi.webp", "jenis": "objek", "nama": "Sikat gigi", "sub": ["ipa-5-bab6--sehat-tubuh-dan-pikiran"], "kata": []},
-    {"id": "hidup-sehat/sabun", "file": "objek/hidup-sehat/sabun.webp", "jenis": "objek", "nama": "Sabun", "sub": ["ipa-5-bab6--sehat-tubuh-dan-pikiran"], "kata": []},
-    {"id": "hidup-sehat/handuk", "file": "objek/hidup-sehat/handuk.webp", "jenis": "objek", "nama": "Handuk", "sub": ["ipa-5-bab6--sehat-tubuh-dan-pikiran"], "kata": []},
-    {"id": "hidup-sehat/botol-air-putih", "file": "objek/hidup-sehat/botol-air-putih.webp", "jenis": "objek", "nama": "Botol air putih", "sub": ["ipa-5-bab6--sehat-tubuh-dan-pikiran"], "kata": []},
-    {"id": "hidup-sehat/jam-weker", "file": "objek/hidup-sehat/jam-weker.webp", "jenis": "objek", "nama": "Jam weker", "sub": ["ipa-5-bab6--sehat-tubuh-dan-pikiran"], "kata": []},
-    {"id": "hidup-sehat/bola-sepak", "file": "objek/hidup-sehat/bola-sepak.webp", "jenis": "objek", "nama": "Bola sepak", "sub": ["ipa-5-bab6--sehat-tubuh-dan-pikiran"], "kata": []},
-    {"id": "hidup-sehat/buah-segar", "file": "objek/hidup-sehat/buah-segar.webp", "jenis": "objek", "nama": "Buah segar", "sub": ["ipa-5-bab6--sehat-tubuh-dan-pikiran"], "kata": []},
-    {"id": "hidup-sehat/gawai", "file": "objek/hidup-sehat/gawai.webp", "jenis": "objek", "nama": "Gawai", "sub": ["ipa-5-bab6--sehat-tubuh-dan-pikiran"], "kata": []},
-    {"id": "hidup-sehat/buku-cerita", "file": "objek/hidup-sehat/buku-cerita.webp", "jenis": "objek", "nama": "Buku cerita", "sub": ["ipa-5-bab6--sehat-tubuh-dan-pikiran"], "kata": []},
-    {"id": "alat-ukur/penggaris", "file": "objek/alat-ukur/penggaris.webp", "jenis": "objek", "nama": "Penggaris", "sub": ["num-4-bab4--luas-dengan-persegi-satuan", "num-4-bab4--volume-dengan-kubus-satuan"], "kata": []},
-    {"id": "alat-ukur/meteran-jahit", "file": "objek/alat-ukur/meteran-jahit.webp", "jenis": "objek", "nama": "Meteran jahit", "sub": ["num-4-bab4--luas-dengan-persegi-satuan", "num-4-bab4--volume-dengan-kubus-satuan"], "kata": []},
-    {"id": "alat-ukur/timbangan-dapur", "file": "objek/alat-ukur/timbangan-dapur.webp", "jenis": "objek", "nama": "Timbangan dapur", "sub": ["num-4-bab4--luas-dengan-persegi-satuan", "num-4-bab4--volume-dengan-kubus-satuan"], "kata": []},
-    {"id": "alat-ukur/timbangan-badan", "file": "objek/alat-ukur/timbangan-badan.webp", "jenis": "objek", "nama": "Timbangan badan", "sub": ["num-4-bab4--luas-dengan-persegi-satuan", "num-4-bab4--volume-dengan-kubus-satuan"], "kata": []},
-    {"id": "alat-ukur/gelas-ukur", "file": "objek/alat-ukur/gelas-ukur.webp", "jenis": "objek", "nama": "Gelas ukur", "sub": ["num-4-bab4--luas-dengan-persegi-satuan", "num-4-bab4--volume-dengan-kubus-satuan"], "kata": []},
-    {"id": "alat-ukur/jam-dinding", "file": "objek/alat-ukur/jam-dinding.webp", "jenis": "objek", "nama": "Jam dinding", "sub": ["num-4-bab4--luas-dengan-persegi-satuan", "num-4-bab4--volume-dengan-kubus-satuan"], "kata": []},
-    {"id": "alat-ukur/botol-satu-liter", "file": "objek/alat-ukur/botol-satu-liter.webp", "jenis": "objek", "nama": "Botol satu liter", "sub": ["num-4-bab4--luas-dengan-persegi-satuan", "num-4-bab4--volume-dengan-kubus-satuan"], "kata": []},
-    {"id": "alat-ukur/jangka-sorong-mainan", "file": "objek/alat-ukur/jangka-sorong-mainan.webp", "jenis": "objek", "nama": "Jangka sorong mainan", "sub": ["num-4-bab4--luas-dengan-persegi-satuan", "num-4-bab4--volume-dengan-kubus-satuan"], "kata": []},
-    {"id": "benda-bangun-ruang/kardus", "file": "objek/benda-bangun-ruang/kardus.webp", "jenis": "objek", "nama": "Kardus", "sub": ["num-6-bab3--jaring-jaring-dan-visualisasi"], "kata": []},
-    {"id": "benda-bangun-ruang/dadu", "file": "objek/benda-bangun-ruang/dadu.webp", "jenis": "objek", "nama": "Dadu", "sub": ["num-6-bab3--jaring-jaring-dan-visualisasi", "num-6-bab4--skala-peluang"], "kata": []},
-    {"id": "benda-bangun-ruang/kaleng", "file": "objek/benda-bangun-ruang/kaleng.webp", "jenis": "objek", "nama": "Kaleng", "sub": ["num-6-bab3--jaring-jaring-dan-visualisasi"], "kata": []},
-    {"id": "benda-bangun-ruang/bola", "file": "objek/benda-bangun-ruang/bola.webp", "jenis": "objek", "nama": "Bola", "sub": ["num-6-bab3--jaring-jaring-dan-visualisasi", "num-4-bab6--membaca-piktogram-dan-diagram", "num-5-bab8--mengumpulkan-dan-menyajikan-data"], "kata": []},
-    {"id": "benda-bangun-ruang/topi-kerucut", "file": "objek/benda-bangun-ruang/topi-kerucut.webp", "jenis": "objek", "nama": "Topi kerucut", "sub": ["num-6-bab3--jaring-jaring-dan-visualisasi"], "kata": []},
-    {"id": "benda-bangun-ruang/rubik", "file": "objek/benda-bangun-ruang/rubik.webp", "jenis": "objek", "nama": "Rubik", "sub": ["num-6-bab3--jaring-jaring-dan-visualisasi"], "kata": []},
-    {"id": "benda-bangun-ruang/lemari", "file": "objek/benda-bangun-ruang/lemari.webp", "jenis": "objek", "nama": "Lemari", "sub": ["num-6-bab3--jaring-jaring-dan-visualisasi"], "kata": []},
-    {"id": "benda-bangun-ruang/tenda", "file": "objek/benda-bangun-ruang/tenda.webp", "jenis": "objek", "nama": "Tenda", "sub": ["num-6-bab3--jaring-jaring-dan-visualisasi"], "kata": []},
-    {"id": "peluang/koin", "file": "objek/peluang/koin.webp", "jenis": "objek", "nama": "Koin", "sub": ["num-6-bab4--skala-peluang"], "kata": []},
-    {"id": "peluang/kantong-kelereng", "file": "objek/peluang/kantong-kelereng.webp", "jenis": "objek", "nama": "Kantong kelereng", "sub": ["num-6-bab4--skala-peluang"], "kata": []},
-    {"id": "peluang/putaran-warna", "file": "objek/peluang/putaran-warna.webp", "jenis": "objek", "nama": "Putaran warna", "sub": ["num-6-bab4--skala-peluang"], "kata": []},
-    {"id": "peluang/kartu-bergambar", "file": "objek/peluang/kartu-bergambar.webp", "jenis": "objek", "nama": "Kartu bergambar", "sub": ["num-6-bab4--skala-peluang"], "kata": []},
-    {"id": "peluang/kotak-undian", "file": "objek/peluang/kotak-undian.webp", "jenis": "objek", "nama": "Kotak undian", "sub": ["num-6-bab4--skala-peluang"], "kata": []},
-    {"id": "piktogram/apel", "file": "objek/piktogram/apel.webp", "jenis": "objek", "nama": "Apel", "sub": ["num-4-bab6--membaca-piktogram-dan-diagram", "num-5-bab8--mengumpulkan-dan-menyajikan-data"], "kata": []},
-    {"id": "piktogram/mangga", "file": "objek/piktogram/mangga.webp", "jenis": "objek", "nama": "Mangga", "sub": ["num-4-bab6--membaca-piktogram-dan-diagram", "num-5-bab8--mengumpulkan-dan-menyajikan-data"], "kata": []},
-    {"id": "piktogram/buku", "file": "objek/piktogram/buku.webp", "jenis": "objek", "nama": "Buku", "sub": ["num-4-bab6--membaca-piktogram-dan-diagram", "num-5-bab8--mengumpulkan-dan-menyajikan-data"], "kata": []},
-    {"id": "piktogram/ikan", "file": "objek/piktogram/ikan.webp", "jenis": "objek", "nama": "Ikan", "sub": ["num-4-bab6--membaca-piktogram-dan-diagram", "num-5-bab8--mengumpulkan-dan-menyajikan-data"], "kata": []},
-    {"id": "latar/ruang-kelas", "file": "latar/ruang-kelas.webp", "jenis": "latar", "nama": "Ruang kelas", "kata": ["sekolah"]},
-    {"id": "latar/pasar", "file": "latar/pasar.webp", "jenis": "latar", "nama": "Pasar tradisional", "kata": ["jual beli"]},
-    {"id": "latar/sawah", "file": "latar/sawah.webp", "jenis": "latar", "nama": "Sawah", "kata": ["pertanian"]},
-    {"id": "latar/kebun-sayur", "file": "latar/kebun-sayur.webp", "jenis": "latar", "nama": "Kebun sayur", "kata": ["tumbuhan"]},
-    {"id": "latar/dapur", "file": "latar/dapur.webp", "jenis": "latar", "nama": "Dapur", "kata": ["makanan"]},
-    {"id": "latar/perpustakaan", "file": "latar/perpustakaan.webp", "jenis": "latar", "nama": "Perpustakaan", "kata": ["membaca"]},
-    {"id": "latar/lapangan-sekolah", "file": "latar/lapangan-sekolah.webp", "jenis": "latar", "nama": "Lapangan sekolah", "kata": ["olahraga"]},
-    {"id": "latar/ruang-keluarga", "file": "latar/ruang-keluarga.webp", "jenis": "latar", "nama": "Ruang keluarga", "kata": ["rumah"]},
-    {"id": "latar/jalan-desa", "file": "latar/jalan-desa.webp", "jenis": "latar", "nama": "Jalan desa", "kata": ["lingkungan"]},
-    {"id": "latar/pantai", "file": "latar/pantai.webp", "jenis": "latar", "nama": "Pantai", "kata": ["laut"]},
-    {"id": "latar/hutan", "file": "latar/hutan.webp", "jenis": "latar", "nama": "Hutan", "kata": ["ekosistem"]},
-    {"id": "latar/laboratorium", "file": "latar/laboratorium.webp", "jenis": "latar", "nama": "Laboratorium", "kata": ["percobaan"]},
-    {"id": "latar/malam-berbintang", "file": "latar/malam-berbintang.webp", "jenis": "latar", "nama": "Malam berbintang", "kata": ["langit"]},
-    {"id": "latar/bawah-laut", "file": "latar/bawah-laut.webp", "jenis": "latar", "nama": "Bawah laut", "kata": ["laut"]},
-    {"id": "latar/luar-angkasa", "file": "latar/luar-angkasa.webp", "jenis": "latar", "nama": "Luar angkasa", "kata": ["tata surya"]},
-    {"id": "maskot/murid-laki", "file": "maskot/murid-laki-biasa.webp", "jenis": "maskot", "nama": "Murid laki-laki", "pose": {"senang": "maskot/murid-laki-senang.webp", "berpikir": "maskot/murid-laki-berpikir.webp"}},
-    {"id": "maskot/murid-perempuan", "file": "maskot/murid-perempuan-biasa.webp", "jenis": "maskot", "nama": "Murid perempuan", "pose": {"senang": "maskot/murid-perempuan-senang.webp", "berpikir": "maskot/murid-perempuan-berpikir.webp"}},
-    {"id": "maskot/guru", "file": "maskot/guru-biasa.webp", "jenis": "maskot", "nama": "Guru", "pose": {"senang": "maskot/guru-senang.webp", "berpikir": "maskot/guru-berpikir.webp"}},
-    {"id": "maskot/pedagang", "file": "maskot/pedagang-biasa.webp", "jenis": "maskot", "nama": "Pedagang", "pose": {"senang": "maskot/pedagang-senang.webp", "berpikir": "maskot/pedagang-berpikir.webp"}},
-    {"id": "maskot/ilmuwan-cilik", "file": "maskot/ilmuwan-cilik-biasa.webp", "jenis": "maskot", "nama": "Ilmuwan cilik", "pose": {"senang": "maskot/ilmuwan-cilik-senang.webp", "berpikir": "maskot/ilmuwan-cilik-berpikir.webp"}},
-    {"id": "maskot/kancil", "file": "maskot/kancil-biasa.webp", "jenis": "maskot", "nama": "Kancil", "pose": {"senang": "maskot/kancil-senang.webp", "berpikir": "maskot/kancil-berpikir.webp"}}
-  ]
+ "versi": 1,
+ "catatan": "Draf. Hapus baris gambar yang belum/tidak dibuat. Titik jelajah ditambahkan setelah gambarnya jadi.",
+ "dasar": "https://cdn.jsdelivr.net/gh/semar1910/aset-mpi-kkg@main/aset/",
+ "aset": [
+  {
+   "id": "gizi/nasi-putih",
+   "file": "objek/gizi/nasi-putih.webp",
+   "jenis": "objek",
+   "nama": "Nasi putih",
+   "sub": [
+    "ipa-6-bab1--makanan-sehat-untuk-tubuhku"
+   ],
+   "kata": [
+    "karbohidrat"
+   ]
+  },
+  {
+   "id": "gizi/jagung-rebus",
+   "file": "objek/gizi/jagung-rebus.webp",
+   "jenis": "objek",
+   "nama": "Jagung rebus",
+   "sub": [
+    "ipa-6-bab1--makanan-sehat-untuk-tubuhku"
+   ],
+   "kata": [
+    "karbohidrat"
+   ]
+  },
+  {
+   "id": "gizi/singkong-rebus",
+   "file": "objek/gizi/singkong-rebus.webp",
+   "jenis": "objek",
+   "nama": "Singkong rebus",
+   "sub": [
+    "ipa-6-bab1--makanan-sehat-untuk-tubuhku"
+   ],
+   "kata": [
+    "karbohidrat"
+   ]
+  },
+  {
+   "id": "gizi/roti",
+   "file": "objek/gizi/roti.webp",
+   "jenis": "objek",
+   "nama": "Roti",
+   "sub": [
+    "ipa-6-bab1--makanan-sehat-untuk-tubuhku",
+    "num-4-bab1--penjumlahan-dan-pengurangan-dalam",
+    "num-5-bab1--nilai-tempat-dan-operasi"
+   ],
+   "kata": [
+    "karbohidrat"
+   ]
+  },
+  {
+   "id": "gizi/ikan-goreng",
+   "file": "objek/gizi/ikan-goreng.webp",
+   "jenis": "objek",
+   "nama": "Ikan goreng",
+   "sub": [
+    "ipa-6-bab1--makanan-sehat-untuk-tubuhku"
+   ],
+   "kata": [
+    "protein"
+   ]
+  },
+  {
+   "id": "gizi/telur-rebus",
+   "file": "objek/gizi/telur-rebus.webp",
+   "jenis": "objek",
+   "nama": "Telur rebus",
+   "sub": [
+    "ipa-6-bab1--makanan-sehat-untuk-tubuhku"
+   ],
+   "kata": [
+    "protein"
+   ]
+  },
+  {
+   "id": "gizi/tempe",
+   "file": "objek/gizi/tempe.webp",
+   "jenis": "objek",
+   "nama": "Tempe",
+   "sub": [
+    "ipa-6-bab1--makanan-sehat-untuk-tubuhku"
+   ],
+   "kata": [
+    "protein"
+   ]
+  },
+  {
+   "id": "gizi/tahu",
+   "file": "objek/gizi/tahu.webp",
+   "jenis": "objek",
+   "nama": "Tahu",
+   "sub": [
+    "ipa-6-bab1--makanan-sehat-untuk-tubuhku"
+   ],
+   "kata": [
+    "protein"
+   ]
+  },
+  {
+   "id": "gizi/ayam-goreng",
+   "file": "objek/gizi/ayam-goreng.webp",
+   "jenis": "objek",
+   "nama": "Ayam goreng",
+   "sub": [
+    "ipa-6-bab1--makanan-sehat-untuk-tubuhku"
+   ],
+   "kata": [
+    "protein"
+   ]
+  },
+  {
+   "id": "gizi/susu",
+   "file": "objek/gizi/susu.webp",
+   "jenis": "objek",
+   "nama": "Susu",
+   "sub": [
+    "ipa-6-bab1--makanan-sehat-untuk-tubuhku"
+   ],
+   "kata": [
+    "protein"
+   ]
+  },
+  {
+   "id": "gizi/bayam",
+   "file": "objek/gizi/bayam.webp",
+   "jenis": "objek",
+   "nama": "Bayam",
+   "sub": [
+    "ipa-6-bab1--makanan-sehat-untuk-tubuhku"
+   ],
+   "kata": [
+    "vitamin dan mineral"
+   ]
+  },
+  {
+   "id": "gizi/wortel",
+   "file": "objek/gizi/wortel.webp",
+   "jenis": "objek",
+   "nama": "Wortel",
+   "sub": [
+    "ipa-6-bab1--makanan-sehat-untuk-tubuhku"
+   ],
+   "kata": [
+    "vitamin dan mineral"
+   ]
+  },
+  {
+   "id": "gizi/pisang",
+   "file": "objek/gizi/pisang.webp",
+   "jenis": "objek",
+   "nama": "Pisang",
+   "sub": [
+    "ipa-6-bab1--makanan-sehat-untuk-tubuhku"
+   ],
+   "kata": [
+    "vitamin dan mineral"
+   ]
+  },
+  {
+   "id": "gizi/jeruk",
+   "file": "objek/gizi/jeruk.webp",
+   "jenis": "objek",
+   "nama": "Jeruk",
+   "sub": [
+    "ipa-6-bab1--makanan-sehat-untuk-tubuhku",
+    "num-4-bab6--membaca-piktogram-dan-diagram",
+    "num-5-bab8--mengumpulkan-dan-menyajikan-data"
+   ],
+   "kata": [
+    "vitamin dan mineral"
+   ]
+  },
+  {
+   "id": "gizi/minyak-goreng",
+   "file": "objek/gizi/minyak-goreng.webp",
+   "jenis": "objek",
+   "nama": "Minyak goreng",
+   "sub": [
+    "ipa-6-bab1--makanan-sehat-untuk-tubuhku"
+   ],
+   "kata": [
+    "lemak"
+   ]
+  },
+  {
+   "id": "ekosistem/rumput",
+   "file": "objek/ekosistem/rumput.webp",
+   "jenis": "objek",
+   "nama": "Rumput",
+   "sub": [
+    "ipa-5-bab3--komponen-ekosistem",
+    "ipa-5-bab3--rantai-dan-jaring-makanan"
+   ],
+   "kata": [
+    "biotik",
+    "produsen"
+   ]
+  },
+  {
+   "id": "ekosistem/padi",
+   "file": "objek/ekosistem/padi.webp",
+   "jenis": "objek",
+   "nama": "Padi",
+   "sub": [
+    "ipa-5-bab3--komponen-ekosistem",
+    "ipa-5-bab3--rantai-dan-jaring-makanan"
+   ],
+   "kata": [
+    "biotik",
+    "produsen"
+   ]
+  },
+  {
+   "id": "ekosistem/ulat",
+   "file": "objek/ekosistem/ulat.webp",
+   "jenis": "objek",
+   "nama": "Ulat",
+   "sub": [
+    "ipa-5-bab3--komponen-ekosistem",
+    "ipa-5-bab3--rantai-dan-jaring-makanan"
+   ],
+   "kata": [
+    "biotik",
+    "konsumen tingkat 1"
+   ]
+  },
+  {
+   "id": "ekosistem/belalang",
+   "file": "objek/ekosistem/belalang.webp",
+   "jenis": "objek",
+   "nama": "Belalang",
+   "sub": [
+    "ipa-5-bab3--komponen-ekosistem",
+    "ipa-5-bab3--rantai-dan-jaring-makanan"
+   ],
+   "kata": [
+    "biotik",
+    "konsumen tingkat 1"
+   ]
+  },
+  {
+   "id": "ekosistem/katak",
+   "file": "objek/ekosistem/katak.webp",
+   "jenis": "objek",
+   "nama": "Katak",
+   "sub": [
+    "ipa-5-bab3--komponen-ekosistem",
+    "ipa-5-bab3--rantai-dan-jaring-makanan"
+   ],
+   "kata": [
+    "biotik",
+    "konsumen tingkat 2"
+   ]
+  },
+  {
+   "id": "ekosistem/ular",
+   "file": "objek/ekosistem/ular.webp",
+   "jenis": "objek",
+   "nama": "Ular",
+   "sub": [
+    "ipa-5-bab3--komponen-ekosistem",
+    "ipa-5-bab3--rantai-dan-jaring-makanan"
+   ],
+   "kata": [
+    "biotik",
+    "konsumen tingkat 2"
+   ]
+  },
+  {
+   "id": "ekosistem/elang",
+   "file": "objek/ekosistem/elang.webp",
+   "jenis": "objek",
+   "nama": "Elang",
+   "sub": [
+    "ipa-5-bab3--komponen-ekosistem",
+    "ipa-5-bab3--rantai-dan-jaring-makanan"
+   ],
+   "kata": [
+    "biotik",
+    "konsumen puncak"
+   ]
+  },
+  {
+   "id": "ekosistem/tikus",
+   "file": "objek/ekosistem/tikus.webp",
+   "jenis": "objek",
+   "nama": "Tikus",
+   "sub": [
+    "ipa-5-bab3--komponen-ekosistem",
+    "ipa-5-bab3--rantai-dan-jaring-makanan"
+   ],
+   "kata": [
+    "biotik",
+    "konsumen tingkat 1"
+   ]
+  },
+  {
+   "id": "ekosistem/ayam",
+   "file": "objek/ekosistem/ayam.webp",
+   "jenis": "objek",
+   "nama": "Ayam",
+   "sub": [
+    "ipa-5-bab3--komponen-ekosistem",
+    "ipa-5-bab3--rantai-dan-jaring-makanan",
+    "num-4-bab6--membaca-piktogram-dan-diagram",
+    "num-5-bab8--mengumpulkan-dan-menyajikan-data"
+   ],
+   "kata": [
+    "biotik",
+    "omnivora"
+   ]
+  },
+  {
+   "id": "ekosistem/kambing",
+   "file": "objek/ekosistem/kambing.webp",
+   "jenis": "objek",
+   "nama": "Kambing",
+   "sub": [
+    "ipa-5-bab3--komponen-ekosistem",
+    "ipa-5-bab3--rantai-dan-jaring-makanan"
+   ],
+   "kata": [
+    "biotik",
+    "konsumen tingkat 1"
+   ]
+  },
+  {
+   "id": "ekosistem/jamur",
+   "file": "objek/ekosistem/jamur.webp",
+   "jenis": "objek",
+   "nama": "Jamur",
+   "sub": [
+    "ipa-5-bab3--komponen-ekosistem",
+    "ipa-5-bab3--rantai-dan-jaring-makanan"
+   ],
+   "kata": [
+    "biotik",
+    "pengurai"
+   ]
+  },
+  {
+   "id": "ekosistem/cacing-tanah",
+   "file": "objek/ekosistem/cacing-tanah.webp",
+   "jenis": "objek",
+   "nama": "Cacing tanah",
+   "sub": [
+    "ipa-5-bab3--komponen-ekosistem",
+    "ipa-5-bab3--rantai-dan-jaring-makanan"
+   ],
+   "kata": [
+    "biotik",
+    "pengurai"
+   ]
+  },
+  {
+   "id": "ekosistem/batu",
+   "file": "objek/ekosistem/batu.webp",
+   "jenis": "objek",
+   "nama": "Batu",
+   "sub": [
+    "ipa-5-bab3--komponen-ekosistem",
+    "ipa-5-bab3--rantai-dan-jaring-makanan"
+   ],
+   "kata": [
+    "abiotik"
+   ]
+  },
+  {
+   "id": "ekosistem/air-kolam",
+   "file": "objek/ekosistem/air-kolam.webp",
+   "jenis": "objek",
+   "nama": "Air kolam",
+   "sub": [
+    "ipa-5-bab3--komponen-ekosistem",
+    "ipa-5-bab3--rantai-dan-jaring-makanan"
+   ],
+   "kata": [
+    "abiotik"
+   ]
+  },
+  {
+   "id": "ekosistem/matahari",
+   "file": "objek/ekosistem/matahari.webp",
+   "jenis": "objek",
+   "nama": "Matahari",
+   "sub": [
+    "ipa-5-bab3--komponen-ekosistem",
+    "ipa-5-bab3--rantai-dan-jaring-makanan",
+    "ipa-5-bab7--melihat-karena-cahaya",
+    "ipa-5-bab7--bayangan-dan-warna",
+    "ipa-6-bab6--sistem-tata-surya",
+    "ipa-6-bab6--matahari-bumi-dan-bulan"
+   ],
+   "kata": [
+    "abiotik",
+    "sumber cahaya"
+   ]
+  },
+  {
+   "id": "energi-bentuk/lampu-menyala",
+   "file": "objek/energi-bentuk/lampu-menyala.webp",
+   "jenis": "objek",
+   "nama": "Lampu menyala",
+   "sub": [
+    "ipa-4-bab1--perubahan-bentuk-energi"
+   ],
+   "kata": [
+    "listrik ke cahaya"
+   ]
+  },
+  {
+   "id": "energi-bentuk/kipas-angin",
+   "file": "objek/energi-bentuk/kipas-angin.webp",
+   "jenis": "objek",
+   "nama": "Kipas angin",
+   "sub": [
+    "ipa-4-bab1--perubahan-bentuk-energi",
+    "ipa-6-bab2--udara-bersih-tubuh-sehat"
+   ],
+   "kata": [
+    "listrik ke gerak"
+   ]
+  },
+  {
+   "id": "energi-bentuk/setrika",
+   "file": "objek/energi-bentuk/setrika.webp",
+   "jenis": "objek",
+   "nama": "Setrika",
+   "sub": [
+    "ipa-4-bab1--perubahan-bentuk-energi"
+   ],
+   "kata": [
+    "listrik ke panas"
+   ]
+  },
+  {
+   "id": "energi-bentuk/radio",
+   "file": "objek/energi-bentuk/radio.webp",
+   "jenis": "objek",
+   "nama": "Radio",
+   "sub": [
+    "ipa-4-bab1--perubahan-bentuk-energi"
+   ],
+   "kata": [
+    "listrik ke bunyi"
+   ]
+  },
+  {
+   "id": "energi-bentuk/kompor-gas",
+   "file": "objek/energi-bentuk/kompor-gas.webp",
+   "jenis": "objek",
+   "nama": "Kompor gas",
+   "sub": [
+    "ipa-4-bab1--perubahan-bentuk-energi"
+   ],
+   "kata": [
+    "kimia ke panas"
+   ]
+  },
+  {
+   "id": "energi-bentuk/senter",
+   "file": "objek/energi-bentuk/senter.webp",
+   "jenis": "objek",
+   "nama": "Senter",
+   "sub": [
+    "ipa-4-bab1--perubahan-bentuk-energi",
+    "ipa-5-bab7--melihat-karena-cahaya",
+    "ipa-5-bab7--bayangan-dan-warna"
+   ],
+   "kata": [
+    "kimia ke cahaya",
+    "sumber cahaya"
+   ]
+  },
+  {
+   "id": "energi-bentuk/panel-surya",
+   "file": "objek/energi-bentuk/panel-surya.webp",
+   "jenis": "objek",
+   "nama": "Panel surya",
+   "sub": [
+    "ipa-4-bab1--perubahan-bentuk-energi",
+    "ipa-6-bab5--energi-tak-terbarukan-dan"
+   ],
+   "kata": [
+    "cahaya ke listrik",
+    "terbarukan"
+   ]
+  },
+  {
+   "id": "energi-bentuk/kincir-angin",
+   "file": "objek/energi-bentuk/kincir-angin.webp",
+   "jenis": "objek",
+   "nama": "Kincir angin",
+   "sub": [
+    "ipa-4-bab1--perubahan-bentuk-energi",
+    "ipa-6-bab5--energi-tak-terbarukan-dan"
+   ],
+   "kata": [
+    "gerak ke listrik",
+    "terbarukan"
+   ]
+  },
+  {
+   "id": "energi-bentuk/baterai",
+   "file": "objek/energi-bentuk/baterai.webp",
+   "jenis": "objek",
+   "nama": "Baterai",
+   "sub": [
+    "ipa-4-bab1--perubahan-bentuk-energi"
+   ],
+   "kata": [
+    "energi kimia"
+   ]
+  },
+  {
+   "id": "energi-bentuk/lilin-menyala",
+   "file": "objek/energi-bentuk/lilin-menyala.webp",
+   "jenis": "objek",
+   "nama": "Lilin menyala",
+   "sub": [
+    "ipa-4-bab1--perubahan-bentuk-energi"
+   ],
+   "kata": [
+    "kimia ke cahaya"
+   ]
+  },
+  {
+   "id": "energi-bentuk/mobil-mainan",
+   "file": "objek/energi-bentuk/mobil-mainan.webp",
+   "jenis": "objek",
+   "nama": "Mobil mainan",
+   "sub": [
+    "ipa-4-bab1--perubahan-bentuk-energi"
+   ],
+   "kata": [
+    "listrik ke gerak"
+   ]
+  },
+  {
+   "id": "energi-bentuk/teko-listrik",
+   "file": "objek/energi-bentuk/teko-listrik.webp",
+   "jenis": "objek",
+   "nama": "Teko listrik",
+   "sub": [
+    "ipa-4-bab1--perubahan-bentuk-energi"
+   ],
+   "kata": [
+    "listrik ke panas"
+   ]
+  },
+  {
+   "id": "energi-sumber/bendungan-air",
+   "file": "objek/energi-sumber/bendungan-air.webp",
+   "jenis": "objek",
+   "nama": "Bendungan air",
+   "sub": [
+    "ipa-6-bab5--energi-tak-terbarukan-dan"
+   ],
+   "kata": [
+    "terbarukan"
+   ]
+  },
+  {
+   "id": "energi-sumber/biogas",
+   "file": "objek/energi-sumber/biogas.webp",
+   "jenis": "objek",
+   "nama": "Biogas",
+   "sub": [
+    "ipa-6-bab5--energi-tak-terbarukan-dan"
+   ],
+   "kata": [
+    "terbarukan"
+   ]
+  },
+  {
+   "id": "energi-sumber/batu-bara",
+   "file": "objek/energi-sumber/batu-bara.webp",
+   "jenis": "objek",
+   "nama": "Batu bara",
+   "sub": [
+    "ipa-6-bab5--energi-tak-terbarukan-dan"
+   ],
+   "kata": [
+    "tak terbarukan"
+   ]
+  },
+  {
+   "id": "energi-sumber/drum-minyak-bumi",
+   "file": "objek/energi-sumber/drum-minyak-bumi.webp",
+   "jenis": "objek",
+   "nama": "Drum minyak bumi",
+   "sub": [
+    "ipa-6-bab5--energi-tak-terbarukan-dan"
+   ],
+   "kata": [
+    "tak terbarukan"
+   ]
+  },
+  {
+   "id": "energi-sumber/tabung-gas",
+   "file": "objek/energi-sumber/tabung-gas.webp",
+   "jenis": "objek",
+   "nama": "Tabung gas",
+   "sub": [
+    "ipa-6-bab5--energi-tak-terbarukan-dan"
+   ],
+   "kata": [
+    "tak terbarukan"
+   ]
+  },
+  {
+   "id": "energi-sumber/kayu-bakar",
+   "file": "objek/energi-sumber/kayu-bakar.webp",
+   "jenis": "objek",
+   "nama": "Kayu bakar",
+   "sub": [
+    "ipa-6-bab5--energi-tak-terbarukan-dan"
+   ],
+   "kata": [
+    "terbarukan"
+   ]
+  },
+  {
+   "id": "energi-sumber/pompa-bensin",
+   "file": "objek/energi-sumber/pompa-bensin.webp",
+   "jenis": "objek",
+   "nama": "Pompa bensin",
+   "sub": [
+    "ipa-6-bab5--energi-tak-terbarukan-dan"
+   ],
+   "kata": [
+    "tak terbarukan"
+   ]
+  },
+  {
+   "id": "energi-sumber/aki",
+   "file": "objek/energi-sumber/aki.webp",
+   "jenis": "objek",
+   "nama": "Aki",
+   "sub": [
+    "ipa-6-bab5--energi-tak-terbarukan-dan"
+   ],
+   "kata": [
+    "penyimpan energi"
+   ]
+  },
+  {
+   "id": "cahaya/lilin",
+   "file": "objek/cahaya/lilin.webp",
+   "jenis": "objek",
+   "nama": "Lilin",
+   "sub": [
+    "ipa-5-bab7--melihat-karena-cahaya",
+    "ipa-5-bab7--bayangan-dan-warna"
+   ],
+   "kata": [
+    "sumber cahaya"
+   ]
+  },
+  {
+   "id": "cahaya/cermin",
+   "file": "objek/cahaya/cermin.webp",
+   "jenis": "objek",
+   "nama": "Cermin",
+   "sub": [
+    "ipa-5-bab7--melihat-karena-cahaya",
+    "ipa-5-bab7--bayangan-dan-warna"
+   ],
+   "kata": [
+    "memantulkan cahaya"
+   ]
+  },
+  {
+   "id": "cahaya/kaca-bening",
+   "file": "objek/cahaya/kaca-bening.webp",
+   "jenis": "objek",
+   "nama": "Kaca bening",
+   "sub": [
+    "ipa-5-bab7--melihat-karena-cahaya",
+    "ipa-5-bab7--bayangan-dan-warna"
+   ],
+   "kata": [
+    "benda bening"
+   ]
+  },
+  {
+   "id": "cahaya/kertas-minyak",
+   "file": "objek/cahaya/kertas-minyak.webp",
+   "jenis": "objek",
+   "nama": "Kertas minyak",
+   "sub": [
+    "ipa-5-bab7--melihat-karena-cahaya",
+    "ipa-5-bab7--bayangan-dan-warna"
+   ],
+   "kata": [
+    "benda buram"
+   ]
+  },
+  {
+   "id": "cahaya/papan-kayu",
+   "file": "objek/cahaya/papan-kayu.webp",
+   "jenis": "objek",
+   "nama": "Papan kayu",
+   "sub": [
+    "ipa-5-bab7--melihat-karena-cahaya",
+    "ipa-5-bab7--bayangan-dan-warna"
+   ],
+   "kata": [
+    "benda gelap"
+   ]
+  },
+  {
+   "id": "cahaya/kacamata",
+   "file": "objek/cahaya/kacamata.webp",
+   "jenis": "objek",
+   "nama": "Kacamata",
+   "sub": [
+    "ipa-5-bab7--melihat-karena-cahaya",
+    "ipa-5-bab7--bayangan-dan-warna"
+   ],
+   "kata": [
+    "membiaskan cahaya"
+   ]
+  },
+  {
+   "id": "cahaya/prisma",
+   "file": "objek/cahaya/prisma.webp",
+   "jenis": "objek",
+   "nama": "Prisma",
+   "sub": [
+    "ipa-5-bab7--melihat-karena-cahaya",
+    "ipa-5-bab7--bayangan-dan-warna"
+   ],
+   "kata": [
+    "membiaskan cahaya"
+   ]
+  },
+  {
+   "id": "cahaya/pelangi",
+   "file": "objek/cahaya/pelangi.webp",
+   "jenis": "objek",
+   "nama": "Pelangi",
+   "sub": [
+    "ipa-5-bab7--melihat-karena-cahaya",
+    "ipa-5-bab7--bayangan-dan-warna"
+   ],
+   "kata": [
+    "penguraian cahaya"
+   ]
+  },
+  {
+   "id": "cahaya/bayangan-pohon",
+   "file": "objek/cahaya/bayangan-pohon.webp",
+   "jenis": "objek",
+   "nama": "Bayangan pohon",
+   "sub": [
+    "ipa-5-bab7--melihat-karena-cahaya",
+    "ipa-5-bab7--bayangan-dan-warna"
+   ],
+   "kata": [
+    "bayangan"
+   ]
+  },
+  {
+   "id": "cahaya/plastik-bening",
+   "file": "objek/cahaya/plastik-bening.webp",
+   "jenis": "objek",
+   "nama": "Plastik bening",
+   "sub": [
+    "ipa-5-bab7--melihat-karena-cahaya",
+    "ipa-5-bab7--bayangan-dan-warna"
+   ],
+   "kata": [
+    "benda bening"
+   ]
+  },
+  {
+   "id": "bunyi/gitar",
+   "file": "objek/bunyi/gitar.webp",
+   "jenis": "objek",
+   "nama": "Gitar",
+   "sub": [
+    "ipa-5-bab8--mendengar-karena-bunyi",
+    "ipa-5-bab8--merambat-memantul-dan-meredam"
+   ],
+   "kata": [
+    "alat musik petik"
+   ]
+  },
+  {
+   "id": "bunyi/gendang",
+   "file": "objek/bunyi/gendang.webp",
+   "jenis": "objek",
+   "nama": "Gendang",
+   "sub": [
+    "ipa-5-bab8--mendengar-karena-bunyi",
+    "ipa-5-bab8--merambat-memantul-dan-meredam"
+   ],
+   "kata": [
+    "alat musik pukul"
+   ]
+  },
+  {
+   "id": "bunyi/angklung",
+   "file": "objek/bunyi/angklung.webp",
+   "jenis": "objek",
+   "nama": "Angklung",
+   "sub": [
+    "ipa-5-bab8--mendengar-karena-bunyi",
+    "ipa-5-bab8--merambat-memantul-dan-meredam"
+   ],
+   "kata": [
+    "alat musik goyang"
+   ]
+  },
+  {
+   "id": "bunyi/seruling",
+   "file": "objek/bunyi/seruling.webp",
+   "jenis": "objek",
+   "nama": "Seruling",
+   "sub": [
+    "ipa-5-bab8--mendengar-karena-bunyi",
+    "ipa-5-bab8--merambat-memantul-dan-meredam"
+   ],
+   "kata": [
+    "alat musik tiup"
+   ]
+  },
+  {
+   "id": "bunyi/kentongan",
+   "file": "objek/bunyi/kentongan.webp",
+   "jenis": "objek",
+   "nama": "Kentongan",
+   "sub": [
+    "ipa-5-bab8--mendengar-karena-bunyi",
+    "ipa-5-bab8--merambat-memantul-dan-meredam"
+   ],
+   "kata": [
+    "alat musik pukul"
+   ]
+  },
+  {
+   "id": "bunyi/peluit",
+   "file": "objek/bunyi/peluit.webp",
+   "jenis": "objek",
+   "nama": "Peluit",
+   "sub": [
+    "ipa-5-bab8--mendengar-karena-bunyi",
+    "ipa-5-bab8--merambat-memantul-dan-meredam"
+   ],
+   "kata": [
+    "alat musik tiup"
+   ]
+  },
+  {
+   "id": "bunyi/telepon-kaleng",
+   "file": "objek/bunyi/telepon-kaleng.webp",
+   "jenis": "objek",
+   "nama": "Telepon kaleng",
+   "sub": [
+    "ipa-5-bab8--mendengar-karena-bunyi",
+    "ipa-5-bab8--merambat-memantul-dan-meredam"
+   ],
+   "kata": [
+    "merambat lewat benda padat"
+   ]
+  },
+  {
+   "id": "bunyi/busa-peredam",
+   "file": "objek/bunyi/busa-peredam.webp",
+   "jenis": "objek",
+   "nama": "Busa peredam",
+   "sub": [
+    "ipa-5-bab8--mendengar-karena-bunyi",
+    "ipa-5-bab8--merambat-memantul-dan-meredam"
+   ],
+   "kata": [
+    "peredam bunyi"
+   ]
+  },
+  {
+   "id": "bunyi/karpet",
+   "file": "objek/bunyi/karpet.webp",
+   "jenis": "objek",
+   "nama": "Karpet",
+   "sub": [
+    "ipa-5-bab8--mendengar-karena-bunyi",
+    "ipa-5-bab8--merambat-memantul-dan-meredam"
+   ],
+   "kata": [
+    "peredam bunyi"
+   ]
+  },
+  {
+   "id": "bunyi/tembok-gua",
+   "file": "objek/bunyi/tembok-gua.webp",
+   "jenis": "objek",
+   "nama": "Tembok gua",
+   "sub": [
+    "ipa-5-bab8--mendengar-karena-bunyi",
+    "ipa-5-bab8--merambat-memantul-dan-meredam"
+   ],
+   "kata": [
+    "pemantul bunyi"
+   ]
+  },
+  {
+   "id": "bunyi/lonceng",
+   "file": "objek/bunyi/lonceng.webp",
+   "jenis": "objek",
+   "nama": "Lonceng",
+   "sub": [
+    "ipa-5-bab8--mendengar-karena-bunyi",
+    "ipa-5-bab8--merambat-memantul-dan-meredam"
+   ],
+   "kata": [
+    "alat musik pukul"
+   ]
+  },
+  {
+   "id": "bazar/susu-kotak",
+   "file": "objek/bazar/susu-kotak.webp",
+   "jenis": "objek",
+   "nama": "Susu kotak",
+   "sub": [
+    "num-4-bab1--penjumlahan-dan-pengurangan-dalam",
+    "num-5-bab1--nilai-tempat-dan-operasi"
+   ],
+   "kata": []
+  },
+  {
+   "id": "bazar/es-teh",
+   "file": "objek/bazar/es-teh.webp",
+   "jenis": "objek",
+   "nama": "Es teh",
+   "sub": [
+    "num-4-bab1--penjumlahan-dan-pengurangan-dalam",
+    "num-5-bab1--nilai-tempat-dan-operasi"
+   ],
+   "kata": []
+  },
+  {
+   "id": "bazar/pensil",
+   "file": "objek/bazar/pensil.webp",
+   "jenis": "objek",
+   "nama": "Pensil",
+   "sub": [
+    "num-4-bab1--penjumlahan-dan-pengurangan-dalam",
+    "num-5-bab1--nilai-tempat-dan-operasi"
+   ],
+   "kata": []
+  },
+  {
+   "id": "bazar/buku-tulis",
+   "file": "objek/bazar/buku-tulis.webp",
+   "jenis": "objek",
+   "nama": "Buku tulis",
+   "sub": [
+    "num-4-bab1--penjumlahan-dan-pengurangan-dalam",
+    "num-5-bab1--nilai-tempat-dan-operasi"
+   ],
+   "kata": []
+  },
+  {
+   "id": "bazar/penghapus",
+   "file": "objek/bazar/penghapus.webp",
+   "jenis": "objek",
+   "nama": "Penghapus",
+   "sub": [
+    "num-4-bab1--penjumlahan-dan-pengurangan-dalam",
+    "num-5-bab1--nilai-tempat-dan-operasi"
+   ],
+   "kata": []
+  },
+  {
+   "id": "bazar/kue-lapis",
+   "file": "objek/bazar/kue-lapis.webp",
+   "jenis": "objek",
+   "nama": "Kue lapis",
+   "sub": [
+    "num-4-bab1--penjumlahan-dan-pengurangan-dalam",
+    "num-5-bab1--nilai-tempat-dan-operasi"
+   ],
+   "kata": []
+  },
+  {
+   "id": "bazar/onde-onde",
+   "file": "objek/bazar/onde-onde.webp",
+   "jenis": "objek",
+   "nama": "Onde onde",
+   "sub": [
+    "num-4-bab1--penjumlahan-dan-pengurangan-dalam",
+    "num-5-bab1--nilai-tempat-dan-operasi"
+   ],
+   "kata": []
+  },
+  {
+   "id": "bazar/bakwan",
+   "file": "objek/bazar/bakwan.webp",
+   "jenis": "objek",
+   "nama": "Bakwan",
+   "sub": [
+    "num-4-bab1--penjumlahan-dan-pengurangan-dalam",
+    "num-5-bab1--nilai-tempat-dan-operasi"
+   ],
+   "kata": []
+  },
+  {
+   "id": "bazar/keripik",
+   "file": "objek/bazar/keripik.webp",
+   "jenis": "objek",
+   "nama": "Keripik",
+   "sub": [
+    "num-4-bab1--penjumlahan-dan-pengurangan-dalam",
+    "num-5-bab1--nilai-tempat-dan-operasi"
+   ],
+   "kata": []
+  },
+  {
+   "id": "bazar/permen",
+   "file": "objek/bazar/permen.webp",
+   "jenis": "objek",
+   "nama": "Permen",
+   "sub": [
+    "num-4-bab1--penjumlahan-dan-pengurangan-dalam",
+    "num-5-bab1--nilai-tempat-dan-operasi"
+   ],
+   "kata": []
+  },
+  {
+   "id": "bazar/celengan",
+   "file": "objek/bazar/celengan.webp",
+   "jenis": "objek",
+   "nama": "Celengan",
+   "sub": [
+    "num-4-bab1--penjumlahan-dan-pengurangan-dalam",
+    "num-5-bab1--nilai-tempat-dan-operasi"
+   ],
+   "kata": []
+  },
+  {
+   "id": "tata-surya/merkurius",
+   "file": "objek/tata-surya/merkurius.webp",
+   "jenis": "objek",
+   "nama": "Merkurius",
+   "sub": [
+    "ipa-6-bab6--sistem-tata-surya",
+    "ipa-6-bab6--matahari-bumi-dan-bulan"
+   ],
+   "kata": []
+  },
+  {
+   "id": "tata-surya/venus",
+   "file": "objek/tata-surya/venus.webp",
+   "jenis": "objek",
+   "nama": "Venus",
+   "sub": [
+    "ipa-6-bab6--sistem-tata-surya",
+    "ipa-6-bab6--matahari-bumi-dan-bulan"
+   ],
+   "kata": []
+  },
+  {
+   "id": "tata-surya/bumi",
+   "file": "objek/tata-surya/bumi.webp",
+   "jenis": "objek",
+   "nama": "Bumi",
+   "sub": [
+    "ipa-6-bab6--sistem-tata-surya",
+    "ipa-6-bab6--matahari-bumi-dan-bulan"
+   ],
+   "kata": []
+  },
+  {
+   "id": "tata-surya/mars",
+   "file": "objek/tata-surya/mars.webp",
+   "jenis": "objek",
+   "nama": "Mars",
+   "sub": [
+    "ipa-6-bab6--sistem-tata-surya",
+    "ipa-6-bab6--matahari-bumi-dan-bulan"
+   ],
+   "kata": []
+  },
+  {
+   "id": "tata-surya/yupiter",
+   "file": "objek/tata-surya/yupiter.webp",
+   "jenis": "objek",
+   "nama": "Yupiter",
+   "sub": [
+    "ipa-6-bab6--sistem-tata-surya",
+    "ipa-6-bab6--matahari-bumi-dan-bulan"
+   ],
+   "kata": []
+  },
+  {
+   "id": "tata-surya/saturnus",
+   "file": "objek/tata-surya/saturnus.webp",
+   "jenis": "objek",
+   "nama": "Saturnus",
+   "sub": [
+    "ipa-6-bab6--sistem-tata-surya",
+    "ipa-6-bab6--matahari-bumi-dan-bulan"
+   ],
+   "kata": []
+  },
+  {
+   "id": "tata-surya/uranus",
+   "file": "objek/tata-surya/uranus.webp",
+   "jenis": "objek",
+   "nama": "Uranus",
+   "sub": [
+    "ipa-6-bab6--sistem-tata-surya",
+    "ipa-6-bab6--matahari-bumi-dan-bulan"
+   ],
+   "kata": []
+  },
+  {
+   "id": "tata-surya/neptunus",
+   "file": "objek/tata-surya/neptunus.webp",
+   "jenis": "objek",
+   "nama": "Neptunus",
+   "sub": [
+    "ipa-6-bab6--sistem-tata-surya",
+    "ipa-6-bab6--matahari-bumi-dan-bulan"
+   ],
+   "kata": []
+  },
+  {
+   "id": "tata-surya/bulan",
+   "file": "objek/tata-surya/bulan.webp",
+   "jenis": "objek",
+   "nama": "Bulan",
+   "sub": [
+    "ipa-6-bab6--sistem-tata-surya",
+    "ipa-6-bab6--matahari-bumi-dan-bulan"
+   ],
+   "kata": []
+  },
+  {
+   "id": "gaya/bola-ditendang",
+   "file": "objek/gaya/bola-ditendang.webp",
+   "jenis": "objek",
+   "nama": "Bola ditendang",
+   "sub": [
+    "ipa-4-bab2--macam-macam-gaya",
+    "ipa-4-bab2--gaya-gesek-dan-gaya"
+   ],
+   "kata": []
+  },
+  {
+   "id": "gaya/gerobak-didorong",
+   "file": "objek/gaya/gerobak-didorong.webp",
+   "jenis": "objek",
+   "nama": "Gerobak didorong",
+   "sub": [
+    "ipa-4-bab2--macam-macam-gaya",
+    "ipa-4-bab2--gaya-gesek-dan-gaya"
+   ],
+   "kata": []
+  },
+  {
+   "id": "gaya/tali-ditarik",
+   "file": "objek/gaya/tali-ditarik.webp",
+   "jenis": "objek",
+   "nama": "Tali ditarik",
+   "sub": [
+    "ipa-4-bab2--macam-macam-gaya",
+    "ipa-4-bab2--gaya-gesek-dan-gaya"
+   ],
+   "kata": []
+  },
+  {
+   "id": "gaya/apel-jatuh",
+   "file": "objek/gaya/apel-jatuh.webp",
+   "jenis": "objek",
+   "nama": "Apel jatuh",
+   "sub": [
+    "ipa-4-bab2--macam-macam-gaya",
+    "ipa-4-bab2--gaya-gesek-dan-gaya"
+   ],
+   "kata": []
+  },
+  {
+   "id": "gaya/magnet-batang",
+   "file": "objek/gaya/magnet-batang.webp",
+   "jenis": "objek",
+   "nama": "Magnet batang",
+   "sub": [
+    "ipa-4-bab2--macam-macam-gaya",
+    "ipa-4-bab2--gaya-gesek-dan-gaya"
+   ],
+   "kata": []
+  },
+  {
+   "id": "gaya/paku-besi",
+   "file": "objek/gaya/paku-besi.webp",
+   "jenis": "objek",
+   "nama": "Paku besi",
+   "sub": [
+    "ipa-4-bab2--macam-macam-gaya",
+    "ipa-4-bab2--gaya-gesek-dan-gaya"
+   ],
+   "kata": []
+  },
+  {
+   "id": "gaya/klip-kertas",
+   "file": "objek/gaya/klip-kertas.webp",
+   "jenis": "objek",
+   "nama": "Klip kertas",
+   "sub": [
+    "ipa-4-bab2--macam-macam-gaya",
+    "ipa-4-bab2--gaya-gesek-dan-gaya"
+   ],
+   "kata": []
+  },
+  {
+   "id": "gaya/penghapus-karet",
+   "file": "objek/gaya/penghapus-karet.webp",
+   "jenis": "objek",
+   "nama": "Penghapus karet",
+   "sub": [
+    "ipa-4-bab2--macam-macam-gaya",
+    "ipa-4-bab2--gaya-gesek-dan-gaya"
+   ],
+   "kata": []
+  },
+  {
+   "id": "gaya/sendok-kayu",
+   "file": "objek/gaya/sendok-kayu.webp",
+   "jenis": "objek",
+   "nama": "Sendok kayu",
+   "sub": [
+    "ipa-4-bab2--macam-macam-gaya",
+    "ipa-4-bab2--gaya-gesek-dan-gaya"
+   ],
+   "kata": []
+  },
+  {
+   "id": "gaya/sepeda-direm",
+   "file": "objek/gaya/sepeda-direm.webp",
+   "jenis": "objek",
+   "nama": "Sepeda direm",
+   "sub": [
+    "ipa-4-bab2--macam-macam-gaya",
+    "ipa-4-bab2--gaya-gesek-dan-gaya"
+   ],
+   "kata": []
+  },
+  {
+   "id": "gaya/layang-layang",
+   "file": "objek/gaya/layang-layang.webp",
+   "jenis": "objek",
+   "nama": "Layang layang",
+   "sub": [
+    "ipa-4-bab2--macam-macam-gaya",
+    "ipa-4-bab2--gaya-gesek-dan-gaya"
+   ],
+   "kata": []
+  },
+  {
+   "id": "gaya/ayunan",
+   "file": "objek/gaya/ayunan.webp",
+   "jenis": "objek",
+   "nama": "Ayunan",
+   "sub": [
+    "ipa-4-bab2--macam-macam-gaya",
+    "ipa-4-bab2--gaya-gesek-dan-gaya"
+   ],
+   "kata": []
+  },
+  {
+   "id": "jejak-karbon/sepeda",
+   "file": "objek/jejak-karbon/sepeda.webp",
+   "jenis": "objek",
+   "nama": "Sepeda",
+   "sub": [
+    "ipa-4-bab8--mengurangi-jejak-karbon",
+    "ipa-6-bab2--udara-bersih-tubuh-sehat",
+    "num-4-bab6--membaca-piktogram-dan-diagram",
+    "num-5-bab8--mengumpulkan-dan-menyajikan-data"
+   ],
+   "kata": []
+  },
+  {
+   "id": "jejak-karbon/motor",
+   "file": "objek/jejak-karbon/motor.webp",
+   "jenis": "objek",
+   "nama": "Motor",
+   "sub": [
+    "ipa-4-bab8--mengurangi-jejak-karbon"
+   ],
+   "kata": []
+  },
+  {
+   "id": "jejak-karbon/mobil",
+   "file": "objek/jejak-karbon/mobil.webp",
+   "jenis": "objek",
+   "nama": "Mobil",
+   "sub": [
+    "ipa-4-bab8--mengurangi-jejak-karbon"
+   ],
+   "kata": []
+  },
+  {
+   "id": "jejak-karbon/angkot",
+   "file": "objek/jejak-karbon/angkot.webp",
+   "jenis": "objek",
+   "nama": "Angkot",
+   "sub": [
+    "ipa-4-bab8--mengurangi-jejak-karbon"
+   ],
+   "kata": []
+  },
+  {
+   "id": "jejak-karbon/botol-isi-ulang",
+   "file": "objek/jejak-karbon/botol-isi-ulang.webp",
+   "jenis": "objek",
+   "nama": "Botol isi ulang",
+   "sub": [
+    "ipa-4-bab8--mengurangi-jejak-karbon"
+   ],
+   "kata": []
+  },
+  {
+   "id": "jejak-karbon/botol-plastik",
+   "file": "objek/jejak-karbon/botol-plastik.webp",
+   "jenis": "objek",
+   "nama": "Botol plastik",
+   "sub": [
+    "ipa-4-bab8--mengurangi-jejak-karbon"
+   ],
+   "kata": []
+  },
+  {
+   "id": "jejak-karbon/tas-kain",
+   "file": "objek/jejak-karbon/tas-kain.webp",
+   "jenis": "objek",
+   "nama": "Tas kain",
+   "sub": [
+    "ipa-4-bab8--mengurangi-jejak-karbon"
+   ],
+   "kata": []
+  },
+  {
+   "id": "jejak-karbon/kantong-plastik",
+   "file": "objek/jejak-karbon/kantong-plastik.webp",
+   "jenis": "objek",
+   "nama": "Kantong plastik",
+   "sub": [
+    "ipa-4-bab8--mengurangi-jejak-karbon"
+   ],
+   "kata": []
+  },
+  {
+   "id": "jejak-karbon/lampu-hemat-energi",
+   "file": "objek/jejak-karbon/lampu-hemat-energi.webp",
+   "jenis": "objek",
+   "nama": "Lampu hemat energi",
+   "sub": [
+    "ipa-4-bab8--mengurangi-jejak-karbon"
+   ],
+   "kata": []
+  },
+  {
+   "id": "jejak-karbon/bibit-pohon",
+   "file": "objek/jejak-karbon/bibit-pohon.webp",
+   "jenis": "objek",
+   "nama": "Bibit pohon",
+   "sub": [
+    "ipa-4-bab8--mengurangi-jejak-karbon"
+   ],
+   "kata": []
+  },
+  {
+   "id": "jejak-karbon/tempat-sampah-terpilah",
+   "file": "objek/jejak-karbon/tempat-sampah-terpilah.webp",
+   "jenis": "objek",
+   "nama": "Tempat sampah terpilah",
+   "sub": [
+    "ipa-4-bab8--mengurangi-jejak-karbon"
+   ],
+   "kata": []
+  },
+  {
+   "id": "iklim/payung",
+   "file": "objek/iklim/payung.webp",
+   "jenis": "objek",
+   "nama": "Payung",
+   "sub": [
+    "ipa-4-bab4--musim-dan-iklim"
+   ],
+   "kata": []
+  },
+  {
+   "id": "iklim/jas-hujan",
+   "file": "objek/iklim/jas-hujan.webp",
+   "jenis": "objek",
+   "nama": "Jas hujan",
+   "sub": [
+    "ipa-4-bab4--musim-dan-iklim"
+   ],
+   "kata": []
+  },
+  {
+   "id": "iklim/caping",
+   "file": "objek/iklim/caping.webp",
+   "jenis": "objek",
+   "nama": "Caping",
+   "sub": [
+    "ipa-4-bab4--musim-dan-iklim"
+   ],
+   "kata": []
+  },
+  {
+   "id": "iklim/kipas-tangan",
+   "file": "objek/iklim/kipas-tangan.webp",
+   "jenis": "objek",
+   "nama": "Kipas tangan",
+   "sub": [
+    "ipa-4-bab4--musim-dan-iklim"
+   ],
+   "kata": []
+  },
+  {
+   "id": "iklim/awan-hujan",
+   "file": "objek/iklim/awan-hujan.webp",
+   "jenis": "objek",
+   "nama": "Awan hujan",
+   "sub": [
+    "ipa-4-bab4--musim-dan-iklim"
+   ],
+   "kata": []
+  },
+  {
+   "id": "iklim/matahari-terik",
+   "file": "objek/iklim/matahari-terik.webp",
+   "jenis": "objek",
+   "nama": "Matahari terik",
+   "sub": [
+    "ipa-4-bab4--musim-dan-iklim"
+   ],
+   "kata": []
+  },
+  {
+   "id": "iklim/tanah-kering-retak",
+   "file": "objek/iklim/tanah-kering-retak.webp",
+   "jenis": "objek",
+   "nama": "Tanah kering retak",
+   "sub": [
+    "ipa-4-bab4--musim-dan-iklim"
+   ],
+   "kata": []
+  },
+  {
+   "id": "iklim/sawah-hijau",
+   "file": "objek/iklim/sawah-hijau.webp",
+   "jenis": "objek",
+   "nama": "Sawah hijau",
+   "sub": [
+    "ipa-4-bab4--musim-dan-iklim"
+   ],
+   "kata": []
+  },
+  {
+   "id": "iklim/banjir",
+   "file": "objek/iklim/banjir.webp",
+   "jenis": "objek",
+   "nama": "Banjir",
+   "sub": [
+    "ipa-4-bab4--musim-dan-iklim"
+   ],
+   "kata": []
+  },
+  {
+   "id": "iklim/sumur-kering",
+   "file": "objek/iklim/sumur-kering.webp",
+   "jenis": "objek",
+   "nama": "Sumur kering",
+   "sub": [
+    "ipa-4-bab4--musim-dan-iklim"
+   ],
+   "kata": []
+  },
+  {
+   "id": "air-bersih/gelas-air-jernih",
+   "file": "objek/air-bersih/gelas-air-jernih.webp",
+   "jenis": "objek",
+   "nama": "Gelas air jernih",
+   "sub": [
+    "ipa-5-bab4--air-bersih-di-lingkunganku"
+   ],
+   "kata": []
+  },
+  {
+   "id": "air-bersih/gelas-air-keruh",
+   "file": "objek/air-bersih/gelas-air-keruh.webp",
+   "jenis": "objek",
+   "nama": "Gelas air keruh",
+   "sub": [
+    "ipa-5-bab4--air-bersih-di-lingkunganku"
+   ],
+   "kata": []
+  },
+  {
+   "id": "air-bersih/sumur",
+   "file": "objek/air-bersih/sumur.webp",
+   "jenis": "objek",
+   "nama": "Sumur",
+   "sub": [
+    "ipa-5-bab4--air-bersih-di-lingkunganku"
+   ],
+   "kata": []
+  },
+  {
+   "id": "air-bersih/keran-air",
+   "file": "objek/air-bersih/keran-air.webp",
+   "jenis": "objek",
+   "nama": "Keran air",
+   "sub": [
+    "ipa-5-bab4--air-bersih-di-lingkunganku"
+   ],
+   "kata": []
+  },
+  {
+   "id": "air-bersih/ember",
+   "file": "objek/air-bersih/ember.webp",
+   "jenis": "objek",
+   "nama": "Ember",
+   "sub": [
+    "ipa-5-bab4--air-bersih-di-lingkunganku"
+   ],
+   "kata": []
+  },
+  {
+   "id": "air-bersih/saringan-air",
+   "file": "objek/air-bersih/saringan-air.webp",
+   "jenis": "objek",
+   "nama": "Saringan air",
+   "sub": [
+    "ipa-5-bab4--air-bersih-di-lingkunganku"
+   ],
+   "kata": []
+  },
+  {
+   "id": "air-bersih/sungai-bersih",
+   "file": "objek/air-bersih/sungai-bersih.webp",
+   "jenis": "objek",
+   "nama": "Sungai bersih",
+   "sub": [
+    "ipa-5-bab4--air-bersih-di-lingkunganku"
+   ],
+   "kata": []
+  },
+  {
+   "id": "air-bersih/sungai-tercemar",
+   "file": "objek/air-bersih/sungai-tercemar.webp",
+   "jenis": "objek",
+   "nama": "Sungai tercemar",
+   "sub": [
+    "ipa-5-bab4--air-bersih-di-lingkunganku"
+   ],
+   "kata": []
+  },
+  {
+   "id": "air-bersih/sampah-plastik",
+   "file": "objek/air-bersih/sampah-plastik.webp",
+   "jenis": "objek",
+   "nama": "Sampah plastik",
+   "sub": [
+    "ipa-5-bab4--air-bersih-di-lingkunganku"
+   ],
+   "kata": []
+  },
+  {
+   "id": "air-bersih/gayung",
+   "file": "objek/air-bersih/gayung.webp",
+   "jenis": "objek",
+   "nama": "Gayung",
+   "sub": [
+    "ipa-5-bab4--air-bersih-di-lingkunganku"
+   ],
+   "kata": []
+  },
+  {
+   "id": "udara-bersih/masker",
+   "file": "objek/udara-bersih/masker.webp",
+   "jenis": "objek",
+   "nama": "Masker",
+   "sub": [
+    "ipa-6-bab2--udara-bersih-tubuh-sehat"
+   ],
+   "kata": []
+  },
+  {
+   "id": "udara-bersih/asap-kendaraan",
+   "file": "objek/udara-bersih/asap-kendaraan.webp",
+   "jenis": "objek",
+   "nama": "Asap kendaraan",
+   "sub": [
+    "ipa-6-bab2--udara-bersih-tubuh-sehat"
+   ],
+   "kata": []
+  },
+  {
+   "id": "udara-bersih/pembakaran-sampah",
+   "file": "objek/udara-bersih/pembakaran-sampah.webp",
+   "jenis": "objek",
+   "nama": "Pembakaran sampah",
+   "sub": [
+    "ipa-6-bab2--udara-bersih-tubuh-sehat"
+   ],
+   "kata": []
+  },
+  {
+   "id": "udara-bersih/cerobong-pabrik",
+   "file": "objek/udara-bersih/cerobong-pabrik.webp",
+   "jenis": "objek",
+   "nama": "Cerobong pabrik",
+   "sub": [
+    "ipa-6-bab2--udara-bersih-tubuh-sehat"
+   ],
+   "kata": []
+  },
+  {
+   "id": "udara-bersih/pohon-rindang",
+   "file": "objek/udara-bersih/pohon-rindang.webp",
+   "jenis": "objek",
+   "nama": "Pohon rindang",
+   "sub": [
+    "ipa-6-bab2--udara-bersih-tubuh-sehat"
+   ],
+   "kata": []
+  },
+  {
+   "id": "udara-bersih/tanaman-pot",
+   "file": "objek/udara-bersih/tanaman-pot.webp",
+   "jenis": "objek",
+   "nama": "Tanaman pot",
+   "sub": [
+    "ipa-6-bab2--udara-bersih-tubuh-sehat"
+   ],
+   "kata": []
+  },
+  {
+   "id": "hidup-sehat/sikat-gigi",
+   "file": "objek/hidup-sehat/sikat-gigi.webp",
+   "jenis": "objek",
+   "nama": "Sikat gigi",
+   "sub": [
+    "ipa-5-bab6--sehat-tubuh-dan-pikiran"
+   ],
+   "kata": []
+  },
+  {
+   "id": "hidup-sehat/sabun",
+   "file": "objek/hidup-sehat/sabun.webp",
+   "jenis": "objek",
+   "nama": "Sabun",
+   "sub": [
+    "ipa-5-bab6--sehat-tubuh-dan-pikiran"
+   ],
+   "kata": []
+  },
+  {
+   "id": "hidup-sehat/handuk",
+   "file": "objek/hidup-sehat/handuk.webp",
+   "jenis": "objek",
+   "nama": "Handuk",
+   "sub": [
+    "ipa-5-bab6--sehat-tubuh-dan-pikiran"
+   ],
+   "kata": []
+  },
+  {
+   "id": "hidup-sehat/botol-air-putih",
+   "file": "objek/hidup-sehat/botol-air-putih.webp",
+   "jenis": "objek",
+   "nama": "Botol air putih",
+   "sub": [
+    "ipa-5-bab6--sehat-tubuh-dan-pikiran"
+   ],
+   "kata": []
+  },
+  {
+   "id": "hidup-sehat/jam-weker",
+   "file": "objek/hidup-sehat/jam-weker.webp",
+   "jenis": "objek",
+   "nama": "Jam weker",
+   "sub": [
+    "ipa-5-bab6--sehat-tubuh-dan-pikiran"
+   ],
+   "kata": []
+  },
+  {
+   "id": "hidup-sehat/bola-sepak",
+   "file": "objek/hidup-sehat/bola-sepak.webp",
+   "jenis": "objek",
+   "nama": "Bola sepak",
+   "sub": [
+    "ipa-5-bab6--sehat-tubuh-dan-pikiran"
+   ],
+   "kata": []
+  },
+  {
+   "id": "hidup-sehat/buah-segar",
+   "file": "objek/hidup-sehat/buah-segar.webp",
+   "jenis": "objek",
+   "nama": "Buah segar",
+   "sub": [
+    "ipa-5-bab6--sehat-tubuh-dan-pikiran"
+   ],
+   "kata": []
+  },
+  {
+   "id": "hidup-sehat/gawai",
+   "file": "objek/hidup-sehat/gawai.webp",
+   "jenis": "objek",
+   "nama": "Gawai",
+   "sub": [
+    "ipa-5-bab6--sehat-tubuh-dan-pikiran"
+   ],
+   "kata": []
+  },
+  {
+   "id": "hidup-sehat/buku-cerita",
+   "file": "objek/hidup-sehat/buku-cerita.webp",
+   "jenis": "objek",
+   "nama": "Buku cerita",
+   "sub": [
+    "ipa-5-bab6--sehat-tubuh-dan-pikiran"
+   ],
+   "kata": []
+  },
+  {
+   "id": "alat-ukur/penggaris",
+   "file": "objek/alat-ukur/penggaris.webp",
+   "jenis": "objek",
+   "nama": "Penggaris",
+   "sub": [
+    "num-4-bab4--luas-dengan-persegi-satuan",
+    "num-4-bab4--volume-dengan-kubus-satuan"
+   ],
+   "kata": []
+  },
+  {
+   "id": "alat-ukur/meteran-jahit",
+   "file": "objek/alat-ukur/meteran-jahit.webp",
+   "jenis": "objek",
+   "nama": "Meteran jahit",
+   "sub": [
+    "num-4-bab4--luas-dengan-persegi-satuan",
+    "num-4-bab4--volume-dengan-kubus-satuan"
+   ],
+   "kata": []
+  },
+  {
+   "id": "alat-ukur/timbangan-dapur",
+   "file": "objek/alat-ukur/timbangan-dapur.webp",
+   "jenis": "objek",
+   "nama": "Timbangan dapur",
+   "sub": [
+    "num-4-bab4--luas-dengan-persegi-satuan",
+    "num-4-bab4--volume-dengan-kubus-satuan"
+   ],
+   "kata": []
+  },
+  {
+   "id": "alat-ukur/timbangan-badan",
+   "file": "objek/alat-ukur/timbangan-badan.webp",
+   "jenis": "objek",
+   "nama": "Timbangan badan",
+   "sub": [
+    "num-4-bab4--luas-dengan-persegi-satuan",
+    "num-4-bab4--volume-dengan-kubus-satuan"
+   ],
+   "kata": []
+  },
+  {
+   "id": "alat-ukur/gelas-ukur",
+   "file": "objek/alat-ukur/gelas-ukur.webp",
+   "jenis": "objek",
+   "nama": "Gelas ukur",
+   "sub": [
+    "num-4-bab4--luas-dengan-persegi-satuan",
+    "num-4-bab4--volume-dengan-kubus-satuan"
+   ],
+   "kata": []
+  },
+  {
+   "id": "alat-ukur/jam-dinding",
+   "file": "objek/alat-ukur/jam-dinding.webp",
+   "jenis": "objek",
+   "nama": "Jam dinding",
+   "sub": [
+    "num-4-bab4--luas-dengan-persegi-satuan",
+    "num-4-bab4--volume-dengan-kubus-satuan"
+   ],
+   "kata": []
+  },
+  {
+   "id": "alat-ukur/botol-satu-liter",
+   "file": "objek/alat-ukur/botol-satu-liter.webp",
+   "jenis": "objek",
+   "nama": "Botol satu liter",
+   "sub": [
+    "num-4-bab4--luas-dengan-persegi-satuan",
+    "num-4-bab4--volume-dengan-kubus-satuan"
+   ],
+   "kata": []
+  },
+  {
+   "id": "alat-ukur/jangka-sorong-mainan",
+   "file": "objek/alat-ukur/jangka-sorong-mainan.webp",
+   "jenis": "objek",
+   "nama": "Jangka sorong mainan",
+   "sub": [
+    "num-4-bab4--luas-dengan-persegi-satuan",
+    "num-4-bab4--volume-dengan-kubus-satuan"
+   ],
+   "kata": []
+  },
+  {
+   "id": "benda-bangun-ruang/kardus",
+   "file": "objek/benda-bangun-ruang/kardus.webp",
+   "jenis": "objek",
+   "nama": "Kardus",
+   "sub": [
+    "num-6-bab3--jaring-jaring-dan-visualisasi"
+   ],
+   "kata": []
+  },
+  {
+   "id": "benda-bangun-ruang/dadu",
+   "file": "objek/benda-bangun-ruang/dadu.webp",
+   "jenis": "objek",
+   "nama": "Dadu",
+   "sub": [
+    "num-6-bab3--jaring-jaring-dan-visualisasi",
+    "num-6-bab4--skala-peluang"
+   ],
+   "kata": []
+  },
+  {
+   "id": "benda-bangun-ruang/kaleng",
+   "file": "objek/benda-bangun-ruang/kaleng.webp",
+   "jenis": "objek",
+   "nama": "Kaleng",
+   "sub": [
+    "num-6-bab3--jaring-jaring-dan-visualisasi"
+   ],
+   "kata": []
+  },
+  {
+   "id": "benda-bangun-ruang/bola",
+   "file": "objek/benda-bangun-ruang/bola.webp",
+   "jenis": "objek",
+   "nama": "Bola",
+   "sub": [
+    "num-6-bab3--jaring-jaring-dan-visualisasi",
+    "num-4-bab6--membaca-piktogram-dan-diagram",
+    "num-5-bab8--mengumpulkan-dan-menyajikan-data"
+   ],
+   "kata": []
+  },
+  {
+   "id": "benda-bangun-ruang/topi-kerucut",
+   "file": "objek/benda-bangun-ruang/topi-kerucut.webp",
+   "jenis": "objek",
+   "nama": "Topi kerucut",
+   "sub": [
+    "num-6-bab3--jaring-jaring-dan-visualisasi"
+   ],
+   "kata": []
+  },
+  {
+   "id": "benda-bangun-ruang/rubik",
+   "file": "objek/benda-bangun-ruang/rubik.webp",
+   "jenis": "objek",
+   "nama": "Rubik",
+   "sub": [
+    "num-6-bab3--jaring-jaring-dan-visualisasi"
+   ],
+   "kata": []
+  },
+  {
+   "id": "benda-bangun-ruang/lemari",
+   "file": "objek/benda-bangun-ruang/lemari.webp",
+   "jenis": "objek",
+   "nama": "Lemari",
+   "sub": [
+    "num-6-bab3--jaring-jaring-dan-visualisasi"
+   ],
+   "kata": []
+  },
+  {
+   "id": "benda-bangun-ruang/tenda",
+   "file": "objek/benda-bangun-ruang/tenda.webp",
+   "jenis": "objek",
+   "nama": "Tenda",
+   "sub": [
+    "num-6-bab3--jaring-jaring-dan-visualisasi"
+   ],
+   "kata": []
+  },
+  {
+   "id": "peluang/koin",
+   "file": "objek/peluang/koin.webp",
+   "jenis": "objek",
+   "nama": "Koin",
+   "sub": [
+    "num-6-bab4--skala-peluang"
+   ],
+   "kata": []
+  },
+  {
+   "id": "peluang/kantong-kelereng",
+   "file": "objek/peluang/kantong-kelereng.webp",
+   "jenis": "objek",
+   "nama": "Kantong kelereng",
+   "sub": [
+    "num-6-bab4--skala-peluang"
+   ],
+   "kata": []
+  },
+  {
+   "id": "peluang/putaran-warna",
+   "file": "objek/peluang/putaran-warna.webp",
+   "jenis": "objek",
+   "nama": "Putaran warna",
+   "sub": [
+    "num-6-bab4--skala-peluang"
+   ],
+   "kata": []
+  },
+  {
+   "id": "peluang/kartu-bergambar",
+   "file": "objek/peluang/kartu-bergambar.webp",
+   "jenis": "objek",
+   "nama": "Kartu bergambar",
+   "sub": [
+    "num-6-bab4--skala-peluang"
+   ],
+   "kata": []
+  },
+  {
+   "id": "peluang/kotak-undian",
+   "file": "objek/peluang/kotak-undian.webp",
+   "jenis": "objek",
+   "nama": "Kotak undian",
+   "sub": [
+    "num-6-bab4--skala-peluang"
+   ],
+   "kata": []
+  },
+  {
+   "id": "piktogram/apel",
+   "file": "objek/piktogram/apel.webp",
+   "jenis": "objek",
+   "nama": "Apel",
+   "sub": [
+    "num-4-bab6--membaca-piktogram-dan-diagram",
+    "num-5-bab8--mengumpulkan-dan-menyajikan-data"
+   ],
+   "kata": []
+  },
+  {
+   "id": "piktogram/mangga",
+   "file": "objek/piktogram/mangga.webp",
+   "jenis": "objek",
+   "nama": "Mangga",
+   "sub": [
+    "num-4-bab6--membaca-piktogram-dan-diagram",
+    "num-5-bab8--mengumpulkan-dan-menyajikan-data"
+   ],
+   "kata": []
+  },
+  {
+   "id": "piktogram/buku",
+   "file": "objek/piktogram/buku.webp",
+   "jenis": "objek",
+   "nama": "Buku",
+   "sub": [
+    "num-4-bab6--membaca-piktogram-dan-diagram",
+    "num-5-bab8--mengumpulkan-dan-menyajikan-data"
+   ],
+   "kata": []
+  },
+  {
+   "id": "piktogram/ikan",
+   "file": "objek/piktogram/ikan.webp",
+   "jenis": "objek",
+   "nama": "Ikan",
+   "sub": [
+    "num-4-bab6--membaca-piktogram-dan-diagram",
+    "num-5-bab8--mengumpulkan-dan-menyajikan-data"
+   ],
+   "kata": []
+  },
+  {
+   "id": "latar/ruang-kelas",
+   "file": "objek/latar/ruang-kelas.webp",
+   "jenis": "latar",
+   "nama": "Ruang kelas",
+   "kata": [
+    "sekolah"
+   ]
+  },
+  {
+   "id": "latar/pasar",
+   "file": "objek/latar/pasar.webp",
+   "jenis": "latar",
+   "nama": "Pasar tradisional",
+   "kata": [
+    "jual beli"
+   ]
+  },
+  {
+   "id": "latar/sawah",
+   "file": "objek/latar/sawah.webp",
+   "jenis": "latar",
+   "nama": "Sawah",
+   "kata": [
+    "pertanian"
+   ]
+  },
+  {
+   "id": "latar/kebun-sayur",
+   "file": "objek/latar/kebun-sayur.webp",
+   "jenis": "latar",
+   "nama": "Kebun sayur",
+   "kata": [
+    "tumbuhan"
+   ]
+  },
+  {
+   "id": "latar/dapur",
+   "file": "objek/latar/dapur.webp",
+   "jenis": "latar",
+   "nama": "Dapur",
+   "kata": [
+    "makanan"
+   ]
+  },
+  {
+   "id": "latar/perpustakaan",
+   "file": "objek/latar/perpustakaan.webp",
+   "jenis": "latar",
+   "nama": "Perpustakaan",
+   "kata": [
+    "membaca"
+   ]
+  },
+  {
+   "id": "latar/lapangan-sekolah",
+   "file": "objek/latar/lapangan-sekolah.webp",
+   "jenis": "latar",
+   "nama": "Lapangan sekolah",
+   "kata": [
+    "olahraga"
+   ]
+  },
+  {
+   "id": "latar/ruang-keluarga",
+   "file": "objek/latar/ruang-keluarga.webp",
+   "jenis": "latar",
+   "nama": "Ruang keluarga",
+   "kata": [
+    "rumah"
+   ]
+  },
+  {
+   "id": "latar/jalan-desa",
+   "file": "objek/latar/jalan-desa.webp",
+   "jenis": "latar",
+   "nama": "Jalan desa",
+   "kata": [
+    "lingkungan"
+   ]
+  },
+  {
+   "id": "latar/pantai",
+   "file": "objek/latar/pantai.webp",
+   "jenis": "latar",
+   "nama": "Pantai",
+   "kata": [
+    "laut"
+   ]
+  },
+  {
+   "id": "latar/hutan",
+   "file": "objek/latar/hutan.webp",
+   "jenis": "latar",
+   "nama": "Hutan",
+   "kata": [
+    "ekosistem"
+   ]
+  },
+  {
+   "id": "latar/laboratorium",
+   "file": "objek/latar/laboratorium.webp",
+   "jenis": "latar",
+   "nama": "Laboratorium",
+   "kata": [
+    "percobaan"
+   ]
+  },
+  {
+   "id": "latar/malam-berbintang",
+   "file": "objek/latar/malam-berbintang.webp",
+   "jenis": "latar",
+   "nama": "Malam berbintang",
+   "kata": [
+    "langit"
+   ]
+  },
+  {
+   "id": "latar/bawah-laut",
+   "file": "objek/latar/bawah-laut.webp",
+   "jenis": "latar",
+   "nama": "Bawah laut",
+   "kata": [
+    "laut"
+   ]
+  },
+  {
+   "id": "latar/luar-angkasa",
+   "file": "objek/latar/luar-angkasa.webp",
+   "jenis": "latar",
+   "nama": "Luar angkasa",
+   "kata": [
+    "tata surya"
+   ]
+  },
+  {
+   "id": "maskot/murid-laki",
+   "file": "maskot/murid-laki-biasa.webp",
+   "jenis": "maskot",
+   "nama": "Murid laki-laki",
+   "pose": {
+    "senang": "maskot/murid-laki-senang.webp",
+    "berpikir": "maskot/murid-laki-berpikir.webp"
+   }
+  },
+  {
+   "id": "maskot/murid-perempuan",
+   "file": "maskot/murid-perempuan-biasa.webp",
+   "jenis": "maskot",
+   "nama": "Murid perempuan",
+   "pose": {
+    "senang": "maskot/murid-perempuan-senang.webp",
+    "berpikir": "maskot/murid-perempuan-berpikir.webp"
+   }
+  },
+  {
+   "id": "maskot/guru",
+   "file": "maskot/guru-biasa.webp",
+   "jenis": "maskot",
+   "nama": "Guru",
+   "pose": {
+    "senang": "maskot/guru-senang.webp",
+    "berpikir": "maskot/guru-berpikir.webp"
+   }
+  },
+  {
+   "id": "maskot/pedagang",
+   "file": "maskot/pedagang-biasa.webp",
+   "jenis": "maskot",
+   "nama": "Pedagang",
+   "pose": {
+    "senang": "maskot/pedagang-senang.webp",
+    "berpikir": "maskot/pedagang-berpikir.webp"
+   }
+  },
+  {
+   "id": "maskot/ilmuwan-cilik",
+   "file": "maskot/ilmuwan-cilik-biasa.webp",
+   "jenis": "maskot",
+   "nama": "Ilmuwan cilik",
+   "pose": {
+    "senang": "maskot/ilmuwan-cilik-senang.webp",
+    "berpikir": "maskot/ilmuwan-cilik-berpikir.webp"
+   }
+  },
+  {
+   "id": "maskot/kancil",
+   "file": "maskot/kancil-biasa.webp",
+   "jenis": "maskot",
+   "nama": "Kancil",
+   "pose": {
+    "senang": "maskot/kancil-senang.webp",
+    "berpikir": "maskot/kancil-berpikir.webp"
+   }
+  }
+ ]
 }
