@@ -2199,7 +2199,7 @@
   },
   {
    "id": "jelajah/bagian-tubuh-indra",
-   "file": "jelajah/bagian-tubuh-indra.webp",
+   "file": "objek/jelajah/bagian-tubuh-indra.webp",
    "jenis": "jelajah",
    "nama": "Bagian tubuh dan indra",
    "sub": [
@@ -2244,7 +2244,7 @@
   },
   {
    "id": "jelajah/siklus-hidup-tumbuhan",
-   "file": "jelajah/siklus-hidup-tumbuhan.webp",
+   "file": "objek/jelajah/siklus-hidup-tumbuhan.webp",
    "jenis": "jelajah",
    "nama": "Siklus hidup tumbuhan",
    "sub": [
@@ -2290,7 +2290,7 @@
   },
   {
    "id": "jelajah/fotosintesis",
-   "file": "jelajah/fotosintesis.webp",
+   "file": "objek/jelajah/fotosintesis.webp",
    "jenis": "jelajah",
    "nama": "Fotosintesis",
    "sub": [
@@ -2342,7 +2342,7 @@
   },
   {
    "id": "jelajah/komponen-ekosistem",
-   "file": "jelajah/komponen-ekosistem.webp",
+   "file": "objek/jelajah/komponen-ekosistem.webp",
    "jenis": "jelajah",
    "nama": "Komponen ekosistem",
    "sub": [
@@ -2406,7 +2406,7 @@
   },
   {
    "id": "jelajah/siklus-air",
-   "file": "jelajah/siklus-air.webp",
+   "file": "objek/jelajah/siklus-air.webp",
    "jenis": "jelajah",
    "nama": "Siklus air",
    "sub": [
@@ -2464,7 +2464,7 @@
   },
   {
    "id": "jelajah/melihat-karena-cahaya",
-   "file": "jelajah/melihat-karena-cahaya.webp",
+   "file": "objek/jelajah/melihat-karena-cahaya.webp",
    "jenis": "jelajah",
    "nama": "Melihat karena cahaya",
    "sub": [
@@ -2510,7 +2510,7 @@
   },
   {
    "id": "jelajah/mendengar-karena-bunyi",
-   "file": "jelajah/mendengar-karena-bunyi.webp",
+   "file": "objek/jelajah/mendengar-karena-bunyi.webp",
    "jenis": "jelajah",
    "nama": "Mendengar karena bunyi",
    "sub": [
@@ -2562,7 +2562,7 @@
   },
   {
    "id": "jelajah/sistem-pencernaan",
-   "file": "jelajah/sistem-pencernaan.webp",
+   "file": "objek/jelajah/sistem-pencernaan.webp",
    "jenis": "jelajah",
    "nama": "Sistem pencernaan",
    "sub": [
@@ -2626,7 +2626,7 @@
   },
   {
    "id": "jelajah/sistem-pernapasan",
-   "file": "jelajah/sistem-pernapasan.webp",
+   "file": "objek/jelajah/sistem-pernapasan.webp",
    "jenis": "jelajah",
    "nama": "Sistem pernapasan",
    "sub": [
@@ -2684,7 +2684,7 @@
   },
   {
    "id": "jelajah/matahari-bumi-bulan",
-   "file": "jelajah/matahari-bumi-bulan.webp",
+   "file": "objek/jelajah/matahari-bumi-bulan.webp",
    "jenis": "jelajah",
    "nama": "Matahari, Bumi, dan Bulan",
    "sub": [
@@ -2736,7 +2736,7 @@
   },
   {
    "id": "jelajah/tata-surya",
-   "file": "jelajah/tata-surya.webp",
+   "file": "objek/jelajah/tata-surya.webp",
    "jenis": "jelajah",
    "nama": "Sistem tata surya",
    "sub": [
