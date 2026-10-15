@@ -23,12 +23,15 @@
  * v1.13: bacaan gaya buku (gaya:'buku': buku cerita terbuka, sampul, balik halaman 3D, gambar tunggal/daftar) dan adegan
  *        (halaman.adegan: latar + 1–5 objek + maskot berpose; dipakai di bacaan biasa dan di halaman kiri gaya buku).
  *        Bacaan tanpa gaya dan tanpa adegan tidak berubah.
+ * v1.14: runner: opsi level naik (kenaikan kecepatan per jawaban benar, bawaan 0.12, 0 = kecepatan tetap) dan batas (kecepatan
+ *        maksimal, bawaan 2.2); batas otomatis tidak di bawah kecepatan awal; periksaData memeriksa kecepatan 0.3–2, naik 0–0.3,
+ *        batas 0.5–2.2 (angka tanpa tanda petik). Tanpa opsi baru perilaku lama tidak berubah.
  * v1.5: progres tersimpan, tombol dengarkan, soal salah diulang, bank soal (jumlah),
  *       mode tim, hasil murid + papan skor (bila diputar dari server KKG).
  */
 (function () {
   'use strict';
-  var VERSI = '1.13.0';
+  var VERSI = '1.14.0';
   /* Panggung dirancang untuk HP mendatar: tinggi tetap 540, lebar mengikuti layar (960–1200). */
   var H = 540, W_MIN = 960, W_MAX = 1200, W = W_MIN;
 
@@ -2537,6 +2540,8 @@
     api.nyawa(nyawa, maksNyawa);
     function stat() { statEl.innerHTML = '<span>' + ik('centang') + ' ' + benarN + '</span><span>' + ik('target') + ' ' + ke + '/' + jumlah + '</span>'; }
     var g = null, y = 0, cepat = lv.kecepatan || 1, soal = null, raf = null, jeda = false;
+    var naik = lv.naik != null ? lv.naik : 0.12, batas = lv.batas != null ? lv.batas : 2.2;
+    batas = Math.max(batas, cepat); /* pengaman: batas tidak pernah di bawah kecepatan awal */
     var yPelari = 300;
     function soalBaru() {
       yPelari = (jalan.clientHeight || 360) - 12 - 110;
@@ -2562,7 +2567,7 @@
         var kot = g.children[lajur];
         jeda = true;
         if (kot.dataset.b) {
-          kot.classList.add('betul'); benarN++; cepat = Math.min(2.2, cepat + 0.12);
+          kot.classList.add('betul'); benarN++; cepat = Math.min(batas, cepat + naik);
           Suara.koin(); api.benar(soal.ulasan || acak(PUJI)[0]); pelari.classList.add('lompat');
         } else {
           kot.classList.add('keliru'); nyawa--; api.nyawa(nyawa, maksNyawa);
@@ -4296,6 +4301,11 @@
             }
           } catch (er) { e.push(n + 'buatSoal error: ' + er.message); }
         }
+        [['kecepatan', 0.3, 2], ['naik', 0, 0.3], ['batas', 0.5, 2.2]].forEach(function (c) {
+          var v = lv[c[0]];
+          if (v == null) return;
+          if (typeof v !== 'number' || !isFinite(v) || v < c[1] || v > c[2]) e.push(n + c[0] + ' harus angka ' + c[1] + '–' + c[2] + ' tanpa tanda petik (sekarang ' + (typeof v === 'string' ? '"' + v + '"' : String(v)) + ').');
+        });
       }
       if (lv.mesin === 'memori') { arr('pasangan', 2); maksBank('pasangan', 6, 'pasang'); }
       if (lv.mesin === 'isian') {
