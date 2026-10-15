@@ -2196,6 +2196,607 @@
     "senang": "maskot/kancil-senang.webp",
     "berpikir": "maskot/kancil-berpikir.webp"
    }
+  },
+  {
+   "id": "jelajah/bagian-tubuh-indra",
+   "file": "jelajah/bagian-tubuh-indra.webp",
+   "jenis": "jelajah",
+   "nama": "Bagian tubuh dan indra",
+   "sub": [
+    "ipa-3-bab1--bagian-tubuh-dan-fungsinya"
+   ],
+   "kata": [
+    "panca indera",
+    "bagian tubuh"
+   ],
+   "titik": [
+    {
+     "nama": "Mata",
+     "info": "Mata untuk melihat benda di sekitar kita.",
+     "x": 17.6,
+     "y": 22.6
+    },
+    {
+     "nama": "Telinga",
+     "info": "Telinga untuk mendengar bunyi.",
+     "x": 82.9,
+     "y": 19.8
+    },
+    {
+     "nama": "Hidung",
+     "info": "Hidung untuk mencium bau.",
+     "x": 12.8,
+     "y": 48.3
+    },
+    {
+     "nama": "Lidah",
+     "info": "Lidah untuk mengecap rasa makanan.",
+     "x": 18.0,
+     "y": 75.5
+    },
+    {
+     "nama": "Kulit",
+     "info": "Kulit untuk meraba dan merasakan panas, dingin, kasar, halus.",
+     "x": 86.7,
+     "y": 61.7
+    }
+   ]
+  },
+  {
+   "id": "jelajah/siklus-hidup-tumbuhan",
+   "file": "jelajah/siklus-hidup-tumbuhan.webp",
+   "jenis": "jelajah",
+   "nama": "Siklus hidup tumbuhan",
+   "sub": [
+    "ipa-3-bab4--siklus-hidup-tumbuhan"
+   ],
+   "kata": [
+    "tumbuhan",
+    "biji",
+    "tumbuh"
+   ],
+   "titik": [
+    {
+     "nama": "Biji",
+     "info": "Biji adalah calon tumbuhan baru dan butuh air serta udara.",
+     "x": 6.9,
+     "y": 59.9
+    },
+    {
+     "nama": "Kecambah",
+     "info": "Biji mulai tumbuh akar dan tunas.",
+     "x": 23.1,
+     "y": 54.3
+    },
+    {
+     "nama": "Tumbuhan muda",
+     "info": "Batang dan daun mulai bertambah banyak.",
+     "x": 42.8,
+     "y": 47.9
+    },
+    {
+     "nama": "Tumbuhan dewasa",
+     "info": "Tumbuhan sudah besar dan kuat.",
+     "x": 64.2,
+     "y": 43.3
+    },
+    {
+     "nama": "Berbunga dan berbuah",
+     "info": "Buah menyimpan biji baru untuk tumbuhan berikutnya.",
+     "x": 88.1,
+     "y": 39.6
+    }
+   ]
+  },
+  {
+   "id": "jelajah/fotosintesis",
+   "file": "jelajah/fotosintesis.webp",
+   "jenis": "jelajah",
+   "nama": "Fotosintesis",
+   "sub": [
+    "ipa-4-bab1--fotosintesis"
+   ],
+   "kata": [
+    "tumbuhan",
+    "daun",
+    "makanan"
+   ],
+   "titik": [
+    {
+     "nama": "Cahaya matahari",
+     "info": "Cahaya matahari adalah sumber energi bagi daun.",
+     "x": 87.7,
+     "y": 10.6
+    },
+    {
+     "nama": "Air",
+     "info": "Air diserap akar lalu naik ke daun.",
+     "x": 14.6,
+     "y": 78.1
+    },
+    {
+     "nama": "Karbon dioksida",
+     "info": "Gas dari udara yang masuk lewat daun.",
+     "x": 13.1,
+     "y": 26.7
+    },
+    {
+     "nama": "Daun",
+     "info": "Tempat terjadinya fotosintesis.",
+     "x": 58.7,
+     "y": 30.4
+    },
+    {
+     "nama": "Gula",
+     "info": "Makanan hasil fotosintesis.",
+     "x": 80.8,
+     "y": 55.7
+    },
+    {
+     "nama": "Oksigen",
+     "info": "Gas hasil fotosintesis yang dilepas ke udara.",
+     "x": 80.8,
+     "y": 31.3
+    }
+   ]
+  },
+  {
+   "id": "jelajah/komponen-ekosistem",
+   "file": "jelajah/komponen-ekosistem.webp",
+   "jenis": "jelajah",
+   "nama": "Komponen ekosistem",
+   "sub": [
+    "ipa-5-bab3--komponen-ekosistem"
+   ],
+   "kata": [
+    "ekosistem",
+    "biotik",
+    "abiotik"
+   ],
+   "titik": [
+    {
+     "nama": "Pohon",
+     "info": "Makhluk hidup (biotik) yang membuat makanannya sendiri.",
+     "x": 18.0,
+     "y": 23.0
+    },
+    {
+     "nama": "Burung",
+     "info": "Makhluk hidup yang mencari makanan dari tumbuhan atau hewan lain.",
+     "x": 39.4,
+     "y": 26.7
+    },
+    {
+     "nama": "Ikan",
+     "info": "Makhluk hidup yang tinggal di air.",
+     "x": 57.3,
+     "y": 78.3
+    },
+    {
+     "nama": "Jamur",
+     "info": "Makhluk hidup pengurai sisa tumbuhan dan hewan.",
+     "x": 16.9,
+     "y": 58.9
+    },
+    {
+     "nama": "Matahari",
+     "info": "Komponen tak hidup (abiotik), sumber cahaya dan panas.",
+     "x": 84.3,
+     "y": 15.2
+    },
+    {
+     "nama": "Air",
+     "info": "Komponen abiotik yang dibutuhkan semua makhluk hidup.",
+     "x": 74.6,
+     "y": 66.3
+    },
+    {
+     "nama": "Tanah",
+     "info": "Komponen abiotik tempat tumbuhan tumbuh.",
+     "x": 14.5,
+     "y": 82.9
+    },
+    {
+     "nama": "Udara",
+     "info": "Komponen abiotik berisi oksigen untuk bernapas.",
+     "x": 59.4,
+     "y": 17.5
+    }
+   ]
+  },
+  {
+   "id": "jelajah/siklus-air",
+   "file": "jelajah/siklus-air.webp",
+   "jenis": "jelajah",
+   "nama": "Siklus air",
+   "sub": [
+    "ipa-5-bab4--siklus-air"
+   ],
+   "kata": [
+    "air",
+    "hujan",
+    "penguapan"
+   ],
+   "titik": [
+    {
+     "nama": "Matahari",
+     "info": "Panas matahari menggerakkan siklus air.",
+     "x": 15.5,
+     "y": 17.5
+    },
+    {
+     "nama": "Penguapan",
+     "info": "Air laut menguap menjadi uap air.",
+     "x": 18.6,
+     "y": 46.0
+    },
+    {
+     "nama": "Awan",
+     "info": "Uap air mengembun menjadi titik air kecil di awan.",
+     "x": 53.9,
+     "y": 15.7
+    },
+    {
+     "nama": "Hujan",
+     "info": "Titik air yang berat jatuh ke bumi sebagai hujan.",
+     "x": 60.1,
+     "y": 32.2
+    },
+    {
+     "nama": "Sungai",
+     "info": "Air hujan mengalir lewat sungai kembali ke laut.",
+     "x": 64.2,
+     "y": 58.9
+    },
+    {
+     "nama": "Resapan",
+     "info": "Sebagian air meresap ke dalam tanah.",
+     "x": 70.4,
+     "y": 73.7
+    },
+    {
+     "nama": "Laut",
+     "info": "Tempat air berkumpul sebelum menguap lagi.",
+     "x": 20.7,
+     "y": 62.6
+    }
+   ]
+  },
+  {
+   "id": "jelajah/melihat-karena-cahaya",
+   "file": "jelajah/melihat-karena-cahaya.webp",
+   "jenis": "jelajah",
+   "nama": "Melihat karena cahaya",
+   "sub": [
+    "ipa-5-bab7--melihat-karena-cahaya"
+   ],
+   "kata": [
+    "cahaya",
+    "penglihatan",
+    "pemantulan"
+   ],
+   "titik": [
+    {
+     "nama": "Sumber cahaya",
+     "info": "Lampu memancarkan cahaya.",
+     "x": 12.4,
+     "y": 26.7
+    },
+    {
+     "nama": "Cahaya merambat lurus",
+     "info": "Cahaya bergerak lurus ke segala arah.",
+     "x": 29.0,
+     "y": 36.8
+    },
+    {
+     "nama": "Benda",
+     "info": "Benda memantulkan cahaya yang mengenainya.",
+     "x": 44.5,
+     "y": 50.2
+    },
+    {
+     "nama": "Cahaya dipantulkan",
+     "info": "Cahaya yang dipantulkan benda menuju mata kita.",
+     "x": 61.5,
+     "y": 45.1
+    },
+    {
+     "nama": "Mata",
+     "info": "Mata menerima cahaya sehingga kita bisa melihat.",
+     "x": 75.6,
+     "y": 41.4
+    }
+   ]
+  },
+  {
+   "id": "jelajah/mendengar-karena-bunyi",
+   "file": "jelajah/mendengar-karena-bunyi.webp",
+   "jenis": "jelajah",
+   "nama": "Mendengar karena bunyi",
+   "sub": [
+    "ipa-5-bab8--mendengar-karena-bunyi"
+   ],
+   "kata": [
+    "bunyi",
+    "telinga",
+    "pendengaran"
+   ],
+   "titik": [
+    {
+     "nama": "Daun telinga",
+     "info": "Menangkap bunyi dari luar.",
+     "x": 22.8,
+     "y": 27.6
+    },
+    {
+     "nama": "Saluran telinga",
+     "info": "Jalan bunyi menuju gendang telinga.",
+     "x": 40.1,
+     "y": 48.8
+    },
+    {
+     "nama": "Gendang telinga",
+     "info": "Selaput tipis yang bergetar saat ada bunyi.",
+     "x": 53.5,
+     "y": 52.5
+    },
+    {
+     "nama": "Tulang pendengaran",
+     "info": "Tiga tulang kecil yang menguatkan getaran.",
+     "x": 61.8,
+     "y": 41.9
+    },
+    {
+     "nama": "Rumah siput",
+     "info": "Mengubah getaran menjadi sinyal untuk otak.",
+     "x": 79.4,
+     "y": 49.7
+    },
+    {
+     "nama": "Saraf pendengaran",
+     "info": "Membawa sinyal bunyi ke otak.",
+     "x": 92.5,
+     "y": 38.7
+    }
+   ]
+  },
+  {
+   "id": "jelajah/sistem-pencernaan",
+   "file": "jelajah/sistem-pencernaan.webp",
+   "jenis": "jelajah",
+   "nama": "Sistem pencernaan",
+   "sub": [
+    "ipa-6-bab1--cara-kerja-sistem-pencernaan"
+   ],
+   "kata": [
+    "pencernaan",
+    "organ",
+    "makanan"
+   ],
+   "titik": [
+    {
+     "nama": "Mulut",
+     "info": "Makanan dikunyah dan dicampur air liur.",
+     "x": 20.7,
+     "y": 14.3
+    },
+    {
+     "nama": "Kerongkongan",
+     "info": "Saluran yang mendorong makanan ke lambung.",
+     "x": 79.4,
+     "y": 13.8
+    },
+    {
+     "nama": "Lambung",
+     "info": "Makanan diaduk dan dilumatkan.",
+     "x": 83.9,
+     "y": 38.7
+    },
+    {
+     "nama": "Hati",
+     "info": "Membuat cairan empedu untuk mencerna lemak.",
+     "x": 15.9,
+     "y": 38.7
+    },
+    {
+     "nama": "Pankreas",
+     "info": "Menghasilkan cairan yang membantu mencerna makanan.",
+     "x": 14.8,
+     "y": 61.2
+    },
+    {
+     "nama": "Usus halus",
+     "info": "Zat gizi diserap ke dalam darah.",
+     "x": 84.9,
+     "y": 61.7
+    },
+    {
+     "nama": "Usus besar",
+     "info": "Menyerap air dari sisa makanan.",
+     "x": 15.5,
+     "y": 80.0
+    },
+    {
+     "nama": "Anus",
+     "info": "Tempat sisa makanan dibuang.",
+     "x": 83.3,
+     "y": 90.8
+    }
+   ]
+  },
+  {
+   "id": "jelajah/sistem-pernapasan",
+   "file": "jelajah/sistem-pernapasan.webp",
+   "jenis": "jelajah",
+   "nama": "Sistem pernapasan",
+   "sub": [
+    "ipa-6-bab2--perjalanan-udara-di-tubuh"
+   ],
+   "kata": [
+    "pernapasan",
+    "paru-paru",
+    "udara"
+   ],
+   "titik": [
+    {
+     "nama": "Hidung",
+     "info": "Jalan masuk udara, menyaring debu.",
+     "x": 23.8,
+     "y": 27.2
+    },
+    {
+     "nama": "Laring",
+     "info": "Pangkal tenggorokan, tempat suara dihasilkan.",
+     "x": 34.5,
+     "y": 37.6
+    },
+    {
+     "nama": "Trakea",
+     "info": "Batang tenggorokan yang mengalirkan udara ke paru-paru.",
+     "x": 35.4,
+     "y": 47.9
+    },
+    {
+     "nama": "Bronkus",
+     "info": "Dua cabang trakea ke paru-paru kiri dan kanan.",
+     "x": 40.7,
+     "y": 60.3
+    },
+    {
+     "nama": "Paru-paru",
+     "info": "Tempat pertukaran oksigen dan karbon dioksida.",
+     "x": 29.7,
+     "y": 68.1
+    },
+    {
+     "nama": "Alveolus",
+     "info": "Kantong udara kecil tempat oksigen masuk ke darah.",
+     "x": 76.0,
+     "y": 52.5
+    },
+    {
+     "nama": "Diafragma",
+     "info": "Otot di bawah paru-paru yang menggerakkan napas.",
+     "x": 36.6,
+     "y": 85.6
+    }
+   ]
+  },
+  {
+   "id": "jelajah/matahari-bumi-bulan",
+   "file": "jelajah/matahari-bumi-bulan.webp",
+   "jenis": "jelajah",
+   "nama": "Matahari, Bumi, dan Bulan",
+   "sub": [
+    "ipa-6-bab6--matahari-bumi-dan-bulan"
+   ],
+   "kata": [
+    "tata surya",
+    "rotasi",
+    "revolusi"
+   ],
+   "titik": [
+    {
+     "nama": "Matahari",
+     "info": "Pusat tata surya dan sumber cahaya.",
+     "x": 9.7,
+     "y": 47.9
+    },
+    {
+     "nama": "Bumi",
+     "info": "Planet tempat kita tinggal.",
+     "x": 55.9,
+     "y": 49.7
+    },
+    {
+     "nama": "Bulan",
+     "info": "Mengelilingi Bumi dan memantulkan cahaya Matahari.",
+     "x": 85.6,
+     "y": 47.0
+    },
+    {
+     "nama": "Rotasi bumi",
+     "info": "Bumi berputar pada porosnya sehingga ada siang dan malam.",
+     "x": 68.4,
+     "y": 28.5
+    },
+    {
+     "nama": "Revolusi bumi",
+     "info": "Bumi mengelilingi Matahari; satu putaran sama dengan satu tahun.",
+     "x": 78.0,
+     "y": 71.6
+    },
+    {
+     "nama": "Sisi malam",
+     "info": "Bagian Bumi yang tidak terkena cahaya Matahari.",
+     "x": 68.4,
+     "y": 51.6
+    }
+   ]
+  },
+  {
+   "id": "jelajah/tata-surya",
+   "file": "jelajah/tata-surya.webp",
+   "jenis": "jelajah",
+   "nama": "Sistem tata surya",
+   "sub": [
+    "ipa-6-bab6--sistem-tata-surya"
+   ],
+   "kata": [
+    "tata surya",
+    "planet",
+    "Matahari"
+   ],
+   "titik": [
+    {
+     "nama": "Merkurius",
+     "info": "Planet paling dekat dengan Matahari.",
+     "x": 13.1,
+     "y": 47.9
+    },
+    {
+     "nama": "Venus",
+     "info": "Planet yang paling panas.",
+     "x": 21.1,
+     "y": 47.9
+    },
+    {
+     "nama": "Bumi",
+     "info": "Satu-satunya planet yang dihuni makhluk hidup.",
+     "x": 31.3,
+     "y": 47.9
+    },
+    {
+     "nama": "Mars",
+     "info": "Planet merah.",
+     "x": 41.2,
+     "y": 47.9
+    },
+    {
+     "nama": "Yupiter",
+     "info": "Planet terbesar.",
+     "x": 54.9,
+     "y": 47.4
+    },
+    {
+     "nama": "Saturnus",
+     "info": "Punya cincin yang indah.",
+     "x": 71.5,
+     "y": 47.9
+    },
+    {
+     "nama": "Uranus",
+     "info": "Berputar dalam keadaan miring.",
+     "x": 85.3,
+     "y": 47.9
+    },
+    {
+     "nama": "Neptunus",
+     "info": "Planet terjauh dari Matahari.",
+     "x": 95.6,
+     "y": 47.9
+    }
+   ]
   }
  ]
 }
