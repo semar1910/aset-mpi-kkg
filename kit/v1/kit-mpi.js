@@ -33,12 +33,16 @@
  * v1.18: tampilan tangkap pada keluarga sasaran (jawaban jatuh pelan, geser keranjang dan tahan di bawah jawaban yang benar; terlewat tidak menghukum); pesan salah fondasi dibuat netral.
  * v1.19: mesin labeli (seret nama ke gambar yang sesuai, atau seret gambar ke kotak nama; arah:'nama-ke-gambar' bawaan atau
  *        'gambar-ke-nama'; data berbentuk pasangan [gambar, nama, ulasan, petunjuk], bank soal jumlah). Mesin lama tidak diubah.
+ * v1.20: penambahan sembilan mesin: penyunting, sudut, grafik, silang, robot, carikata, jejak, sorot, tandai.
+ *        robot = susun perintah (maju/belok) agar robot sampai ke bendera di kotak-kotak (kolom 3-7, baris 3-5, rintangan,
+ *        batas perintah 'maks'; tanpa 'jawab', jalur terpendek dihitung otomatis). Pesan galat robot kini menyebut
+ *        mulai/tujuan yang belum diisi. Mesin lama tidak diubah.
  * v1.5: progres tersimpan, tombol dengarkan, soal salah diulang, bank soal (jumlah),
  *       mode tim, hasil murid + papan skor (bila diputar dari server KKG).
  */
 (function () {
   'use strict';
-  var VERSI = '1.19.0';
+  var VERSI = '1.20.0';
   /* Panggung dirancang untuk HP mendatar: tinggi tetap 540, lebar mengikuti layar (960–1200). */
   var H = 540, W_MIN = 960, W_MAX = 1200, W = W_MIN;
 
@@ -5245,6 +5249,8 @@ function robot_galat(lv, s, label) {
   if (robot_ARAH.indexOf(ar) < 0) return label + ': arah harus \'atas\', \'kanan\', \'bawah\', atau \'kiri\' (sekarang \'' + String(ar) + '\').';
   titik = function (v) { return Array.isArray(v) && v.length === 2 && bulat(v[0], 0, kol - 1) && bulat(v[1], 0, bar - 1); };
   bt = ' harus [kolom, baris] berupa bilangan bulat tanpa tanda petik, kolom 0–' + (kol - 1) + ' dan baris 0–' + (bar - 1) + ' (hitungan dari 0, baris 0 di atas). Sekarang: ';
+  if (s.mulai == null) return label + ': mulai belum diisi. Tulis mulai:[kolom, baris] di setiap soal (tidak bisa di level), contoh mulai:[0, 3].';
+  if (s.tujuan == null) return label + ': tujuan belum diisi. Tulis tujuan:[kolom, baris] di setiap soal (tidak bisa di level), contoh tujuan:[3, 3].';
   if (!titik(s.mulai)) return label + ': mulai' + bt + robot_teks(s.mulai) + '.';
   if (!titik(s.tujuan)) return label + ': tujuan' + bt + robot_teks(s.tujuan) + '.';
   if (s.mulai[0] === s.tujuan[0] && s.mulai[1] === s.tujuan[1]) return label + ': mulai dan tujuan jatuh di kotak yang sama. Pindahkan bendera ke kotak lain.';
