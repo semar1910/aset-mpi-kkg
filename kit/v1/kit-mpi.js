@@ -100,7 +100,10 @@
   IK.balon = '<path d="M12 2.8c3.6 0 6 2.6 6 6 0 3.7-3 6.3-6 7.2-3-.9-6-3.5-6-7.2 0-3.4 2.4-6 6-6z"/><path d="M10.6 18.2h2.8l-1.4-1.8zM12 18.2c-1.6 1.2 1.6 2.2 0 3.8"/>';
   IK.pancing = '<path d="M12 3v12.2a3.3 3.3 0 0 1-6.6 0"/><path d="M5.4 15.2l-1.8-1.8"/><circle cx="12" cy="3" r="0.9" fill="currentColor"/>';
   IK.tangkap = '<path d="M3.5 11h17l-2 8.5h-13z"/><path d="M8 11l.9 8.5M12 11v8.5M16 11l-.9 8.5"/><circle cx="12" cy="5.2" r="2.2" fill="currentColor"/>';
-  var IKON_MESIN = { cerita: 'buku', bacaan: 'halaman', sortir: 'keranjang', cocokkan: 'rantai', urutkan: 'urutan', runner: 'jalur', jelajah: 'lup', memori: 'memori', isian: 'papan', garis: 'garis', pecahan: 'pecahan', jam: 'jam', uang: 'uang', timbangan: 'timbangan', petak: 'petak', kuis: 'kuis', tembak: 'tembak', balon: 'balon', pancing: 'pancing', tangkap: 'tangkap', labeli: 'label' };
+  IK.rakit = '<rect x="2" y="8" width="6" height="8" rx="1.6"/><rect x="9" y="8" width="6" height="8" rx="1.6"/><rect x="16" y="8" width="6" height="8" rx="1.6"/><path d="M3.9 14l1.1-3.2L6.1 14M4.3 12.8h1.4M10.6 10.8h2.8M12 10.8v3.4M17.7 14.2v-3.4h1.6a1.1 1.1 0 0 1 0 2.2h-1.6M2 19.5h20"/>';
+IK.rangkai = '<rect x="3" y="3.5" width="8" height="8" rx="2"/><rect x="13" y="3.5" width="8" height="8" rx="2"/><path d="M5.2 9l1.8-4.2L8.8 9M5.9 7.6h2.2M15.5 4.8v5.4M15.5 4.8h1.6a1.4 1.4 0 0 1 0 2.8h-1.6M15.5 7.6h1.9a1.4 1.4 0 0 1 0 2.6h-1.9M3.5 17h7M13.5 17h7M3.5 20.5h7M13.5 20.5h7"/>';
+IK.huruf = '<rect x="2.6" y="6.5" width="8.6" height="11" rx="2.2"/><rect x="12.8" y="6.5" width="8.6" height="11" rx="2.2" stroke-dasharray="2.4 2.6"/><path d="M4.8 14.6 6.9 9.4l2.1 5.2M5.6 13h2.6"/>';
+  var IKON_MESIN = { cerita: 'buku', bacaan: 'halaman', sortir: 'keranjang', cocokkan: 'rantai', urutkan: 'urutan', runner: 'jalur', jelajah: 'lup', memori: 'memori', isian: 'papan', garis: 'garis', pecahan: 'pecahan', jam: 'jam', uang: 'uang', timbangan: 'timbangan', petak: 'petak', kuis: 'kuis', tembak: 'tembak', balon: 'balon', pancing: 'pancing', tangkap: 'tangkap', labeli: 'label', rakit: 'rakit', huruf: 'huruf', rangkai: 'rangkai' };
   var BENTUK_BINTANG = 'M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.4L12 17.4l-5.8 3 1.1-6.4-4.7-4.6 6.5-.9z';
   var BENTUK_HATI = 'M12 20.5s-7.4-4.6-9.4-9.4A5 5 0 0 1 12 7.6a5 5 0 0 1 9.4 3.5c-2 4.8-9.4 9.4-9.4 9.4z';
   function ik(nama, kelas, gaya) {
@@ -150,7 +153,10 @@
     balon: 'Ketuk balon yang jawabannya benar.',
     pancing: 'Geser kail ke ikan yang jawabannya benar, lalu tekan Pancing.',
     tangkap: 'Geser keranjang ke bawah jawaban yang benar dan tahan sampai jawabannya jatuh masuk.',
-    labeli: 'Seret ke pasangannya yang tepat, atau sentuh dulu lalu sentuh pasangannya.'
+    labeli: 'Seret ke pasangannya yang tepat, atau sentuh dulu lalu sentuh pasangannya.',
+    rakit: 'Ketuk kepingan untuk menyusun kata yang dicari. Ketuk kepingan di kotak untuk mengembalikannya, lalu tekan Periksa.',
+    huruf: 'Ketuk huruf untuk menyusun kata yang tepat, lalu tekan Periksa.',
+    rangkai: 'Ketuk huruf atau kata untuk mengisi kotak jawaban, lalu tekan Periksa. Ketuk kotak untuk mengeluarkannya lagi.'
   };
 
   /* ════════════════════════════ GAYA ════════════════════════════ */
@@ -908,6 +914,86 @@
     '@media (prefers-reduced-motion:reduce){.k-ct-in{animation:none!important}}'
   ].join('\n');
 
+  /* ── mesin rakit ── (kelas sendiri berawalan k-rk-) */
+  CSS += '\n' + [
+    '.k-ruang>.k-rk-w{position:absolute;inset:12px 18px 8px;display:flex}',
+    '.k-rk-kartu{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center;gap:10px;padding:12px 22px;overflow:auto}',
+    '.k-rk-tny{flex:0 0 auto;font-family:Fredoka,sans-serif;font-weight:600;font-size:26px;line-height:1.25;text-align:center;max-height:96px;overflow:auto}',
+    '.k-rk-bar{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}',
+    '.k-rk-info{font-weight:800;font-size:18px;color:var(--lip)}',
+    '.k-rk-baris{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;min-height:66px}',
+    '.k-rk-slot{min-width:62px;height:66px;display:flex;align-items:center;justify-content:center;border:3px dashed var(--lip);border-radius:14px;background:rgba(255,255,255,.78);transition:background .15s,border-color .15s}',
+    '.k-rk-slot.isi{border-style:solid;border-color:var(--c2);background:#fff}',
+    '.k-rk-slot.ok{border-color:#1E8B4A;background:#DDF7E6}',
+    '.k-rk-slot.no{border-color:#C2333A;background:#FFE1E1;animation:kGoyang .45s}',
+    '.k-rk-rm{min-width:62px;height:62px;border-radius:14px;background:rgba(0,0,0,.07);display:flex;align-items:center;justify-content:center}',
+    '.k-rk-kp{min-width:58px;height:58px;padding:0 12px;border:3px solid var(--lip);border-radius:12px;background:#fff;color:var(--tinta);font-family:Fredoka,sans-serif;font-weight:700;font-size:32px;line-height:1;cursor:pointer;box-shadow:0 4px 0 var(--lip);touch-action:manipulation;-webkit-user-select:none;user-select:none}',
+    '.k-rk-kp:active{transform:translateY(3px);box-shadow:0 1px 0 var(--lip)}',
+    '.k-rk-kp:focus-visible{outline:4px solid var(--aksen);outline-offset:2px}',
+    '.k-rk-kp:disabled{cursor:default;opacity:1}',
+    '.k-rk-slot .k-rk-kp{width:100%;height:100%;min-width:0;padding:0 8px;border:0;border-radius:10px;background:transparent;box-shadow:none;animation:kPop .3s both}',
+    '.k-rk-slot .k-rk-kp:active{transform:none}',
+    '.k-rk-slot.ok .k-rk-kp{color:#12582F}',
+    '.k-rk-suku .k-rk-slot,.k-rk-suku .k-rk-rm{min-width:92px}',
+    '.k-rk-suku .k-rk-kp{font-size:28px;padding:0 10px}',
+    '@media (prefers-reduced-motion:reduce){.k-rk-slot.no,.k-rk-slot .k-rk-kp{animation:none!important}}'
+  ].join('\n');
+
+  /* ── mesin huruf ── (kelas sendiri berawalan k-hr-) */
+  CSS += '\n' + [
+    '.k-ruang>.k-hr-w{position:absolute;inset:12px 18px 8px}',
+    '.k-hr-w{--k-hr-u:64px;display:flex;flex-direction:column;justify-content:center;gap:12px}',
+    '.k-hr-tny{flex:none;padding:10px 18px;text-align:center;font-weight:800;font-size:24px;line-height:1.3;max-height:130px;overflow:hidden}',
+    '.k-hr-info{margin-top:4px;font-family:Fredoka,"Trebuchet MS",sans-serif;font-weight:600;font-size:18px;color:var(--lip)}',
+    '.k-hr-slot{display:flex;justify-content:center;gap:8px}',
+    '.k-hr-kt{flex:none;width:var(--k-hr-u);height:calc(var(--k-hr-u) * 1.1);display:flex;align-items:center;justify-content:center;border:3px dashed var(--lip);border-radius:14px;background:rgba(255,255,255,.72);transition:background .15s,border-color .15s}',
+    '.k-hr-kt.aktif{border-style:solid;border-color:var(--c2);background:#fff;box-shadow:0 0 0 4px rgba(255,255,255,.55)}',
+    '.k-hr-kt.betul{border:3px solid #1E8B4A;background:#DDF7E6}',
+    '.k-hr-kt.keliru{border:3px solid #C2333A;background:#FFE1E1;animation:kHrGoyang .45s}',
+    '.k-hr-kt.tampil{border:3px solid #B7791F;background:#FFF1CC}',
+    '.k-hr-baki{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center;padding:10px 14px;background:rgba(255,255,255,.55);border:3px solid var(--lip);border-radius:18px}',
+    '.k-hr-sel{flex:none;width:var(--k-hr-u);height:calc(var(--k-hr-u) * 1.1);border-radius:14px;background:rgba(0,0,0,.1)}',
+    '.k-hr-ub{display:flex;align-items:center;justify-content:center;width:100%;height:100%;padding:0;border:3px solid var(--lip);border-radius:14px;background:#fff;color:var(--tinta);',
+    '  font-family:Fredoka,"Trebuchet MS",sans-serif;font-weight:700;font-size:calc(var(--k-hr-u) * .56);line-height:1;cursor:pointer;box-shadow:0 4px 0 var(--lip);touch-action:manipulation}',
+    '.k-hr-ub:active{transform:translateY(3px);box-shadow:0 1px 0 var(--lip)}',
+    '.k-hr-ub:focus-visible{outline:4px solid var(--aksen);outline-offset:2px}',
+    '.k-hr-kt .k-hr-ub{box-shadow:0 3px 0 var(--lip);animation:kHrPop .25s both}',
+    '.k-hr-kt.betul .k-hr-ub{background:#DDF7E6;border-color:#1E8B4A;box-shadow:0 3px 0 #1E8B4A;cursor:default}',
+    '.k-hr-kt.keliru .k-hr-ub{background:#FFE1E1;border-color:#C2333A;box-shadow:0 3px 0 #C2333A}',
+    '.k-hr-kt.tampil .k-hr-ub{background:#FFF1CC;border-color:#B7791F;box-shadow:0 3px 0 #B7791F;cursor:default}',
+    '@keyframes kHrGoyang{20%{transform:translateX(-7px)}40%{transform:translateX(7px)}60%{transform:translateX(-4px)}80%{transform:translateX(4px)}}',
+    '@keyframes kHrPop{from{transform:scale(.6)}to{transform:none}}'
+  ].join('\n');
+
+  /* ── mesin rangkai ── */
+  CSS += '\n' + [
+    '.k-rg-w{position:absolute;inset:12px 18px 8px;display:flex;flex-direction:column;gap:10px}',
+    '.k-rg-tny{flex:0 0 auto;display:flex;align-items:center;gap:14px;padding:10px 18px;min-height:64px}',
+    '.k-rg-gb{flex:0 0 72px;width:72px;height:72px;border-radius:12px;overflow:hidden;background:#fff;border:2px solid var(--lip)}',
+    '.k-rg-gb img,.k-rg-gb .k-fb{width:100%;height:100%;object-fit:contain;display:block;border-radius:0;padding:0}',
+    '.k-rg-tx{flex:1;min-width:0;font-weight:800;font-size:23px;line-height:1.3}',
+    '.k-rg-jwb{flex:1 1 0;min-height:0;display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:8px;padding:6px 4px;overflow-y:auto}',
+    '.k-rg-baki{flex:0 1 auto;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;padding:10px 12px;overflow-y:auto}',
+    '.k-rg-sl{display:inline-flex;align-items:center;justify-content:center;min-width:64px;height:72px;padding:0 10px;border:3px dashed var(--lip);border-radius:14px;background:rgba(255,255,255,.85);color:var(--tinta);',
+    '  font-family:Fredoka,"Trebuchet MS",sans-serif;font-weight:600;font-size:38px;line-height:1;cursor:pointer}',
+    '.k-rg-sl.k-rg-isi{border-style:solid;background:#fff;box-shadow:0 4px 0 rgba(0,0,0,.18)}',
+    '.k-rg-sl.k-rg-kunci,.k-rg-sl.k-rg-ok{background:#DDF7E6;border:3px solid #1E8B4A;box-shadow:0 4px 0 #1E8B4A;cursor:default}',
+    '.k-rg-sl.k-rg-ok{animation:kRgPop .4s both}',
+    '.k-rg-sl.k-rg-no{background:#FFE1E1;border:3px solid #C2333A;box-shadow:0 4px 0 #C2333A;animation:kRgGetar .45s}',
+    '.k-rg-ub{font-family:Fredoka,"Trebuchet MS",sans-serif;font-weight:600;font-size:34px;line-height:1;min-width:64px;height:64px;padding:0 10px;',
+    '  border:3px solid var(--lip);border-radius:14px;color:var(--lip);cursor:pointer;background:linear-gradient(180deg,var(--c1),var(--c2));',
+    '  box-shadow:inset 0 3px 0 rgba(255,255,255,.55),0 4px 0 var(--lip);transition:transform .08s,box-shadow .08s,opacity .15s}',
+    '.k-rg-ub:active{transform:translateY(3px);box-shadow:inset 0 3px 0 rgba(255,255,255,.55),0 1px 0 var(--lip)}',
+    '.k-rg-ub[disabled]{cursor:default;opacity:.55}',
+    '.k-rg-ub.k-rg-pakai{opacity:.2;box-shadow:none;transform:none}',
+    '.k-rg-ub:focus-visible,.k-rg-sl:focus-visible{outline:4px solid var(--lip);outline-offset:3px}',
+    '.k-rg-jwb.k-rg-kt .k-rg-sl{min-width:84px;height:54px;padding:0 14px;font-size:24px}',
+    '.k-rg-baki.k-rg-kt .k-rg-ub{min-width:56px;height:54px;padding:0 16px;font-size:24px}',
+    '@keyframes kRgPop{0%{transform:scale(.8)}60%{transform:scale(1.1)}100%{transform:scale(1)}}',
+    '@keyframes kRgGetar{20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}',
+    '@media (prefers-reduced-motion:reduce){.k-rg-sl,.k-rg-ub{animation:none!important;transition:none!important}}',
+  ].join('\n');
+
   /* ════════════════════════════ ALAT ════════════════════════════ */
   var D = null, ROOT, PG, SKALA = 1, LEVEL = [], BINTANG = [], TERBUKA = 1, MODE_GURU = false;
   /* Variasi tampilan dipilih otomatis dari judul MPI, jadi tiap MPI terlihat berbeda
@@ -1507,7 +1593,7 @@
     layar(w);
   }
   function namaMesin(m) {
-    return { cerita: 'Cerita', bacaan: 'Bacaan', sortir: 'Sortir', cocokkan: 'Cocokkan', urutkan: 'Urutkan', runner: 'Lari Jalur', jelajah: 'Jelajah', memori: 'Memori', isian: 'Isian', garis: 'Garis Bilangan', pecahan: 'Pecahan', jam: 'Jam', uang: 'Uang', timbangan: 'Timbangan', petak: 'Bangun Petak', kuis: 'Kuis', tembak: 'Tembak Sasaran', balon: 'Pecahkan Balon', pancing: 'Memancing Jawaban', tangkap: 'Tangkap Jawaban', labeli: 'Labeli Gambar' }[m] || 'Tantangan';
+    return { cerita: 'Cerita', bacaan: 'Bacaan', sortir: 'Sortir', cocokkan: 'Cocokkan', urutkan: 'Urutkan', runner: 'Lari Jalur', jelajah: 'Jelajah', memori: 'Memori', isian: 'Isian', garis: 'Garis Bilangan', pecahan: 'Pecahan', jam: 'Jam', uang: 'Uang', timbangan: 'Timbangan', petak: 'Bangun Petak', kuis: 'Kuis', tembak: 'Tembak Sasaran', balon: 'Pecahkan Balon', pancing: 'Memancing Jawaban', tangkap: 'Tangkap Jawaban', labeli: 'Labeli Gambar', rakit: 'Rakit Kata', huruf: 'Susun Huruf', rangkai: 'Rangkai Kata' }[m] || 'Tantangan';
   }
 
   /* ════════════════════════════ LEVEL ════════════════════════════ */
@@ -1958,6 +2044,19 @@
         h = lv.soal ? ul(lv.soal.map(function (s) {
           return fmt(s.tanya) + ' → <b>' + esc(kuisTeks(s.pilihan[s.benar])) + '</b>';
         })) : '<p>Soal dibuat acak otomatis setiap permainan; kunci dihitung oleh MPI.</p>';
+      } else if (lv.mesin === 'rakit') {
+        h = ul((lv.soal || []).map(function (s) {
+          return fmt(s.tanya) + ' → <b>' + esc(String(s.jawab).toLowerCase()) + '</b>' +
+            (rakit_jenis(lv, s) === 'suku' && Array.isArray(s.suku) ? ' (' + esc(s.suku.join('-')) + ')' : '');
+        }));
+      } else if (lv.mesin === 'huruf') {
+        h = ul((lv.soal || []).map(function (s) {
+          return fmt(s.tanya) + ' → <b>' + esc(String(s.jawab).trim().toUpperCase()) + '</b>';
+        }));
+      } else if (lv.mesin === 'rangkai') {
+        h = lv.soal ? ul(lv.soal.map(function (s) {
+          return fmt(s.tanya) + ' → <b>' + esc(s.jawab) + '</b>';
+        })) : '';
       } else if (lv.mesin === 'jelajah') {
         h = ul((lv.titik || []).map(function (t, i) { return (i + 1) + '. <b>' + esc(t.nama) + '</b>: ' + fmt(t.info || ''); }));
       } else if (lv.mesin === 'labeli') {
@@ -2895,6 +2994,484 @@
       return k;
     });
     acak(kartu).forEach(function (k) { baki.appendChild(k); sr.kartu(k); });
+  };
+
+  /* ── mesin rakit ── (fungsi bantu berawalan rakit_) */
+  function rakit_jenis(lv, s) { return (s && s.jenis) || (lv && lv.jenis) || 'huruf'; }
+  /* kepingan kunci (huruf kecil), urut dari kiri ke kanan; hanya dipanggil setelah rakit_galat lolos */
+  function rakit_potong(lv, s) {
+    return rakit_jenis(lv, s) === 'suku'
+      ? s.suku.map(function (x) { return String(x).toLowerCase(); })
+      : String(s.jawab).toLowerCase().split('');
+  }
+  /* Mengembalikan teks galat (kosong bila soal sah). Dipakai periksaData. */
+  function rakit_galat(lv, s, label) {
+    var huruf = /^[A-Za-z]+$/, jn, k, ps, sdh, pc, kecil, mk, bt;
+    if (!s || typeof s !== 'object' || Array.isArray(s)) return label + ' harus berbentuk { tanya:\'...\', jawab:\'kata\' }.';
+    if (typeof s.tanya !== 'string' || !s.tanya.trim()) return label + ': tanya belum diisi. Tulis petunjuk untuk kata yang dicari, misalnya \'Hewan yang suka mengeong.\'.';
+    if (s.tanya.length > 150) return label + ': tanya terlalu panjang (' + s.tanya.length + ' huruf). Maksimal 150 huruf, ringkas kalimatnya.';
+    jn = rakit_jenis(lv, s);
+    if (jn !== 'huruf' && jn !== 'suku') return label + ': jenis harus \'huruf\' atau \'suku\' (sekarang ' + jn + ').';
+    if (typeof s.jawab !== 'string' || !huruf.test(s.jawab)) return label + ': jawab harus satu kata berisi huruf a–z saja, tanpa spasi, angka, strip, atau tanda baca (sekarang \'' + String(s.jawab) + '\'). Pilih kata tunggal; kata ulang seperti anak-anak tidak bisa dipakai.';
+    if (jn === 'huruf' && (s.jawab.length < 3 || s.jawab.length > 9)) return label + ': jawab \'' + s.jawab + '\' berisi ' + s.jawab.length + ' huruf. Jenis \'huruf\' hanya untuk kata 3–9 huruf; untuk kata lebih panjang pakai jenis \'suku\' dan tulis suku.';
+    if (jn === 'suku' && (s.jawab.length < 3 || s.jawab.length > 12)) return label + ': jawab \'' + s.jawab + '\' berisi ' + s.jawab.length + ' huruf. Jenis \'suku\' hanya untuk kata 3–12 huruf.';
+    if (jn === 'huruf') {
+      if (s.suku != null) return label + ': suku hanya dipakai pada jenis \'suku\'. Tulis jenis:\'suku\' pada soal ini, atau hapus suku.';
+    } else {
+      if (!Array.isArray(s.suku) || s.suku.length < 2 || s.suku.length > 5) return label + ': jenis \'suku\' membutuhkan suku berupa daftar 2–5 suku kata, misalnya suku:[\'ma\',\'ta\',\'ha\',\'ri\'].';
+      for (k = 0; k < s.suku.length; k++) {
+        if (typeof s.suku[k] !== 'string' || !huruf.test(s.suku[k]) || s.suku[k].length > 4) return label + ': suku ke-' + (k + 1) + ' (\'' + String(s.suku[k]) + '\') harus teks berisi 1–4 huruf a–z.';
+      }
+      if (s.suku.join('').toLowerCase() !== s.jawab.toLowerCase()) return label + ': gabungan suku (' + s.suku.join('-') + ') tidak sama dengan jawab (' + s.jawab + '). Perbaiki suku atau jawab supaya bila disambung hasilnya sama persis.';
+    }
+    ps = rakit_potong(lv, s);
+    if (s.pengecoh != null) {
+      if (!Array.isArray(s.pengecoh) || s.pengecoh.length > 3) return label + ': pengecoh harus berupa daftar paling banyak 3 item, misalnya pengecoh:[\'x\',\'z\'].';
+      sdh = []; mk = jn === 'suku' ? 4 : 1;
+      for (k = 0; k < s.pengecoh.length; k++) {
+        pc = s.pengecoh[k];
+        if (typeof pc !== 'string' || !huruf.test(pc) || pc.length > mk) return label + ': pengecoh ke-' + (k + 1) + ' (\'' + String(pc) + '\') harus berisi ' + (jn === 'suku' ? '1–4 huruf a–z (satu suku kata)' : 'tepat 1 huruf a–z') + '.';
+        kecil = pc.toLowerCase();
+        if (ps.indexOf(kecil) >= 0) return label + ': pengecoh \'' + pc + '\' sudah dipakai kata ini. Pilih ' + (jn === 'suku' ? 'suku kata' : 'huruf') + ' lain yang tidak ada di kata \'' + s.jawab + '\'.';
+        if (sdh.indexOf(kecil) >= 0) return label + ': pengecoh \'' + pc + '\' kembar. Setiap pengecoh harus berbeda.';
+        sdh.push(kecil);
+      }
+    }
+    bt = ['petunjuk', 'ulasan'];
+    for (k = 0; k < bt.length; k++) {
+      if (s[bt[k]] != null && (typeof s[bt[k]] !== 'string' || s[bt[k]].length > 140)) return label + ': ' + bt[k] + ' harus teks paling banyak 140 huruf.';
+    }
+    return '';
+  }
+
+  /* RAKIT — ketuk kepingan huruf (atau suku kata) untuk menyusun kata yang ditanyakan */
+  MESIN.rakit = function (lv, api) {
+    var daftar = ambilSoal(lv), jp = null, jenis = 'huruf', bagian = [], kepingan = [], isi = [], slotEl = [], tahan = false;
+    var w = api.el('div', 'k-rk-w'), kartu = api.el('div', 'k-kertas k-rk-kartu'), tny = api.el('div', 'k-rk-tny');
+    var bar = api.el('div', 'k-rk-bar'), info = api.el('div', 'k-rk-info'), baris = api.el('div', 'k-rk-baris'), baki = api.el('div', 'k-rk-baris');
+    function terkunci() { return tahan || !jp || jp.selesai(); }
+    function segarkan() { if (jp) jp.perbarui(); }
+    function slotKosong() { for (var q = 0; q < isi.length; q++) if (!isi[q]) return q; return -1; }
+    function taruhKe(kp, q) {
+      isi[q] = kp; kp.slot = q; slotEl[q].appendChild(kp.el); slotEl[q].classList.add('isi');
+    }
+    function kembalikan(kp) {
+      var q = kp.slot;
+      if (q == null) return;
+      isi[q] = null; kp.slot = null;
+      slotEl[q].classList.remove('isi', 'ok', 'no');
+      kp.rumah.appendChild(kp.el);
+    }
+    /* semua = true juga mengembalikan kepingan yang sudah dikunci hijau */
+    function kosongkan(semua) {
+      kepingan.forEach(function (kp) {
+        if (kp.slot == null || (kp.kunci && !semua)) return;
+        kembalikan(kp);
+        if (semua) { kp.kunci = false; kp.el.disabled = false; }
+      });
+    }
+    function kunciDi(kp, q) { kp.kunci = true; kp.el.disabled = true; slotEl[q].classList.remove('no'); slotEl[q].classList.add('ok'); }
+    function ketuk(kp) {
+      if (terkunci() || kp.kunci) return;
+      api.suara.klik();
+      if (kp.slot != null) kembalikan(kp);
+      else {
+        var q = slotKosong();
+        if (q < 0) { goyang(baris); return; }
+        taruhKe(kp, q);
+      }
+      segarkan();
+    }
+    function buatKp(t) {
+      var b = api.el('button', 'k-rk-kp'), kp = { t: t, el: b, rumah: null, slot: null, kunci: false };
+      b.type = 'button'; b.textContent = t;
+      b.setAttribute('aria-label', (jenis === 'suku' ? 'Suku kata ' : 'Huruf ') + t);
+      b.addEventListener('click', function () { ketuk(kp); });
+      return kp;
+    }
+    var hapus = tombol(ik('hapus') + ' Ulangi susun', 'kecil sek', function () {
+      if (terkunci()) return;
+      kosongkan(false); segarkan();
+    });
+    bar.appendChild(info); bar.appendChild(hapus);
+    kartu.appendChild(tny); kartu.appendChild(bar); kartu.appendChild(baris); kartu.appendChild(baki);
+    w.appendChild(kartu); api.area.appendChild(w);
+
+    jp = jalurSoal(api, daftar, {
+      tampil: function (s) {
+        var urut, tc = 0, teks;
+        jenis = rakit_jenis(lv, s); tahan = false;
+        bagian = rakit_potong(lv, s);
+        w.className = 'k-rk-w k-rk-' + jenis;
+        tny.innerHTML = api.fmt(s.tanya);
+        info.textContent = 'Kata ini terdiri dari ' + bagian.length + (jenis === 'suku' ? ' suku kata.' : ' huruf.');
+        baris.innerHTML = ''; baki.innerHTML = '';
+        slotEl = []; isi = [];
+        bagian.forEach(function (t, q) {
+          var sl = api.el('div', 'k-rk-slot'); sl.setAttribute('aria-label', 'Kotak ' + (q + 1));
+          baris.appendChild(sl); slotEl.push(sl); isi.push(null);
+        });
+        teks = bagian.concat((s.pengecoh || []).map(function (x) { return String(x).toLowerCase(); }));
+        kepingan = teks.map(buatKp);
+        urut = api.acak(kepingan);
+        /* tanpa pengecoh, hindari susunan awal yang sudah benar */
+        while (!(s.pengecoh && s.pengecoh.length) && tc < 6 && urut.map(function (x) { return x.t; }).join('|') === bagian.join('|')) { urut = api.acak(kepingan); tc++; }
+        urut.forEach(function (kp) {
+          var rm = api.el('div', 'k-rk-rm'); rm.appendChild(kp.el); baki.appendChild(rm); kp.rumah = rm;
+        });
+        api.bicara(lv.petunjuk || (jenis === 'suku' ? 'Ketuk suku kata untuk menyusun kata, lalu tekan Periksa.' : PETUNJUK.rakit));
+      },
+      siap: function () { return isi.length > 0 && isi.every(Boolean); },
+      benar: function (s) { return isi.map(function (kp) { return kp.t; }).join('') === String(s.jawab).toLowerCase(); },
+      tandai: function (ok) {
+        if (ok) { isi.forEach(function (kp, q) { kunciDi(kp, q); }); return; }
+        tahan = true;
+        isi.forEach(function (kp, q) {
+          if (kp.kunci) return;
+          if (kp.t === bagian[q]) kunciDi(kp, q);
+          else slotEl[q].classList.add('no');
+        });
+        goyang(baris);
+      },
+      ulangi: function () { kosongkan(false); tahan = false; },
+      teksBenar: function (s) {
+        var j = String(s.jawab).toLowerCase();
+        return rakit_jenis(lv, s) === 'suku' ? j + ' (' + rakit_potong(lv, s).join('-') + ')' : j;
+      },
+      tampilkanBenar: function () {
+        tahan = true; kosongkan(true);
+        bagian.forEach(function (t, q) {
+          var kp = kepingan.filter(function (x) { return x.slot == null && x.t === t; })[0];
+          if (kp) { taruhKe(kp, q); kunciDi(kp, q); }
+        });
+      }
+    });
+    jp.mulai();
+  };
+
+  /* 22. HURUF — susun huruf acak menjadi satu kata */
+  MESIN.huruf = function (lv, api) {
+    var el = api.el, esc = api.esc, fmt = api.fmt, acak = api.acak;
+    function svg(d) { return '<svg class="k-ik" viewBox="0 0 24 24" aria-hidden="true">' + d + '</svg>'; }
+    var IK_HAPUS = svg('<path d="M9 5h11a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H9l-6-7z"/><path d="m12.5 9.5 5 5M17.5 9.5l-5 5"/>');
+    var IK_CEK = svg('<path d="m5 12.5 4.5 4.5L19 7.5"/>');
+    var IK_LANJUT = svg('<path d="M5 12h14M13 6l6 6-6 6"/>');
+
+    var pakaiBank = lv.jumlah && lv.jumlah < lv.soal.length;
+    var jumlah = pakaiBank ? lv.jumlah : lv.soal.length;
+    var daftar = (pakaiBank ? acak(lv.soal) : lv.soal.slice()).slice(0, jumlah);
+    var i = 0, salahKe = 0, tambahan = 0, kunci = false, pewaktu = [];
+    var kata = '', kotak = [], ubin = [], btnPeriksa = null, btnHapus = null;
+
+    var w = el('div', 'k-hr-w');
+    var kartu = el('div', 'k-kertas k-hr-tny');
+    var baris = el('div', 'k-hr-slot');
+    var baki = el('div', 'k-hr-baki');
+    w.appendChild(kartu); w.appendChild(baris); w.appendChild(baki);
+    api.area.appendChild(w);
+
+    function tunda(fn, ms) { pewaktu.push(setTimeout(fn, ms)); }
+    api.berhenti = function () { pewaktu.forEach(clearTimeout); pewaktu = []; };
+
+    function perbarui() {
+      var penuh = kotak.every(function (k) { return k.h; });
+      var aktif = -1;
+      kotak.forEach(function (k, q) {
+        k.el.classList.remove('aktif');
+        if (aktif < 0 && !k.h) aktif = q;
+      });
+      if (aktif >= 0 && !kunci) kotak[aktif].el.classList.add('aktif');
+      if (btnPeriksa) btnPeriksa.disabled = kunci || !penuh;
+      if (btnHapus) btnHapus.disabled = kunci || !kotak.some(function (k) { return k.h && !k.tetap; });
+    }
+    function taruhDi(h, q) {
+      kotak[q].h = h; h.di = q; kotak[q].el.appendChild(h.el);
+    }
+    function taruh(h) {
+      for (var q = 0; q < kotak.length; q++) if (!kotak[q].h) { taruhDi(h, q); return; }
+    }
+    function kembalikan(h) {
+      var k = kotak[h.di];
+      k.h = null; h.di = -1; h.sel.appendChild(h.el);
+      k.el.className = 'k-hr-kt';
+    }
+    function ketuk(h) {
+      if (kunci) return;
+      if (h.di >= 0 && kotak[h.di].tetap) return;
+      api.suara.klik();
+      if (h.di >= 0) kembalikan(h); else taruh(h);
+      perbarui();
+    }
+    function hapus() {
+      if (kunci) return;
+      for (var q = kotak.length - 1; q >= 0; q--) {
+        if (kotak[q].h && !kotak[q].tetap) { kembalikan(kotak[q].h); break; }
+      }
+      perbarui();
+    }
+    function lanjutTombol() {
+      api.bersihAksi(); btnPeriksa = null; btnHapus = null;
+      api.aksi((i < jumlah - 1 ? 'Lanjut ' + IK_LANJUT : 'Selesai ' + IK_CEK), function () {
+        i++;
+        if (i >= jumlah) { api.berhenti(); api.progres(jumlah, jumlah); api.selesai(); } else tampil();
+      }, 'k-denyut');
+    }
+    function cek() {
+      if (kunci || !kotak.every(function (k) { return k.h; })) return;
+      var s = daftar[i];
+      var rakit = kotak.map(function (k) { return k.h.ch; }).join('');
+      if (rakit === kata) {
+        kunci = true;
+        kotak.forEach(function (k) { k.tetap = true; k.el.classList.add('betul'); });
+        perbarui();
+        api.benar(s.ulasan || null);
+        lanjutTombol();
+        return;
+      }
+      salahKe++;
+      var pas = 0, salahKotak = [];
+      kotak.forEach(function (k, q) {
+        if (k.h.ch === kata.charAt(q)) { k.tetap = true; k.el.classList.add('betul'); pas++; }
+        else { k.el.classList.add('keliru'); salahKotak.push(k); }
+      });
+      kunci = true;
+      if (salahKe >= 2) {
+        var ulang = !s._ulang && tambahan < 3;
+        if (ulang) {
+          var salin = {}; Object.keys(s).forEach(function (k) { salin[k] = s[k]; }); salin._ulang = true;
+          daftar.push(salin); jumlah++; tambahan++;
+        }
+        api.salah('Jawaban yang benar: **' + kata + '**. ' + (s.ulasan || '') + (ulang ? ' Soal ini akan muncul lagi nanti.' : ''));
+        tunda(function () {
+          salahKotak.forEach(function (k) { kembalikan(k.h); });
+          kotak.forEach(function (k, q) {
+            if (k.h) return;
+            var h = ubin.filter(function (u) { return u.di < 0 && u.ch === kata.charAt(q); })[0];
+            if (h) { taruhDi(h, q); k.el.className = 'k-hr-kt tampil'; }
+            k.tetap = true;
+          });
+          perbarui();
+        }, 750);
+        lanjutTombol();
+      } else {
+        api.salah((s.petunjuk ? s.petunjuk + ' ' : 'Belum tepat. ') +
+          (pas ? 'Huruf yang sudah pas dikunci hijau.' : 'Coba susun ulang hurufnya.'));
+        tunda(function () {
+          salahKotak.forEach(function (k) { kembalikan(k.h); });
+          kunci = false; perbarui();
+        }, 750);
+      }
+      perbarui();
+    }
+    function tampil() {
+      var s = daftar[i];
+      kata = String(s.jawab).trim().toUpperCase();
+      salahKe = 0; kunci = false;
+      api.progres(i, jumlah);
+      var extra = String(s.pengecoh || '').toUpperCase().split('').filter(Boolean);
+      var total = kata.length + extra.length;
+      w.style.setProperty('--k-hr-u', (total <= 8 ? 72 : total <= 12 ? 64 : 56) + 'px');
+      kartu.innerHTML = fmt(s.tanya) + '<div class="k-hr-info">' + kata.length + ' huruf</div>';
+      baris.innerHTML = ''; baki.innerHTML = '';
+      kotak = kata.split('').map(function () {
+        var k = { el: el('div', 'k-hr-kt'), h: null, tetap: false };
+        baris.appendChild(k.el);
+        return k;
+      });
+      ubin = kata.split('').concat(extra).map(function (ch) {
+        var h = { ch: ch, di: -1, el: el('button', 'k-hr-ub', esc(ch)), sel: el('div', 'k-hr-sel') };
+        h.el.type = 'button';
+        h.el.addEventListener('click', function () { ketuk(h); });
+        h.sel.appendChild(h.el);
+        return h;
+      });
+      var urut = acak(ubin);
+      /* hindari susunan yang langsung benar */
+      for (var t = 0; t < 8 && urut.map(function (u) { return u.ch; }).join('') === kata; t++) urut = acak(ubin);
+      urut.forEach(function (h) { baki.appendChild(h.sel); });
+      api.bersihAksi();
+      btnHapus = api.aksi(IK_HAPUS + ' Hapus', hapus, 'sek');
+      btnPeriksa = api.aksi(IK_CEK + ' Periksa', cek);
+      perbarui();
+      if (i > 0) api.bicara(lv.petunjuk || 'Ketuk huruf untuk menyusun kata yang tepat, lalu tekan Periksa.');
+    }
+    tampil();
+  };
+
+  MESIN.rangkai = function (lv, api) {
+    var el = api.el, fmt = api.fmt, acak = api.acak;
+    var SV = '<svg class="k-ik" viewBox="0 0 24 24" aria-hidden="true">';
+    var IKON_CEK = SV + '<path d="M5 12.5 9.5 17 19 7"/></svg>';
+    var IKON_LANJUT = SV + '<path d="M7.5 4.5 19.5 12l-12 7.5z" fill="currentColor"/></svg>';
+    var IKON_ULANG = SV + '<path d="M20 12a8 8 0 1 1-2.4-5.7M20 4.5v4.8h-4.8"/></svg>';
+    var hidup = true, timer = [];
+    function tunda(ms, fn) { timer.push(setTimeout(function () { if (hidup) fn(); }, ms)); }
+    api.berhenti = function () { hidup = false; timer.forEach(clearTimeout); };
+
+    /* bank soal: jumlah memilih acak tiap main */
+    var bank = lv.soal.slice();
+    var daftar = lv.jumlah && lv.jumlah < bank.length ? acak(bank).slice(0, lv.jumlah) : bank;
+    var i = 0, jumlah = daftar.length, tambahan = 0;
+    var s, jn, kunci, slot, tile, salahKe, beres, sibuk, tbl, tblUlang;
+
+    var w = el('div', 'k-rg-w');
+    var tny = el('div', 'k-rg-tny k-kertas');
+    var jwb = el('div', 'k-rg-jwb');
+    var baki = el('div', 'k-rg-baki k-kertas');
+    w.appendChild(tny); w.appendChild(jwb); w.appendChild(baki);
+    api.area.appendChild(w);
+
+    function jenisSoal(x) { return x.jenis || lv.jenis || 'huruf'; }
+    function pecahKunci(x, j) { return j === 'kata' ? String(x.jawab).trim().split(/\s+/) : String(x.jawab).trim().toUpperCase().split(''); }
+    function pecahPengecoh(x, j) { return (x.pengecoh || []).map(function (p) { return j === 'kata' ? String(p).trim() : String(p).trim().toUpperCase(); }); }
+    function urutanSama(urut) {
+      if (urut.length !== kunci.length) return false;
+      return urut.every(function (t, k) { return t.t === kunci[k]; });
+    }
+    function teksBenar() { return kunci.join(jn === 'kata' ? ' ' : ''); }
+    function penuh() { return slot.every(function (sl) { return sl.tile; }); }
+
+    function segar() {
+      slot.forEach(function (sl) {
+        sl.btn.textContent = sl.tile ? sl.tile.t : '';
+        sl.btn.className = 'k-rg-sl' + (sl.tile ? ' k-rg-isi' : '') + (sl.kunci ? ' k-rg-kunci' : '') + (sl.status ? ' k-rg-' + sl.status : '');
+      });
+      tile.forEach(function (tl) {
+        tl.btn.classList.toggle('k-rg-pakai', tl.pakai);
+        tl.btn.disabled = tl.pakai || beres || sibuk;
+      });
+      if (tbl) tbl.disabled = !penuh() || beres || sibuk;
+      if (tblUlang) tblUlang.disabled = beres || sibuk || !slot.some(function (sl) { return sl.tile && !sl.kunci; });
+    }
+
+    function taruh(tl) {
+      if (beres || sibuk || tl.pakai) return;
+      var k = -1;
+      for (var q = 0; q < slot.length; q++) { if (!slot[q].tile) { k = q; break; } }
+      if (k < 0) return;
+      if (api.suara && api.suara.klik) api.suara.klik();
+      slot[k].tile = tl; tl.pakai = true;
+      segar();
+    }
+    function lepas(k) {
+      var sl = slot[k];
+      if (beres || sibuk || !sl.tile || sl.kunci) return;
+      if (api.suara && api.suara.klik) api.suara.klik();
+      sl.tile.pakai = false; sl.tile = null;
+      segar();
+    }
+    function kosongkan() {
+      if (beres || sibuk) return;
+      slot.forEach(function (sl) {
+        if (sl.tile && !sl.kunci) { sl.tile.pakai = false; sl.tile = null; }
+      });
+      segar();
+    }
+
+    function lanjut() {
+      api.bersihAksi(); tbl = null; tblUlang = null;
+      var akhir = i >= jumlah - 1;
+      api.aksi((akhir ? 'Selesai ' + IKON_CEK : 'Lanjut ' + IKON_LANJUT), function () {
+        i++;
+        if (i >= jumlah) { api.progres(jumlah, jumlah); api.selesai(); } else mulai();
+      }, 'k-denyut');
+    }
+
+    /* dipanggil setelah salah kedua: isi semua kotak dengan susunan benar */
+    function tampilkanBenar() {
+      tile.forEach(function (tl) {
+        var terkunci = slot.some(function (sl) { return sl.kunci && sl.tile === tl; });
+        if (!terkunci) tl.pakai = false;
+      });
+      slot.forEach(function (sl, k) {
+        if (sl.kunci) { sl.status = 'ok'; return; }
+        var tl = tile.filter(function (x) { return !x.pakai && x.t === kunci[k]; })[0];
+        sl.tile = tl; tl.pakai = true; sl.kunci = true; sl.status = 'ok';
+      });
+      segar();
+    }
+
+    function periksa() {
+      if (beres || sibuk || !penuh()) return;
+      var salahPos = [];
+      kunci.forEach(function (t, k) { if (slot[k].tile.t !== t) salahPos.push(k); });
+      if (!salahPos.length) {
+        beres = true;
+        slot.forEach(function (sl) { sl.status = 'ok'; });
+        segar();
+        api.benar(s.ulasan || null);
+        lanjut();
+        return;
+      }
+      salahKe++;
+      slot.forEach(function (sl, k) {
+        if (salahPos.indexOf(k) < 0) sl.kunci = true; else sl.status = 'no';
+      });
+      sibuk = true; segar();
+      if (salahKe >= 2) {
+        var ulang = !s._ulang && tambahan < 3;
+        if (ulang) {
+          var salin = {};
+          Object.keys(s).forEach(function (q) { salin[q] = s[q]; });
+          salin._ulang = true; daftar.push(salin); jumlah++; tambahan++;
+        }
+        beres = true;
+        api.salah('Jawaban yang benar: **' + teksBenar() + '**. ' + (s.ulasan || '') + (ulang ? ' Soal ini akan muncul lagi nanti.' : ''));
+        lanjut();
+        tunda(700, tampilkanBenar);
+      } else {
+        api.salah(s.petunjuk || (salahPos.length < kunci.length
+          ? 'Belum tepat. Yang hijau sudah benar dan dikunci. Susun sisanya lagi, ya!'
+          : 'Belum tepat. Coba susun lagi dengan teliti.'));
+        tunda(800, function () {
+          slot.forEach(function (sl) {
+            if (sl.status === 'no') { sl.tile.pakai = false; sl.tile = null; sl.status = null; }
+          });
+          sibuk = false; segar();
+        });
+      }
+    }
+
+    function mulai() {
+      s = daftar[i]; jn = jenisSoal(s); kunci = pecahKunci(s, jn);
+      salahKe = 0; beres = false; sibuk = false;
+      slot = kunci.map(function () { return { tile: null, kunci: false, status: null, btn: null }; });
+      var semua = kunci.concat(pecahPengecoh(s, jn)).map(function (t) { return { t: t, pakai: false, btn: null }; });
+      var urut = acak(semua), coba = 0;
+      while (coba < 8 && urutanSama(urut)) { urut = acak(semua); coba++; }
+      tile = urut;
+
+      api.progres(i, jumlah); api.bersihAksi();
+      var mod = jn === 'kata' ? ' k-rg-kt' : ' k-rg-hr';
+      tny.innerHTML = ''; jwb.innerHTML = ''; baki.innerHTML = '';
+      jwb.className = 'k-rg-jwb' + mod;
+      baki.className = 'k-rg-baki k-kertas' + mod;
+      if (s.gambar) {
+        var gb = el('div', 'k-rg-gb');
+        gb.appendChild(api.gambar(s.gambar, 'Gambar'));
+        tny.appendChild(gb);
+      }
+      tny.appendChild(el('div', 'k-rg-tx', fmt(s.tanya)));
+      slot.forEach(function (sl, k) {
+        var b = el('button', 'k-rg-sl'); b.type = 'button';
+        b.setAttribute('aria-label', 'Kotak jawaban ' + (k + 1));
+        b.addEventListener('click', function () { lepas(k); });
+        sl.btn = b; jwb.appendChild(b);
+      });
+      tile.forEach(function (tl) {
+        var b = el('button', 'k-rg-ub'); b.type = 'button';
+        b.textContent = tl.t;
+        b.addEventListener('click', function () { taruh(tl); });
+        tl.btn = b; baki.appendChild(b);
+      });
+      tbl = api.aksi(IKON_CEK + ' Periksa', periksa);
+      tblUlang = api.aksi(IKON_ULANG + ' Kosongkan', kosongkan, 'sek');
+      api.bicara(s.petunjukAwal || lv.petunjuk || (jn === 'kata'
+        ? 'Ketuk kata-kata untuk menyusun kalimat, lalu tekan Periksa.'
+        : 'Ketuk huruf untuk menyusun kata, lalu tekan Periksa.'));
+      segar();
+    }
+    mulai();
   };
 
   /* 8. MEMORI — buka dua kartu tertutup, cari pasangannya (data sama dengan cocokkan) */
@@ -5512,6 +6089,113 @@
         });
         if (new Set(namaLab).size !== namaLab.length) e.push(n + 'ada nama kembar. Setiap pasangan harus punya nama yang berbeda.');
         if (new Set(gbLab).size !== gbLab.length) e.push(n + 'ada gambar kembar. Setiap pasangan harus punya gambar yang berbeda.');
+      }
+      if (lv.mesin === 'rakit') {
+        var rakit_ada = {}, rakit_lv = { jenis: (lv.jenis === 'huruf' || lv.jenis === 'suku') ? lv.jenis : null };
+        if (lv.buatSoal != null) e.push(n + 'mesin rakit memakai soal (daftar), bukan buatSoal. Tulis soal:[ { tanya:\'...\', jawab:\'kata\' }, ... ].');
+        if (lv.jenis != null && lv.jenis !== 'huruf' && lv.jenis !== 'suku') e.push(n + 'jenis harus \'huruf\' atau \'suku\' (sekarang ' + lv.jenis + ').');
+        if (lv.jumlah != null && !(typeof lv.jumlah === 'number' && lv.jumlah >= 1 && lv.jumlah === Math.floor(lv.jumlah))) e.push(n + 'jumlah harus bilangan bulat 1 atau lebih, tanpa tanda petik.');
+        if (!Array.isArray(lv.soal)) e.push(n + 'soal harus berupa daftar dengan minimal 3 soal, contoh soal:[ { tanya:\'Hewan yang suka mengeong.\', jawab:\'kucing\' }, ... ].');
+        else {
+          arr('soal', 3); maksBank('soal', 8, 'soal');
+          lv.soal.forEach(function (s, j) {
+            var g = rakit_galat(rakit_lv, s, 'soal ' + (j + 1)), kj;
+            if (g) { e.push(n + g); return; }
+            kj = String(s.jawab).toLowerCase();
+            if (rakit_ada[kj] != null) e.push(n + 'soal ' + (j + 1) + ' memakai jawab \'' + s.jawab + '\' yang sama dengan soal ' + (rakit_ada[kj] + 1) + '. Setiap soal harus punya jawab berbeda.');
+            else rakit_ada[kj] = j;
+          });
+        }
+      }
+      if (lv.mesin === 'huruf') {
+        arr('soal'); maksBank('soal', 8, 'soal');
+        if (lv.jumlah != null && !(typeof lv.jumlah === 'number' && lv.jumlah >= 1 && lv.jumlah <= 8 && lv.jumlah === Math.floor(lv.jumlah)))
+          e.push(n + 'jumlah harus bilangan bulat 1–8 tanpa tanda petik (sekarang ' + lv.jumlah + ').');
+        var jwHuruf = [];
+        (Array.isArray(lv.soal) ? lv.soal : []).forEach(function (s, j) {
+          var no = n + 'soal ' + (j + 1) + ': ';
+          if (!s || typeof s !== 'object' || Array.isArray(s)) { e.push(no + 'harus berbentuk { tanya:\'...\', jawab:\'KATA\' }.'); return; }
+          if (typeof s.tanya !== 'string' || !s.tanya.trim()) e.push(no + 'tanya belum diisi. Tulis petunjuk kata yang dicari (maksimal 120 huruf).');
+          else if (s.tanya.length > 120) e.push(no + 'tanya terlalu panjang (' + s.tanya.length + ' huruf). Maksimal 120 huruf; persingkat kalimatnya.');
+          if (typeof s.jawab !== 'string' || !s.jawab.trim()) e.push(no + 'jawab belum diisi. Tulis satu kata, contoh jawab:\'KUCING\'.');
+          else {
+            var jw = s.jawab.trim();
+            if (!/^[A-Za-z]+$/.test(jw)) e.push(no + 'jawab "' + s.jawab + '" hanya boleh berisi huruf A–Z tanpa spasi, angka, atau tanda baca. Tulis satu kata (kata majemuk ditulis sambung atau pilih kata lain).');
+            else if (jw.length < 3 || jw.length > 12) e.push(no + 'jawab "' + jw + '" punya ' + jw.length + ' huruf. Harus 3–12 huruf supaya muat di layar HP.');
+            else {
+              if (jwHuruf.indexOf(jw.toUpperCase()) >= 0) e.push(no + 'jawab "' + jw + '" kembar dengan soal lain. Setiap soal harus punya jawab yang berbeda.');
+              jwHuruf.push(jw.toUpperCase());
+              if (typeof s.tanya === 'string' && new RegExp('(^|[^a-z])' + jw.toLowerCase() + '([^a-z]|$)').test(s.tanya.toLowerCase()))
+                e.push(no + 'tanya memuat kata jawabannya ("' + jw + '"). Hapus katanya dari tanya atau ganti dengan titik-titik.');
+            }
+          }
+          if (s.pengecoh != null && (typeof s.pengecoh !== 'string' || !/^[A-Za-z]{1,3}$/.test(s.pengecoh)))
+            e.push(no + 'pengecoh harus teks berisi 1–3 huruf A–Z tanpa spasi, contoh pengecoh:\'AE\' (sekarang "' + s.pengecoh + '").');
+          ['petunjuk', 'ulasan'].forEach(function (f) {
+            if (s[f] != null && (typeof s[f] !== 'string' || s[f].length > 140)) e.push(no + f + ' harus teks paling banyak 140 huruf.');
+          });
+        });
+      }
+      if (lv.mesin === 'rangkai') {
+        (function () {
+          var bentuk = Array.isArray(lv.soal);
+          if (!bentuk || lv.soal.length < 3) {
+            e.push(n + 'soal harus berupa daftar [ ... ] dengan minimal 3 soal (sekarang ' + (bentuk ? lv.soal.length + ' soal' : 'bukan daftar') + '). Mesin rangkai tidak memakai buatSoal: tulis soalnya satu per satu.');
+            return;
+          }
+          if (lv.jenis != null && lv.jenis !== 'huruf' && lv.jenis !== 'kata') e.push(n + 'jenis harus \'huruf\' atau \'kata\' (sekarang ' + lv.jenis + ').');
+          if (lv.jumlah != null && !(typeof lv.jumlah === 'number' && lv.jumlah >= 1 && lv.jumlah <= 8 && lv.jumlah === Math.floor(lv.jumlah))) e.push(n + 'jumlah harus bilangan bulat 1–8 tanpa tanda petik (sekarang ' + (typeof lv.jumlah === 'string' ? '"' + lv.jumlah + '"' : String(lv.jumlah)) + ').');
+          maksBank('soal', 8, 'soal');
+          var adaJawab = Object.create(null);
+          lv.soal.forEach(function (x, j) {
+            var p = n + 'soal ' + (j + 1) + ': ';
+            if (!x || typeof x !== 'object' || Array.isArray(x)) { e.push(p + 'harus berbentuk { tanya, jawab }.'); return; }
+            if (x.jenis != null && x.jenis !== 'huruf' && x.jenis !== 'kata') { e.push(p + 'jenis harus \'huruf\' atau \'kata\' (sekarang ' + x.jenis + ').'); return; }
+            var jn = x.jenis || (lv.jenis === 'kata' ? 'kata' : 'huruf');
+            if (typeof x.tanya !== 'string' || !x.tanya.trim()) e.push(p + 'tanya belum diisi (teks petunjuk atau definisi).');
+            else if (x.tanya.length > 120) e.push(p + 'tanya terlalu panjang (' + x.tanya.length + ' huruf). Maksimal 120 huruf supaya muat di layar HP; persingkat kalimatnya.');
+            if (typeof x.jawab !== 'string' || !x.jawab.trim()) { e.push(p + 'jawab belum diisi. Tulis satu kata (jenis huruf) atau satu kalimat (jenis kata) berupa teks.'); return; }
+            var jw = x.jawab.trim(), kt = jw.split(/\s+/), jwk = jw.toLowerCase().replace(/\s+/g, ' ');
+            if (jn === 'huruf') {
+              if (!/^[A-Za-z]{2,10}$/.test(jw)) e.push(p + 'jawab "' + x.jawab + '" harus satu kata 2–10 huruf a–z, tanpa spasi, angka, atau tanda baca. Untuk kalimat tulis jenis:\'kata\'; untuk kata yang terlalu panjang, pilih kata lain.');
+              else {
+                if (new Set(jw.toLowerCase().split('')).size < 2) e.push(p + 'jawab "' + x.jawab + '" harus memuat minimal 2 huruf yang berbeda supaya ada yang bisa diacak.');
+                if (typeof x.tanya === 'string' && new RegExp('(^|[^a-z])' + jw.toLowerCase() + '([^a-z]|$)').test(x.tanya.toLowerCase())) e.push(p + 'tanya memuat jawabannya ("' + x.jawab + '"). Ubah tanya menjadi definisi atau petunjuk tanpa menyebut kata itu.');
+              }
+            } else {
+              if (kt.length < 3 || kt.length > 7) e.push(p + 'jawab harus kalimat 3–7 kata (sekarang ' + kt.length + ' kata). Pendekkan atau pecah menjadi dua soal.');
+              kt.forEach(function (t) { if (t.length > 12) e.push(p + 'kata "' + t + '" terlalu panjang (' + t.length + ' huruf). Maksimal 12 huruf per kata supaya muat di kartu; ganti dengan kata yang lebih pendek.'); });
+              if (new Set(kt.map(function (t) { return t.toLowerCase(); })).size < 2) e.push(p + 'jawab harus memuat minimal 2 kata yang berbeda.');
+            }
+            if (adaJawab[jwk]) e.push(p + 'jawab sama dengan soal ' + adaJawab[jwk] + '. Setiap soal harus punya jawab yang berbeda.');
+            else adaJawab[jwk] = j + 1;
+            if (x.pengecoh != null) {
+              if (!Array.isArray(x.pengecoh) || x.pengecoh.length > 2) e.push(p + 'pengecoh harus daftar [ ... ] berisi 0–2 teks (sekarang ' + (Array.isArray(x.pengecoh) ? x.pengecoh.length + ' item' : 'bukan daftar') + '). Hapus kelebihannya atau hapus field pengecoh.');
+              else {
+                var adaCoh = Object.create(null);
+                x.pengecoh.forEach(function (c, q) {
+                  var pc = p + 'pengecoh ke-' + (q + 1) + ' ';
+                  if (typeof c !== 'string' || !c.trim()) { e.push(pc + 'harus teks yang tidak kosong.'); return; }
+                  var ck = c.trim().toLowerCase();
+                  if (jn === 'huruf') {
+                    if (!/^[a-z]$/.test(ck)) e.push(pc + '("' + c + '") harus satu huruf a–z.');
+                    else if (jw.toLowerCase().indexOf(ck) >= 0) e.push(pc + '("' + c + '") sudah ada di jawab "' + x.jawab + '", jadi ada dua huruf yang sama. Pilih huruf yang tidak ada di jawab.');
+                  } else {
+                    var polos = function (t) { return t.toLowerCase().replace(/[.,!?;:]/g, ''); };
+                    if (/\s/.test(c.trim()) || c.trim().length > 12) e.push(pc + '("' + c + '") harus satu kata, maksimal 12 huruf.');
+                    else if (kt.some(function (t) { return polos(t) === polos(ck); })) e.push(pc + '("' + c + '") sudah ada di kalimat jawab, jadi ada dua kartu yang sama. Ganti dengan kata lain.');
+                  }
+                  if (adaCoh[ck]) e.push(pc + '("' + c + '") kembar dengan pengecoh lain. Setiap pengecoh harus berbeda.');
+                  adaCoh[ck] = 1;
+                });
+              }
+            }
+            ['petunjuk', 'ulasan'].forEach(function (f) {
+              if (x[f] != null && (typeof x[f] !== 'string' || x[f].length > 140)) e.push(p + f + ' harus teks paling banyak 140 huruf.');
+            });
+            if (x.gambar != null && (typeof x.gambar !== 'string' || !src(x.gambar))) e.push(p + 'gambar "' + x.gambar + '" tidak ditemukan. Isi dengan nama kunci yang didaftarkan di DATA.gambar atau alamat gambar (mengandung titik atau garis miring), atau hapus field gambar.');
+          });
+        })();
       }
     });
     return e;
