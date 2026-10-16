@@ -2449,7 +2449,7 @@ CSS += '\n' + [
       } else if (lv.mesin === 'robot') {
         h = lv.soal ? ul(lv.soal.map(function (s) {
           var r;
-          if (true) return fmt(s.tanya) + ' → <b>' + robot2_HURUF.charAt(s.benar) + '. ' + esc(String(s.pilihan[s.benar])) + '</b> (robot harus masuk ke kotak ' + robot2_HURUF.charAt(s.benar) + ' tanpa menyentuh rintangan atau kotak lain)';
+          if (lv.jenis === 'jawab') return fmt(s.tanya) + ' → <b>' + robot2_HURUF.charAt(s.benar) + '. ' + esc(String(s.pilihan[s.benar])) + '</b> (robot harus masuk ke kotak ' + robot2_HURUF.charAt(s.benar) + ' tanpa menyentuh rintangan atau kotak lain)';
           if (robot_otomatis(s)) return fmt(s.tanya) + ' → <b>tata letak dibuat acak setiap permainan</b> (jalur apa pun yang sampai di bendera benar)';
           r = robot_cari(robot_cfg(lv, s));
           return fmt(s.tanya) + ' → <b>' + (r ? 'jalur terpendek ' + r.length + ' perintah: ' + esc(r.map(function (p) { return robot_nama(p); }).join(', ')) : '-') + '</b> (jalur lain yang sampai di bendera juga benar)';
@@ -4981,7 +4981,7 @@ function silang_galat(lv) {
 }
 
 MESIN.robot = function (lv, api) {
-  return robot_jawab(lv, api);
+  if (lv.jenis === 'jawab') return robot_jawab(lv, api);
   var el = api.el, fmt = api.fmt;
   var daftar = ambilSoal(lv).map(function (s) { var c = {}; Object.keys(s).forEach(function (k) { c[k] = s[k]; }); robot_isiOtomatis(lv, c); return c; });
   var NS = 'http://www.w3.org/2000/svg', P = 8, LANGKAH = 520;
@@ -5533,7 +5533,8 @@ function robot2_jalan(cfg, prog) {
 /* membuat tata letak acak: kotak jawaban tetap di baris atas, robot di baris bawah, rintangan acak.
    Selalu ada jalur ke jawaban benar yang muat dalam maks; jalur biasanya harus mengitari rintangan. */
 function robot2_buat(lv, s) {
-  var kol = robot_nilai(lv, s, 'kolom', 6), bar = robot_nilai(lv, s, 'baris', 5), mk = robot_nilai(lv, s, 'maks', 10);
+  var TK = robot3_tingkat(lv, s);
+  var kol = robot_nilai(lv, s, 'kolom', TK ? TK.kol : 6), bar = robot_nilai(lv, s, 'baris', TK ? TK.bar : 5), mk = robot_nilai(lv, s, 'maks', 10);
   var n = s.pilihan.length, kB = s.benar, ans = [], ansIdx = {}, a, k, c, r, nb, rint, daftar, key, cfg, rute, lvl, mulai, kosong, jenis, i, tj;
   function acak(m) { return Math.floor(Math.random() * m); }
   for (k = 0; k < n; k++) { c = Math.floor((k + 0.5) * kol / n); ans.push(c); ansIdx[c + ',0'] = k; }
@@ -5544,14 +5545,14 @@ function robot2_buat(lv, s) {
   }
   tj = ans[kB];
   for (a = 0; a < 300; a++) {
-    lvl = a < 200 ? 2 : 1;
+    lvl = a < 200 && !(TK && TK.lurus) ? 2 : 1;
     c = acak(kol); r = bar - 1; mulai = [c, r];
-    nb = 3 + acak(2) + (kol * bar > 25 ? 1 : 0);
+    nb = TK && TK.nb ? TK.nb[0] + acak(TK.nb[1] - TK.nb[0] + 1) : 3 + acak(2) + (kol * bar > 25 ? 1 : 0);
     rint = []; kosong = {}; kosong[c + ',' + r] = 1;
     for (i = 0; i < nb * 6 && rint.length < nb; i++) {
       key = acak(kol) + ',' + (1 + acak(bar - 1));
       if (kosong[key] || key === c + ',' + r) continue;
-      kosong[key] = 1; jenis = 1 + acak(3);
+      kosong[key] = 1; jenis = TK ? TK.jenis[acak(TK.jenis.length)] : 1 + acak(3);
       rint.push([+key.split(',')[0], +key.split(',')[1], jenis]);
     }
     cfg = bentuk(mulai, rint);
@@ -5563,7 +5564,7 @@ function robot2_buat(lv, s) {
   /* cadangan: robot tepat di bawah kotak benar dengan satu rintangan di depannya bila masih muat */
   mulai = [tj, bar - 1];
   if (bar >= 3) {
-    cfg = bentuk(mulai, [[tj, bar - 2, 1 + acak(3)]]);
+    cfg = bentuk(mulai, [[tj, bar - 2, TK ? TK.jenis[acak(TK.jenis.length)] : 1 + acak(3)]]);
     rute = robot2_cari(cfg);
     if (rute && rute.length <= mk) return cfg;
   }
@@ -5572,7 +5573,7 @@ function robot2_buat(lv, s) {
 /* Mengembalikan teks galat (kosong bila soal sah) untuk soal mesin robot mode jawab. */
 function robot_galatJawab(lv, s, label) {
   var bulat = function (x, a, b) { return typeof x === 'number' && isFinite(x) && x === Math.floor(x) && x >= a && x <= b; };
-  var kol, bar, mk, k, sdh = {}, t, nm = ['petunjuk', 'ulasan', 'petunjukAwal'], lain = ['mulai', 'tujuan', 'rintangan', 'bintang', 'arah', 'jawab'];
+  var kol, bar, mk, tk, k, sdh = {}, t, nm = ['petunjuk', 'ulasan', 'petunjukAwal'], lain = ['mulai', 'tujuan', 'rintangan', 'bintang', 'arah', 'jawab'];
   if (!s || typeof s !== 'object' || Array.isArray(s)) return label + ' harus berbentuk { tanya:\'...\', pilihan:[\'A\', \'B\', \'C\'], benar:0 }.';
   if (typeof s.tanya !== 'string' || !s.tanya.trim()) return label + ': tanya belum diisi. Tulis pertanyaannya, misalnya \'Ibu kota Indonesia adalah ...\'.';
   if (s.tanya.length > 110) return label + ': tanya terlalu panjang (' + s.tanya.length + ' huruf). Maksimal 110 huruf agar muat di kartu soal.';
@@ -5588,7 +5589,9 @@ function robot_galatJawab(lv, s, label) {
   for (k = 0; k < lain.length; k++) {
     if (s[lain[k]] != null) return label + ': ' + lain[k] + ' tidak dipakai pada robot mode jawab. Hapus ' + lain[k] + '; kotak jawaban, robot, dan rintangan diatur MPI.';
   }
-  kol = robot_nilai(lv, s, 'kolom', 6); bar = robot_nilai(lv, s, 'baris', 5); mk = robot_nilai(lv, s, 'maks', 10);
+  if (s.tingkat != null && !robot3_ok(s.tingkat)) return label + ': ' + robot3_pesan(s.tingkat);
+  tk = robot3_tingkat(lv, s);
+  kol = robot_nilai(lv, s, 'kolom', tk ? tk.kol : 6); bar = robot_nilai(lv, s, 'baris', tk ? tk.bar : 5); mk = robot_nilai(lv, s, 'maks', 10);
   if (!bulat(kol, 4, 7)) return label + ': kolom harus bilangan bulat 4–7 tanpa tanda petik (sekarang ' + robot_teks(kol) + ').';
   if (kol < s.pilihan.length) return label + ': kolom (' + kol + ') kurang dari banyak pilihan (' + s.pilihan.length + '). Naikkan kolom.';
   if (!bulat(bar, 3, 5)) return label + ': baris harus bilangan bulat 3–5 tanpa tanda petik (sekarang ' + robot_teks(bar) + ').';
@@ -5608,6 +5611,23 @@ function robot_nilai(lv, s, k, bawaan) {
   if (s && s[k] != null) return s[k];
   if (lv && lv[k] != null) return lv[k];
   return bawaan;
+}
+/* ── robot mode jawab: tingkat kemudahan (awalan robot3_) ──
+   tingkat 1 = kelas 1–2: 1 rintangan (batu/kayu, tanpa monster), jalur boleh lurus.
+   tingkat 2 = kelas 3–4: 2 rintangan. tingkat 3 = kelas 5–6: sama seperti sebelum ada tingkat.
+   Tanpa tingkat, perilaku lama tidak berubah. jenis rintangan: 1 batu, 2 kayu, 3 monster. */
+var robot3_TINGKAT = {
+  1: { kol: 5, bar: 3, nb: [1, 1], jenis: [1, 2], lurus: true },
+  2: { kol: 5, bar: 4, nb: [2, 2], jenis: [1, 2, 3], lurus: false },
+  3: { kol: 6, bar: 5, nb: null, jenis: [1, 2, 3], lurus: false }
+};
+function robot3_ok(t) { return t === 1 || t === 2 || t === 3; }
+function robot3_tingkat(lv, s) {
+  var t = robot_nilai(lv, s, 'tingkat', null);
+  return robot3_ok(t) ? robot3_TINGKAT[t] : null;
+}
+function robot3_pesan(t) {
+  return 'tingkat harus 1, 2, atau 3 tanpa tanda petik (sekarang ' + robot_teks(t) + '). 1 = paling mudah (kelas 1–2), 2 = sedang (kelas 3–4), 3 = penuh (kelas 5–6).';
 }
 function robot_teks(v) {
   if (Array.isArray(v)) return '[' + v.join(', ') + ']';
@@ -9528,11 +9548,12 @@ if (lv.mesin === 'silang') {
 if (lv.mesin === 'robot') {
   arr('soal', 3);
   maksBank('soal', 8, 'soal');
-  if (false) e.push(n + 'jenis robot harus \'bendera\' (bawaan) atau \'jawab\' (robot menuju kotak pilihan jawaban), sekarang ' + robot_teks(lv.jenis) + '.');
+  if (lv.jenis != null && lv.jenis !== 'bendera' && lv.jenis !== 'jawab') e.push(n + 'jenis robot harus \'bendera\' (bawaan) atau \'jawab\' (robot menuju kotak pilihan jawaban), sekarang ' + robot_teks(lv.jenis) + '.');
+  if (lv.tingkat != null && !robot3_ok(lv.tingkat)) e.push(n + robot3_pesan(lv.tingkat));
   if (typeof lv.buatSoal === 'function') e.push(n + 'mesin robot belum mendukung buatSoal. Tulis daftar soal saja.');
   if (lv.jumlah != null && !(typeof lv.jumlah === 'number' && lv.jumlah === Math.floor(lv.jumlah) && lv.jumlah >= 1 && lv.jumlah <= 8)) e.push(n + 'jumlah harus bilangan bulat 1–8 tanpa tanda petik (sekarang ' + lv.jumlah + ').');
   (lv.soal || []).forEach(function (s, j) {
-    var g = true ? robot_galatJawab(lv, s, 'soal ' + (j + 1)) : robot_galat(lv, s, 'soal ' + (j + 1));
+    var g = lv.jenis === 'jawab' ? robot_galatJawab(lv, s, 'soal ' + (j + 1)) : robot_galat(lv, s, 'soal ' + (j + 1));
     if (g) e.push(n + g);
   });
 }
