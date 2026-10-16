@@ -5387,7 +5387,12 @@ var robot3_TINGKAT = {
 };
 function robot3_ok(t) { return t === 1 || t === 2 || t === 3; }
 function robot3_tingkat(lv, s) {
-  var t = robot_nilai(lv, s, 'tingkat', null);
+  var t = robot_nilai(lv, s, 'tingkat', null), kl;
+  /* tanpa tingkat: ikuti kelas di identitas (1–2 → 1, 3–4 → 2, 5–6 → 3); tanpa kelas, perilaku lama */
+  if (t == null) {
+    kl = +((D && D.identitas) ? D.identitas.kelas : 0);
+    if (kl >= 1 && kl <= 6) t = kl <= 2 ? 1 : (kl <= 4 ? 2 : 3);
+  }
   return robot3_ok(t) ? robot3_TINGKAT[t] : null;
 }
 function robot3_pesan(t) {
