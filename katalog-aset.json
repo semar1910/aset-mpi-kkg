@@ -2381,6 +2381,642 @@
    ]
   },
   {
+   "id": "pencernaan/mulut",
+   "file": "objek/pencernaan/mulut.webp",
+   "jenis": "objek",
+   "nama": "Mulut",
+   "sub": [
+    "ipa-6-bab1--cara-kerja-sistem-pencernaan"
+   ],
+   "kata": [
+    "organ pencernaan"
+   ]
+  },
+  {
+   "id": "pencernaan/kerongkongan",
+   "file": "objek/pencernaan/kerongkongan.webp",
+   "jenis": "objek",
+   "nama": "Kerongkongan",
+   "sub": [
+    "ipa-6-bab1--cara-kerja-sistem-pencernaan"
+   ],
+   "kata": [
+    "organ pencernaan"
+   ]
+  },
+  {
+   "id": "pencernaan/lambung",
+   "file": "objek/pencernaan/lambung.webp",
+   "jenis": "objek",
+   "nama": "Lambung",
+   "sub": [
+    "ipa-6-bab1--cara-kerja-sistem-pencernaan"
+   ],
+   "kata": [
+    "organ pencernaan"
+   ]
+  },
+  {
+   "id": "pencernaan/usus-halus",
+   "file": "objek/pencernaan/usus-halus.webp",
+   "jenis": "objek",
+   "nama": "Usus halus",
+   "sub": [
+    "ipa-6-bab1--cara-kerja-sistem-pencernaan"
+   ],
+   "kata": [
+    "organ pencernaan"
+   ]
+  },
+  {
+   "id": "pencernaan/usus-besar",
+   "file": "objek/pencernaan/usus-besar.webp",
+   "jenis": "objek",
+   "nama": "Usus besar",
+   "sub": [
+    "ipa-6-bab1--cara-kerja-sistem-pencernaan"
+   ],
+   "kata": [
+    "organ pencernaan"
+   ]
+  },
+  {
+   "id": "pencernaan/anus",
+   "file": "objek/pencernaan/anus.webp",
+   "jenis": "objek",
+   "nama": "Anus",
+   "sub": [
+    "ipa-6-bab1--cara-kerja-sistem-pencernaan"
+   ],
+   "kata": [
+    "organ pencernaan"
+   ]
+  },
+  {
+   "id": "pencernaan/hati",
+   "file": "objek/pencernaan/hati.webp",
+   "jenis": "objek",
+   "nama": "Hati",
+   "sub": [
+    "ipa-6-bab1--cara-kerja-sistem-pencernaan"
+   ],
+   "kata": [
+    "organ pencernaan"
+   ]
+  },
+  {
+   "id": "pencernaan/pankreas",
+   "file": "objek/pencernaan/pankreas.webp",
+   "jenis": "objek",
+   "nama": "Pankreas",
+   "sub": [
+    "ipa-6-bab1--cara-kerja-sistem-pencernaan"
+   ],
+   "kata": [
+    "organ pencernaan"
+   ]
+  },
+  {
+   "id": "metamorfosis/telur-katak",
+   "file": "objek/metamorfosis/telur-katak.webp",
+   "jenis": "objek",
+   "nama": "Telur katak",
+   "sub": [],
+   "kata": [
+    "metamorfosis"
+   ]
+  },
+  {
+   "id": "metamorfosis/berudu",
+   "file": "objek/metamorfosis/berudu.webp",
+   "jenis": "objek",
+   "nama": "Berudu",
+   "sub": [],
+   "kata": [
+    "metamorfosis"
+   ]
+  },
+  {
+   "id": "metamorfosis/telur-kupu-kupu",
+   "file": "objek/metamorfosis/telur-kupu-kupu.webp",
+   "jenis": "objek",
+   "nama": "Telur kupu-kupu",
+   "sub": [],
+   "kata": [
+    "metamorfosis"
+   ]
+  },
+  {
+   "id": "metamorfosis/kepompong",
+   "file": "objek/metamorfosis/kepompong.webp",
+   "jenis": "objek",
+   "nama": "Kepompong",
+   "sub": [],
+   "kata": [
+    "metamorfosis"
+   ]
+  },
+  {
+   "id": "metamorfosis/kupu-kupu",
+   "file": "objek/metamorfosis/kupu-kupu.webp",
+   "jenis": "objek",
+   "nama": "Kupu-kupu",
+   "sub": [],
+   "kata": [
+    "metamorfosis"
+   ]
+  },
+  {
+   "id": "metamorfosis/telur-belalang",
+   "file": "objek/metamorfosis/telur-belalang.webp",
+   "jenis": "objek",
+   "nama": "Telur belalang",
+   "sub": [],
+   "kata": [
+    "metamorfosis"
+   ]
+  },
+  {
+   "id": "perasaan/senang",
+   "file": "objek/perasaan/senang.webp",
+   "jenis": "objek",
+   "nama": "Senang",
+   "sub": [],
+   "kata": [
+    "perasaan"
+   ]
+  },
+  {
+   "id": "perasaan/sedih",
+   "file": "objek/perasaan/sedih.webp",
+   "jenis": "objek",
+   "nama": "Sedih",
+   "sub": [],
+   "kata": [
+    "perasaan"
+   ]
+  },
+  {
+   "id": "perasaan/marah",
+   "file": "objek/perasaan/marah.webp",
+   "jenis": "objek",
+   "nama": "Marah",
+   "sub": [],
+   "kata": [
+    "perasaan"
+   ]
+  },
+  {
+   "id": "perasaan/takut",
+   "file": "objek/perasaan/takut.webp",
+   "jenis": "objek",
+   "nama": "Takut",
+   "sub": [],
+   "kata": [
+    "perasaan"
+   ]
+  },
+  {
+   "id": "perasaan/terkejut",
+   "file": "objek/perasaan/terkejut.webp",
+   "jenis": "objek",
+   "nama": "Terkejut",
+   "sub": [],
+   "kata": [
+    "perasaan"
+   ]
+  },
+  {
+   "id": "perasaan/malu",
+   "file": "objek/perasaan/malu.webp",
+   "jenis": "objek",
+   "nama": "Malu",
+   "sub": [],
+   "kata": [
+    "perasaan"
+   ]
+  },
+  {
+   "id": "perasaan/bangga",
+   "file": "objek/perasaan/bangga.webp",
+   "jenis": "objek",
+   "nama": "Bangga",
+   "sub": [],
+   "kata": [
+    "perasaan"
+   ]
+  },
+  {
+   "id": "perasaan/bingung",
+   "file": "objek/perasaan/bingung.webp",
+   "jenis": "objek",
+   "nama": "Bingung",
+   "sub": [],
+   "kata": [
+    "perasaan"
+   ]
+  },
+  {
+   "id": "perasaan/bosan",
+   "file": "objek/perasaan/bosan.webp",
+   "jenis": "objek",
+   "nama": "Bosan",
+   "sub": [],
+   "kata": [
+    "perasaan"
+   ]
+  },
+  {
+   "id": "perasaan/jijik",
+   "file": "objek/perasaan/jijik.webp",
+   "jenis": "objek",
+   "nama": "Jijik",
+   "sub": [],
+   "kata": [
+    "perasaan"
+   ]
+  },
+  {
+   "id": "perasaan/kecewa",
+   "file": "objek/perasaan/kecewa.webp",
+   "jenis": "objek",
+   "nama": "Kecewa",
+   "sub": [],
+   "kata": [
+    "perasaan"
+   ]
+  },
+  {
+   "id": "perasaan/khawatir",
+   "file": "objek/perasaan/khawatir.webp",
+   "jenis": "objek",
+   "nama": "Khawatir",
+   "sub": [],
+   "kata": [
+    "perasaan"
+   ]
+  },
+  {
+   "id": "perasaan/lega",
+   "file": "objek/perasaan/lega.webp",
+   "jenis": "objek",
+   "nama": "Lega",
+   "sub": [],
+   "kata": [
+    "perasaan"
+   ]
+  },
+  {
+   "id": "perasaan/lelah",
+   "file": "objek/perasaan/lelah.webp",
+   "jenis": "objek",
+   "nama": "Lelah",
+   "sub": [],
+   "kata": [
+    "perasaan"
+   ]
+  },
+  {
+   "id": "perasaan/semangat",
+   "file": "objek/perasaan/semangat.webp",
+   "jenis": "objek",
+   "nama": "Semangat",
+   "sub": [],
+   "kata": [
+    "perasaan"
+   ]
+  },
+  {
+   "id": "pancasila/garuda-pancasila",
+   "file": "objek/pancasila/garuda-pancasila.webp",
+   "jenis": "objek",
+   "nama": "Garuda Pancasila",
+   "sub": [],
+   "kata": [
+    "pancasila"
+   ]
+  },
+  {
+   "id": "pancasila/perisai-banteng",
+   "file": "objek/pancasila/perisai-banteng.webp",
+   "jenis": "objek",
+   "nama": "Perisai banteng",
+   "sub": [],
+   "kata": [
+    "pancasila"
+   ]
+  },
+  {
+   "id": "pancasila/perisai-bintang",
+   "file": "objek/pancasila/perisai-bintang.webp",
+   "jenis": "objek",
+   "nama": "Perisai bintang",
+   "sub": [],
+   "kata": [
+    "pancasila"
+   ]
+  },
+  {
+   "id": "pancasila/rantai-emas",
+   "file": "objek/pancasila/rantai-emas.webp",
+   "jenis": "objek",
+   "nama": "Rantai emas",
+   "sub": [],
+   "kata": [
+    "pancasila"
+   ]
+  },
+  {
+   "id": "pancasila/pohon-beringin",
+   "file": "objek/pancasila/pohon-beringin.webp",
+   "jenis": "objek",
+   "nama": "Pohon beringin",
+   "sub": [],
+   "kata": [
+    "pancasila"
+   ]
+  },
+  {
+   "id": "pancasila/padi-dan-kapas",
+   "file": "objek/pancasila/padi-dan-kapas.webp",
+   "jenis": "objek",
+   "nama": "Padi dan kapas",
+   "sub": [],
+   "kata": [
+    "pancasila"
+   ]
+  },
+  {
+   "id": "pancasila/peta-indonesia",
+   "file": "objek/pancasila/peta-indonesia.webp",
+   "jenis": "objek",
+   "nama": "Peta Indonesia",
+   "sub": [],
+   "kata": [
+    "pancasila"
+   ]
+  },
+  {
+   "id": "pancasila/peta-indonesia-2",
+   "file": "objek/pancasila/peta-indonesia-2.webp",
+   "jenis": "objek",
+   "nama": "Peta Indonesia 2",
+   "sub": [],
+   "kata": [
+    "pancasila"
+   ]
+  },
+  {
+   "id": "pancasila/bendera-merah-putih",
+   "file": "objek/pancasila/bendera-merah-putih.webp",
+   "jenis": "objek",
+   "nama": "Bendera Merah Putih",
+   "sub": [],
+   "kata": [
+    "pancasila"
+   ]
+  },
+  {
+   "id": "pancasila/upacara-bendera",
+   "file": "objek/pancasila/upacara-bendera.webp",
+   "jenis": "objek",
+   "nama": "Upacara bendera",
+   "sub": [],
+   "kata": [
+    "pancasila"
+   ]
+  },
+  {
+   "id": "kegiatan/antre-tertib",
+   "file": "objek/kegiatan/antre-tertib.webp",
+   "jenis": "objek",
+   "nama": "Antre tertib",
+   "sub": [],
+   "kata": [
+    "kegiatan"
+   ]
+  },
+  {
+   "id": "kegiatan/bernyanyi",
+   "file": "objek/kegiatan/bernyanyi.webp",
+   "jenis": "objek",
+   "nama": "Bernyanyi",
+   "sub": [],
+   "kata": [
+    "kegiatan"
+   ]
+  },
+  {
+   "id": "kegiatan/gotong-royong",
+   "file": "objek/kegiatan/gotong-royong.webp",
+   "jenis": "objek",
+   "nama": "Gotong royong",
+   "sub": [],
+   "kata": [
+    "kegiatan"
+   ]
+  },
+  {
+   "id": "kegiatan/membaca",
+   "file": "objek/kegiatan/membaca.webp",
+   "jenis": "objek",
+   "nama": "Membaca",
+   "sub": [],
+   "kata": [
+    "kegiatan"
+   ]
+  },
+  {
+   "id": "kegiatan/menulis",
+   "file": "objek/kegiatan/menulis.webp",
+   "jenis": "objek",
+   "nama": "Menulis",
+   "sub": [],
+   "kata": [
+    "kegiatan"
+   ]
+  },
+  {
+   "id": "kegiatan/menyapu",
+   "file": "objek/kegiatan/menyapu.webp",
+   "jenis": "objek",
+   "nama": "Menyapu",
+   "sub": [],
+   "kata": [
+    "kegiatan"
+   ]
+  },
+  {
+   "id": "kegiatan/mencuci-tangan",
+   "file": "objek/kegiatan/mencuci-tangan.webp",
+   "jenis": "objek",
+   "nama": "Mencuci tangan",
+   "sub": [],
+   "kata": [
+    "kegiatan"
+   ]
+  },
+  {
+   "id": "kegiatan/musyawarah",
+   "file": "objek/kegiatan/musyawarah.webp",
+   "jenis": "objek",
+   "nama": "Musyawarah",
+   "sub": [],
+   "kata": [
+    "kegiatan"
+   ]
+  },
+  {
+   "id": "kegiatan/tolong-menolong",
+   "file": "objek/kegiatan/tolong-menolong.webp",
+   "jenis": "objek",
+   "nama": "Tolong menolong",
+   "sub": [],
+   "kata": [
+    "kegiatan"
+   ]
+  },
+  {
+   "id": "kegiatan/tolong-menolong-2",
+   "file": "objek/kegiatan/tolong-menolong-2.webp",
+   "jenis": "objek",
+   "nama": "Tolong menolong 2",
+   "sub": [],
+   "kata": [
+    "kegiatan"
+   ]
+  },
+  {
+   "id": "wujud-zat/air",
+   "file": "objek/wujud-zat/air.webp",
+   "jenis": "objek",
+   "nama": "Air",
+   "sub": [],
+   "kata": [
+    "wujud zat"
+   ]
+  },
+  {
+   "id": "wujud-zat/es-batu-di-piring",
+   "file": "objek/wujud-zat/es-batu-di-piring.webp",
+   "jenis": "objek",
+   "nama": "Es batu di piring",
+   "sub": [],
+   "kata": [
+    "wujud zat"
+   ]
+  },
+  {
+   "id": "wujud-zat/es-lilin",
+   "file": "objek/wujud-zat/es-lilin.webp",
+   "jenis": "objek",
+   "nama": "Es lilin",
+   "sub": [],
+   "kata": [
+    "wujud zat"
+   ]
+  },
+  {
+   "id": "wujud-zat/gelas-air-es",
+   "file": "objek/wujud-zat/gelas-air-es.webp",
+   "jenis": "objek",
+   "nama": "Gelas air es",
+   "sub": [],
+   "kata": [
+    "wujud zat"
+   ]
+  },
+  {
+   "id": "wujud-zat/kaos-basah",
+   "file": "objek/wujud-zat/kaos-basah.webp",
+   "jenis": "objek",
+   "nama": "Kaos basah",
+   "sub": [],
+   "kata": [
+    "wujud zat"
+   ]
+  },
+  {
+   "id": "wujud-zat/panci-air-mendidih",
+   "file": "objek/wujud-zat/panci-air-mendidih.webp",
+   "jenis": "objek",
+   "nama": "Panci air mendidih",
+   "sub": [],
+   "kata": [
+    "wujud zat"
+   ]
+  },
+  {
+   "id": "wujud-zat/botol-plastik-biru",
+   "file": "objek/wujud-zat/botol-plastik-biru.webp",
+   "jenis": "objek",
+   "nama": "Botol plastik biru",
+   "sub": [],
+   "kata": [
+    "wujud zat"
+   ]
+  },
+  {
+   "id": "wujud-zat/balon-merah",
+   "file": "objek/wujud-zat/balon-merah.webp",
+   "jenis": "objek",
+   "nama": "Balon merah",
+   "sub": [],
+   "kata": [
+    "wujud zat"
+   ]
+  },
+  {
+   "id": "wujud-zat/gelembung-abu-abu",
+   "file": "objek/wujud-zat/gelembung-abu-abu.webp",
+   "jenis": "objek",
+   "nama": "Gelembung abu-abu",
+   "sub": [],
+   "kata": [
+    "wujud zat"
+   ]
+  },
+  {
+   "id": "wujud-zat/gelembung-biru",
+   "file": "objek/wujud-zat/gelembung-biru.webp",
+   "jenis": "objek",
+   "nama": "Gelembung biru",
+   "sub": [],
+   "kata": [
+    "wujud zat"
+   ]
+  },
+  {
+   "id": "wujud-zat/mangkuk-butiran-putih",
+   "file": "objek/wujud-zat/mangkuk-butiran-putih.webp",
+   "jenis": "objek",
+   "nama": "Mangkuk butiran putih",
+   "sub": [],
+   "kata": [
+    "wujud zat"
+   ]
+  },
+  {
+   "id": "wujud-zat/pasir",
+   "file": "objek/wujud-zat/pasir.webp",
+   "jenis": "objek",
+   "nama": "Pasir",
+   "sub": [],
+   "kata": [
+    "wujud zat"
+   ]
+  },
+  {
+   "id": "wujud-zat/tanah-gumpalan",
+   "file": "objek/wujud-zat/tanah-gumpalan.webp",
+   "jenis": "objek",
+   "nama": "Tanah gumpalan",
+   "sub": [],
+   "kata": [
+    "wujud zat"
+   ]
+  },
+  {
    "id": "latar/ruang-kelas",
    "file": "objek/latar/ruang-kelas.webp",
    "jenis": "latar",
