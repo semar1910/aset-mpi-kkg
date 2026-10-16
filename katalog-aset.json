@@ -2003,6 +2003,384 @@
    "kata": []
   },
   {
+   "id": "tumbuhan/biji",
+   "file": "objek/tumbuhan/biji.webp",
+   "jenis": "objek",
+   "nama": "Biji",
+   "sub": [
+    "ipa-3-bab4--siklus-hidup-tumbuhan",
+    "ipa-4-bab1--fotosintesis"
+   ],
+   "kata": [
+    "tumbuhan",
+    "calon tumbuhan"
+   ]
+  },
+  {
+   "id": "tumbuhan/kecambah",
+   "file": "objek/tumbuhan/kecambah.webp",
+   "jenis": "objek",
+   "nama": "Kecambah",
+   "sub": [
+    "ipa-3-bab4--siklus-hidup-tumbuhan"
+   ],
+   "kata": [
+    "tumbuhan",
+    "berakar"
+   ]
+  },
+  {
+   "id": "tumbuhan/tunas",
+   "file": "objek/tumbuhan/tunas.webp",
+   "jenis": "objek",
+   "nama": "Tunas",
+   "sub": [
+    "ipa-3-bab4--siklus-hidup-tumbuhan",
+    "ipa-4-bab1--fotosintesis"
+   ],
+   "kata": [
+    "tumbuhan",
+    "tunas"
+   ]
+  },
+  {
+   "id": "tumbuhan/tanaman-muda",
+   "file": "objek/tumbuhan/tanaman-muda.webp",
+   "jenis": "objek",
+   "nama": "Tanaman muda",
+   "sub": [
+    "ipa-3-bab4--siklus-hidup-tumbuhan"
+   ],
+   "kata": [
+    "tumbuhan"
+   ]
+  },
+  {
+   "id": "tumbuhan/tanaman-dewasa",
+   "file": "objek/tumbuhan/tanaman-dewasa.webp",
+   "jenis": "objek",
+   "nama": "Tanaman dewasa",
+   "sub": [
+    "ipa-3-bab4--siklus-hidup-tumbuhan",
+    "ipa-4-bab1--fotosintesis"
+   ],
+   "kata": [
+    "tumbuhan"
+   ]
+  },
+  {
+   "id": "tumbuhan/bunga",
+   "file": "objek/tumbuhan/bunga.webp",
+   "jenis": "objek",
+   "nama": "Bunga",
+   "sub": [
+    "ipa-3-bab4--siklus-hidup-tumbuhan",
+    "ipa-4-bab1--fotosintesis"
+   ],
+   "kata": [
+    "tumbuhan",
+    "berbunga"
+   ]
+  },
+  {
+   "id": "tumbuhan/bunga-2",
+   "file": "objek/tumbuhan/bunga-2.webp",
+   "jenis": "objek",
+   "nama": "Bunga (versi 2)",
+   "sub": [
+    "ipa-3-bab4--siklus-hidup-tumbuhan",
+    "ipa-4-bab1--fotosintesis"
+   ],
+   "kata": [
+    "tumbuhan",
+    "berbunga"
+   ]
+  },
+  {
+   "id": "tumbuhan/buah",
+   "file": "objek/tumbuhan/buah.webp",
+   "jenis": "objek",
+   "nama": "Buah",
+   "sub": [
+    "ipa-3-bab4--siklus-hidup-tumbuhan"
+   ],
+   "kata": [
+    "tumbuhan",
+    "berbuah",
+    "polong"
+   ]
+  },
+  {
+   "id": "tumbuhan/daun",
+   "file": "objek/tumbuhan/daun.webp",
+   "jenis": "objek",
+   "nama": "Daun",
+   "sub": [
+    "ipa-3-bab4--siklus-hidup-tumbuhan",
+    "ipa-4-bab1--fotosintesis"
+   ],
+   "kata": [
+    "tumbuhan",
+    "daun"
+   ]
+  },
+  {
+   "id": "tumbuhan/akar",
+   "file": "objek/tumbuhan/akar.webp",
+   "jenis": "objek",
+   "nama": "Akar",
+   "sub": [
+    "ipa-3-bab4--siklus-hidup-tumbuhan",
+    "ipa-4-bab1--fotosintesis"
+   ],
+   "kata": [
+    "tumbuhan",
+    "akar",
+    "berakar"
+   ]
+  },
+  {
+   "id": "tumbuhan/batang",
+   "file": "objek/tumbuhan/batang.webp",
+   "jenis": "objek",
+   "nama": "Batang",
+   "sub": [
+    "ipa-3-bab4--siklus-hidup-tumbuhan",
+    "ipa-4-bab1--fotosintesis"
+   ],
+   "kata": [
+    "tumbuhan",
+    "batang"
+   ]
+  },
+  {
+   "id": "pernapasan/tenggorokan",
+   "file": "objek/pernapasan/tenggorokan.webp",
+   "jenis": "objek",
+   "nama": "Tenggorokan",
+   "sub": [
+    "ipa-6-bab2--perjalanan-udara-di-tubuh"
+   ],
+   "kata": [
+    "saluran napas",
+    "trakea",
+    "bronkus"
+   ]
+  },
+  {
+   "id": "pernapasan/paru-paru",
+   "file": "objek/pernapasan/paru-paru.webp",
+   "jenis": "objek",
+   "nama": "Paru-paru",
+   "sub": [
+    "ipa-6-bab2--perjalanan-udara-di-tubuh"
+   ],
+   "kata": [
+    "organ pernapasan"
+   ]
+  },
+  {
+   "id": "pernapasan/diafragma",
+   "file": "objek/pernapasan/diafragma.webp",
+   "jenis": "objek",
+   "nama": "Diafragma",
+   "sub": [
+    "ipa-6-bab2--perjalanan-udara-di-tubuh"
+   ],
+   "kata": [
+    "otot pernapasan"
+   ]
+  },
+  {
+   "id": "pernapasan/rongga-dada",
+   "file": "objek/pernapasan/rongga-dada.webp",
+   "jenis": "objek",
+   "nama": "Rongga dada",
+   "sub": [
+    "ipa-6-bab2--perjalanan-udara-di-tubuh"
+   ],
+   "kata": [
+    "tulang rusuk"
+   ]
+  },
+  {
+   "id": "pernapasan/model-paru-paru",
+   "file": "objek/pernapasan/model-paru-paru.webp",
+   "jenis": "objek",
+   "nama": "Model paru-paru",
+   "sub": [
+    "ipa-6-bab2--perjalanan-udara-di-tubuh"
+   ],
+   "kata": [
+    "percobaan",
+    "alat peraga"
+   ]
+  },
+  {
+   "id": "bagian-tubuh/mata",
+   "file": "objek/bagian-tubuh/mata.webp",
+   "jenis": "objek",
+   "nama": "Mata",
+   "sub": [
+    "ipa-3-bab1--bagian-tubuh-dan-fungsinya",
+    "ipa-5-bab7--melihat-karena-cahaya"
+   ],
+   "kata": [
+    "bagian tubuh",
+    "panca indera",
+    "penglihatan"
+   ]
+  },
+  {
+   "id": "bagian-tubuh/telinga",
+   "file": "objek/bagian-tubuh/telinga.webp",
+   "jenis": "objek",
+   "nama": "Telinga",
+   "sub": [
+    "ipa-3-bab1--bagian-tubuh-dan-fungsinya",
+    "ipa-5-bab8--mendengar-karena-bunyi"
+   ],
+   "kata": [
+    "bagian tubuh",
+    "panca indera",
+    "pendengaran",
+    "telinga"
+   ]
+  },
+  {
+   "id": "bagian-tubuh/hidung",
+   "file": "objek/bagian-tubuh/hidung.webp",
+   "jenis": "objek",
+   "nama": "Hidung",
+   "sub": [
+    "ipa-3-bab1--bagian-tubuh-dan-fungsinya",
+    "ipa-6-bab2--perjalanan-udara-di-tubuh"
+   ],
+   "kata": [
+    "bagian tubuh",
+    "panca indera",
+    "penciuman"
+   ]
+  },
+  {
+   "id": "bagian-tubuh/lidah",
+   "file": "objek/bagian-tubuh/lidah.webp",
+   "jenis": "objek",
+   "nama": "Lidah",
+   "sub": [
+    "ipa-3-bab1--bagian-tubuh-dan-fungsinya"
+   ],
+   "kata": [
+    "bagian tubuh",
+    "panca indera",
+    "pengecap"
+   ]
+  },
+  {
+   "id": "bagian-tubuh/tangan",
+   "file": "objek/bagian-tubuh/tangan.webp",
+   "jenis": "objek",
+   "nama": "Tangan",
+   "sub": [
+    "ipa-3-bab1--bagian-tubuh-dan-fungsinya"
+   ],
+   "kata": [
+    "bagian tubuh",
+    "panca indera",
+    "peraba"
+   ]
+  },
+  {
+   "id": "bagian-tubuh/kaki",
+   "file": "objek/bagian-tubuh/kaki.webp",
+   "jenis": "objek",
+   "nama": "Kaki",
+   "sub": [
+    "ipa-3-bab1--bagian-tubuh-dan-fungsinya"
+   ],
+   "kata": [
+    "bagian tubuh"
+   ]
+  },
+  {
+   "id": "siklus-air/uap",
+   "file": "objek/siklus-air/uap.webp",
+   "jenis": "objek",
+   "nama": "Uap air",
+   "sub": [
+    "ipa-5-bab4--siklus-air"
+   ],
+   "kata": [
+    "air",
+    "penguapan"
+   ]
+  },
+  {
+   "id": "siklus-air/es",
+   "file": "objek/siklus-air/es.webp",
+   "jenis": "objek",
+   "nama": "Es",
+   "sub": [
+    "ipa-5-bab4--siklus-air"
+   ],
+   "kata": [
+    "air",
+    "wujud air"
+   ]
+  },
+  {
+   "id": "siklus-air/tetes-air",
+   "file": "objek/siklus-air/tetes-air.webp",
+   "jenis": "objek",
+   "nama": "Tetes air",
+   "sub": [
+    "ipa-5-bab4--siklus-air"
+   ],
+   "kata": [
+    "air",
+    "hujan"
+   ]
+  },
+  {
+   "id": "siklus-air/laut",
+   "file": "objek/siklus-air/laut.webp",
+   "jenis": "objek",
+   "nama": "Laut",
+   "sub": [
+    "ipa-5-bab4--siklus-air"
+   ],
+   "kata": [
+    "air",
+    "laut"
+   ]
+  },
+  {
+   "id": "siklus-air/sungai",
+   "file": "objek/siklus-air/sungai.webp",
+   "jenis": "objek",
+   "nama": "Sungai",
+   "sub": [
+    "ipa-5-bab4--siklus-air"
+   ],
+   "kata": [
+    "air",
+    "sungai"
+   ]
+  },
+  {
+   "id": "siklus-air/danau",
+   "file": "objek/siklus-air/danau.webp",
+   "jenis": "objek",
+   "nama": "Danau",
+   "sub": [
+    "ipa-5-bab4--siklus-air"
+   ],
+   "kata": [
+    "air",
+    "danau"
+   ]
+  },
+  {
    "id": "latar/ruang-kelas",
    "file": "objek/latar/ruang-kelas.webp",
    "jenis": "latar",
@@ -2199,7 +2577,7 @@
   },
   {
    "id": "jelajah/bagian-tubuh-indra",
-   "file": "objek/jelajah/bagian-tubuh-indra.webp",
+   "file": "jelajah/bagian-tubuh-indra.webp",
    "jenis": "jelajah",
    "nama": "Bagian tubuh dan indra",
    "sub": [
@@ -2244,7 +2622,7 @@
   },
   {
    "id": "jelajah/siklus-hidup-tumbuhan",
-   "file": "objek/jelajah/siklus-hidup-tumbuhan.webp",
+   "file": "jelajah/siklus-hidup-tumbuhan.webp",
    "jenis": "jelajah",
    "nama": "Siklus hidup tumbuhan",
    "sub": [
@@ -2290,7 +2668,7 @@
   },
   {
    "id": "jelajah/fotosintesis",
-   "file": "objek/jelajah/fotosintesis.webp",
+   "file": "jelajah/fotosintesis.webp",
    "jenis": "jelajah",
    "nama": "Fotosintesis",
    "sub": [
@@ -2342,7 +2720,7 @@
   },
   {
    "id": "jelajah/komponen-ekosistem",
-   "file": "objek/jelajah/komponen-ekosistem.webp",
+   "file": "jelajah/komponen-ekosistem.webp",
    "jenis": "jelajah",
    "nama": "Komponen ekosistem",
    "sub": [
@@ -2406,7 +2784,7 @@
   },
   {
    "id": "jelajah/siklus-air",
-   "file": "objek/jelajah/siklus-air.webp",
+   "file": "jelajah/siklus-air.webp",
    "jenis": "jelajah",
    "nama": "Siklus air",
    "sub": [
@@ -2464,7 +2842,7 @@
   },
   {
    "id": "jelajah/melihat-karena-cahaya",
-   "file": "objek/jelajah/melihat-karena-cahaya.webp",
+   "file": "jelajah/melihat-karena-cahaya.webp",
    "jenis": "jelajah",
    "nama": "Melihat karena cahaya",
    "sub": [
@@ -2510,7 +2888,7 @@
   },
   {
    "id": "jelajah/mendengar-karena-bunyi",
-   "file": "objek/jelajah/mendengar-karena-bunyi.webp",
+   "file": "jelajah/mendengar-karena-bunyi.webp",
    "jenis": "jelajah",
    "nama": "Mendengar karena bunyi",
    "sub": [
@@ -2562,7 +2940,7 @@
   },
   {
    "id": "jelajah/sistem-pencernaan",
-   "file": "objek/jelajah/sistem-pencernaan.webp",
+   "file": "jelajah/sistem-pencernaan.webp",
    "jenis": "jelajah",
    "nama": "Sistem pencernaan",
    "sub": [
@@ -2626,7 +3004,7 @@
   },
   {
    "id": "jelajah/sistem-pernapasan",
-   "file": "objek/jelajah/sistem-pernapasan.webp",
+   "file": "jelajah/sistem-pernapasan.webp",
    "jenis": "jelajah",
    "nama": "Sistem pernapasan",
    "sub": [
@@ -2684,7 +3062,7 @@
   },
   {
    "id": "jelajah/matahari-bumi-bulan",
-   "file": "objek/jelajah/matahari-bumi-bulan.webp",
+   "file": "jelajah/matahari-bumi-bulan.webp",
    "jenis": "jelajah",
    "nama": "Matahari, Bumi, dan Bulan",
    "sub": [
@@ -2736,7 +3114,7 @@
   },
   {
    "id": "jelajah/tata-surya",
-   "file": "objek/jelajah/tata-surya.webp",
+   "file": "jelajah/tata-surya.webp",
    "jenis": "jelajah",
    "nama": "Sistem tata surya",
    "sub": [
