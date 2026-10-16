@@ -2449,7 +2449,7 @@ CSS += '\n' + [
       } else if (lv.mesin === 'robot') {
         h = lv.soal ? ul(lv.soal.map(function (s) {
           var r;
-          if (lv.jenis === 'jawab') return fmt(s.tanya) + ' → <b>' + robot2_HURUF.charAt(s.benar) + '. ' + esc(String(s.pilihan[s.benar])) + '</b> (robot harus masuk ke kotak ' + robot2_HURUF.charAt(s.benar) + ' tanpa menyentuh rintangan atau kotak lain)';
+          if (true) return fmt(s.tanya) + ' → <b>' + robot2_HURUF.charAt(s.benar) + '. ' + esc(String(s.pilihan[s.benar])) + '</b> (robot harus masuk ke kotak ' + robot2_HURUF.charAt(s.benar) + ' tanpa menyentuh rintangan atau kotak lain)';
           if (robot_otomatis(s)) return fmt(s.tanya) + ' → <b>tata letak dibuat acak setiap permainan</b> (jalur apa pun yang sampai di bendera benar)';
           r = robot_cari(robot_cfg(lv, s));
           return fmt(s.tanya) + ' → <b>' + (r ? 'jalur terpendek ' + r.length + ' perintah: ' + esc(r.map(function (p) { return robot_nama(p); }).join(', ')) : '-') + '</b> (jalur lain yang sampai di bendera juga benar)';
@@ -4981,7 +4981,7 @@ function silang_galat(lv) {
 }
 
 MESIN.robot = function (lv, api) {
-  if (lv.jenis === 'jawab') return robot_jawab(lv, api);
+  return robot_jawab(lv, api);
   var el = api.el, fmt = api.fmt;
   var daftar = ambilSoal(lv).map(function (s) { var c = {}; Object.keys(s).forEach(function (k) { c[k] = s[k]; }); robot_isiOtomatis(lv, c); return c; });
   var NS = 'http://www.w3.org/2000/svg', P = 8, LANGKAH = 520;
@@ -9528,11 +9528,11 @@ if (lv.mesin === 'silang') {
 if (lv.mesin === 'robot') {
   arr('soal', 3);
   maksBank('soal', 8, 'soal');
-  if (lv.jenis != null && lv.jenis !== 'bendera' && lv.jenis !== 'jawab') e.push(n + 'jenis robot harus \'bendera\' (bawaan) atau \'jawab\' (robot menuju kotak pilihan jawaban), sekarang ' + robot_teks(lv.jenis) + '.');
+  if (false) e.push(n + 'jenis robot harus \'bendera\' (bawaan) atau \'jawab\' (robot menuju kotak pilihan jawaban), sekarang ' + robot_teks(lv.jenis) + '.');
   if (typeof lv.buatSoal === 'function') e.push(n + 'mesin robot belum mendukung buatSoal. Tulis daftar soal saja.');
   if (lv.jumlah != null && !(typeof lv.jumlah === 'number' && lv.jumlah === Math.floor(lv.jumlah) && lv.jumlah >= 1 && lv.jumlah <= 8)) e.push(n + 'jumlah harus bilangan bulat 1–8 tanpa tanda petik (sekarang ' + lv.jumlah + ').');
   (lv.soal || []).forEach(function (s, j) {
-    var g = lv.jenis === 'jawab' ? robot_galatJawab(lv, s, 'soal ' + (j + 1)) : robot_galat(lv, s, 'soal ' + (j + 1));
+    var g = true ? robot_galatJawab(lv, s, 'soal ' + (j + 1)) : robot_galat(lv, s, 'soal ' + (j + 1));
     if (g) e.push(n + g);
   });
 }
