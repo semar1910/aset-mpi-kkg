@@ -40,12 +40,19 @@
  *        robot = susun perintah (maju/belok) agar robot sampai ke bendera di kotak-kotak (kolom 3-7, baris 3-5, rintangan,
  *        batas perintah 'maks'; tanpa 'jawab', jalur terpendek dihitung otomatis). Pesan galat robot kini menyebut
  *        mulai/tujuan yang belum diisi. Soal robot tanpa mulai/tujuan/rintangan dibuat acak otomatis (ada batu, belokan, dan bintang yang harus diambil dulu; bintang:0 untuk mematikan). Mesin lama tidak diubah.
+ * v1.22: PENGAIT PETA KHUSUS (hookPeta 1). Berkas terpisah kit-peta.js boleh mendaftarkan gaya peta level lewat
+ *        (window.KIT_PETA = window.KIT_PETA || {}).nama = function (k) { ... }. DATA memakai peta:'nama'. Urutan muat
+ *        dua berkas bebas. peta:'otomatis' tanpa gaya terdaftar jatuh ke peta jalur lama; gaya yang melempar galat
+ *        juga jatuh ke peta jalur lama. Peta jalur dan peta kartu tidak diubah.
+ * v1.23: PEMUAT kit-peta.js. Bila DATA memakai peta selain 'jalur'/'kartu', kit memuat kit-peta.js dari folder yang sama
+ *        dengan dirinya (alamat diturunkan dari alamat skrip kit, jadi pin versi lewat tag ikut berlaku).
+ *        Terlambat (> 1,5 detik) atau gagal → peta jalur lama. MPI dengan peta:'jalur' atau 'kartu' tidak mengunduh apa pun.
  * v1.5: progres tersimpan, tombol dengarkan, soal salah diulang, bank soal (jumlah),
  *       mode tim, hasil murid + papan skor (bila diputar dari server KKG).
  */
 (function () {
   'use strict';
-  var VERSI = '1.21.0';
+  var VERSI = '1.23.0';
   /* Panggung dirancang untuk HP mendatar: tinggi tetap 540, lebar mengikuti layar (960–1200). */
   var H = 540, W_MIN = 960, W_MAX = 1200, W = W_MIN;
 
@@ -177,7 +184,7 @@ IK.huruf = '<rect x="2.6" y="6.5" width="8.6" height="11" rx="2.2"/><rect x="12.
     sudut: 'Pasang busur pada sudut lalu baca besarnya, atau tarik lengan untuk membuat sudut yang diminta.',
     grafik: 'Baca grafik batang dengan teliti. Ketuk batang lalu tekan Periksa, atau pilih jawaban yang tepat.',
     silang: 'Sentuh kotak, baca petunjuk mendatar atau menurun, lalu ketuk huruf untuk mengisi. Tekan Periksa bila semua kotak sudah terisi.',
-    robot: 'Susun perintah panah agar robot masuk ke kotak jawaban yang benar, lalu tekan Jalankan.',
+    robot: 'Susun perintah panah agar robot sampai ke bendera, lalu tekan Jalankan.',
     carikata: 'Cari kata di kotak huruf. Geser jarimu lurus dari huruf pertama sampai huruf terakhir, atau sentuh huruf pertama lalu huruf terakhir.',
     jejak: 'Sentuh titik yang berkedip, lalu seret jarimu mengikuti garis sampai ujung. Ulangi untuk tiap huruf.',
     sorot: 'Pilih stabilo, lalu ketuk bagian teks yang cocok. Ketuk lagi untuk menghapus tandanya, lalu tekan Periksa.',
@@ -1918,11 +1925,144 @@ CSS += '\n' + [
     w.appendChild(wadah);
   }
 
+  /* ════════════════════════════ PENGAIT PETA KHUSUS ════════════════════════════
+     Dipakai kit-peta.js (berkas terpisah). Pendaftaran:
+       (window.KIT_PETA = window.KIT_PETA || {}).pulau = function (k) { ... };
+     DATA: peta:'pulau'. Fungsi gaya menerima objek konteks k (lihat konteksPeta) dan menaruh
+     wadahnya sendiri ke k.w. Tidak ditemukan atau galat → peta jalur lama (peta:'jalur' tidak pernah dibelokkan). */
+  var HOOK_PETA = 1;
+  function petaKhusus() {
+    var reg = window.KIT_PETA;
+    if (!D || typeof D.peta !== 'string' || D.peta === 'jalur' || !reg || typeof reg !== 'object') return null;
+    if (!Object.prototype.hasOwnProperty.call(reg, D.peta)) return null;
+    return typeof reg[D.peta] === 'function' ? reg[D.peta] : null;
+  }
+  function konteksPeta(w) {
+    var n = LEVEL.length, aktif = -1;
+    LEVEL.forEach(function (lv, i) {
+      if (aktif < 0 && (MODE_GURU || i < TERBUKA) && !(BINTANG[i] > 0)) aktif = i;
+    });
+    var tot = BINTANG.reduce(function (a, b) { return a + (b || 0); }, 0);
+    var semua = BINTANG.filter(function (x) { return x > 0; }).length === n;
+    function goyang(e) {
+      if (!e || !e.classList) return;
+      e.classList.remove('goyang'); void e.getBoundingClientRect(); e.classList.add('goyang');
+    }
+    var k = {
+      versi: HOOK_PETA, kit: VERSI, D: D, w: w,
+      W: W, H: H, tinggi: H - 58,            /* wadah peta setinggi tinggi, mulai 58px dari atas (di bawah bilah atas) */
+      n: n, level: LEVEL, bintang: BINTANG.slice(), terbuka: TERBUKA, modeGuru: MODE_GURU,
+      aktif: aktif, semua: semua, total: tot, maks: n * 3, tema: D.tema || 'emas',
+      buka: function (i) { return !!(MODE_GURU || i < TERBUKA); },
+      judulLevel: function (i) { return LEVEL[i].judul || ('Level ' + (i + 1)); },
+      namaMesin: function (i) { return namaMesin(LEVEL[i].mesin); },
+      ikonMesin: function (i) { return IKON_MESIN[LEVEL[i].mesin] || 'target'; },
+      /* ketuk level i: terkunci → goyang + suara salah; terbuka → main. Mengembalikan true bila main. */
+      pilih: function (i, elemen) {
+        if (!k.buka(i)) { goyang(elemen); Suara.salah(); getar(40); return false; }
+        Suara.klik(); mainLevel(i); return true;
+      },
+      /* ketuk peti harta / garis akhir: semua level selesai → layar penutup */
+      akhir: function (elemen) {
+        if (semua) { Suara.klik(); layarPenutup(); return true; }
+        goyang(elemen); Suara.salah(); return false;
+      },
+      /* penanda "kamu di sini" (maskot atau pin) yang meluncur dari level sebelumnya.
+         posisi = larik n+1 titik {x,y} dalam wadah: indeks 0..n-1 untuk level, indeks n untuk akhir.
+         Ujung bawah penanda mendarat di titik itu. wadah wajib position:absolute dan setinggi k.tinggi. */
+      penanda: function (wadah, posisi) {
+        var kunciPos = aktif >= 0 ? aktif : n;
+        var tuju = posisi[kunciPos];
+        var pn = el('div', 'k-jl-penanda');
+        var adaMaskot = D.maskot && D.maskot.gambar && src(D.maskot.gambar);
+        pn.innerHTML = adaMaskot ? '<div class="isi ekor"><div class="bulat"></div></div>' : '<div class="isi">' + svgPin() + '</div>';
+        if (adaMaskot) {
+          var im = new Image(); im.alt = '';
+          im.onerror = function () { pn.innerHTML = '<div class="isi">' + svgPin() + '</div>'; };
+          im.src = src(D.maskot.gambar);
+          pn.querySelector('.bulat').appendChild(im);
+        }
+        var dari = (JL_TERAKHIR >= 0 && JL_TERAKHIR < kunciPos && posisi[JL_TERAKHIR]) ? posisi[JL_TERAKHIR] : null;
+        var awal = dari || tuju;
+        pn.style.left = awal.x + 'px'; pn.style.top = awal.y + 'px';
+        wadah.appendChild(pn);
+        if (dari) {
+          requestAnimationFrame(function () { requestAnimationFrame(function () {
+            pn.style.left = tuju.x + 'px'; pn.style.top = tuju.y + 'px';
+          }); });
+        }
+        JL_TERAKHIR = kunciPos;
+        return pn;
+      },
+      /* tempelkan CSS gaya sendiri satu kali (id unik, mis. 'pulau') */
+      css: function (id, teks) {
+        var sid = 'kit-peta-css-' + String(id).replace(/[^a-z0-9_-]/gi, '');
+        if (document.getElementById(sid)) return;
+        var st = document.createElement('style'); st.id = sid; st.textContent = teks;
+        document.head.appendChild(st);
+      },
+      /* alat bantu kit yang boleh dipakai */
+      alat: {
+        el: el, esc: esc, fmt: fmt, ik: ik, ikBintang: ikBintang, src: src, gambar: gambar,
+        hashTeks: hashTeks, acakBenih: acakBenih, r1: r1,
+        svgBintang: svgBintang, svgGembok: svgGembok, svgPin: svgPin, svgHiasan: svgHiasan, svgPeti: svgPeti,
+        suara: Suara, getar: getar, goyang: goyang
+      }
+    };
+    return k;
+  }
+
+  /* ── pemuat kit-peta.js ── */
+  var ALAMAT_SKRIP = '';
+  try { ALAMAT_SKRIP = (document.currentScript && document.currentScript.src) || ''; } catch (e) {}
+  var PETA_STATUS = 'tidak', PETA_MULAI = 0, PETA_BATAS = 1500;   /* tidak | memuat | siap | gagal */
+  function alamatPeta() {
+    if (!/kit-mpi\.js(?:[?#]|$)/.test(ALAMAT_SKRIP)) return '';
+    return ALAMAT_SKRIP.replace(/kit-mpi\.js(?=[?#]|$)/, 'kit-peta.js');
+  }
+  function muatPeta() {
+    if (PETA_STATUS !== 'tidak') return;
+    if (!D || typeof D.peta !== 'string' || D.peta === 'jalur' || D.peta === 'kartu') return;
+    if (petaKhusus()) { PETA_STATUS = 'siap'; return; }
+    var u = alamatPeta();
+    if (!u) { PETA_STATUS = 'gagal'; return; }
+    PETA_STATUS = 'memuat'; PETA_MULAI = Date.now();
+    try {
+      var sc = document.createElement('script');
+      sc.async = true; sc.src = u;
+      sc.onload = function () { PETA_STATUS = 'siap'; };
+      sc.onerror = function () { PETA_STATUS = 'gagal'; };
+      document.head.appendChild(sc);
+    } catch (e) { PETA_STATUS = 'gagal'; }
+  }
+  function layarTungguPeta() {
+    var w = el('div');
+    latarLayar(w, '');
+    var t = el('div', null, 'Memuat peta…');
+    t.style.cssText = 'position:absolute;left:0;right:0;top:0;bottom:0;display:flex;align-items:center;justify-content:center;color:#fff;font:600 26px Fredoka,"Trebuchet MS",sans-serif;text-shadow:0 2px 0 rgba(0,0,0,.4)';
+    w.appendChild(t);
+    layar(w);
+    (function cek() {
+      setTimeout(function () {
+        if (!document.body.contains(w)) return;   /* murid sudah pindah layar: hentikan */
+        if (PETA_STATUS !== 'memuat' || petaKhusus() || Date.now() - PETA_MULAI >= PETA_BATAS) layarPeta();
+        else cek();
+      }, 100);
+    })();
+  }
+
   function layarPeta() {
+    muatPeta();
+    if (PETA_STATUS === 'memuat' && !petaKhusus()) {
+      if (Date.now() - PETA_MULAI < PETA_BATAS) { layarTungguPeta(); return; }
+      PETA_STATUS = 'gagal';
+    }
     var w = el('div');
     /* Peta jalur dilihat dari atas, latar biasa dari depan: keduanya tidak serasi.
        Peta jalur hanya memakai gambar.peta (pemandangan dari atas); tanpa itu memakai pola warna. */
-    if (D.peta === 'jalur') latarLayar(w, D.gambar && D.gambar.peta ? 'peta' : '');
+    var pk = petaKhusus();
+    var gayaJalur = D.peta === 'jalur' || D.peta === 'otomatis' || !!pk;   /* 'otomatis' tanpa gaya terdaftar = peta jalur lama */
+    if (gayaJalur) latarLayar(w, D.gambar && D.gambar.peta ? 'peta' : '');
     else latarLayar(w, D.gambar && D.gambar.latar ? 'latar' : '');
     var atas = el('div', 'k-atas');
     atas.appendChild(tombol(ik('rumah'), 'k-ikon sek', layarJudul));
@@ -1938,7 +2078,16 @@ CSS += '\n' + [
     var bg = el('button', 'k-pil', ik('kunci') + ' Guru'); bg.style.cursor = 'pointer';
     bg.addEventListener('click', panelGuru); atas.appendChild(bg);
     w.appendChild(atas);
-    if (D.peta === 'jalur') { petaJalur(w); layar(w); return; }
+    if (pk) {
+      var n0 = w.childNodes.length;
+      try { pk(konteksPeta(w)); layar(w); return; }
+      catch (er) {
+        while (w.childNodes.length > n0) w.removeChild(w.lastChild);   /* buang sisa gambar yang setengah jadi */
+        try { console.warn('KIT: peta "' + D.peta + '" gagal, memakai peta jalur.', er); } catch (e2) {}
+        petaJalur(w); layar(w); return;
+      }
+    }
+    if (gayaJalur) { petaJalur(w); layar(w); return; }
     var peta = el('div', 'k-peta');
     LEVEL.forEach(function (lv, i) {
       var buka = MODE_GURU || i < TERBUKA;
@@ -2448,7 +2597,11 @@ CSS += '\n' + [
         h = ul(silang_urut(silang_analisis(lv.kisi).kata).map(function (k) { return '<b>' + k.no + ' ' + (k.arah === 'm' ? 'Mendatar' : 'Menurun') + ':</b> ' + esc(k.jawab) + ' (' + fmt(silang_tanya(lv, k)) + ')'; }));
       } else if (lv.mesin === 'robot') {
         h = lv.soal ? ul(lv.soal.map(function (s) {
-          return fmt(s.tanya) + ' → <b>' + robot2_HURUF.charAt(s.benar) + '. ' + esc(String(s.pilihan[s.benar])) + '</b> (robot harus masuk ke kotak ' + robot2_HURUF.charAt(s.benar) + ' tanpa menyentuh rintangan atau kotak lain)';
+          var r;
+          if (lv.jenis === 'jawab') return fmt(s.tanya) + ' → <b>' + robot2_HURUF.charAt(s.benar) + '. ' + esc(String(s.pilihan[s.benar])) + '</b> (robot harus masuk ke kotak ' + robot2_HURUF.charAt(s.benar) + ' tanpa menyentuh rintangan atau kotak lain)';
+          if (robot_otomatis(s)) return fmt(s.tanya) + ' → <b>tata letak dibuat acak setiap permainan</b> (jalur apa pun yang sampai di bendera benar)';
+          r = robot_cari(robot_cfg(lv, s));
+          return fmt(s.tanya) + ' → <b>' + (r ? 'jalur terpendek ' + r.length + ' perintah: ' + esc(r.map(function (p) { return robot_nama(p); }).join(', ')) : '-') + '</b> (jalur lain yang sampai di bendera juga benar)';
         })) : '<p>Belum ada soal.</p>';
       } else if (lv.mesin === 'carikata') {
               h = ul((lv.soal || []).map(function (s) {
@@ -4976,10 +5129,239 @@ function silang_galat(lv) {
   return e;
 }
 
-/* mesin robot: satu-satunya mode adalah mode jawab (mode bendera sudah dihapus) */
-MESIN.robot = function (lv, api) { return robot_jawab(lv, api); };
+MESIN.robot = function (lv, api) {
+  if (lv.jenis === 'jawab') return robot_jawab(lv, api);
+  var el = api.el, fmt = api.fmt;
+  var daftar = ambilSoal(lv).map(function (s) { var c = {}; Object.keys(s).forEach(function (k) { c[k] = s[k]; }); robot_isiOtomatis(lv, c); return c; });
+  var NS = 'http://www.w3.org/2000/svg', P = 8, LANGKAH = 520;
+  var cur = null, cfg = null, S = 60, pos = { c: 0, r: 0 }, sudut = 0, perintah = [], hasil = null;
+  var sibuk = false, hidup = true, gen = 0, timer = [], robotEl = null, slotEl = [], btnJalan = null, btnPr = [], btnUl = null, jp;
+  try { if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) LANGKAH = 260; } catch (x) {}
 
-/* robot mode jawab: robot menuju kotak pilihan jawaban yang benar */
+  var w = el('div', 'k-rb-w'), kiri = el('div', 'k-kertas k-rb-kiri'), kanan = el('div', 'k-kertas k-rb-kanan');
+  var svg = document.createElementNS(NS, 'svg'), tny = el('div', 'k-rb-tny'), info = el('div', 'k-rb-info');
+  var prog = el('div', 'k-rb-prog'), tray = el('div', 'k-rb-tray');
+  svg.setAttribute('class', 'k-rb-svg'); svg.setAttribute('role', 'img');
+  kiri.appendChild(svg);
+  kanan.appendChild(tny); kanan.appendChild(info); kanan.appendChild(prog); kanan.appendChild(tray);
+  w.appendChild(kiri); w.appendChild(kanan); api.area.appendChild(w);
+
+  function sel() { return !!(jp && jp.selesai()); }
+  function terkunci() { return sibuk || sel() || !hidup; }
+  function tunggu(ms, fn) {
+    var g = gen;
+    timer.push(setTimeout(function () { if (hidup && g === gen && w.isConnected) fn(); }, ms));
+  }
+  function gayaRobot() {
+    return 'translate(' + (P + pos.c * S + S / 2) + 'px,' + (P + pos.r * S + S / 2) + 'px) rotate(' + sudut + 'deg)';
+  }
+  function pasangRobot() { if (robotEl) robotEl.style.transform = gayaRobot(); }
+  /* kembali ke posisi awal tanpa animasi (supaya robot tidak berputar balik) */
+  function taruhLangsung() {
+    pos = { c: cfg.mulai[0], r: cfg.mulai[1] }; sudut = cfg.arah * 90;
+    if (!robotEl) return;
+    robotEl.classList.remove('tabrak', 'sorak');
+    svg.querySelectorAll('.k-rb-bt.ambil').forEach(function (b) { b.classList.remove('ambil'); });
+    robotEl.style.transition = 'none';
+    robotEl.style.transform = gayaRobot();
+    void robotEl.getBoundingClientRect();
+    robotEl.style.transition = '';
+  }
+  /* kartu soal tidak boleh bergulir: kecilkan huruf (20 -> 15) bila teks melebihi tinggi kartu */
+  function muatkanTeks() {
+    var fs = 20;
+    tny.style.fontSize = fs + 'px';
+    while (fs > 15 && tny.scrollHeight > tny.clientHeight + 1) { fs--; tny.style.fontSize = fs + 'px'; }
+  }
+  function gambar() {
+    var h = '', c, r, x, y, u, key, pr;
+    S = Math.max(36, Math.min(64, Math.floor(430 / cfg.kol), Math.floor(318 / cfg.bar)));
+    u = (S / 72).toFixed(3);
+    svg.setAttribute('viewBox', '0 0 ' + (cfg.kol * S + P * 2) + ' ' + (cfg.bar * S + P * 2));
+    for (r = 0; r < cfg.bar; r++) for (c = 0; c < cfg.kol; c++) {
+      h += '<rect class="k-rb-pt' + ((c + r) % 2 ? ' k-rb-alt' : '') + '" x="' + (P + c * S) + '" y="' + (P + r * S) + '" width="' + S + '" height="' + S + '"/>';
+    }
+    h += '<rect class="k-rb-tj" x="' + (P + cfg.tujuan[0] * S) + '" y="' + (P + cfg.tujuan[1] * S) + '" width="' + S + '" height="' + S + '"/>';
+    for (key in cfg.rint) {
+      pr = key.split(',');
+      x = P + (+pr[0]) * S + S / 2; y = P + (+pr[1]) * S + S / 2;
+      h += '<g class="k-rb-batu" transform="translate(' + x + ' ' + y + ') scale(' + u + ')"><path d="M-22 14C-26 0-14-18 0-18S24-8 24 14Z"/><path class="k-rb-kilau" d="M-10-6C-6-10 0-11 5-8"/></g>';
+    }
+    cfg.bt.forEach(function (q) {
+      h += '<g transform="translate(' + (P + q[0] * S + S / 2) + ' ' + (P + q[1] * S + S / 2) + ') scale(' + u + ')"><g class="k-rb-bt" data-bt="' + q[0] + ',' + q[1] + '"><path d="M0-17L5-6 16-5 8 3 10 14 0 8-10 14-8 3-16-5-5-6Z"/></g></g>';
+    });
+    x = P + cfg.tujuan[0] * S + S / 2; y = P + cfg.tujuan[1] * S + S / 2;
+    h += '<g transform="translate(' + x + ' ' + y + ') scale(' + u + ')"><g class="k-rb-bendera"><line x1="-6" y1="-24" x2="-6" y2="22"/><polygon points="-6,-24 22,-14 -6,-4"/></g></g>';
+    pos = { c: cfg.mulai[0], r: cfg.mulai[1] }; sudut = cfg.arah * 90;
+    h += '<g class="k-rb-robot" style="transform:' + gayaRobot() + '"><g class="k-rb-in"><g transform="scale(' + u + ')">' +
+      '<rect class="k-rb-roda" x="-26" y="-12" width="8" height="24" rx="3"/><rect class="k-rb-roda" x="18" y="-12" width="8" height="24" rx="3"/>' +
+      '<rect class="k-rb-badan" x="-19" y="-19" width="38" height="40" rx="10"/>' +
+      '<circle class="k-rb-mata" cx="-8" cy="-7" r="5.5"/><circle class="k-rb-mata" cx="8" cy="-7" r="5.5"/>' +
+      '<circle class="k-rb-pupil" cx="-8" cy="-8" r="2.4"/><circle class="k-rb-pupil" cx="8" cy="-8" r="2.4"/>' +
+      '<rect class="k-rb-pupil" x="-8" y="8" width="16" height="4" rx="2"/>' +
+      '<path class="k-rb-moncong" d="M-9-22 0-34 9-22Z"/></g></g></g>';
+    svg.innerHTML = h;
+    svg.setAttribute('aria-label', 'Kisi ' + cfg.kol + ' kolom dan ' + cfg.bar + ' baris. ' + (cfg.bt.length ? 'Ambil ' + cfg.bt.length + ' bintang, lalu robot' : 'Robot') + ' harus sampai ke bendera.');
+    robotEl = svg.querySelector('.k-rb-robot');
+  }
+  function gambarProg() {
+    var k;
+    prog.innerHTML = ''; slotEl = [];
+    for (k = 0; k < cfg.maks; k++) {
+      (function (k) {
+        var b = el('button', 'k-rb-sl');
+        b.type = 'button';
+        if (perintah[k]) {
+          b.className = 'k-rb-sl isi'; b.innerHTML = robot_ikon(perintah[k]);
+          b.setAttribute('aria-label', 'Perintah ' + (k + 1) + ': ' + robot_nama(perintah[k]) + '. Ketuk untuk menghapus.');
+        } else {
+          b.className = 'k-rb-sl kosong'; b.textContent = String(k + 1); b.disabled = true;
+          b.setAttribute('aria-label', 'Kotak perintah ' + (k + 1) + ' kosong');
+        }
+        b.addEventListener('click', function () { hapusKe(k); });
+        prog.appendChild(b); slotEl.push(b);
+      })(k);
+    }
+    segarkan();
+  }
+  function segarkan() {
+    var n = perintah.length, mati = sibuk || sel();
+    info.textContent = n ? 'Program: ' + n + ' dari ' + cfg.maks + ' perintah' : 'Ketuk perintah di bawah untuk menyusun program.' + (cfg.bt.length ? ' Ambil semua bintang, lalu ke bendera.' : '');
+    btnPr.forEach(function (b) { b.disabled = mati; });
+    if (btnUl) btnUl.disabled = mati || !n;
+    if (btnJalan) { btnJalan.disabled = mati || !n; btnJalan.classList.toggle('k-denyut', !mati && n > 0); }
+  }
+  function tambah(p) {
+    if (terkunci()) return;
+    if (perintah.length >= cfg.maks) {
+      goyang(prog);
+      api.bicara('Programnya sudah penuh, maksimal ' + cfg.maks + ' perintah. Ketuk perintah di program untuk menghapusnya.');
+      return;
+    }
+    api.suara.klik(); perintah.push(p); hasil = null; gambarProg();
+  }
+  function hapusKe(k) {
+    if (terkunci() || k < 0 || k >= perintah.length) return;
+    api.suara.klik(); perintah.splice(k, 1); hasil = null; gambarProg();
+  }
+  function kosongkan() {
+    if (terkunci() || !perintah.length) return;
+    api.suara.klik(); perintah = []; hasil = null; gambarProg();
+  }
+  function tandaBenar() {
+    slotEl.forEach(function (b) { if (b.classList.contains('isi')) b.classList.add('ok'); });
+    if (robotEl) robotEl.classList.add('sorak');
+    segarkan();
+  }
+  /* menjalankan rekaman langkah demi langkah; selesai() dipanggil setelah langkah terakhir */
+  function animasi(hs, selesai) {
+    var g = gen, k = 1;
+    taruhLangsung();
+    slotEl.forEach(function (b) { b.classList.remove('aktif', 'ok', 'no'); });
+    function langkah() {
+      var st, i;
+      if (g !== gen || !hidup) return;
+      slotEl.forEach(function (b) { b.classList.remove('aktif'); });
+      if (k >= hs.rekam.length) { selesai(); return; }
+      st = hs.rekam[k++]; i = st.i;
+      if (slotEl[i]) slotEl[i].classList.add('aktif');
+      if (st.tabrak) {
+        robotEl.classList.add('tabrak'); api.suara.nada(200, 0.16, 'sawtooth', 0.09); getar([60, 40, 60]);
+      } else {
+        pos = { c: st.c, r: st.r };
+        if (perintah[i] === 'kiri') sudut -= 90; else if (perintah[i] === 'kanan') sudut += 90;
+        pasangRobot(); api.suara.klik();
+        if (st.ambil) {
+          var bs = svg.querySelector('.k-rb-bt[data-bt="' + st.ambil + '"]');
+          if (bs) bs.classList.add('ambil');
+          api.suara.nada(880, 0.12, 'sine', 0.08);
+        }
+      }
+      tunggu(st.tabrak ? 650 : LANGKAH, langkah);
+    }
+    tunggu(300, langkah);
+  }
+  function jalankan() {
+    if (terkunci() || !perintah.length) return;
+    sibuk = true; hasil = robot_jalan(cfg, perintah); segarkan();
+    animasi(hasil, function () { jp.periksa(); });
+  }
+  function petunjukAuto() {
+    if (hasil && hasil.tabrak >= 0) return 'Robot menabrak di perintah ke-' + (hasil.tabrak + 1) + '. Periksa ke mana robot menghadap sebelum maju, lalu ubah programnya.';
+    if (hasil && hasil.tabrak < 0 && hasil.kurang > 0) return 'Masih ada ' + hasil.kurang + ' bintang yang belum diambil. Lewati kotak bintang dulu, baru ke bendera.';
+    return 'Robot berhenti sebelum sampai di bendera. Ikuti robot langkah demi langkah dari awal, lalu perbaiki perintah yang keliru.';
+  }
+  function tekanKey(e) {
+    if (terkunci() || e.ctrlKey || e.metaKey || e.altKey) return;
+    var tg = e.target && e.target.tagName;
+    if (e.key === 'ArrowUp') tambah('maju');
+    else if (e.key === 'ArrowLeft') tambah('kiri');
+    else if (e.key === 'ArrowRight') tambah('kanan');
+    else if (e.key === 'Backspace' || e.key === 'Delete') hapusKe(perintah.length - 1);
+    else if (e.key === 'Enter' && tg !== 'BUTTON') jalankan();
+    else return;
+    e.preventDefault();
+  }
+  document.addEventListener('keydown', tekanKey);
+  api.berhenti = function () {
+    hidup = false; gen++;
+    timer.forEach(clearTimeout); timer = [];
+    document.removeEventListener('keydown', tekanKey);
+  };
+
+  ['maju', 'kiri', 'kanan'].forEach(function (p) {
+    var b = el('button', 'k-rb-pr', robot_ikon(p) + '<span>' + robot_nama(p) + '</span>');
+    b.type = 'button'; b.setAttribute('aria-label', 'Tambah perintah ' + robot_nama(p));
+    b.addEventListener('click', function () { tambah(p); });
+    tray.appendChild(b); btnPr.push(b);
+  });
+  btnUl = el('button', 'k-rb-ul', ik('hapus') + '<span>Hapus</span>');
+  btnUl.type = 'button'; btnUl.setAttribute('aria-label', 'Hapus semua perintah');
+  btnUl.addEventListener('click', kosongkan);
+  tray.appendChild(btnUl);
+
+  jp = jalurSoal(api, daftar, {
+    tanpaTombol: true,
+    tampil: function (s) {
+      gen++; cur = s; cfg = robot_cfg(lv, s); perintah = []; hasil = null; sibuk = false;
+      tny.innerHTML = fmt(s.tanya); muatkanTeks();
+      gambar();
+      btnJalan = api.aksi(ik('lanjut') + ' Jalankan', jalankan, 'besar');
+      gambarProg();
+      api.bicara(s.petunjukAwal || lv.petunjuk || s.tanya);
+    },
+    siap: function () { return perintah.length > 0; },
+    benar: function () { return !!hasil && hasil.sampai; },
+    tandai: function (ok) {
+      if (ok) { tandaBenar(); return; }
+      if (hasil && hasil.tabrak >= 0 && slotEl[hasil.tabrak]) slotEl[hasil.tabrak].classList.add('no');
+      goyang(prog);
+      if (cur && (cur.petunjuk == null || cur._pAuto)) { cur.petunjuk = petunjukAuto(); cur._pAuto = true; }
+    },
+    ulangi: function (s) {
+      if (s !== cur || !hidup) return;
+      taruhLangsung();
+      slotEl.forEach(function (b) { b.classList.remove('aktif', 'no'); });
+      sibuk = false; segarkan();
+    },
+    teksBenar: function (s) {
+      var r = robot_cari(robot_cfg(lv, s)) || [];
+      return 'misalnya ' + r.length + ' perintah: ' + r.join(', ');
+    },
+    tampilkanBenar: function (s) {
+      if (s !== cur || !hidup) return;
+      perintah = (robot_cari(robot_cfg(lv, s)) || []).slice();
+      hasil = robot_jalan(cfg, perintah); sibuk = true;
+      gambarProg();
+      animasi(hasil, tandaBenar);
+    },
+    berhenti: api.berhenti
+  });
+  jp.mulai();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { if (cur && hidup && w.isConnected) muatkanTeks(); });
+};
+
+/* robot mode jawab: robot menuju kotak pilihan jawaban yang benar (lv.jenis === 'jawab') */
 function robot_jawab(lv, api) {
   var el = api.el, fmt = api.fmt, esc = api.esc;
   var daftar = ambilSoal(lv).map(function (s) { var c = {}; Object.keys(s).forEach(function (k) { c[k] = s[k]; }); return c; });
@@ -5371,6 +5753,9 @@ function robot_galatJawab(lv, s, label) {
 }
 
 /* ── mesin robot: fungsi bantu (awalan robot_) ── */
+var robot_ARAH = ['atas', 'kanan', 'bawah', 'kiri'];
+var robot_DC = [0, 1, 0, -1];
+var robot_DR = [-1, 0, 1, 0];
 function robot_nilai(lv, s, k, bawaan) {
   if (s && s[k] != null) return s[k];
   if (lv && lv[k] != null) return lv[k];
@@ -5387,12 +5772,7 @@ var robot3_TINGKAT = {
 };
 function robot3_ok(t) { return t === 1 || t === 2 || t === 3; }
 function robot3_tingkat(lv, s) {
-  var t = robot_nilai(lv, s, 'tingkat', null), kl;
-  /* tanpa tingkat: ikuti kelas di identitas (1–2 → 1, 3–4 → 2, 5–6 → 3); tanpa kelas, perilaku lama */
-  if (t == null) {
-    kl = +((D && D.identitas) ? D.identitas.kelas : 0);
-    if (kl >= 1 && kl <= 6) t = kl <= 2 ? 1 : (kl <= 4 ? 2 : 3);
-  }
+  var t = robot_nilai(lv, s, 'tingkat', null);
   return robot3_ok(t) ? robot3_TINGKAT[t] : null;
 }
 function robot3_pesan(t) {
@@ -5403,6 +5783,179 @@ function robot_teks(v) {
   if (v == null) return '(kosong)';
   return typeof v === 'string' ? '"' + v + '"' : String(v);
 }
+function robot_cfg(lv, s) {
+  var rint = {}, daftar = Array.isArray(s.rintangan) ? s.rintangan : [], bt = Array.isArray(s.bintang) ? s.bintang : [], btIdx = {};
+  daftar.forEach(function (p) { rint[p[0] + ',' + p[1]] = true; });
+  bt.forEach(function (p, i) { btIdx[p[0] + ',' + p[1]] = i; });
+  return {
+    kol: robot_nilai(lv, s, 'kolom', 5), bar: robot_nilai(lv, s, 'baris', 4), maks: robot_nilai(lv, s, 'maks', 8),
+    arah: robot_ARAH.indexOf(robot_nilai(lv, s, 'arah', 'kanan')), mulai: s.mulai, tujuan: s.tujuan, rint: rint,
+    bt: bt, btIdx: btIdx
+  };
+}
+/* soal tanpa mulai dan tujuan: MPI membuat letak robot, bendera, dan batu secara acak setiap permainan,
+   dengan jalur yang butuh belokan dan muat dalam batas maks. Soal yang menulis mulai/tujuan tidak disentuh. */
+function robot_otomatis(s) { return !!s && s.mulai == null && s.tujuan == null; }
+function robot_isiOtomatis(lv, s) {
+  var kol, bar, mk, ar, cfg, rute, tr, a, c, r, m, nb, n, i, k, rint, kunci, tri, lvl, semua = [], x, y, dm, ns, bint, jb;
+  if (!robot_otomatis(s)) return s;
+  kol = robot_nilai(lv, s, 'kolom', 5); bar = robot_nilai(lv, s, 'baris', 4); mk = robot_nilai(lv, s, 'maks', 8);
+  ar = robot_ARAH.indexOf(robot_nilai(lv, s, 'arah', 'kanan'));
+  ns = robot_nilai(lv, s, 'bintang', 1); if (typeof ns !== 'number') ns = 0;
+  function acak(n) { return Math.floor(Math.random() * n); }
+  function belok(rt) { var b = 0; rt.forEach(function (q) { if (q !== 'maju') b++; }); return b; }
+  function pasang(ms, tj, rt) { s.mulai = ms; s.tujuan = tj; s.rintangan = rt; return s; }
+  for (a = 0; a < 400; a++) {
+    lvl = a < 200 ? 2 : (a < 300 ? 1 : 0);
+    c = acak(kol); r = acak(bar);
+    x = acak(kol); y = acak(bar);
+    dm = Math.abs(c - x) + Math.abs(r - y);
+    if (dm < (lvl ? 3 : 1)) continue;
+    nb = lvl ? Math.min(8, 2 + acak(3) + (kol * bar > 20 ? 1 : 0)) : 0;
+    rint = []; kunci = {}; kunci[c + ',' + r] = 1; kunci[x + ',' + y] = 1;
+    for (i = 0; i < nb; i++) {
+      m = acak(kol) + ',' + acak(bar);
+      if (!kunci[m]) { kunci[m] = 1; rint.push([+m.split(',')[0], +m.split(',')[1]]); }
+    }
+    bint = [];
+    for (jb = 0; lvl && jb < ns * 8 && bint.length < ns; jb++) {
+      m = acak(kol) + ',' + acak(bar);
+      if (!kunci[m]) { kunci[m] = 1; bint.push([+m.split(',')[0], +m.split(',')[1]]); }
+    }
+    cfg = robot_cfg(lv, { mulai: [c, r], tujuan: [x, y], rintangan: rint, bintang: bint, kolom: kol, baris: bar, maks: mk, arah: robot_ARAH[ar] });
+    rute = robot_cari(cfg);
+    if (!rute || rute.length > mk) continue;
+    tr = belok(rute);
+    if (lvl === 2 && (tr < 2 || rute.length < 5)) continue;
+    if (lvl === 1 && tr < 1) continue;
+    s.bintang = bint;
+    return pasang([c, r], [x, y], rint);
+  }
+  for (r = 0; r < bar; r++) for (c = 0; c < kol; c++) semua.push([c, r]);
+  for (i = 0; i < semua.length; i++) {
+    n = robot_maju({ kol: kol, bar: bar, rint: {} }, semua[i][0], semua[i][1], ar);
+    if (n) { s.bintang = []; return pasang(semua[i], [n.c, n.r], []); }
+  }
+  return s;
+}
+/* kotak di depan robot, atau null bila di luar kisi atau terhalang batu */
+function robot_maju(cfg, c, r, d) {
+  var nc = c + robot_DC[d], nr = r + robot_DR[d];
+  if (nc < 0 || nr < 0 || nc >= cfg.kol || nr >= cfg.bar || cfg.rint[nc + ',' + nr]) return null;
+  return { c: nc, r: nr };
+}
+/* menjalankan program murid; rekam[0] = keadaan awal, rekam[k + 1] = hasil perintah ke-k */
+function robot_jalan(cfg, prog) {
+  var c = cfg.mulai[0], r = cfg.mulai[1], d = cfg.arah, rekam = [{ c: c, r: r, d: d, i: -1 }], tabrak = -1, k, n, dapat = {}, jml = 0, am;
+  for (k = 0; k < prog.length; k++) {
+    if (prog[k] === 'maju') {
+      n = robot_maju(cfg, c, r, d);
+      if (!n) { tabrak = k; rekam.push({ c: c, r: r, d: d, i: k, tabrak: true }); break; }
+      c = n.c; r = n.r;
+    } else if (prog[k] === 'kiri') d = (d + 3) % 4;
+    else d = (d + 1) % 4;
+    am = null;
+    if (prog[k] === 'maju' && cfg.btIdx[c + ',' + r] != null && !dapat[c + ',' + r]) { dapat[c + ',' + r] = true; jml++; am = c + ',' + r; }
+    rekam.push({ c: c, r: r, d: d, i: k, ambil: am });
+  }
+  return { rekam: rekam, tabrak: tabrak, kurang: cfg.bt.length - jml, sampai: tabrak < 0 && jml === cfg.bt.length && c === cfg.tujuan[0] && r === cfg.tujuan[1] };
+}
+/* jalur terpendek (daftar perintah) dari mulai ke tujuan, atau null bila tidak ada */
+function robot_cari(cfg) {
+  var awal = { c: cfg.mulai[0], r: cfg.mulai[1], d: cfg.arah, m: 0, dari: null, p: '' }, antre = [awal], lihat = {}, k = 0, x, hasil, penuh = (1 << cfg.bt.length) - 1;
+  lihat[awal.c + ',' + awal.r + ',' + awal.d + ',0'] = true;
+  function sebar(p) {
+    var c = x.c, r = x.r, d = x.d, mk = x.m, m, kunci, bi;
+    if (p === 'maju') {
+      m = robot_maju(cfg, c, r, d); if (!m) return; c = m.c; r = m.r;
+      bi = cfg.btIdx[c + ',' + r]; if (bi != null) mk |= (1 << bi);
+    } else d = p === 'kiri' ? (d + 3) % 4 : (d + 1) % 4;
+    kunci = c + ',' + r + ',' + d + ',' + mk;
+    if (lihat[kunci]) return;
+    lihat[kunci] = true;
+    antre.push({ c: c, r: r, d: d, m: mk, dari: x, p: p });
+  }
+  while (k < antre.length) {
+    x = antre[k++];
+    if (x.c === cfg.tujuan[0] && x.r === cfg.tujuan[1] && x.m === penuh) {
+      hasil = [];
+      while (x.dari) { hasil.unshift(x.p); x = x.dari; }
+      return hasil;
+    }
+    ['maju', 'kiri', 'kanan'].forEach(sebar);
+  }
+  return null;
+}
+function robot_nama(p) { return p === 'maju' ? 'Maju' : p === 'kiri' ? 'Belok kiri' : 'Belok kanan'; }
+function robot_ikon(p) {
+  var d = p === 'maju' ? '<path d="M12 20V5M6.5 10.5 12 5l5.5 5.5"/>'
+    : p === 'kiri' ? '<path d="M18 20v-6a5 5 0 0 0-5-5H6"/><path d="M9.5 5.5 6 9l3.5 3.5"/>'
+    : '<path d="M6 20v-6a5 5 0 0 1 5-5h7"/><path d="M14.5 5.5 18 9l-3.5 3.5"/>';
+  return '<svg class="k-ik" viewBox="0 0 24 24" aria-hidden="true">' + d + '</svg>';
+}
+/* Mengembalikan teks galat (kosong bila soal sah). Dipakai periksaData. */
+function robot_galat(lv, s, label) {
+  var bulat = function (x, a, b) { return typeof x === 'number' && isFinite(x) && x === Math.floor(x) && x >= a && x <= b; };
+  var kol, bar, mk, ar, titik, bt, k, p, sdh = {}, kunci, rute, ns, nm = ['petunjuk', 'ulasan', 'petunjukAwal'];
+  if (!s || typeof s !== 'object' || Array.isArray(s)) return label + ' harus berbentuk { tanya:\'...\', mulai:[kolom,baris], tujuan:[kolom,baris] }.';
+  if (typeof s.tanya !== 'string' || !s.tanya.trim()) return label + ': tanya belum diisi. Tulis misi robot, misalnya \'Antar robot ke bendera.\'.';
+  if (s.tanya.length > 150) return label + ': tanya terlalu panjang (' + s.tanya.length + ' huruf). Maksimal 150 huruf, ringkas kalimatnya.';
+  if (s.jawab != null) return label + ': mesin robot tidak memakai jawab. Hapus jawab; MPI menjalankan program murid sendiri dan menilainya.';
+  kol = robot_nilai(lv, s, 'kolom', 5); bar = robot_nilai(lv, s, 'baris', 4);
+  mk = robot_nilai(lv, s, 'maks', 8); ar = robot_nilai(lv, s, 'arah', 'kanan');
+  if (!bulat(kol, 3, 7)) return label + ': kolom harus bilangan bulat 3–7 tanpa tanda petik (sekarang ' + robot_teks(kol) + ').';
+  if (!bulat(bar, 3, 5)) return label + ': baris harus bilangan bulat 3–5 tanpa tanda petik (sekarang ' + robot_teks(bar) + ').';
+  if (!bulat(mk, 3, 10)) return label + ': maks (batas banyak perintah) harus bilangan bulat 3–10 tanpa tanda petik (sekarang ' + robot_teks(mk) + ').';
+  if (robot_ARAH.indexOf(ar) < 0) return label + ': arah harus \'atas\', \'kanan\', \'bawah\', atau \'kiri\' (sekarang \'' + String(ar) + '\').';
+  titik = function (v) { return Array.isArray(v) && v.length === 2 && bulat(v[0], 0, kol - 1) && bulat(v[1], 0, bar - 1); };
+  bt = ' harus [kolom, baris] berupa bilangan bulat tanpa tanda petik, kolom 0–' + (kol - 1) + ' dan baris 0–' + (bar - 1) + ' (hitungan dari 0, baris 0 di atas). Sekarang: ';
+  if (robot_otomatis(s)) {
+    ns = robot_nilai(lv, s, 'bintang', 1);
+    if (!bulat(ns, 0, 3)) return label + ': bintang harus bilangan bulat 0–3 (banyak bintang yang dibuat acak), tanpa tanda petik (sekarang ' + robot_teks(ns) + ').';
+    if (s.rintangan != null) return label + ': rintangan hanya dipakai bila mulai dan tujuan ditulis. Hapus rintangan agar MPI membuat tata letak acak, atau tulis mulai dan tujuan juga.';
+    for (k = 0; k < nm.length; k++) {
+      if (s[nm[k]] != null && (typeof s[nm[k]] !== 'string' || s[nm[k]].length > 140)) return label + ': ' + nm[k] + ' harus teks paling banyak 140 huruf.';
+    }
+    return '';
+  }
+  if (s.mulai == null) return label + ': mulai belum diisi. Tulis mulai dan tujuan berdua, contoh mulai:[0, 3], tujuan:[3, 3]; atau hapus keduanya agar MPI membuat tata letak acak.';
+  if (s.tujuan == null) return label + ': tujuan belum diisi. Tulis mulai dan tujuan berdua, contoh mulai:[0, 3], tujuan:[3, 3]; atau hapus keduanya agar MPI membuat tata letak acak.';
+  if (!titik(s.mulai)) return label + ': mulai' + bt + robot_teks(s.mulai) + '.';
+  if (!titik(s.tujuan)) return label + ': tujuan' + bt + robot_teks(s.tujuan) + '.';
+  if (s.mulai[0] === s.tujuan[0] && s.mulai[1] === s.tujuan[1]) return label + ': mulai dan tujuan jatuh di kotak yang sama. Pindahkan bendera ke kotak lain.';
+  if (s.rintangan != null) {
+    if (!Array.isArray(s.rintangan) || s.rintangan.length > 8) return label + ': rintangan harus daftar paling banyak 8 pasangan [kolom, baris], contoh rintangan:[[2,1],[2,2]].';
+    for (k = 0; k < s.rintangan.length; k++) {
+      p = s.rintangan[k];
+      if (!titik(p)) return label + ': rintangan ke-' + (k + 1) + ' (' + robot_teks(p) + ') harus [kolom, baris] di dalam kisi, kolom 0–' + (kol - 1) + ' dan baris 0–' + (bar - 1) + '.';
+      if (p[0] === s.mulai[0] && p[1] === s.mulai[1]) return label + ': rintangan ke-' + (k + 1) + ' menimpa posisi awal robot. Pindahkan batunya.';
+      if (p[0] === s.tujuan[0] && p[1] === s.tujuan[1]) return label + ': rintangan ke-' + (k + 1) + ' menimpa bendera tujuan. Pindahkan batunya.';
+      kunci = p[0] + ',' + p[1];
+      if (sdh[kunci]) return label + ': rintangan ke-' + (k + 1) + ' kembar dengan rintangan lain. Setiap batu harus di kotak berbeda.';
+      sdh[kunci] = true;
+    }
+  }
+  if (s.bintang != null) {
+    if (!Array.isArray(s.bintang) || s.bintang.length > 3) return label + ': bintang harus daftar paling banyak 3 pasangan [kolom, baris], contoh bintang:[[2,1]].';
+    for (k = 0; k < s.bintang.length; k++) {
+      p = s.bintang[k];
+      if (!titik(p)) return label + ': bintang ke-' + (k + 1) + ' (' + robot_teks(p) + ') harus [kolom, baris] di dalam kisi, kolom 0–' + (kol - 1) + ' dan baris 0–' + (bar - 1) + '.';
+      if (p[0] === s.mulai[0] && p[1] === s.mulai[1]) return label + ': bintang ke-' + (k + 1) + ' menimpa posisi awal robot. Pindahkan bintangnya.';
+      if (p[0] === s.tujuan[0] && p[1] === s.tujuan[1]) return label + ': bintang ke-' + (k + 1) + ' menimpa bendera tujuan. Pindahkan bintangnya.';
+      kunci = p[0] + ',' + p[1];
+      if (sdh[kunci]) return label + ': bintang ke-' + (k + 1) + ' bertumpuk dengan batu atau bintang lain. Setiap benda harus di kotak berbeda.';
+      sdh[kunci] = true;
+    }
+  }
+  for (k = 0; k < nm.length; k++) {
+    if (s[nm[k]] != null && (typeof s[nm[k]] !== 'string' || s[nm[k]].length > 140)) return label + ': ' + nm[k] + ' harus teks paling banyak 140 huruf.';
+  }
+  rute = robot_cari(robot_cfg(lv, s));
+  if (!rute) return label + ': robot tidak bisa mencapai bendera karena jalannya tertutup rintangan. Kurangi atau pindahkan rintangan.';
+  if (rute.length > mk) return label + ': jalur terpendek butuh ' + rute.length + ' perintah, padahal maks hanya ' + mk + '. Naikkan maks menjadi minimal ' + rute.length + ' (batas 10), atau dekatkan bendera.';
+  return '';
+}
+
 MESIN.carikata = function (lv, api) {
   var el = api.el, esc = api.esc, fmt = api.fmt, acak = api.acak;
   var U = 64, G = 4;
@@ -9144,12 +9697,13 @@ if (lv.mesin === 'silang') {
 if (lv.mesin === 'robot') {
   arr('soal', 3);
   maksBank('soal', 8, 'soal');
-  if (lv.jenis != null && lv.jenis !== 'jawab') e.push(n + 'mesin robot hanya punya mode jawab (mode bendera sudah dihapus). Hapus jenis, atau tulis jenis:\'jawab\'; sekarang ' + robot_teks(lv.jenis) + '.');
+  if (lv.jenis != null && lv.jenis !== 'bendera' && lv.jenis !== 'jawab') e.push(n + 'jenis robot harus \'bendera\' (bawaan) atau \'jawab\' (robot menuju kotak pilihan jawaban), sekarang ' + robot_teks(lv.jenis) + '.');
   if (lv.tingkat != null && !robot3_ok(lv.tingkat)) e.push(n + robot3_pesan(lv.tingkat));
+  if (lv.jenis == null && Array.isArray(lv.soal) && lv.soal.some(function (q) { return q && Array.isArray(q.pilihan); })) e.push(n + 'soal robot memakai pilihan (A–D) tetapi level belum menulis jenis:\'jawab\', sehingga robot tampil sebagai mode bendera. Tambahkan jenis:\'jawab\' pada level robot ini.');
   if (typeof lv.buatSoal === 'function') e.push(n + 'mesin robot belum mendukung buatSoal. Tulis daftar soal saja.');
   if (lv.jumlah != null && !(typeof lv.jumlah === 'number' && lv.jumlah === Math.floor(lv.jumlah) && lv.jumlah >= 1 && lv.jumlah <= 8)) e.push(n + 'jumlah harus bilangan bulat 1–8 tanpa tanda petik (sekarang ' + lv.jumlah + ').');
   (lv.soal || []).forEach(function (s, j) {
-    var g = robot_galatJawab(lv, s, 'soal ' + (j + 1));
+    var g = lv.jenis === 'jawab' ? robot_galatJawab(lv, s, 'soal ' + (j + 1)) : robot_galat(lv, s, 'soal ' + (j + 1));
     if (g) e.push(n + g);
   });
 }
@@ -9260,6 +9814,9 @@ if (lv.mesin === 'tandai') {
     versi: VERSI,
     tema: Object.keys(TEMA),
     mesin: Object.keys(MESIN),
+    hookPeta: HOOK_PETA,
+    statusPeta: function () { return PETA_STATUS; },
+    petaTerdaftar: function () { var r = window.KIT_PETA; return (r && typeof r === 'object') ? Object.keys(r).filter(function (x) { return typeof r[x] === 'function'; }) : []; },
     mulai: function (data) {
       D = data || {};
       D.gambar = D.gambar || {};
@@ -9271,6 +9828,7 @@ if (lv.mesin === 'tandai') {
         var e = periksaData(D);
         if (e.length) return tampilGalat(e);
         LEVEL = D.level; BINTANG = []; TERBUKA = 1; REKAM = [];
+        muatPeta();
         muatProgres();
         try { if (new URLSearchParams(location.search).get('tim') === '1') TIM = { skor: [0, 0], giliran: 0 }; } catch (er) {}
         kirimAntrean();
