@@ -47,12 +47,24 @@
  * v1.23: PEMUAT kit-peta.js. Bila DATA memakai peta selain 'jalur'/'kartu', kit memuat kit-peta.js dari folder yang sama
  *        dengan dirinya (alamat diturunkan dari alamat skrip kit, jadi pin versi lewat tag ikut berlaku).
  *        Terlambat (> 1,5 detik) atau gagal → peta jalur lama. MPI dengan peta:'jalur' atau 'kartu' tidak mengunduh apa pun.
+ * v1.24: PENGAIT MESIN LUAR (hookMesin 1) untuk permainan kelompok/papan di berkas kit-kelompok.js. Mesin luar mendaftar lewat
+ *        (window.KIT_MESIN = window.KIT_MESIN || {}).nama = { jalan:function(lv, api, k){}, periksa:function(lv, n, e, k){}, nama:'..' }.
+ *        Bila ada level bermesin yang tidak dikenal, kit memuat kit-kelompok.js lebih dulu (maks 5 detik). Fungsi k.jalankanTantangan
+ *        menjalankan SATU soal dari mesin kit yang sudah ada (kuis, tembak, rangkai, dst.) dan melaporkan benar atau salah; k.periksaLevel
+ *        memakai pemeriksa data yang sama. Mesin dan peta lama tidak diubah.
+ * v1.25: MAIN BERSAMA (hookKelompok 1). Tombol "Main Bersama" di layar judul (bila soal MPI cukup, minimal 6) memuat kit-kelompok.js lalu memanggil
+ *        (window.KIT_KELOMPOK).mulai(k). Kit mengumpulkan soal dari SEMUA level (pilihan, jawab kata, mesin khusus) dan k.tantang(cb) menjalankan
+ *        satu soal acak, didandani ke mesin lain yang cocok (kuis, tembak, balon, pancing, tangkap, runner; rangkai, huruf, rakit) bila lolos aturan,
+ *        jika tidak memakai mesin aslinya. Tanpa level, bintang, atau progres. Data AI tidak berubah.
+ * v1.26: BINGKAI HUD (opsional) untuk permainan kelompok: k.bingkai(judul, { gaya:'hud' }). Adegan penuh (api.area setinggi bingkai), tombol menu
+ *        bulat + tombol "?" melayang, menu jeda, tombol aksi melayang di bawah tengah, maskot + balon sementara di kiri bawah, judul besar 2 detik,
+ *        api.zonaAman(), api.jeda()/api.lanjutkan hook api.saatJeda(bool), api.petunjuk(tutup) dan api.pengaturan(tutup). Tanpa opsi, bingkai lama tidak berubah.
  * v1.5: progres tersimpan, tombol dengarkan, soal salah diulang, bank soal (jumlah),
  *       mode tim, hasil murid + papan skor (bila diputar dari server KKG).
  */
 (function () {
   'use strict';
-  var VERSI = '1.23.0';
+  var VERSI = '1.26.2';
   /* Panggung dirancang untuk HP mendatar: tinggi tetap 540, lebar mengikuti layar (960–1200). */
   var H = 540, W_MIN = 960, W_MAX = 1200, W = W_MIN;
 
@@ -91,6 +103,8 @@
     hatiPatah: '<path d="M12 20s-7-4.4-9-9a4.8 4.8 0 0 1 9-3 4.8 4.8 0 0 1 9 3c-2 4.6-9 9-9 9z"/><path d="m12 8-2 3.5 3 2-1 3.5"/>',
     lampu: '<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.3 1.1 2.2v.5h5V16c0-.9.4-1.6 1.1-2.2A6 6 0 0 0 12 3z"/>',
     lup: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/>',
+    menu: '<path d="M4 7h16M4 12h16M4 17h16"/>',
+    gir: '<circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/>',
     tanya: '<circle cx="12" cy="12" r="9"/><path d="M9.6 9.6a2.5 2.5 0 1 1 3.4 2.3c-.6.3-1 .8-1 1.5v.6"/><circle cx="12" cy="17" r="1.1" fill="currentColor"/>',
     buku: '<path d="M3 5.5c3-1.2 6-1.2 9 .8 3-2 6-2 9-.8V19c-3-1.2-6-1.2-9 .8-3-2-6-2-9-.8zM12 6.3v13.5"/>',
     halaman: '<path d="M6 3h9l4 4v14H6zM14.5 3v4.5H19M9 12h7M9 16h7"/>',
@@ -247,6 +261,30 @@ IK.huruf = '<rect x="2.6" y="6.5" width="8.6" height="11" rx="2.2"/><rect x="12.
     '.k-balon.ok{border-color:#2FB560}.k-balon.ok:before{border-right-color:#2FB560}',
     '.k-balon.no{border-color:#E5484D}.k-balon.no:before{border-right-color:#E5484D}',
     '.k-aksi{display:flex;gap:10px}',
+    /* ── bingkai HUD (k.bingkai(judul, { gaya:'hud' })) ── */
+    '.k-ruang.k-ruang-hud{top:0;bottom:0}',
+    '.k-hud{--k-tap:56px}',
+    '.k-hud .k-hud-tb{position:absolute;top:12px;width:var(--k-tap);height:var(--k-tap);min-height:var(--k-tap);padding:0;border-radius:50%;z-index:60}',
+    '.k-hud .k-hud-tb.kiri{left:12px}.k-hud .k-hud-tb.kanan{right:12px}',
+    '.k-hud .k-hud-tb .k-ik{width:60%;height:60%}',
+    '.k-hud-judul{position:absolute;left:50%;top:18px;transform:translateX(-50%);max-width:calc(100% - 300px);z-index:50;pointer-events:none;text-align:center;',
+    '  font-family:Fredoka,"Trebuchet MS",sans-serif;font-weight:700;font-size:46px;line-height:1.1;color:var(--aksen);text-shadow:3px 3px 0 var(--lip),6px 7px 12px rgba(0,0,0,.45);transition:opacity .5s}',
+    '.k-hud-judul.pudar{opacity:0}',
+    '.k-hud-aksi{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);display:flex;gap:12px;z-index:45;pointer-events:none;max-width:calc(100% - 140px);justify-content:center}',
+    '.k-hud-aksi .k-btn{pointer-events:auto;min-height:var(--k-tap);min-width:var(--k-tap);font-size:24px;padding:8px 26px}',
+    '.k-hud-bicara{position:absolute;left:12px;bottom:12px;display:flex;align-items:flex-end;gap:14px;z-index:44;opacity:0;pointer-events:none;transition:opacity .4s}',
+    '.k-hud.ada-aksi .k-hud-bicara{bottom:calc(var(--k-tap) + 28px)}',
+    '.k-hud-bicara.tampil{opacity:1;pointer-events:auto}',
+    '.k-hud-mas{flex:none;width:64px;height:84px;display:flex;align-items:flex-end;justify-content:center}',
+    '.k-hud-mas img,.k-hud-mas .k-fb{max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 4px 6px rgba(0,0,0,.4))}',
+    '.k-hud-balon{flex:none;display:block;max-width:320px;min-height:48px;max-height:120px;font-size:17px;line-height:1.25;padding:8px 14px;overflow:hidden}',
+    '.k-tirai.k-hud-tirai{z-index:80}',
+    '.k-hud.ada-aksi .k-ov-hud{bottom:calc(var(--k-tap) + 28px)!important}',
+    '.k-hud-menu{width:420px;padding:22px 26px 22px;overflow:auto}',
+    '.k-hud-menu h2{font-size:34px;margin:0 0 14px;overflow:hidden;text-overflow:ellipsis}',
+    '.k-hud-daftar{display:flex;flex-direction:column;gap:12px}',
+    '.k-hud-daftar .k-btn{width:100%;min-height:var(--k-tap);justify-content:center}',
+    '.k-hud.k-jeda .k-ruang *{animation-play-state:paused!important}',
     '.lompat{animation:kLompat .55s ease}@keyframes kLompat{30%{transform:translateY(-22px)}60%{transform:translateY(0)}75%{transform:translateY(-6px)}}',
     '.goyang{animation:kGoyang .45s}@keyframes kGoyang{20%{transform:translateX(-8px) rotate(-3deg)}40%{transform:translateX(8px) rotate(3deg)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}',
     '.melayang{animation:kMelayang 3.2s ease-in-out infinite}@keyframes kMelayang{0%,100%{transform:translateY(0) rotate(-1.5deg)}50%{transform:translateY(-10px) rotate(1.5deg)}}',
@@ -1370,6 +1408,7 @@ CSS += '\n' + [
 
   /* ════════════════════════════ ALAT ════════════════════════════ */
   var D = null, ROOT, PG, SKALA = 1, LEVEL = [], BINTANG = [], TERBUKA = 1, MODE_GURU = false;
+  var hudS = null, hudBersih = null, kelAktif = null;   /* bingkai HUD: keadaan jeda, pembersih, tantangan yang sedang berjalan */
   /* Variasi tampilan dipilih otomatis dari judul MPI, jadi tiap MPI terlihat berbeda
      tanpa ditulis di DATA. Bisa dipaksa lewat DATA.gaya = { judul:0-2, pola:0-3, sudut:0-3 }. */
   var VARIAN = { judul: 0, pola: 0, sudut: 0 };
@@ -1557,6 +1596,7 @@ CSS += '\n' + [
   /* ganti layar */
   function layar(isi) {
     Bacakan.diam();
+    if (hudBersih) { var hb = hudBersih; hudBersih = null; try { hb(); } catch (eh) {} }
     PG.innerHTML = '';
     var l = el('div', 'k-lay');
     l.appendChild(isi);
@@ -1598,6 +1638,476 @@ CSS += '\n' + [
   }
 
   /* ════════════════════════════ LAYAR UTAMA ════════════════════════════ */
+  /* ════════════════════════════ MAIN BERSAMA (kit-kelompok.js) ════════════════════════════
+     Pendaftaran:  (window.KIT_KELOMPOK = window.KIT_KELOMPOK || {}).mulai = function (k) { ... };
+     k.layar(w) gambar layar penuh; k.bingkai() membuat bingkai main (bilah atas, ruang, maskot, tombol) dan mengembalikan api;
+     k.tantang(cb, opsi) menjalankan SATU soal acak di bingkai itu; k.keluar() kembali ke layar judul. */
+  var HOOK_KELOMPOK = 1, KEL_MIN_SOAL = 6;
+  var KEL_SASARAN = ['tembak', 'balon', 'pancing', 'tangkap'];
+  var KEL_KHUSUS = ['penyunting', 'sorot', 'tandai', 'isian', 'garis', 'pecahan', 'jam', 'uang', 'timbangan', 'petak', 'sudut', 'grafik', 'carikata', 'jejak'];
+  var KEL_BOBOT = { kuis: 3, tembak: 2, balon: 2, pancing: 2, tangkap: 1, runner: 1, rangkai: 2, huruf: 2, rakit: 2, asal: 2 };
+  var kelPool = null, kelUrut = [], kelPtr = 0, kelTerakhir = '', kelApi = null, KEL_STATUS = 'tidak';
+  function kelTeks(p) { return typeof p === 'string' ? p : (p && p.teks != null ? String(p.teks) : ''); }
+  function kelSalin(o) { var r = {}; Object.keys(o).forEach(function (kk) { r[kk] = o[kk]; }); return r; }
+  function kelBersih(o) { var r = {}; Object.keys(o).forEach(function (kk) { if (o[kk] !== undefined && o[kk] !== null && o[kk] !== '') r[kk] = o[kk]; }); return r; }
+  function kelPilihan(x) {
+    if (!x || typeof x.tanya !== 'string' || !x.tanya || !Array.isArray(x.pilihan) || typeof x.benar !== 'number') return null;
+    var p = x.pilihan.map(kelTeks);
+    if (p.length < 2 || p.length > 4 || x.benar < 0 || x.benar >= p.length || x.benar !== Math.floor(x.benar)) return null;
+    var lihat = {};
+    for (var i = 0; i < p.length; i++) { var t = p[i].trim().toLowerCase(); if (!t || lihat[t]) return null; lihat[t] = 1; }
+    return { tanya: x.tanya, pilihan: p, benar: x.benar, petunjuk: x.petunjuk, ulasan: x.ulasan || x.penjelasan };
+  }
+  function kelAsalKuis(it) {
+    return { blok: { mesin: 'kuis', jenis: 'tunggal' }, soal: kelBersih({ tanya: it.tanya, pilihan: it.pilihan, benar: it.benar, petunjuk: it.petunjuk, ulasan: it.ulasan }) };
+  }
+  /* kumpulkan soal dari semua level; tiap butir: { kel:'pilihan'|'kata'|'khusus', polos, data, asal:{blok,soal} } */
+  function kumpulkanSoal() {
+    var hasil = [], lihat = {};
+    function tambah(it, tanya) {
+      var kunci = it.kel + '|' + String(tanya || '').trim().toLowerCase();
+      if (!tanya || lihat[kunci]) return;
+      lihat[kunci] = 1; hasil.push(it);
+    }
+    (D.level || []).forEach(function (lv) {
+      if (!lv || typeof lv.mesin !== 'string') return;
+      var m = lv.mesin, dasar = kelSalin(lv);
+      delete dasar.soal; delete dasar.buatSoal; delete dasar.jumlah; delete dasar.adegan; delete dasar.halaman;
+      if (m === 'bacaan' && Array.isArray(lv.halaman)) {
+        lv.halaman.forEach(function (h) {
+          var a = h && h.aktivitas;
+          if (a && a.jenis === 'pilih') { var it = kelPilihan(a); if (it) tambah({ kel: 'pilihan', polos: true, data: it, asal: kelAsalKuis(it) }, it.tanya); }
+        });
+        return;
+      }
+      if (m === 'cerita' && Array.isArray(lv.adegan)) {
+        lv.adegan.forEach(function (a) {
+          if (!a || !Array.isArray(a.pilihan) || typeof a.tanya !== 'string') return;
+          var idx = -1, n = 0;
+          a.pilihan.forEach(function (q, i) { if (q && q.benar) { idx = i; n++; } });
+          if (n !== 1) return;
+          var it = kelPilihan({ tanya: a.tanya, pilihan: a.pilihan, benar: idx });
+          if (it) tambah({ kel: 'pilihan', polos: true, data: it, asal: kelAsalKuis(it) }, it.tanya);
+        });
+        return;
+      }
+      if (!Array.isArray(lv.soal)) return;
+      lv.soal.forEach(function (x) {
+        if (!x || typeof x !== 'object') return;
+        if (m === 'kuis' || KEL_SASARAN.indexOf(m) >= 0 || m === 'runner' || m === 'robot') {
+          var jenisKuis = x.jenis || lv.jenis || 'tunggal';
+          if (m === 'kuis' && jenisKuis !== 'tunggal') { tambah({ kel: 'khusus', polos: false, asal: { blok: dasar, soal: x } }, x.tanya); return; }
+          var it2 = kelPilihan(x);
+          if (!it2) return;
+          var polos = m !== 'robot' && !x.bacaan && !x.gambar && x.acak !== false && x.pilihan.every(function (q) { return typeof q === 'string'; });
+          tambah({ kel: 'pilihan', polos: polos, data: it2, asal: { blok: dasar, soal: x } }, it2.tanya);
+        } else if (m === 'rangkai' || m === 'huruf' || m === 'rakit') {
+          var jk = m === 'huruf' ? 'huruf' : (x.jenis || lv.jenis || 'huruf');
+          var ok = jk === 'huruf' && typeof x.jawab === 'string' && /^[A-Za-z]+$/.test(x.jawab) && !x.suku && !x.gambar;
+          tambah({ kel: 'kata', polos: ok, data: ok ? { tanya: x.tanya, jawab: x.jawab.toLowerCase(), petunjuk: x.petunjuk, ulasan: x.ulasan } : null, asal: { blok: dasar, soal: x } }, x.tanya);
+        } else if (KEL_KHUSUS.indexOf(m) >= 0) {
+          tambah({ kel: 'khusus', polos: false, asal: { blok: dasar, soal: x } }, x.tanya || x.teks || JSON.stringify(x).slice(0, 60));
+        }
+      });
+    });
+    return hasil;
+  }
+  function kelKandidat(it) {
+    var c = [];
+    if (!it.polos) return c;
+    if (it.kel === 'pilihan') {
+      var d = it.data, p = d.pilihan, maks = 0;
+      p.forEach(function (x) { maks = Math.max(maks, x.length); });
+      if (d.tanya.length <= 200 && maks <= 60) c.push('kuis');
+      if (p.length >= 3 && p.length <= 4 && maks <= 14 && d.tanya.length <= 150) KEL_SASARAN.forEach(function (mm) { c.push(mm); });
+      if (p.length === 3 && maks <= 14 && d.tanya.split(/\s+/).length <= 12) c.push('runner');
+    } else if (it.kel === 'kata') {
+      var j = it.data.jawab, uniq = {};
+      j.split('').forEach(function (ch) { uniq[ch] = 1; });
+      if (j.length >= 2 && j.length <= 10 && Object.keys(uniq).length >= 2) c.push('rangkai');
+      if (j.length >= 3 && j.length <= 12) c.push('huruf');
+      if (j.length >= 3 && j.length <= 9) c.push('rakit');
+    }
+    return c;
+  }
+  /* pilih mesin untuk satu butir soal dan susun blok + soal yang siap dijalankan */
+  function susunTantangan(it, hindari) {
+    var cand = kelKandidat(it);
+    var opsi = cand.slice();
+    if (!cand.length || it.asal) opsi.push('asal');
+    if (opsi.length > 1 && hindari) { var lain = opsi.filter(function (x) { return x !== hindari; }); if (lain.length) opsi = lain; }
+    var jml = 0; opsi.forEach(function (x) { jml += KEL_BOBOT[x] || 1; });
+    var r = Math.random() * jml, pilih = opsi[0];
+    for (var i = 0; i < opsi.length; i++) { r -= KEL_BOBOT[opsi[i]] || 1; if (r <= 0) { pilih = opsi[i]; break; } }
+    if (pilih === 'asal') return { blok: it.asal.blok, soal: it.asal.soal, mesin: it.asal.blok.mesin, asal: true };
+    var d = it.data, so, bl;
+    if (it.kel === 'pilihan') {
+      so = kelBersih({ tanya: d.tanya, pilihan: d.pilihan, benar: d.benar, petunjuk: d.petunjuk, ulasan: d.ulasan });
+      if (pilih === 'runner') { so = kelBersih({ tanya: d.tanya, pilihan: d.pilihan, benar: d.benar, petunjuk: d.petunjuk, penjelasan: d.ulasan }); bl = { mesin: 'runner', judul: 'Soal', kecepatan: 0.5, naik: 0, nyawa: 3 }; }
+      else if (pilih === 'kuis') bl = { mesin: 'kuis', judul: 'Soal', jenis: 'tunggal' };
+      else bl = { mesin: pilih, judul: 'Soal', nyawa: 3 };
+    } else {
+      so = kelBersih({ tanya: d.tanya, jawab: pilih === 'huruf' ? d.jawab.toUpperCase() : d.jawab, petunjuk: d.petunjuk, ulasan: d.ulasan });
+      bl = pilih === 'huruf' ? { mesin: 'huruf', judul: 'Soal' } : { mesin: pilih, judul: 'Soal', jenis: 'huruf' };
+    }
+    return { blok: bl, soal: so, mesin: pilih, asal: false };
+  }
+  function kelBerikut() {
+    if (!kelPool) kelPool = kumpulkanSoal();
+    if (!kelPool.length) return null;
+    if (kelPtr >= kelUrut.length) {
+      kelUrut = kelPool.map(function (x, i) { return i; });
+      for (var i = kelUrut.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = kelUrut[i]; kelUrut[i] = kelUrut[j]; kelUrut[j] = t; }
+      kelPtr = 0;
+    }
+    return kelPool[kelUrut[kelPtr++]];
+  }
+  function kelompokTersedia() { return kumpulkanSoal().length >= KEL_MIN_SOAL; }
+  /* bingkai main: bilah atas (kembali ke judul), ruang, maskot + balon, tombol */
+  function bingkaiKelompok(judul, opsi) {
+    if (opsi && opsi.gaya === 'hud') return bingkaiHud(judul);
+    var w = el('div');
+    latarLayar(w, D.gambar && D.gambar.latar ? 'latar' : '');
+    var atas = el('div', 'k-atas');
+    atas.appendChild(tombol(ik('rumah'), 'k-ikon sek', function () { if (api.berhenti) api.berhenti(); layarJudul(); }));
+    atas.appendChild(el('div', 't', fmt(judul || 'Main Bersama')));
+    atas.appendChild(el('div', null)).style.flex = '1';
+    w.appendChild(atas);
+    var ruang = el('div', 'k-ruang'); w.appendChild(ruang);
+    var bawah = el('div', 'k-bawah');
+    var mas = el('div', 'k-mas');
+    if (D.maskot && D.maskot.gambar) mas.appendChild(gambar(D.maskot.gambar, D.maskot.nama || 'Maskot'));
+    else mas.appendChild(el('div', 'k-fb', ik('wajah'))).style.cssText = 'width:76px;height:76px;border-radius:50%;font-size:40px';
+    bawah.appendChild(mas);
+    var balon = el('div', 'k-balon'); bawah.appendChild(balon);
+    balon.addEventListener('click', function () { Bacakan.baca(balon.textContent); });
+    var aksi = el('div', 'k-aksi'); bawah.appendChild(aksi);
+    w.appendChild(bawah);
+    layar(w);
+    var api = {
+      lv: { mesin: 'kelompok' }, area: ruang, acak: acak, el: el, fmt: fmt, esc: esc, gambar: gambar, isiKartu: isiKartu, suara: Suara,
+      skala: function () { return SKALA; },
+      bicara: function (t, suasana) {
+        balon.className = 'k-balon' + (suasana === 'ok' ? ' ok' : suasana === 'no' ? ' no' : '');
+        balon.innerHTML = fmt(t);
+        mas.classList.remove('lompat', 'goyang'); void mas.offsetWidth;
+        if (suasana === 'ok') mas.classList.add('lompat');
+        if (suasana === 'no') mas.classList.add('goyang');
+        if (Bacakan.otomatis()) Bacakan.baca(balon.textContent);
+      },
+      benar: function (t) { Suara.benar(); getar(25); api.bicara(t || acak(PUJI)[0], 'ok'); },
+      salah: function (t) { Suara.salah(); getar([70, 50, 70]); api.bicara(t || 'Belum tepat.', 'no'); },
+      giliran: function () {}, progres: function () {}, nyawa: function () {}, skor: function () {}, keliru: function () { return 0; },
+      aksi: function (teks, fn, kelas) { var b = tombol(teks, kelas || '', fn); aksi.appendChild(b); return b; },
+      bersihAksi: function () { aksi.innerHTML = ''; },
+      selesai: function () {},
+      keluar: function () { if (api.berhenti) api.berhenti(); layarJudul(); },
+      berhenti: null
+    };
+    kelApi = api;
+    return api;
+  }
+  /* ════════ BINGKAI HUD ════════
+     k.bingkai(judul, { gaya:'hud' }): adegan penuh. Tidak ada bilah atas/bawah; kontrol berupa tombol melayang.
+     Kontrak tambahan untuk game (semuanya opsional):
+       api.petunjuk = function (tutup) {...}     membuka lembar "Cara main". Tombol "?" tampil bila diisi.
+       api.pengaturan = function (tutup) {...}   membuka pengaturan. Pilihan "Ubah pengaturan" di menu tampil bila diisi.
+         Bila fungsi menerima satu parameter (tutup), game tetap dijeda sampai tutup() dipanggil (panggil saat lembar ditutup).
+         Bila tanpa parameter, game tidak dijeda.
+       api.saatJeda = function (jeda) {...}      dipanggil true saat jeda mulai dan false saat selesai: hentikan/lanjutkan timer milik game.
+       api.jeda() mengembalikan fungsi pelepas; api.lanjutkan() = pelepas terakhir (untuk game yang ingin menjeda sendiri).
+       api.zonaAman() mengembalikan { kiriAtas, kananAtas, bawahTengah, kiriBawah }, masing-masing { x, y, w, h } dalam piksel area. */
+  function bingkaiHud(judul) {
+    var S = { aktif: false, tahan: 0, geser: 0, mulai: 0, antre: [] };
+    var w = el('div', 'k-hud');
+    latarLayar(w, D.gambar && D.gambar.latar ? 'latar' : '');
+    var ruang = el('div', 'k-ruang k-ruang-hud'); w.appendChild(ruang);
+    var teksJudul = fmt(judul || 'Main Bersama');
+    function kurangGerak() { try { return window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) { return false; } }
+    function catat(e) { try { console.error('KIT: HUD', e); } catch (e2) {} }
+    var tap = 56;
+    function segarTap() {
+      tap = Math.min(84, Math.max(56, Math.ceil(56 / (SKALA || 1))));   /* sasaran ketuk tidak kurang dari 56px layar nyata */
+      w.style.setProperty('--k-tap', tap + 'px');
+    }
+    segarTap();
+
+    /* judul besar, sekitar 2 detik */
+    var jd = el('div', 'k-hud-judul', teksJudul); jd.setAttribute('aria-hidden', 'true'); w.appendChild(jd);
+    var tJudul1 = setTimeout(function () { jd.classList.add('pudar'); }, 2000);
+    var tJudul2 = setTimeout(function () { if (jd.parentNode) jd.parentNode.removeChild(jd); }, 2600);
+
+    /* tombol melayang */
+    var bMenu = tombol(ik('menu'), 'sek k-ikon k-hud-tb kiri', function () { bukaMenu(); });
+    bMenu.setAttribute('aria-label', 'Menu'); bMenu.setAttribute('aria-haspopup', 'dialog');
+    var bTanya = tombol(ik('tanya'), 'sek k-ikon k-hud-tb kanan', function () { jalankanLembar(petunjukFn); });
+    bTanya.setAttribute('aria-label', 'Cara main'); bTanya.style.display = 'none';
+    w.appendChild(bMenu); w.appendChild(bTanya);
+
+    /* aksi utama */
+    var aksiEl = el('div', 'k-hud-aksi'); w.appendChild(aksiEl);
+    function segarAksi() {
+      var ada = aksiEl.childNodes.length > 0, sebelum = w.classList.contains('ada-aksi');
+      w.classList.toggle('ada-aksi', ada);
+      /* lapisan tantangan berubah tinggi: beri tahu mesin yang mengukur ulang saat 'resize' */
+      if (ada !== sebelum && kelAktif) { try { window.dispatchEvent(new Event('resize')); } catch (e) {} }
+    }
+
+    /* maskot + balon sementara */
+    var wb = el('div', 'k-hud-bicara'); wb.setAttribute('aria-live', 'polite');
+    var mas = el('div', 'k-hud-mas');
+    if (D.maskot && D.maskot.gambar) mas.appendChild(gambar(D.maskot.gambar, D.maskot.nama || 'Maskot'));
+    else mas.appendChild(el('div', 'k-fb', ik('wajah'))).style.cssText = 'width:56px;height:56px;border-radius:50%;font-size:30px';
+    var balon = el('div', 'k-balon k-hud-balon');
+    wb.appendChild(mas); wb.appendChild(balon); w.appendChild(wb);
+    balon.addEventListener('click', function () { Bacakan.baca(balon.textContent); });
+    var tBalon = 0;
+    function sembunyiBalon() { clearTimeout(tBalon); tBalon = 0; wb.classList.remove('tampil'); }
+
+    /* jeda: pasang gantian requestAnimationFrame supaya gerak mesin bawaan berhenti dan waktunya tidak melompat */
+    var rafAsli = null, cafAsli = null, peta = {}, urutId = 1000000000, rafTerpasang = false;
+    function pasangRaf() {
+      rafAsli = window.requestAnimationFrame; cafAsli = window.cancelAnimationFrame;
+      if (typeof rafAsli !== 'function' || typeof cafAsli !== 'function') return;
+      rafTerpasang = true;
+      window.requestAnimationFrame = function (fn) {
+        var id = ++urutId, rec = { nyata: 0, tunggu: false };
+        rec.jalan = function (t) {
+          rec.nyata = 0;
+          if (S.aktif) { rec.tunggu = true; return; }
+          delete peta[id];
+          fn(t - S.geser);
+        };
+        peta[id] = rec; rec.nyata = rafAsli.call(window, rec.jalan);
+        return id;
+      };
+      window.cancelAnimationFrame = function (id) {
+        var rec = peta[id];
+        if (rec) { if (rec.nyata) cafAsli.call(window, rec.nyata); delete peta[id]; }
+        else cafAsli.call(window, id);
+      };
+    }
+    function lanjutRaf() {
+      Object.keys(peta).forEach(function (id) {
+        var rec = peta[id];
+        if (rec && rec.tunggu) { rec.tunggu = false; rec.nyata = rafAsli.call(window, rec.jalan); }
+      });
+    }
+    function lepasRaf() {
+      if (rafTerpasang) { window.requestAnimationFrame = rafAsli; window.cancelAnimationFrame = cafAsli; rafTerpasang = false; }
+      peta = {};
+    }
+    function jedaMasuk() {
+      S.tahan++;
+      if (S.tahan > 1) return;
+      S.aktif = true; S.mulai = (window.performance && performance.now) ? performance.now() : Date.now();
+      w.classList.add('k-jeda');
+      Bacakan.diam(); sembunyiBalon();
+      try { if (typeof api.saatJeda === 'function') api.saatJeda(true); } catch (e) { catat(e); }
+    }
+    function jedaKeluar() {
+      if (S.tahan <= 0) return;
+      S.tahan--;
+      if (S.tahan > 0) return;
+      S.geser += ((window.performance && performance.now) ? performance.now() : Date.now()) - S.mulai;
+      S.aktif = false;
+      w.classList.remove('k-jeda');
+      try { if (typeof api.saatJeda === 'function') api.saatJeda(false); } catch (e) { catat(e); }
+      lanjutRaf();
+      var a = S.antre; S.antre = [];
+      a.forEach(function (f) { try { f(); } catch (e) { catat(e); } });
+    }
+    var pelepasGame = [];
+    function ambilJeda() {
+      var lepas = false; jedaMasuk();
+      return function () { if (lepas) return; lepas = true; jedaKeluar(); };
+    }
+
+    /* lembar milik game (cara main, pengaturan) */
+    var petunjukFn = null, pengaturanFn = null;
+    function segarTombol() { bTanya.style.display = typeof petunjukFn === 'function' ? '' : 'none'; }
+    function jalankanLembar(fn) {
+      if (typeof fn !== 'function') return;
+      var lepas = fn.length >= 1 ? ambilJeda() : null;
+      try { fn(lepas || function () {}); } catch (e) { if (lepas) lepas(); catat(e); }
+    }
+
+    /* menu jeda */
+    var tirai = null, menuLepas = null;
+    function tekan(e) {
+      if (!tirai) return;
+      if (e.type === 'keydown' && (e.key === 'Escape' || e.key === 'Esc')) { e.preventDefault(); e.stopImmediatePropagation(); tutupMenu(); return; }
+      e.stopImmediatePropagation();   /* tombol papan ketik tidak boleh sampai ke mesin saat menu terbuka; aksi bawaan tombol tetap jalan */
+    }
+    function bukaMenu() {
+      if (tirai) return;
+      menuLepas = ambilJeda();
+      tirai = el('div', 'k-tirai k-hud-tirai');
+      tirai.setAttribute('role', 'dialog'); tirai.setAttribute('aria-modal', 'true'); tirai.setAttribute('aria-label', 'Menu jeda');
+      var p = el('div', 'k-kertas k-pop k-hud-menu');
+      p.appendChild(el('h2', null, teksJudul));
+      var daftar = el('div', 'k-hud-daftar');
+      var bLanjut = tombol(ik('lanjut') + ' Lanjut', 'besar', function () { tutupMenu(); });
+      daftar.appendChild(bLanjut);
+      if (typeof petunjukFn === 'function') daftar.appendChild(tombol(ik('tanya') + ' Cara main', 'sek', function () { tutupMenu(function () { jalankanLembar(petunjukFn); }); }));
+      if (typeof pengaturanFn === 'function') daftar.appendChild(tombol(ik('gir') + ' Ubah pengaturan', 'sek', function () { tutupMenu(function () { jalankanLembar(pengaturanFn); }); }));
+      daftar.appendChild(tombol(ik('rumah') + ' Ke layar judul', 'sek', function () { api.keluar(); }));
+      p.appendChild(daftar); tirai.appendChild(p);
+      tirai.addEventListener('click', function (e) { if (e.target === tirai) tutupMenu(); });
+      w.appendChild(tirai);
+      ['keydown', 'keyup', 'keypress'].forEach(function (n) { window.addEventListener(n, tekan, true); });
+      try { bLanjut.focus(); } catch (e) {}
+    }
+    /* tutupMenu(lanjutKe): lanjutKe berjalan sebelum jeda dilepas, jadi lembar game bisa menjeda lagi tanpa sela */
+    function tutupMenu(lanjutKe) {
+      if (!tirai) return;
+      var lepas = menuLepas; menuLepas = null;
+      if (tirai.parentNode) tirai.parentNode.removeChild(tirai);
+      tirai = null;
+      ['keydown', 'keyup', 'keypress'].forEach(function (n) { window.removeEventListener(n, tekan, true); });
+      try { if (typeof lanjutKe === 'function') lanjutKe(); } catch (e) { catat(e); }
+      if (lepas) lepas();
+      try { bMenu.focus(); } catch (e) {}
+    }
+
+    layar(w);
+    kelAktif = null; hudS = S;
+    pasangRaf();
+    window.addEventListener('resize', segarTap);
+    hudBersih = function () {
+      clearTimeout(tBalon); clearTimeout(tJudul1); clearTimeout(tJudul2);
+      window.removeEventListener('resize', segarTap);
+      ['keydown', 'keyup', 'keypress'].forEach(function (n) { window.removeEventListener(n, tekan, true); });
+      S.aktif = false; S.tahan = 0; S.antre = [];
+      lepasRaf();
+      if (hudS === S) hudS = null;
+      kelAktif = null;
+    };
+
+    function kotak(x, y, lebar, tinggi) { return { x: Math.round(x), y: Math.round(y), w: Math.round(lebar), h: Math.round(tinggi) }; }
+    var api = {
+      hud: true,
+      lv: { mesin: 'kelompok' }, area: ruang, acak: acak, el: el, fmt: fmt, esc: esc, gambar: gambar, isiKartu: isiKartu, suara: Suara,
+      skala: function () { return SKALA; },   /* faktor skala layar (px nyata per px bingkai); area kini setinggi bingkai (H) dan selebar W */
+      bicara: function (t, suasana) {
+        clearTimeout(tBalon);
+        balon.className = 'k-balon k-hud-balon' + (suasana === 'ok' ? ' ok' : suasana === 'no' ? ' no' : '');
+        balon.innerHTML = fmt(t);
+        wb.classList.add('tampil');
+        if (!kurangGerak()) {
+          mas.classList.remove('lompat', 'goyang'); void mas.offsetWidth;
+          if (suasana === 'ok') mas.classList.add('lompat');
+          if (suasana === 'no') mas.classList.add('goyang');
+        }
+        if (Bacakan.otomatis()) Bacakan.baca(balon.textContent);
+        tBalon = setTimeout(function () { tBalon = 0; wb.classList.remove('tampil'); }, 3500);
+      },
+      benar: function (t) { Suara.benar(); getar(25); api.bicara(t || acak(PUJI)[0], 'ok'); },
+      salah: function (t) { Suara.salah(); getar([70, 50, 70]); api.bicara(t || 'Belum tepat.', 'no'); },
+      giliran: function () {}, progres: function () {}, nyawa: function () {}, skor: function () {}, keliru: function () { return 0; },
+      aksi: function (teks, fn, kelas) { var b = tombol(teks, kelas || '', fn); aksiEl.appendChild(b); segarAksi(); return b; },
+      bersihAksi: function () { aksiEl.innerHTML = ''; segarAksi(); },
+      selesai: function () {},
+      jeda: ambilJeda,
+      lanjutkan: function () { var f = pelepasGame.pop(); if (f) f(); },
+      saatJeda: null,
+      zonaAman: function () {
+        var sisi = tap + 24, aw = aksiEl.offsetWidth || 0, lb = Math.max(360, aw + 24);
+        return {
+          kiriAtas: kotak(0, 0, sisi, sisi),
+          kananAtas: typeof petunjukFn === 'function' ? kotak(W - sisi, 0, sisi, sisi) : kotak(W, 0, 0, 0),
+          bawahTengah: kotak((W - lb) / 2, H - (tap + 28), lb, tap + 28),
+          kiriBawah: kotak(0, H - (tap + 28 + 120), 420, tap + 28 + 120)   /* balon naik di atas aksi bila ada aksi */
+        };
+      },
+      keluar: function () {
+        if (kelAktif) { try { kelAktif.batal(); } catch (e) { catat(e); } kelAktif = null; }
+        try { if (typeof api.berhenti === 'function') api.berhenti(); } catch (e) { catat(e); }
+        layarJudul();   /* layar() membersihkan HUD: timer, pendengar papan ketik, jeda */
+      },
+      berhenti: null
+    };
+    Object.defineProperty(api, 'petunjuk', { enumerable: true, configurable: true, get: function () { return petunjukFn; }, set: function (f) { petunjukFn = f; segarTombol(); } });
+    Object.defineProperty(api, 'pengaturan', { enumerable: true, configurable: true, get: function () { return pengaturanFn; }, set: function (f) { pengaturanFn = f; } });
+    var ambilAsli = api.jeda;
+    api.jeda = function () { var f = ambilAsli(); pelepasGame.push(f); return f; };
+    kelApi = api;
+    return api;
+  }
+  function kitKelompok() {
+    function tantang(cb, opsi) {
+      var it = kelBerikut();
+      if (!it || !kelApi) { setTimeout(function () { cb(null, { galat: 'tidak ada soal atau bingkai' }); }, 0); return { batal: function () {} }; }
+      var t = susunTantangan(it, kelTerakhir); kelTerakhir = t.mesin;
+      var h = { akt: null };
+      var pegang = { batal: function () { if (kelAktif === pegang) kelAktif = null; if (h.akt) h.akt.batal(); } };
+      function jalan(tt, cadangan) {
+        h.akt = jalankanTantangan(kelApi, tt.blok, tt.soal, function (b, info) {
+          info = info || {}; info.mesin = tt.mesin; info.asal = tt.asal;
+          if (b === null && cadangan) { jalan(cadangan, null); return; }   /* mesin hasil dandanan gagal: pakai mesin aslinya */
+          if (kelAktif === pegang) kelAktif = null;
+          cb(b, info);
+        }, opsi);
+      }
+      kelAktif = pegang;
+      jalan(t, (!t.asal && it.asal) ? { blok: it.asal.blok, soal: it.asal.soal, mesin: it.asal.blok.mesin, asal: true } : null);
+      return pegang;
+    }
+    return {
+      versi: HOOK_KELOMPOK, kit: VERSI, D: D,
+      jumlahSoal: kumpulkanSoal().length,
+      layar: layar, latar: latarLayar, bingkai: bingkaiKelompok, tantang: tantang,
+      keluar: function () {
+        if (kelApi && kelApi.hud) { kelApi.keluar(); return; }   /* bingkai HUD: batalkan tantangan, panggil berhenti sekali, lalu ke layar judul */
+        if (kelApi && kelApi.berhenti) kelApi.berhenti(); layarJudul();
+      },
+      hud: true,
+      alat: {
+        el: el, esc: esc, fmt: fmt, ik: ik, ikBintang: ikBintang, src: src, gambar: gambar, acak: acak, hashTeks: hashTeks, acakBenih: acakBenih, r1: r1,
+        svgBintang: svgBintang, svgGembok: svgGembok, svgPin: svgPin, svgHiasan: svgHiasan, svgPeti: svgPeti, suara: Suara, getar: getar, puji: PUJI,
+        tombol: tombol, konfeti: konfeti, tunda: tunda
+      }
+    };
+  }
+  function layarKelompokPesan(teks, tombolBack) {
+    var w = el('div'); latarLayar(w, D.gambar && D.gambar.latar ? 'latar' : '');
+    var k = el('div', 'k-kertas k-pop');
+    k.style.cssText = 'position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);max-width:70%;text-align:center';
+    k.innerHTML = '<h2 style="margin:0 0 10px">' + esc(teks) + '</h2>';
+    if (tombolBack) { var a = el('div', 'aksi'); a.appendChild(tombol(ik('rumah') + ' Kembali', '', layarJudul)); k.appendChild(a); }
+    w.appendChild(k); layar(w);
+  }
+  function bukaKelompok() {
+    if (LAYAR_SENTUH) layarPenuh();
+    function siap() {
+      var M = window.KIT_KELOMPOK;
+      if (!M || typeof M.mulai !== 'function') return false;
+      kelApi = null; kelPtr = 0; kelUrut = []; kelPool = null; kelTerakhir = '';
+      try { M.mulai(kitKelompok()); }
+      catch (e) { layarKelompokPesan('Permainan belum bisa dijalankan', true); try { console.error('KIT: kelompok gagal', e); } catch (e2) {} }
+      return true;
+    }
+    if (siap()) return;
+    var u = alamatKelompok();
+    if (!u) { KEL_STATUS = 'gagal'; layarKelompokPesan('Berkas permainan tidak ditemukan', true); return; }
+    layarKelompokPesan('Memuat permainan…', false);
+    var usai = false;
+    function beres(st) {
+      if (usai) return; usai = true; KEL_STATUS = st;
+      if (st === 'siap' && siap()) return;
+      layarKelompokPesan('Permainan belum bisa dimuat. Periksa internet, lalu coba lagi.', true);
+    }
+    KEL_STATUS = 'memuat';
+    try {
+      var sc = document.createElement('script');
+      sc.async = true; sc.src = u;
+      sc.onload = function () { beres('siap'); };
+      sc.onerror = function () { beres('gagal'); };
+      document.head.appendChild(sc);
+      setTimeout(function () { beres('gagal'); }, 8000);
+    } catch (e) { beres('gagal'); }
+  }
+
   function layarJudul() {
     var w = el('div', VARIAN.judul ? 'k-vj' + VARIAN.judul : '');
     latarLayar(w, D.gambar && (D.gambar.sampul ? 'sampul' : 'latar'));
@@ -1614,8 +2124,11 @@ CSS += '\n' + [
     tj.appendChild(el('h1', 'k-judul', fmt(D.judul)));
     if (D.subjudul) tj.appendChild(el('p', null, fmt(D.subjudul)));
     var b = tombol(ik('lanjut') + ' ' + esc(D.tombolMulai || 'Mulai'), 'besar k-denyut', function () { if (LAYAR_SENTUH) layarPenuh(); layarKredit(); });
-    b.style.marginTop = '22px';
-    tj.appendChild(b);
+    var rata = VARIAN.judul === 1 ? 'flex-start' : VARIAN.judul === 2 ? 'center' : 'flex-end';
+    var br = el('div'); br.style.cssText = 'display:flex;gap:14px;flex-wrap:wrap;margin-top:22px;justify-content:' + rata;
+    br.appendChild(b);
+    try { if (kelompokTersedia()) br.appendChild(tombol(ik('papan') + ' Main Bersama', 'besar sek', bukaKelompok)); } catch (e) {}
+    tj.appendChild(br);
     w.appendChild(tj);
     w.appendChild(tombolSudut());
     var g = el('button', 'k-guru', ik('kunci') + ' Guru');
@@ -2012,6 +2525,130 @@ CSS += '\n' + [
     return k;
   }
 
+  /* ════════════════════════════ MESIN LUAR (kit-kelompok.js) ════════════════════════════
+     Permainan papan/kelompok hidup di berkas terpisah. Pendaftaran:
+       (window.KIT_MESIN = window.KIT_MESIN || {}).ulartangga = { nama:'Ular Tangga', jalan:function (lv, api, k) {...}, periksa:function (lv, n, e, k) {...} };
+     lv = data level; api = api mesin biasa; k = alat dari kit (lihat kitLuar). periksa mengisi larik e dengan pesan galat berawalan n. */
+  var HOOK_MESIN = 1;
+  var TANTANGAN_COCOK = ['kuis', 'tembak', 'balon', 'pancing', 'tangkap', 'runner', 'robot', 'rangkai', 'huruf', 'isian', 'garis', 'pecahan', 'jam', 'uang', 'timbangan', 'petak', 'sudut', 'grafik', 'penyunting', 'tandai', 'sorot', 'carikata', 'jejak'];
+  function mesinLuar(nama) {
+    var r = window.KIT_MESIN;
+    if (!r || typeof r !== 'object' || typeof nama !== 'string' || !Object.prototype.hasOwnProperty.call(r, nama)) return null;
+    var x = r[nama];
+    return (x && typeof x.jalan === 'function') ? x : null;
+  }
+  function namaMesinLuar() {
+    var r = window.KIT_MESIN;
+    return (r && typeof r === 'object') ? Object.keys(r).filter(function (x) { return mesinLuar(x); }) : [];
+  }
+  function jalankanMesin(lv, api) {
+    if (MESIN[lv.mesin]) return MESIN[lv.mesin](lv, api);
+    var XL = mesinLuar(lv.mesin);
+    if (!XL) throw new Error('mesin "' + lv.mesin + '" tidak ditemukan');
+    return XL.jalan(lv, api, kitLuar(api));
+  }
+  /* Jalankan SATU soal dari mesin kit yang sudah ada di atas area mesin induk.
+     blok = data level biasa ({ mesin:'tembak', soal:[...] , ...pengaturan }); soal = satu item dari blok.soal (atau null bila blok memakai buatSoal).
+     selesaiCb(benar, info): benar = true bila terjawab benar tanpa salah; null bila mesin gagal dijalankan. Salah pertama langsung mengakhiri tantangan.
+     Mengembalikan { batal: function } untuk menghentikan tantangan (mis. saat murid keluar). */
+  function jalankanTantangan(apiInduk, blok, soal, selesaiCb, opsi) {
+    opsi = opsi || {};
+    var induk = apiInduk.area;
+    var ov = el('div');
+    if (apiInduk.hud) ov.className = 'k-ov-hud k-ruang';   /* kelas k-ruang: aturan '.k-ruang>.m-xxx{inset:...}' ikut berlaku, jadi panel mesin mengisi seluruh lapisan */   /* bingkai HUD: jalur bawah disisakan untuk tombol aksi (lihat CSS .k-ov-hud) */
+    ov.style.cssText = 'position:absolute;left:0;right:0;top:0;bottom:0;z-index:40';
+    var sembunyi = [];
+    Array.prototype.forEach.call(induk.childNodes, function (c) {
+      if (c.style) { sembunyi.push([c, c.style.visibility]); c.style.visibility = 'hidden'; }
+    });
+    induk.appendChild(ov);
+    var lvKecil = {};
+    Object.keys(blok).forEach(function (kk) { lvKecil[kk] = blok[kk]; });
+    if (soal != null) lvKecil.soal = [soal];
+    lvKecil.jumlah = 1;
+    var hasil = null, tutup = false, keliru = 0, sub = {};
+    Object.keys(apiInduk).forEach(function (kk) { sub[kk] = apiInduk[kk]; });
+    sub.lv = lvKecil; sub.area = ov; sub.berhenti = null;
+    sub.progres = function () {}; sub.nyawa = function () {}; sub.skor = function () {}; sub.giliran = function () {};
+    sub.keliru = function () { return keliru; };
+    function akhiri(jeda) {
+      if (tutup) return; tutup = true;
+      setTimeout(function () {
+        var selesaiTantangan = function () { bereskan(); selesaiCb(hasil, { keliru: keliru }); };
+        if (hudS && hudS.aktif) hudS.antre.push(selesaiTantangan); else selesaiTantangan();   /* menu jeda terbuka: tunda sampai Lanjut */
+      }, jeda);
+    }
+    function bereskan() {
+      try { if (typeof sub.berhenti === 'function') sub.berhenti(); } catch (e) {}
+      try { apiInduk.bersihAksi(); } catch (e) {}
+      if (ov.parentNode) ov.parentNode.removeChild(ov);
+      sembunyi.forEach(function (x) { x[0].style.visibility = x[1]; });
+    }
+    sub.benar = function (t) {
+      Suara.benar(); getar(25); apiInduk.bicara(t || acak(PUJI)[0], 'ok');
+      if (hasil === null) { hasil = keliru === 0; akhiri(opsi.jedaBenar == null ? 900 : opsi.jedaBenar); }
+    };
+    sub.salah = function (t) {
+      keliru++; Suara.salah(); getar([70, 50, 70]); apiInduk.bicara(t || 'Belum tepat.', 'no');
+      if (hasil === null) { hasil = false; akhiri(opsi.jedaSalah == null ? 1600 : opsi.jedaSalah); }
+    };
+    sub.selesai = function () { if (hasil === null) hasil = keliru === 0; akhiri(300); };
+    try { apiInduk.bersihAksi(); } catch (e) {}
+    try {
+      apiInduk.bicara(lvKecil.petunjuk || PETUNJUK[lvKecil.mesin] || 'Ayo jawab!');
+      if (!MESIN[lvKecil.mesin]) throw new Error('mesin tantangan "' + lvKecil.mesin + '" tidak dikenal');
+      MESIN[lvKecil.mesin](lvKecil, sub);
+    } catch (er) {
+      tutup = true; bereskan(); hasil = null;
+      try { console.error('KIT: tantangan gagal', er); } catch (e2) {}
+      setTimeout(function () { selesaiCb(null, { galat: String(er && er.message || er) }); }, 0);
+    }
+    return { batal: function () { if (tutup) return; tutup = true; bereskan(); } };
+  }
+  /* alat yang diberikan ke mesin luar */
+  function kitLuar(api) {
+    return {
+      versi: HOOK_MESIN, kit: VERSI, D: D, api: api,
+      cocok: TANTANGAN_COCOK.slice(),
+      periksaLevel: function (blok, awalan, e) { periksaSatuLevel(blok, awalan || '', e, D); return e; },
+      jalankanTantangan: function (blok, soal, selesaiCb, opsi) { return jalankanTantangan(api, blok, soal, selesaiCb, opsi); },
+      alat: {
+        el: el, esc: esc, fmt: fmt, ik: ik, ikBintang: ikBintang, src: src, gambar: gambar, acak: acak, hashTeks: hashTeks, acakBenih: acakBenih, r1: r1,
+        svgBintang: svgBintang, svgGembok: svgGembok, svgPin: svgPin, svgHiasan: svgHiasan, svgPeti: svgPeti, suara: Suara, getar: getar, puji: PUJI
+      }
+    };
+  }
+  /* pemuat kit-kelompok.js: hanya bila ada level bermesin yang tidak dikenal kit inti */
+  var LUAR_STATUS = 'tidak';
+  function alamatKelompok() {
+    if (!/kit-mpi\.js(?:[?#]|$)/.test(ALAMAT_SKRIP)) return '';
+    return ALAMAT_SKRIP.replace(/kit-mpi\.js(?=[?#]|$)/, 'kit-kelompok.js');
+  }
+  function perluLuar() {
+    if (!D || !Array.isArray(D.level)) return false;
+    return D.level.some(function (lv) { return lv && typeof lv.mesin === 'string' && !MESIN[lv.mesin] && !mesinLuar(lv.mesin); });
+  }
+  function muatLuar(lanjut) {
+    if (!perluLuar()) { lanjut(); return; }
+    var u = alamatKelompok();
+    if (!u) { LUAR_STATUS = 'gagal'; lanjut(); return; }
+    var w = el('div'); latarLayar(w, '');
+    var t = el('div', null, 'Memuat permainan…');
+    t.style.cssText = 'position:absolute;left:0;right:0;top:0;bottom:0;display:flex;align-items:center;justify-content:center;color:#fff;font:600 26px Fredoka,"Trebuchet MS",sans-serif;text-shadow:0 2px 0 rgba(0,0,0,.4)';
+    w.appendChild(t); layar(w);
+    var usai = false;
+    function beres(st) { if (usai) return; usai = true; LUAR_STATUS = st; lanjut(); }
+    LUAR_STATUS = 'memuat';
+    try {
+      var sc = document.createElement('script');
+      sc.async = true; sc.src = u;
+      sc.onload = function () { beres('siap'); };
+      sc.onerror = function () { beres('gagal'); };
+      document.head.appendChild(sc);
+      setTimeout(function () { beres('gagal'); }, 5000);
+    } catch (e) { beres('gagal'); }
+  }
+
   /* ── pemuat kit-peta.js ── */
   var ALAMAT_SKRIP = '';
   try { ALAMAT_SKRIP = (document.currentScript && document.currentScript.src) || ''; } catch (e) {}
@@ -2109,6 +2746,7 @@ CSS += '\n' + [
     layar(w);
   }
   function namaMesin(m) {
+    var XL0 = !MESIN[m] && mesinLuar(m); if (XL0 && XL0.nama) return XL0.nama;
     return { cerita: 'Cerita', bacaan: 'Bacaan', sortir: 'Sortir', cocokkan: 'Cocokkan', urutkan: 'Urutkan', runner: 'Lari Jalur', jelajah: 'Jelajah', memori: 'Memori', isian: 'Isian', garis: 'Garis Bilangan', pecahan: 'Pecahan', jam: 'Jam', uang: 'Uang', timbangan: 'Timbangan', petak: 'Bangun Petak', kuis: 'Kuis', tembak: 'Tembak Sasaran', balon: 'Pecahkan Balon', pancing: 'Memancing Jawaban', tangkap: 'Tangkap Jawaban', labeli: 'Labeli Gambar', rakit: 'Rakit Kata', huruf: 'Susun Huruf', rangkai: 'Rangkai Kata', penyunting: 'Penyunting', sudut: 'Busur Sudut', grafik: 'Grafik Batang', silang: 'Teka-Teki Silang', robot: 'Program Robot', carikata: 'Cari Kata', jejak: 'Telusuri Huruf', sorot: 'Sorot Teks', tandai: 'Tandai Kata' }[m] || 'Tantangan';
   }
 
@@ -2182,7 +2820,7 @@ CSS += '\n' + [
     };
     api.bicara(lv.petunjuk || PETUNJUK[lv.mesin] || 'Ayo mulai!');
     try {
-      MESIN[lv.mesin](lv, api);
+      jalankanMesin(lv, api);
     } catch (e) {
       tampilGalat(['Level ' + (i + 1) + ' (' + lv.mesin + ') gagal dijalankan: ' + e.message]);
       if (window.console) console.error(e);
@@ -9112,10 +9750,22 @@ function tandai_urai(teks) {
       var t = typeof c === 'string' ? c : (c && c.teks);
       if (kata(t) > 40) e.push('cerita pembuka adegan ' + (j + 1) + ' terlalu panjang (' + kata(t) + ' kata). Maksimal 40 kata, pecah jadi dua adegan.');
     });
-    d.level.forEach(function (lv, i) {
-      var n = 'Level ' + (i + 1) + ': ';
+    d.level.forEach(function (lv, i) { periksaSatuLevel(lv, 'Level ' + (i + 1) + ': ', e, d); });
+    return e;
+  }
+  /* pemeriksa satu level (dipakai juga untuk blok tantangan di mesin kelompok lewat k.periksaLevel) */
+  function periksaSatuLevel(lv, n, e, d) {
+    d = d || D || {};
+    var kata = function (t) { return String(t || '').split(/\s+/).filter(Boolean).length; };
       var maks = function (k, m, satuan) { if (Array.isArray(lv[k]) && lv[k].length > m) e.push(n + k + ' maksimal ' + m + ' ' + (satuan || 'item') + ' supaya muat di layar HP (sekarang ' + lv[k].length + ').'); };
-      if (!MESIN[lv.mesin]) { e.push(n + 'mesin "' + lv.mesin + '" tidak dikenal. Pilih: ' + Object.keys(MESIN).join(', ') + '.'); return; }
+      if (!MESIN[lv.mesin]) {
+        var XL = mesinLuar(lv.mesin);
+        if (XL) {
+          if (typeof XL.periksa === 'function') { try { XL.periksa(lv, n, e, kitLuar(null)); } catch (er) { e.push(n + 'pemeriksa mesin "' + lv.mesin + '" gagal: ' + er.message); } }
+          return;
+        }
+        e.push(n + 'mesin "' + lv.mesin + '" tidak dikenal. Pilih: ' + Object.keys(MESIN).concat(namaMesinLuar()).join(', ') + '.'); return;
+      }
       var arr = function (k, min) { if (!Array.isArray(lv[k]) || lv[k].length < (min || 1)) e.push(n + k + ' harus berisi minimal ' + (min || 1) + ' item.'); };
       if (lv.mesin === 'cerita') {
         arr('adegan');
@@ -9796,8 +10446,6 @@ if (lv.mesin === 'tandai') {
           if (nKosong > 2) e.push(n + 'soal dengan kosong:true maksimal 2 per level (sekarang ' + nKosong + ').');
         })();
       }
-    });
-    return e;
   }
   function tampilGalat(e) {
     var w = el('div');
@@ -9815,6 +10463,12 @@ if (lv.mesin === 'tandai') {
     tema: Object.keys(TEMA),
     mesin: Object.keys(MESIN),
     hookPeta: HOOK_PETA,
+    hookMesin: HOOK_MESIN,
+    hookKelompok: HOOK_KELOMPOK,
+    jumlahSoalKelompok: function () { try { return kumpulkanSoal().length; } catch (e) { return 0; } },
+    statusKelompok: function () { return KEL_STATUS; },
+    statusLuar: function () { return LUAR_STATUS; },
+    mesinTerdaftar: function () { return namaMesinLuar(); },
     statusPeta: function () { return PETA_STATUS; },
     petaTerdaftar: function () { var r = window.KIT_PETA; return (r && typeof r === 'object') ? Object.keys(r).filter(function (x) { return typeof r[x] === 'function'; }) : []; },
     mulai: function (data) {
@@ -9825,6 +10479,7 @@ if (lv.mesin === 'tandai') {
       if (D.maskot && D.maskot.gambar && !D.gambar.maskot) D.gambar.maskot = D.maskot.gambar;
       var jalan = function () {
         pasangPanggung();
+        muatLuar(function () {
         var e = periksaData(D);
         if (e.length) return tampilGalat(e);
         LEVEL = D.level; BINTANG = []; TERBUKA = 1; REKAM = [];
@@ -9833,6 +10488,7 @@ if (lv.mesin === 'tandai') {
         try { if (new URLSearchParams(location.search).get('tim') === '1') TIM = { skor: [0, 0], giliran: 0 }; } catch (er) {}
         kirimAntrean();
         layarJudul();
+        });
       };
       if (document.body) jalan(); else document.addEventListener('DOMContentLoaded', jalan);
     }
