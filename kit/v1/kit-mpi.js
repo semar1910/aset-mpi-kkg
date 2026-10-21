@@ -59,12 +59,14 @@
  * v1.26: BINGKAI HUD (opsional) untuk permainan kelompok: k.bingkai(judul, { gaya:'hud' }). Adegan penuh (api.area setinggi bingkai), tombol menu
  *        bulat + tombol "?" melayang, menu jeda, tombol aksi melayang di bawah tengah, maskot + balon sementara di kiri bawah, judul besar 2 detik,
  *        api.zonaAman(), api.jeda()/api.lanjutkan hook api.saatJeda(bool), api.petunjuk(tutup) dan api.pengaturan(tutup). Tanpa opsi, bingkai lama tidak berubah.
+ * v1.26.3: PANEL GALAT lebih berguna. Tiap masalah ditulis dengan BAGIAN (level, mesin, nomor soal), MASALAH, dan PERBAIKAN. Tombol "Salin untuk AI"
+ *        menyalin pesan siap kirim (perintah perbaiki + daftar masalah + versi kit), dengan kotak teks cadangan bila penyalinan otomatis ditolak.
  * v1.5: progres tersimpan, tombol dengarkan, soal salah diulang, bank soal (jumlah),
  *       mode tim, hasil murid + papan skor (bila diputar dari server KKG).
  */
 (function () {
   'use strict';
-  var VERSI = '1.26.2';
+  var VERSI = '1.26.3';
   /* Panggung dirancang untuk HP mendatar: tinggi tetap 540, lebar mengikuti layar (960–1200). */
   var H = 540, W_MIN = 960, W_MAX = 1200, W = W_MIN;
 
@@ -10447,12 +10449,102 @@ if (lv.mesin === 'tandai') {
         })();
       }
   }
+  /* ── PANEL GALAT: Bagian · Masalah · Perbaikan, plus tombol salin untuk AI ── */
+  var SARAN_GALAT = [
+    [/gagal dijalankan/i, 'Periksa data level ini (jumlah item, bentuk daftar, dan tipe data), lalu perbaiki bagian yang disebut pada Masalah.'],
+    [/tidak dikenal/i, 'Ganti dengan salah satu nilai yang tersedia pada kalimat "Pilih:" di Masalah, ditulis persis sama.'],
+    [/tidak ditemukan/i, 'Isi dengan nama kunci gambar yang terdaftar di DATA.gambar, atau alamat gambar yang benar dari DAFTAR ASET, atau hapus field gambarnya.'],
+    [/kunci bukti|bukti .*tidak ada/i, 'Samakan kunci bukti dengan potongan teks yang benar-benar ada di halaman itu, huruf demi huruf.'],
+    [/true atau false/i, 'Tulis true atau false saja, tanpa tanda petik.'],
+    [/tanda petik/i, 'Hapus tanda petik (\' atau ") dari dalam teksnya, lalu tulis ulang dengan kata lain.'],
+    [/kembar|tidak boleh sama|sama persis|dua huruf yang sama/i, 'Ubah supaya setiap item berbeda, tidak ada yang sama.'],
+    [/harus ('|\w+ atau)|harus [\w'" ,]+ atau /i, 'Ganti dengan salah satu nilai yang diizinkan pada Masalah, ditulis persis sama.'],
+    [/terlalu (panjang|banyak)|maksimal/i, 'Persingkat teksnya atau kurangi jumlah itemnya sampai tidak melebihi batas yang disebut pada Masalah.'],
+    [/harus \d|harus [\d–-]+ /i, 'Sesuaikan jumlah atau panjangnya dengan angka yang disebut pada Masalah.'],
+    [/belum diisi|belum punya/i, 'Isi bagian yang masih kosong ini sesuai petunjuk pada Masalah.'],
+    [/minimal|kosong|harus berisi/i, 'Lengkapi atau tambah isinya sampai memenuhi jumlah minimal pada Masalah.'],
+    [/alamat gambar|harus berupa alamat|link/i, 'Isi dengan alamat gambar (teks) persis dari DAFTAR ASET, tanpa mengarang atau mengubahnya.'],
+    [/angka|indeks|bilangan/i, 'Tulis sebagai angka tanpa tanda petik (indeks dimulai dari 0), sesuai aturan pada Masalah.'],
+    [/harus (berupa|berbentuk|daftar|teks|angka|berisi)/i, 'Ubah ke bentuk data yang diminta pada Masalah, tanpa mengubah bagian lain.']
+  ];
+  function saranGalat(isi) {
+    for (var i = 0; i < SARAN_GALAT.length; i++) if (SARAN_GALAT[i][0].test(isi)) return SARAN_GALAT[i][1];
+    return 'Sesuaikan dengan aturan pada Masalah, tanpa mengubah bagian lain.';
+  }
+  function besarAwal(s) { s = String(s || ''); return s.charAt(0).toUpperCase() + s.slice(1); }
+  function uraiGalat(x) {
+    var teks = String(x), m, bagian, isi = teks;
+    var lvl = function (n) { var L = D && Array.isArray(D.level) && D.level[n - 1]; return 'Level ' + n + (L && typeof L.mesin === 'string' ? ' (mesin ' + L.mesin + ')' : ''); };
+    if ((m = /^Level (\d+) \((.+?)\) gagal dijalankan:\s*([\s\S]*)$/.exec(teks))) {
+      bagian = 'Level ' + m[1] + ' (mesin ' + m[2] + ')'; isi = 'Gagal dijalankan: ' + m[3];
+    } else if ((m = /^Level (\d+):\s*([\s\S]*)$/.exec(teks))) {
+      bagian = lvl(+m[1]); isi = m[2];
+      var m2 = /^([a-zA-Z][a-zA-Z ]{0,24}?\s\d+):\s*([\s\S]*)$/.exec(isi);
+      if (m2) { bagian += ', ' + m2[1]; isi = m2[2]; }
+    } else {
+      bagian = 'Data utama (judul, tema, maskot, cerita pembuka, atau jumlah level)';
+    }
+    return { bagian: bagian, masalah: besarAwal(isi), saran: saranGalat(isi) };
+  }
+  function teksSalinGalat(daftar) {
+    var b = ['Perbaiki DATA MPI berikut. Ubah HANYA bagian yang disebut di bawah, jangan mengubah isi lain, lalu kirim ulang SELURUH kode HTML dalam satu blok kode (dari <!DOCTYPE html> sampai </html>), jangan dipotong.',
+      '', 'Versi kit: ' + VERSI + ' | Jumlah masalah: ' + daftar.length, ''];
+    daftar.forEach(function (g, i) { b.push((i + 1) + '. Bagian: ' + g.bagian, '   Masalah: ' + g.masalah, '   Perbaikan: ' + g.saran, ''); });
+    return b.join('\n');
+  }
+  function salinKeKlip(teks, ok, gagal) {
+    var cadangan = function () {
+      try {
+        var ta = document.createElement('textarea');
+        ta.value = teks; ta.style.cssText = 'position:fixed;left:-9999px;top:0';
+        document.body.appendChild(ta); ta.select();
+        var b = document.execCommand('copy'); document.body.removeChild(ta);
+        if (b) ok(); else gagal();
+      } catch (er) { gagal(); }
+    };
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(teks).then(ok, cadangan);
+      else cadangan();
+    } catch (er) { cadangan(); }
+  }
   function tampilGalat(e) {
     var w = el('div');
     var k = el('div', 'k-kertas k-galat');
+    var daftar = (e || []).map(uraiGalat);
+    var teks = teksSalinGalat(daftar);
     k.innerHTML = '<h2 class="fd" style="margin:0 0 8px;color:#C2333A;font-size:30px">MPI belum bisa dijalankan</h2>' +
-      '<p style="margin:0 0 10px">Ada bagian DATA yang perlu diperbaiki. Salin daftar ini dan kirim ke Claude dengan pesan <b>“perbaiki DATA berikut”</b>:</p><ol>' +
-      e.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ol>';
+      '<p style="margin:0 0 12px">Ada ' + daftar.length + ' bagian DATA yang perlu diperbaiki. Tekan <b>Salin untuk AI</b>, tempel ke AI yang tadi membuat MPI ini, lalu minta ia mengirim ulang seluruh kode HTML-nya.</p>';
+    var aksi = el('div');
+    aksi.style.cssText = 'display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:0 0 14px';
+    var info = el('span');
+    info.style.cssText = 'font-size:16px;color:#5B7186';
+    var kotak = document.createElement('textarea');
+    kotak.readOnly = true; kotak.value = teks; kotak.rows = 9;
+    kotak.style.cssText = 'width:100%;box-sizing:border-box;font:13px/1.45 ui-monospace,Menlo,monospace;padding:10px;border:2px solid #CBD5E0;border-radius:10px;margin-top:8px';
+    var tb = tombol('Salin untuk AI', 'besar', function () {
+      salinKeKlip(teks,
+        function () { info.textContent = 'Tersalin. Tempel ke AI.'; },
+        function () { info.textContent = 'Penyalinan otomatis ditolak. Buka kotak di bawah, pilih semua, lalu salin.'; det.open = true; kotak.focus(); kotak.select(); });
+    });
+    aksi.appendChild(tb); aksi.appendChild(info);
+    k.appendChild(aksi);
+    var ol = document.createElement('ol');
+    ol.style.cssText = 'padding-left:24px;margin:0 0 14px';
+    daftar.forEach(function (g) {
+      var li = document.createElement('li');
+      li.style.cssText = 'margin-bottom:14px';
+      li.innerHTML = '<div style="font-weight:700;color:#C2333A">' + esc(g.bagian) + '</div>' +
+        '<div><b>Masalah:</b> ' + esc(g.masalah) + '</div>' +
+        '<div><b>Perbaikan:</b> ' + esc(g.saran) + '</div>';
+      ol.appendChild(li);
+    });
+    k.appendChild(ol);
+    var det = document.createElement('details');
+    var sm = document.createElement('summary');
+    sm.textContent = 'Lihat teks yang akan disalin';
+    sm.style.cssText = 'cursor:pointer;font-weight:700';
+    det.appendChild(sm); det.appendChild(kotak);
+    k.appendChild(det);
     w.appendChild(k);
     layar(w);
   }
